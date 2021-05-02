@@ -11,8 +11,7 @@ engine = psycopg2.connect(
 )
 
 print("hi")
-print(os.getcwd())
-print(os.path.dirname(os.path.realpath(__file__)))
+print(os.listdir(os.getcwd()))
 
 # db_cursor = engine.cursor()
 # db_cursor.execute("SELECT * FROM database_course")
