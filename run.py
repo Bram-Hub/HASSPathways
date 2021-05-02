@@ -38,7 +38,7 @@ for x in range(len(temp)):
     outerFields["fields"] = innerFields
     courses.append(outerFields)
 
-root_folder_jsonfiles = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/JSONfiles/"
+root_folder_jsonfiles = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/HASSPathways/JSONfiles/"
 courseDataFile = open(root_folder_jsonfiles+"courses.json", 'w')
 courseDataFile.truncate()
 courseDataFile.write(json.dump(courses, outfile, sort_keys=True, indent=4))
@@ -90,7 +90,7 @@ for x in range(len(temp)):
     outerFields["fields"] = innerFields
     pathways.append(outerFields)
 
-root_folder_jsonfiles = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/JSONfiles/"
+root_folder_jsonfiles = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/HASSPathways/JSONfiles/"
 pathwayDataFile = open(root_folder_jsonfiles+"courses.json", 'w')
 pathwayDataFile.truncate()
 pathwayDataFile.write(json.dump(pathways, outfile, sort_keys=True, indent=4))
