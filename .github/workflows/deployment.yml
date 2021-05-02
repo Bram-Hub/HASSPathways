@@ -42,8 +42,8 @@ jobs:
       
       - name: commit files
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.email "automation"
+          git config --global user.email "automation@github.com"
+          git config --global user.name "automation"
           git add -A
           git commit -m "update json information"
         
