@@ -1,0 +1,57 @@
+# This is a basic workflow to help you get started with Actions
+
+name: deployment
+
+# Controls when the action will run. 
+on:
+  # trigger every sunday @ 12AM
+  schedule:
+    - cron: "0 0 * * SUN"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: checkout repo
+        uses: actions/checkout@v2
+      
+      # install python
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7.7'
+          
+      # install python packages
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+      
+      # run python script
+      - name: execute script
+        run: python run.py
+      
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.email "Github Action"
+          git add -A
+          git commit -m "update json information"
+        
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+      
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Success!
