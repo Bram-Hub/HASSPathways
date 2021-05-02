@@ -41,7 +41,7 @@ for x in range(len(temp)):
 root_folder_jsonfiles = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/HASSPathways/JSONfiles/"
 courseDataFile = open(root_folder_jsonfiles+"courses.json", 'w')
 courseDataFile.truncate()
-courseDataFile.write(json.dump(courses, outfile, sort_keys=True, indent=4))
+courseDataFile.write(json.dump(courses, sort_keys=True, indent=4))
 courseDataFile.close()
 
 # with open("./JSONfiles/courses.json", "w") as outfile:
@@ -93,7 +93,7 @@ for x in range(len(temp)):
 root_folder_jsonfiles = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/HASSPathways/JSONfiles/"
 pathwayDataFile = open(root_folder_jsonfiles+"courses.json", 'w')
 pathwayDataFile.truncate()
-pathwayDataFile.write(json.dump(pathways, outfile, sort_keys=True, indent=4))
+pathwayDataFile.write(json.dump(pathways, sort_keys=True, indent=4))
 pathwayDataFile.close()
 
 # with open("./JSONfiles/pathways.json", "w") as outfile:
