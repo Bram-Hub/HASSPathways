@@ -1,5 +1,6 @@
 # HASS Pathways
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5f319796-9a6d-4747-9269-c2bd33bbdf72/deploy-status)](https://app.netlify.com/sites/hasspathways/deploys)
+[![deployment](https://github.com/Bram-Hub/HASSPathways/actions/workflows/deployment.yml/badge.svg)](https://github.com/Bram-Hub/HASSPathways/actions/workflows/deployment.yml)
 #### Project Details
 This project was developed to help students navigate through Rensselaer Polytechnic Institute's newly designed HASS (humanities, arts, and social sciences) curriculum--effective for the class of 2023 and beyond--which requires students to take part in an integrated pathway. The HASS Integrative Pathways were created to enhance students' HASS Core curriculum by bringing intentionality and depth to the requirements. The themes of the pathways vary in their intentionality; some are interdisciplinary, while others focus on a single discipline, providing students with significant options for their coursework. In addition to providing a more in-depth focus to the HASS Core, many Integrative Pathways can be transformed into minors with relative ease.
 #### Information in regards to the **[goals of the pathways](https://info.rpi.edu/hass-pathways/goals-pathways "source")** include:
