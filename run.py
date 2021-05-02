@@ -91,7 +91,7 @@ for x in range(len(temp)):
     pathways.append(outerFields)
 
 root_folder_jsonfiles = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/HASSPathways/JSONfiles/"
-pathwayDataFile = open(root_folder_jsonfiles+"courses.json", 'w')
+pathwayDataFile = open(root_folder_jsonfiles+"pathways.json", 'w')
 pathwayDataFile.truncate()
 pathwayDataFile.write(json.dumps(pathways, sort_keys=True, indent=4))
 pathwayDataFile.close()
