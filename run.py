@@ -1,6 +1,7 @@
 import psycopg2
 import json
 import os
+from datetime import datetime
 
 engine = psycopg2.connect(
     database="d2kedqtund732q",
@@ -21,6 +22,7 @@ temp = db_cursor.fetchall()
 courses = []
 for x in range(len(temp)):
     outerFields = dict()
+    outerFields["info"] = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     outerFields["pk"] = temp[x][0]
     outerFields["model"] = "database.course"
     innerFields = dict()
@@ -56,6 +58,7 @@ temp = db_cursor.fetchall()
 pathways = []
 for x in range(len(temp)):
     outerFields = dict()
+    outerFields["info"] = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     outerFields["pk"] = temp[x][0]
     outerFields["model"] = "database.pathway"
 
