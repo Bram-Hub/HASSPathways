@@ -43,7 +43,7 @@ jobs:
       - name: commit files
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.email "Github Action"
+          git config --local user.email "automation"
           git add -A
           git commit -m "update json information"
         
