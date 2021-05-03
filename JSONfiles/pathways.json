@@ -1,20 +1,1206 @@
 [
     {
         "fields": {
+            "pathDescript": "This pathway allows students to study a range of art history and media art histories and theories. This immersive study will give students a comprehensive view of how these histories have shaped our current day media and given rise to a variety of art making tools in our digital and computational era.",
+            "pathName": "Arts History, Theory, And Criticism",
+            "priority1": [
+                4077,
+                4078,
+                4079,
+                4080,
+                4081,
+                4082
+            ],
+            "priority2": [
+                4083,
+                4084
+            ],
+            "priority3": [
+                4085
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 485
+    },
+    {
+        "fields": {
+            "pathDescript": "Integrated with Chinese culture, students will learn all four types of language skills (listening, speaking, reading, and writing). After completing the Chinese pathway, students will be able to communicate in Chinese at their targeted proficiency levels and think critically and creatively with global and multicultural awareness.",
+            "pathName": "Chinese Language",
+            "priority1": [
+                4099,
+                4100,
+                4101
+            ],
+            "priority2": [
+                4100,
+                4101,
+                4102,
+                4103
+            ],
+            "priority3": [
+                4101,
+                4102,
+                4103
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 487
+    },
+    {
+        "fields": {
             "pathDescript": "Artificial Intelligence is quickly becoming pervasive in our lives. Study how Artificial Intelligence can benefit from concepts and ideas from cognitive science, and explore the ways in which Artificial Intelligence is changing our lives.",
             "pathName": "Artificial Intelligence",
             "priority1": [
-                4055,
-                4056,
-                4057
+                4064,
+                4065,
+                4066
             ],
             "priority2": [
-                4058
+                4067
+            ],
+            "priority3": [
+                4068,
+                4069,
+                4070,
+                4071,
+                4072,
+                4073,
+                4074,
+                4075,
+                4076
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 484
+    },
+    {
+        "fields": {
+            "pathDescript": "Behavioral and cognitive neuroscience focus on understanding the brain mechanisms that allow humans and other animals to perceive, think, feel, remember, and act.  Students pursuing this pathway will cultivate an understanding of brain and behavior/cognition relationships by critically analyzing research findings.",
+            "pathName": "Behavioral And Cognitive Neuroscience",
+            "priority1": [
+                4086
+            ],
+            "priority2": [
+                4087,
+                4088,
+                4089,
+                4090,
+                4091,
+                4092,
+                4093,
+                4094,
+                4095,
+                4096,
+                4097,
+                4098
             ],
             "priority3": []
         },
-        "info": "03/05/2021 10:15:31",
+        "info": "03/05/2021 12:38:32",
         "model": "database.pathway",
-        "pk": 482
+        "pk": 486
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway looks at creative design and innovation from various humanities, arts, and social science points of view. Students will learn about the cognitive and communicative principles behind design and innovation, the economic policies, markets, and other social institutions driving and shaping design and innovation, and how to engage in sustainable and socially responsible design and innovation for local and global impact.",
+            "pathName": "Creative Design And Innovation",
+            "priority1": [
+                4104,
+                4105,
+                4106,
+                4107,
+                4080,
+                4108,
+                4081,
+                4109,
+                4110,
+                4111
+            ],
+            "priority2": [
+                4112,
+                4113,
+                4114,
+                4115,
+                4116,
+                4117,
+                4118,
+                4119,
+                4067,
+                4120,
+                4121,
+                4122,
+                4123,
+                4124,
+                4125,
+                4126,
+                4127,
+                4128,
+                4129
+            ],
+            "priority3": [
+                4112,
+                4113,
+                4114,
+                4115,
+                4116,
+                4117,
+                4118,
+                4119,
+                4067,
+                4120,
+                4121,
+                4122,
+                4123,
+                4124,
+                4125,
+                4126,
+                4127,
+                4128,
+                4129
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 488
+    },
+    {
+        "fields": {
+            "pathDescript": "The pathway in Design, Innovation, and Society (DIS) provides creative, socially conscious students deep context for a broad education in design and innovation. Students take a sequence of studio-based courses that address real-world social and environmental challenges.",
+            "pathName": "Design, Innovation, And Society",
+            "priority1": [
+                4130
+            ],
+            "priority2": [
+                4131
+            ],
+            "priority3": [
+                4132,
+                4133,
+                4134
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 489
+    },
+    {
+        "fields": {
+            "pathDescript": "Study different types of theories and statistical methods used by economists. Students are prepared to gain a broad understanding of how consumers, firms and governments make decisions, and their implications.",
+            "pathName": "Economics",
+            "priority1": [
+                4135,
+                4136
+            ],
+            "priority2": [
+                4137,
+                4138,
+                4139
+            ],
+            "priority3": [
+                4140,
+                4141,
+                4142,
+                4143,
+                4144,
+                4145,
+                4146,
+                4147,
+                4148,
+                4149,
+                4150,
+                4151,
+                4152,
+                4153,
+                4154,
+                4155,
+                4156,
+                4157,
+                4158,
+                4159,
+                4160,
+                4161,
+                4162,
+                4163,
+                4164,
+                4165,
+                4166,
+                4167,
+                4168,
+                4169,
+                4170,
+                4171,
+                4172
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 490
+    },
+    {
+        "fields": {
+            "pathDescript": "Study markets and policies in banking and finance. Students are prepared to use different types of mathematical models and econometric techniques used by economists to study the behavior of individuals, firms, and the economy.",
+            "pathName": "Economics Of Banking & Finance",
+            "priority1": [
+                4135,
+                4136
+            ],
+            "priority2": [
+                4143,
+                4173,
+                4163
+            ],
+            "priority3": [
+                4143,
+                4173,
+                4163
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 491
+    },
+    {
+        "fields": {
+            "pathDescript": "The future seems up for grabs as climate change challenges human and nonhuman societies to meet basic needs for clean air, water, soil, food, and energy. How will we adapt, reduce harm, or mitigate the problems of the past and present? This pathway involves courses in sustainability, defined as the means to ensure the well-being of the planet and quality of life of present and future generations. Courses integrate research and insights from the social sciences, arts, and humanities to pursue a healthy environment, economic prosperity, and social justice by building on the present to inform the future.",
+            "pathName": "Environmental Futures",
+            "priority1": [
+                4107,
+                4188,
+                4135,
+                4189,
+                4190,
+                4191,
+                4192,
+                4193,
+                4194
+            ],
+            "priority2": [
+                4195,
+                4196,
+                4197,
+                4198,
+                4153,
+                4199,
+                4200,
+                4201,
+                4202,
+                4128,
+                4129,
+                4203,
+                4204,
+                4205,
+                4206,
+                4207
+            ],
+            "priority3": [
+                4195,
+                4196,
+                4197,
+                4198,
+                4153,
+                4199,
+                4200,
+                4201,
+                4202,
+                4128,
+                4129,
+                4203,
+                4204,
+                4205,
+                4206,
+                4207
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 498
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway allows students to study a range of approaches to electronic, or digital arts, such as digital imaging, graphic storytelling, interactive media, and 3D animation. This immersive study will give students a comprehensive view of how to use digital tools to tell stories, and to critically and creatively explore the arts at the intersection of the humanities, and the physical, computational, engineering, and social sciences.",
+            "pathName": "Electronic Arts",
+            "priority1": [
+                4104,
+                4177,
+                4178,
+                4179,
+                4109,
+                4110
+            ],
+            "priority2": [
+                4180,
+                4181,
+                4182,
+                4183,
+                4115,
+                4184,
+                4185,
+                4186,
+                4187,
+                4119
+            ],
+            "priority3": [
+                4180,
+                4181,
+                4182,
+                4183,
+                4115,
+                4184,
+                4185,
+                4186,
+                4187,
+                4119
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 497
+    },
+    {
+        "fields": {
+            "pathDescript": "Study different types of mathematical models and econometric techniques used in Economics. Students are prepared to use economic theory, and econometric and statistical methods to study behavior of individuals and firms in the economy.",
+            "pathName": "Economics Of Quantitative Modeling",
+            "priority1": [
+                4135,
+                4136
+            ],
+            "priority2": [
+                4175,
+                4165,
+                4167
+            ],
+            "priority3": [
+                4175,
+                4165,
+                4167
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 495
+    },
+    {
+        "fields": {
+            "pathDescript": "Study how individuals and firms make financial and economic decisions, and how those decisions might deviate from those predicted by traditional economic theory. Students are prepared to apply behavioral models of decision-making and experimental methods in economics.",
+            "pathName": "Economics Of Decision-Making",
+            "priority1": [
+                4135,
+                4136
+            ],
+            "priority2": [
+                4137,
+                4152,
+                4157,
+                4161,
+                4163,
+                4165
+            ],
+            "priority3": [
+                4137,
+                4152,
+                4157,
+                4161,
+                4163,
+                4165
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 492
+    },
+    {
+        "fields": {
+            "pathDescript": "Study different types of markets related to pharmaceuticals, medical devices, and healthcare. Students are prepared to use theory, econometric models, and data to study the role of R&D, patents, innovation, and policies in healthcare markets, and in pharmaceuticals and medical devices.",
+            "pathName": "Economics Of Healthcare Markets",
+            "priority1": [
+                4135,
+                4136
+            ],
+            "priority2": [
+                4147,
+                4157,
+                4159
+            ],
+            "priority3": [
+                4147,
+                4157,
+                4159
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 493
+    },
+    {
+        "fields": {
+            "pathDescript": "Study different types of economic models related to innovation and new technologies. Students are prepared to use economic theory, econometric and statistical methods, and data to examine patents, R&D, and innovation more broadly, as well as in specific industries in the economy.",
+            "pathName": "Economics Of Technology & Innovation",
+            "priority1": [
+                4135,
+                4136
+            ],
+            "priority2": [
+                4141,
+                4159,
+                4176
+            ],
+            "priority3": [
+                4141,
+                4159,
+                4176
+            ]
+        },
+        "info": "03/05/2021 12:38:32",
+        "model": "database.pathway",
+        "pk": 496
+    },
+    {
+        "fields": {
+            "pathDescript": "In this Pathway, students analyze many aspects of the complex relationship between ethics and areas in science, technology, and engineering. These conversations are critical to ensure the ethical and accessible use of technology and to allow scientists and engineers to think critically and make informed decisions on personal, professional, and public policy levels.",
+            "pathName": "Ethics, Integrity, And Social Responsibility",
+            "priority1": [
+                4064,
+                4208,
+                4209,
+                4191,
+                4210,
+                4194,
+                4211,
+                4212,
+                4213
+            ],
+            "priority2": [
+                4195,
+                4198,
+                4214,
+                4199,
+                4215,
+                4200,
+                4201,
+                4216,
+                4217,
+                4218,
+                4219
+            ],
+            "priority3": [
+                4195,
+                4198,
+                4214,
+                4199,
+                4215,
+                4200,
+                4201,
+                4216,
+                4217,
+                4218,
+                4219
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 499
+    },
+    {
+        "fields": {
+            "pathDescript": "Study different types of regulations and economic policy measures, and their impact on individuals, markets, and the economy. Students are prepared to use economic models, quantitative methods, and data to assess different types of regulations and policies, and their impact.",
+            "pathName": "Economics Of Policy & Regulations",
+            "priority1": [
+                4135,
+                4136
+            ],
+            "priority2": [
+                4145,
+                4147,
+                4153,
+                4174
+            ],
+            "priority3": [
+                4145,
+                4147,
+                4153,
+                4174
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 494
+    },
+    {
+        "fields": {
+            "pathDescript": "A pathway for those who are curious about what makes something fake or factual and how such concepts are evolving in contemporary political and popular culture. Students will learn how to think more precisely and analytically about the distinctions between fact, fiction, truth, and reality.",
+            "pathName": "Fact And Fiction",
+            "priority1": [
+                4105,
+                4209,
+                4079,
+                4232,
+                4233,
+                4234,
+                4235,
+                4236,
+                4237,
+                4238
+            ],
+            "priority2": [
+                4239,
+                4214,
+                4240,
+                4241,
+                4242,
+                4243,
+                4244,
+                4245,
+                4225,
+                4226,
+                4246,
+                4247,
+                4248,
+                4249,
+                4250,
+                4251,
+                4252
+            ],
+            "priority3": [
+                4239,
+                4214,
+                4240,
+                4241,
+                4242,
+                4243,
+                4244,
+                4245,
+                4225,
+                4226,
+                4246,
+                4247,
+                4248,
+                4249,
+                4250,
+                4251,
+                4252
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 501
+    },
+    {
+        "fields": {
+            "pathDescript": "Humans can do, and have done, some really stupid things: we are not as rational as we would like to think, and we are subject to scores of cognitive and social biases. That said, however, we also have the power to correct for these, and to do good and constructive work. Let's see how we can harness our cognitive and social powers for the good. How can critical thinking be used constructively? How can we learn from our past mistakes? How can social institutions and policies be set up to ensure that we will make wise decisions and create a world that lasts into the extended future?",
+            "pathName": "Extent And Limits Of Rationality",
+            "priority1": [
+                4064,
+                4135,
+                4220,
+                4221,
+                4222,
+                4223
+            ],
+            "priority2": [
+                4067,
+                4224,
+                4152,
+                4157,
+                4225,
+                4226,
+                4227,
+                4076,
+                4228,
+                4229,
+                4230,
+                4231
+            ],
+            "priority3": [
+                4067,
+                4224,
+                4152,
+                4157,
+                4225,
+                4226,
+                4227,
+                4076,
+                4228,
+                4229,
+                4230,
+                4231
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 500
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway explores the design, creation, and analysis of games.  Students completing this pathway will develop depth in creative and critical thinking, technological proficiency and multicultural awareness.",
+            "pathName": "Game Studies",
+            "priority1": [
+                4259
+            ],
+            "priority2": [
+                4260,
+                4261,
+                4262
+            ],
+            "priority3": [
+                4260,
+                4261,
+                4262
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 503
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway promotes the development of skills to help students effectively communicate both domestically, and internationally, as well as enhance appreciation for other cultures. Students who select this pathway must have all courses that are part of the pathway be in the same foreign language.",
+            "pathName": "Foreign Language",
+            "priority1": [
+                4253,
+                4254
+            ],
+            "priority2": [
+                4255,
+                4256
+            ],
+            "priority3": [
+                4101,
+                4102,
+                4103,
+                4257,
+                4258
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 502
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway enables students to cultivate an appreciation of how diverse identities are lived, experienced, and analyzed. Courses in this pathway center gender, dis/ability, race/ethnicity, and social class as ways of knowing and as analytic approaches for understanding distinctions that human societies make and unmake over time. Gender is used as an analytic tool for critical thinking about such topics as studies of sex differences and sexualities; race and gender in science, engineering, or gaming; or studies of the environment, war and peace, and other social impacts. Racial-ethnic formation is similarly used as an analytical tool for visualizing intersecting inequalities; history of science, medicine, arts, and technology.",
+            "pathName": "Gender, Race, Sexuality, Ethnicity, And Social Change",
+            "priority1": [
+                4208,
+                4079,
+                4232,
+                4263,
+                4264,
+                4265,
+                4266,
+                4111
+            ],
+            "priority2": [
+                4197,
+                4267,
+                4242,
+                4268,
+                4269,
+                4270,
+                4271,
+                4272,
+                4273
+            ],
+            "priority3": [
+                4197,
+                4267,
+                4242,
+                4268,
+                4269,
+                4270,
+                4271,
+                4272,
+                4273
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 504
+    },
+    {
+        "fields": {
+            "pathDescript": "Study Graphic Design through the integration of theory and practice, in print and digital media. Students are prepared to use creative and critical thinking to solve visual communication problems and reach target audiences with words, symbols and images.",
+            "pathName": "Graphic Design",
+            "priority1": [
+                4232,
+                4108,
+                4224,
+                4122,
+                4274,
+                4124,
+                4275,
+                4276,
+                4277,
+                4126,
+                4278,
+                4279,
+                4280
+            ],
+            "priority2": [
+                4232,
+                4108,
+                4224,
+                4122,
+                4274,
+                4124,
+                4275,
+                4276,
+                4277,
+                4126,
+                4278,
+                4279,
+                4280
+            ],
+            "priority3": [
+                4232,
+                4108,
+                4224,
+                4122,
+                4274,
+                4124,
+                4275,
+                4276,
+                4277,
+                4126,
+                4278,
+                4279,
+                4280
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 505
+    },
+    {
+        "fields": {
+            "pathDescript": "The pathway in History is designed for students interested in US and world history. Courses primarily focus on the social history and evolution of technology, scientific enterprise, medicine, and law.",
+            "pathName": "History",
+            "priority1": [
+                4190,
+                4281,
+                4282,
+                4283,
+                4284,
+                4266,
+                4237,
+                4212,
+                4213
+            ],
+            "priority2": [
+                4285
+            ],
+            "priority3": [
+                4286,
+                4287,
+                4288,
+                4289,
+                4290,
+                4247,
+                4248,
+                4203,
+                4204
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 506
+    },
+    {
+        "fields": {
+            "pathDescript": "Discover Cognitive Science: a young but fast-growing field focused on the study of mind from the perspectives of philosophy, psychology, neuroscience, linguistics, and artificial intelligence.",
+            "pathName": "Mind, Brain, And Intelligence",
+            "priority1": [
+                4067
+            ],
+            "priority2": [
+                4064,
+                4065,
+                4066,
+                4091,
+                4094,
+                4334,
+                4076,
+                4320,
+                4228,
+                4335
+            ],
+            "priority3": [
+                4064,
+                4065,
+                4066,
+                4091,
+                4094,
+                4334,
+                4076,
+                4320,
+                4228,
+                4335
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 514
+    },
+    {
+        "fields": {
+            "pathDescript": "This pathway examines different forms of expression and their cultural contexts in a variety of media, including film, television, photography, and new media. Its components will enhance creative and critical thinking, communication practices, and awareness of cultural and individual identities. The focus on cultural and media literacy will improve the career readiness and social awareness of those in any program at RPI.",
+            "pathName": "Media And Culture",
+            "priority1": [
+                4332,
+                4333,
+                4326,
+                4233,
+                4327,
+                4235,
+                4236,
+                4109,
+                4110,
+                4237,
+                4111,
+                4328,
+                4239,
+                4241,
+                4329,
+                4242,
+                4224,
+                4330,
+                4331,
+                4243,
+                4268
+            ],
+            "priority2": [
+                4326,
+                4233,
+                4327,
+                4235,
+                4236,
+                4109,
+                4110,
+                4237,
+                4111,
+                4328,
+                4239,
+                4241,
+                4329,
+                4242,
+                4224,
+                4330,
+                4331,
+                4243,
+                4268,
+                4332,
+                4333
+            ],
+            "priority3": [
+                4326,
+                4233,
+                4327,
+                4235,
+                4236,
+                4109,
+                4110,
+                4237,
+                4111,
+                4328,
+                4239,
+                4241,
+                4329,
+                4242,
+                4224,
+                4330,
+                4331,
+                4243,
+                4268,
+                4332,
+                4333
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 513
+    },
+    {
+        "fields": {
+            "pathDescript": "Study linguistics from various perspectives, from cognitive analysis of linguistic expressions to the use of language for communication and other social settings. You\u2019ll also learn how to effectively communicate and handle foreign languages.",
+            "pathName": "Linguistics",
+            "priority1": [
+                4303,
+                4307
+            ],
+            "priority2": [
+                4304,
+                4305,
+                4072,
+                4267,
+                4269,
+                4306
+            ],
+            "priority3": [
+                4304,
+                4305,
+                4072,
+                4267,
+                4269,
+                4306
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 509
+    },
+    {
+        "fields": {
+            "pathDescript": "We live in the age of information \u2026 and misinformation \u2026 of big data, data mining, and machine learning ... of new media presenting unparalleled means of communication ... of unseen and opaque algorithms driving our news feeds... and of rushing to judgment on viral videos.  We better all develop some 'information intelligence' and 'data dexterity'. Such dexterity and intelligence includes technical skills of quantitative data analysis and IT technology, but also includes critical thinking skills regarding how information is collected, judged, interpreted, and represented, and how big data and information is feeding our collective awareness driving our decisions and affecting the world around us.",
+            "pathName": "Living In A World Of Data",
+            "priority1": [
+                4064,
+                4208,
+                4209,
+                4135,
+                4291,
+                4292
+            ],
+            "priority2": [
+                4300,
+                4276,
+                4277,
+                4152,
+                4157,
+                4167,
+                4225,
+                4226,
+                4319,
+                4320,
+                4321,
+                4322
+            ],
+            "priority3": [
+                4300,
+                4276,
+                4277,
+                4152,
+                4157,
+                4167,
+                4225,
+                4226,
+                4319,
+                4320,
+                4321,
+                4322
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 511
+    },
+    {
+        "fields": {
+            "pathDescript": "The Interactive Media/Data Design pathway covers communication design theory and practice, interaction design theory and practice, and information design to prepare students for creating different forms of interactive, multimedia communication and data representation. Students use critical thinking, creative thinking, multimedia design, and data representation to develop effective forms of communication in diverse global contexts.",
+            "pathName": "Interactive Media/Data Design",
+            "priority1": [
+                4232,
+                4224,
+                4274,
+                4299,
+                4300,
+                4276,
+                4301,
+                4302,
+                4277,
+                4280
+            ],
+            "priority2": [
+                4232,
+                4224,
+                4274,
+                4299,
+                4300,
+                4276,
+                4301,
+                4302,
+                4277,
+                4280
+            ],
+            "priority3": [
+                4232,
+                4224,
+                4274,
+                4299,
+                4300,
+                4276,
+                4301,
+                4302,
+                4277,
+                4280
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 508
+    },
+    {
+        "fields": {
+            "pathDescript": "The pathway in Information Technology and Web Science (ITWS) is designed to introduce students to the social aspects and human interactions that technology provides in our lives and workplaces.  Students will gain knowledge of the social, legal, and ethical issues in employing technology around the world and will learn how to recognize and respond to human-centered deisgn issues to make technology more usable.",
+            "pathName": "Information Technology And Web Sciences",
+            "priority1": [
+                4291,
+                4292,
+                4293
+            ],
+            "priority2": [
+                4291,
+                4292,
+                4293
+            ],
+            "priority3": [
+                4084,
+                4067,
+                4224,
+                4274,
+                4135,
+                4294,
+                4295,
+                4296,
+                4213,
+                4297,
+                4298,
+                4230
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 507
+    },
+    {
+        "fields": {
+            "pathDescript": "Students gain historical and inter-cultural knowledge of music from the Western and various non-Western cultures.",
+            "pathName": "Music And Culture",
+            "priority1": [
+                4336,
+                4078,
+                4081
+            ],
+            "priority2": [],
+            "priority3": []
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 515
+    },
+    {
+        "fields": {
+            "pathDescript": "The Literature and Creative Writing Pathway offers discussion-oriented courses across a range of literary genres and themes, with a choice of emphasis on either literature, creative writing, or both. Students will learn to read and write literary art critically and creatively, with clarity and imagination, and with sensitivity to multi-cultural expressions of diversity.",
+            "pathName": "Literature And Creative Writing",
+            "priority1": [
+                4308,
+                4237,
+                4241,
+                4124,
+                4309,
+                4310,
+                4311,
+                4312,
+                4313,
+                4314,
+                4245,
+                4315,
+                4316,
+                4280,
+                4317,
+                4318,
+                4251,
+                4252,
+                4302
+            ],
+            "priority2": [
+                4311,
+                4312,
+                4313,
+                4314,
+                4245,
+                4315,
+                4316,
+                4280,
+                4317,
+                4318,
+                4251,
+                4252,
+                4302,
+                4308,
+                4237,
+                4241,
+                4124,
+                4309,
+                4310
+            ],
+            "priority3": [
+                4308,
+                4237,
+                4241,
+                4124,
+                4309,
+                4310,
+                4311,
+                4312,
+                4313,
+                4314,
+                4245,
+                4315,
+                4316,
+                4280,
+                4317,
+                4318,
+                4251,
+                4252,
+                4302
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 510
+    },
+    {
+        "fields": {
+            "pathDescript": "This Pathway is for students with an interest in symbolic logic, and the connections between formal logic and mathematics, computer science, Artificial Intelligence, and the human mind.",
+            "pathName": "Logical Thinking",
+            "priority1": [
+                4066,
+                4064,
+                4227,
+                4323,
+                4324,
+                4325,
+                4076,
+                4225,
+                4226
+            ],
+            "priority2": [
+                4066,
+                4064,
+                4227,
+                4323,
+                4324,
+                4325,
+                4076,
+                4225,
+                4226
+            ],
+            "priority3": [
+                4066,
+                4064,
+                4227,
+                4323,
+                4324,
+                4325,
+                4076,
+                4225,
+                4226
+            ]
+        },
+        "info": "03/05/2021 12:38:33",
+        "model": "database.pathway",
+        "pk": 512
     }
 ]
