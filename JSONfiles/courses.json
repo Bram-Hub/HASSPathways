@@ -13,7 +13,7 @@
             "spring": 1,
             "summer": 0
         },
-        "info": "03/05/2021 10:10:24",
+        "info": "03/05/2021 10:15:31",
         "model": "database.course",
         "pk": 4055
     },
@@ -31,7 +31,7 @@
             "spring": 0,
             "summer": 0
         },
-        "info": "03/05/2021 10:10:24",
+        "info": "03/05/2021 10:15:31",
         "model": "database.course",
         "pk": 4056
     },
@@ -49,7 +49,7 @@
             "spring": 0,
             "summer": 0
         },
-        "info": "03/05/2021 10:10:24",
+        "info": "03/05/2021 10:15:31",
         "model": "database.course",
         "pk": 4057
     },
@@ -67,7 +67,7 @@
             "spring": 1,
             "summer": 0
         },
-        "info": "03/05/2021 10:10:24",
+        "info": "03/05/2021 10:15:31",
         "model": "database.course",
         "pk": 4058
     },
@@ -85,7 +85,7 @@
             "spring": 0,
             "summer": 0
         },
-        "info": "03/05/2021 10:10:24",
+        "info": "03/05/2021 10:15:31",
         "model": "database.course",
         "pk": 4059
     }
