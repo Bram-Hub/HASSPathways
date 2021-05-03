@@ -77,7 +77,7 @@ for x in range(len(temp)):
             innerFields["priority1"].append(y[2])
     
     db_cursor = engine.cursor()
-    db_cursor.execute("SELECT * FROM database_pathway_priority1")
+    db_cursor.execute("SELECT * FROM database_pathway_priority2")
     priority2 = db_cursor.fetchall()
     for y in priority2:
         if y[1] == temp[x][0]:
