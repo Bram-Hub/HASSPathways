@@ -57,7 +57,7 @@ jobs:
       - name: force deploy
         uses: wei/curl@v1
         with:
-          args: -X POST -d {} https://api.netlify.com/build_hooks/608ee168ccf278e26abc4452
+          args: -X POST -d {} https://api.netlify.com/build_hooks/6091a11bdb445b0d7b1f6a76
       
       # Runs a single command using the runners shell
       - name: Run a one-line script
