@@ -11,7 +11,7 @@
       <v-list-group color="#c65353" v-for="(course, i) in findAllCourses(path)" :key="i">
         <!-- MAKES THE COURSE EXPANDABLE -->
         <template v-slot:activator>
-          <v-list-item-content>
+          <v-list-item-content @click="selectCourse(course, path)">
             <v-list-item-title>{{ course.fields.prefix +" "+course.fields.ID+" – "+course.fields.name +" "}}
             <v-chip v-if="course.fields.major_restrictive" medium color="red" class="mr-2" text-color="white">Major Restricted</v-chip>
             <v-chip v-if="course.fields.CI" style="float:right"  medium color="black" class="mr-2" text-color="white">Communication Intensive</v-chip>
@@ -31,13 +31,6 @@
             <v-card-text>{{course.fields.description}}</v-card-text>
 
             <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn depressed @click="selectCourse(course)" class="mr-2 mb-2 text-capitalize">
-                <span>
-                  <i style="color: #c65353" class="fas fa-plus"></i>
-                  Add Course
-                </span>
-              </v-btn>
             </v-card-actions>
           </v-card>
         </v-list-item>
@@ -46,7 +39,7 @@
     </v-list>
 
   </div>
-  
+
 </template>
 
 <script>
