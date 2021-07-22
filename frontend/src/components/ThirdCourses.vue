@@ -22,25 +22,21 @@
             <v-chip v-if="course.fields.fall" style="float:right" medium color="#ff8247" class="mr-2" text-color="black">Fall</v-chip>
             <v-chip v-if="course.fields.spring" style="float:right" medium color="#54ff7c" class="mr-2" text-color="black">Spring</v-chip>
             <v-chip v-if="course.fields.summer" style="float:right" medium color="#ffeb54" class="mr-2" text-color="black">Summer</v-chip>
+            <v-btn depressed @click="selectCourse(course,path)" class="ml-2 pa-2 text-capitalize">
+                <span>
+                  <i style="color: #c65353" class="fas fa-plus"></i>
+                  Add Course
+                </span>
+              </v-btn>
             </v-list-item-title>
           </v-list-item-content>
         </template>
 
         <v-list-item>
 
-          <!-- COURSE DESCRIPTION AND BUTTON TO SELECT -->
+          <!-- COURSE DESCRIPTION -->
           <v-card flat class="mt-2 mb-2" color="#dcdcdc" width="100%">
             <v-card-text>{{course.fields.description}}</v-card-text>
-
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn depressed @click="selectCourse(course)" class="mr-2 mb-2 text-capitalize">
-                <span>
-                  <i style="color: #c65353" class="fas fa-plus"></i>
-                  Add Course
-                </span>
-              </v-btn>
-            </v-card-actions>
           </v-card>
 
         </v-list-item>
