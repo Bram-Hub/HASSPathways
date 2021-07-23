@@ -257,41 +257,5 @@ export default {
 </script>
 
 <style scoped>
-
-#buttonAndNav_holder {
-  overflow: hidden;
-}
-
-#clearButtons {
-  float: left;
-}
-
-#pathwaysNavigation {
-  float: right;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-.rounded-left {
-  border-radius: 5px 0px 0px 5px;
-}
-
-.rounded-right {
-  border-radius: 0px 5px 5px 0px;
-}
-
-.element {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.v-text-field {
-    font-size: 5em;
-  }
-
+  @import "MyPathways.scss";
 </style>

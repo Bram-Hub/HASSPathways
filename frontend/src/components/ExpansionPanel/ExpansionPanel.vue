@@ -64,12 +64,12 @@
 
 <script>
 
-import ProgressBar from './ProgressBar.vue'
-import FirstCourses from './FirstCourses'
-import SecondCourses from './SecondCourses'
-import ThirdCourses from './ThirdCourses'
-import pJson from '../../../JSONfiles/pathways.json'
-import cJson from '../../../JSONfiles/courses.json'
+import ProgressBar from '../ProgressBar/ProgressBar.vue'
+import FirstCourses from '../FirstCourses'
+import SecondCourses from '../SecondCourses'
+import ThirdCourses from '../ThirdCourses'
+import pJson from '../../../../JSONfiles/pathways.json'
+import cJson from '../../../../JSONfiles/courses.json'
 import { mapGetters, mapMutations } from 'vuex'
 
 export default {
@@ -217,28 +217,5 @@ export default {
 </script>
 
 <style scoped>
-
-  #button1 {
-    margin-bottom: 36px;
-    background-color: rgba(180, 67, 52, 0.87);
-  }
-
-  .expansion-panel {
-    position: relative;
-    top: 72px;
-    margin-bottom: 36px;
-  }
-  
-  #progressBarAndSave {
-    width: 100%;
-  }
-
-  #progressBar {
-    width: 90%;
-  }
-
-  #expansion-header {
-    color: white;
-  }
-
+  @import "ExpansionPanel.scss";
 </style>

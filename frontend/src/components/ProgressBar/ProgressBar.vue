@@ -175,23 +175,5 @@ export default {
 </script>
 
 <style>
-
-  .theme--light.v-stepper .v-stepper__step--editable:hover {
-    background: rgba(198, 83, 83, 0.2);
-  }
-
-  .button {
-    margin: auto;
-  }
-
-  .progress {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-  }
-
-  #progress {
-    border-radius: 0;
-  }
-
+  @import "ProgressBar.scss";
 </style>
