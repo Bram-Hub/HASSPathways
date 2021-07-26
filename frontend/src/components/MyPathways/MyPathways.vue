@@ -1,83 +1,205 @@
 <template>
-
   <div>
-
-    <v-container fluid class="mt-4" v-if="getOptions.length > 0">
+    <v-container
+      v-if="getOptions.length > 0"
+      fluid
+      class="mt-4"
+    >
       <div id="buttonAndNav_holder">
         <div id="clearButtons">
-          <v-btn @click="removePathway(i)" color="#c65353" depressed class="white--text text-capitalize mr-2">Delete This Pathway</v-btn>
-          <v-btn @click="clearActivity()" color="#c65353" depressed class="white--text text-capitalize mr-2">Clear All Pathways</v-btn>
-          <v-btn @click="makeCoursesEditable()" color="#c65353" depressed class="white--text text-capitalize">Edit Pathway</v-btn>
+          <v-btn
+            color="#c65353"
+            depressed
+            class="white--text text-capitalize mr-2"
+            @click="removePathway(i)"
+          >
+            Delete This Pathway
+          </v-btn>
+          <v-btn
+            color="#c65353"
+            depressed
+            class="white--text text-capitalize mr-2"
+            @click="clearActivity()"
+          >
+            Clear All Pathways
+          </v-btn>
+          <v-btn
+            color="#c65353"
+            depressed
+            class="white--text text-capitalize"
+            @click="makeCoursesEditable()"
+          >
+            Edit Pathway
+          </v-btn>
         </div>
-        <div id="pathwaysNavigation" class="mr-4">
+        <div
+          id="pathwaysNavigation"
+          class="mr-4"
+        >
           <div v-if="getOptions.length > 0">
-            <i @click="goToLastPathway()" class="fa fa-caret-left pointer"></i>
+            <i
+              class="fa fa-caret-left pointer"
+              @click="goToLastPathway()"
+            />
             <span class="mr-2 ml-2">{{ i + 1 }} / {{ getOptions.length }}</span>
-            <i @click="goToNextPathway()" class="fa fa-caret-right pointer"></i>
+            <i
+              class="fa fa-caret-right pointer"
+              @click="goToNextPathway()"
+            />
           </div>
         </div>
       </div>
     </v-container>
     
-    <v-container fluid v-if="getOptions.length == 0"> 
+    <v-container
+      v-if="getOptions.length == 0"
+      fluid
+    > 
       <!-- If no Pathways have been specified yet -->
       <!-- If this isnt coded, then the 'My Pathways' page will show a loading animation forever if no pathways stored -->
 
       <v-container fill-height>
-          <v-row justify="center" align="center" class= "pt-10">
-              <v-col sm="4" class= "font-weight-regular pt-10 pa-8">
-                  <p class= "headline" > This place seems pretty lonely. </p>
+        <v-row
+          justify="center"
+          align="center"
+          class="pt-10"
+        >
+          <v-col
+            sm="4"
+            class="font-weight-regular pt-10 pa-8"
+          >
+            <p class="headline">
+              This place seems pretty lonely.
+            </p>
 
-                  <span class = "headline"> You can add Pathways from the </span>
-                  <span class= "headline font-weight-black">Add Pathways </span>
-                  <span class= "headline">section.</span>
-              </v-col>
-          </v-row>
+            <span class="headline"> You can add Pathways from the </span>
+            <span class="headline font-weight-black">Add Pathways </span>
+            <span class="headline">section.</span>
+          </v-col>
+        </v-row>
       </v-container>
     </v-container>
 
 
-    <v-container fluid v-if="getOptions.length > 0">  <!-- If at least one Pathway has been Created -->
+    <v-container
+      v-if="getOptions.length > 0"
+      fluid
+    >
+      <!-- If at least one Pathway has been Created -->
 
-        <!-- Pathway Name Indicator -->
-        <div>
-          <span class= "font-weight-bold"> 
-            Pathway
-          </span>
-          <p class="headline font-weight-black"> 
-            {{ currentCourse.pathway }}
-          </p>
-        </div>
+      <!-- Pathway Name Indicator -->
+      <div>
+        <span class="font-weight-bold"> 
+          Pathway
+        </span>
+        <p class="headline font-weight-black"> 
+          {{ currentCourse.pathway }}
+        </p>
+      </div>
 
       <!-- Expansion Pannel Setup Housing All 3 Expansion Panels -->
       <v-card>
-        <v-expansion-panels flat outlined dark tile accordion hover multiple class="expansion-panel overflow-y-auto">
-
+        <v-expansion-panels
+          flat
+          outlined
+          dark
+          tile
+          accordion
+          hover
+          multiple
+          class="expansion-panel overflow-y-auto"
+        >
           <!-- COURSE 1 EXPANSION PANEL -->
           <v-expansion-panel>  
-            <v-expansion-panel-header color="#c65353" id="expansion-header" class= "font-weight-black pa-8">
-              {{ currentCourse.first_course.fields.prefix +" "+currentCourse.first_course.fields.ID+" – "+currentCourse.first_course.fields.name   }}
+            <v-expansion-panel-header
+              id="expansion-header"
+              color="#c65353"
+              class="font-weight-black pa-8"
+            >
+              {{ currentCourse.first_course.fields.prefix +" "+currentCourse.first_course.fields.ID+" – "+currentCourse.first_course.fields.name }}
 
-              <template v-slot:actions>
-                <v-icon color="white">$expand</v-icon>
+              <template #actions>
+                <v-icon color="white">
+                  $expand
+                </v-icon>
               </template>
             </v-expansion-panel-header>
 
-            <v-expansion-panel-content color= "white">
-              <v-card-subtitle class= "pb-0 pl-1">
-                <v-chip v-if="currentCourse.first_course.fields.major_restrictive" medium color="red" class="mr-2 mt-2" text-color="white">Major Restricted</v-chip>
-                <v-chip v-if="currentCourse.first_course.fields.CI" medium color="black" class="mr-2 mt-2" text-color="white">Communication Intensive</v-chip>
-                <v-chip v-if="currentCourse.first_course.fields.HI" medium color="#87AEE8" class="mr-2 mt-2" text-color="black">HASS Inquiry</v-chip>
-                <v-chip v-if="currentCourse.first_course.fields.DI" medium color="#ff63bc" class="mr-2 mt-2" text-color="black">Data Intensive</v-chip>
-                <v-chip v-if="currentCourse.first_course.fields.fall" medium color="#ff8247" class="mr-2 mt-2" text-color="black">Fall</v-chip>
-                <v-chip v-if="currentCourse.first_course.fields.spring" medium color="#54ff7c" class="mr-2 mt-2" text-color="black">Spring</v-chip>
-                <v-chip v-if="currentCourse.first_course.fields.summer" medium color="#ffeb54" class="mr-2 mt-2" text-color="black">Summer</v-chip>
+            <v-expansion-panel-content color="white">
+              <v-card-subtitle class="pb-0 pl-1">
+                <v-chip
+                  v-if="currentCourse.first_course.fields.major_restrictive"
+                  medium
+                  color="red"
+                  class="mr-2 mt-2"
+                  text-color="white"
+                >
+                  Major Restricted
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.first_course.fields.CI"
+                  medium
+                  color="black"
+                  class="mr-2 mt-2"
+                  text-color="white"
+                >
+                  Communication Intensive
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.first_course.fields.HI"
+                  medium
+                  color="#87AEE8"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  HASS Inquiry
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.first_course.fields.DI"
+                  medium
+                  color="#ff63bc"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  Data Intensive
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.first_course.fields.fall"
+                  medium
+                  color="#ff8247"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  Fall
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.first_course.fields.spring"
+                  medium
+                  color="#54ff7c"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  Spring
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.first_course.fields.summer"
+                  medium
+                  color="#ffeb54"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  Summer
+                </v-chip>
               </v-card-subtitle>
 
               <!-- COURSE 1 DESCRIPTION -->
-              <v-card flat color="#c65353" class= "mt-1" >
-                <v-card-text class= "mt-6 white--text font-weight-black">
-                  <p> {{currentCourse.first_course.fields.description }} </p>
+              <v-card
+                flat
+                color="#c65353"
+                class="mt-1"
+              >
+                <v-card-text class="mt-6 white--text font-weight-black">
+                  <p> {{ currentCourse.first_course.fields.description }} </p>
                 </v-card-text>
               </v-card>
             </v-expansion-panel-content>
@@ -85,29 +207,95 @@
 
           <!-- COURSE 2 EXPANSION PANEL -->
           <v-expansion-panel class="mt-3">  
-            <v-expansion-panel-header color="#c65353" id="expansion-header"  class= "font-weight-black pa-8">
-            {{ currentCourse.second_course.fields.prefix +" "+currentCourse.second_course.fields.ID+" – "+currentCourse.second_course.fields.name   }}
+            <v-expansion-panel-header
+              id="expansion-header"
+              color="#c65353"
+              class="font-weight-black pa-8"
+            >
+              {{ currentCourse.second_course.fields.prefix +" "+currentCourse.second_course.fields.ID+" – "+currentCourse.second_course.fields.name }}
 
-              <template v-slot:actions>
-                <v-icon color="white">$expand</v-icon>
+              <template #actions>
+                <v-icon color="white">
+                  $expand
+                </v-icon>
               </template>
             </v-expansion-panel-header>
 
-            <v-expansion-panel-content color= "white">
-              <v-card-subtitle class= "pb-0 pl-1">
-                <v-chip v-if="currentCourse.second_course.fields.major_restrictive" medium color="red" class="mr-2 mt-2" text-color="white">Major Restricted</v-chip>
-                <v-chip v-if="currentCourse.second_course.fields.CI" medium color="black" class="mr-2 mt-2" text-color="white">Communication Intensive</v-chip>
-                <v-chip v-if="currentCourse.second_course.fields.HI" medium color="#87AEE8" class="mr-2 mt-2" text-color="black">HASS Inquiry</v-chip>
-                <v-chip v-if="currentCourse.second_course.fields.DI" medium color="#ff63bc" class="mr-2 mt-2" text-color="black">Data Intensive</v-chip>
-                <v-chip v-if="currentCourse.second_course.fields.fall" medium color="#ff8247" class="mr-2 mt-2" text-color="black">Fall</v-chip>
-                <v-chip v-if="currentCourse.second_course.fields.spring" medium color="#54ff7c" class="mr-2 mt-2" text-color="black">Spring</v-chip>
-                <v-chip v-if="currentCourse.second_course.fields.summer" medium color="#ffeb54" class="mr-2 mt-2" text-color="black">Summer</v-chip>
+            <v-expansion-panel-content color="white">
+              <v-card-subtitle class="pb-0 pl-1">
+                <v-chip
+                  v-if="currentCourse.second_course.fields.major_restrictive"
+                  medium
+                  color="red"
+                  class="mr-2 mt-2"
+                  text-color="white"
+                >
+                  Major Restricted
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.second_course.fields.CI"
+                  medium
+                  color="black"
+                  class="mr-2 mt-2"
+                  text-color="white"
+                >
+                  Communication Intensive
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.second_course.fields.HI"
+                  medium
+                  color="#87AEE8"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  HASS Inquiry
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.second_course.fields.DI"
+                  medium
+                  color="#ff63bc"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  Data Intensive
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.second_course.fields.fall"
+                  medium
+                  color="#ff8247"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  Fall
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.second_course.fields.spring"
+                  medium
+                  color="#54ff7c"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  Spring
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.second_course.fields.summer"
+                  medium
+                  color="#ffeb54"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  Summer
+                </v-chip>
               </v-card-subtitle>
 
               <!-- COURSE 2 DESCRIPTION -->
-              <v-card flat color="#c65353" class= "mt-1">
+              <v-card
+                flat
+                color="#c65353"
+                class="mt-1"
+              >
                 <v-card-text class="mt-6 white--text font-weight-black">
-                  <p> {{currentCourse.second_course.fields.description}} </p>
+                  <p> {{ currentCourse.second_course.fields.description }} </p>
                 </v-card-text>
               </v-card>
             </v-expansion-panel-content>
@@ -115,30 +303,95 @@
           
           <!-- COURSE 3 EXPANSION PANEL -->
           <v-expansion-panel class="mt-3">  
-            <v-expansion-panel-header color="#c65353" id="expansion-header" class= "font-weight-black pa-8">
-              {{ currentCourse.third_course.fields.prefix +" "+currentCourse.third_course.fields.ID+" – "+currentCourse.third_course.fields.name   }}
+            <v-expansion-panel-header
+              id="expansion-header"
+              color="#c65353"
+              class="font-weight-black pa-8"
+            >
+              {{ currentCourse.third_course.fields.prefix +" "+currentCourse.third_course.fields.ID+" – "+currentCourse.third_course.fields.name }}
 
-              <template v-slot:actions>
-                <v-icon color="white">$expand</v-icon>
+              <template #actions>
+                <v-icon color="white">
+                  $expand
+                </v-icon>
               </template>
             </v-expansion-panel-header>
 
-            <v-expansion-panel-content color= "white">
-              <v-card-subtitle class= "pb-0 pl-1">
-                <v-chip v-if="currentCourse.third_course.fields.major_restrictive" medium color="red" class="mr-2 mt-2" text-color="white">Major Restricted</v-chip>
-                <v-chip v-if="currentCourse.third_course.fields.CI" medium color="black" class="mr-2 mt-2" text-color="white">Communication Intensive</v-chip>
-                <v-chip v-if="currentCourse.third_course.fields.HI" medium color="#87AEE8" class="mr-2 mt-2" text-color="black">HASS Inquiry</v-chip>
-                <v-chip v-if="currentCourse.third_course.fields.DI" medium color="#ff63bc" class="mr-2 mt-2" text-color="black">Data Intensive</v-chip>
-                <v-chip v-if="currentCourse.third_course.fields.fall" medium color="#ff8247" class="mr-2 mt-2" text-color="black">Fall</v-chip>
-                <v-chip v-if="currentCourse.third_course.fields.spring" medium color="#54ff7c" class="mr-2 mt-2" text-color="black">Spring</v-chip>
-                <v-chip v-if="currentCourse.third_course.fields.summer" medium color="#ffeb54" class="mr-2 mt-2" text-color="black">Summer</v-chip>
-                
+            <v-expansion-panel-content color="white">
+              <v-card-subtitle class="pb-0 pl-1">
+                <v-chip
+                  v-if="currentCourse.third_course.fields.major_restrictive"
+                  medium
+                  color="red"
+                  class="mr-2 mt-2"
+                  text-color="white"
+                >
+                  Major Restricted
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.third_course.fields.CI"
+                  medium
+                  color="black"
+                  class="mr-2 mt-2"
+                  text-color="white"
+                >
+                  Communication Intensive
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.third_course.fields.HI"
+                  medium
+                  color="#87AEE8"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  HASS Inquiry
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.third_course.fields.DI"
+                  medium
+                  color="#ff63bc"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  Data Intensive
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.third_course.fields.fall"
+                  medium
+                  color="#ff8247"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  Fall
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.third_course.fields.spring"
+                  medium
+                  color="#54ff7c"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  Spring
+                </v-chip>
+                <v-chip
+                  v-if="currentCourse.third_course.fields.summer"
+                  medium
+                  color="#ffeb54"
+                  class="mr-2 mt-2"
+                  text-color="black"
+                >
+                  Summer
+                </v-chip>
               </v-card-subtitle>
 
               <!-- COURSE 3 DESCRIPTION -->
-              <v-card flat color="#c65353" class= "mt-1">
+              <v-card
+                flat
+                color="#c65353"
+                class="mt-1"
+              >
                 <v-card-text class="mt-6 white--text font-weight-black">
-                  <p> {{currentCourse.third_course.fields.description}}</p>
+                  <p> {{ currentCourse.third_course.fields.description }}</p>
                 </v-card-text>
               </v-card>
             </v-expansion-panel-content>
@@ -146,9 +399,7 @@
         </v-expansion-panels>
       </v-card>
     </v-container>
-
   </div>
-  
 </template>
 
 <script>

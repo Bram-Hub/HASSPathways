@@ -2,62 +2,136 @@
 
 <template>
   <div>
-    <ProgressBar/>
-        <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="expansion-panel pt-15" v-if= "this.$store.editingCourses == true">
-        <v-expansion-panel @click="selectPathway(path)" v-for="(path, i) in filteredPathways" :key="i">
-          
-          <v-expansion-panel-header color="#c65353" id="expansion-header">
-            {{ path.pathName }}
-            <template v-slot:actions>
-              <v-icon color="white">$expand</v-icon>
-            </template>
-          </v-expansion-panel-header>
-
-          <v-expansion-panel-content>
-            <v-card flat color="#dcdcdc">
-              <v-card-text class="mt-4">{{ path.pathDescript }}</v-card-text>
-            </v-card>
-
-            <FirstCourses @nextBucket="moveToNextBucket" v-if="courseNumber=='first'" :path="path"/>
-            <SecondCourses @nextBucket="moveToNextBucket" v-else-if="courseNumber=='second'" :path="path"/>
-            <ThirdCourses v-else-if="courseNumber=='third'" :path="path"/>
-          </v-expansion-panel-content>
-          <v-divider color="white"></v-divider>
-
-        </v-expansion-panel>
-        
-      </v-expansion-panels>
-
-    <v-expansion-panels v-model="panel" flat outlined tile accordion hover multiple class="expansion-panel overflow-y-auto" v-if= "this.$store.editingCourses != true">
-      <v-expansion-panel @click="selectPathway(path)" v-for="(path, i) in filteredPathways" :key="i">
-        
-        <v-expansion-panel-header color="#c65353" id="expansion-header">
+    <ProgressBar />
+    <v-expansion-panels
+      v-if="this.$store.editingCourses == true"
+      v-model="panel"
+      flat
+      outlined
+      tile
+      accordion
+      hover
+      multiple
+      class="expansion-panel pt-15"
+    >
+      <v-expansion-panel
+        v-for="(path, i) in filteredPathways"
+        :key="i"
+        @click="selectPathway(path)"
+      >
+        <v-expansion-panel-header
+          id="expansion-header"
+          color="#c65353"
+        >
           {{ path.pathName }}
-          <template v-slot:actions>
-            <v-icon color="white">$expand</v-icon>
+          <template #actions>
+            <v-icon color="white">
+              $expand
+            </v-icon>
           </template>
         </v-expansion-panel-header>
 
         <v-expansion-panel-content>
-          <v-card flat color="#dcdcdc">
-            <v-card-text class="mt-4">{{ path.pathDescript }}</v-card-text>
+          <v-card
+            flat
+            color="#dcdcdc"
+          >
+            <v-card-text class="mt-4">
+              {{ path.pathDescript }}
+            </v-card-text>
           </v-card>
 
-          <FirstCourses @nextBucket="moveToNextBucket" v-if="courseNumber=='first'" :path="path"/>
-          <SecondCourses @nextBucket="moveToNextBucket" v-else-if="courseNumber=='second'" :path="path"/>
-          <ThirdCourses v-else-if="courseNumber=='third'" :path="path"/>
+          <FirstCourses
+            v-if="courseNumber=='first'"
+            :path="path"
+            @nextBucket="moveToNextBucket"
+          />
+          <SecondCourses
+            v-else-if="courseNumber=='second'"
+            :path="path"
+            @nextBucket="moveToNextBucket"
+          />
+          <ThirdCourses
+            v-else-if="courseNumber=='third'"
+            :path="path"
+          />
         </v-expansion-panel-content>
-        <v-divider color="white"></v-divider>
-
+        <v-divider color="white" />
       </v-expansion-panel>
-      
     </v-expansion-panels>
-  <div>
-    <v-btn large fixed bottom right fab id = "button1" v-if="courseNumber=='third' || this.$store.editingCourses == true" @click="savePathway()" class="stickyButton">
-      <v-icon style="color: white">
+
+    <v-expansion-panels
+      v-if="this.$store.editingCourses != true"
+      v-model="panel"
+      flat
+      outlined
+      tile
+      accordion
+      hover
+      multiple
+      class="expansion-panel overflow-y-auto"
+    >
+      <v-expansion-panel
+        v-for="(path, i) in filteredPathways"
+        :key="i"
+        @click="selectPathway(path)"
+      >
+        <v-expansion-panel-header
+          id="expansion-header"
+          color="#c65353"
+        >
+          {{ path.pathName }}
+          <template #actions>
+            <v-icon color="white">
+              $expand
+            </v-icon>
+          </template>
+        </v-expansion-panel-header>
+
+        <v-expansion-panel-content>
+          <v-card
+            flat
+            color="#dcdcdc"
+          >
+            <v-card-text class="mt-4">
+              {{ path.pathDescript }}
+            </v-card-text>
+          </v-card>
+
+          <FirstCourses
+            v-if="courseNumber=='first'"
+            :path="path"
+            @nextBucket="moveToNextBucket"
+          />
+          <SecondCourses
+            v-else-if="courseNumber=='second'"
+            :path="path"
+            @nextBucket="moveToNextBucket"
+          />
+          <ThirdCourses
+            v-else-if="courseNumber=='third'"
+            :path="path"
+          />
+        </v-expansion-panel-content>
+        <v-divider color="white" />
+      </v-expansion-panel>
+    </v-expansion-panels>
+    <div>
+      <v-btn
+        v-if="courseNumber=='third' || this.$store.editingCourses == true"
+        id="button1"
+        large
+        fixed
+        bottom
+        right
+        fab
+        class="stickyButton"
+@click="savePathway()"
+      >
+        <v-icon style="color: white">
           mdi-content-save
-      </v-icon>
-    </v-btn>
+        </v-icon>
+      </v-btn>
     </div>
   </div>
 </template>
