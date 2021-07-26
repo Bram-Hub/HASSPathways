@@ -122,45 +122,6 @@ export default {
       current: 1
     }
   },
-  methods: {
-    ...mapMutations(['setSelectedCourse1', 'setSelectedCourse2', 'setSelectedCourse3', 'incrementCount', 'goToCourse']),
-    clearProgress() {
-      console.log("clear progress")
-      this.setSelectedCourse1(null)
-      this.setSelectedCourse2(null)
-      this.setSelectedCourse3(null)
-      // this.incrementCount()
-      this.$root.$emit('changeWhichCourse', "first")
-      this.$root.$emit('changeCurrent', 1)
-      this.$root.$emit('makeSecondCourseEditable', false)
-      this.$root.$emit('makeThirdCourseEditable', false)
-    },
-    goToCourse(num) {
-      if (num == 1) {
-        this.courseNumber = "first"
-        this.$root.$emit('changeWhichCourse', "first")
-        if (this.firstCourseEditable)
-          this.$emit('nextBucket', 1)
-        this.current = 1
-      } else if (num == 2) {
-        if (this.firstCourse != null) {
-          this.courseNumber = "second"
-          this.$root.$emit('changeWhichCourse', "second")
-          if (this.secondCourseEditable)
-            this.$emit('nextBucket', 2)
-          this.current = 2
-        }
-      } else if (num == 3) {
-        if (this.secondCourse != null) {
-          this.courseNumber = "third"
-          this.$root.$emit('changeWhichCourse', "third")
-          if (this.thirdCourseEditable)
-            this.$emit('nextBucket', 3)
-          this.current = 3
-        }
-      }
-    }
-  },
   // we use a computed property to automatically update the 
   // number of steps shown as complete on the progressbar based on the 
   // current application state
@@ -226,6 +187,45 @@ export default {
     this.secondCourseEditable = this.secondEditable,
     this.thirdCourseEditable = this.thirdEditable,
     this.current = this.activeStep
+  },
+  methods: {
+    ...mapMutations(['setSelectedCourse1', 'setSelectedCourse2', 'setSelectedCourse3', 'incrementCount', 'goToCourse']),
+    clearProgress() {
+      console.log("clear progress")
+      this.setSelectedCourse1(null)
+      this.setSelectedCourse2(null)
+      this.setSelectedCourse3(null)
+      // this.incrementCount()
+      this.$root.$emit('changeWhichCourse', "first")
+      this.$root.$emit('changeCurrent', 1)
+      this.$root.$emit('makeSecondCourseEditable', false)
+      this.$root.$emit('makeThirdCourseEditable', false)
+    },
+    goToCourse(num) {
+      if (num === 1) {
+        this.courseNumber = "first"
+        this.$root.$emit('changeWhichCourse', "first")
+        if (this.firstCourseEditable)
+          this.$emit('nextBucket', 1)
+        this.current = 1
+      } else if (num === 2) {
+        if (this.firstCourse != null) {
+          this.courseNumber = "second"
+          this.$root.$emit('changeWhichCourse', "second")
+          if (this.secondCourseEditable)
+            this.$emit('nextBucket', 2)
+          this.current = 2
+        }
+      } else if (num === 3) {
+        if (this.secondCourse != null) {
+          this.courseNumber = "third"
+          this.$root.$emit('changeWhichCourse', "third")
+          if (this.thirdCourseEditable)
+            this.$emit('nextBucket', 3)
+          this.current = 3
+        }
+      }
+    }
   }
 }
 

@@ -128,7 +128,12 @@ import { mapGetters, mapMutations } from 'vuex'
 import cJson from '../../../JSONfiles/courses.json'
 
 export default {
-  props: ['path'],
+  props: {
+    path: {
+      default : "",
+      type : String
+    },
+  },
   data() {
     return {
       allCourses: cJson,

@@ -126,7 +126,7 @@
         right
         fab
         class="stickyButton"
-@click="savePathway()"
+        @click="savePathway()"
       >
         <v-icon style="color: white">
           mdi-content-save
@@ -163,16 +163,60 @@ export default {
       panel: []
     }
   },
+  computed: {
+    ...mapGetters(['pathway', 'firstCourse', 'secondCourse', 'thirdCourse']),
+    filteredPathways() {
+      var pathwayObj = this.pathways
+      //var allCourses = this.coursesJson
+      var result = []
+      //Loop through pathway objects
+      for (var modelKey in pathwayObj) {
+        if (this.courseNumber != "first"){
+          if (pathwayObj[modelKey].fields.pathName == this.$store.getters.pathway){
+            result[0] = pathwayObj[modelKey].fields
+          }
+        }else{
+          var model = pathwayObj[modelKey].fields
+          result[modelKey] = model
+        }
+      }
+    return result
+    },
+    bucketNumber() {
+      if (this.$store.getters.firstCourse != null) {
+        if (this.$store.getters.secondCourse != null) {
+          if (this.$store.getters.thirdCourse != null) {
+            return 'third'
+          }
+          return 'third'
+        }
+        return 'second'
+      }
+      return 'first'
+    }
+  },
+  mounted() {
+    this.$root.$on('changeWhichCourse', (course) => {
+      this.courseNumber = course
+    }),
+    this.$root.$on('changedFilter', (input) => {
+      this.filter = input
+    }),
+    this.$root.$on('closePanels', () => {
+      this.panel = []
+    }),
+    this.courseNumber = this.bucketNumber;
+  },
   methods: {
     ...mapGetters(['course1',`course2`,`course3`]),
     ...mapMutations(['setSelectedPathway','saveButton', 'removePath']),
     pathwayExist(courseCombo){
       for (var i = 0; i < this.$store.getters.getOptions.length; i++) {
         if (this.$store.getters.getOptions[i][1] == courseCombo[0].fields.name &&
-          this.$store.getters.getOptions[i][2] == courseCombo[1].fields.name &&
-          this.$store.getters.getOptions[i][3] == courseCombo[2].fields.name) {
-            console.log("exists")
-            return true
+            this.$store.getters.getOptions[i][2] == courseCombo[1].fields.name &&
+            this.$store.getters.getOptions[i][3] == courseCombo[2].fields.name) {
+          console.log("exists")
+          return true
         }
       }
       console.log("does not exist")
@@ -228,7 +272,7 @@ export default {
       this.$root.$emit(`closePanels`)
     },
     selectPathway(path) {
-      
+
       this.setSelectedPathway(path.pathName)
       console.log(this.$store.getters.pathway)
     },
@@ -241,50 +285,6 @@ export default {
       } else if (this.courseNumber == "third") {
         this.$root.$emit('changeWhichCourse', "third")
       }
-    }
-  },
-  mounted() {
-    this.$root.$on('changeWhichCourse', (course) => {
-      this.courseNumber = course
-    }),
-    this.$root.$on('changedFilter', (input) => {
-      this.filter = input
-    }),
-    this.$root.$on('closePanels', () => {
-      this.panel = []
-    }),
-    this.courseNumber = this.bucketNumber;
-  },
-  computed: {
-    ...mapGetters(['pathway', 'firstCourse', 'secondCourse', 'thirdCourse']),
-    filteredPathways() {
-      var pathwayObj = this.pathways
-      //var allCourses = this.coursesJson
-      var result = []
-      //Loop through pathway objects
-      for (var modelKey in pathwayObj) {
-        if (this.courseNumber != "first"){
-          if (pathwayObj[modelKey].fields.pathName == this.$store.getters.pathway){
-            result[0] = pathwayObj[modelKey].fields
-          }
-        }else{
-          var model = pathwayObj[modelKey].fields
-          result[modelKey] = model 
-        }
-      }
-    return result
-    },
-    bucketNumber() {
-      if (this.$store.getters.firstCourse != null) {
-        if (this.$store.getters.secondCourse != null) {
-          if (this.$store.getters.thirdCourse != null) {
-            return 'third'
-          }
-          return 'third'
-        }
-        return 'second'
-      }
-      return 'first'
     }
   }
 }

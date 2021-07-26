@@ -407,11 +407,52 @@
 import { mapGetters, mapMutations } from 'vuex'
 
 export default {
-  props: ['path'],
+  props: {
+    path: {
+      default : "",
+      type : String
+    },
+  },
   data() {
     return {
       specifiedCourse: "None",
       i: 0
+    }
+  },
+  computed: {
+    ...mapGetters(['getOptions', 'getOptionsLength', 'pathway']),
+    optionsLength() {
+      return this.$store.getters.getOptionsLength;
+    },
+    storedCoursesAppender() {
+      var storedCourses = []
+
+      // if no options (no activity)
+      console.log("options " + this.getOptions.length)
+      if (this.$store.getters.getOptions.length === 0) return storedCourses;
+
+      var array_length, innerLoop;
+      for (array_length = 0; array_length < this.$store.getters.getOptions.length; array_length++) {
+        var firstCourse, secondCourse, thirdCourse;
+        for (innerLoop = 0; innerLoop < this.$store.getters.getOptions[array_length].length; innerLoop++) {
+          if (innerLoop === 1) firstCourse = this.$store.getters.getOptions[array_length][innerLoop];
+          if (innerLoop === 2) secondCourse = this.$store.getters.getOptions[array_length][innerLoop]
+          if (innerLoop === 3) thirdCourse = this.$store.getters.getOptions[array_length][innerLoop];
+        }
+
+        var path = this.$store.getters.getOptions[array_length][0]
+        var object = {pathway: path, first_course: firstCourse, second_course: secondCourse, third_course: thirdCourse}
+        storedCourses.push(object);
+      }
+
+      console.log(storedCourses)
+      return storedCourses;
+    },
+    currentCourse() {
+      if (this.optionsLength > 0) {
+        return this.storedCoursesAppender[this.i]
+      }
+      return ""
     }
   },
   methods: {
@@ -465,42 +506,6 @@ export default {
         closeButton: "button",
       });
       this.$router.push('home');
-    }
-  },
-  computed: {
-    ...mapGetters(['getOptions', 'getOptionsLength', 'pathway']),
-    optionsLength() {
-      return this.$store.getters.getOptionsLength;
-    },
-    storedCoursesAppender() {
-      var storedCourses = []
-
-      // if no options (no activity)
-      console.log("options " + this.getOptions.length)
-      if (this.$store.getters.getOptions.length === 0) return storedCourses;
-
-      var array_length, innerLoop;
-      for (array_length = 0; array_length < this.$store.getters.getOptions.length; array_length++){
-        var firstCourse, secondCourse, thirdCourse;
-        for (innerLoop = 0; innerLoop < this.$store.getters.getOptions[array_length].length; innerLoop++){
-          if (innerLoop === 1) firstCourse = this.$store.getters.getOptions[array_length][innerLoop];
-          if (innerLoop === 2) secondCourse = this.$store.getters.getOptions[array_length][innerLoop]
-          if (innerLoop === 3) thirdCourse = this.$store.getters.getOptions[array_length][innerLoop];
-        }
-        
-        var path = this.$store.getters.getOptions[array_length][0]
-       var object = {pathway: path, first_course: firstCourse, second_course: secondCourse, third_course: thirdCourse}
-       storedCourses.push(object);
-      }
-
-      console.log(storedCourses)
-      return storedCourses;
-    },
-    currentCourse() {
-      if (this.optionsLength > 0) {
-        return this.storedCoursesAppender[this.i]
-      }
-      return ""
     }
   }
 }

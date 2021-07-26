@@ -46,10 +46,10 @@
               My Pathways
             </v-btn>
             <v-btn
+              id="button"
               class="hidden-sm-and-down mr-2 text-capitalize"
               active-class="v-btn--active toolbar-btn-active blue-grey lighten-3"
               rounded
-              id="button"
               elevation="4"
               depressed
               :to="{name: 'home'}"
