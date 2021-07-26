@@ -7,6 +7,7 @@ module.exports = {
         'plugin:vue/recommended',
     ],
     rules: {
+        'vue/this-in-template': 'off',
         'vue/no-unused-vars': 'error'
     }
 }
