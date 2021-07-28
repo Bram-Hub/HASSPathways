@@ -12,11 +12,7 @@
       <v-container fluid>
         <v-layout row>
           <!-- TITLE -->
-          <v-flex
-            md1
-            sm11
-            xs11
-          >
+          <v-flex md1 sm11 xs11>
             <router-link to="">
               <v-img
                 class="pl-6 pr-8 ml-4"
@@ -27,13 +23,9 @@
               />
             </router-link>
           </v-flex>
-            
-            
+
           <!-- BUTTONS -->
-          <v-col
-            id="topRightButtons"
-            class="text-right"
-          >
+          <v-col id="topRightButtons" class="text-right">
             <v-btn
               id="button"
               class="hidden-sm-and-down text-capitalize"
@@ -41,7 +33,7 @@
               elevation="4"
               depressed
               active-class="v-btn--active toolbar-btn-active blue-grey lighten-3"
-              :to="{name: 'activity'}"
+              :to="{ name: 'activity' }"
             >
               My Pathways
             </v-btn>
@@ -52,7 +44,7 @@
               rounded
               elevation="4"
               depressed
-              :to="{name: 'home'}"
+              :to="{ name: 'home' }"
               @click="clearProgress()"
             >
               Add Pathways
@@ -66,7 +58,7 @@
     <v-content>
       <router-view />
     </v-content>
-    
+
     <!-- FOOTER
     <v-footer app>
 
@@ -95,22 +87,21 @@
 </template>
 
 <script>
-
 export default {
   name: 'App',
   data: () => ({
     deleteClicked: false,
-    searchInput: "",
-    extension: ""
+    searchInput: '',
+    extension: '',
   }),
   watch: {
     extension(newExtension) {
       localStorage.setItem('extension', newExtension)
-    }
+    },
   },
   mounted() {
     console.log(this.$vuetify.breakpoint)
-    if (localStorage.getItem('extension') == "true") {
+    if (localStorage.getItem('extension') == 'true') {
       this.extension = true
     }
   },
@@ -123,21 +114,18 @@ export default {
       this.$store.editingCourses = false
       location.reload()
     },
-  }
-};
-
+  },
+}
 </script>
 
 <style>
-
 #button {
   float: right;
 }
 
-#topRightButtons .v-btn::before{
+#topRightButtons .v-btn::before {
   background-color: transparent;
 }
-
 
 #header {
   height: 70px;
@@ -147,10 +135,9 @@ export default {
   font-size: 20px;
 }
 
-.v-btn--active .v-btn__content { 
-  color: black
-}  
-
+.v-btn--active .v-btn__content {
+  color: black;
+}
 
 #title {
   color: white;
@@ -168,5 +155,4 @@ export default {
 .combo-box {
   z-index: 200;
 }
-
 </style>
