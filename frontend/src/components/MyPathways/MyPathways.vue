@@ -512,6 +512,4 @@ export default {
 
 </script>
 
-<style scoped>
-  @import "MyPathways.scss";
-</style>
+<style scoped lang='scss' src='./MyPathways.scss'></style>

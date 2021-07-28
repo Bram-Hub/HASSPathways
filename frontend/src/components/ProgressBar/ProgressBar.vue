@@ -231,6 +231,4 @@ export default {
 
 </script>
 
-<style>
-  @import "ProgressBar.scss";
-</style>
+<style scoped lang='scss' src='./ProgressBar.scss'></style>
