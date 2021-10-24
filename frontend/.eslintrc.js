@@ -10,6 +10,7 @@ module.exports = {
     rules: {
         'vue/this-in-template': 'off',
         'vue/valid-v-slot': ['off'],
+        'vue/script-setup-uses-vars': 'off',
 
         'no-unused-vars': 'warn',
         'vue/no-unused-vars': 'warn',

@@ -102,12 +102,3 @@ export default {
     },
 }
 </script>
-
-<style>
-/* Fix buig always visible on mobile */
-.v-slide-group__prev {
-    display: none !important;
-}
-</style>
-
-

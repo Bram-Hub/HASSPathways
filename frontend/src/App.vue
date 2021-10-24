@@ -50,7 +50,13 @@ export default {
 }
 </script>
 
+<style lang="scss">
+@import '@/styles/_globals.scss';
+</style>
+
 <style>
+
+
 .main-content {
     min-height: 100vh;
 }

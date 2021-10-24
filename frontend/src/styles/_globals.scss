@@ -1,0 +1,7 @@
+/* Global CSS styles go here */
+
+/* Changes tabs: remove space before
+ * scrollable tabs on mobile */
+.v-slide-group__prev {
+    display: none !important;
+}

@@ -1,10 +1,9 @@
 <template>
     <v-app-bar
         app
-        fixed
         flat
         dense
-        color="#c65353"
+        color="primary"
     >
         <router-link to="">
             <v-img
@@ -48,6 +47,36 @@
                     Add Pathways
                 </v-btn>
             </v-layout>
+
+            <div>
+                <v-tooltip v-if="!$vuetify.theme.dark" bottom>
+                    <template #activator="{ on }">
+                        <v-btn
+                            color="info" small fab v-on="on"
+                            @click="darkMode"
+                        >
+                            <v-icon class="mr-1">
+                                mdi-moon-waxing-crescent
+                            </v-icon>
+                        </v-btn>
+                    </template>
+                    <span>Dark Mode On</span>
+                </v-tooltip>
+
+                <v-tooltip v-else bottom>
+                    <template #activator="{ on }">
+                        <v-btn
+                            color="info" small fab v-on="on"
+                            @click="darkMode"
+                        >
+                            <v-icon color="yellow">
+                                mdi-white-balance-sunny
+                            </v-icon>
+                        </v-btn>
+                    </template>
+                    <span>Dark Mode Off</span>
+                </v-tooltip>
+            </div>
         </v-container>
     </v-app-bar>
 </template>
@@ -58,6 +87,11 @@ export default {
     data() {
         return {
 
+        }
+    },
+    methods: {
+        darkMode() {
+            this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
         }
     }
 }
