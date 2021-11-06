@@ -104,8 +104,8 @@ export default {
         item: {
             type: Object,
             required: true,
-            validator: item => item.modifiers.every(
-                modifier => Object.keys(modifiers).includes(modifier))
+            validator: item => Object.keys(modifiers).every(
+                modifier => Object.keys(item.modifiers).includes(modifier))
         }
     },
     data: () => {
@@ -130,6 +130,7 @@ export default {
 .modifier {
     margin-right: 3px;
     cursor: help;
+    user-select: none;
 
     &.inactive {
         opacity: 0.5;
@@ -140,9 +141,9 @@ export default {
 // Text-based modifiers
 .modifier-text {
     padding: 0 !important;
-    border-radius: 50% !important;
+    border-radius: 10px !important;
     width: 2em;
-    height: 2em;
+    height: 1.8em;
     
     display: inline-flex;
     justify-content: center;

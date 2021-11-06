@@ -13,20 +13,24 @@
                 grow
                 center-active
             >
+                <v-tabs-slider color="primary" />
                 <v-tab
                     v-for="item in classTabs"
                     :key="item"
                 >
                     <small>{{ item }}</small>
                 </v-tab>
+            </v-tabs>
 
+            <v-tabs-items v-model="tab" touchless>    
                 <v-tab-item
                     v-for="item in classTabs"
                     :key="item"
+                    :eager="true"
                 >
                     <ClassTable />
                 </v-tab-item>
-            </v-tabs>
+            </v-tabs-items>
         </v-container>
     </div>
 </template>
@@ -58,6 +62,7 @@ export default {
     },
     data() {
         return {
+            tab: null,
             category: '',
             bucketNumber: 'first',
             nextBucketNumber: 'second',

@@ -1,9 +1,10 @@
 <template>
     <v-container>
+        <!-- Table header with search and open/close all buttons
+          -- A scale transform is applied to make it smaller -->
         <v-card
             v-if="show_search_bar"
-            class="elevation-1 rounded-0 pt-4 pb-2 px-4 d-flex" 
-            style="transform: scale(0.8); transform-origin: bottom left;"
+            class="table-header-search elevation-1 rounded-0 pt-4 pb-2 px-4 d-flex" 
         > 
             <v-text-field
                 v-model="search"
@@ -13,16 +14,16 @@
                 dense
                 hide-details
                 class="ma-0"
-                style="width: 500px; max-width: 100%"
+                style="width: 400px; max-width: 100%"
             /> <!-- TODO: classes / dynamic mobile -->
 
+<!--
             <v-divider vertical class="mx-4" />
 
             <v-btn
                 color="primary"
                 depressed
                 elevation="1"
-
                 @click="toggleAll()"
             >
                 <v-icon left dark>
@@ -57,7 +58,9 @@
 
                 <v-card>
                     <v-card-text class="pt-4">
-                        <h3 class="mb-1">Are you sure?</h3>
+                        <h3 class="mb-1">
+                            Are you sure?
+                        </h3>
                         You are about to unselect all your classes for this tab[TODO tab name]
                     </v-card-text>
 
@@ -82,59 +85,27 @@
                         </v-btn>
                     </v-card-actions>
                 </v-card>
-            </v-dialog>
+            </v-dialog> -->
         </v-card>
       
-        <v-data-table
-            ref="data-table"
-            :headers="headers"
-            :items="classes"
-            :sort-by.sync="sortBy"
-            :sort-desc.sync="sortDesc"
-            :expanded.sync="expanded"
-            :item-class="rowClass"
+        <ClassTableClass 
+            v-for="item in filteredClasses" 
+            :key="item.prefix + item.id" 
+            :clazz="item"
+        />
 
-            :search="search"
-            item-key="id"
-            show-select
-            show-expand
-            hide-default-footer
-            disable-pagination
-            fixed-header
-            class="elevation-1 class-data-table"
-
-            @click:row="(item, slot) => slot.expand(!slot.isExpanded)"
-        >
-            <template #item.data-table-select="{isSelected,select}">
-                <v-simple-checkbox v-ripple color="primary" :value="isSelected" @input="select($event)" />
-            </template>
-    
-            <!-- Remove select all / unselect all button to prevent
-                 users accidentally clearing their selections -->
-            <template #header.data-table-select="{ item }" />
-
-            <template #item.modifiers="{ item }">
-                <ClassTableModifiers :item="item" />
-            </template>
-
-            <template #expanded-item="{ headers, item }">
-                <td :colspan="headers.length">
-                    <div class="class-desc-container">
-                        More info about {{ item.description }}
-                    </div>
-                </td>
-            </template>
-        </v-data-table>
+        <!-- The data table itself -->
     </v-container>
 </template>
 
 <script>
 import ClassTableModifiers from './ClassTableModifiers'
+import ClassTableClass from './ClassTableClass'
 
 export default {
     name: 'ClassTable',
     components: {
-        ClassTableModifiers
+        ClassTableClass
     },
 
     data() {
@@ -169,10 +140,12 @@ export default {
             }
 
             classes.push({
-                name: 'Made Up Class',
+                name: 'Made Up Class' + (Math.random() < 0.5 ? ' Extra long super exenobiology studies' : ''),
                 prefix: 'BRT' + Math.floor(Math.random() * 10),
                 id: Math.floor(Math.random() * 5000) + 1000,
-                description: "What is science, what is technology, and how have these two fields of inquiry evolved over time? This course examines these questions by studying the history of various scientific fields and technologies. In addition to tracing the historical evolution of the topics studied, the course will consider how social, political, economic and cultural factors helped to shape \u2013 and were in turn shaped by \u2013 advances in science and technology. The course will also reflect upon the relationship between science and technology on the one hand, and \u201cprogress\u201d on the other.",
+                description: Math.random() < 0.5 ?
+                    "What is science, what is technology, and how have these two fields of inquiry evolved over time? This course examines these questions by studying the history of various scientific fields and technologies. In addition to tracing the historical evolution of the topics studied, the course will consider how social, political, economic and cultural factors helped to shape \u2013 and were in turn shaped by \u2013 advances in science and technology. The course will also reflect upon the relationship between science and technology on the one hand, and \u201cprogress\u201d on the other."
+                    : "This course assumes no previous knowledge of the subject. The course is designed to provide students with fundamental skills in listening, speaking, reading, and writing Mandarin Chinese. Oral and aural skills will be emphasized. Background on Chinese culture will be introduced as an element of the course. For entry level, non-native speakers only.",
                 modifiers: m
             });
         }
@@ -193,6 +166,24 @@ export default {
             classes: classes
         }
     },
+    computed: {
+        filteredClasses() {
+            if (!this.search)
+                return this.classes;
+
+            let words = this.search
+                .toLowerCase()
+                .replace(/([A-Za-z]{4})-(\d{4})/, '$1 $2')
+                .split(' ')
+    
+            return this.classes.filter(clazz => {
+                return words.some(word =>
+                    (`${clazz.name} ${clazz.id} ${clazz.prefix} ${clazz.description}`)
+                        .toLowerCase()
+                        .includes(word));
+            });
+        }
+    },
 
     methods: {
         rowClass() { return 'expandable-table-row'; },
@@ -208,6 +199,11 @@ export default {
 
 <style lang="scss">
 @import "../styles/_data-tables.scss";
+
+.table-header-search {
+    transform: scale(0.8);
+    transform-origin: bottom left;
+}
 </style>
 
 <style scoped>
