@@ -104,8 +104,8 @@ export default {
         item: {
             type: Object,
             required: true,
-            validator: item => Object.keys(modifiers).every(
-                modifier => Object.keys(item.modifiers).includes(modifier))
+            validator: item => item.modifiers.every(
+                modifier => Object.keys(modifiers).includes(modifier))
         }
     },
     data: () => {

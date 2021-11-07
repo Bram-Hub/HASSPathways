@@ -3,7 +3,7 @@
         app
         flat
         dense
-        color="primary"
+        class="navbar"
     >
         <router-link to="">
             <v-img
@@ -17,12 +17,6 @@
 
         <v-container fluid>
             <v-layout row align-content-center justify-end class="">
-                <v-text-field
-                    solo label="Search" dense hide-details
-                    prepend-inner-icon="search" light color="blue"
-                    flat style="max-width: 400px"
-                />
-
                 <v-btn
                     id="button"
                     class="hidden-sm-and-down text-capitalize"
@@ -92,11 +86,14 @@ export default {
     methods: {
         darkMode() {
             this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+            localStorage.setItem('hass-pathways-dark-mode', this.$vuetify.theme.dark);
         }
     }
 }
 </script>
 
 <style scoped>
-
+.navbar {
+    border-bottom: 3px solid var(--v-primary-base) !important;
+}
 </style>

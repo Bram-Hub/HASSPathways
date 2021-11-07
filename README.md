@@ -22,7 +22,7 @@ https://docs.google.com/spreadsheets/d/1w6BNcxYCE54pvCJJWHiEoE9CiMjRrVNKeUArV97q
 # Developer Information
 #### Frontend Setup
 - Clone the repository to your computer
-- Install Nodejs - https://nodejs.org/en/download/
+- Install Nodejs - https://nodejs.org/en/download/ (need > v12.0.0)
 - Open Command Prompt by executing `cmd.exe` in the Windows Run box
 - `cd` to the `/frontend` directory of `HASSPathways` and type `npm install` into your console
 - Once everything is installed (ignore warnings), type `npm run serve`

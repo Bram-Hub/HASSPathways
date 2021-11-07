@@ -17,7 +17,7 @@
                 style="width: 400px; max-width: 100%"
             /> <!-- TODO: classes / dynamic mobile -->
 
-<!--
+            <!--
             <v-divider vertical class="mx-4" />
 
             <v-btn
@@ -87,6 +87,8 @@
                 </v-card>
             </v-dialog> -->
         </v-card>
+
+        <v-btn @click="test()">Test</v-btn>
       
         <ClassTableClass 
             v-for="item in filteredClasses" 
@@ -193,6 +195,12 @@ export default {
                 this.global_expanded ? this.classes : [];
             setTimeout(() => this.global_expanded2 = this.global_expanded, 30);
         },
+        test() {
+            console.log(this.$children)
+            this.$children.forEach(child => {
+                if (child.setSelected) child.setSelected(1);
+            });
+        }
     }
 }
 </script>

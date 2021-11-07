@@ -74,6 +74,11 @@ export default {
         },
         selectedClass() {
             return this.selected ? 'selected' : '';
+        },
+        setSelected(selected) {
+            // Convert truthy/falsy values -> 0/1 for vueitfy checkbox
+            selected = selected ? 1 : 0;
+            this.selected = selected;
         }
     }
 }

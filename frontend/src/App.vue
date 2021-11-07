@@ -36,6 +36,9 @@ export default {
         if (localStorage.getItem('extension') == 'true') {
             this.extension = true
         }
+ 
+        // Note: dark mode is saved as a string!
+        this.$vuetify.theme.dark = localStorage.getItem('hass-pathways-dark-mode', 'true') === 'true';
     },
     methods: {
         handleInput() {

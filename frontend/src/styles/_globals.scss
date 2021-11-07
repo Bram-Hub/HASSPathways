@@ -5,3 +5,10 @@
 .v-slide-group__prev {
     display: none !important;
 }
+
+/* Darken default card text color */
+.theme--light.v-card > .v-card__text,
+.theme--light.v-card > .v-card__subtitle {
+    color: black !important;
+    font-weight: normal;
+}
