@@ -24,7 +24,7 @@ export default {
     data: () => ({
         deleteClicked: false,
         searchInput: '',
-        extension: '',
+        extension: ''
     }),
     watch: {
         extension(newExtension) {

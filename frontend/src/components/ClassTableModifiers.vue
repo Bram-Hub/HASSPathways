@@ -91,7 +91,7 @@ const modifiers = {
         tooltip: 'HASS inqury',
         color: 'blue'
     },
-    'major_restricted': {
+    'major_restrictive': {
         name: 'MR',
         tooltip: 'Major restricted',
         color: 'red'
@@ -113,7 +113,9 @@ export default {
         // Note: icon modifiers are ALWAYS sorted before textModifiers, regardless
         // of the ordering below. If a key is missing from modifierOrder the modifier
         // will not be rendered
-        const modifierOrder = ['fall', 'spring', 'summer', 'CI', 'DI', 'HI', 'major_restricted'];
+
+        // TODO: move to modifiers list
+        const modifierOrder = ['fall', 'spring', 'summer', 'CI', 'DI', 'HI', 'major_restrictive'];
         const iconModifiers = modifierOrder.filter(modifier => !modifiers[modifier].name);
         const textModifiers = modifierOrder.filter(modifier =>  modifiers[modifier].name);
 

@@ -1,8 +1,8 @@
 <template>
     <div>
         <v-container>
-            <h1>Pathway name</h1>
-            <p>Blurb</p>
+            <h1>{{ pathway.fields.pathName }}</h1>
+            <p>{{ pathway.fields.pathDescript }}</p>
 
             <v-divider class="my-4" />
 
@@ -24,11 +24,11 @@
 
             <v-tabs-items v-model="tab" touchless>    
                 <v-tab-item
-                    v-for="item in classTabs"
+                    v-for="(item, index) in classTabs"
                     :key="item"
                     :eager="true"
                 >
-                    <ClassTable />
+                    <ClassTable :classes="classes[index]" />
                 </v-tab-item>
             </v-tabs-items>
         </v-container>
@@ -41,6 +41,21 @@ import cJson from '../../../../JSONfiles/courses.json'
 import pJson from '../../../../JSONfiles/pathways.json'
 
 import ClassTable from '../../components/ClassTable'
+
+const pathway = pJson[2];
+
+function transformClass(clazz) {
+    let modifiers = ['CI', 'DI', 'HI', 'fall', 'spring', 'summer', 'major_restrictive']
+        .filter(modifier => clazz.fields[modifier]);
+    return {
+        name: clazz.fields.name,
+        prefix: clazz.fields.prefix,
+        id: clazz.fields.ID,
+        description: clazz.fields.description,
+        modifiers: modifiers,
+        pk: clazz.pk
+    };
+}
 
 export default {
     components: {
@@ -61,12 +76,20 @@ export default {
         }
     },
     data() {
+        let filtered = cJson.filter(x => 
+                pathway.fields.priority1.includes(x.pk) || pathway.fields.priority2.includes(x.pk) || pathway.fields.priority3.includes(x.pk))
+                .filter(x => x.fields.summer || x.fields.fall || x.fields.spring)
+                .map(transformClass);
         return {
             tab: null,
             category: '',
-            bucketNumber: 'first',
-            nextBucketNumber: 'second',
-            allCourses: cJson,
+            classes: [
+                filtered.filter(x => pathway.fields.priority1.includes(x.pk)),
+                filtered.filter(x => pathway.fields.priority2.includes(x.pk)),
+                filtered.filter(x => pathway.fields.priority3.includes(x.pk)),
+                []
+            ],
+            pathway: pathway
         }
     },
     methods: {
