@@ -1,0 +1,81 @@
+[
+    {
+        "image": "art.jpg",
+        "name": "Art",
+        "pathways": [
+            "electronic_arts",
+            "studio_arts",
+            "arts_history_theory_and_criticism",
+            "music_and_culture"
+        ]
+    },
+    {
+        "image": "cogsci.jpg",
+        "name": "Cognitive Science",
+        "pathways": [
+            "philosophy",
+            "artificial_intelligence",
+            "linguistics",
+            "behavioral_and_cognitive_neuroscience",
+            "mind_brain_and_intelligence",
+            "logical_thinking"
+        ]
+    },
+    {
+        "image": "communication-and-media.jpg",
+        "name": "Communication and Media",
+        "pathways": [
+            "graphic_design",
+            "media_and_culture",
+            "literature_and_creative_writing",
+            "strategic_communication",
+            "chinese_language",
+            "interactive_mediadata_design"
+        ]
+    },
+    {
+        "image": "economics.jpg",
+        "name": "Economics",
+        "pathways": [
+            "economics_of_technology_&_innovation",
+            "economics_of_banking_&_finance",
+            "economics_of_decision_making",
+            "economics",
+            "economics_of_healthcare_markets",
+            "economics_of_policy_&_regulations",
+            "economics_of_quantitative_modeling"
+        ]
+    },
+    {
+        "image": "interdisciplinary.jpg",
+        "name": "Interdisciplinary",
+        "pathways": [
+            "gender_race_sexuality_ethnicity_and_social_change",
+            "extent_and_limits_of_rationality",
+            "fact_and_fiction",
+            "creative_design_and_innovation",
+            "ethics_integrity_and_social_responsibility"
+        ]
+    },
+    {
+        "image": "sts.jpg",
+        "name": "Science and Technology Studies",
+        "pathways": [
+            "history",
+            "sustainability",
+            "science_technology_and_society",
+            "environmental_futures",
+            "thinking_with_science",
+            "living_in_a_world_of_data"
+        ]
+    },
+    {
+        "image": "restricted.jpg",
+        "name": "Restricted",
+        "pathways": [
+            "design_innovation_and_society",
+            "game_studies",
+            "information_technology_and_web_sciences"
+        ]
+    }
+]
