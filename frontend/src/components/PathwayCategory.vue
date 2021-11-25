@@ -1,7 +1,7 @@
 <template>
     <v-card class="rounded-0 card" elevation="1">
         <v-img
-            height="86px"
+            height="76px"
             class="card-img"
             :src="require('../assets/pathway-groups/' + image)"
         >
@@ -11,21 +11,35 @@
             </v-card-title>
         </v-img>
         
-        <div class="pathways-container">
-            <a href="" class="text-decoration-none">
-                <div
-                    v-for="pathway in pathways" :key="pathway"
-                    class="pathway"
-                >
-                    <h4>{{ pathway }}</h4>
-                    <p class="mb-0 d-block text-truncate">This is a sample description (TODO later)</p>
-                </div>
-            </a>
-        </div>
+        <ul class="pathways-container">
+            <v-tooltip
+                v-for="pathway in pathways"
+                :key="pathway"
+
+                bottom
+                eager
+                color="black"
+                offset-overflow
+                max-width="400px"
+                open-delay="700"
+                transition="none"
+            >
+                <template #activator="{ on, attrs }">
+                    <li class="pathway" v-bind="attrs" v-on="on">
+                        <a href="" class="text-decoration-none">
+                            <h4>{{ pathwaysData[pathway].name }}</h4>
+                        </a>
+                    </li>
+                </template>
+                <span>{{ pathwaysData[pathway].description }}</span>
+            </v-tooltip>
+        </ul>
     </v-card>
 </template>
 
 <script>
+import { pathways as pathwaysData } from '../data/data.js'
+
 export default {
     name: 'PathwayCategory',
     props: {
@@ -42,69 +56,61 @@ export default {
             default: ''
         },
         pathways: {
-            type: Array,
-            default: () => []
+            type: Array, // Array of pathway ids
+            default: () => [],
+            validator: val => val.every(x => Object.keys(pathwaysData).includes(x))
         }
-    }
+    },
+    data() { return { pathwaysData }; }
 }
 </script>
 
-<style scoped>
-    .card {
-        margin: 5px;
-        width: 340px;
-        max-width: 95%;
+<style scoped lang="scss">
+.card {
+    width: 100%;
+    max-width: calc(100vw - 24px);
+    display: inline-block;
+    vertical-align: top;
+}
 
-        display: inline-block;
-        vertical-align: top;
-    }
+.darken {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
 
-    .pathways-container {
-        height: 350px;
-        overflow-y: auto;
-        margin-top: 10px;
-    }
+.card:hover .darken {
+    opacity: 0.35;
+    transition: opacity 0.2s;
+}
 
-    .pathway {
-        padding: 3px 16px;
-        cursor: pointer;
-        font-size: 0.875em;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    }
+.card-title {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
 
-    .pathway:hover {
-        background-color: #fafafa;
-    }
+.pathways-container {
+    overflow-y: auto;
+    margin: 10px 0;
+    list-style-type: square;
+}
 
-    .pathway:hover > h4 {
-        text-decoration: underline;
-    }
+.pathway {
+    padding: 6px 4px;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 0.875em;
+}
 
-    .pathway > p {
-        color: #222;
-    }
-    
-    .pathway:last-child {
-        border-bottom: none;
-    }
+.pathway:hover h4 {
+    text-decoration: underline;
+}
 
-    .darken {
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        opacity: 0.6;
-        transition: opacity 0.2s;
-    }
-
-    .card:hover .darken {
-        opacity: 0.35;
-        transition: opacity 0.2s;
-    }
-
-    .card-title {
-        color: white;
-        position: absolute;
-        bottom: 0;
-        display: block;
-    }
+.pathway:last-child {
+    border-bottom: none;
+}
 </style>

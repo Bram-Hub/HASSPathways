@@ -132,6 +132,7 @@ export default {
         .classes-container {
             padding: 0 20px;
             overflow-y: auto;
+            background-color: rgba(0, 0, 0, 0.1); // TODO: padding for title, make theme dependent
             
             .class-items-container {
                 margin-bottom: 12px;
