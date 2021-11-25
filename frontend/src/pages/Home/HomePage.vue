@@ -1,6 +1,8 @@
 <template>
     <div>
         <v-container>
+            <Breadcrumbs :breadcrumbs="breadcrumbs" />
+
             <h1>HASS Pathways</h1>
             <p>Select a pathway below to get started, or <a>choose a pathway from the classes you've taken</a></p>
 
@@ -22,11 +24,19 @@
 
 <script>
 import PathwayCategory from '../../components/PathwayCategory'
+import Breadcrumbs from '../../components/Breadcrumbs'
+
 import { pathwayCategories } from '../../data/data.js'
+import breadcrumbs from '../../data/breadcrumbs.js'
 
 export default {
-    components: { PathwayCategory },
-    data: () => { return { pathwayCategories }; },
+    components: { PathwayCategory, Breadcrumbs },
+    data: () => {
+        return {
+            pathwayCategories,
+            breadcrumbs: breadcrumbs.pathways
+        };
+    },
 }
 </script>
 

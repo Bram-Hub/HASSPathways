@@ -1,6 +1,8 @@
 <template>
     <div>
         <v-container>
+            <Breadcrumbs :breadcrumbs="breadcrumbs" />
+            
             <h1>{{ pathway.fields.pathName }}</h1>
             <p>{{ pathway.fields.pathDescript }}</p>
 
@@ -41,6 +43,8 @@ import cJson from '../../../../JSONfiles/courses.json'
 import pJson from '../../../../JSONfiles/pathways.json'
 
 import ClassTable from '../../components/ClassTable'
+import Breadcrumbs from '../../components/Breadcrumbs'
+import breadcrumbs from '../../data/breadcrumbs.js'
 
 const pathway = pJson[2];
 
@@ -59,7 +63,7 @@ function transformClass(clazz) {
 
 export default {
     components: {
-        ClassTable
+        ClassTable, Breadcrumbs
     },
     props: {
         path: {
@@ -89,7 +93,11 @@ export default {
                 filtered.filter(x => pathway.fields.priority3.includes(x.pk)),
                 []
             ],
-            pathway: pathway
+            pathway: pathway,
+            breadcrumbs: breadcrumbs.pathway_template.map(x => x || {
+                text: pathway.fields.pathName,
+                href: '/'
+            })
         }
     },
     methods: {

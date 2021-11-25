@@ -1,11 +1,7 @@
 <template>
     <div>
         <v-container>
-            <v-breadcrumbs :items="breadcrumbs" class="px-0">
-                <template #divider>
-                    <v-icon>mdi-chevron-right</v-icon>
-                </template>
-            </v-breadcrumbs>
+            <Breadcrumbs :breadcrumbs="breadcrumbs" />
 
             <h1>My HASS Pathways</h1>
 
@@ -19,11 +15,12 @@
 </template>
 
 <script>
-import MyPathway from '../../components/MyPathway'
+import Breadcrumbs from '../../components/Breadcrumbs'
+import breadcrumbs from '../../data/breadcrumbs.js'
 
 export default {
     components: {
-        
+        Breadcrumbs
     },
     props: {
         path: {
@@ -33,23 +30,10 @@ export default {
     },
     data() {
         return {
-            breadcrumbs: [
-                {
-                    text: 'Dashboard',
-                    disabled: false,
-                    href: 'breadcrumbs_dashboard',
-                },
-                {
-                    text: 'Link 1',
-                    disabled: false,
-                    href: 'breadcrumbs_link_1',
-                },
-                {
-                    text: 'Link 2',
-                    disabled: true,
-                    href: 'breadcrumbs_link_2',
-                },
-            ],
+            breadcrumbs: breadcrumbs.my_pathway_template.map(x => x || {
+                text: 'hello',
+                href: ''
+            })
         }
     },
     computed: {
