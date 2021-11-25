@@ -3,8 +3,18 @@
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
             
-            <h1>{{ pathway.fields.pathName }}</h1>
-            <p>{{ pathway.fields.pathDescript }}</p>
+            <h1>{{ pathway.name }}</h1>
+            <p>{{ pathway.description }}</p>
+
+            <div class="fab-container">
+                <v-btn
+                    color="green"
+                    elevation="2"
+                    fab
+                >
+                    <v-icon>mdi-content-save</v-icon>
+                </v-btn>
+            </div>
 
             <v-divider class="my-4" />
 
@@ -39,63 +49,53 @@
 
 <script>
 import { mapMutations } from 'vuex'
-import cJson from '../../../../JSONfiles/courses.json'
-import pJson from '../../../../JSONfiles/pathways.json'
+import { pathways, courses } from '../../data/data.js'
 
 import ClassTable from '../../components/ClassTable'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 
-const pathway = pJson[2];
+const pathway = pathways[Object.keys(pathways)[0]];
 
-function transformClass(clazz) {
-    let modifiers = ['CI', 'DI', 'HI', 'fall', 'spring', 'summer', 'major_restrictive']
-        .filter(modifier => clazz.fields[modifier]);
-    return {
-        name: clazz.fields.name,
-        prefix: clazz.fields.prefix,
-        id: clazz.fields.ID,
-        description: clazz.fields.description,
-        modifiers: modifiers,
-        pk: clazz.pk
-    };
+function getClasses(classIds) {
+    let r = classIds
+        .map(clazz => courses[clazz])
+        .filter(c => c.offered.fall || c.offered.spring || c.offered.summer);
+    r.forEach(c => c.modifiers = ['fall', 'spring', 'summer', 'CI', 'DI', 'HI', 'major_restrictive'].filter(
+        p => c.offered[p] || c.properties[p]
+    ))
+    return r;
 }
+
+const priorities = [pathway.priority1, pathway.priority2, pathway.priority3, pathway.priority4];
+
+console.log(pathway)
 
 export default {
     components: {
         ClassTable, Breadcrumbs
     },
     props: {
-        path: {
-            default: () => pJson[0].fields
-        },
         classTabs: {
             type: Array,
+
+            // TODO: only considered AFTER classes have been filtered
             default: () => [
                 '1st Course',
                 '2nd Course',
                 '4000 Level',
                 'Minor (optional)'
-            ]
+            ].filter((_, index) => priorities[index] && priorities[index].length)
         }
     },
     data() {
-        let filtered = cJson.filter(x => 
-                pathway.fields.priority1.includes(x.pk) || pathway.fields.priority2.includes(x.pk) || pathway.fields.priority3.includes(x.pk))
-                .filter(x => x.fields.summer || x.fields.fall || x.fields.spring)
-                .map(transformClass);
         return {
             tab: null,
             category: '',
-            classes: [
-                filtered.filter(x => pathway.fields.priority1.includes(x.pk)),
-                filtered.filter(x => pathway.fields.priority2.includes(x.pk)),
-                filtered.filter(x => pathway.fields.priority3.includes(x.pk)),
-                []
-            ],
+            classes: priorities.map(getClasses),
             pathway: pathway,
             breadcrumbs: breadcrumbs.pathway_template.map(x => x || {
-                text: pathway.fields.pathName,
+                text: pathway.name,
                 href: '/'
             })
         }
@@ -115,7 +115,7 @@ export default {
             return courses
         },
         selectCourse(course, path) {
-            this.setSelectedPathway(path.pathName)
+            this.setSelectedPathway(path.name)
             this.setSelectedCourse1(course)
             if (this.$store.editingCourses) {
                 this.setSelectedCourse2(null)
@@ -138,3 +138,24 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+.fab-container {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 56px;
+    height: 56px;
+    z-index: 999;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 600px) {
+    .fab-container {
+        right: 50px;
+        bottom: 50px;
+    }
+}
+</style>

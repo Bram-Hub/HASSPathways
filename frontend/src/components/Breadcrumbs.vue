@@ -13,7 +13,8 @@ export default {
         breadcrumbs: {
             type: Array,
             required: true,
-            validator: val => ['href', 'text'].every(k => Object.keys(val).includes(k))
+            validator: val => val.every(crumb =>
+                ['href', 'text'].every(k => Object.keys(crumb).includes(k)))
         }
     },
 }

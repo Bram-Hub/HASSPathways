@@ -11,7 +11,7 @@
             <template #activator="{ on, attrs }">
                 <v-icon
                     :color="modifiers[modifier].color"
-                    :class="[!item.modifiers.includes(modifier) ? 'inactive' : '' , 'modifier', 'modifier-icon']"
+                    :class="[!item.modifiers.includes(modifier) ? 'modifier--inactive' : '' , 'modifier', 'modifier--icon']"
                     v-bind="attrs"
                     v-on="on"
                 >
@@ -21,7 +21,6 @@
             <span>{{ modifiers[modifier].tooltip }}</span>
         </v-tooltip>
     
-        <!-- Divider -->
         <v-divider vertical class="mx-2" />
 
         <!-- Text based modifiers, require a .name property -->
@@ -32,7 +31,7 @@
         >
             <template #activator="{ on, attrs }">
                 <v-chip
-                    :class="[!item.modifiers.includes(modifier) ? 'inactive' : '' , 'modifier', 'modifier-text']"
+                    :class="[!item.modifiers.includes(modifier) ? 'modifier--inactive' : '' , 'modifier', 'modifier--text']"
                     :color="modifiers[modifier].color || 'primary'"
                     v-bind="attrs"
                     v-on="on"
@@ -98,6 +97,14 @@ const modifiers = {
     }
 };
 
+// Note: icon modifiers are ALWAYS sorted before textModifiers, regardless
+// of the ordering below. If a key is missing from modifierOrder the modifier
+// will not be rendered
+const modifierOrder = ['fall', 'spring', 'summer', 'CI', 'DI', 'HI', 'major_restrictive'];
+const iconModifiers = modifierOrder.filter(modifier => !modifiers[modifier].name);
+const textModifiers = modifierOrder.filter(modifier =>  modifiers[modifier].name);
+
+
 export default {
     name: 'ClassTableModifiers',
     props: {
@@ -109,19 +116,8 @@ export default {
         }
     },
     data: () => {
-        
-        // Note: icon modifiers are ALWAYS sorted before textModifiers, regardless
-        // of the ordering below. If a key is missing from modifierOrder the modifier
-        // will not be rendered
-
-        // TODO: move to modifiers list
-        const modifierOrder = ['fall', 'spring', 'summer', 'CI', 'DI', 'HI', 'major_restrictive'];
-        const iconModifiers = modifierOrder.filter(modifier => !modifiers[modifier].name);
-        const textModifiers = modifierOrder.filter(modifier =>  modifiers[modifier].name);
-
         console.assert(modifierOrder.every(k => Object.keys(modifiers).includes(k)),
             'modifierOrder contains modifiers that do not exist!');
-
         return { modifiers, modifierOrder, iconModifiers, textModifiers };
     }
 }
@@ -134,14 +130,14 @@ export default {
     cursor: help;
     user-select: none;
 
-    &.inactive {
+    &.modifier--inactive {
         opacity: 0.5;
         // display: none;
     }
 }
 
 // Text-based modifiers
-.modifier-text {
+.modifier--text {
     padding: 0 !important;
     border-radius: 10px !important;
     width: 2em;
@@ -151,26 +147,26 @@ export default {
     justify-content: center;
 
     // Override default light/dark text colors when active
-    &:not(.inactive) {
+    &:not(.modifier--inactive) {
         color: #eee;
     }
 }
 
 // Inactive theme colors
-.modifier.theme--light.inactive {
-    &.modifier-text {
+.modifier.theme--light.modifier--inactive {
+    &.modifier--text {
         background-color: #ccc !important;
     }
-    &.modifier-icon {
+    &.modifier--icon {
         color: #bbb !important;
     }
 }
 
-.modifier.theme--dark.inactive {
-    &.modifier-text {
+.modifier.theme--dark.modifier--inactive {
+    &.modifier--text {
         background-color: #333 !important;
     }
-    &.modifier-icon {
+    &.modifier--icon {
         color: #666 !important;
     }
 }

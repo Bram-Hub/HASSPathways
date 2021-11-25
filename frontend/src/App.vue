@@ -2,9 +2,9 @@
     <v-app id="app">
         <Header />
 
-        <v-content class="main-content">
+        <v-main class="main-content">
             <router-view />
-        </v-content>
+        </v-main>
 
         <Footer />
     </v-app>
