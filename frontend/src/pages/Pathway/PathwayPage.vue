@@ -55,7 +55,7 @@ import ClassTable from '../../components/ClassTable'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 
-const pathway = pathways[Object.keys(pathways)[0]];
+const pathway = pathways[Object.keys(pathways)[4]];
 
 function getClasses(classIds) {
     let r = classIds

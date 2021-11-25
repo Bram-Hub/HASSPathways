@@ -54,56 +54,7 @@
  * The entire class object is passed for possible additional future formatting
  */
 
-// Existing modifiers
-const modifiers = {
-    'fall': {
-        name: null,
-        tooltip: 'Offered in the fall',
-        icon: 'mdi-leaf-maple',
-        color: 'red'
-    },
-    'summer': {
-        name: null,
-        tooltip: 'Offered in the summer',
-        icon: 'mdi-weather-sunset',
-        color: 'orange'
-    },
-    'spring': {
-        name: null,
-        tooltip: 'Offered in the spring',
-        icon: 'mdi-flower',
-        color: 'green'
-    },
-
-    'CI': {
-        name: 'CI',
-        tooltip: 'Communication intensive',
-        color: 'blue'
-    },
-    'DI': {
-        name: 'DI',
-        tooltip: 'Data intensive',
-        color: 'blue'
-    },
-    'HI': {
-        name: 'HI',
-        tooltip: 'HASS inqury',
-        color: 'blue'
-    },
-    'major_restrictive': {
-        name: 'MR',
-        tooltip: 'Major restricted',
-        color: 'red'
-    }
-};
-
-// Note: icon modifiers are ALWAYS sorted before textModifiers, regardless
-// of the ordering below. If a key is missing from modifierOrder the modifier
-// will not be rendered
-const modifierOrder = ['fall', 'spring', 'summer', 'CI', 'DI', 'HI', 'major_restrictive'];
-const iconModifiers = modifierOrder.filter(modifier => !modifiers[modifier].name);
-const textModifiers = modifierOrder.filter(modifier =>  modifiers[modifier].name);
-
+import { modifiers, modifierOrder, iconModifiers, textModifiers } from '../data/course-modifiers.js'
 
 export default {
     name: 'ClassTableModifiers',

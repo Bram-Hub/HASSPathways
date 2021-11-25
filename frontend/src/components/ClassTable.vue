@@ -27,6 +27,7 @@
 
 <script>
 import ClassTableClass from './ClassTableClass'
+import search from '../data/search-classes.js'
 
 export default {
     name: 'ClassTable',
@@ -42,23 +43,9 @@ export default {
     },
     computed: {
         filteredClasses() {
-            if (!this.search)
-                return this.classes;
-
-            let words = this.search
-                .toLowerCase()
-                .replace(/([A-Za-z]{4})-(\d{4})/, '$1 $2')
-                .split(' ')
-    
-            return this.classes.filter(clazz => {
-                return words.some(word =>
-                    (`${clazz.name} ${clazz.ID} ${clazz.prefix} ${clazz.description}`)
-                        .toLowerCase()
-                        .includes(word));
-            });
+            return search(this.classes, this.search);
         }
     },
-
     methods: {
         deselectAll() {
             this.$children.forEach(child => {
