@@ -3,7 +3,7 @@
         <!-- Table header with search and open/close all buttons
           -- A scale transform is applied to make it smaller -->
         <v-card
-            class="table-header-search ( elevation-1 rounded-0 ) ( pt-4 pb-2 pr-4 ) d-flex" 
+            class="table-header-search elevation-0 ( pt-4 pb-2 pr-4 ) d-flex" 
         > 
             <v-text-field
                 v-model="search"
@@ -27,7 +27,7 @@
 
 <script>
 import ClassTableClass from './ClassTableClass'
-import search from '../data/search-classes.js'
+import search from '../helpers/search-classes.js'
 
 export default {
     name: 'ClassTable',

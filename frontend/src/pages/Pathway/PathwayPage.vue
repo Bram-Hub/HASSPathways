@@ -1,103 +1,138 @@
 <template>
-    <div>
-        <v-container>
-            <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            
-            <h1>{{ pathway.name }}</h1>
-            <p>{{ pathway.description }}</p>
+    <v-container>
+        <Breadcrumbs :breadcrumbs="breadcrumbs" />
+        
+        <h1>{{ pathway.name }}</h1>
+        <p>{{ pathway.description }}</p>
 
-            <div class="fab-container">
-                <v-btn
-                    color="green" elevation="2" fab
-                    aria-label="Save pathway"
-                >
-                    <v-icon>mdi-content-save</v-icon>
-                </v-btn>
-            </div>
-
-            <v-divider class="my-4" />
-
-            <v-tabs
-                v-model="tab"
-                background-color="transparent"
-                color="basil"
-                grow
-                center-active
+        <div class="fab-container">
+            <v-btn
+                color="green" elevation="2" fab
+                aria-label="Save pathway"
             >
-                <v-tabs-slider color="primary" />
-                <v-tab
-                    v-for="item in classTabs"
-                    :key="item"
-                >
-                    <small>{{ item }}</small>
-                </v-tab>
-            </v-tabs>
+                <v-icon>mdi-content-save</v-icon>
+            </v-btn>
+        </div>
 
-            <v-tabs-items v-model="tab" touchless>    
-                <v-tab-item
-                    v-for="(item, index) in classTabs"
-                    :key="item"
-                    :eager="true"
-                >
-                    <ClassTable :classes="classes[index]" />
-                </v-tab-item>
-            </v-tabs-items>
-        </v-container>
-    </div>
+        <v-divider class="my-4" />
+
+        <v-tabs
+            v-model="tab"
+            background-color="transparent"
+            color="basil"
+            grow
+            center-active
+        >
+            <v-tabs-slider color="primary" />
+            <v-tab
+                v-for="item in classTabs"
+                :key="item"
+            >
+                <small>{{ item }}</small>
+            </v-tab>
+        </v-tabs>
+
+        <v-tabs-items v-model="tab" touchless>    
+            <v-tab-item
+                v-for="(item, index) in classTabs"
+                :key="item"
+                :eager="true"
+            >
+                <ClassTable :classes="classes[index]" />
+            </v-tab-item>
+        </v-tabs-items>
+    </v-container>
 </template>
 
 <script>
 import { mapMutations } from 'vuex'
-import { pathways, courses } from '../../data/data.js'
+import { pathwayCategories, pathways, courses } from '../../data/data.js'
+import { modifierOrder } from '../../data/course-modifiers.js'
+import getColorFromCategry from '../../helpers/category-colors.js'
 
 import ClassTable from '../../components/ClassTable'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 
-const pathway = pathways[Object.keys(pathways)[4]];
-
+/**
+ * Converts array of class ids, ie ['art_history', ...]
+ * into array of class objects
+ * @param {array{string}} classIds
+ * @return {array{object}} classes
+ */
 function getClasses(classIds) {
     let r = classIds
         .map(clazz => courses[clazz])
         .filter(c => c.offered.fall || c.offered.spring || c.offered.summer);
-    r.forEach(c => c.modifiers = ['fall', 'spring', 'summer', 'CI', 'DI', 'HI', 'major_restrictive'].filter(
-        p => c.offered[p] || c.properties[p]
-    ))
+    
+    // Set the modifiers property (array of modifiers)
+    r.forEach(c => c.modifiers = modifierOrder.filter(p => c.offered[p] || c.properties[p]))
     return r;
 }
-
-const priorities = [pathway.priority1, pathway.priority2, pathway.priority3, pathway.priority4];
-
-console.log(pathway)
 
 export default {
     components: {
         ClassTable, Breadcrumbs
     },
-    props: {
-        classTabs: {
-            type: Array,
-
-            // TODO: only considered AFTER classes have been filtered
-            default: () => [
+    data() {
+        return {
+            tab: null,
+            category: ''
+        }
+    },
+    computed: {
+        // Get id of the pathway, ie 'chinese_language'
+        pathwayID() {
+            // Should always be valid, see router/index.js
+            let pathwayID = this.$route.query.pathway;
+            return pathwayID;
+        },
+        // Get actual pathway object
+        pathway() {
+            return pathways[this.pathwayID];
+        },
+        // Name of category to display, ie 'Major Restricted'
+        categoryName() {
+            for (let category of pathwayCategories)
+                if (category.pathways.includes(this.pathwayID))
+                    return category.name;
+            return '';
+        },
+        // Array of all pathway classes, grouped
+        priorities() {
+            let pathway = this.pathway;
+            return [pathway.priority1, pathway.priority2, pathway.priority3, pathway.priority4];
+        },
+        // Get array of all classes, grouped
+        classes() {
+            return this.priorities.map(getClasses);
+        },
+        // Get breadcrumb data
+        breadcrumbs() {
+            return breadcrumbs.pathway_template.map(x => x || {
+                text: this.categoryName ?
+                    `${this.pathway.name} (${this.categoryName})` :
+                    this.pathway.name,
+                href: '/pathway?pathway=' + encodeURIComponent(this.pathwayID)
+            });
+        },
+        classTabs() {
+            // Enable only non-empty tabs
+            // Note: assumes empty tabs will always occur at end
+            // with no spaces between
+            return [
                 '1st Course',
                 '2nd Course',
                 '4000 Level',
                 'Minor (optional)'
-            ].filter((_, index) => priorities[index] && priorities[index].length)
+            ].filter((_, index) => this.priorities[index] && this.priorities[index].length);
         }
     },
-    data() {
-        return {
-            tab: null,
-            category: '',
-            classes: priorities.map(getClasses),
-            pathway: pathway,
-            breadcrumbs: breadcrumbs.pathway_template.map(x => x || {
-                text: pathway.name,
-                href: '/'
-            })
-        }
+    mounted() {
+        // Adjust color scheme based on pathway category
+        let color = getColorFromCategry(this.categoryName);
+        this.$vuetify.theme.themes.light.primary = color;
+        this.$vuetify.theme.themes.dark.primary = color;
     },
     methods: {
         ...mapMutations([

@@ -8,7 +8,9 @@ import PathwayPage from '../pages/Pathway/PathwayPage.vue'
 import MyPathwaysPage from '../pages/MyPathways/MyPathwaysPage.vue'
 import APathwayPage from '../pages/MyPathways/APathwayPage.vue'
 
-Vue.use(Router)
+import { pathways } from '../data/data.js'
+
+Vue.use(Router);
 
 export default new Router({
     routes: [
@@ -18,14 +20,17 @@ export default new Router({
             component: ExpansionPanel,
         },
         {
-            path: '/test',
+            path: '/pathways',
             name: 'home',
             component: HomePage,
         },
         {
-            path: '/test2',
+            path: '/pathway',
             name: 'pathway',
             component: PathwayPage,
+            beforeEnter: (to, from, next) => {
+                next(!pathways[to.query.pathway] ? '/404' : undefined);
+            }
         },
         {
             path: '/test3',

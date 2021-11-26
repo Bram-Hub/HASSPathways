@@ -9,7 +9,7 @@ function createBreadcrumb(text, href) {
 }
 
 const HOME = createBreadcrumb('Home', '');
-const PATHWAYS = createBreadcrumb('Pathways', '/');
+const PATHWAYS = createBreadcrumb('Pathways', '/pathways');
 const MYPATHWAYS = createBreadcrumb('My Pathways', '/');
 const PATHWAY_FROM_CLASSES = createBreadcrumb('Add Pathway from Classes', '/');
 
