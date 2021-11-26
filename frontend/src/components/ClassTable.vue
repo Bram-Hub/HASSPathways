@@ -1,9 +1,9 @@
 <template>
-    <v-container>
+    <v-container style="min-height: 50vh">
         <!-- Table header with search and open/close all buttons
           -- A scale transform is applied to make it smaller -->
         <v-card
-            class="table-header-search elevation-0 ( pt-4 pb-2 pr-4 ) d-flex" 
+            class="table-header-search elevation-0 ( pt-2 pb-2 pr-4 ) d-flex" 
         > 
             <v-text-field
                 v-model="search"
@@ -22,6 +22,10 @@
             :key="item.prefix + item.ID" 
             :clazz="item"
         />
+
+        <p v-if="filteredClasses.length === 0" class="no-search-results">
+            No search results
+        </p>
     </v-container>
 </template>
 
@@ -60,5 +64,9 @@ export default {
 .table-header-search {
     transform: scale(0.8);
     transform-origin: bottom left;
+}
+
+.no-search-results {
+    margin: 20px 5px;
 }
 </style>

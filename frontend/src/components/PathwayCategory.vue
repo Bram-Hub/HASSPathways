@@ -27,7 +27,7 @@
                 <template #activator="{ on, attrs }">
                     <li class="pathway" v-bind="attrs" v-on="on">
                         <a :href="`/pathway?pathway=${encodeURIComponent(pathway)}`" class="text-decoration-none">
-                            <h4>{{ pathwaysData[pathway].name }}</h4>
+                            <b>{{ pathwaysData[pathway].name }}</b>
                         </a>
                     </li>
                 </template>

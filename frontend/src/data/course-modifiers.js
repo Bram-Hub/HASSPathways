@@ -1,3 +1,5 @@
+import colors from 'vuetify/lib/util/colors'
+
 export const modifiers = {
     'fall': {
         name: null,
@@ -24,25 +26,25 @@ export const modifiers = {
     'CI': {
         name: 'CI',
         tooltip: 'Communication intensive',
-        color: 'blue',
+        color: colors.blue.darken3,
         search: ['communication intensive', 'ci', 'com']
     },
     'DI': {
         name: 'DI',
         tooltip: 'Data intensive',
-        color: 'blue',
+        color: colors.blue.darken3,
         search: ['data intensive', 'di', 'data']
     },
     'HI': {
         name: 'HI',
         tooltip: 'HASS inqury',
-        color: 'blue',
+        color: colors.blue.darken3,
         search: ['hass inqury', 'hi', 'inqury', 'hass']
     },
     'major_restrictive': {
         name: 'MR',
         tooltip: 'Major restricted',
-        color: 'red',
+        color: colors.red.darken3,
         search: ['major', 'restrict']
     }
 };

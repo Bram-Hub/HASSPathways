@@ -80,6 +80,7 @@ export default {
     margin-right: 3px;
     cursor: help;
     user-select: none;
+    overflow: visible;
 
     &.modifier--inactive {
         opacity: 0.5;

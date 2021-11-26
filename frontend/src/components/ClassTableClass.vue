@@ -17,6 +17,8 @@
                             :false-value="0"
                             :true-value="1"
 
+                            :aria-label="`Toggle selection for ${clazz.name}`"
+
                             color="primary"
                             value="primary"
                             hide-details
