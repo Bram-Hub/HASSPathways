@@ -5,6 +5,7 @@
         outlined
 
         @click="toggleCheckbox()"
+        @keydown.13="toggleCheckbox()"
     >
         <v-list-item one-line>
             <v-list-item-content class="pb-0"> 

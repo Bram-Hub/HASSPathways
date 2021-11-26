@@ -8,9 +8,8 @@
 
             <div class="fab-container">
                 <v-btn
-                    color="green"
-                    elevation="2"
-                    fab
+                    color="green" elevation="2" fab
+                    aria-label="Save pathway"
                 >
                     <v-icon>mdi-content-save</v-icon>
                 </v-btn>
