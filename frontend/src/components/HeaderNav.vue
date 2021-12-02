@@ -35,6 +35,13 @@ export default {
 </script>
 
 <style scoped>
+/* Override button active color, otherwise
+ * it defaults to black 
+ * Note: the >>> is NOT a typo */
+>>> .v-btn--active .v-btn__content {
+    color: inherit;
+}
+
 .text {
     font-size: 0.85em;
     display: none;

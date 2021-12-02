@@ -2,6 +2,7 @@
     <v-tooltip v-if="!$vuetify.theme.dark" bottom>
         <template #activator="{on}">
             <v-btn
+                class="mr-2"
                 small fab tile elevation="0"
                 v-on="on"
                 @click="darkMode"
@@ -16,6 +17,7 @@
     <v-tooltip v-else bottom>
         <template #activator="{on}">
             <v-btn
+                class="mr-2"
                 small fab tile elevation="0"
                 v-on="on"
                 @click="darkMode"
