@@ -21,7 +21,7 @@
             <span>{{ modifiers[modifier].tooltip }}</span>
         </v-tooltip>
     
-        <v-divider vertical class="mx-2" />
+        <v-divider v-if="iconModifiers.length" vertical class="mx-2" />
 
         <!-- Text based modifiers, require a .name property -->
         <v-tooltip
@@ -84,15 +84,15 @@ export default {
 
     &.modifier--inactive {
         opacity: 0.5;
-        // display: none;
+        display: none;
     }
 }
 
 // Text-based modifiers
 .modifier--text {
-    padding: 0 !important;
+    padding: 0 5px !important;
     border-radius: 10px !important;
-    width: 2em;
+    min-width: 2em;
     height: 1.8em;
     
     display: inline-flex;

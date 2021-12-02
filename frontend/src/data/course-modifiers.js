@@ -2,24 +2,24 @@ import colors from 'vuetify/lib/util/colors'
 
 export const modifiers = {
     'fall': {
-        name: null,
+        name: 'Fall',
         tooltip: 'Offered in the fall',
-        icon: 'mdi-leaf-maple',
-        color: 'red',
+        icon: null, // 'mdi-leaf-maple',
+        color: colors.red.darken3,
         search: ['fall', 'autumn']
     },
     'summer': {
-        name: null,
+        name: 'Summer',
         tooltip: 'Offered in the summer',
-        icon: 'mdi-weather-sunset',
-        color: 'orange',
+        icon: null, // 'mdi-weather-sunset',
+        color: colors.orange.darken3,
         search: ['summer']
     },
     'spring': {
-        name: null,
+        name: 'Spring',
         tooltip: 'Offered in the spring',
-        icon: 'mdi-flower',
-        color: 'green',
+        icon: null, // 'mdi-flower',
+        color: colors.green.darken3,
         search: ['spring']
     },
 
