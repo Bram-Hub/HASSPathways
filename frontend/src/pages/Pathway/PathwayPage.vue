@@ -38,31 +38,30 @@
                 :key="item"
                 :eager="true"
             >
-                <ClassTable :classes="classes[index]" :pathway-id="pathwayID" />
+                <CourseTable :courses="courses[index]" :pathway-id="pathwayID" />
             </v-tab-item>
         </v-tabs-items>
     </v-container>
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
 import { pathwayCategories, pathways, courses } from '../../data/data.js'
 import { modifierOrder } from '../../data/course-modifiers.js'
 import getColorFromCategry from '../../helpers/category-colors.js'
 
-import ClassTable from '../../components/ClassTable'
+import CourseTable from '../../components/CourseTable'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 
 /**
  * Converts array of class ids, ie ['art_history', ...]
  * into array of class objects
- * @param {array{string}} classIds
- * @return {array{object}} classes
+ * @param {array{string}} courseIds
+ * @return {array{object}} courses
  */
-function getClasses(classIds) {
-    let r = classIds
-        .map(clazz => courses[clazz])
+function getCourses(courseIds) {
+    let r = courseIds
+        .map(course => courses[course])
         .filter(c => c.offered.fall || c.offered.spring || c.offered.summer);
     
     // Set the modifiers property (array of modifiers)
@@ -72,7 +71,7 @@ function getClasses(classIds) {
 
 export default {
     components: {
-        ClassTable, Breadcrumbs
+        CourseTable, Breadcrumbs
     },
     data() {
         return {
@@ -98,14 +97,14 @@ export default {
                     return category.name;
             return '';
         },
-        // Array of all pathway classes, grouped
+        // Array of all pathway courses, grouped
         priorities() {
             let pathway = this.pathway;
             return [pathway.priority1, pathway.priority2, pathway.priority3, pathway.priority4];
         },
-        // Get array of all classes, grouped
-        classes() {
-            return this.priorities.map(getClasses);
+        // Get array of all courses, grouped
+        courses() {
+            return this.priorities.map(getCourses);
         },
         // Get breadcrumb data
         breadcrumbs() {
@@ -133,42 +132,6 @@ export default {
         let color = getColorFromCategry(this.categoryName);
         this.$vuetify.theme.themes.light.primary = color;
         this.$vuetify.theme.themes.dark.primary = color;
-    },
-    methods: {
-        ...mapMutations([
-            'setSelectedCourse1',
-            'setSelectedCourse2',
-            'setSelectedCourse3',
-            'setSelectedPathway',
-        ]),
-        findAllCourses(path) {
-            var courses = []
-            for (var x = 0; x < path.priority1.length; x++) {
-                courses.push(this.findCourse(path.priority1[x]))
-            }
-            return courses
-        },
-        selectCourse(course, path) {
-            this.setSelectedPathway(path.name)
-            this.setSelectedCourse1(course)
-            if (this.$store.editingCourses) {
-                this.setSelectedCourse2(null)
-                this.setSelectedCourse3(null)
-            }
-            console.log(course)
-            this.$emit('nextBucket', this.nextBucketNumber)
-            this.$root.$emit('makeSecondCourseEditable', true)
-            this.$root.$emit('changeCurrent', 2)
-            this.$root.$emit(`closePanels`)
-        },
-        findCourse(course) {
-            var courses = this.allCourses
-            for (var courseKey in courses) {
-                if (course == courses[courseKey].pk) {
-                    return courses[courseKey]
-                }
-            }
-        },
     },
 }
 </script>

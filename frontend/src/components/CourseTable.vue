@@ -17,28 +17,28 @@
             />
         </v-card>
 
-        <ClassTableClass 
-            v-for="item in filteredClasses" 
+        <CourseTableCourse 
+            v-for="item in filteredCourses" 
             :key="item.prefix + item.ID" 
-            :clazz="item"
+            :course="item"
             :pathway-id="pathwayId"
         />
 
-        <p v-if="filteredClasses.length === 0" class="no-search-results">
+        <p v-if="filteredCourses.length === 0" class="no-search-results">
             No search results
         </p>
     </v-container>
 </template>
 
 <script>
-import ClassTableClass from './ClassTableClass'
-import search from '../helpers/search-classes.js'
+import CourseTableCourse from './CourseTableCourse'
+import search from '../helpers/search-courses.js'
 
 export default {
-    name: 'ClassTable',
-    components: { ClassTableClass },
+    name: 'CourseTable',
+    components: { CourseTableCourse },
     props: {
-        classes: {
+        courses: {
             type: Array,
             required: true
         },
@@ -52,8 +52,8 @@ export default {
         return { search: '' }
     },
     computed: {
-        filteredClasses() {
-            return search(this.classes, this.search);
+        filteredCourses() {
+            return search(this.courses, this.search);
         }
     },
     methods: {

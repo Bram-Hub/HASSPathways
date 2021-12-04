@@ -11,13 +11,13 @@
             <v-list-item-content class="pb-0"> 
                 <div style="cursor: pointer">
                     <h1 class="text-h5 class-card__title">
-                        {{ clazz.name }}
+                        {{ course.name }}
                         <v-checkbox
                             :input-value="selected"
                             :false-value="0"
                             :true-value="1"
 
-                            :aria-label="`Toggle selection for ${clazz.name}`"
+                            :aria-label="`Toggle selection for ${course.name}`"
 
                             color="primary"
                             value="primary"
@@ -28,10 +28,10 @@
                     </h1>
 
                     <small class="class-card__subtitle">
-                        {{ clazz.prefix }}-{{ clazz.ID }}
-                        <ClassTableModifiers
+                        {{ course.prefix }}-{{ course.ID }}
+                        <CourseTableModifiers
                             class="mt-4 class-card__subtitle__modifiers"
-                            :item="clazz"
+                            :item="course"
                         />
                         
                     </small>
@@ -39,26 +39,26 @@
             </v-list-item-content>
         </v-list-item>
         <v-card-text class="class-card__desc">
-            {{ clazz.description }}
+            {{ course.description }}
         </v-card-text>
     </v-card>
 </template>
 
 <script>
-import ClassTableModifiers from './ClassTableModifiers'
+import CourseTableModifiers from './CourseTableModifiers'
 
 const requiredProps = ['name', 'prefix', 'ID', 'description', 'modifiers'];
 
 export default {
-    name: 'ClassTableClass',
+    name: 'CourseTableCourse',
     components: {
-        ClassTableModifiers
+        CourseTableModifiers
     },
     props: {
-        clazz: {
+        course: {
             type: Object,
             required: true,
-            validator: clazz => requiredProps.every(prop => Object.keys(clazz).includes(prop))
+            validator: course => requiredProps.every(prop => Object.keys(course).includes(prop))
         },
         pathwayId: {
             type: String,
@@ -73,7 +73,7 @@ export default {
         // Load saved selection
         let courses = this.$store.state.pathways[this.pathwayId] || { courses: [] };
         courses = courses.courses;
-        this.selected = courses.includes(this.clazz.key) ? 1 : 0;
+        this.selected = courses.includes(this.course.key) ? 1 : 0;
     },
     methods: {
         toggleCheckbox() {
@@ -82,7 +82,7 @@ export default {
                 this.selected = 1 - this.selected;
 
                 // Save selection
-                const c = { pathwayID: this.pathwayId, course: this.clazz.key };
+                const c = { pathwayID: this.pathwayId, course: this.course.key };
                 if (this.selected) this.$store.commit('addCourse', c);
                 else               this.$store.commit('delCourse', c);
             }

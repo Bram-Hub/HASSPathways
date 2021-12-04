@@ -46,18 +46,18 @@
 
 <script>
 /**
- * Item is a class Object as defined in ClassTable.vue 
+ * Item is a course Object as defined in CourseTable.vue 
  * The modifiers property is an array of keys in the list
  * of modifiers in the data below, ie
  *   item.modifiers = [ 'HI',' fall', 'spring' ]
  *
- * The entire class object is passed for possible additional future formatting
+ * The entire course object is passed for possible additional future formatting
  */
 
 import { modifiers, modifierOrder, iconModifiers, textModifiers } from '../data/course-modifiers.js'
 
 export default {
-    name: 'ClassTableModifiers',
+    name: 'CourseTableModifiers',
     props: {
         item: {
             type: Object,

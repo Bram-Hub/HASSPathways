@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import HomePage from '../pages/Home/HomePage.vue'
+import PathwaysPage from '../pages/Pathway/PathwaysPage.vue'
 import PathwayPage from '../pages/Pathway/PathwayPage.vue'
 import MyPathwaysPage from '../pages/MyPathways/MyPathwaysPage.vue'
 import APathwayPage from '../pages/MyPathways/APathwayPage.vue'
@@ -16,12 +16,12 @@ export default new Router({
         {
             path: '/',
             name: 'home',
-            component: HomePage,
+            component: PathwaysPage,
         },
         {
             path: '/pathways',
             name: 'home',
-            component: HomePage,
+            component: PathwaysPage,
         },
         {
             path: '/pathway',
