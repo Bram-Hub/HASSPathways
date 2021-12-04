@@ -55,6 +55,11 @@ export default {
             this.$children.forEach(child => {
                 if (child.setSelected) child.setSelected(0);
             });
+        },
+        getSelected() {
+            return this.$children
+                .filter(child => child.setSelected)
+                .map(child => child.key);
         }
     }
 }

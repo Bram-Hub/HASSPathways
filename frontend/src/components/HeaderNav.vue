@@ -15,7 +15,6 @@
         <v-btn
             class="button"
             elevation="0"
-            depressed
             tile
             :to="{ name: 'home' }"
             @click="clearProgress()"
@@ -35,16 +34,14 @@ export default {
 </script>
 
 <style scoped>
-/* Override button active color, otherwise
- * it defaults to black 
- * Note: the >>> is NOT a typo */
->>> .v-btn--active .v-btn__content {
-    color: inherit;
-}
-
 .text {
     font-size: 0.85em;
     display: none;
+}
+
+/* Fix button highlighting getting stuck */
+.button::before {
+    opacity: 0 !important;
 }
 
 @media only screen and (max-width: 600px) {

@@ -15,6 +15,8 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+import { DARK_MODE, DEFAULT_DARK_MODE } from './data/vuex.js'
+
 export default {
     name: 'App',
     components: {
@@ -26,19 +28,11 @@ export default {
         searchInput: '',
         extension: ''
     }),
-    watch: {
-        extension(newExtension) {
-            localStorage.setItem('extension', newExtension)
-        },
-    },
     mounted() {
-        console.log(this.$vuetify.breakpoint)
-        if (localStorage.getItem('extension') == 'true') {
-            this.extension = true
-        }
- 
-        // Note: dark mode is saved as a string!
-        this.$vuetify.theme.dark = localStorage.getItem('hass-pathways-dark-mode', 'true') === 'true';
+        // Load dark mode directly from localStorage for faster response time
+        // Note: localStorage saves as a string
+        let darkMode = localStorage.getItem(DARK_MODE);
+        this.$vuetify.theme.dark = darkMode === null ? DEFAULT_DARK_MODE : darkMode === 'true';
     },
     methods: {
         handleInput() {
@@ -58,46 +52,11 @@ export default {
 </style>
 
 <style>
-
+#app {
+    font-family: 'Muli', sans-serif;
+}
 
 .main-content {
     min-height: 100vh;
-}
-
-#button {
-  float: right;
-}
-
-#topRightButtons .v-btn::before {
-  background-color: transparent;
-}
-
-#header {
-  height: 70px;
-  background-color: #fa8072;
-  color: white;
-  font-family: 'Muli', sans-serif;
-  font-size: 20px;
-}
-
-.v-btn--active .v-btn__content {
-  color: black;
-}
-
-#title {
-  color: white;
-  text-decoration: none;
-}
-
-#app {
-  font-family: 'Muli', sans-serif;
-}
-
-#list {
-  height: 200px;
-}
-
-.combo-box {
-    z-index: 200;
 }
 </style>
