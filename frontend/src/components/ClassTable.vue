@@ -21,6 +21,7 @@
             v-for="item in filteredClasses" 
             :key="item.prefix + item.ID" 
             :clazz="item"
+            :pathway-id="pathwayId"
         />
 
         <p v-if="filteredClasses.length === 0" class="no-search-results">
@@ -40,6 +41,11 @@ export default {
         classes: {
             type: Array,
             required: true
+        },
+        pathwayId: {
+            type: String,
+            required: false,
+            default: null
         }
     },
     data() {

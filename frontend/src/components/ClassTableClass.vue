@@ -59,16 +59,33 @@ export default {
             type: Object,
             required: true,
             validator: clazz => requiredProps.every(prop => Object.keys(clazz).includes(prop))
+        },
+        pathwayId: {
+            type: String,
+            required: false,
+            default: null
         }
     },
     data: () => {
         return { selected: 0 }
     },
+    mounted() {
+        // Load saved selection
+        let courses = this.$store.state.pathways[this.pathwayId] || { courses: [] };
+        courses = courses.courses;
+        this.selected = courses.includes(this.clazz.key) ? 1 : 0;
+    },
     methods: {
         toggleCheckbox() {
             let selection = window.getSelection();
-            if (selection.isCollapsed)
+            if (selection.isCollapsed) {
                 this.selected = 1 - this.selected;
+
+                // Save selection
+                const c = { pathwayID: this.pathwayId, course: this.clazz.key };
+                if (this.selected) this.$store.commit('addCourse', c);
+                else               this.$store.commit('delCourse', c);
+            }
         },
         selectedClass() {
             return this.selected ? 'class-card--selected' : '';

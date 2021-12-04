@@ -38,7 +38,7 @@
                 :key="item"
                 :eager="true"
             >
-                <ClassTable :classes="classes[index]" />
+                <ClassTable :classes="classes[index]" :pathway-id="pathwayID" />
             </v-tab-item>
         </v-tabs-items>
     </v-container>

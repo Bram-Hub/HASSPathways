@@ -20,6 +20,16 @@ Vue.use(Vuex);
 // Keys defined in /data in vuex.js
 import { DARK_MODE, PATHWAYS, DEFAULT_DARK_MODE } from './data/vuex.js'
 
+/**
+ * Create pathwayID in state if doesn't exist
+ * @param {State} state
+ * @param {string} pathwayID
+ */
+function checkDefaultCourses(state, pathwayID) {
+    if (!state.pathways[pathwayID])
+        state.pathways[pathwayID] = { courses: [] };
+}
+
 const store = new Vuex.Store({
     state: {
         darkMode: true,
@@ -39,10 +49,24 @@ const store = new Vuex.Store({
             state.darkMode = val;
             localStorage.setItem(DARK_MODE, val);
         },
-        updateCourses(state, pathwayID, newCourses) {
-            if (!state.pathways[pathwayID])
-                state.pathways[pathwayID] = {};
+        updateCourses(state, { pathwayID, newCourses }) {
+            checkDefaultCourses(state, pathwayID);
             state.pathways[pathwayID].courses = newCourses;
+            localStorage.setItem(PATHWAYS, state.pathways);
+        },
+        addCourse(state, { pathwayID, course }) {
+            if (!course) return;
+
+            checkDefaultCourses(state, pathwayID);
+            state.pathways[pathwayID].courses.push(course);
+            localStorage.setItem(PATHWAYS, state.pathways);
+        },
+        delCourse(state, { pathwayID, course }) {
+            if (!course) return;
+
+            checkDefaultCourses(state, pathwayID);
+            state.pathways[pathwayID].courses =
+                state.pathways[pathwayID].courses.filter(c => c && c !== course);
             localStorage.setItem(PATHWAYS, state.pathways);
         }
     },

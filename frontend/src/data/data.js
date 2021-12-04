@@ -6,6 +6,11 @@ import pathwayCategoriesJSON from './json/pathway_categories.json'
 // Sort pathways in pathway categories
 pathwayCategoriesJSON.forEach(category => category.pathways.sort());
 
+// Add key prop if not already exists
+for (let obj of Object.values(coursesJSON))
+    if (!obj.key)
+        obj.key = obj.prefix + obj.ID;
+
 // Prevent accidental modification
 Object.freeze(coursesJSON);
 Object.freeze(pathwaysJSON);
