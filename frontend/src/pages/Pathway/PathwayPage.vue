@@ -7,6 +7,13 @@
 
         <div class="fab-container">
             <v-btn
+                color="red" elevation="2" fab
+                aria-label="Clear courses"
+            >
+                <v-icon>mdi-delete</v-icon>
+            </v-btn>
+
+            <v-btn
                 color="green" elevation="2" fab
                 aria-label="Save pathway"
             >
@@ -142,10 +149,11 @@ export default {
     right: 10px;
     bottom: 10px;
     width: 56px;
-    height: 56px;
+    height: 120px;
     z-index: 999;
     
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
