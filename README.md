@@ -8,16 +8,6 @@ This project was developed to help students navigate through Rensselaer Polytech
 - An Integrative Pathway augments intellectual coherence to course selection in the form of disciplinary or interdisciplinary themes
 - An Integrative Pathway can enhance or enrich a major. For example, a Computer Science major following the Artificial Intelligence pathway or a Biomedical Engineering major following the Public Health pathway
 
-# Administrator Information
-#### Data Sheet
-https://docs.google.com/spreadsheets/d/1w6BNcxYCE54pvCJJWHiEoE9CiMjRrVNKeUArV97qN8w/edit?usp=sharing
-
-#### Automation
-1. Head to https://hasspathways.herokuapp.com/admin
-2. Login
-3. Head to https://hasspathways.herokuapp.com/upload-csv and upload the CSV file
-4. Go to this repository's GitHub Actions page
-5. Run the automation (it'll run automatically every Sunday @ 12 AM)
 
 # Developer Information
 #### Frontend Setup
@@ -29,11 +19,13 @@ https://docs.google.com/spreadsheets/d/1w6BNcxYCE54pvCJJWHiEoE9CiMjRrVNKeUArV97q
 - Visit the specified website the console spits out
 
 #### Backend Setup
-- https://github.com/Bram-Hub/CSV-Uploader
-- `python3 manage.py makemigrations`
-- `python3 manage.py migrate`
-- `python3 manage.py createsuperuser` and enter the information (email field can be left empty)
-- `python3 manage.py runserver`
+A new backend will eventually be needed (a web UI to manage this instead of uploading a CSV)
+
+- ~~https://github.com/Bram-Hub/CSV-Uploader~~
+- ~~`python3 manage.py makemigrations`~~
+- ~~`python3 manage.py migrate`~~
+- ~~`python3 manage.py createsuperuser` and enter the information (email field can be left empty)~~
+- ~~`python3 manage.py runserver`~~
 
 #### Branches/Pull Requests (old)
 To maintain an individual's credibility towards this project and order, we'll be using branches and pull requests. Branches will separate our work from one another preventing each other from overwriting someone's work. Pull requests is more of a formaility before it goes to production. With an active pull request, it tells the other developers part of the team that a feature/issue has been newly created/resolved. Pull requests will be handled by @nishi7409

@@ -36,7 +36,6 @@ Up to date as of commit `1e407fb339af4c0df4d661561a6648757d3b61ac`
 
 ## Naming
 - Components should have their parent's name in title case, ie a row of a `Table` would be `TableRow`, not just `Row`
-- 
 
 ## Stuff for those unfamiliar with Vue / Node
 
