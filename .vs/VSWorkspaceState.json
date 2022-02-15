@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\backend",
-    "\\backend\\AdminPortal"
+    "\\backend\\AdminPortal",
+    "\\backend\\AdminPortal\\templates",
+    "\\JSONfiles"
   ],
-  "SelectedNode": "\\backend\\AdminPortal",
+  "SelectedNode": "\\backend\\AdminPortal\\templates\\homepage.html",
   "PreviewInSolutionExplorer": false
 }
