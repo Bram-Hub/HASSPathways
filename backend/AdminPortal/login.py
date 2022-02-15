@@ -19,15 +19,12 @@ def dashboard():
 	else
 		redirect to login
 	'''
-	return redirect("/login")
 
 @app.route("/login", methods = ['GET', 'POST'])
 def login():
 	if request.method == 'POST':
 		user = request.form.get('user')
 		passwrd = request.form.get('passwrd')
-		
-		
 
 		return str('USERNAME IS: ' + user + 'PASSWORD IS: ' + passwrd)
 	else:
