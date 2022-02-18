@@ -2,45 +2,68 @@
 <html>
 <head>
     <title>HASS Pathways</title>
-    <link rel="stylesheet" type="text/css" href="hp.css" />
+    <link rel="stylesheet" type="text/css" href="hp.css"/>
 </head>
+
 <body>
-    <h1> HASS Pathways Homepage </h1>
-    <!--can automate this later -->
-
-
-    <div class="courseSection">
-        <h2> Courses </h2>
-        <ol>
-        <li> STSH </li>
-        <li> WRIT </li>
-        <li> IHSS </li>
-        <li> PHIL </li>
-        <li> ARTS </li>
-        <li> COMM </li>
-        <li> LITR </li>
-        <li> LANG </li>
-        <li> STSS </li>
-        <li> GSAS </li>
-        <li> COGS </li>
-        <li> PSYC </li>
-        <li> ENGR </li>
-        <li> ECON </li>
-        <li> ITWS </li>
-        </ol>
+    <div class="mybox">
+        <h1> HASS Pathways Homepage </h1>
+        <!-- <p><img src="logo.png" width="50" height="50"/></p> -->
+        <!-- ^^^ for picture -->
     </div>
-
+    
+    <br />
     <div class="courseSearch">
         <!--form will go eventaully to json file? or that might be later -->
         <form method="POST">
             <label for="courseSearch"> Course Search: </label>
             <input type="text"
                 name="courseSearch"
-                placeholder="course search"
+                placeholder="enter course here"
             >
     </div>
+    
+    <!--can automate this later -->
+    <div class="courseSection">
+        <h2> Courses </h2>
+        <ul>
 
-    <p id = "first"> hello world </p>
+        <li> <a href="STSH"> STSH </a></li>
+        <li> <a href="WRIT"> WRIT </a></li>
+        <li> <a href="IHSS"> IHSS </a></li>
+        <li> <a href="PHIL"> PHIL </a></li>
+        <li> <a href="ARTS"> ARTS </a></li>
+        <li> <a href="COMM"> COMM </a></li>
+        <li> <a href="LITR"> LITR </a></li>
+        <li> <a href="LANG"> LANG </a></li>
+        <li> <a href="STSS"> STSS </a></li>
+        <li> <a href="GSAS"> GSAS </a></li>
+        <li> <a href="COGS"> COGS </a></li>
+        <li> <a href="PSYC"> PSYC </a></li>
+        <li> <a href="ENGR"> ENGR </a></li>
+        <li> <a href="ECON"> ECON </a></li>
+        <li> <a href="ITWS"> ITWS </a></li>
+        </ul>
+
+    
+        <!--
+        <a href="STSH"> STSH </a>
+        <a href="WRIT"> WRIT </a>
+        <a href="IHSS"> IHSS </a>
+        <a href="PHIL"> PHIL </a>
+        <a href="ARTS"> ARTS </a>
+        <a href="COMM"> COMM </a>
+        <a href="LITR"> LITR </a>
+        <a href="LANG"> LANG </a>
+        <a href="STSS"> STSS </a>
+        <a href="GSAS"> GSAS </a>
+        <a href="COGS"> COGS </a>
+        <a href="PSYC"> PSYC </a>
+        <a href="ENGR"> ENGR </a>
+        <a href="ECON"> ECON </a>
+        <a href="ITWS"> ITWS </a>
+        -->
+    </div>
 
 </body>
 
