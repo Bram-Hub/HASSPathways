@@ -36,7 +36,7 @@ def register():
 		authkey = request.form.get('authkey')
 
 		newUser = User(id=1, username=email, passwrd=hashPass(passwrd), name=name)
-
+ 
 		db.session.add(newUser)
 		db.session.commit()
 
