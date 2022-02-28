@@ -7,6 +7,11 @@ app = Flask(__name__)
 def homepage():
 	return render_template("homepage.html")
 
+@app.route("/STSH", methods=['GET', 'POST'])
+def STSH():
+	#figure out a way 
+	if(request.method == 'POST'):
+		return render_template("courseList1.html")
 
 if __name__ == "__main__":
 	app.run()
