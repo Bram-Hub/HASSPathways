@@ -17,17 +17,18 @@
         <!--form will go eventaully to json file? or that might be later -->
         <form method="POST">
             <label for="courseSearch"> Course Search: </label>
-            <input type="text"
+            <input id ="searchbox" type="text"
                 name="courseSearch"
                 placeholder="enter course here"
             >
     </div>
     
     <!--can automate this later -->
+
+
     <div class="courseSection">
         <h2> Courses </h2>
         <ul>
-
         <li> <a href="courseList1.html"> STSH </a></li>
         <li> <a href="WRIT"> WRIT </a></li>
         <li> <a href="IHSS"> IHSS </a></li>
@@ -45,6 +46,30 @@
         <li> <a href="ITWS"> ITWS </a></li>
         </ul>
     </div>
+
+    <div class="deps">
+        <div>
+            <button onclick="location.href='courseList1.html'" type="button"> STSH </button>
+        </div>
+
+        <div>
+            <button onclick="location.href='WRIT'" type="button"> WRIT </button>
+        </div>
+        <div>
+            <button onclick="location.href='IHSS'" type="button"> IHSS </button>
+        </div>
+
+        <!--can automate this later
+        <div>
+            <button onclick="location.href='PHIL'" type="button"> PHIL </button>
+        </div>
+
+        -->
+    </div>
+
+
+
+
 
 </body>
 
