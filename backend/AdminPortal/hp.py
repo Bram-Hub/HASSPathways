@@ -6,17 +6,21 @@ import html
 
 app = Flask(__name__)
 
-#reading the courses json file
-with open('./data/courses.json', 'r') as course_file:
-    course_data = course_file.read()
 
-with open('./data/pathways.json', 'r') as pw_file:
-    pw_data = pw_file.read()
+#TODO: update path on server once you have it working
+c = open('/data/courses.json','r')
+p = open('/data/pathways.json','r')
+
+coursesData = json.load(c)
+pathwaysData = json.load(p)
+
+#https request
 
 @app.route("/")
 def homepage():
 	#dis is getting mad at me
-	return render_template("homepage.html", title="page", jsonfile_course=json.dumps(course_data),jsonfile_pw=json.dumps(pw_data) )
+	to_send=database()
+	return render_template("homepage.html", title="page", to_send=to_send )
 
 @app.route("/STSH", methods=['GET', 'POST'])
 def STSH():
