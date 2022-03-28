@@ -6,21 +6,10 @@ import html
 
 app = Flask(__name__)
 
-
-#TODO: update path on server once you have it working
-c = open('/data/courses.json','r')
-p = open('/data/pathways.json','r')
-
-coursesData = json.load(c)
-pathwaysData = json.load(p)
-
-#https request
-
 @app.route("/")
 def homepage():
 	#dis is getting mad at me
-	to_send=database()
-	return render_template("homepage.html", title="page", to_send=to_send )
+	return render_template('homepage.html')
 
 @app.route("/STSH", methods=['GET', 'POST'])
 def STSH():
@@ -29,4 +18,4 @@ def STSH():
 		return render_template("courseList1.html")
 
 if __name__ == "__main__":
-	 app.run(host='localhost', debug=True)
+	 app.run()

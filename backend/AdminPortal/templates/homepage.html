@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HASS Pathways</title>
-    <link rel="stylesheet" type="text/css" href="hp.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/hp.css') }}"/>
 </head>
 
 <body>
@@ -73,6 +73,7 @@
     <div id="myData"></div>
     
     <script>
+        // change this so it just goes from the js file
         fetch('test.json')
             .then(function (response){
                 return response.json();
