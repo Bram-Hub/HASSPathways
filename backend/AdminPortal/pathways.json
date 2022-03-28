@@ -1,0 +1,26 @@
+[
+    {
+        "fields": {
+            "pathDescript": "pathways description",
+            "pathName": "arts",
+            "priority1": [
+                4862,
+                4863,
+                4864,
+                4865,
+                4866,
+                4867
+            ],
+            "priority2": [
+                4868,
+                4869
+            ],
+            "priority3": [
+                4870
+            ]
+        },
+        "info'": "28/03/2022 00:31:57",
+        "model": "database.pathway",
+        "pk": 574
+    }
+]

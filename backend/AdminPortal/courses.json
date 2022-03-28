@@ -1,0 +1,20 @@
+[
+    {
+        "fields": {
+            "CI": true,
+            "DI": true,
+            "HI": true,
+            "ID": 0,
+            "description": "test",
+            "fall": false,
+            "major_restrictive": true,
+            "name": "Test",
+            "prefix": "Test",
+            "spring": true,
+            "summer": false
+        },
+        "info": "28/03/2022 00:31:57",
+        "model": "database.course",
+        "pk": 0
+    }
+]
