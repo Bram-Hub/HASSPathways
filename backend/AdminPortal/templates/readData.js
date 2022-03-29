@@ -1,5 +1,5 @@
 fetch('test.json')
-    .then(function (response){
+    .then(response => {
         return response.json();
     })
     .then(function (data){
@@ -11,8 +11,7 @@ fetch('test.json')
 function appendData(data) {
     var mainContainer = document.getElementById("myData");
     for (var i = 0; i < data.length; i++) {
-        var div = document.createElement("div");
-        div.innerHTML = 'fields: ' + data[i].fields;
-        mainContainer.appendChild(div);
+        //
     }
 }
+
