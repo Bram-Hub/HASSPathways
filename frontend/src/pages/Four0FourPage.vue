@@ -10,7 +10,7 @@
         <v-btn
             class="mt-4"
             color="primary"
-            to="/pathways"
+            to="/"
         >
             Go to Homepage
         </v-btn>
