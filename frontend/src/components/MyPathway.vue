@@ -39,16 +39,10 @@
         </v-card-title>
         
         <div class="courses-container">
-            <!-- 
-            <v-subheader class="subheader">
-                Test
-            </v-subheader>
-            -->
-
             <div class="course-items-container">
                 <span
-                    v-for="course in formatCourseCategory(courses)"
-                    :key="course"
+                    v-for="(course, i) in formatCourseCategory(courses)"
+                    :key="i"
                 >
                     <p class="pa-0 mb-2">
                         {{ course.name }}<br>
@@ -83,7 +77,6 @@ export default {
     data() {
         return { 
             pathways,
-            allCourses,
             menuItems: [
                 { title: 'Edit Pathway', icon: 'mdi-pencil', action: 'edit' },
                 { title: 'Graph View', icon: 'mdi-graph', action: 'graph' },

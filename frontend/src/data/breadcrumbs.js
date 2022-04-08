@@ -11,7 +11,8 @@ function createBreadcrumb(text, href) {
 const HOME = createBreadcrumb('Home', '/');
 const PATHWAYS = createBreadcrumb('Pathways', '/pathways');
 const MYPATHWAYS = createBreadcrumb('My Pathways', '/my-pathways');
-const PATHWAY_FROM_CLASSES = createBreadcrumb('Find pathway from Classes', '/from-classes');
+const FROM_CLASSES_SEARCH = createBreadcrumb('Search classes', '/search-classes');
+const FROM_CLASSES_PATHWAY = createBreadcrumb('Find classes', '/from-classes');
 
 export default {
     home: [HOME],
@@ -19,5 +20,6 @@ export default {
     pathway_template: [HOME, PATHWAYS, null],
     my_pathways: [HOME, MYPATHWAYS],
     my_pathway_template: [HOME, MYPATHWAYS, null],
-    pathway_from_classes: [HOME, PATHWAY_FROM_CLASSES]
+    from_classes_search: [HOME, FROM_CLASSES_SEARCH],
+    from_classes_pathway: [HOME, FROM_CLASSES_SEARCH, FROM_CLASSES_PATHWAY]
 };

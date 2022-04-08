@@ -6,6 +6,7 @@ import PathwaysPage from '../pages/Pathway/PathwaysPage.vue'
 import PathwayPage from '../pages/Pathway/PathwayPage.vue'
 import MyPathwaysPage from '../pages/MyPathways/MyPathwaysPage.vue'
 import FromClassesPage from '../pages/FromClasses/FromClassesPage.vue'
+import FromClassesPathways from '../pages/FromClasses/FromClassesPathways.vue'
 import Four0FourPage from '../pages/Four0FourPage.vue'
 
 import { pathways } from '../data/data.js'
@@ -38,9 +39,14 @@ export default new Router({
             component: MyPathwaysPage
         },
         {
+            path: '/search-classes',
+            name: 'search-classes',
+            component: FromClassesPage
+        },
+        {
             path: '/from-classes',
             name: 'from-classes',
-            component: FromClassesPage
+            component: FromClassesPathways
         },
         {
             path: '*',

@@ -39,19 +39,16 @@ export default {
     },
     data() {
         return {
-            my_pathways: Object.entries(this.$store.state.pathways).map(v => { return {
-                name: v[0],
-                courses: v[1].courses
-            }}),
             breadcrumbs: breadcrumbs.my_pathways
         };
     },
     methods: {
         get_pathways() {
-            return Object.entries(this.$store.state.pathways).map(v => { return {
+            let output = Object.entries(this.$store.state.pathways).map(v => { return {
                 name: v[0],
                 courses: v[1].courses
-            }})
+            }});
+            return output 
         },
         update() {
             this.$forceUpdate();

@@ -18,7 +18,7 @@ Vue.use(Toast, {
 Vue.use(Vuex);
 
 // Keys defined in /data in vuex.js
-import { DARK_MODE, PATHWAYS, DEFAULT_DARK_MODE } from './data/vuex.js'
+import { DARK_MODE, PATHWAYS, DEFAULT_DARK_MODE, CLASSES } from './data/vuex.js'
 
 /**
  * Create pathwayID in state if doesn't exist
@@ -37,6 +37,8 @@ const store = new Vuex.Store({
         // { pathway_id: { courses: [course_ids, ...] } }
         // Additional keys may be added as necessary for each pathway
         pathways: {},
+        //List of classes taken, stores them in the format of DEPT-LEVEL
+        classes: {}
     },
     plugins: [createPersistedState()],
     mutations: {
@@ -44,6 +46,7 @@ const store = new Vuex.Store({
             let darkMode = localStorage.getItem(DARK_MODE);
             state.darkMode = darkMode === null ? DEFAULT_DARK_MODE : darkMode === 'true';
             state.pathways = localStorage.getItem(PATHWAYS) || {};
+            state.classes = localStorage.getItem(CLASSES) || {};
         },
         setDarkMode(state, val=true) {
             state.darkMode = val;
@@ -72,6 +75,19 @@ const store = new Vuex.Store({
         delPathway(state, pathwayID) {
             if(state.pathways[pathwayID])
                 delete state.pathways[pathwayID];
+        },
+        addClass(state, {name, ID}) {
+            if(!state.classes[name])
+                state.classes[name] = ID; 
+        },
+        delClass(state, name) {
+            if(state.classes[name])
+                delete state.classes[name];
+        },
+        clearClasses(state) {
+            for(const clazz in state.classes) {
+                delete state.classes[clazz];
+            }
         }
     },
     getters: {}
