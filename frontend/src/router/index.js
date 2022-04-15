@@ -7,6 +7,10 @@ import PathwayPage from '../pages/Pathway/PathwayPage.vue'
 import MyPathwaysPage from '../pages/MyPathways/MyPathwaysPage.vue'
 import FromClassesPage from '../pages/FromClasses/FromClassesPage.vue'
 import FromClassesPathways from '../pages/FromClasses/FromClassesPathways.vue'
+import AdminHomePage from '../pages/AdminPortal/AdminHomePage.vue'
+import AdminCoursePage from '../pages/AdminPortal/AdminCoursePage.vue'
+import AdminPathwayPage from '../pages/AdminPortal/AdminPathwayPage.vue'
+import AdminSearchCCPage from '../pages/AdminPortal/AdminSearchCCPage.vue'
 import Four0FourPage from '../pages/Four0FourPage.vue'
 
 import { pathways } from '../data/data.js'
@@ -47,6 +51,26 @@ export default new Router({
             path: '/from-classes',
             name: 'from-classes',
             component: FromClassesPathways
+        },
+        {
+            path: '/admin-portal',
+            name: 'admin-portal',
+            component: AdminHomePage
+        },
+        {
+            path: '/admin-portal/course',
+            name: 'admin-course',
+            component: AdminCoursePage
+        },
+        {
+            path: '/admin-portal/pathway',
+            name: 'admin-pathway',
+            component: AdminPathwayPage
+        },
+        {
+            path: '/admin-portal/search-course-code',
+            name: 'admin-search-course-code',
+            component: AdminSearchCCPage
         },
         {
             path: '*',

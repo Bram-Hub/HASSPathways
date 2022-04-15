@@ -19,6 +19,14 @@
             >
                 <span class="text">Find a pathway from classes you have taken</span>
             </v-btn>
+            <v-btn
+                class="button"
+                elevation="0"
+                tile
+                :to="{ name: 'admin-portal' }"
+            >
+                <span class="text">Come to our Admin and secure portal</span>
+            </v-btn>
         </v-container>
     </div>
 </template>
