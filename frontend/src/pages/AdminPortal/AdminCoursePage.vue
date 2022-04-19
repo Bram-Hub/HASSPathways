@@ -92,16 +92,17 @@ export default {
     computed: {
         foundCrumbs() {
             const course = this.getCourse();
+            console.log()
             if(course) {
-                return breadcrumbs.pathway_template.map(x => x || {
+                return breadcrumbs.admin_course_page.map(x => x || {
                     text: course.name,
                     href: '/admin-portal/course?class=' + encodeURIComponent(course.name.slice().toLowerCase().replace(/ /g, '_'))
                 });
             }
             else {
-                return breadcrumbs.pathway_template.map(x => x || {
+                return breadcrumbs.admin_course_page.map(x => x || {
                     text: "Empty Course",
-                    href: '/admin-portal/search-course-code'
+                    href: '/admin-portal/course'
                 });
             }
         }
@@ -147,6 +148,25 @@ export default {
         },
         submit() {
             let newCourse = this.getCourse();
+            if(!newCourse) {
+                newCourse = {
+                    name: "",
+                    prefix: "",
+                    ID: 0,
+                    properties: {
+                        CI: 0,
+                        HI: 0,
+                        major_restricted: 0
+                    },
+                    description: "",
+                    offered: {
+                        fall: 0,
+                        summer: 0,
+                        spring: 0
+                    },
+                    key: ""
+                };
+            }
             newCourse.name = this.name;
             newCourse.prefix = this.dept;
             newCourse.ID = this.ID;
