@@ -49,12 +49,15 @@
             />
             <v-select
                 v-model="myPathways"
+                :items="pathways"
                 multiple
                 label="Pathways"
                 outlined
                 chips
-                readonly
             />
+            <v-btn color="primary" outlined @click="submit()">
+                Submit Changes<v-icon>mdi-check</v-icon>
+            </v-btn>
         </v-container>
     </div>
 </template>
@@ -86,6 +89,23 @@ export default {
             pathways: []
         }
     },
+    computed: {
+        foundCrumbs() {
+            const course = this.getCourse();
+            if(course) {
+                return breadcrumbs.pathway_template.map(x => x || {
+                    text: course.name,
+                    href: '/admin-portal/course?class=' + encodeURIComponent(course.name.slice().toLowerCase().replace(/ /g, '_'))
+                });
+            }
+            else {
+                return breadcrumbs.pathway_template.map(x => x || {
+                    text: "Empty Course",
+                    href: '/admin-portal/search-course-code'
+                });
+            }
+        }
+    },
     created() {
         const course = this.getCourse();
         if(course) {
@@ -110,29 +130,13 @@ export default {
                         if(array.includes(course.name.slice().toLowerCase().replace(/ /g, '_'))) {
                             myPathways.add(singlePathway.name);
                         }
+                        this.pathways.push(singlePathway.name);
                     }
                 }
             }
             this.pathways.push(singlePathway.name);
         }
         this.myPathways = Array.from(myPathways);
-    },
-    computed: {
-        foundCrumbs() {
-            const course = this.getCourse();
-            if(course) {
-                return breadcrumbs.pathway_template.map(x => x || {
-                    text: course.name,
-                    href: '/admin-portal/course?class=' + encodeURIComponent(course.name.slice().toLowerCase().replace(/ /g, '_'))
-                });
-            }
-            else {
-                return breadcrumbs.pathway_template.map(x => x || {
-                    text: "Empty Course",
-                    href: '/admin-portal/search-course-code'
-                });
-            }
-        },
     },
     methods: {
         getCourse() {
@@ -141,6 +145,22 @@ export default {
             }
             return courses[this.$route.query.class];
         },
+        submit() {
+            let newCourse = this.getCourse();
+            newCourse.name = this.name;
+            newCourse.prefix = this.dept;
+            newCourse.ID = this.ID;
+            newCourse.properties.CI = this.CI;
+            newCourse.properties.HI = this.HI;
+            newCourse.description = this.description;
+            newCourse.offered.fall = this.fall;
+            newCourse.offered.summer = this.summer;
+            newCourse.offered.spring = this.spring;
+            newCourse.properties.major_restricted = this.major_rest;
+            newCourse.key = this.name.slice().toLowerCase().replace(/ /g, '_');
+            console.log(newCourse);
+            console.log(this.myPathways);
+        }
     }
 }
 </script>
