@@ -1,5 +1,5 @@
 <template>
-    <v-footer>
+    <v-footer class="footer">
         <v-layout column>
             <div>
                 We love feedback! Come visit our 
@@ -37,5 +37,8 @@ export default {
 </script>
 
 <style scoped>
-
+.footer {
+    position: sticky;
+    bottom: 0;
+}
 </style>
