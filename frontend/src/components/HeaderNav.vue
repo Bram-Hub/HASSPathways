@@ -12,17 +12,6 @@
             </v-icon>
             <span class="text">My Pathways</span>
         </v-btn>
-        <v-btn
-            class="button"
-            elevation="0"
-            tile
-            :to="{ name: 'pathways' }"
-        >
-            <v-icon class="icon">
-                mdi-plus
-            </v-icon>
-            <span class="text">Add Pathway</span>
-        </v-btn>
     </div>
 </template>
 
