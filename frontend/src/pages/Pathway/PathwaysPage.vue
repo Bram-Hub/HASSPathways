@@ -8,7 +8,7 @@
 
             <v-divider class="my-4" />
 
-            <div class="pathway-categories">
+            <div class="pathway-categories fade-in">
                 <PathwayCategory 
                     v-for="item in pathwayCategories"
                     :key="item.name"
@@ -41,6 +41,39 @@ export default {
 </script>
 
 <style scoped>
+.fade-in{
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
 .pathway-categories {
     max-width: 100vw;
     display: grid;
