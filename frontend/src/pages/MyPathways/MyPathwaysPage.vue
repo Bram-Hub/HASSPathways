@@ -5,7 +5,9 @@
 
             <h1>My HASS Pathways</h1>
 
-            <p>Here you can find all your HASS pathways. <a href="/">You can add pathways here.</a></p>
+            <p>Here you can find all your HASS pathways. 
+                <router-link to="/pathways">You can add pathways here.</router-link>
+                </p>
 
             <v-divider class="my-4" />
 
