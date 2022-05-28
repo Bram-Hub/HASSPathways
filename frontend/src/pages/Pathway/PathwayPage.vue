@@ -110,7 +110,7 @@ export default {
             return [
                 '1st Course',
                 '2nd Course',
-                '4000 Level',
+                '3rd Course',
                 'Minor (optional)'
             ].filter((_, index) => this.priorities[index] && this.priorities[index].length);
         }
