@@ -32,6 +32,14 @@ export default {
     opacity: 0 !important;
 }
 
+.button {
+    opacity: 0.8;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
 @media only screen and (max-width: 600px) {
     .button {
         padding: 0 !important;
