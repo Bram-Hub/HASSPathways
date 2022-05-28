@@ -4,22 +4,6 @@
         <h1>{{ pathway.name }}</h1>
         <p>{{ pathway.description }}</p>
 
-        <div class="fab-container">
-            <v-btn
-                color="red" elevation="2" fab
-                aria-label="Clear courses"
-            >
-                <v-icon>mdi-delete</v-icon>
-            </v-btn>
-
-            <v-btn
-                color="green" elevation="2" fab
-                aria-label="Save pathway"
-            >
-                <v-icon>mdi-content-save</v-icon>
-            </v-btn>
-        </div>
-
         <v-divider class="my-4" />
 
         <v-tabs
