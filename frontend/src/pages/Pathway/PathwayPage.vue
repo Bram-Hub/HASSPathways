@@ -32,14 +32,15 @@
         </v-tabs>
 
         <v-tabs-items v-model="tab" touchless>    
-            <v-tab-item
+            <v-tab-item 
                 v-for="(item, index) in classTabs"
                 :key="item"
                 :eager="true"
             >
-                <CourseTable :courses="courses[index]" :pathway-id="pathwayID" />
+                <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" />
             </v-tab-item>
         </v-tabs-items>
+
     </v-container>
 </template>
 
@@ -126,11 +127,15 @@ export default {
     },
     methods: {
         deselectCourses() {
-            this.courses[this.tab].forEach(course => {
+            let tab = this.tab;
+            this.courses[tab].forEach(course => {
                 const c = { pathwayID: this.pathwayID, course: course.key };
-                console.log(c)
+                // delete course
                 this.$store.commit('delCourse', c);
             })
+            // deselect course
+            // console.log(this.$refs.test)
+            this.$refs[tab][0].deselectAll();
         }
     }
 }
