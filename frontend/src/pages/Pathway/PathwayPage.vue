@@ -3,6 +3,15 @@
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
         <h1>{{ pathway.name }}</h1>
         <p>{{ pathway.description }}</p>
+        <div class="fab-container">
+            <v-btn
+                color="red" elevation="2" fab
+                aria-label="Clear courses"
+                @click='deselectCourses()'
+            >
+                <v-icon>mdi-delete</v-icon>
+            </v-btn>
+        </div>
 
         <v-divider class="my-4" />
 
@@ -113,6 +122,15 @@ export default {
                 '3rd Course',
                 'Minor (optional)'
             ].filter((_, index) => this.priorities[index] && this.priorities[index].length);
+        }
+    },
+    methods: {
+        deselectCourses() {
+            this.courses[this.tab].forEach(course => {
+                const c = { pathwayID: this.pathwayID, course: course.key };
+                console.log(c)
+                this.$store.commit('delCourse', c);
+            })
         }
     }
 }
