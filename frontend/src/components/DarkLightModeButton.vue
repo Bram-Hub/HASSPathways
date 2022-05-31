@@ -48,4 +48,12 @@ export default {
 .button::before {
     opacity: 0 !important;
 }
+
+.button {
+    opacity: 0.8;
+}
+
+.button:hover {
+    opacity: 1;
+}
 </style>

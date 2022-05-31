@@ -4,22 +4,6 @@
         <h1>{{ pathway.name }}</h1>
         <p>{{ pathway.description }}</p>
 
-        <div class="fab-container">
-            <v-btn
-                color="red" elevation="2" fab
-                aria-label="Clear courses"
-            >
-                <v-icon>mdi-delete</v-icon>
-            </v-btn>
-
-            <v-btn
-                color="green" elevation="2" fab
-                aria-label="Save pathway"
-            >
-                <v-icon>mdi-content-save</v-icon>
-            </v-btn>
-        </div>
-
         <v-divider class="my-4" />
 
         <v-tabs
@@ -126,7 +110,7 @@ export default {
             return [
                 '1st Course',
                 '2nd Course',
-                '4000 Level',
+                '3rd Course',
                 'Minor (optional)'
             ].filter((_, index) => this.priorities[index] && this.priorities[index].length);
         }
