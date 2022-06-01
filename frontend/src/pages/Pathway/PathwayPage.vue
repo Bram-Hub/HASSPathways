@@ -3,6 +3,15 @@
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
         <h1>{{ pathway.name }}</h1>
         <p>{{ pathway.description }}</p>
+        <div class="fab-container">
+            <v-btn
+                color="red" elevation="2" fab
+                aria-label="Clear courses"
+                @click='deselectCourses()'
+            >
+                <v-icon>mdi-delete</v-icon>
+            </v-btn>
+        </div>
 
         <v-divider class="my-4" />
 
@@ -23,14 +32,15 @@
         </v-tabs>
 
         <v-tabs-items v-model="tab" touchless>    
-            <v-tab-item
+            <v-tab-item 
                 v-for="(item, index) in classTabs"
                 :key="item"
                 :eager="true"
             >
-                <CourseTable :courses="courses[index]" :pathway-id="pathwayID" />
+                <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" />
             </v-tab-item>
         </v-tabs-items>
+
     </v-container>
 </template>
 
@@ -113,6 +123,19 @@ export default {
                 '3rd Course',
                 'Minor (optional)'
             ].filter((_, index) => this.priorities[index] && this.priorities[index].length);
+        }
+    },
+    methods: {
+        deselectCourses() {
+            let tab = this.tab;
+            this.courses[tab].forEach(course => {
+                const c = { pathwayID: this.pathwayID, course: course.key };
+                // delete course
+                this.$store.commit('delCourse', c);
+            })
+            // deselect course
+            // console.log(this.$refs.test)
+            this.$refs[tab][0].deselectAll();
         }
     }
 }
