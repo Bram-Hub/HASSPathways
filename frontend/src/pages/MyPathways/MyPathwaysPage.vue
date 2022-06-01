@@ -35,10 +35,9 @@ import breadcrumbs from '../../data/breadcrumbs.js'
 export default {
     async mounted() {
         this.get_pathways().forEach(pathway => {
-            console.log(pathway)
             if (pathway.courses.length == 0) {
                 this.$store.commit('delPathway', pathway.name);
-                this.$emit('update');
+                this.update();
             }
         })
 
