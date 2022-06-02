@@ -14,6 +14,10 @@
                 :headers="headers"
                 :items="filteredCourses"
             >
+                <template slot="no-data">
+                    No classes found, make sure to select a pathway in the dropdown above
+                </template>
+
                 <template #item.name="{ item }">
                     <a :href="toClass(item.name)" class="text-decoration-none">
                         {{ item.name }}
@@ -21,28 +25,32 @@
                 </template> 
                 <template #item.fall="{ item }">
                     <v-simple-checkbox
+                        color="primary"
                         v-model="item.offered.fall"
-                        disabled
+                        readonly
                     />
                 </template> 
                 <template #item.summer="{ item }">
                     <v-simple-checkbox
+                        color="primary"
                         v-model="item.offered.summer"
-                        disabled
+                        readonly
                     />
                 </template> 
                 <template #item.spring="{ item }">
                     <v-simple-checkbox
+                        color="primary"
                         v-model="item.offered.spring"
-                        disabled
+                        readonly
                     />
                 </template> 
                 <template #item.CI="{ item }">
                     <v-simple-checkbox
+                        color="primary"
                         v-model="item.properties.CI"
-                        disabled
+                        readonly
                     />
-                </template> 
+                </template>
             </v-data-table>
         </v-container>
     </div>
