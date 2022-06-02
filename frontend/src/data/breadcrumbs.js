@@ -14,7 +14,7 @@ const MYPATHWAYS = createBreadcrumb('My Pathways', '/my-pathways');
 const FROM_CLASSES_SEARCH = createBreadcrumb('Search classes', '/search-classes');
 const FROM_CLASSES_PATHWAY = createBreadcrumb('Find classes', '/from-classes');
 const ADMIN_HOME_PAGE = createBreadcrumb('Admin Portal', '/admin-portal');
-const ADMIN_PATHWAY_PAGE = createBreadcrumb('Course Page', '/admin-portal/pathway');
+const ADMIN_PATHWAY_PAGE = createBreadcrumb('Pathways Page', '/admin-portal/pathway');
 const ADMIN_SEARCH_CC_PAGE = createBreadcrumb('Course Page', '/admin-portal/search-course-code');
 
 
