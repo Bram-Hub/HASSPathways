@@ -104,7 +104,7 @@
                     <template #header.data-table-select />
 
                     <!-- Override default row HTMl so we can add ripples + custom click stuff -->
-                    <template #item="{ item, isExpanded, isSelected, select }">
+                    <template #item="{ item, isSelected, select }">
                         <tr 
                             v-ripple
                             :class="'table-row ' + (isSelected ? 'table-row_selected' : '')"
