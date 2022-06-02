@@ -2,34 +2,127 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <h1>Search for the classes you have taken and then continue to the next page to display the computed pathways for you!</h1>
-            <h3>Type in the name of the course or the course ID to search for the courses you have taken</h3>
-            <div class="search-field">
-                <v-text-field 
-                    v-model="searchValue" 
-                    outlined
-                    rounded
-                    solo
-                    label="Search Class"
-                    class="search-field"    
-                />
-            </div>
-            <v-btn color="primary" outlined to="/from-classes">
-                Compute Pathway <v-icon>mdi-arrow-right-circle</v-icon>
-            </v-btn>
-            <v-btn color="primary" outlined @click="clear()">
-                Clear Selections <v-icon>mdi-close-circle-outline</v-icon>
-            </v-btn>
-            <div v-for="course in filteredCourses" :key="course.name">
-                <input 
-                    :id="course.name" 
-                    type="checkbox" 
-                    class="check"
-                    :checked="checkCourse(course)"
-                    @change="toggleCheckbox($event, course)"
+            <h1>HASS Pathways From Classes</h1>
+
+            <p>Search for the classes you have taken and then continue to the next page to display the computed pathways for you!</p>
+            
+            <v-card outlined tile>
+                <v-card-title>
+                    <v-text-field
+                        v-model="searchValue"
+                        append-icon="mdi-magnify"
+                        label="Search"
+                        single-line
+                        hide-details
+                        dense outlined
+                        style="border-radius: 0"
+                    />
+                    <v-spacer />
+
+                    <!-- Clear confirmation modal -->
+                    <v-dialog
+                        v-model="dialog"
+                        width="500"
+                        light
+                        overlay-opacity="0.8"
+                    >
+                        <template #activator="{ on, attrs }">
+                            <v-btn 
+                                color="red" outlined tile
+                                class="mr-2 font-weight-bold mobile-btn"
+
+                                v-bind="attrs"
+                                v-on="on"
+                            >
+                                Clear Selections <v-icon right>
+                                    mdi-close-circle-outline
+                                </v-icon>
+                            </v-btn>
+                        </template>
+                        <v-card>
+                            <v-card-text class="pt-4 font-weight-medium">
+                                <h3 class="mb-1">
+                                    Are you sure?
+                                </h3>
+                                You are about to unselect all your classes.
+                            </v-card-text>
+                            <v-divider />
+                            <v-card-actions>
+                                <v-spacer />
+                                <v-btn
+                                    color="primary"
+                                    class="font-weight-bold"
+                                    text
+                                    @click="dialog = false"
+                                >
+                                    Cancel
+                                </v-btn>
+                                <v-btn
+                                    color="primary"
+                                    class="font-weight-bold"
+                                    text
+                                    @click="deselectAll(); dialog = false"
+                                >
+                                    Unselect all
+                                </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-dialog>
+
+                    <!-- Next button -->
+                    <v-btn
+                        color="#2E7D32" tile
+                        to="/from-classes"
+                        class="mr-2 mobile-btn"
+                    >
+                        Find Pathways <v-icon right>
+                            mdi-arrow-right-circle
+                        </v-icon>
+                    </v-btn>
+                </v-card-title>
+
+                <v-data-table
+                    v-model="selected"
+                    :headers="courseHeaders"
+                    :items="courses"
+                    :single-select="false"
+                    :disable-pagination="true"
+                    :search="searchValue"
+                    :fixed-header="true"
+
+                    sort-by="id"
+                    item-key="name"
+                    show-select
+                    class="elevation-1"
+                    hide-default-footer
+                    height="400px"
+                    max-height="90%"
+                    mobile-breakpoint="10"
                 >
-                <label class="label" :for="course.name"> {{ course.name + ", " + course.prefix + "-" + course.ID }} </label>
-            </div>
+                    <!-- Remove select all / unselect all button to prevent
+                         users accidentally clearing their selections -->
+                    <template #header.data-table-select />
+
+                    <!-- Override default row HTMl so we can add ripples + custom click stuff -->
+                    <template #item="{ item, isExpanded, isSelected, select }">
+                        <tr 
+                            v-ripple
+                            :class="'table-row ' + (isSelected ? 'table-row_selected' : '')"
+                            @click="rowClick(item, select, isSelected)"
+                        >
+                            <td>
+                                <v-simple-checkbox
+                                    v-ripple color="primary"
+                                    :value="isSelected"
+                                    @input="rowClick(item, select, isSelected)"
+                                />
+                            </td>
+                            <td>{{ item.identifier }}</td>
+                            <td>{{ item.name }}</td>
+                        </tr>
+                    </template>
+                </v-data-table>
+            </v-card>
         </v-container>
     </div>
 </template>
@@ -39,78 +132,92 @@ import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import { courses } from '../../data/data.js'
 
+const TABLE_HEADERS = [
+    {
+        text: 'ID',
+        value: 'identifier',
+        width: '130px'
+    },
+    {
+        text: 'Name',
+        value: 'name'
+    }
+];
+
+/**
+ * Names in the store are stored slightly differently
+ * (All lower case, spaces replaced with _, whitespace removed)
+ * This function does the conversion
+ * 
+ * @param {string} name
+ * @return {string}
+ */
+function nameToKey(name) {
+    return name.slice().toLowerCase().replace(/ /g, '_');
+}
+
 export default {
     components: {
         Breadcrumbs
     },
     data() {
+        const courseList = Object.values(courses).map(course => {
+            return {
+                name: course.name,
+                identifier: course.prefix + '-' + course.ID, // For display
+                id: course.prefix + course.ID // For store
+            };
+        });
+
         return {
             breadcrumbs: breadcrumbs.from_classes_search,
-            searchValue: ''
-        }
-    },
-    computed: {
-        filteredCourses() {
-            let tempCourses = Object.entries(courses);
-
-            if(this.searchValue != '' && this.searchValue) {
-                tempCourses = tempCourses.filter((item) => {
-                    let combinedID = item[1].prefix + '-' + item[1].ID;
-
-                    return item[1].name
-                        .toUpperCase()
-                        .includes(this.searchValue.toUpperCase()) ||
-                        combinedID
-                            .toUpperCase()
-                            .includes(this.searchValue.toUpperCase());
-                })
-            }
-            return Object.fromEntries(tempCourses);
+            searchValue: '',
+            courses: courseList,
+            courseHeaders: TABLE_HEADERS,
+            selected: courseList.filter(course => this.$store.state.classes[nameToKey(course.name)]),
+            dialog: false
         }
     },
     methods: {
-        toggleCheckbox(event, course) {
-            let name = course.name.slice().toLowerCase().replace(/ /g, '_');
-            if(event.target.checked) {
-                const c = {ID: course.prefix + course.ID, name: name};
-                this.$store.commit("addClass", c)
-            }else {
-                this.$store.commit("delClass", name);
+        // On row click, toggle selected state
+        rowClick: function (item, select, isSelected) {    
+            // Is selected is previous selection state
+            // So if isSelected is false, then that means the box is checked
+            select(!isSelected);
+
+            if (!isSelected) { // The user just checked
+                this.$store.commit('addClass', {
+                    ID: item.id,
+                    name: nameToKey(item.name)
+                });
+            } else {
+                this.$store.commit('delClass', nameToKey(item.name));
             }
-        }, 
-        checkCourse(course) {
-            let name = course.name.slice().toLowerCase().replace(/ /g, '_');
-            if(this.searchValue == " in cri") {
-                this.searchValue = "";
-            }
-            return this.$store.state.classes[name];
         },
-        clear() {
-            this.$store.commit("clearClasses");
-            this.searchValue = " in cri";
+
+        deselectAll() {
+            this.selected = [];
+            this.$store.commit('clearClasses');
         }
     }
 }
 </script>
 <style>
-    .label {
-        border: 1px solid #666;
-        padding: 10px 15px;
-        text-align: center;
-        display: inline-block;
-        font-size: 15px;
-        margin: 5px;
-        cursor: pointer;
-        }
-    .check {
-        width: 30px;
-        height: 15px;
-        background: #555;
-        margin: 5px 5px;
-        position: relative;
-        border-radius: 5px;
+@media only screen and (max-width: 600px) {
+    /* Taller rows = easier to click on mobile (only for small screens) */
+    .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
+    .v-data-table > .v-data-table__wrapper > table > thead > tr > td,
+    .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
+        height: 64px !important;
     }
-    .search-field {
-        width: 400px;
+
+    /* On mobile, add vertical margins + full width */
+    .mobile-btn {
+        width: 100%;
+        margin-top: 10px;
     }
+}
+
+.table-row { cursor: pointer; }
+.table-row_selected { background-color: rgba(229, 57, 53, 0.15); }
 </style>
