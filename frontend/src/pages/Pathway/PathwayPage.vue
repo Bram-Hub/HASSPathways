@@ -8,15 +8,13 @@
         </v-btn>
         <v-container v-if="showGraph">
         <div id="graphView">
-            <div v-for="item in classTabs" :key="item">
-                <div class="tab">
+            <div v-for="item in classTabs" :key="item" class="tab">
                     <h2>
                         {{ item }}
                     </h2>
-                    <div v-for="course in courses" :key="course" id="graphTab">
+                    <div v-for="course in courses" :key="course" class="graphTab">
                         <GraphTab :course="course" :pathwayId="pathwayID"/>
                     </div>
-                </div>
             </div>
         </div>
 
@@ -158,19 +156,19 @@ export default {
     /* border: 1px solid fuchsia; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: normal;
 }
-#graphTab {
+.graphTab {
     /* border: 1px solid cyan; */
     display: flex;
-    max-width: 25vw;
-    margin: 0;
+    max-width: 20vw;
 }
 .tab {
     border: 1px solid gray;
     border-radius: 5%;
     box-sizing: border-box;
     padding: 5px;
+    margin: 0 auto;
 }
 .fab-container {
     position: fixed;
