@@ -47,39 +47,51 @@
                     />
                 </template>
                 <template #item.fall="{ item }">
-                    <v-checkbox
-                        v-model="item.offered.fall"
-                        :ripple="false"
-                    />
+                    <div style="display: flex; justify-content: center">
+                        <v-checkbox
+                            v-model="item.offered.fall"
+                            :ripple="false"
+                        />
+                    </div>
                 </template> 
                 <template #item.summer="{ item }">
-                    <v-checkbox
-                        v-model="item.offered.summer"
-                        :ripple="false"
-                    />
+                    <div style="display: flex; justify-content: center">
+                        <v-checkbox
+                            v-model="item.offered.summer"
+                            :ripple="false"
+                        />
+                    </div>
                 </template> 
                 <template #item.spring="{ item }">
-                    <v-checkbox
-                        v-model="item.offered.spring"
-                        :ripple="false"
-                    />
+                    <div style="display: flex; justify-content: center">
+                        <v-checkbox
+                            v-model="item.offered.spring"
+                            :ripple="false"
+                        />
+                    </div>
                 </template> 
                 <template #item.CI="{ item }">
-                    <v-checkbox
-                        v-model="item.properties.CI"
-                        :ripple="false"
-                    />
+                    <div style="display: flex; justify-content: center">
+                        <v-checkbox
+                            v-model="item.properties.CI"
+                            :ripple="false"
+                        />
+                    </div>
                 </template> 
                 <template #item.HI="{ item }">
-                    <v-checkbox
-                        v-model="item.properties.HI"
-                        :ripple="false"
-                    />
+                    <div style="display: flex; justify-content: center">
+                        <v-checkbox
+                            v-model="item.properties.HI"
+                            :ripple="false"
+                        />
+                    </div>
                 </template> 
                 <template #item.delete="{ item }">
-                    <v-btn color="error" @click="remove(item.name)">
-                        <v-icon>mdi-delete</v-icon>
-                    </v-btn>
+                    <div style="display: flex; justify-content: center">
+                        <v-btn color="error" @click="remove(item.name)">
+                            <v-icon>mdi-delete</v-icon>
+                        </v-btn>
+                    </div>
                 </template> 
             </v-data-table>
         </v-container>
@@ -106,14 +118,14 @@ export default {
                     align: 'start',
                     value: 'name',
                 },
-                { text: 'Prefix', value: 'prefix' },
-                { text: 'Course Code', value: 'ID' },
-                { text: 'Fall', value: 'fall' },
-                { text: 'Spring', value: 'spring' },
-                { text: 'Summer', value: 'summer' },
-                { text: 'Comm Intensive', value: 'CI' },
-                { text: 'Hass Inquiry', value: 'HI' },
-                { text: 'Delete From Pathway', value: 'delete' },
+                { text: 'Prefix', value: 'prefix', align: 'center'},
+                { text: 'Course Code', value: 'ID', align: 'center'},
+                { text: 'Fall', value: 'fall', align: 'center'},
+                { text: 'Spring', value: 'spring', align: 'center'},
+                { text: 'Summer', value: 'summer', align: 'center'},
+                { text: 'Comm Intensive', value: 'CI', align: 'center'},
+                { text: 'Hass Inquiry', value: 'HI', align: 'center'},
+                { text: 'Delete From Pathway', value: 'delete', align: 'center'},
             ],
             filteredCourses: []
         }
