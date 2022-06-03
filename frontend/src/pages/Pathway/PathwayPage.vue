@@ -3,17 +3,32 @@
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
         <h1>{{ pathway.name }}</h1>
         <p>{{ pathway.description }}</p>
-        <v-btn @click="toggleGraph()">click me to toggle graph view</v-btn>
+        <v-btn @click="toggleGraph()">
+            click me to toggle graph view
+        </v-btn>
         <v-container v-if="showGraph">
-            
-            graph view
+        <div id="graphView">
+            <div v-for="item in classTabs" :key="item">
+                <div class="tab">
+                    <h2>
+                        {{ item }}
+                    </h2>
+                    <div v-for="course in courses" :key="course" id="graphTab">
+                        <GraphTab :course="course" :pathwayId="pathwayID"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         </v-container>
         <v-container v-else>
             <div class="fab-container">
                 <v-btn
-                    color="red" elevation="2" fab
+                    color="red"
+                    elevation="2"
+                    fab
                     aria-label="Clear courses"
-                    @click='deselectCourses()'
+                    @click="deselectCourses()"
                 >
                     <v-icon>mdi-delete</v-icon>
                 </v-btn>
@@ -21,34 +36,19 @@
 
             <v-divider class="my-4" />
 
-            <v-tabs
-                v-model="tab"
-                background-color="transparent"
-                color="basil"
-                grow
-                center-active
-            >
+            <v-tabs v-model="tab" background-color="transparent" color="basil" grow center-active>
                 <v-tabs-slider color="primary" />
-                <v-tab
-                    v-for="item in classTabs"
-                    :key="item"
-                >
+                <v-tab v-for="item in classTabs" :key="item">
                     <small>{{ item }}</small>
                 </v-tab>
             </v-tabs>
 
-            <v-tabs-items v-model="tab" touchless>    
-                <v-tab-item 
-                    v-for="(item, index) in classTabs"
-                    :key="item"
-                    :eager="true"
-                >
+            <v-tabs-items v-model="tab" touchless>
+                <v-tab-item v-for="(item, index) in classTabs" :key="item" :eager="true">
                     <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" />
                 </v-tab-item>
             </v-tabs-items>
         </v-container>
-
-
     </v-container>
 </template>
 
@@ -56,6 +56,7 @@
 import { pathwayCategories, pathways, courses } from '../../data/data.js'
 import { modifierOrder } from '../../data/course-modifiers.js'
 import CourseTable from '../../components/CourseTable'
+import GraphTab from '../../components/GraphTab.vue'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 
@@ -69,7 +70,7 @@ function getCourses(courseIds) {
     let r = courseIds
         .map(course => courses[course])
         .filter(c => c.offered.fall || c.offered.spring || c.offered.summer);
-    
+
     // Set the modifiers property (array of modifiers)
     r.forEach(c => c.modifiers = modifierOrder.filter(p => c.offered[p] || c.properties[p]))
     return r;
@@ -77,7 +78,7 @@ function getCourses(courseIds) {
 
 export default {
     components: {
-        CourseTable, Breadcrumbs
+        CourseTable, Breadcrumbs, GraphTab
     },
     data() {
         return {
@@ -145,6 +146,7 @@ export default {
             this.$refs[tab][0].deselectAll();
         },
         toggleGraph() {
+            console.log(this.courses);
             this.showGraph = !this.showGraph;
         }
     }
@@ -152,6 +154,24 @@ export default {
 </script>
 
 <style scoped>
+#graphView {
+    /* border: 1px solid fuchsia; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#graphTab {
+    /* border: 1px solid cyan; */
+    display: flex;
+    max-width: 25vw;
+    margin: 0;
+}
+.tab {
+    border: 1px solid gray;
+    border-radius: 5%;
+    box-sizing: border-box;
+    padding: 5px;
+}
 .fab-container {
     position: fixed;
     right: 10px;
@@ -159,7 +179,7 @@ export default {
     width: 56px;
     height: 120px;
     z-index: 999;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
