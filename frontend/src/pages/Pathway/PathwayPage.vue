@@ -3,43 +3,51 @@
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
         <h1>{{ pathway.name }}</h1>
         <p>{{ pathway.description }}</p>
-        <div class="fab-container">
-            <v-btn
-                color="red" elevation="2" fab
-                aria-label="Clear courses"
-                @click='deselectCourses()'
-            >
-                <v-icon>mdi-delete</v-icon>
-            </v-btn>
-        </div>
+        <v-btn @click="toggleGraph()">click me to toggle graph view</v-btn>
+        <v-container v-if="showGraph">
+            
+            graph view
+        </v-container>
+        <v-container v-else>
+            <div class="fab-container">
+                <v-btn
+                    color="red" elevation="2" fab
+                    aria-label="Clear courses"
+                    @click='deselectCourses()'
+                >
+                    <v-icon>mdi-delete</v-icon>
+                </v-btn>
+            </div>
 
-        <v-divider class="my-4" />
+            <v-divider class="my-4" />
 
-        <v-tabs
-            v-model="tab"
-            background-color="transparent"
-            color="basil"
-            grow
-            center-active
-        >
-            <v-tabs-slider color="primary" />
-            <v-tab
-                v-for="item in classTabs"
-                :key="item"
+            <v-tabs
+                v-model="tab"
+                background-color="transparent"
+                color="basil"
+                grow
+                center-active
             >
-                <small>{{ item }}</small>
-            </v-tab>
-        </v-tabs>
+                <v-tabs-slider color="primary" />
+                <v-tab
+                    v-for="item in classTabs"
+                    :key="item"
+                >
+                    <small>{{ item }}</small>
+                </v-tab>
+            </v-tabs>
 
-        <v-tabs-items v-model="tab" touchless>    
-            <v-tab-item 
-                v-for="(item, index) in classTabs"
-                :key="item"
-                :eager="true"
-            >
-                <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" />
-            </v-tab-item>
-        </v-tabs-items>
+            <v-tabs-items v-model="tab" touchless>    
+                <v-tab-item 
+                    v-for="(item, index) in classTabs"
+                    :key="item"
+                    :eager="true"
+                >
+                    <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" />
+                </v-tab-item>
+            </v-tabs-items>
+        </v-container>
+
 
     </v-container>
 </template>
@@ -74,7 +82,8 @@ export default {
     data() {
         return {
             tab: null,
-            category: ''
+            category: '',
+            showGraph: false,
         }
     },
     computed: {
@@ -133,9 +142,10 @@ export default {
                 // delete course
                 this.$store.commit('delCourse', c);
             })
-            // deselect course
-            // console.log(this.$refs.test)
             this.$refs[tab][0].deselectAll();
+        },
+        toggleGraph() {
+            this.showGraph = !this.showGraph;
         }
     }
 }
