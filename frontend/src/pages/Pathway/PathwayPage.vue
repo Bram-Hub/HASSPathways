@@ -6,7 +6,7 @@
         <v-btn @click="toggleGraph()">
             click me to toggle graph view
         </v-btn>
-        <v-container v-if="showGraph">
+        <v-container v-show="showGraph">
         <div id="graphView">
             <div v-for="item in classTabs" :key="item" class="tab">
                     <h2>
@@ -19,7 +19,7 @@
         </div>
 
         </v-container>
-        <v-container v-else>
+        <v-container v-show="!showGraph">
             <div class="fab-container">
                 <v-btn
                     color="red"
