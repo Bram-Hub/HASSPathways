@@ -8,13 +8,14 @@
         </v-btn>
         <v-container v-show="showGraph">
         <div id="graphView">
-            <div v-for="item in classTabs" :key="item" class="tab">
+            <div v-for="(item, index) in classTabs" :key="item" class="tab">
                     <h2>
                         {{ item }}
                     </h2>
-                    <div v-for="course in courses" :key="course" class="graphTab">
-                        <GraphTab :course="course" :pathwayId="pathwayID"/>
-                    </div>
+                    <!-- <div v-for="course in courses" :key="course" class="graphTab"> -->
+                    <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" :showDesc=false />
+                        <!-- <GraphTab :course="course" :pathwayId="pathwayID"/> -->
+                    <!-- </div> -->
             </div>
         </div>
 
@@ -43,7 +44,7 @@
 
             <v-tabs-items v-model="tab" touchless>
                 <v-tab-item v-for="(item, index) in classTabs" :key="item" :eager="true">
-                    <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" />
+                    <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" :showDesc=true />
                 </v-tab-item>
             </v-tabs-items>
         </v-container>
@@ -54,7 +55,7 @@
 import { pathwayCategories, pathways, courses } from '../../data/data.js'
 import { modifierOrder } from '../../data/course-modifiers.js'
 import CourseTable from '../../components/CourseTable'
-import GraphTab from '../../components/GraphTab.vue'
+// import GraphTab from '../../components/GraphTab.vue'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 
@@ -76,7 +77,7 @@ function getCourses(courseIds) {
 
 export default {
     components: {
-        CourseTable, Breadcrumbs, GraphTab
+        CourseTable, Breadcrumbs
     },
     data() {
         return {
@@ -157,19 +158,31 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: normal;
+    flex-direction: row;
 }
-.graphTab {
-    /* border: 1px solid cyan; */
-    display: flex;
+#graphView>.tab {
+    flex: 1 1 160px;
     max-width: 20vw;
+    /* border: 1px red solid; */
 }
 .tab {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
     border: 1px solid gray;
     border-radius: 5%;
     box-sizing: border-box;
     padding: 5px;
     margin: 0 auto;
 }
+
+.graphTab {
+    /* flex: 1 1 20vw; */
+    border: 1px solid cyan;
+    /* display: flex; */
+    /* max-width: 20vw; */
+}
+
 .fab-container {
     position: fixed;
     right: 10px;

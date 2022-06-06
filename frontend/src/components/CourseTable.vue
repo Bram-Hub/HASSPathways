@@ -22,6 +22,7 @@
             :key="item.prefix + item.ID" 
             :course="item"
             :pathway-id="pathwayId"
+            :showDesc="showDesc"
         />
 
         <p v-if="filteredCourses.length === 0" class="no-search-results">
@@ -46,6 +47,11 @@ export default {
             type: String,
             required: false,
             default: null
+        },
+        showDesc: {
+            type:Boolean,
+            required: false,
+            default: true,
         }
     },
     data() {
