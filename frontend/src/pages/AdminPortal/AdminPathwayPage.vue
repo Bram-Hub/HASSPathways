@@ -9,48 +9,90 @@
                 solo
                 :items="pathways"
                 label="Pathways"
+                @change="filterCourses()"
             />
+            <v-btn @click="submit()">
+                Submit
+            </v-btn>
+
             <v-data-table
                 :headers="headers"
                 :items="filteredCourses"
-            >
+
                 <template slot="no-data">
                     No classes found, make sure to select a pathway in the dropdown above
                 </template>
 
                 <template #item.name="{ item }">
-                    <a :href="toClass(item.name)" class="text-decoration-none">
-                        {{ item.name }}
-                    </a>
-                </template> 
-                <template #item.fall="{ item }">
-                    <v-simple-checkbox
-                        color="primary"
-                        v-model="item.offered.fall"
-                        readonly
-                    />
-                </template> 
-                <template #item.summer="{ item }">
-                    <v-simple-checkbox
-                        color="primary"
-                        v-model="item.offered.summer"
-                        readonly
-                    />
-                </template> 
-                <template #item.spring="{ item }">
-                    <v-simple-checkbox
-                        color="primary"
-                        v-model="item.offered.spring"
-                        readonly
-                    />
-                </template> 
-                <template #item.CI="{ item }">
-                    <v-simple-checkbox
-                        color="primary"
-                        v-model="item.properties.CI"
-                        readonly
+                    <v-text-field
+                        v-model="item.name"
+                        single-line
+                        clearable   
                     />
                 </template>
+
+                <template #item.prefix="{ item }">
+                    <v-text-field
+                        v-model="item.prefix"
+                        single-line
+                        clearable   
+                    />
+                </template>
+
+                <template #item.ID="{ item }">
+                    <v-text-field
+                        v-model="item.ID"
+                        single-line
+                        clearable   
+                    />
+                </template>
+                <template #item.fall="{ item }">
+                    <div style="display: flex; justify-content: center">
+                        <v-checkbox
+                            v-model="item.offered.fall"
+                            :ripple="false"
+                        />
+                    </div>
+                </template> 
+                <template #item.summer="{ item }">
+                    <div style="display: flex; justify-content: center">
+                        <v-checkbox
+                            v-model="item.offered.summer"
+                            :ripple="false"
+                        />
+                    </div>
+                </template> 
+                <template #item.spring="{ item }">
+                    <div style="display: flex; justify-content: center">
+                        <v-checkbox
+                            v-model="item.offered.spring"
+                            :ripple="false"
+                        />
+                    </div>
+                </template> 
+                <template #item.CI="{ item }">
+                    <div style="display: flex; justify-content: center">
+                        <v-checkbox
+                            v-model="item.properties.CI"
+                            :ripple="false"
+                        />
+                    </div>
+                </template> 
+                <template #item.HI="{ item }">
+                    <div style="display: flex; justify-content: center">
+                        <v-checkbox
+                            v-model="item.properties.HI"
+                            :ripple="false"
+                        />
+                    </div>
+                </template> 
+                <template #item.delete="{ item }">
+                    <div style="display: flex; justify-content: center">
+                        <v-btn color="error" @click="remove(item.name)">
+                            <v-icon>mdi-delete</v-icon>
+                        </v-btn>
+                    </div>
+                </template> 
             </v-data-table>
         </v-container>
     </div>
@@ -76,49 +118,16 @@ export default {
                     align: 'start',
                     value: 'name',
                 },
-                { text: 'Fall', value: 'fall' },
-                { text: 'Spring', value: 'spring' },
-                { text: 'Summer', value: 'summer' },
-                { text: 'Deptartment', value: 'prefix' },
-                { text: 'ID', value: 'ID' },
-                { text: 'CI', value: 'CI' },
+                { text: 'Prefix', value: 'prefix', align: 'center'},
+                { text: 'Course Code', value: 'ID', align: 'center'},
+                { text: 'Fall', value: 'fall', align: 'center'},
+                { text: 'Spring', value: 'spring', align: 'center'},
+                { text: 'Summer', value: 'summer', align: 'center'},
+                { text: 'Comm Intensive', value: 'CI', align: 'center'},
+                { text: 'Hass Inquiry', value: 'HI', align: 'center'},
+                { text: 'Delete From Pathway', value: 'delete', align: 'center'},
             ],
-        }
-    },
-    computed: {
-        filteredCourses() {
-            if(this.selectedPathway == null || this.selectedPathway == "") {
-                return [];
-            }
-            let pathwayID = this.selectedPathway.toLowerCase().replace(/ /g, '_').replace(/,/g, '');
-            let pathway = pathways[pathwayID];
-
-            let classes = new Set();
-            for(const prio in pathway) {
-                if(prio.substring(0, 8) == "priority") {
-                    for(const course in pathway[prio]) {
-                        let clazz = courses[pathway[prio][course]];
-                        for(let prop in clazz.properties) {
-                            if(clazz.properties[prop] == 0) {
-                                clazz.properties[prop] = false;
-                            } 
-                            else {
-                                clazz.properties[prop] = true;
-                            } 
-                        }
-                        for(let offer in clazz.offered) {
-                            if(clazz.offered[offer] == 0) {
-                                clazz.offered[offer] = false;
-                            } 
-                            else {
-                                clazz.offered[offer] = true;
-                            } 
-                        }
-                        classes.add(clazz);
-                    }
-                }
-            }
-            return Array.from(classes);
+            filteredCourses: []
         }
     },
     created() {
@@ -133,6 +142,45 @@ export default {
             let urlEnd = clazz.toLowerCase().replace(/ /g, '_').replace(/,/g, '');
             const finalURL = urlStart + urlEnd;
             return finalURL;
+        },
+        filterCourses() {
+            if(this.selectedPathway == null || this.selectedPathway == "") {
+                return [];
+            }
+            let pathwayID = this.selectedPathway.toLowerCase().replace(/ /g, '_').replace(/,/g, '');
+            let pathway = pathways[pathwayID];
+            if(pathway != null) {
+                let classes = new Set();
+                for(const prio in pathway) {
+                    if(prio.substring(0, 8) == "priority") {
+                        for(const course in pathway[prio]) {
+                            let clazz = courses[pathway[prio][course]];
+                            clazz = JSON.parse(JSON.stringify(clazz));
+                            classes.add(clazz);
+                        }
+                    }
+                }
+                this.filteredCourses = Array.from(classes);
+            }
+            else {
+                this.filteredCourses = [];
+            }
+        },
+        submit() {
+            const classes = this.filteredCourses;
+
+            for(const clazz in classes) {
+                const key = classes[clazz].name.toLowerCase().replace(/ /g, '_').replace(/,/g, '').replace(/-/g, '_');
+                const curr = JSON.parse(JSON.stringify(classes[clazz]));
+                const course = courses[key];
+                if(JSON.stringify(curr) != JSON.stringify(course)) {
+                    console.log(curr);
+                }
+            }
+        },
+        remove(name) {
+            name = name.toLowerCase().replace(/ /g, '_').replace(/,/g, '').replace(/-/g, '_');
+            console.log("remove " + name + " from " + this.selectedPathway);
         }
     }
 }
