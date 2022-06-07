@@ -6,6 +6,16 @@
 
         <div class="fab-container">
             <v-btn
+                color="black" elevation="2" fab
+                aria-label="Switch to nex tab on class selection"
+                @click="changeTabOnSelection = !changeTabOnSelection;"
+            >
+                <v-icon>
+                    {{ changeTabOnSelection ? 'mdi-rotate-right-variant' : 'mdi-checkbox-blank-circle-outline' }}
+                </v-icon>
+            </v-btn>
+
+            <v-btn
                 color="red" elevation="2" fab
                 aria-label="Clear courses"
             >
@@ -44,7 +54,11 @@
                 :key="item"
                 :eager="true"
             >
-                <CourseTable :courses="courses[index]" :pathway-id="pathwayID" />
+                <CourseTable
+                    :courses="courses[index]"
+                    :pathway-id="pathwayID"
+                    @checkbox-clicked="onCheckboxClicked()"
+                />
             </v-tab-item>
         </v-tabs-items>
     </v-container>
@@ -79,8 +93,9 @@ export default {
     },
     data() {
         return {
-            tab: null,
-            category: ''
+            tab: 0,
+            category: '',
+            changeTabOnSelection: false
         }
     },
     computed: {
@@ -130,6 +145,13 @@ export default {
                 'Minor (optional)'
             ].filter((_, index) => this.priorities[index] && this.priorities[index].length);
         }
+    },
+    methods : {
+        onCheckboxClicked(){
+            if(this.changeTabOnSelection)
+                this.tab += 1;
+        }
+
     }
 }
 </script>
