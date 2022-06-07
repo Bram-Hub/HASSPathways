@@ -12,10 +12,8 @@
                     <h2>
                         {{ item }}
                     </h2>
-                    <!-- <div v-for="course in courses" :key="course" class="graphTab"> -->
+                    <hr/>
                     <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" :showDesc=false />
-                        <!-- <GraphTab :course="course" :pathwayId="pathwayID"/> -->
-                    <!-- </div> -->
             </div>
         </div>
 
