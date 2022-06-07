@@ -1,0 +1,1235 @@
+{
+    "artificial_intelligence": {
+        "description": "Artificial Intelligence is quickly becoming pervasive in our lives. Study how Artificial Intelligence can benefit from concepts and ideas from cognitive science, and explore the ways in which Artificial Intelligence is changing our lives.",
+        "name": "Artificial Intelligence",
+        "priority1": [
+            "minds_and_machines",
+            "ai_and_society",
+            "are_humans_rational?"
+        ],
+        "priority2": [
+            "introduction_to_cognitive_science"
+        ],
+        "priority3": [
+            "cognitive_modeling",
+            "programming_for_cognitive_science_and_artificial_intelligence",
+            "artificial_intelligent_agents",
+            "language_endowed_intelligent_agents",
+            "ethics_of_ai",
+            "learning_and_advanced_game_ai",
+            "intelligent_virtual_agents",
+            "intermediate_formal_logic_&_ai",
+            "game_ai"
+        ],
+        "priority4": []
+    },
+    "arts_history_theory_and_criticism": {
+        "description": "This pathway allows students to study a range of art history and media art histories and theories. This immersive study will give students a comprehensive view of how these histories have shaped our current day media and given rise to a variety of art making tools in our digital and computational era.",
+        "name": "Arts History, Theory, And Criticism",
+        "priority1": [
+            "art_history",
+            "back_to_the_60s",
+            "race_and_film_in_us_culture_and_history",
+            "history_of_jazz_and_improv_music",
+            "history_of_animation",
+            "songwriting_workshop"
+        ],
+        "priority2": [
+            "history_of_western_music",
+            "the_multimedia_century"
+        ],
+        "priority3": [
+            "new_media_theory"
+        ],
+        "priority4": []
+    },
+    "behavioral_and_cognitive_neuroscience": {
+        "description": "Behavioral and cognitive neuroscience focus on understanding the brain mechanisms that allow humans and other animals to perceive, think, feel, remember, and act.  Students pursuing this pathway will cultivate an understanding of brain and behavior/cognition relationships by critically analyzing research findings.",
+        "name": "Behavioral And Cognitive Neuroscience",
+        "priority1": [
+            "intro_to_psychological_science"
+        ],
+        "priority2": [
+            "drugs_society_and_behavior",
+            "hormones_brain_and_behavior",
+            "introduction_to_cognitive_neuroscience",
+            "understanding_empathy",
+            "cognition_and_the_brain",
+            "behavioral_neuroscience",
+            "stress_and_the_brain"
+        ],
+        "priority3": [],
+        "priority4": []
+    },
+    "chinese_language": {
+        "description": "Integrated with Chinese culture, students will learn all four types of language skills (listening, speaking, reading, and writing). After completing the Chinese pathway, students will be able to communicate in Chinese at their targeted proficiency levels and think critically and creatively with global and multicultural awareness.",
+        "name": "Chinese Language",
+        "priority1": [
+            "chinese_iii",
+            "chinese_ii",
+            "chinese_i"
+        ],
+        "priority2": [
+            "chinese_iv",
+            "chinese_v",
+            "chinese_iii",
+            "chinese_ii"
+        ],
+        "priority3": [
+            "chinese_iv",
+            "chinese_v",
+            "chinese_iii"
+        ],
+        "priority4": []
+    },
+    "creative_design_and_innovation": {
+        "description": "This pathway looks at creative design and innovation from various humanities, arts, and social science points of view. Students will learn about the cognitive and communicative principles behind design and innovation, the economic policies, markets, and other social institutions driving and shaping design and innovation, and how to engage in sustainable and socially responsible design and innovation for local and global impact.",
+        "name": "Creative Design And Innovation",
+        "priority1": [
+            "remixing_in_digital_culture",
+            "game_sound_and_musical_play",
+            "worlds_on_display",
+            "fundamentals_of_music_and_sound",
+            "digital_imaging",
+            "history_of_animation",
+            "documentary_in_the_21st_century:_identity_production",
+            "history_of_design",
+            "songwriting_workshop",
+            "digital_filmmaking"
+        ],
+        "priority2": [
+            "history_and_analysis_of_western_music",
+            "introduction_to_graphic_design",
+            "fundamentals_of_2d_design",
+            "visual_design:_theory_and_application",
+            "sustainability_by_design",
+            "sculpture_ii",
+            "visual_poetics_and_narrative",
+            "cognitive_engineering",
+            "human_factors_in_design",
+            "music_and_sound_i",
+            "performance_art",
+            "introduction_to_cognitive_science",
+            "sculpture_i",
+            "radical_graphics__screenprinting",
+            "color_theory",
+            "brand_identity_design",
+            "sound_recording_and_production_i",
+            "typography"
+        ],
+        "priority3": [
+            "history_and_analysis_of_western_music",
+            "introduction_to_graphic_design",
+            "fundamentals_of_2d_design",
+            "visual_design:_theory_and_application",
+            "sustainability_by_design",
+            "sculpture_ii",
+            "visual_poetics_and_narrative",
+            "cognitive_engineering",
+            "human_factors_in_design",
+            "music_and_sound_i",
+            "performance_art",
+            "introduction_to_cognitive_science",
+            "sculpture_i",
+            "radical_graphics__screenprinting",
+            "color_theory",
+            "brand_identity_design",
+            "sound_recording_and_production_i",
+            "typography"
+        ],
+        "priority4": []
+    },
+    "design_innovation_and_society": {
+        "description": "The pathway in Design, Innovation, and Society (DIS) provides creative, socially conscious students deep context for a broad education in design and innovation. Students take a sequence of studio-based courses that address real-world social and environmental challenges.",
+        "name": "Design, Innovation, And Society",
+        "priority1": [
+            "design_and_innovation_studio_i"
+        ],
+        "priority2": [
+            "design_and_innovation_studio_ii"
+        ],
+        "priority3": [
+            "design_and_innovation_studio_b",
+            "design_and_innovation_studio_c"
+        ],
+        "priority4": []
+    },
+    "economics": {
+        "description": "Study different types of theories and statistical methods used by economists. Students are prepared to gain a broad understanding of how consumers, firms and governments make decisions, and their implications.",
+        "name": "Economics",
+        "priority1": [
+            "introductory_economics",
+            "principles_of_economics"
+        ],
+        "priority2": [
+            "intermediate_macroeconomic_theory",
+            "economics_elective",
+            "intermediate_microeconomic_theory"
+        ],
+        "priority3": [
+            "applied_econometrics",
+            "international_economics_and_globalization",
+            "public_finance",
+            "economics_of_growth_&_innovation",
+            "law_and_economics",
+            "economics_of_government_regulation_and_firm_strategy",
+            "econometrics",
+            "environmental_and_resource_economics",
+            "applied_microeconomics",
+            "development_of_economic_thought",
+            "natural_resource_economics",
+            "economics_of_innovation_and_new_technologies",
+            "behavioral_economics",
+            "econometric_methods_for_big_data",
+            "economics_of_biotech_and_medical_innovations",
+            "economics_of_financial_institutions_and_markets",
+            "microeconomics_of_decision_making",
+            "behavioral_financial_economics",
+            "seminar_in_economics",
+            "applied_game_theory",
+            "experimental_economics",
+            "health_economics_and_policy",
+            "advanced_data_analytics_&_policy_evaluation",
+            "open_economy_macroeconomics",
+            "mathematical_methods_in_economics",
+            "readings_in_economics",
+            "economy_technology_and_sustainability",
+            "money_and_banking",
+            "environmental_economics",
+            "structure_of_industry:_competition_innovation_entrepreneurship_policy",
+            "cost_benefit_analysis",
+            "topics_in_economics",
+            "economic_models_of_decision_making"
+        ],
+        "priority4": []
+    },
+    "economics_of_banking_&_finance": {
+        "description": "Study markets and policies in banking and finance. Students are prepared to use different types of mathematical models and econometric techniques used by economists to study the behavior of individuals, firms, and the economy.",
+        "name": "Economics Of Banking & Finance",
+        "priority1": [
+            "introductory_economics",
+            "principles_of_economics"
+        ],
+        "priority2": [
+            "economics_of_financial_institutions_&_markets",
+            "money_and_banking",
+            "behavioral_financial_economics"
+        ],
+        "priority3": [
+            "economics_of_financial_institutions_&_markets",
+            "money_and_banking",
+            "behavioral_financial_economics"
+        ],
+        "priority4": []
+    },
+    "economics_of_decision_making": {
+        "description": "Study how individuals and firms make financial and economic decisions, and how those decisions might deviate from those predicted by traditional economic theory. Students are prepared to apply behavioral models of decision-making and experimental methods in economics.",
+        "name": "Economics Of Decision-Making",
+        "priority1": [
+            "introductory_economics",
+            "principles_of_economics"
+        ],
+        "priority2": [
+            "behavioral_economics",
+            "intermediate_microeconomic_theory",
+            "behavioral_financial_economics",
+            "applied_game_theory",
+            "experimental_economics",
+            "economic_models_of_decision_making"
+        ],
+        "priority3": [
+            "behavioral_economics",
+            "intermediate_microeconomic_theory",
+            "behavioral_financial_economics",
+            "applied_game_theory",
+            "experimental_economics",
+            "economic_models_of_decision_making"
+        ],
+        "priority4": []
+    },
+    "economics_of_healthcare_markets": {
+        "description": "Study different types of markets related to pharmaceuticals, medical devices, and healthcare. Students are prepared to use theory, econometric models, and data to study the role of R&D, patents, innovation, and policies in healthcare markets, and in pharmaceuticals and medical devices.",
+        "name": "Economics Of Healthcare Markets",
+        "priority1": [
+            "introductory_economics",
+            "principles_of_economics"
+        ],
+        "priority2": [
+            "health_economics_and_policy",
+            "economics_of_biotech_and_medical_innovations",
+            "behavioral_economics"
+        ],
+        "priority3": [
+            "health_economics_and_policy",
+            "economics_of_biotech_and_medical_innovations",
+            "behavioral_economics"
+        ],
+        "priority4": []
+    },
+    "economics_of_policy_&_regulations": {
+        "description": "Study different types of regulations and economic policy measures, and their impact on individuals, markets, and the economy. Students are prepared to use economic models, quantitative methods, and data to assess different types of regulations and policies, and their impact.",
+        "name": "Economics Of Policy & Regulations",
+        "priority1": [
+            "introductory_economics",
+            "principles_of_economics"
+        ],
+        "priority2": [
+            "health_economics_and_policy",
+            "law_&_economics",
+            "environmental_economics",
+            "economics_of_government_regulation_and_firm_strategy"
+        ],
+        "priority3": [
+            "health_economics_and_policy",
+            "law_&_economics",
+            "environmental_economics",
+            "economics_of_government_regulation_and_firm_strategy"
+        ],
+        "priority4": []
+    },
+    "economics_of_quantitative_modeling": {
+        "description": "Study different types of mathematical models and econometric techniques used in Economics. Students are prepared to use economic theory, and econometric and statistical methods to study behavior of individuals and firms in the economy.",
+        "name": "Economics Of Quantitative Modeling",
+        "priority1": [
+            "introductory_economics",
+            "principles_of_economics"
+        ],
+        "priority2": [
+            "econometrics",
+            "econometric_methodsbig_data",
+            "experimental_economics"
+        ],
+        "priority3": [
+            "econometrics",
+            "econometric_methodsbig_data",
+            "experimental_economics"
+        ],
+        "priority4": []
+    },
+    "economics_of_technology_&_innovation": {
+        "description": "Study different types of economic models related to innovation and new technologies. Students are prepared to use economic theory, econometric and statistical methods, and data to examine patents, R&D, and innovation more broadly, as well as in specific industries in the economy.",
+        "name": "Economics Of Technology & Innovation",
+        "priority1": [
+            "introductory_economics",
+            "principles_of_economics"
+        ],
+        "priority2": [
+            "economics_of_growth_and_innovation",
+            "economics_of_biotech_and_medical_innovations",
+            "economics_of_innovation_and_new_technologies"
+        ],
+        "priority3": [
+            "economics_of_growth_and_innovation",
+            "economics_of_biotech_and_medical_innovations",
+            "economics_of_innovation_and_new_technologies"
+        ],
+        "priority4": []
+    },
+    "electronic_arts": {
+        "description": "This pathway allows students to study a range of approaches to electronic, or digital arts, such as digital imaging, graphic storytelling, interactive media, and 3D animation. This immersive study will give students a comprehensive view of how to use digital tools to tell stories, and to critically and creatively explore the arts at the intersection of the humanities, and the physical, computational, engineering, and social sciences.",
+        "name": "Electronic Arts",
+        "priority1": [
+            "remixing_in_digital_culture",
+            "game_sound_and_musical_play",
+            "digital_imaging",
+            "documentary_in_the_21st_century",
+            "behind_the_television_screen",
+            "arts_history"
+        ],
+        "priority2": [
+            "3d_bootcamp",
+            "art_code_&_interactivity",
+            "advanced_digital_imaging",
+            "2d_experimental_animation",
+            "performance_art",
+            "3d_animation",
+            "intermediate_digital_imaging",
+            "3d_visual_effects",
+            "graphic_storytelling",
+            "sound_recording_and_production_i"
+        ],
+        "priority3": [
+            "3d_bootcamp",
+            "art_code_&_interactivity",
+            "advanced_digital_imaging",
+            "2d_experimental_animation",
+            "performance_art",
+            "3d_animation",
+            "intermediate_digital_imaging",
+            "3d_visual_effects",
+            "graphic_storytelling",
+            "sound_recording_and_production_i"
+        ],
+        "priority4": []
+    },
+    "environmental_futures": {
+        "description": "The future seems up for grabs as climate change challenges human and nonhuman societies to meet basic needs for clean air, water, soil, food, and energy. How will we adapt, reduce harm, or mitigate the problems of the past and present? This pathway involves courses in sustainability, defined as the means to ensure the well-being of the planet and quality of life of present and future generations. Courses integrate research and insights from the social sciences, arts, and humanities to pursue a healthy environment, economic prosperity, and social justice by building on the present to inform the future.",
+        "name": "Environmental Futures",
+        "priority1": [
+            "a_century_of_environmental_thought",
+            "sustainability_debates",
+            "law_value_and_public_policy",
+            "music_and_protest",
+            "music_and_nature",
+            "designing_climate_justice",
+            "documentary_in_the_21st_century:_identity_production",
+            "nature_&_society",
+            "principles_of_economics"
+        ],
+        "priority2": [
+            "eco_chic:living_art",
+            "sustainability_by_design",
+            "environmental_philosophy",
+            "resilience_planning",
+            "art_community_and_technology",
+            "environment_and_society",
+            "sustainability_education",
+            "queer_ecologies",
+            "environmental_law",
+            "environmental_economics",
+            "bioethics",
+            "consumer_culture",
+            "bio_punk"
+        ],
+        "priority3": [
+            "eco_chic:living_art",
+            "sustainability_by_design",
+            "environmental_philosophy",
+            "resilience_planning",
+            "art_community_and_technology",
+            "environment_and_society",
+            "sustainability_education",
+            "queer_ecologies",
+            "environmental_law",
+            "environmental_economics",
+            "bioethics",
+            "consumer_culture",
+            "bio_punk"
+        ],
+        "priority4": []
+    },
+    "ethics_integrity_and_social_responsibility": {
+        "description": "In this Pathway, students analyze many aspects of the complex relationship between ethics and areas in science, technology, and engineering. These conversations are critical to ensure the ethical and accessible use of technology and to allow scientists and engineers to think critically and make informed decisions on personal, professional, and public policy levels.",
+        "name": "Ethics, Integrity, And Social Responsibility",
+        "priority1": [
+            "the_genome_and_you",
+            "law_value_and_public_policy",
+            "science_technology_and_society",
+            "science_and_scientific_misconduct",
+            "designing_climate_justice",
+            "minds_and_machines",
+            "philosophy_technology_and_the_human_future",
+            "global_health_challenges"
+        ],
+        "priority2": [
+            "eco_chic:living_art",
+            "environmental_philosophy",
+            "medicine_culture_and_society",
+            "art_community_and_technology",
+            "law_and_society",
+            "engineering_ethics",
+            "bioethics",
+            "ethics",
+            "hactivism"
+        ],
+        "priority3": [
+            "eco_chic:living_art",
+            "environmental_philosophy",
+            "medicine_culture_and_society",
+            "art_community_and_technology",
+            "law_and_society",
+            "engineering_ethics",
+            "bioethics",
+            "ethics",
+            "hactivism"
+        ],
+        "priority4": []
+    },
+    "extent_and_limits_of_rationality": {
+        "description": "Humans can do, and have done, some really stupid things: we are not as rational as we would like to think, and we are subject to scores of cognitive and social biases. That said, however, we also have the power to correct for these, and to do good and constructive work. Let's see how we can harness our cognitive and social powers for the good. How can critical thinking be used constructively? How can we learn from our past mistakes? How can social institutions and policies be set up to ensure that we will make wise decisions and create a world that lasts into the extended future?",
+        "name": "Extent And Limits Of Rationality",
+        "priority1": [
+            "the_art_of_listening",
+            "war_and_technology",
+            "minds_and_machines",
+            "are_humans_rational?",
+            "war_and_society",
+            "principles_of_economics"
+        ],
+        "priority2": [
+            "speech_communication",
+            "behavioral_economics",
+            "introduction_to_logic",
+            "proposing_and_persuading",
+            "introduction_to_cognitive_science",
+            "history_of_science_and_technology",
+            "applied_game_theory",
+            "intermediate_formal_logic_&_ai",
+            "cognitive_psychology",
+            "critical_thinking",
+            "communication_theory_and_practice"
+        ],
+        "priority3": [
+            "speech_communication",
+            "behavioral_economics",
+            "introduction_to_logic",
+            "proposing_and_persuading",
+            "introduction_to_cognitive_science",
+            "history_of_science_and_technology",
+            "applied_game_theory",
+            "intermediate_formal_logic_&_ai",
+            "cognitive_psychology",
+            "critical_thinking",
+            "communication_theory_and_practice"
+        ],
+        "priority4": []
+    },
+    "fact_and_fiction": {
+        "description": "A pathway for those who are curious about what makes something fake or factual and how such concepts are evolving in contemporary political and popular culture. Students will learn how to think more precisely and analytically about the distinctions between fact, fiction, truth, and reality.",
+        "name": "Fact And Fiction",
+        "priority1": [
+            "the_american_dream",
+            "race_and_film_in_us_culture_and_history",
+            "fiction:_from_film_to_the_internet",
+            "news_media_culture_&_politics",
+            "documentary:whose_narrative?",
+            "science_and_scientific_misconduct",
+            "documentary_in_the_21st_century",
+            "introduction_to_philosophy",
+            "media_&_society",
+            "digital_filmmaking"
+        ],
+        "priority2": [
+            "drugs_in_history",
+            "reality_tv_and_post_factual_media",
+            "writing_for_the_screen",
+            "documentary_film",
+            "science_fictions",
+            "american_politics_in_crisis",
+            "philosophy_of_science",
+            "creative_writing:_non_fiction",
+            "contemporary_political_thought",
+            "science_and_fiction",
+            "adverting_and_culture",
+            "hactivism",
+            "critical_thinking",
+            "rethinking_documentary:_video_production",
+            "creative_writing:_the_short_story"
+        ],
+        "priority3": [
+            "drugs_in_history",
+            "reality_tv_and_post_factual_media",
+            "american_politics_in_crisis",
+            "writing_for_the_screen",
+            "science_fictions",
+            "documentary_film",
+            "philosophy_of_science",
+            "creative_writing:_non_fiction",
+            "adverting_and_culture",
+            "science_and_fiction",
+            "contemporary_political_thought",
+            "hactivism",
+            "critical_thinking",
+            "rethinking_documentary:_video_production",
+            "creative_writing:_the_short_story"
+        ],
+        "priority4": []
+    },
+    "foreign_language": {
+        "description": "This pathway promotes the development of skills to help students effectively communicate both domestically, and internationally, as well as enhance appreciation for other cultures. Students who select this pathway must have all courses that are part of the pathway be in the same foreign language.",
+        "name": "Foreign Language",
+        "priority1": [
+            "chinese_ii",
+            "chinese_i"
+        ],
+        "priority2": [
+            "topics_in_language",
+            "language_studies"
+        ],
+        "priority3": [
+            "chinese_v",
+            "language_studies",
+            "chinese_iv",
+            "topics_in_language",
+            "chinese_iii"
+        ],
+        "priority4": []
+    },
+    "game_studies": {
+        "description": "This pathway explores the design, creation, and analysis of games.  Students completing this pathway will develop depth in creative and critical thinking, technological proficiency and multicultural awareness.",
+        "name": "Game Studies",
+        "priority1": [
+            "history_and_culture_of_games"
+        ],
+        "priority2": [
+            "introduction_to_game_design",
+            "introduction_to_game_storytelling",
+            "introduction_to_game_programming"
+        ],
+        "priority3": [
+            "introduction_to_game_design",
+            "introduction_to_game_storytelling",
+            "introduction_to_game_programming"
+        ],
+        "priority4": []
+    },
+    "gender_race_sexuality_ethnicity_and_social_change": {
+        "description": "This pathway enables students to cultivate an appreciation of how diverse identities are lived, experienced, and analyzed. Courses in this pathway center gender, dis/ability, race/ethnicity, and social class as ways of knowing and as analytic approaches for understanding distinctions that human societies make and unmake over time. Gender is used as an analytic tool for critical thinking about such topics as studies of sex differences and sexualities; race and gender in science, engineering, or gaming; or studies of the environment, war and peace, and other social impacts. Racial-ethnic formation is similarly used as an analytical tool for visualizing intersecting inequalities; history of science, medicine, arts, and technology.",
+        "name": "Gender, Race, Sexuality, Ethnicity, And Social Change",
+        "priority1": [
+            "revolutions_in_comparative_perspective",
+            "songs_of_identity",
+            "race_and_film_in_us_culture_and_history",
+            "the_genome_and_you",
+            "worlds_on_display",
+            "religion_in_a_global_world",
+            "popular_music_and_society",
+            "media_&_society"
+        ],
+        "priority2": [
+            "gender_science_and_technology",
+            "women_writers",
+            "religion_in_media",
+            "documentary_film",
+            "language_and_culture",
+            "cultural_anthropology",
+            "queer_ecologies",
+            "sociology",
+            "language_in_real_time"
+        ],
+        "priority3": [
+            "gender_science_and_technology",
+            "women_writers",
+            "religion_in_media",
+            "documentary_film",
+            "language_and_culture",
+            "cultural_anthropology",
+            "queer_ecologies",
+            "sociology",
+            "language_in_real_time"
+        ],
+        "priority4": []
+    },
+    "graphic_design": {
+        "description": "Study Graphic Design through the integration of theory and practice, in print and digital media. Students are prepared to use creative and critical thinking to solve visual communication problems and reach target audiences with words, symbols and images.",
+        "name": "Graphic Design",
+        "priority1": [
+            "introduction_to_graphics",
+            "communication_theory_and_practice",
+            "interface_design",
+            "writing_in_context",
+            "visual_poetics_and_narrative",
+            "visual_design",
+            "brand_identity_design",
+            "color_theory",
+            "interactive_data_visualization",
+            "2d_motion_graphics",
+            "history_of_design",
+            "typography",
+            "media_&_society"
+        ],
+        "priority2": [
+            "introduction_to_graphics",
+            "communication_theory_and_practice",
+            "interface_design",
+            "writing_in_context",
+            "visual_poetics_and_narrative",
+            "visual_design",
+            "brand_identity_design",
+            "color_theory",
+            "interactive_data_visualization",
+            "2d_motion_graphics",
+            "history_of_design",
+            "typography",
+            "media_&_society"
+        ],
+        "priority3": [
+            "introduction_to_graphics",
+            "communication_theory_and_practice",
+            "interface_design",
+            "writing_in_context",
+            "visual_poetics_and_narrative",
+            "visual_design",
+            "brand_identity_design",
+            "color_theory",
+            "interactive_data_visualization",
+            "2d_motion_graphics",
+            "history_of_design",
+            "typography",
+            "media_&_society"
+        ],
+        "priority4": []
+    },
+    "history": {
+        "description": "The pathway in History is designed for students interested in US and world history. Courses primarily focus on the social history and evolution of technology, scientific enterprise, medicine, and law.",
+        "name": "History",
+        "priority1": [
+            "the_american_dream",
+            "revolutions_in_comparative_perspective",
+            "a_century_of_environmental_thought",
+            "human_rights_in_history",
+            "science_technology_and_society",
+            "war_and_technology",
+            "documentary_in_the_21st",
+            "century_of_the_gene"
+        ],
+        "priority2": [
+            "american_history"
+        ],
+        "priority3": [
+            "drugs_in_history",
+            "science_and_technology_elective",
+            "history_of_medicine",
+            "history_of_mental_health",
+            "global_history_of_science_and_technology",
+            "history_of_american_technology",
+            "consumer_culture"
+        ],
+        "priority4": []
+    },
+    "information_technology_and_web_sciences": {
+        "description": "The pathway in Information Technology and Web Science (ITWS) is designed to introduce students to the social aspects and human interactions that technology provides in our lives and workplaces.  Students will gain knowledge of the social, legal, and ethical issues in employing technology around the world and will learn how to recognize and respond to human-centered deisgn issues to make technology more usable.",
+        "name": "Information Technology And Web Sciences",
+        "priority1": [
+            "it_and_society",
+            "intro_to_hci"
+        ],
+        "priority2": [
+            "it_and_society",
+            "intro_to_hci"
+        ],
+        "priority3": [
+            "speech_communication",
+            "introduction_to_graphics",
+            "design_culture_and_society",
+            "communication_theory_and_practice",
+            "science_technology_and_society",
+            "introduction_to_logic",
+            "general_psychology",
+            "introduction_to_cognitive_science",
+            "strategic_writing",
+            "the_multimedia_century",
+            "critical_thinking",
+            "principles_of_economics"
+        ],
+        "priority4": []
+    },
+    "interactive_mediadata_design": {
+        "description": "The Interactive Media/Data Design pathway covers communication design theory and practice, interaction design theory and practice, and information design to prepare students for creating different forms of interactive, multimedia communication and data representation. Students use critical thinking, creative thinking, multimedia design, and data representation to develop effective forms of communication in diverse global contexts.",
+        "name": "Interactive Media/Data Design",
+        "priority1": [
+            "information_design",
+            "introduction_to_graphics",
+            "communication_theory_and_practice",
+            "interface_design",
+            "writing_in_context",
+            "user_experience_design",
+            "interactive_narrative",
+            "foundations_of_hci_usability",
+            "interactive_data_visualization",
+            "media_&_society"
+        ],
+        "priority2": [
+            "information_design",
+            "introduction_to_graphics",
+            "communication_theory_and_practice",
+            "interface_design",
+            "writing_in_context",
+            "user_experience_design",
+            "interactive_narrative",
+            "foundations_of_hci_usability",
+            "interactive_data_visualization",
+            "media_&_society"
+        ],
+        "priority3": [
+            "information_design",
+            "introduction_to_graphics",
+            "communication_theory_and_practice",
+            "interface_design",
+            "writing_in_context",
+            "user_experience_design",
+            "interactive_narrative",
+            "foundations_of_hci_usability",
+            "interactive_data_visualization",
+            "media_&_society"
+        ],
+        "priority4": []
+    },
+    "linguistics": {
+        "description": "Study linguistics from various perspectives, from cognitive analysis of linguistic expressions to the use of language for communication and other social settings. You\u2019ll also learn how to effectively communicate and handle foreign languages.",
+        "name": "Linguistics",
+        "priority1": [
+            "introduction_to_linguistics",
+            "the_linguistics_of_computational_linguistics"
+        ],
+        "priority2": [
+            "language_and_culture",
+            "language_endowed_intelligent_agents",
+            "any_4_credit_lang_of_any_level",
+            "advanced_topics_in_linguistics",
+            "a_cross_linguistic_perspective",
+            "language_in_real_time"
+        ],
+        "priority3": [
+            "language_and_culture",
+            "language_endowed_intelligent_agents",
+            "any_4_credit_lang_of_any_level",
+            "advanced_topics_in_linguistics",
+            "a_cross_linguistic_perspective",
+            "language_in_real_time"
+        ],
+        "priority4": []
+    },
+    "literature_and_creative_writing": {
+        "description": "The Literature and Creative Writing Pathway offers discussion-oriented courses across a range of literary genres and themes, with a choice of emphasis on either literature, creative writing, or both. Students will learn to read and write literary art critically and creatively, with clarity and imagination, and with sensitivity to multi-cultural expressions of diversity.",
+        "name": "Literature And Creative Writing",
+        "priority1": [
+            "the_american_dream",
+            "women_writers",
+            "writing_for_the_screen",
+            "writing_in_context",
+            "visual_poetics_and_narrative",
+            "intro_to_literature",
+            "modern_and_contemporary_literature",
+            "writing_elective",
+            "literature_elective",
+            "fiction_from_film_to_the_internet",
+            "creative_writing:_non_fiction",
+            "irish_literature",
+            "science_and_fiction",
+            "interactive_narrative",
+            "creative_writing:_the_short_story",
+            "creative_writing:_poetry"
+        ],
+        "priority2": [
+            "the_american_dream",
+            "women_writers",
+            "writing_for_the_screen",
+            "writing_in_context",
+            "visual_poetics_and_narrative",
+            "intro_to_literature",
+            "modern_and_contemporary_literature",
+            "writing_elective",
+            "literature_elective",
+            "fiction_from_film_to_the_internet",
+            "creative_writing:_non_fiction",
+            "irish_literature",
+            "science_and_fiction",
+            "interactive_narrative",
+            "creative_writing:_the_short_story",
+            "creative_writing:_poetry"
+        ],
+        "priority3": [
+            "the_american_dream",
+            "women_writers",
+            "writing_for_the_screen",
+            "writing_in_context",
+            "visual_poetics_and_narrative",
+            "intro_to_literature",
+            "modern_and_contemporary_literature",
+            "writing_elective",
+            "literature_elective",
+            "fiction_from_film_to_the_internet",
+            "creative_writing:_non_fiction",
+            "irish_literature",
+            "science_and_fiction",
+            "interactive_narrative",
+            "creative_writing:_the_short_story",
+            "creative_writing:_poetry"
+        ],
+        "priority4": []
+    },
+    "living_in_a_world_of_data": {
+        "description": "We live in the age of information \u2026 and misinformation \u2026 of big data, data mining, and machine learning ... of new media presenting unparalleled means of communication ... of unseen and opaque algorithms driving our news feeds... and of rushing to judgment on viral videos.  We better all develop some 'information intelligence' and 'data dexterity'. Such dexterity and intelligence includes technical skills of quantitative data analysis and IT technology, but also includes critical thinking skills regarding how information is collected, judged, interpreted, and represented, and how big data and information is feeding our collective awareness driving our decisions and affecting the world around us.",
+        "name": "Living In A World Of Data",
+        "priority1": [
+            "the_genome_and_you",
+            "science_and_scientific_misconduct",
+            "minds_and_machines",
+            "it_and_society",
+            "principles_of_economics"
+        ],
+        "priority2": [
+            "information_design",
+            "econometrics",
+            "behavioral_economics",
+            "interface_design",
+            "research_methods_and_statistics_i",
+            "society_by_the_numbers",
+            "math_methods_for_psychological_science",
+            "interactive_data_visualization",
+            "applied_game_theory",
+            "critical_thinking"
+        ],
+        "priority3": [
+            "information_design",
+            "econometrics",
+            "behavioral_economics",
+            "interface_design",
+            "research_methods_and_statistics_i",
+            "society_by_the_numbers",
+            "math_methods_for_psychological_science",
+            "interactive_data_visualization",
+            "applied_game_theory",
+            "critical_thinking"
+        ],
+        "priority4": []
+    },
+    "logical_thinking": {
+        "description": "This Pathway is for students with an interest in symbolic logic, and the connections between formal logic and mathematics, computer science, Artificial Intelligence, and the human mind.",
+        "name": "Logical Thinking",
+        "priority1": [
+            "intermediate_logic",
+            "inductive_logic",
+            "introduction_to_logic",
+            "minds_and_machines",
+            "are_humans_rational?",
+            "intermediate_formal_logic_&_ai",
+            "computability_and_logic",
+            "critical_thinking"
+        ],
+        "priority2": [
+            "intermediate_logic",
+            "inductive_logic",
+            "introduction_to_logic",
+            "minds_and_machines",
+            "are_humans_rational?",
+            "intermediate_formal_logic_&_ai",
+            "computability_and_logic",
+            "critical_thinking"
+        ],
+        "priority3": [
+            "intermediate_logic",
+            "inductive_logic",
+            "introduction_to_logic",
+            "minds_and_machines",
+            "are_humans_rational?",
+            "intermediate_formal_logic_&_ai",
+            "computability_and_logic",
+            "critical_thinking"
+        ],
+        "priority4": []
+    },
+    "media_and_culture": {
+        "description": "This pathway examines different forms of expression and their cultural contexts in a variety of media, including film, television, photography, and new media. Its components will enhance creative and critical thinking, communication practices, and awareness of cultural and individual identities. The focus on cultural and media literacy will improve the career readiness and social awareness of those in any program at RPI.",
+        "name": "Media And Culture",
+        "priority1": [
+            "remixing_in_digital_culture",
+            "the_american_dream",
+            "media_and_society",
+            "news_media_culture_&_politics",
+            "critical_television",
+            "rethinking_documentary:_video_production",
+            "communication_theory_and_practice",
+            "worlds_on_display",
+            "religion_in_media",
+            "documentary:whose_narrative?",
+            "perspectives_on_photography",
+            "the_film_experience",
+            "game_sound_and_musical_play",
+            "reality_tv_and_post_factual_media",
+            "documentary_film",
+            "visual_culture",
+            "writing_for_the_screen",
+            "documentary_in_the_21st_century",
+            "advertising_and_culture",
+            "behind_the_television_screen",
+            "tech_and_the_top_ten"
+        ],
+        "priority2": [
+            "remixing_in_digital_culture",
+            "the_american_dream",
+            "media_and_society",
+            "news_media_culture_&_politics",
+            "critical_television",
+            "rethinking_documentary:_video_production",
+            "communication_theory_and_practice",
+            "worlds_on_display",
+            "religion_in_media",
+            "documentary:whose_narrative?",
+            "perspectives_on_photography",
+            "the_film_experience",
+            "game_sound_and_musical_play",
+            "reality_tv_and_post_factual_media",
+            "documentary_film",
+            "visual_culture",
+            "writing_for_the_screen",
+            "documentary_in_the_21st_century",
+            "advertising_and_culture",
+            "behind_the_television_screen",
+            "tech_and_the_top_ten"
+        ],
+        "priority3": [
+            "remixing_in_digital_culture",
+            "the_american_dream",
+            "media_and_society",
+            "news_media_culture_&_politics",
+            "critical_television",
+            "rethinking_documentary:_video_production",
+            "communication_theory_and_practice",
+            "worlds_on_display",
+            "religion_in_media",
+            "documentary:whose_narrative?",
+            "perspectives_on_photography",
+            "the_film_experience",
+            "game_sound_and_musical_play",
+            "reality_tv_and_post_factual_media",
+            "documentary_film",
+            "visual_culture",
+            "writing_for_the_screen",
+            "documentary_in_the_21st_century",
+            "advertising_and_culture",
+            "behind_the_television_screen",
+            "tech_and_the_top_ten"
+        ],
+        "priority4": []
+    },
+    "mind_brain_and_intelligence": {
+        "description": "Discover Cognitive Science: a young but fast-growing field focused on the study of mind from the perspectives of philosophy, psychology, neuroscience, linguistics, and artificial intelligence.",
+        "name": "Mind, Brain, And Intelligence",
+        "priority1": [
+            "introduction_to_cognitive_science"
+        ],
+        "priority2": [
+            "cognitive_science_elective",
+            "introduction_to_cognitive_neuroscience",
+            "sensation_and_perception",
+            "minds_and_machines",
+            "math_methods_for_psychological_science",
+            "cognition_and_the_brain",
+            "are_humans_rational?",
+            "intermediate_formal_logic_&_ai",
+            "ai_and_society",
+            "cognitive_psychology"
+        ],
+        "priority3": [
+            "cognitive_science_elective",
+            "introduction_to_cognitive_neuroscience",
+            "sensation_and_perception",
+            "minds_and_machines",
+            "math_methods_for_psychological_science",
+            "cognition_and_the_brain",
+            "are_humans_rational?",
+            "intermediate_formal_logic_&_ai",
+            "ai_and_society",
+            "cognitive_psychology"
+        ],
+        "priority4": []
+    },
+    "music_and_culture": {
+        "description": "Students gain historical and inter-cultural knowledge of music from the Western and various non-Western cultures.",
+        "name": "Music And Culture",
+        "priority1": [
+            "remixing_in_digital_culture",
+            "game_sound_and_musical_play",
+            "history_of_jazz_and_improv_music",
+            "music_and_nature",
+            "popular_music_and_society",
+            "tech_and_the_top_ten",
+            "songwriting_workshop",
+            "exploring_music_at_rensselaer"
+        ],
+        "priority2": [
+            "histories_of_western_music",
+            "topics_in_deep_listening",
+            "deep_listening",
+            "performance_art",
+            "world_music",
+            "sound_recording_&_production_ii",
+            "sound_recording_and_production_i"
+        ],
+        "priority3": [
+            "histories_of_western_music",
+            "topics_in_deep_listening",
+            "deep_listening",
+            "performance_art",
+            "world_music",
+            "sound_recording_&_production_ii",
+            "sound_recording_and_production_i"
+        ],
+        "priority4": []
+    },
+    "philosophy": {
+        "description": "Learn to reason more precisely, think more critically, and ask more penetrating and foundational questions, about enduring and contemporary problems in ethics, science, technology, religion, and politics \u2014 including some of the biggest challenges that humanity currently faces.",
+        "name": "Philosophy",
+        "priority1": [
+            "the_genome_and_you",
+            "philosophy_elective",
+            "great_ideas_in_philosophy",
+            "introduction_to_logic",
+            "science_and_scientific_misconduct",
+            "philosophy_technology_and_the_human_future",
+            "are_humans_rational?",
+            "introduction_to_philosophy",
+            "critical_thinking"
+        ],
+        "priority2": [
+            "intermediate_logic",
+            "environmental_philosophy",
+            "philosophy_elective",
+            "metaphysics_and_consciousness",
+            "philosophy_of_science",
+            "ethics",
+            "philosophy_of_biology"
+        ],
+        "priority3": [
+            "intermediate_logic",
+            "environmental_philosophy",
+            "philosophy_elective",
+            "metaphysics_and_consciousness",
+            "philosophy_of_science",
+            "ethics",
+            "philosophy_of_biology"
+        ],
+        "priority4": []
+    },
+    "science_technology_and_society": {
+        "description": "The pathway in Science, Technology, and Society (STS) is designed for students broadly interested in the social and political dimensions of science, technology, engineering, and medicine. Students use political and social science methods to investigate scientific and technological developments.",
+        "name": "Science, Technology, And Society",
+        "priority1": [
+            "it_and_society",
+            "worlds_on_display",
+            "science_technology_and_society"
+        ],
+        "priority2": [
+            "american_history",
+            "environment_and_society",
+            "cultural_anthropology",
+            "law_and_society",
+            "science_technology_and_society_elective",
+            "sociology"
+        ],
+        "priority3": [
+            "american_history",
+            "environment_and_society",
+            "cultural_anthropology",
+            "law_and_society",
+            "science_technology_and_society_elective",
+            "sociology"
+        ],
+        "priority4": []
+    },
+    "strategic_communication": {
+        "description": "This pathway is designed to train versatile, critical, and self-possessed 21st- century communicators. Students who successfully complete this pathway will demonstrate the ability to make focused, audience-appropriate arguments; communicate effectively across diverse rhetorical, sociocultural, and disciplinary contexts; and respond creatively to the analytical demands involved with developing, arranging, and revising ideas and arguments.",
+        "name": "Strategic Communication",
+        "priority1": [
+            "writing_and_society",
+            "communication_elective",
+            "introduction_to_graphic_design",
+            "media_and_society",
+            "speech_communication",
+            "writing_in_context",
+            "language_and_culture",
+            "advertising_and_culture",
+            "writing_elective",
+            "strategic_writing",
+            "communication_theory_and_practice"
+        ],
+        "priority2": [
+            "writing_and_society",
+            "communication_elective",
+            "introduction_to_graphic_design",
+            "media_and_society",
+            "speech_communication",
+            "writing_in_context",
+            "language_and_culture",
+            "advertising_and_culture",
+            "writing_elective",
+            "strategic_writing",
+            "communication_theory_and_practice"
+        ],
+        "priority3": [
+            "writing_and_society",
+            "communication_elective",
+            "introduction_to_graphic_design",
+            "media_and_society",
+            "speech_communication",
+            "writing_in_context",
+            "language_and_culture",
+            "advertising_and_culture",
+            "writing_elective",
+            "strategic_writing",
+            "communication_theory_and_practice"
+        ],
+        "priority4": []
+    },
+    "studio_arts": {
+        "description": "Study traditional studio arts such as drawing, painting, sculpture in conjunction with art history to learn techniques, history and theory in the visual arts.  Students will develop basic skills in perspective, proportion, composition, form making, light and shadow, color, 2 and 3D Design, and learn to articulate ideas about their own, other students\u2019, and historical works through class discussions and critiques.",
+        "name": "Studio Arts",
+        "priority1": [
+            "arts_history",
+            "the_multimedia_century"
+        ],
+        "priority2": [
+            "fundamentals_of_2d_design",
+            "sculpture_i",
+            "basic_drawing",
+            "arts_elective"
+        ],
+        "priority3": [
+            "sculpture_ii",
+            "advanced_drawing",
+            "painting",
+            "life_drawing_and_anatomy_for_artists",
+            "intermediate_drawing"
+        ],
+        "priority4": []
+    },
+    "sustainability": {
+        "description": "The pathway in Sustainability focuses on the interactions between various systems - social, political, cultural, economic, technological and ecological - that undergird environmental sustainability. Students use interdisciplinary approaches to investigate environmental problems.",
+        "name": "Sustainability",
+        "priority1": [
+            "a_century_of_environmental_thought",
+            "sustainability_debates",
+            "science_technology_and_society",
+            "designing_climate_justice",
+            "nature_and_society"
+        ],
+        "priority2": [
+            "environment_and_society"
+        ],
+        "priority3": [
+            "sustainability_by_design",
+            "environmental_politics_and_policy",
+            "environmental_philosophy",
+            "food_farms_and_famine",
+            "resilience_planning",
+            "politics_of_design",
+            "sustainability_careers",
+            "sustainability_education",
+            "environmental_law",
+            "history_of_american_technology",
+            "consumer_culture",
+            "sustainability_problems",
+            "energy_politics",
+            "globalization_and_development"
+        ],
+        "priority4": []
+    },
+    "thinking_with_science": {
+        "description": "This pathway offers instruction in identifying and understanding the methods and media for scientific knowledge is dissemination. Students who successfully complete this pathway will demonstrate the ability to critique how textual and social representations create diverse and competing receptions of scientific knowledge; analyze the social construction of scientific knowledge; and solve problems through disseminating scientific knowledge across a variety of social and rhetorical contexts.",
+        "name": "Thinking With Science",
+        "priority1": [
+            "war_and_technology:_past_present_and_future",
+            "science_technology_and_society",
+            "science_and_scientific_misconduct",
+            "well_being:_cultivating_curiosity",
+            "open_source:_art_music_culture"
+        ],
+        "priority2": [
+            "bio_punk:_arts_lab_practices",
+            "science_and_fiction",
+            "critical_thinking",
+            "communication_theory_and_practice",
+            "eco_chic:_living_art"
+        ],
+        "priority3": [
+            "bio_punk:_arts_lab_practices",
+            "science_and_fiction",
+            "critical_thinking",
+            "communication_theory_and_practice",
+            "eco_chic:_living_art"
+        ],
+        "priority4": []
+    }
+}
