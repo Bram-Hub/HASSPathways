@@ -7,7 +7,7 @@
                 class="button"
                 elevation="0"
                 tile
-                :to="{ name: '/admin-portal/pathway' }"
+                :to="{ name: 'admin-pathway' }"
             >
                 <span class="text">Search for a class by pathway!</span>
             </v-btn>

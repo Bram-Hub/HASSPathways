@@ -5,9 +5,12 @@
 
             <h1>My HASS Pathways</h1>
 
-            <p>Here you can find all your HASS pathways. 
-                <router-link to="/pathways">You can add pathways here.</router-link>
-                </p>
+            <p>
+                Here you can find all your HASS pathways.
+                <router-link to="/pathways">
+                    You can add pathways here.
+                </router-link>
+            </p>
 
             <v-divider class="my-4" />
 
@@ -38,11 +41,20 @@ export default {
             default: '',
             type: String,
         },
-    },
+    },  
     data() {
         return {
             breadcrumbs: breadcrumbs.my_pathways
         };
+    },
+    async mounted() {
+        this.get_pathways().forEach(pathway => {
+            if (pathway.courses.length == 0) {
+                this.$store.commit('delPathway', pathway.name);
+                this.update();
+            }
+        })
+
     },
     methods: {
         get_pathways() {

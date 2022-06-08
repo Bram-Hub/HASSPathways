@@ -2,8 +2,8 @@
     <div>
         <v-btn
             class="button"
+            color="primary"
             elevation="0"
-            depressed
             tile
             :to="{ name: 'my-pathways' }"
         >
@@ -30,6 +30,15 @@ export default {
 /* Fix button highlighting getting stuck */
 .button::before {
     opacity: 0 !important;
+}
+
+.button {
+    opacity: 0.8;
+    margin-right: 0.5em;
+}
+
+.button:hover {
+    opacity: 1;
 }
 
 @media only screen and (max-width: 600px) {

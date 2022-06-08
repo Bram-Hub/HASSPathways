@@ -3,7 +3,6 @@
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
         <h1>{{ pathway.name }}</h1>
         <p>{{ pathway.description }}</p>
-
         <div class="fab-container">
             <v-btn
                 color="black" elevation="2" fab
@@ -18,15 +17,9 @@
             <v-btn
                 color="red" elevation="2" fab
                 aria-label="Clear courses"
+                @click="deselectCourses()"
             >
                 <v-icon>mdi-delete</v-icon>
-            </v-btn>
-
-            <v-btn
-                color="green" elevation="2" fab
-                aria-label="Save pathway"
-            >
-                <v-icon>mdi-content-save</v-icon>
             </v-btn>
         </div>
 
@@ -49,16 +42,12 @@
         </v-tabs>
 
         <v-tabs-items v-model="tab" touchless>    
-            <v-tab-item
+            <v-tab-item 
                 v-for="(item, index) in classTabs"
                 :key="item"
                 :eager="true"
             >
-                <CourseTable
-                    :courses="courses[index]"
-                    :pathway-id="pathwayID"
-                    @checkbox-clicked="onCheckboxClicked()"
-                />
+                <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" />
             </v-tab-item>
         </v-tabs-items>
     </v-container>
@@ -141,7 +130,7 @@ export default {
             return [
                 '1st Course',
                 '2nd Course',
-                '4000 Level',
+                '3rd Course',
                 'Minor (optional)'
             ].filter((_, index) => this.priorities[index] && this.priorities[index].length);
         }
@@ -150,8 +139,18 @@ export default {
         onCheckboxClicked(){
             if(this.changeTabOnSelection)
                 this.tab += 1;
+        },
+        deselectCourses() {
+            let tab = this.tab;
+            this.courses[tab].forEach(course => {
+                const c = { pathwayID: this.pathwayID, course: course.key };
+                // delete course
+                this.$store.commit('delCourse', c);
+            })
+            // deselect course
+            // console.log(this.$refs.test)
+            this.$refs[tab][0].deselectAll();
         }
-
     }
 }
 </script>
