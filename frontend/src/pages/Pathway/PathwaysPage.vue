@@ -2,8 +2,9 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <v-btn class="search" href="/search-classes">Search for a class</v-btn>
-
+            <v-btn class="search" href="/search-classes">
+                Search for a class
+            </v-btn>
             <h1>HASS Pathways</h1>
             <p>Select a pathway below to get started</p>
 
