@@ -34,6 +34,7 @@
 <script>
 export default {
     name: 'DarkLightModeButton',
+
     methods: {
         darkMode() {
             this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
