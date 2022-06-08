@@ -7,7 +7,7 @@
             <v-btn
                 color="red" elevation="2" fab
                 aria-label="Clear courses"
-                @click='deselectCourses()'
+                @click="deselectCourses()"
             >
                 <v-icon>mdi-delete</v-icon>
             </v-btn>
@@ -40,7 +40,6 @@
                 <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" />
             </v-tab-item>
         </v-tabs-items>
-
     </v-container>
 </template>
 

@@ -2,6 +2,7 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
+            <v-btn class="search" href="/search-classes">Search for a class</v-btn>
 
             <h1>HASS Pathways</h1>
             <p>
@@ -45,6 +46,13 @@ export default {
 </script>
 
 <style scoped>
+
+.search {
+  float:right;
+  position:relative;
+}
+
+
 .fade-in{
   animation: fadeIn 1s;
   -webkit-animation: fadeIn 1s;

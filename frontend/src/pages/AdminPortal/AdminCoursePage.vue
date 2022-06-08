@@ -222,12 +222,12 @@ export default {
                 courses:newCourse,
                 pathways:this.myPathways,
             })
-            .then(response => {
-                console.log(response);
-            })
-            .catch(err =>{
-                console.log(err);
-            });
+                .then(response => {
+                    console.log(response);
+                })
+                .catch(err =>{
+                    console.log(err);
+                });
             console.log(newCourse);
             console.log(this.myPathways);
         }

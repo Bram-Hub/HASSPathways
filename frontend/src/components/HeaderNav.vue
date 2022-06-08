@@ -2,8 +2,8 @@
     <div>
         <v-btn
             class="button"
+            color="primary"
             elevation="0"
-            depressed
             tile
             :to="{ name: 'my-pathways' }"
         >
@@ -34,6 +34,7 @@ export default {
 
 .button {
     opacity: 0.8;
+    margin-right: 0.5em;
 }
 
 .button:hover {

@@ -209,7 +209,6 @@ export default {
     .v-data-table > .v-data-table__wrapper > table > thead > tr > td,
     .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
         height: 64px !important;
-    }
 
     /* On mobile, add vertical margins + full width */
     .mobile-btn {
