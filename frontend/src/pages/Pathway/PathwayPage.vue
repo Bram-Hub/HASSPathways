@@ -47,7 +47,12 @@
                 :key="item"
                 :eager="true"
             >
-                <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" />
+                <CourseTable
+                    :ref="index"
+                    :courses="courses[index]"
+                    :pathway-id="pathwayID"
+                    @checkbox-clicked="onCheckboxClicked()"
+                />
             </v-tab-item>
         </v-tabs-items>
     </v-container>
