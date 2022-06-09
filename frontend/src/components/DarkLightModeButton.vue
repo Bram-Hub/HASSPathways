@@ -1,5 +1,5 @@
 <template>
-    <v-tooltip v-if="!$vuetify.theme.dark" bottom>
+    <v-tooltip v-if="$vuetify.theme.dark" bottom>
         <template #activator="{on}">
             <v-btn
                 class="mr-2 button"
@@ -12,7 +12,7 @@
                 </v-icon>
             </v-btn>
         </template>
-        <span>Dark Mode On</span>
+        <span>Switch to Light Mode</span>
     </v-tooltip>
     <v-tooltip v-else bottom>
         <template #activator="{on}">
@@ -22,12 +22,12 @@
                 v-on="on"
                 @click="darkMode"
             >
-                <v-icon color="yellow">
+                <v-icon color="yellow darken-2">
                     mdi-white-balance-sunny
                 </v-icon>
             </v-btn>
         </template>
-        <span>Dark Mode Off</span>
+        <span>Switch to Dark Mode</span>
     </v-tooltip>
 </template>
 

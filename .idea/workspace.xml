@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a8c56447-8236-4370-959e-dbac318b26be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/HASSPathways/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/HASSPathways/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HASSPathways/frontend/src/components/DarkLightModeButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/HASSPathways/frontend/src/components/DarkLightModeButton.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2AGSjJAhi6C8joHq0Pv6WelspqI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Node.js.category-colors.js">
+    <configuration name="NodeJS" type="NodeJSConfigurationType" path-to-node="wsl://Ubuntu@/home/daviss11/.nvm/versions/node/v16.15.1/bin/node" working-dir="$PROJECT_DIR$">
+      <EXTENSION ID="com.jetbrains.nodejs.run.NodeStartBrowserRunConfigurationExtension">
+        <browser start="true" with-js-debugger="true" url="http:///Github/HASSPathways/" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration name="category-colors.js" type="NodeJSConfigurationType" temporary="true" path-to-node="wsl://Ubuntu@/home/daviss11/.nvm/versions/node/v16.15.1/bin/node" nameIsGenerated="true" path-to-js-file="category-colors.js" working-dir="$PROJECT_DIR$/frontend/src/helpers">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.NodeJS" />
+      <item itemvalue="Node.js.category-colors.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.category-colors.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8c56447-8236-4370-959e-dbac318b26be" name="Changes" comment="" />
+      <created>1654634565027</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654634565027</updated>
+      <workItem from="1654634567803" duration="764000" />
+      <workItem from="1654635346737" duration="1197000" />
+      <workItem from="1654724764789" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
