@@ -14,13 +14,16 @@
                     class="search-field"    
                 />
             </div>
+            
             <v-btn color="primary" outlined to="/from-classes">
-                Compute Pathway <v-icon>mdi-arrow-right-circle</v-icon>
+               <span style="font-weight: bold">Compute Pathway</span><v-icon>mdi-arrow-right-circle</v-icon>
             </v-btn>
             <v-btn color="primary" outlined @click="clear()">
-                Clear Selections <v-icon>mdi-close-circle-outline</v-icon>
+               <span style="font-weight: bold">Clear Selections</span> <v-icon>mdi-close-circle-outline</v-icon>
             </v-btn>
+            <span style="font-weight: bold">
             <div v-for="course in filteredCourses" :key="course.name">
+            
                 <input 
                     :id="course.name" 
                     type="checkbox" 
@@ -30,6 +33,7 @@
                 >
                 <label class="label" :for="course.name"> {{ course.name + ", " + course.prefix + "-" + course.ID }} </label>
             </div>
+        </span>
         </v-container>
     </div>
 </template>
