@@ -1,28 +1,5 @@
 <template>
     <div>
-        <!-- Non-text based modifiers go first (ie, the season icons) 
-             The .name property should be null and a .icon property specified
-             instead for a name in a <v-icon> -->
-        <v-tooltip
-            v-for="modifier in iconModifiers"
-            :key="modifier"
-            top
-        >
-            <template #activator="{ on, attrs }">
-                <v-icon
-                    :color="modifiers[modifier].color"
-                    :class="[!item.modifiers.includes(modifier) ? 'modifier--inactive' : '' , 'modifier', 'modifier--icon']"
-                    v-bind="attrs"
-                    v-on="on"
-                >
-                    {{ modifiers[modifier].icon }}
-                </v-icon>
-            </template>
-            <span>{{ modifiers[modifier].tooltip }}</span>
-        </v-tooltip>
-    
-        <v-divider v-if="iconModifiers.length" vertical class="mx-2" />
-
         <!-- Text based modifiers, require a .name property -->
         <v-tooltip
             v-for="modifier in textModifiers"
@@ -106,17 +83,20 @@ export default {
 
 // Inactive theme colors
 .modifier.theme--light.modifier--inactive {
+    
     &.modifier--text {
         background-color: #ccc !important;
     }
     &.modifier--icon {
         color: #bbb !important;
+        
     }
 }
 
 .modifier.theme--dark.modifier--inactive {
     &.modifier--text {
         background-color: #333 !important;
+        display: inline-flex;
     }
     &.modifier--icon {
         color: #666 !important;

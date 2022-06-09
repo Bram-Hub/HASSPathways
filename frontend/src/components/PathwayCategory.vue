@@ -1,5 +1,5 @@
 <template>
-    <v-card class="rounded-0 card" elevation="1">
+    <v-card class="card" elevation="1">
         <v-img
             height="76px"
             class="card-img"
