@@ -4,7 +4,7 @@
         fluid
         outlined
 
-        @click="toggleCheckbox(); $emit('checkbox-clicked')"
+        @click="toggleCheckbox()"
         @keydown.13="toggleCheckbox()"
     >
         <v-list-item one-line>
@@ -83,8 +83,12 @@ export default {
 
                 // Save selection
                 const c = { pathwayID: this.pathwayId, course: this.course.key };
-                if (this.selected) this.$store.commit('addCourse', c);
-                else               this.$store.commit('delCourse', c);
+                if (this.selected){
+                    this.$store.commit('addCourse', c);                   
+                    this.$emit('checkbox-clicked')
+                } else {
+                    this.$store.commit('delCourse', c);
+                }
             }
         },
         selectedClass() {
