@@ -124,11 +124,28 @@
         ],
         "one_of": {
             "Intermediate Macroeconomic Theory": "ECON2020",
-            "Intermediate Microeconomic Theory": "ECON2010",
-            "l ECON Elective": "2000-leve"
+            "Intermediate Microeconomic Theory": "ECON2010"
         },
         "remaining": {
-            "le": "Any4000-"
+            "Advanced Data Analytics & Policy Evaluation": "ECON4590",
+            "Cost-Benefit Analysis": "ECON4210",
+            "Development of Economic Thought": "ECON4180",
+            "Econometrics": "ECON4570",
+            "Economics of Financial Institutions and Markets": "ECON4330",
+            "Economics of Government Regulation and Firm Strategy": "ECON4150",
+            "Economics of Growth & Innovation": "ECON4430",
+            "Economy, Technology, and Sustainability": "ECON4250",
+            "Environmental Economics": "ECON4230",
+            "Environmental and Resource Economics": "ECON4260",
+            "International Economics and Globalization": "ECON4190",
+            "Law and Economics": "ECON4310",
+            "Mathematical Methods in Economics": "ECON4120",
+            "Money and Banking": "ECON4130",
+            "Natural Resource Economics": "ECON4240",
+            "Open Economy Macroeconomics": "ECON4200",
+            "Public Finance": "ECON4160",
+            "Structure of Industry:  Competition, Innovation, Entrepreneurship, Policy": "ECON4140",
+            "Topics in Economics": "ECON4960"
         },
         "remaining_header": "Choose remaining credits from:"
     },
@@ -163,7 +180,9 @@
     },
     "Economics of Healthcare Markets": {
         "description": "To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
-        "minor": [],
+        "minor": [
+            "Economics of Healthcare Markets"
+        ],
         "one_of": {
             "Introductory Economics": "ECON1200",
             "Principles of Economics": "IHSS1200"
@@ -232,10 +251,10 @@
         "one_of": {
             "Art History": "ARTS1050",
             "Behind the TV Screen": "IHSS1030",
-            "Behind the Te": "IHSS1960",
+            "Behind the Television Screen": "IHSS1960",
             "Digital Imaging": "ARTS1020",
             "Documentary in the 21st Century: Identity Production": "IHSS1040",
-            "Remixing in": "IHSS1960"
+            "Remixing in Digital Culture": "IHSS1960"
         },
         "remaining": {
             "2D Experimental Animation": "ARTS2060",
@@ -255,11 +274,11 @@
         "description": "To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
         "one_of": {
             "A Century of Environmental Thought": "IHSS1320",
-            "Designing": "IHSS1960",
+            "Designing Climate Justice": "IHSS1960",
             "Documentary in the 21st Century: Identity Production": "IHSS1040",
             "Law, Values, and Public Policy: Perspectives on Science and Technology": "IHSS1350",
-            "Mu": "IHSS1960",
             "Music and Nature": "IHSS1720",
+            "Music and Protest": "IHSS1960",
             "Nature/Society": "IHSS1110",
             "Principles of Economics": "IHSS1200",
             "Sustainability Debates": "IHSS1240"
@@ -324,8 +343,8 @@
         "description": "To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
         "one_of": {
             "Digital Filmmaking": "ARTS1030",
-            "Documentary in t": "IHSS1964",
-            "Fiction from Film": "IHSS1976",
+            "Documentary in the 21st Century": "IHSS1964",
+            "Fiction from Film to the Internet": "IHSS1976",
             "Fiction: From Film to the Internet": "IHSS1550",
             "Introduction to Philosophy": "PHIL1110",
             "Media and Society": "IHSS1560",
@@ -370,10 +389,10 @@
             "Media and Society": "IHSS1560",
             "Race and Film in U.S. Culture and History": "IHSS1300",
             "Religion in a Global World": "IHSS1666",
-            "Revolutions": "IHSS19XX",
-            "So": "IHSS1968",
+            "Revolutions in Perspective": "IHSS19XX",
+            "Songs of Identity": "IHSS1968",
             "The Genome and You": "IHSS1150",
-            "Wo": "IHSS19XX"
+            "Worlds on Display": "IHSS19XX"
         },
         "remaining_header": "Can select only one of the following to be applied to pathway:"
     },
@@ -404,16 +423,36 @@
             "History Minor"
         ],
         "remaining": {
-            "": "STSO4000",
             "A Century of Environmental Thought": "IHSS1320",
+            "American Politics in Crisis": "STSO4590",
+            "Bioethics": "STSO4250",
             "Consumer Culture": "STSO4720",
+            "Design and Innovation  Studio C": "STSO4610",
+            "Design and Innovation Senior Project": "STSO4970",
+            "Design and Innovation Studio A": "STSO4600",
+            "Design and Innovation Studio B": "STSO4605",
             "Drugs in History": "STSO4430",
+            "Engineering Ethics": "STSO4210",
+            "Environmental Justice": "STSO4330",
+            "Environmental Media & Data": "STSO4330",
+            "Environmental Philosophy": "STSO4340",
+            "Food, Farms, and Famine": "STSO4260",
+            "Gender, Science, and Technology": "STSO4560",
+            "Globalization and Development": "STSO4500",
             "History of American Technology": "STSO4510",
             "History of Medicine": "STSO4420",
             "History of Mental Health": "STSO4440",
             "History of Science and Technology": "STSO4530",
+            "Medicine, Culture, and Society": "STSO4400",
+            "Politics of Design": "STSO4350",
+            "Professional Development  2 \u2013Technical Issues and Solutions": "STSO4100",
+            "Research Design": "STSO4980",
             "Revolutions in Perspective": "IHSS1960",
+            "STS and Sustainability Senior Project": "STSO4990",
             "Science, Technology, and Society": "STSO1110",
+            "Self-Organization in Science and Society": "STSO4580",
+            "Sustainability Education": "STSO4280",
+            "Sustainability and STS Sustainability Careers": "STSO4300",
             "The American Drea": "IHSS1776",
             "War and Technology: Past, Present, and Future": "IHSS1570"
         },
@@ -466,7 +505,11 @@
     "Language": {
         "description": "To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
         "remaining": {
-            "le": "Any4000-"
+            "Chinese I": "LANG1410",
+            "Chinese II": "LANG2410",
+            "Chinese III": "LANG4420",
+            "Chinese IV": "LANG4430",
+            "Chinese V": "LANG4470"
         },
         "remaining_header": "Choose 12 credits from the following, with at least 8 credit hours at, or above, the 2000-level and at least 3 credit hours at the 4000-level:"
     },
@@ -477,11 +520,15 @@
         ],
         "remaining": {
             "Advanced Topics in Linguistics": "COGS4780",
+            "Chinese I": "LANG1410",
+            "Chinese II": "LANG2410",
+            "Chinese III": "LANG4420",
+            "Chinese IV": "LANG4430",
+            "Chinese V": "LANG4470",
             "Cross-linguistic Perspectives": "COGS4560",
             "Language and Culture": "IHSS1492",
             "Language-Endowed Intelligent Agents": "COGS4880",
-            "The Linguistics of Computational Linguistics": "COGS4340",
-            "le": "Any4000-"
+            "The Linguistics of Computational Linguistics": "COGS4340"
         },
         "remaining_header": "Choose remaining credits from the following\u200b\u200b\u200b\u200b, with at least 4 credits at the 4000-level:",
         "required": {
@@ -494,16 +541,19 @@
             "Literature and Creative Writing Minor"
         ],
         "remaining": {
-            "": "2000-leve",
             "Creative Writing:  The Short Story": "WRIT2330",
             "Creative Writing: Creative Non-Fiction": "WRIT2320",
             "Fiction: From Film to the Internet": "IHSS1550",
+            "Film Theory": "LITR4410",
             "Interactive Narrative": "COMM4780",
             "Introduction to Literature": "LITR2110",
             "Irish Literature": "LITR4230",
             "Modern and Contemporary Literature": "LITR2150",
             "Science and Fiction": "LITR4150",
+            "Speech Communication": "WRIT2340",
+            "Strategic Writing": "WRIT2110",
             "The American Drea": "IHSS1776",
+            "The Film Experience": "LITR2410",
             "Visual Poetics and Narrative": "COMM4320",
             "Women Writers": "LITR4770",
             "Writing in Context": "WRIT1110"
@@ -562,12 +612,12 @@
             "Perspectives on Photography": "COMM2410",
             "Reality TV and Post-Factual Media": "COMM4530",
             "Religion in the Media": "COMM4550",
-            "Remixing in": "IHSS19XX",
+            "Remixing in Digital Culture": "IHSS19XX",
             "Rethinking Documentary: Video Production": "ARTS4040",
             "Superheroes in the Classroom": "COMM2616",
-            "Technology": "IHSS19XX",
-            "The": "COMM29XX",
+            "Technology and the Top Ten": "IHSS19XX",
             "The American Drea": "IHSS1776",
+            "The Film Experience": "COMM29XX",
             "Visual Culture": "COMM4540"
         },
         "remaining_header": "Choose 12 credits from the following, with at least 4 credits at the 4000-level:"
@@ -578,11 +628,12 @@
             "Cognitive Science Minor"
         ],
         "remaining": {
-            "": "4000-leve",
             "AI & Society": "IHSS1972",
             "Are Humans Rational?": "IHSS1235",
             "Cognition and the Brain": "COGS4600",
             "Cognitive Psychology": "PSYC4370",
+            "Game AI": "COGS4420",
+            "Intelligent Virtual Agents": "COGS4640",
             "Intermediate Formal Logic & AI": "PHIL4961",
             "Introduction to Cognitive Neuroscience": "COGS4330",
             "Mathematical Methods in Psychological Science": "PSYC4350",
@@ -605,9 +656,9 @@
             "Histories of Jazz and Improvised Music": "ARTS2510",
             "Histories of Western Music": "ARTS2500",
             "Popular Music and Society": "ARTS2550",
-            "Remixing in": "IHSS19XX",
+            "Remixing in Digital Culture": "IHSS19XX",
             "Songwriting Workshop": "IHSS1700",
-            "Technology": "IHSS19XX"
+            "Technology and the Top Ten": "IHSS19XX"
         },
         "remaining": {
             "Ensemble Nonlinear": "ARTS2600",
@@ -631,7 +682,7 @@
             "Histories of Jazz and Improvised Music": "ARTS2510",
             "Histories of Western Music": "ARTS2500",
             "Popular Music and Society": "ARTS2550",
-            "Remixing in": "IHSS19XX"
+            "Remixing in Digital Culture": "IHSS19XX"
         },
         "remaining": {
             "Chamber Music Ensemble Credit Hours: 1 (course can be repeated multiple times for add": "ARTS2350",
@@ -654,9 +705,9 @@
             "Exploring Music @Rensselaer": "IHSS1010",
             "Histories of Jazz and Improvised Music": "ARTS2510",
             "Popular Music and Society": "ARTS2550",
-            "Remixing in": "IHSS19XX",
+            "Remixing in Digital Culture": "IHSS19XX",
             "Songwriting Workshop": "IHSS1700",
-            "Technology": "IHSS19XX"
+            "Technology and the Top 10": "IHSS19XX"
         },
         "remaining": {
             "Deep Listening": "ARTS2180",
@@ -675,24 +726,30 @@
             "Philosophy Minor"
         ],
         "one_of": {
-            "": "1000-leve",
             "Critical Thinking": "PSYC2100",
             "Great Ideas in Philosophy": "IHSS1165",
             "Introduction to Logic": "PHIL2140",
             "Introduction to Philosophy": "PHIL1110",
-            "Philosophy, Technology, and t": "IHSS19XX",
+            "Philosophy, Technology, and the Human Future": "IHSS19XX",
             "Science and Scientific Misconduct": "IHSS1160",
             "The Genome and You": "IHSS1150"
         },
         "remaining": {
-            "": "4000-leve",
+            "Capstone Experience in Philosophy": "PHIL4990",
+            "Computability and Logic": "PHIL4420",
             "Critical Thinking": "PSYC2100",
             "Environmental Philosophy": "PHIL4300",
             "Ethics": "PHIL4240",
+            "Intermediate Logic": "PHIL4140",
             "Introduction to Logic": "PHIL2140",
+            "Introduction to Philosophy of Religion": "PHIL2830",
             "Metaphysics and Consciousness": "PHIL4480",
+            "Philosophy Studies": "PHIL2940",
+            "Philosophy of Artificial Intelligence": "PHIL4260",
             "Philosophy of Biology": "PHIL2400",
-            "Philosophy of Science": "PHIL4130"
+            "Philosophy of Science": "PHIL4130",
+            "Scientific Revolutions": "PHIL4310",
+            "Topics in Philosophy": "PHIL4940"
         },
         "remaining_header": "Choose remaining credits from the following with at least 4 credits at the 4000-level:"
     },
@@ -730,12 +787,38 @@
         ],
         "remaining": {
             "American History": "STSO2500",
+            "American Politics in Crisis": "STSO4590",
+            "Bioethics": "STSO4250",
+            "Consumer Culture": "STSO4720",
             "Cultural Anthropology": "STSO2510",
+            "Design and Innovation  Studio C": "STSO4610",
+            "Design and Innovation Senior Project": "STSO4970",
+            "Design and Innovation Studio A": "STSO4600",
+            "Design and Innovation Studio B": "STSO4605",
+            "Drugs in History": "STSO4430",
+            "Engineering Ethics": "STSO4210",
             "Environment and Society": "STSO2300",
+            "Environmental Justice": "STSO4330",
+            "Environmental Media & Data": "STSO4330",
+            "Environmental Philosophy": "STSO4340",
+            "Food, Farms, and Famine": "STSO4260",
+            "Gender, Science, and Technology": "STSO4560",
+            "Globalization and Development": "STSO4500",
+            "History of American Technology": "STSO4510",
+            "History of Medicine": "STSO4420",
+            "History of Mental Health": "STSO4440",
+            "History of Science and Technology": "STSO4530",
             "IT and Society": "IHSS1220",
+            "Medicine, Culture, and Society": "STSO4400",
+            "Politics of Design": "STSO4350",
+            "Professional Development  2 \u2013Technical Issues and Solutions": "STSO4100",
+            "Research Design": "STSO4980",
+            "STS and Sustainability Senior Project": "STSO4990",
             "Science, Technology, and Society": "STSO1110",
+            "Self-Organization in Science and Society": "STSO4580",
             "Sociology": "STSO2520",
-            "l STSO course": "4000-leve"
+            "Sustainability Education": "STSO4280",
+            "Sustainability and STS Sustainability Careers": "STSO4300"
         },
         "remaining_header": "Choose one of the following: a minimum of 4 credits must be completed at the 4000-level"
     },
@@ -745,17 +828,20 @@
             "Strategic Communication Minor"
         ],
         "remaining": {
-            "": "2000-leve",
             "Advertising and Culture": "COMM4580",
             "Communication Theory and Practice": "COMM2520",
+            "Critical Television": "COMM2750",
+            "Documentary Film": "COMM2440",
             "Introduction to Graphic Design": "COMM2660",
             "Language and Culture": "IHSS1492",
             "Media and Society": "IHSS1560",
+            "Perspectives on Photography": "COMM2410",
             "Speech Communication": "WRIT2340",
             "Strategic Writing": "WRIT2110",
-            "Writ": "IHSS19XX",
-            "Writing in Context": "WRIT1110",
-            "le": "Any4000-"
+            "Superheroes in the Classroom": "COMM2616",
+            "Typography": "COMM2570",
+            "Writing and Society": "IHSS19XX",
+            "Writing in Context": "WRIT1110"
         },
         "remaining_header": "Choose 12 credits of the following, with at least 4 credits at the 4000 level:"
     },
@@ -765,10 +851,13 @@
             "Studio Arts"
         ],
         "remaining": {
-            "": "1000-leve",
             "Advanced Drawing": "ARTS4200",
+            "Art History": "ARTS1050",
             "Basic Drawing": "ARTS1200",
+            "Digital Filmmaking": "ARTS1030",
+            "Digital Imaging": "ARTS1020",
             "Fundamentals of 2D Design": "ARTS2220",
+            "Fundamentals of Music and Sound": "ARTS1380",
             "Intermediate Drawing": "ARTS2200",
             "Life Drawing and Anatomy for Artists": "ARTS4260",
             "Painting": "ARTS4220",
@@ -833,14 +922,14 @@
     "Transfer Student Arts and Humanities": {
         "description": "To complete this integrative pathway, students must complete a minimum of 12 credits as described:",
         "remaining": {
-            "": ""
+            "": "WRIT"
         },
         "remaining_header": "Choose 12 credits of the following course prefixes, with at least 8 credit hours at, or above, the 2000 level and at least 3 credit hours at the 4000 level:"
     },
     "Transfer Student Social Science": {
         "description": "To complete this integrative pathway, students must complete a minimum of 12 credits as described:",
         "remaining": {
-            "": ""
+            "": "STSS"
         },
         "remaining_header": "Choose 12 credits of the following course prefixes, with at least 8 credit hours at, or above, the 2000 level and at least 3 credit hours at the 4000 level:"
     },
@@ -851,23 +940,42 @@
             "Psychological Science Minor"
         ],
         "remaining": {
-            "": "4000-leve",
             "Abnormal Psychology": "PSYC4720",
+            "Animal Cognition and Interaction with Humans": "PSYC4220",
+            "Behavioral Neuroscience": "PSYC4360",
+            "Cognition and the Brain": "PSYC4600",
+            "Cognitive Engineering": "PSYC4620",
+            "Cognitive Modeling": "PSYC4510",
             "Cognitive Psychology": "PSYC4370",
+            "Critical Thinking": "PSYC2100",
             "Drugs, Society, and Behavior": "PSYC4500",
             "Forensic Psychology": "PSYC4750",
+            "Hormones, Brain, and Behavior": "PSYC4700",
+            "Human Factors Seminar": "PSYC4160",
+            "Human Factors in Design": "PSYC2220",
             "Industrial and Organizational Psychology": "PSYC4200",
+            "Introduction to Cognitive Neuroscience": "PSYC4330",
             "Introduction to Sports Psychology": "PSYC2800",
             "Learning": "PSYC4450",
             "Mathematical Methods in Psychological Science": "PSYC4350",
             "Motivation and Performance": "PSYC4110",
             "Personality": "PSYC4400",
+            "Positive Psychology": "PSYC4730",
+            "Professional Development II: Leadership Theories": "PSYC4170",
             "Psychology and The Law": "PSYC4740",
+            "Psychology of Mindfulness": "PSYC4430",
+            "Psychopharmacology and Behavioral Toxicology": "PSYC4770",
+            "Readings in Psychology": "PSYC4940",
             "Research Methods and Statistics I": "PSYC2310",
             "Research Methods and Statistics II": "PSYC4310",
+            "Sensation and Perception": "PSYC4410",
+            "Sensibilities": "PSYC4440",
             "Social Psychology": "PSYC2730",
             "Sport Psychology Seminar": "PSYC4800",
-            "Unders": "IHSS19XX"
+            "Stress and the Brain": "PSYC4610",
+            "Topics in Psychology": "PSYC4960",
+            "Undergraduate Thesis": "PSYC4990",
+            "Understanding Empathy": "IHSS19XX"
         },
         "remaining_header": "Choose remaining credits from the following, with at least 4 credits at the 4000 level::",
         "required": {
@@ -876,14 +984,17 @@
     },
     "Video, Performance, and Social Practice": {
         "description": "To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
-        "minor": [],
+        "minor": [
+            "Electronic Arts Minor",
+            "Video, Performance, and Social Practice"
+        ],
         "one_of": {
             "Behind the TV Screen": "IHSS1030",
             "Digital Filmmaking": "ARTS1030",
             "Documentary in the 21st Century: Identity Production": "IHSS1040",
             "Race and Film in U.S. Culture and History": "IHSS1300",
-            "Remixing in": "IHSS19XX",
-            "Technology": "IHSS19XX",
+            "Remixing in Digital Culture": "IHSS19XX",
+            "Technology and the Top Ten": "IHSS19XX",
             "The Art of Listening": "IHSS1180"
         },
         "remaining": {
@@ -914,7 +1025,7 @@
             "Nature/Society": "IHSS1110",
             "Songwriting Workshop": "IHSS1700",
             "The Art of Listening": "IHSS1180",
-            "Unders": "IHSS19XX",
+            "Understanding Empathy": "IHSS19XX",
             "Well-being: Cultivating Curiosity": "IHSS1175"
         },
         "remaining": {

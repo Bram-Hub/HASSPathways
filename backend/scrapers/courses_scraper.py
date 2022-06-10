@@ -89,7 +89,7 @@ def get_course_data(course_ids: List[str]) -> Dict:
         for field in pathways[pathway_name]:
             if field != 'description' and field != 'remaining_header' and field != 'minor':
                 for course in pathways[pathway_name][field]:
-                    depts.append(course[:4])
+                    depts.append(pathways[pathway_name][field][course][:4])
 
     for chunk in course_chunks:
         ids = "".join([f"&ids[]={id}" for id in chunk])

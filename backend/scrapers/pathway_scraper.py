@@ -16,16 +16,42 @@ def parse_courses(tag):
             course = (txt.strip()
                 .replace('\u2013', '-')
                 .replace('\u00a0', ' ')
-                .replace('\u200b', '')[:-15].strip())
-            course_name = course[9:].strip()
-            course_code = course[:9].strip().replace(' ', '')
-            if "-" in course_name:
-                course_name = course_name[course_name.index("-")+1:].strip()
-            courses[course_name] = course_code
+                .replace('\u200b', ''))
+
+            f = open("courses.json")
+            all_courses = json.load(f)
+
+            if "Credit Hours" in course:
+                course = course[:-15].strip()
+            if "-level" in course:
+                # add multiple 'blank' level courses from X
+                index = course.index("-level")
+                level = course[index-4:index]
+                subj = course[index+7:index+11]
+                for c in all_courses:
+                    ID = all_courses[c]["ID"]
+                    a_subj = all_courses[c]["subj"]
+                    if ID[0] == level[0] and a_subj == subj:
+                        courses[c] = subj+ID
+            elif "Elective" in course:
+                subj = course[:4]
+                level = course[5:9]
+                for c in all_courses:
+                    ID = all_courses[c]["ID"]
+                    a_subj = all_courses[c]["subj"]
+                    if ID[0] == level[0] and a_subj == subj:
+                        courses[c] = subj+ID
+            else:
+                course_name = course[9:].strip()
+                course_code = course[:9].strip().replace(' ', '')
+                if "-" in course_name:
+                    course_name = course_name[course_name.index("-")+1:].strip()
+                courses[course_name] = course_code
     return courses
 
 # finds all body text for the pathway and grabs the courses for each
 def parse_body(page):
+    name = parse_name(page)
     body = {}
     body["description"] = page.find("table", "table_default").find("table", "table_default").find_all("p")[1].get_text()
     for tag in page.find_all("div", "acalog-core"):
@@ -41,12 +67,20 @@ def parse_body(page):
             temp = parse_courses(tag)
             body["one_of"] = temp
         elif "compatible minor" in header.lower():
-            temp = []
+            temp = set()
             for a in tag.find_all("a"):
                 txt = a.get_text()
                 if len(txt) > 0 and txt[0] != '(':
-                    temp.append(txt.strip())
-            body["minor"] = temp
+                    temp.add(txt.strip())
+            for a in tag.find_all("li"):
+                txt = a.get_text()
+                if len(txt) > 0 and txt[0] != '(':
+                    temp.add(txt.strip())
+            for a in tag.find_all("p"):
+                txt = a.get_text()
+                if len(txt) > 0 and txt[0] != '(':
+                    temp.add(txt.strip())
+            body["minor"] = list(temp)
         else:
             body["remaining_header"] = header
             temp = parse_courses(tag)
