@@ -5,7 +5,11 @@
 
             <h1>My HASS Pathways</h1>
 
-            <p>Select a pathway below to get started, or <a>choose a pathway from the classes you've taken</a></p>
+            <p>
+                Select a pathway below to get started, or <router-link to="/search-classes">
+                    choose a pathway from the classes you've taken
+                </router-link>
+            </p>
 
             <v-divider class="my-4" />
 

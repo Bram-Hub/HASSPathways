@@ -5,7 +5,7 @@
         <p>{{ pathway.description }}</p>
         <div class="fab-container">
             <v-btn
-                color="black" elevation="2" fab
+                color="light grey" elevation="2" fab
                 aria-label="Switch to nex tab on class selection"
                 @click="changeTabOnSelection = !changeTabOnSelection;"
             >
@@ -47,7 +47,12 @@
                 :key="item"
                 :eager="true"
             >
-                <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" />
+                <CourseTable
+                    :ref="index"
+                    :courses="courses[index]"
+                    :pathway-id="pathwayID"
+                    @checkbox-clicked="onCheckboxClicked()"
+                />
             </v-tab-item>
         </v-tabs-items>
     </v-container>
