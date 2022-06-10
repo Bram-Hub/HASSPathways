@@ -1,8 +1,7 @@
 # Specification of the `pathways.json` file
 
-The `pathways.json` file is a JSON object with the top-level keys
-being the title of the given HASS pathway and the values described
-below.
+`pathways.json` is a JSON object with the top-level keys being the
+title of the given HASS pathway and the values described below.
 
 | Field              | Type   | Description                                                       | Example                                                                                     |
 |--------------------|--------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
@@ -17,7 +16,8 @@ below.
 
 All three of these fields follow the same format: keys are the course
 name (e.g. `"Behavioral Neuroscience"`) and values are the course code
-(e.g. `"PSYC4360"`). An example is below:
+(e.g. `"PSYC4360"`). At least one of these fields must be present,
+otherwise they are optional. An example:
 
 ```json
 {
