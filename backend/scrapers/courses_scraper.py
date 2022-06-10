@@ -107,11 +107,15 @@ def get_course_data(course_ids: List[str]) -> Dict:
             fall = False
             spring = False
             summer = False
+            even = False
+            odd = False
+            offered_text = ""
 
             for field in fields:
                 if field.get("type") == 'acalog-field-519':
                     field_text = field.xpath("./data/text()")
                     if len(field_text) > 0:
+                        # print(field_text)
                         field_text = field_text[0].strip().lower()
                         if "fall" in field_text:
                             fall = True
@@ -119,9 +123,14 @@ def get_course_data(course_ids: List[str]) -> Dict:
                             spring = True
                         if "summer" in field_text:
                             summer = True
+                        if "even" in field_text:
+                            even = True
+                        if "odd" in field_text:
+                            odd = True
+                        offered_text = field_text
             
                 
-            data[f"{subj}-{ID}"] = {
+            data[course_name] = {
                 "subj": subj,
                 "ID": ID,
                 "name": course_name,
@@ -129,7 +138,15 @@ def get_course_data(course_ids: List[str]) -> Dict:
                 "offered": {
                     "fall": fall,
                     "spring": spring,
-                    "summer": summer
+                    "summer": summer,
+                    "odd": odd,
+                    "even": even,
+                    "text": offered_text
+                },
+                "properties": {
+                    "CI": False,
+                    "HI": True if subj == "IHSS" else False,
+                    "major_restricted": False
                 }
             }
 

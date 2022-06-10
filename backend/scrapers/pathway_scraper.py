@@ -7,11 +7,27 @@ def parse_name(page):
     p = page.find("h1")
     return p.get_text()
 
+def parse_courses(tag):
+    courses = {}
+    for a in tag.find_all("li"):
+        txt = a.get_text()
+        if txt != 'or' and len(txt) > 0 and txt[0] != '(':
+            # fixes all weird unicode and stuff
+            course = (txt.strip()
+                .replace('\u2013', '-')
+                .replace('\u00a0', ' ')
+                .replace('\u200b', '')[:-15].strip())
+            course_name = course[9:].strip()
+            course_code = course[:9].strip().replace(' ', '')
+            if "-" in course_name:
+                course_name = course_name[course_name.index("-")+1:].strip()
+            courses[course_name] = course_code
+    return courses
+
 # finds all body text for the pathway and grabs the courses for each
 def parse_body(page):
     body = {}
     body["description"] = page.find("table", "table_default").find("table", "table_default").find_all("p")[1].get_text()
-    # body["description"] = page.find_all("p")[0].get_text()
     for tag in page.find_all("div", "acalog-core"):
         header = tag.find_all("h2")
         if len(header) == 0:
@@ -19,20 +35,12 @@ def parse_body(page):
             
         header = header[0].get_text()
         if header == "Required:":
-            temp = []
-            for a in tag.find_all("li"):
-                txt = a.get_text()
-                if txt != 'or' and len(txt) > 0 and txt[0] != '(':
-                    temp.append(txt.strip())
+            temp = parse_courses(tag)
             body["required"] = temp
         elif header == "Choose one of the following:":
-            temp = []
-            for a in tag.find_all("li"):
-                txt = a.get_text()
-                if txt != 'or' and len(txt) > 0 and txt[0] != '(':
-                    temp.append(txt.strip())
+            temp = parse_courses(tag)
             body["one_of"] = temp
-        elif header == "Compatible minor:":
+        elif "compatible minor" in header.lower():
             temp = []
             for a in tag.find_all("a"):
                 txt = a.get_text()
@@ -41,11 +49,7 @@ def parse_body(page):
             body["minor"] = temp
         else:
             body["remaining_header"] = header
-            temp = []
-            for a in tag.find_all("li"):
-                txt = a.get_text()
-                if len(txt) > 0 and txt[0] != '(':
-                    temp.append(txt.strip())
+            temp = parse_courses(tag)
             body["remaining"] = temp
 
     return body
@@ -75,16 +79,19 @@ def fetch_webpages():
     return all_pages
 
 def main():
+    print("Starting scraping")
     all_pages = fetch_webpages()
+    print("Parsing webpages")
     parsed_pages = {}
     for page in all_pages:
         parsed_pages[parse_name(page)] = parse_body(page)
-
+    print("Creating json")  
     pathways = json.dumps(parsed_pages, indent=4, sort_keys=True)
 
     jsonFile = open("hass_pathways.json", "w")
     jsonFile.write(pathways)
     jsonFile.close()
+    print("Finished")
 
 if __name__ == "__main__":
     main() 
