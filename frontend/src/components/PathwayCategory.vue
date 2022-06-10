@@ -5,9 +5,26 @@
             class="card-img"
             :src="require('../assets/pathway-groups/' + image)"
         >
+
+
             <div class="darken" />
+
             <v-card-title class="font-weight-bold text-truncate card-title">
                 {{ title }}
+                <span class="bookmark-holder">
+                    <v-tooltip bottom>
+                        <template v-slot:activator="{on, attrs}">
+                            <v-icon class="unselected" v-bind="attrs" v-on="on">mdi-bookmark-outline</v-icon>
+                        </template>
+                        <span>Remove pathway from "My Pathways"</span>
+                    </v-tooltip>
+                    <v-tooltip bottom>
+                        <template v-slot:activator="{on, attrs}">
+                            <v-icon class="selected" v-bind="attrs" v-on="on">mdi-bookmark</v-icon>
+                        </template>
+                        <span>Add pathway to "My Pathways"</span>
+                    </v-tooltip>
+                </span>
             </v-card-title>
         </v-img>
         
@@ -66,6 +83,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+.bookmark-holder {
+    float: right;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.bookmark-holder:hover {
+    cursor: pointer;
+}
 .card {
     width: 100%;
     max-width: calc(100vw - 24px);
@@ -91,6 +118,7 @@ export default {
     position: absolute;
     bottom: 0;
     display: block;
+    width: 100%;
 }
 
 .pathways-container {
