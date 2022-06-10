@@ -2,31 +2,51 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <h1>Welcome to the pathways website!</h1><h3>Here you can explore the different pathways RPI has to offer. To get started choose from on of the options below and start exploring your options!</h3>
-            <v-btn
-                class="button"
-                elevation="0"
-                tile
-                :to="{ name: 'pathways' }"
-            >
-                <span class="text">Explore the different pathways</span>
-            </v-btn>
-            <v-btn
-                class="button"
-                elevation="0"
-                tile
-                :to="{ name: 'search-classes' }"
-            >
-                <span class="text">Find a pathway from classes you have taken</span>
-            </v-btn>
-            <v-btn
-                class="button"
-                elevation="0"
-                tile
-                :to="{ name: 'admin-portal' }"
-            >
-                <span class="text">Come to our Admin and secure portal</span>
-            </v-btn>
+            <h1>Welcome to HASS Pathways!</h1>
+            <p>Here you can explore the different pathways RPI has to offer. To get started choose from on of the options below and start exploring your options!</p>
+            <v-divider class="my-4" />
+            
+            <div style="text-align: center">
+                <v-btn
+                    class="button pathway-btn [ mr-2 mt-2 font-weight-bold ]"
+                    elevation="0"
+                    color="primary"
+                    tile
+                    x-large
+                    :to="{ name: 'pathways' }"
+                >
+                    <v-icon left dark>
+                        mdi-compass
+                    </v-icon>
+                    <span class="text">Explore pathways</span>
+                </v-btn>
+                <v-btn
+                    class="button pathway-btn [ mr-2 mt-2 font-weight-bold ]"
+                    color="primary"
+                    elevation="0"
+                    tile
+                    x-large
+                    :to="{ name: 'search-classes' }"
+                >
+                    <v-icon left dark>
+                        mdi-magnify
+                    </v-icon>
+                    <span class="text" style="display: block">Find pathways from classes</span>
+                </v-btn>
+
+                <br>
+                <v-btn
+                    class="button mt-4"
+                    elevation="0"
+                    tile
+                    :to="{ name: 'admin-portal' }"
+                >
+                    <v-icon left dark>
+                        mdi-cog
+                    </v-icon>
+                    <span class="text">Admin and secure portal</span>
+                </v-btn>
+            </div>
         </v-container>
     </div>
 </template>
@@ -46,3 +66,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.pathway-btn {
+    width: 40%;
+    min-width: 400px !important;
+}
+</style>

@@ -2,62 +2,95 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="foundCrumbs" />
-            <v-text-field
-                v-model="name"
-                outlined
-                rounded
-                label="Course Name"
-            />
-            <v-text-field
-                v-model="dept"
-                outlined
-                rounded
-                label="Department"
-            />
-            <v-text-field
-                v-model="ID"
-                outlined
-                rounded
-                label="Course ID"
-                type="number"
-            />
-            <v-textarea
-                v-model="description"
-                outlined
-                rounded
-                label="Description"
-            />
-            <v-checkbox 
-                v-model="CI"
-                label="Communication Intensive"
-            />
-            <v-checkbox 
-                v-model="HI"
-                label="Hass Inquiry"
-            />
-            <v-checkbox 
-                v-model="fall"
-                label="Offered in Fall"
-            />
-            <v-checkbox 
-                v-model="summer"
-                label="Offered in Summer"
-            />
-            <v-checkbox 
-                v-model="spring"
-                label="Offered in Spring"
-            />
-            <v-select
-                v-model="myPathways"
-                :items="pathways"
-                multiple
-                label="Pathways"
-                outlined
-                chips
-            />
-            <v-btn color="primary" outlined @click="submit()">
-                Submit Changes<v-icon>mdi-check</v-icon>
-            </v-btn>
+
+            <h1 class="mb-4">Modify Course Info</h1>
+            <div style="max-width: 600px">
+                <v-text-field
+                    v-model="name"
+                    outlined dense
+                    label="Course Name"
+                    class="text-input"
+                />
+
+                <v-row>
+                    <v-col>
+                        <v-text-field
+                            v-model="dept"
+                            outlined dense
+                            label="Department Code"
+                            class="text-input"
+                            placeholder="COGS"
+                        />
+                    </v-col>
+                    <v-col>
+                        <v-text-field
+                            v-model="ID"
+                            outlined dense
+                            label="Course ID"
+                            :rules="[rules.courseCode]"
+                            maxlength="4"
+                            type="number"
+                            class="text-input"
+                            placeholder="1234"
+                        />
+                    </v-col>
+                </v-row>
+
+                <v-textarea
+                    v-model="description"
+                    outlined dense
+                    label="Description"
+                    class="text-input"
+                />
+
+                <v-checkbox 
+                    v-model="CI"
+                    label="Communication Intensive"
+                    class="mt-1 mb-1"
+                    dense :hide-details="true"
+                />
+                <v-checkbox 
+                    v-model="HI"
+                    label="HASS Inquiry"
+                    class="my-1 mb-4"
+                    dense :hide-details="true"
+                />
+                <v-checkbox 
+                    v-model="fall"
+                    label="Offered in Fall"
+                    class="my-1"
+                    dense :hide-details="true"
+                />
+                <v-checkbox 
+                    v-model="summer"
+                    label="Offered in Summer"
+                    class="my-1"
+                    dense :hide-details="true"
+                />
+                <v-checkbox 
+                    v-model="spring"
+                    label="Offered in Spring"
+                    class="mt-1 mb-8"
+                    dense :hide-details="true"
+                />
+                <v-select
+                    v-model="myPathways"
+                    :items="pathways"
+                    multiple
+                    label="Pathways"
+                    outlined
+                    class="text-input"
+                    chips
+                />
+                <v-btn
+                    color="green"
+                    class="mb-16 font-weight-bold"
+                    outlined tile
+                    @click="submit()"
+                >
+                    Submit Changes<v-icon right>mdi-check</v-icon>
+                </v-btn>
+            </div>
         </v-container>
     </div>
 </template>
@@ -87,7 +120,11 @@ export default {
             major_rest: false,
             minors: [],
             myPathways: [],
-            pathways: []
+            pathways: [],
+
+            rules: {
+                courseCode: value => ('' + value).length === 4
+            }
         }
     },
     computed: {
@@ -197,3 +234,19 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+/* Square inputs :) */
+.text-input {
+    border-radius: 0;
+}
+</style>
+
+<style>
+/* Fix annoying vuetify bug where the select has extra padding on the bottom */
+.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--box .v-select__selections,
+.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed
+.v-select__selections {
+    min-height: 0;
+}
+</style>
