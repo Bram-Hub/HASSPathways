@@ -2,10 +2,15 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <v-btn class="search" href="/search-classes">Search for a class</v-btn>
-
+            <v-btn class="search" href="/search-classes">
+                Search for a class
+            </v-btn>
             <h1>HASS Pathways</h1>
-            <p>Select a pathway below to get started</p>
+            <p>
+                Select a pathway below to get started, or <router-link to="/search-classes">
+                    choose a pathway from the classes you've taken
+                </router-link>
+            </p>
 
             <v-divider class="my-4" />
 

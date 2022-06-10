@@ -22,6 +22,7 @@
             :key="item.prefix + item.ID" 
             :course="item"
             :pathway-id="pathwayId"
+            @checkbox-clicked="$emit('checkbox-clicked')"
         />
 
         <p v-if="filteredCourses.length === 0" class="no-search-results">

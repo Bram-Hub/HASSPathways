@@ -5,9 +5,19 @@
         <p>{{ pathway.description }}</p>
         <div class="fab-container">
             <v-btn
+                color="light grey" elevation="2" fab
+                aria-label="Switch to nex tab on class selection"
+                @click="changeTabOnSelection = !changeTabOnSelection;"
+            >
+                <v-icon>
+                    {{ changeTabOnSelection ? 'mdi-rotate-right-variant' : 'mdi-checkbox-blank-circle-outline' }}
+                </v-icon>
+            </v-btn>
+
+            <v-btn
                 color="red" elevation="2" fab
                 aria-label="Clear courses"
-                @click='deselectCourses()'
+                @click="deselectCourses()"
             >
                 <v-icon>mdi-delete</v-icon>
             </v-btn>
@@ -37,10 +47,14 @@
                 :key="item"
                 :eager="true"
             >
-                <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" />
+                <CourseTable
+                    :ref="index"
+                    :courses="courses[index]"
+                    :pathway-id="pathwayID"
+                    @checkbox-clicked="onCheckboxClicked()"
+                />
             </v-tab-item>
         </v-tabs-items>
-
     </v-container>
 </template>
 
@@ -73,8 +87,9 @@ export default {
     },
     data() {
         return {
-            tab: null,
-            category: ''
+            tab: 0,
+            category: '',
+            changeTabOnSelection: false
         }
     },
     computed: {
@@ -125,7 +140,11 @@ export default {
             ].filter((_, index) => this.priorities[index] && this.priorities[index].length);
         }
     },
-    methods: {
+    methods : {
+        onCheckboxClicked(){
+            if(this.changeTabOnSelection)
+                this.tab += 1;
+        },
         deselectCourses() {
             let tab = this.tab;
             this.courses[tab].forEach(course => {

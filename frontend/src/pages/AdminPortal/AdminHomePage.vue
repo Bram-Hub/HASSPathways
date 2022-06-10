@@ -2,31 +2,37 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <h1>Welcome to the Admin Portal!</h1><h3>Here you can edit the courses and pathways on the website!</h3>
-            <v-btn
-                class="button"
-                elevation="0"
-                tile
-                :to="{ name: 'admin-pathway' }"
-            >
-                <span class="text">Search for a class by pathway!</span>
-            </v-btn>
-            <v-btn
-                class="button"
-                elevation="0"
-                tile
-                :to="{ name: 'admin-search-course-code' }"
-            >
-                <span class="text">Search for a class to edit by course code.</span>
-            </v-btn>
-            <v-btn
-                class="button"
-                elevation="0"
-                tile
-                :to="{ name: 'admin-course' }"
-            >
-                <span class="text">Add a new course to the website!</span>
-            </v-btn>
+            <h1>Welcome to the Admin Portal!</h1>
+            <p>Here you can edit the courses and pathways on the website!</p>
+
+            <v-divider class="my-4" />
+
+            <ul>
+                <li v-bind="attrs" v-on="on">
+                    <router-link
+                        :to="{ name: 'admin-pathway' }"
+                        class="text-decoration-none"
+                    >
+                        Search for a class by pathway.
+                    </router-link>
+                </li>
+                <li v-bind="attrs" v-on="on">
+                    <router-link
+                        :to="{ name: 'admin-search-course-code' }"
+                        class="text-decoration-none"
+                    >
+                        Edit a class by course code.
+                    </router-link>
+                </li>
+                <li v-bind="attrs" v-on="on">
+                    <router-link
+                        :to="{ name: 'admin-course' }"
+                        class="text-decoration-none"
+                    >
+                        Add a new course to the website.
+                    </router-link>
+                </li>
+            </ul>
         </v-container>
     </div>
 </template>
