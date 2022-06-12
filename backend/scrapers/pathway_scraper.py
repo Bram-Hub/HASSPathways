@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 # finds the pathway name using beautiful soup's .find
 def parse_name(page):
     p = page.find("h1")
-    return p.get_text()
+    return p.get_text().strip()
 
 def parse_courses(tag):
     courses = {}
