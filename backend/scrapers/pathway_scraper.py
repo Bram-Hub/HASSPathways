@@ -53,7 +53,7 @@ def parse_courses(tag):
 def parse_body(page):
     name = parse_name(page)
     body = {}
-    body["description"] = page.find("table", "table_default").find("table", "table_default").find_all("p")[1].get_text()
+    body["description"] = page.find_all("p")[4].get_text()
     for tag in page.find_all("div", "acalog-core"):
         header = tag.find_all("h2")
         if len(header) == 0:
@@ -122,7 +122,7 @@ def main():
     print("Creating json")  
     pathways = json.dumps(parsed_pages, indent=4, sort_keys=True)
 
-    jsonFile = open("hass_pathways.json", "w")
+    jsonFile = open("pathways.json", "w")
     jsonFile.write(pathways)
     jsonFile.close()
     print("Finished")

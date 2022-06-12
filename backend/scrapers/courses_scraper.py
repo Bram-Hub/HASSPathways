@@ -82,14 +82,11 @@ def get_course_data(course_ids: List[str]) -> Dict:
 
     depts = []
 
-    f = open('hass_pathways.json', 'r')
-    pathways = json.load(f)
+    f = open('depts.json', 'r')
+    f = json.load(f)
 
-    for pathway_name in pathways:
-        for field in pathways[pathway_name]:
-            if field != 'description' and field != 'remaining_header' and field != 'minor':
-                for course in pathways[pathway_name][field]:
-                    depts.append(pathways[pathway_name][field][course][:4])
+    for dept in f:
+        depts.append(dept)
 
     for chunk in course_chunks:
         ids = "".join([f"&ids[]={id}" for id in chunk])
