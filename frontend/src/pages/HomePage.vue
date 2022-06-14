@@ -44,7 +44,9 @@
                     <v-icon left dark>
                         mdi-cog
                     </v-icon>
-                    <span class="text">Admin and secure portal</span>
+                    <span v-if="!$vuetify.theme.dark" class="text" id="admin">Admin and secure portal</span>
+                   <span v-else class="text">Admin and secure portal</span>
+                    
                 </v-btn>
             </div>
         </v-container>
@@ -72,4 +74,9 @@ export default {
     width: 40%;
     min-width: 400px !important;
 }
+
+#admin {
+    font-weight: bold;
+}
+
 </style>
