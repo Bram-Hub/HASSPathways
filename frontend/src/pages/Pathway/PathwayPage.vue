@@ -32,7 +32,7 @@
 
             <v-divider class="my-4" />
 
-            <v-tabs v-model="tab" background-color="transparent" color="basil" grow center-active>
+            <v-tabs v-model="tab" background-color="transparent" color="basil" grow="center-active">
                 <v-tabs-slider color="primary" />
                 <v-tab v-for="item in classTabs" :key="item">
                     <small>{{ item }}</small>
