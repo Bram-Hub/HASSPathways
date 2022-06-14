@@ -49,11 +49,14 @@ export default {
     },
     async mounted() {
         this.get_pathways().forEach(pathway => {
-            if (pathway.courses.length == 0) {
-                this.$store.commit('delPathway', pathway.name);
-                this.update();
-            }
+            console.log(pathway.name)
         })
+        // this.get_pathways().forEach(pathway => {
+        //     if (pathway.courses.length == 0) {
+        //         this.$store.commit('delPathway', pathway.name);
+        //         this.update();
+        //     }
+        // })
 
     },
     methods: {

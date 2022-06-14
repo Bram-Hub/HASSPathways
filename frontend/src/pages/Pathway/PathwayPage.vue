@@ -12,12 +12,12 @@
                             v-bind="attrs" 
                             v-on="on" 
                             large 
-                            @click="bookmarkSelected = !bookmarkSelected" 
+                            @click="selectBookmark()" 
                         >
                             mdi-bookmark-outline
                         </v-icon>
                     </template>
-                    <span>Remove pathway from "My Pathways"</span>
+                    <span>Add pathway to "My Pathways"</span>
                 </v-tooltip>
 
                 <v-tooltip bottom v-else>
@@ -27,12 +27,12 @@
                             v-bind="attrs" 
                             v-on="on" 
                             large 
-                            @click="bookmarkSelected = !bookmarkSelected" 
+                            @click="deselectBookmark()" 
                         >
                             mdi-bookmark
                         </v-icon>
                     </template>
-                    <span>Add pathway to "My Pathways"</span>
+                    <span>Remove pathway from "My Pathways"</span>
                 </v-tooltip>
             </span>
         </div>
@@ -178,6 +178,24 @@ export default {
         }
     },
     methods : {
+        selectBookmark() {
+            // this works
+            console.log("bookmarking")
+            this.bookmarkSelected = !this.bookmarkSelected;
+            const c = { pathwayID: this.pathwayID, course: null };
+            this.$store.commit('addCourse', c);
+        },
+        deselectBookmark() {
+            console.log("un-bookmarking");
+            this.bookmarkSelected = !this.bookmarkSelected;
+            // add logic to store the state the bookmark now
+            // check to see what courses are selected
+            console.log(this.pathwayID)
+
+
+            
+            this.$store.commit('delPathway', this.pathwayID)
+        },
         onCheckboxClicked(){
             if(this.changeTabOnSelection)
                 this.tab += 1;
@@ -190,8 +208,22 @@ export default {
                 this.$store.commit('delCourse', c);
             })
             // deselect course
-            // console.log(this.$refs.test)
-            this.$refs[tab][0].deselectAll();
+            this.$refs[tab][0].deselectAll(); 
+           /* <!-- ! this is sus -->
+            * this WILL break with the current implementation of graph view
+            *  because this.$refs[tab] gives me an array of all of the courseTable components
+            *   on the DOM. Right now, there is only one, but with the current implementation
+            *    of graph view, there will be more courseTable components which will make the
+            *     array that this.$refs[tab] gives have multiple couresTable elements
+            *      this should be revamped in the future to change how I deselect courses
+            * 
+            * <!-- --from graph view's branch-- -->
+            * this.$refs[tab] is an array of all of the courseTable components
+            *  right now there are two on each page, with this.$refs[tab][0] being the component
+            *   on graph view, and $this.refs[tab][1] being the component on the regular view
+            *    
+            * this should be changed in the future
+            */
         }
     }
 }
