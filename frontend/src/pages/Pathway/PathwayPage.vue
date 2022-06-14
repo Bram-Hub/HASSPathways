@@ -178,33 +178,29 @@ export default {
         }
     },
     methods : {
-        selectBookmark() {
-            // this works
-            console.log("bookmarking")
+        selectBookmark() { 
             this.bookmarkSelected = !this.bookmarkSelected;
             const c = { pathwayID: this.pathwayID, course: null };
             this.$store.commit('addCourse', c);
         },
-        deselectBookmark() {
-            console.log("un-bookmarking");
+        deselectBookmark() { 
             this.bookmarkSelected = !this.bookmarkSelected;
             // add logic to store the state the bookmark now
-            // check to see what courses are selected
 
-            // console.log(this.pathwayID)
-            // console.log(this.classTabs);
-            this.classTabs.forEach( (tabName, index) => {
-                // console.log(index + " : " + tabName)
-                console.log(this.courses[index])
-            });
-
-            // console.log(this.$store.state.classes)
             // idk how to use vuex to get which classes are already selected
             //  so im just going to go through each checkbox and see if
             //   it is toggled or not
 
-            
-            // this.$store.commit('delPathway', this.pathwayID)
+            // check to see what courses are selected
+            let check = false;
+            this.classTabs.forEach( (tabName, index) => {
+                this.$refs[index][0].getSelected().forEach( checked => {
+                    if ( checked ) check = true; return;
+                })
+            });
+            if (!check) {
+                this.$store.commit('delPathway', this.pathwayID)
+            }
         },
         onCheckboxClicked(){
             if(this.changeTabOnSelection)
