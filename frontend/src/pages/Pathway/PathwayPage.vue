@@ -6,7 +6,7 @@
         <div class="fab-container">
             <v-btn
                 color="light grey" elevation="2" fab
-                aria-label="Switch to nex tab on class selection"
+                aria-label="Switch to next tab on class selection"
                 @click="changeTabOnSelection = !changeTabOnSelection;"
             >
                 <v-icon>

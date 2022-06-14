@@ -52,7 +52,9 @@ def parse_courses(tag):
 # finds all body text for the pathway and grabs the courses for each
 def parse_body(page):
     name = parse_name(page)
+    
     body = {}
+    body["name"] = name
     body["description"] = page.find_all("p")[4].get_text()
     for tag in page.find_all("div", "acalog-core"):
         header = tag.find_all("h2")
