@@ -22,7 +22,7 @@
             :key="item.prefix + item.ID" 
             :course="item"
             :pathway-id="pathwayId"
-            :showDesc="showDesc"
+            :show-desc="showDesc"
         />
 
         <p v-if="filteredCourses.length === 0" class="no-search-results">

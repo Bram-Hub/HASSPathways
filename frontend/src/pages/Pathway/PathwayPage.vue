@@ -41,7 +41,7 @@
 
             <v-tabs-items v-model="tab" touchless>
                 <v-tab-item v-for="(item, index) in classTabs" :key="item" :eager="true">
-                    <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" :showDesc=true />
+                    <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" :show-desc="true" />
                 </v-tab-item>
             </v-tabs-items>
         </v-container>
