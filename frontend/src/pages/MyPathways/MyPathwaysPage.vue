@@ -33,15 +33,6 @@ import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 
 export default {
-    async mounted() {
-        this.get_pathways().forEach(pathway => {
-            if (pathway.courses.length == 0) {
-                this.$store.commit('delPathway', pathway.name);
-                this.update();
-            }
-        })
-
-    },
     components: {
         MyPathway, Breadcrumbs
     },
@@ -49,12 +40,20 @@ export default {
         path: {
             default: '',
             type: String,
-        },
+        }
     },
     data() {
         return {
             breadcrumbs: breadcrumbs.my_pathways
         };
+    },
+    async mounted() {
+        this.get_pathways().forEach(pathway => {
+            if (pathway.courses.length == 0) {
+                this.$store.commit('delPathway', pathway.name);
+                this.update();
+            }
+        })
     },
     methods: {
         get_pathways() {

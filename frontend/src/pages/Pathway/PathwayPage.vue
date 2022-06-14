@@ -7,16 +7,15 @@
             click me to toggle graph view
         </v-btn>
         <v-container v-show="showGraph">
-        <div id="graphView">
-            <div v-for="(item, index) in classTabs" :key="item" class="tab">
+            <div id="graphView">
+                <div v-for="(item, index) in classTabs" :key="item" class="tab">
                     <h2>
                         {{ item }}
                     </h2>
-                    <hr/>
-                    <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" :showDesc=false />
+                    <hr>
+                    <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" :show-desc="false" />
+                </div>
             </div>
-        </div>
-
         </v-container>
         <v-container v-show="!showGraph">
             <div class="fab-container">

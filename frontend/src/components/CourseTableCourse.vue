@@ -38,7 +38,7 @@
                 </div>
             </v-list-item-content>
         </v-list-item>
-        <v-card-text v-if="showDesc==true" class="class-card__desc" >
+        <v-card-text v-if="showDesc==true" class="class-card__desc">
             {{ course.description }}
         </v-card-text>
     </v-card>
