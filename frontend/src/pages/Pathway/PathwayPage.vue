@@ -25,9 +25,17 @@
         <v-container v-show="!showGraph">
             <div class="fab-container">
                 <v-btn
-                    color="red"
-                    elevation="2"
-                    fab
+                    color="light grey" elevation="2" fab
+                    aria-label="Switch to nex tab on class selection"
+                    @click="changeTabOnSelection = !changeTabOnSelection;"
+                >
+                    <v-icon>
+                        {{ changeTabOnSelection ? 'mdi-rotate-right-variant' : 'mdi-checkbox-blank-circle-outline' }}
+                    </v-icon>
+                </v-btn>
+
+                <v-btn
+                    color="red" elevation="2" fab
                     aria-label="Clear courses"
                     @click="deselectCourses()"
                 >
@@ -50,6 +58,7 @@
                 </v-tab-item>
             </v-tabs-items>
         </v-container>
+
     </v-container>
 </template>
 
@@ -86,6 +95,7 @@ export default {
             tab: null,
             category: '',
             showGraph: false,
+            changeTabOnSelection: false,
         }
     },
     computed: {
@@ -137,6 +147,10 @@ export default {
         }
     },
     methods: {
+        onCheckboxClicked(){
+            if(this.changeTabOnSelection)
+                this.tab += 1;
+        },
         deselectCourses() {
             let tab = this.tab;
             this.courses[tab].forEach(course => {
@@ -144,7 +158,14 @@ export default {
                 // delete course
                 this.$store.commit('delCourse', c);
             })
-            this.$refs[tab][0].deselectAll();
+            // go to the coursetable component and then deselect all things
+            console.log(this.$refs[tab])
+            this.$refs[tab][1].deselectAll();       //! this is sus
+            // this.$refs[tab] is an array of all of the courseTable components
+            //  right now there are two on each page, with this.$refs[tab][0] being the component
+            //   on graph view, and $this.refs[tab][1] being the component on the regular view
+            //    
+            // this should be changed in the future
         },
         toggleGraph() {
             // console.log(this.courses);
