@@ -1,8 +1,28 @@
 <template>
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
-        <h1>{{ pathway.name }}</h1>
+        <div class="header">
+            <h1>{{ pathway.name }}</h1>
+            <span class="bookmark-holder">
+
+                <v-tooltip bottom >
+                    <template v-slot:activator="{on, attrs}">
+                        <v-icon class="unselected" v-bind="attrs" v-on="on" large >mdi-bookmark-outline</v-icon>
+                    </template>
+                    <span>Remove pathway from "My Pathways"</span>
+                </v-tooltip>
+
+                <v-tooltip bottom>
+                    <template v-slot:activator="{on, attrs}">
+                        <v-icon class="selected" v-bind="attrs" v-on="on" large >mdi-bookmark</v-icon>
+                    </template>
+                    <span>Add pathway to "My Pathways"</span>
+                </v-tooltip>
+            </span>
+        </div>
+        
         <p>{{ pathway.description }}</p>
+        
         <div class="fab-container">
             <v-btn
                 color="light grey" elevation="2" fab
@@ -161,6 +181,16 @@ export default {
 </script>
 
 <style scoped>
+
+.header h1{
+    display: inline-block;
+}
+.bookmark-holder {
+    display: inline-flex;
+    top: 0;
+    cursor: pointer;
+    z-index: 9;
+}
 .fab-container {
     position: fixed;
     right: 10px;
