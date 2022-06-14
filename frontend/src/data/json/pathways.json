@@ -1,6 +1,7 @@
 {
     "Art History, Theory, and Criticism": {
         "description": "This pathway allows students to study a range of art history and media art histories and theories. This immersive study will give students a comprehensive view of how these histories have shaped our current day media and given rise to a variety of art making tools in our digital and computational era.",
+        "name": "Art History, Theory, and Criticism",
         "one_of": {
             "Art History": "ARTS1050",
             "Histories of Jazz and Improvised Music": "ARTS2510",
@@ -20,6 +21,7 @@
         "minor": [
             "Cognitive Science of Artificial Intelligence Minor"
         ],
+        "name": "Artificial Intelligence",
         "remaining": {
             "AI and Society": "IHSS1972",
             "Are Humans Rational?": "IHSS1235",
@@ -43,6 +45,7 @@
         "minor": [
             "Behavioral and Cognitive Neuroscience"
         ],
+        "name": "Behavioral and Cognitive Neuroscience",
         "remaining": {
             "Behavioral Neuroscience": "PSYC4360",
             "Cognition and the Brain": "PSYC4600",
@@ -62,6 +65,7 @@
         "minor": [
             "Chinese Language Minor"
         ],
+        "name": "Chinese Language",
         "remaining": {
             "Chinese I": "LANG1410",
             "Chinese II": "LANG2410",
@@ -73,6 +77,7 @@
     },
     "Creative Design and Innovation": {
         "description": "This pathway looks at creative design and innovation from various humanities, arts, and social science points of view. Students will learn about the cognitive and communicative principles behind design and innovation, the economic policies, markets, and other social institutions driving and shaping design and innovation, and how to engage in sustainable and socially responsible design and innovation for local and global impact.",
+        "name": "Creative Design and Innovation",
         "one_of": {
             "Digital Filmmaking": "ARTS1030",
             "Digital Imaging": "ARTS1020",
@@ -106,6 +111,7 @@
     },
     "Design, Innovation, and Society": {
         "description": "The pathway in Design, Innovation, and Society (DIS) provides creative, socially conscious students deep context for a broad education in design and innovation. Students take a sequence of studio-based courses that address real-world social and environmental challenges.",
+        "name": "Design, Innovation, and Society",
         "remaining": {
             "Design and Innovation  Studio C": "STSO4610",
             "Design and Innovation Studio B": "STSO4605",
@@ -122,6 +128,7 @@
         "minor": [
             "Economics Minor"
         ],
+        "name": "Economics",
         "one_of": {
             "Intermediate Macroeconomic Theory": "ECON2020",
             "Intermediate Microeconomic Theory": "ECON2010"
@@ -154,6 +161,7 @@
         "minor": [
             "Economics of Banking and Finance Minor"
         ],
+        "name": "Economics of Banking and Finance",
         "one_of": {
             "Introductory Economics": "ECON1200",
             "Principles of Economics": "IHSS1200"
@@ -165,6 +173,7 @@
     },
     "Economics of Decision-Making": {
         "description": "To complete this integrative pathway, students must choose a minimum of 12 credits as described below:",
+        "name": "Economics of Decision-Making",
         "remaining": {
             "Applied Game Theory": "ECON4220",
             "Behavioral Economics": "ECON4270",
@@ -183,6 +192,7 @@
         "minor": [
             "Economics of Healthcare Markets"
         ],
+        "name": "Economics of Healthcare Markets",
         "one_of": {
             "Introductory Economics": "ECON1200",
             "Principles of Economics": "IHSS1200"
@@ -199,6 +209,7 @@
         "minor": [
             "Economics of Policy and Regulations"
         ],
+        "name": "Economics of Policy and Regulations",
         "one_of": {
             "Introductory Economics": "ECON1200",
             "Principles of Economics": "IHSS1200"
@@ -216,6 +227,7 @@
         "minor": [
             "Economics of Quantitative Modeling"
         ],
+        "name": "Economics of Quantitative Modeling",
         "one_of": {
             "Introductory Economics": "ECON1200",
             "Principles of Economics": "IHSS1200"
@@ -232,6 +244,7 @@
         "minor": [
             "Economics of Technology and Innovation Minor"
         ],
+        "name": "Economics of Technology and Innovation",
         "one_of": {
             "Introductory Economics": "ECON1200",
             "Principles of Economics": "IHSS1200"
@@ -248,6 +261,7 @@
         "minor": [
             "Electronic Arts Minor"
         ],
+        "name": "Electronic Arts",
         "one_of": {
             "Art History": "ARTS1050",
             "Behind the TV Screen": "IHSS1030",
@@ -272,6 +286,7 @@
     },
     "Environmental Futures": {
         "description": "The future seems up for grabs as climate change challenges human and nonhuman societies to meet basic needs for clean air, water, soil, food, and energy. How will humans adapt, reduce harm, or mitigate the problems of the past and present? This pathway involves courses in sustainability, defined as the means to ensure the well-being of the planet and quality of life of present and future generations. Courses integrate research and insights from the social sciences, arts, and humanities to pursue a healthy environment, economic prosperity, and social justice by building on the present to inform the future.",
+        "name": "Environmental Futures",
         "one_of": {
             "A Century of Environmental Thought": "IHSS1320",
             "Designing Climate Justice": "IHSS1960",
@@ -298,6 +313,7 @@
     },
     "Ethics, Integrity, and Social Responsibility": {
         "description": "In this Pathway, students analyze many aspects of the complex relationship between ethics and areas in science, technology, and engineering. These conversations are critical to ensure the ethical and accessible use of technology and to allow scientists and engineers to think critically and make informed decisions on personal, professional, and public policy levels.",
+        "name": "Ethics, Integrity, and Social Responsibility",
         "remaining": {
             "Art, Community, and Technology": "ARTS4250",
             "Bioethics": "STSO4250",
@@ -318,6 +334,7 @@
     },
     "Extent and Limits of Rationality": {
         "description": "Humans can do, and have done, some really stupid things: People are not as rational as they would like to think and are subject to scores of cognitive and social biases. That said, however, people also have the power to correct for these, and to do good and constructive work. It is time to see how such cognitive and social powers can be harnessed for the good. How can critical thinking be used constructively? How can people learn from their past mistakes? How can social institutions and policies be set up to ensure that wise\u00a0decisions are made to create a world that lasts into the extended future?",
+        "name": "Extent and Limits of Rationality",
         "remaining": {
             "Applied Game Theory": "ECON4220",
             "Are Humans Rational?": "IHSS1235",
@@ -341,6 +358,7 @@
     },
     "Fact and Fiction": {
         "description": "A pathway for those who are curious about what makes something fake or factual and how such concepts are evolving in contemporary political and popular culture. Students will learn how to think more precisely and analytically about the distinctions between fact, fiction, truth, and reality.",
+        "name": "Fact and Fiction",
         "one_of": {
             "Digital Filmmaking": "ARTS1030",
             "Documentary in the 21st Century": "IHSS1964",
@@ -371,6 +389,7 @@
     },
     "Game Studies": {
         "description": "This pathway explores the design, creation, and analysis of games. Students completing this pathway will develop depth in creative and critical thinking, technological proficiency, and multicultural awareness.",
+        "name": "Game Studies",
         "remaining": {
             "Experimental Game Design": "GSAS4510",
             "Game Development I": "GSAS4520",
@@ -384,6 +403,7 @@
     },
     "Gender, Race, Sexuality, Ethnicity, and Social Change": {
         "description": "This pathway enables students to cultivate an appreciation of how diverse identities are lived, experienced, and analyzed. Courses in this pathway center gender, dis/ability, race/ethnicity, and social class as ways of knowing and as analytic approaches for understanding distinctions that human societies make and unmake over time. Gender is used as an analytic tool for critical thinking about such topics as studies of sex differences and sexualities; race and gender in science, engineering, or gaming; or studies of the environment, war and peace, and other social impacts. Racial-ethnic formation is similarly used as an analytical tool for visualizing intersecting inequalities; history of science, medicine, arts, and technology.",
+        "name": "Gender, Race, Sexuality, Ethnicity, and Social Change",
         "remaining": {
             "Language and Culture": "IHSS1492",
             "Media and Society": "IHSS1560",
@@ -401,6 +421,7 @@
         "minor": [
             "Graphic Design Minor"
         ],
+        "name": "Graphic Design",
         "remaining": {
             "2D Motion Graphics": "COMM4970",
             "Brand Identity Design": "COMM4730",
@@ -422,6 +443,7 @@
         "minor": [
             "History Minor"
         ],
+        "name": "History",
         "remaining": {
             "A Century of Environmental Thought": "IHSS1320",
             "American Politics in Crisis": "STSO4590",
@@ -445,7 +467,7 @@
             "History of Science and Technology": "STSO4530",
             "Medicine, Culture, and Society": "STSO4400",
             "Politics of Design": "STSO4350",
-            "Professional Development  2 \u00e2\u0080\u0093Technical Issues and Solutions": "STSO4100",
+            "Professional Development  2 \u2013Technical Issues and Solutions": "STSO4100",
             "Research Design": "STSO4980",
             "Revolutions in Perspective": "IHSS1960",
             "STS and Sustainability Senior Project": "STSO4990",
@@ -463,6 +485,7 @@
     },
     "Information Technology and Web Sciences": {
         "description": "The pathway in Information Technology and Web Science (ITWS) is designed to introduce students to the social aspects and human interactions that technology provides in our lives and workplaces. Students will gain knowledge of the social, legal, and ethical issues in employing technology around the world and will learn how to recognize and respond to human-centered design issues to make technology more usable.",
+        "name": "Information Technology and Web Sciences",
         "remaining": {
             "Communication Theory and Practice": "COMM2520",
             "Critical Thinking": "PHIL2100",
@@ -489,6 +512,7 @@
         "minor": [
             "Graphic Design Minor"
         ],
+        "name": "Interactive Media/Data Design",
         "remaining": {
             "Communication Theory and Practice": "COMM2520",
             "Foundations of HCI Usability": "COMM4420",
@@ -504,6 +528,7 @@
     },
     "Language": {
         "description": "This pathway promotes the development of skills to help students effectively communicate both domestically, and internationally, as well as enhance appreciation for other cultures. Students who select this pathway must have all courses that are part of the pathway be in the same language. Transfer credit from American Sign Language (ASL) courses can be applied to this pathway.",
+        "name": "Language",
         "remaining": {
             "Chinese I": "LANG1410",
             "Chinese II": "LANG2410",
@@ -518,6 +543,7 @@
         "minor": [
             "Linguistics Minor"
         ],
+        "name": "Linguistics",
         "remaining": {
             "Advanced Topics in Linguistics": "COGS4780",
             "Chinese I": "LANG1410",
@@ -540,6 +566,7 @@
         "minor": [
             "Literature and Creative Writing Minor"
         ],
+        "name": "Literature and Creative Writing",
         "remaining": {
             "Creative Writing:  The Short Story": "WRIT2330",
             "Creative Writing: Creative Non-Fiction": "WRIT2320",
@@ -562,6 +589,7 @@
     },
     "Living in a World of Data": {
         "description": "Humans live in the age of information \u2026 and misinformation \u2026 of big data, data mining, and machine learning \u2026 of new media presenting unparalleled means of communication \u2026 of unseen and opaque algorithms driving our news feeds\u2026 and of rushing to judgment on viral videos. It is important to develop some \u2018information intelligence\u2019 and \u2018data dexterity\u2019. Such dexterity and intelligence includes technical skills of quantitative data analysis and IT technology, but also includes critical thinking skills regarding how information is collected, judged, interpreted, and represented, and how big data and information is feeding humans\u2019 collective awareness driving their decisions and affecting their world surroundings.",
+        "name": "Living in a World of Data",
         "remaining": {
             "Applied Game Theory": "ECON4220",
             "Behavioral Economics": "ECON4270",
@@ -585,6 +613,7 @@
         "minor": [
             "Philosophy of Logic, Computation, and Mind Minor"
         ],
+        "name": "Logical Thinking",
         "remaining": {
             "Are Humans Rational?": "IHSS1235",
             "Computability and Logic": "PHIL4420",
@@ -602,6 +631,7 @@
         "minor": [
             "Media and Culture Minor"
         ],
+        "name": "Media and Culture",
         "remaining": {
             "Advertising and Culture": "COMM4580",
             "Behind the TV Screen": "IHSS1030",
@@ -627,6 +657,7 @@
         "minor": [
             "Cognitive Science Minor"
         ],
+        "name": "Mind, Brain, and Intelligence",
         "remaining": {
             "AI & Society": "IHSS1972",
             "Are Humans Rational?": "IHSS1235",
@@ -650,6 +681,7 @@
         "minor": [
             "Music Minor"
         ],
+        "name": "Music Composition and Production",
         "one_of": {
             "Exploring Music @Rensselaer": "IHSS1010",
             "Fundamentals of Music and Sound": "ARTS1380",
@@ -676,6 +708,7 @@
         "minor": [
             "Music Minor"
         ],
+        "name": "Music Performance",
         "one_of": {
             "Exploring Music @Rensselaer": "IHSS1010",
             "Fundamentals of Music and Sound": "ARTS1380",
@@ -701,6 +734,7 @@
         "minor": [
             "Music Minor"
         ],
+        "name": "Music and Culture",
         "one_of": {
             "Exploring Music @Rensselaer": "IHSS1010",
             "Histories of Jazz and Improvised Music": "ARTS2510",
@@ -725,6 +759,7 @@
         "minor": [
             "Philosophy Minor"
         ],
+        "name": "Philosophy",
         "one_of": {
             "Critical Thinking": "PSYC2100",
             "Great Ideas in Philosophy": "IHSS1165",
@@ -758,6 +793,7 @@
         "minor": [
             "Public Health Minor"
         ],
+        "name": "Public Health",
         "one_of": {
             "Introduction to Psychological Science": "PSYC1200",
             "Science, Technology, and Society": "STSO1110",
@@ -785,6 +821,7 @@
         "minor": [
             "Science, Technology, and Society Minor"
         ],
+        "name": "Science, Technology, and Society",
         "remaining": {
             "American History": "STSO2500",
             "American Politics in Crisis": "STSO4590",
@@ -811,7 +848,7 @@
             "IT and Society": "IHSS1220",
             "Medicine, Culture, and Society": "STSO4400",
             "Politics of Design": "STSO4350",
-            "Professional Development  2 \u00e2\u0080\u0093Technical Issues and Solutions": "STSO4100",
+            "Professional Development  2 \u2013Technical Issues and Solutions": "STSO4100",
             "Research Design": "STSO4980",
             "STS and Sustainability Senior Project": "STSO4990",
             "Science, Technology, and Society": "STSO1110",
@@ -827,6 +864,7 @@
         "minor": [
             "Strategic Communication Minor"
         ],
+        "name": "Strategic Communication",
         "remaining": {
             "Advertising and Culture": "COMM4580",
             "Communication Theory and Practice": "COMM2520",
@@ -850,6 +888,7 @@
         "minor": [
             "Studio Arts"
         ],
+        "name": "Studio Arts",
         "remaining": {
             "Advanced Drawing": "ARTS4200",
             "Art History": "ARTS1050",
@@ -875,6 +914,7 @@
         "minor": [
             "Sustainability Studies Minor"
         ],
+        "name": "Sustainability",
         "remaining": {
             "A Century of Environmental Thought": "IHSS1320",
             "Consumer Culture": "STSO4720",
@@ -898,6 +938,7 @@
     },
     "Thinking with Science": {
         "description": "This pathway offers instruction in identifying and understanding dissemination and the methods and media for scientific knowledge. Students who successfully complete this pathway will demonstrate the ability to critique how textual and social representations create diverse and competing receptions of scientific knowledge; analyze the social construction of scientific knowledge; and solve problems through disseminating scientific knowledge across a variety of social and rhetorical contexts.",
+        "name": "Thinking with Science",
         "remaining": {
             "Communication Theory and Practice": "COMM2520",
             "Critical Thinking": "PSYC2100",
@@ -921,6 +962,7 @@
     },
     "Transfer Student Arts and Humanities": {
         "description": "This\u00a0pathway\u00a0is intended for transfer students that enter with junior status and\u00a0who have completed significant coursework within the arts and humanities to be applied toward a pathway.\u00a0 Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.\u00a0",
+        "name": "Transfer Student Arts and Humanities",
         "remaining": {
             "": "WRIT"
         },
@@ -928,6 +970,7 @@
     },
     "Transfer Student Social Science": {
         "description": "This pathway is intended for transfer students that enter with junior status and\u00a0who have completed significant coursework within the social sciences\u00a0to be applied toward a pathway.\u00a0 Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.\u00a0",
+        "name": "Transfer Student Social Science",
         "remaining": {
             "": "STSS"
         },
@@ -939,6 +982,7 @@
             "General Psychology Minor",
             "Psychological Science Minor"
         ],
+        "name": "Understanding Human Behavior",
         "remaining": {
             "Abnormal Psychology": "PSYC4720",
             "Animal Cognition and Interaction with Humans": "PSYC4220",
@@ -988,6 +1032,7 @@
             "Video, Performance, and Social Practice",
             "Electronic Arts Minor"
         ],
+        "name": "Video, Performance, and Social Practice",
         "one_of": {
             "Behind the TV Screen": "IHSS1030",
             "Digital Filmmaking": "ARTS1030",
@@ -1018,6 +1063,7 @@
         "minor": [
             "Well-being"
         ],
+        "name": "Well-being: Body and Mind",
         "one_of": {
             "Basic Drawing": "ARTS1200",
             "Minds and Machines": "IHSS1140",
