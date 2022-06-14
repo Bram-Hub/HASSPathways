@@ -5,16 +5,32 @@
             <h1>{{ pathway.name }}</h1>
             <span class="bookmark-holder">
 
-                <v-tooltip bottom >
+                <v-tooltip bottom v-if="bookmarkSelected">
                     <template v-slot:activator="{on, attrs}">
-                        <v-icon class="unselected" v-bind="attrs" v-on="on" large >mdi-bookmark-outline</v-icon>
+                        <v-icon 
+                            class="unselected" 
+                            v-bind="attrs" 
+                            v-on="on" 
+                            large 
+                            @click="bookmarkSelected = !bookmarkSelected" 
+                        >
+                            mdi-bookmark-outline
+                        </v-icon>
                     </template>
                     <span>Remove pathway from "My Pathways"</span>
                 </v-tooltip>
 
-                <v-tooltip bottom>
+                <v-tooltip bottom v-else>
                     <template v-slot:activator="{on, attrs}">
-                        <v-icon class="selected" v-bind="attrs" v-on="on" large >mdi-bookmark</v-icon>
+                        <v-icon 
+                            class="selected" 
+                            v-bind="attrs" 
+                            v-on="on" 
+                            large 
+                            @click="bookmarkSelected = !bookmarkSelected" 
+                        >
+                            mdi-bookmark
+                        </v-icon>
                     </template>
                     <span>Add pathway to "My Pathways"</span>
                 </v-tooltip>
@@ -109,7 +125,8 @@ export default {
         return {
             tab: 0,
             category: '',
-            changeTabOnSelection: false
+            changeTabOnSelection: false,
+            bookmarkSelected: false,
         }
     },
     computed: {
