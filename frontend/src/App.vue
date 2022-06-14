@@ -54,6 +54,8 @@ export default {
 <style>
 #app {
     font-family: 'Muli', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .main-content {
