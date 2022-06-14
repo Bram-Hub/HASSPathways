@@ -4,19 +4,20 @@
         elevation="1"
         :style="{ borderColor: colorHash(title) }"
     >
-
         <v-card-title class="font-weight-bold text-truncate card-title title-container">
             <span class="title-text text-truncate">
                 {{ pathways[title].name }}
             </span>
 
             <div class="header">
-                <v-icon dense @click="listAction('edit')">mdi-pencil</v-icon>
-                <v-icon dense color="red" @click="listAction('delete')">mdi-delete</v-icon>
+                <v-icon dense @click="listAction('edit')">
+                    mdi-pencil
+                </v-icon>
+                <v-icon dense color="red" @click="listAction('delete')">
+                    mdi-delete
+                </v-icon>
             </div>
-
         </v-card-title>
-        
         <div class="courses-container">
             <div class="course-items-container">
                 <span

@@ -10,9 +10,9 @@
             <ul>
                 <li v-bind="attrs" v-on="on">
                     <router-link
+                        id="admin-btn"
                         :to="{ name: 'admin-pathway' }"
                         class="text-decoration-none"
-                        id="admin-btn"
                     >
                         <v-icon left dark>
                             mdi-magnify
@@ -22,9 +22,9 @@
                 </li>
                 <li v-bind="attrs" v-on="on">
                     <router-link
+                        id="admin-btn"
                         :to="{ name: 'admin-search-course-code' }"
                         class="text-decoration-none"
-                        id="admin-btn"
                     >
                         <v-icon left dark>
                             mdi-book-edit
@@ -34,9 +34,9 @@
                 </li>
                 <li v-bind="attrs" v-on="on">
                     <router-link
+                        id="admin-btn"
                         :to="{ name: 'admin-course' }"
                         class="text-decoration-none"
-                        id="admin-btn"
                     >
                         <v-icon left dark>
                             mdi-book-plus

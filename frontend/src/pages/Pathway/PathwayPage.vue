@@ -58,7 +58,6 @@
                 </v-tab-item>
             </v-tabs-items>
         </v-container>
-
     </v-container>
 </template>
 

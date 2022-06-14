@@ -2,8 +2,9 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="foundCrumbs" />
-
-            <h1 class="mb-4">Modify Course Info</h1>
+            <h1 class="mb-4">
+                Modify Course Info
+            </h1>
             <div style="max-width: 600px">
                 <v-text-field
                     v-model="name"
@@ -88,7 +89,10 @@
                     outlined tile
                     @click="submit()"
                 >
-                    Submit Changes<v-icon right>mdi-check</v-icon>
+                    Submit Changes
+                    <v-icon right>
+                        mdi-check
+                    </v-icon>
                 </v-btn>
             </div>
         </v-container>
