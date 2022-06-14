@@ -4,7 +4,7 @@
         fluid
         outlined
 
-        @click="toggleCheckbox()"
+        @click="toggleCheckbox(); $emit('checkbox-clicked')"
         @keydown.13="toggleCheckbox()"
     >
         <v-list-item one-line>
@@ -66,7 +66,7 @@ export default {
             default: null
         },
         showDesc: {
-            type:Boolean,
+            type: Boolean,
             required: false,
         }
     },

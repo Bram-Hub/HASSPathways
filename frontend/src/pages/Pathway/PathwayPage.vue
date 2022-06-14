@@ -9,10 +9,15 @@
         <v-container v-show="showGraph">
             <div id="graphView">
                 <div v-for="(item, index) in classTabs" :key="item" class="tab">
-                    <h2>
-                        {{ item }}
-                    </h2>
-                    <hr>
+                    <v-card
+                        class="d-flex align-center pa-4 mx-auto justify-center"
+                        outlined
+                    >
+                        <div>
+                            {{ item }}
+                        </div>
+                    </v-card>
+                    <!-- <hr> -->
                     <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" :show-desc="false" />
                 </div>
             </div>
@@ -32,7 +37,7 @@
 
             <v-divider class="my-4" />
 
-            <v-tabs v-model="tab" background-color="transparent" color="basil" grow="center-active">
+            <v-tabs v-model="tab" background-color="transparent" color="basil" grow>
                 <v-tabs-slider color="primary" />
                 <v-tab v-for="item in classTabs" :key="item">
                     <small>{{ item }}</small>
@@ -142,7 +147,7 @@ export default {
             this.$refs[tab][0].deselectAll();
         },
         toggleGraph() {
-            console.log(this.courses);
+            // console.log(this.courses);
             this.showGraph = !this.showGraph;
         }
     }

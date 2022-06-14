@@ -49,7 +49,7 @@ export default {
             default: null
         },
         showDesc: {
-            type:Boolean,
+            type: Boolean,
             required: false,
             default: true,
         }

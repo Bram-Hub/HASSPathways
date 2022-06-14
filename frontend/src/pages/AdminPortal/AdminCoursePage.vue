@@ -65,6 +65,7 @@
 <script>
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
+import axios from 'axios'
 import { courses, pathways } from '../../data/data.js'
 
 export default {
@@ -178,6 +179,18 @@ export default {
             newCourse.offered.spring = this.spring;
             newCourse.properties.major_restricted = this.major_rest;
             newCourse.key = this.name.slice().toLowerCase().replace(/ /g, '_');
+
+            const endpoint = 'http://127.0.0.1:5000/edit'
+            axios.post(endpoint, {
+                courses:newCourse,
+                pathways:this.myPathways,
+            })
+                .then(response => {
+                    console.log(response);
+                })
+                .catch(err =>{
+                    console.log(err);
+                });
             console.log(newCourse);
             console.log(this.myPathways);
         }

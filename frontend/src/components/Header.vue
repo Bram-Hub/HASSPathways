@@ -5,7 +5,7 @@
                 class="pl-6 pr-8 ml-4"
                 height="60"
                 width="60"
-                :src="require('../assets/logo.png')"
+                :src="this.$vuetify.theme.dark ? require('../assets/dark-mode-logo.png') : require('../assets/light-mode-logo.png')"
             />
         </router-link>
 
