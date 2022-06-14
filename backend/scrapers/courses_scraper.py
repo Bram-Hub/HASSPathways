@@ -72,6 +72,8 @@ def get_catalog_description(fields, course_name):
 
     return ""
 
+def obtain_CI(subj, code):
+    return False
 
 def get_course_data(course_ids: List[str]) -> Dict:
     data = {}
@@ -125,7 +127,6 @@ def get_course_data(course_ids: List[str]) -> Dict:
                         if "odd" in field_text:
                             odd = True
                         offered_text = field_text
-            
                 
             data[course_name] = {
                 "subj": subj,
@@ -141,14 +142,13 @@ def get_course_data(course_ids: List[str]) -> Dict:
                     "text": offered_text
                 },
                 "properties": {
-                    "CI": False,
+                    "CI": obtain_CI(subj, ID),
                     "HI": True if subj == "IHSS" else False,
                     "major_restricted": False
                 }
             }
 
     return data
-
 
 if __name__ == "__main__":
     if sys.argv[-1] == "help" or sys.argv[-1] == "--help":
@@ -166,6 +166,7 @@ if __name__ == "__main__":
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         course_ids = get_course_ids(catalog_id)
         data = get_course_data(course_ids)
+
         f = open('courses.json', 'w')
         json.dump(data, f, sort_keys=True, indent=2, ensure_ascii=False)
         f.close()
