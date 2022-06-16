@@ -19,12 +19,28 @@
                     :id="course.name"
                     :to="`/admin-portal/course?class=${encodeURIComponent(course.name.slice().toLowerCase().replace(/ /g, '_'))}`"
                 >
-                    Edit
+                  Edit
                 </v-btn>
                 <label class="label" :for="course.name"> {{ course.name + ", " + course.prefix + "-" + course.ID }} </label>
-                <v-btn color="red" @click="remove(course)">
-                  Remove
-                </v-btn>
+                <div>
+                    <v-dialog>
+                        <template #activator="on">
+                            <v-btn color="red" v-on="on">
+                                Remove
+                            </v-btn>
+                        </template>
+                        <v-card>
+                            <v-card-text>
+                                Are you sure you want to delete this course?
+                            </v-card-text>
+                            <v-card-actions>
+                                <v-btn @click="remove(course)">
+                                    Yes
+                                </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-dialog>
+                </div>
             </div>
         </v-container>
     </div>
@@ -65,9 +81,9 @@ export default {
         }
     },
     methods: {
-      remove(course) {
-        console.log(course)
-      }
+        remove(course) {
+            console.log(course)
+        }
     }
 }
 </script>
