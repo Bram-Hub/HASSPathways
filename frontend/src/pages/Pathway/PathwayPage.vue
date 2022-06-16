@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container style="width:75%">
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
                     <!-- <v-btn @click="test()">click me</v-btn> -->
         <div class="header">
@@ -244,7 +244,9 @@ export default {
 </script>
 
 <style scoped>
-
+#container {
+    /* margin: 0; */
+}
 .header h1{
     display: inline-block;
 }
