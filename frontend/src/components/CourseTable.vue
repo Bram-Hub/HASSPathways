@@ -23,6 +23,7 @@
             :course="item"
             :pathway-id="pathwayId"
             :show-desc="showDesc"
+            :description-on-hover="descriptionOnHover"
         />
 
         <p v-if="filteredCourses.length === 0" class="no-search-results">
@@ -49,6 +50,11 @@ export default {
             default: null
         },
         showDesc: {
+            type: Boolean,
+            required: false,
+            default: true,
+        },
+        descriptionOnHover: {
             type: Boolean,
             required: false,
             default: true,

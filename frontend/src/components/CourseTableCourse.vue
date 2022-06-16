@@ -1,5 +1,5 @@
 <template>
-    <v-tooltip :disabled="showDesc==false" right max-width="350">
+    <v-tooltip :disabled="!descriptionOnHover" right max-width="350">
         <template v-slot:activator="{ on }">
             <v-card
                 :class="[selectedClass(), 'w-100', 'my-2', 'class-card']"
@@ -76,6 +76,11 @@ export default {
         showDesc: {
             type: Boolean,
             required: false,
+        },
+        descriptionOnHover: {
+            type: Boolean,
+            required: false,
+            default: true,
         }
     },
     data: () => {
@@ -116,6 +121,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.v-tooltip__content {
+  opacity: 2.0;
+}
 .class-card {
     max-width: 700px;
     border-radius: 0;

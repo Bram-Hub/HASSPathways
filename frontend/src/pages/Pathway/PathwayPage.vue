@@ -8,6 +8,17 @@
         </v-btn>
         <v-container v-show="showGraph">
             <div id="graphView">
+                <div class="graph-fab-container">
+                    <v-btn
+                        color="grey" elevation="2" fab
+                        aria-label="Show class description on hover"
+                        @click="descriptionOnHover = !descriptionOnHover;"
+                    >
+                        <v-icon>
+                            {{ descriptionOnHover ? 'mdi-comment-text-outline' : 'mdi-comment-text' }}
+                        </v-icon>
+                    </v-btn>
+                </div>
                 <div v-for="(item, index) in classTabs" :key="item" class="tab">
                     <v-card
                         class="d-flex align-center pa-4 mx-auto justify-center"
@@ -18,7 +29,13 @@
                         </div>
                     </v-card>
                     <!-- <hr> -->
-                    <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" :show-desc="false" />
+                    <CourseTable
+                        :ref="index"
+                        :courses="courses[index]"
+                        :pathway-id="pathwayID"
+                        :show-desc="false"
+                        :description-on-hover="descriptionOnHover"
+                    />
                 </div>
             </div>
         </v-container>
@@ -95,6 +112,7 @@ export default {
             category: '',
             showGraph: false,
             changeTabOnSelection: false,
+            descriptionOnHover: false,
         }
     },
     computed: {
@@ -205,6 +223,18 @@ export default {
     /* max-width: 20vw; */
 }
 
+.graph-fab-container {
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    width: 56px;
+    height: 90px;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .fab-container {
     position: fixed;
     right: 10px;
