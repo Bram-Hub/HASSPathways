@@ -70,6 +70,8 @@ export default {
 <style scoped>
 .pathway-btn {
     width: 40%;
-    min-width: 400px !important;
+    min-width: 330px !important;
+    max-width: 92vw !important;
+    overflow-x: hidden;
 }
 </style>
