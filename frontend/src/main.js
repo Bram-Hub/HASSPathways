@@ -34,11 +34,14 @@ const store = new Vuex.Store({
     state: {
         darkMode: true,
 
-        // { pathway_id: { courses: [course_ids, ...] } }
+        // { pathway_id: { courses: [course_ids, ...], bookmarked: true/false } }
         // Additional keys may be added as necessary for each pathway
         pathways: {},
         //List of classes taken, stores them in the format of DEPT-LEVEL
-        classes: {}
+        classes: {},
+        // List of pathways that have been bookmarked
+        bookmarkedPathways: {}
+        
     },
     plugins: [createPersistedState()],
     mutations: {
@@ -88,9 +91,44 @@ const store = new Vuex.Store({
             for(const clazz in state.classes) {
                 delete state.classes[clazz];
             }
+        },
+        togglePathwayBookmark(state, pathwayID) {
+            if (state.pathways[pathwayID]) {
+                if (state.pathways[pathwayID].bookmarked == true) {
+                    state.pathways[pathwayID].bookmarked = false;
+                } else {
+                    state.pathways[pathwayID].bookmarked = true;
+                }
+            } 
+        },
+        bookmarkPathway(state, pathwayID) {
+            if (state.pathways[pathwayID]) {
+                state.pathways[pathwayID].bookmarked = true;
+            } else {
+                state.pathways[pathwayID] = {courses: [], bookmarked: true}
+            }
+        },
+        unBookmarkPathway(state, pathwayID) {
+            if (state.pathways[pathwayID]) {
+                state.pathways[pathwayID].bookmarked = false;
+            } else {
+                state.pathways[pathwayID] = {courses: [], bookmarked: false}
+            }
         }
+
     },
-    getters: {}
+    getters: {
+        pathwaySelected: (state) => (name) => {
+            return (name in Object.keys(state.pathways))
+        },
+        pathwayBookmarked: (state) => (pathwayID) => {
+            if (state.pathways[pathwayID]) {
+                return (state.pathways[pathwayID].bookmarked == true ? true : false)
+            }
+
+        }
+        
+    }
 });
 
 Vue.config.productionTip = false;

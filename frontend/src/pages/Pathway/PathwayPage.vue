@@ -1,32 +1,18 @@
 <template>
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
+                    <!-- <v-btn @click="test()">click me</v-btn> -->
         <div class="header">
             <h1>{{ pathway.name }}</h1>
+
             <span class="bookmark-holder">
-
-                <v-tooltip bottom v-if="bookmarkSelected">
-                    <template v-slot:activator="{on, attrs}">
-                        <v-icon 
-                            class="unselected" 
-                            v-bind="attrs" 
-                            v-on="on" 
-                            large 
-                            @click="selectBookmark()" 
-                        >
-                            mdi-bookmark-outline
-                        </v-icon>
-                    </template>
-                    <span>Add pathway to "My Pathways"</span>
-                </v-tooltip>
-
-                <v-tooltip bottom v-else>
-                    <template v-slot:activator="{on, attrs}">
+                <v-tooltip v-if="bookmarkSelected" bottom>
+                    <template #activator="{on, attrs}">
                         <v-icon 
                             class="selected" 
                             v-bind="attrs" 
+                            large
                             v-on="on" 
-                            large 
                             @click="deselectBookmark()" 
                         >
                             mdi-bookmark
@@ -34,11 +20,23 @@
                     </template>
                     <span>Remove pathway from "My Pathways"</span>
                 </v-tooltip>
+                <v-tooltip v-else bottom>
+                    <template #activator="{on, attrs}">
+                        <v-icon 
+                            class="unselected" 
+                            v-bind="attrs" 
+                            large
+                            v-on="on"  
+                            @click="selectBookmark()" 
+                        >
+                            mdi-bookmark-outline
+                        </v-icon>
+                    </template>
+                    <span>Add pathway to "My Pathways"</span>  
+                </v-tooltip>
             </span>
         </div>
-        
         <p>{{ pathway.description }}</p>
-        
         <div class="fab-container">
             <v-btn
                 color="light grey" elevation="2" fab
@@ -130,6 +128,11 @@ export default {
         }
     },
     computed: {
+        // Returns true if the pathway is already in the 
+        //  'My Pathways' page
+        bookmarked() {
+            return this.$store.getters.pathwayBookmarked(this.pathwayID);
+        },
         // Get id of the pathway, ie 'chinese_language'
         pathwayID() {
             // Should always be valid, see router/index.js
@@ -177,34 +180,39 @@ export default {
             ].filter((_, index) => this.priorities[index] && this.priorities[index].length);
         }
     },
+    mounted() {
+        this.bookmarkSelected = this.bookmarked;
+    },
     methods : {
+        test() {
+            let output = Object.entries(this.$store.state.pathways).map(v => { return {
+                name: v[0],
+                courses: v[1].courses,
+                bookmarked: v[1].bookmarked
+            }});
+            console.log(output)
+            console.log(this.$store.getters.pathwayBookmarked(this.pathwayID))
+        },
         selectBookmark() { 
             this.bookmarkSelected = !this.bookmarkSelected;
-            const c = { pathwayID: this.pathwayID, course: null };
-            this.$store.commit('addCourse', c);
+            // const c = { pathwayID: this.pathwayID, course: "null" };
+            // this.$store.commit('addCourse', c);
+            this.$store.commit('bookmarkPathway', this.pathwayID);
         },
         deselectBookmark() { 
+            // <!--// idk how to use vuex to get which classes are already selected
+            // <!--//  so im just going to go through each checkbox and see if
+            // <!--//   it is toggled or not
+            // nvm i figured it out
+
+            this.$store.commit('unBookmarkPathway', this.pathwayID);
             this.bookmarkSelected = !this.bookmarkSelected;
-            // add logic to store the state the bookmark now
 
-            // idk how to use vuex to get which classes are already selected
-            //  so im just going to go through each checkbox and see if
-            //   it is toggled or not
-
-            // check to see what courses are selected
-            let check = false;
-            this.classTabs.forEach( (tabName, index) => {
-                this.$refs[index][0].getSelected().forEach( checked => {
-                    if ( checked ) check = true; return;
-                })
-            });
-            if (!check) {
-                this.$store.commit('delPathway', this.pathwayID)
-            }
         },
         onCheckboxClicked(){
             if(this.changeTabOnSelection)
                 this.tab += 1;
+            
         },
         deselectCourses() {
             let tab = this.tab;
