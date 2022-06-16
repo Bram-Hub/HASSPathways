@@ -118,9 +118,6 @@ const store = new Vuex.Store({
 
     },
     getters: {
-        pathwaySelected: (state) => (name) => {
-            return (name in Object.keys(state.pathways))
-        },
         pathwayBookmarked: (state) => (pathwayID) => {
             if (state.pathways[pathwayID]) {
                 return (state.pathways[pathwayID].bookmarked == true ? true : false)
