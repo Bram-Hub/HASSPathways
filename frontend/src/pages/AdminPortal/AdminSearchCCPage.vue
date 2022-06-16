@@ -5,8 +5,8 @@
             <h1>Search for the classes to edit!</h1>
             <h3>Type in the name of the course or the course ID to search for the courses you have taken</h3>
             <div class="search-field">
-                <v-text-field 
-                    v-model="searchValue" 
+                <v-text-field
+                    v-model="searchValue"
                     outlined
                     rounded
                     solo
@@ -15,13 +15,16 @@
                 />
             </div>
             <div v-for="course in filteredCourses" :key="course.name">
-                <v-btn 
+                <v-btn
                     :id="course.name"
                     :to="`/admin-portal/course?class=${encodeURIComponent(course.name.slice().toLowerCase().replace(/ /g, '_'))}`"
-                > 
+                >
                     Edit
                 </v-btn>
                 <label class="label" :for="course.name"> {{ course.name + ", " + course.prefix + "-" + course.ID }} </label>
+                <v-btn color="red" @click="remove(course)">
+                  Remove
+                </v-btn>
             </div>
         </v-container>
     </div>
@@ -60,6 +63,11 @@ export default {
             }
             return Object.fromEntries(tempCourses);
         }
+    },
+    methods: {
+      remove(course) {
+        console.log(course)
+      }
     }
 }
 </script>
