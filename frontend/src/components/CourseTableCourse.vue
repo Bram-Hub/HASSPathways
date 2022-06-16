@@ -1,47 +1,55 @@
 <template>
-    <v-card
-        :class="[selectedClass(), 'w-100', 'my-2', 'class-card']"
-        fluid
-        outlined
+    <v-tooltip :disabled="showDesc==false" right max-width="350">
+        <template v-slot:activator="{ on }">
+            <v-card
+                :class="[selectedClass(), 'w-100', 'my-2', 'class-card']"
+                fluid
+                outlined
 
-        @click="toggleCheckbox()"
-        @keydown.13="toggleCheckbox()"
-    >
-        <v-list-item one-line>
-            <v-list-item-content class="pb-0"> 
-                <div style="cursor: pointer">
-                    <h1 class="text-h5 class-card__title">
-                        {{ course.name }}
-                        <v-checkbox
-                            :input-value="selected"
-                            :false-value="0"
-                            :true-value="1"
+                @click="toggleCheckbox()"
+                @keydown.13="toggleCheckbox()"
+                v-on="on"
+            >
+                <v-list-item one-line>
+                    <v-list-item-content class="pb-0">
+                        <div style="cursor: pointer">
+                            <h1 class="text-h5 class-card__title">
+                                {{ course.name }}
+                                <v-checkbox
+                                    :input-value="selected"
+                                    :false-value="0"
+                                    :true-value="1"
 
-                            :aria-label="`Toggle selection for ${course.name}`"
+                                    :aria-label="`Toggle selection for ${course.name}`"
 
-                            color="primary"
-                            value="primary"
-                            hide-details
-                            class="d-inline-block ma-0 float-right"
-                            style="z-index: 99"
-                        />
-                    </h1>
+                                    color="primary"
+                                    value="primary"
+                                    hide-details
+                                    class="d-inline-block ma-0 float-right"
+                                    style="z-index: 99"
+                                />
+                            </h1>
 
-                    <small class="class-card__subtitle">
-                        {{ course.prefix }}-{{ course.ID }}
-                        <CourseTableModifiers
-                            class="mt-4 class-card__subtitle__modifiers"
-                            :item="course"
-                        />
-                        
-                    </small>
-                </div>
-            </v-list-item-content>
-        </v-list-item>
-        <v-card-text v-if="showDesc==true" class="class-card__desc">
+                            <small class="class-card__subtitle">
+                                {{ course.prefix }}-{{ course.ID }}
+                                <CourseTableModifiers
+                                    class="mt-4 class-card__subtitle__modifiers"
+                                    :item="course"
+                                />
+
+                            </small>
+                        </div>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-card-text v-if="showDesc==true" class="class-card__desc">
+                    {{ course.description }}
+                </v-card-text>
+            </v-card>
+        </template>
+        <span>
             {{ course.description }}
-        </v-card-text>
-    </v-card>
+        </span>
+    </v-tooltip>
 </template>
 
 <script>
