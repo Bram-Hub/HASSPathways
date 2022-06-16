@@ -19,7 +19,7 @@
 
         <CourseTableCourse 
             v-for="item in filteredCourses" 
-            :key="item.prefix + item.ID" 
+            :key="item.name" 
             :course="item"
             :pathway-id="pathwayId"
             @checkbox-clicked="$emit('checkbox-clicked')"
@@ -33,14 +33,13 @@
 
 <script>
 import CourseTableCourse from './CourseTableCourse'
-import search from '../helpers/search-courses.js'
 
 export default {
     name: 'CourseTable',
     components: { CourseTableCourse },
     props: {
         courses: {
-            type: Array,
+            type: Object,
             required: true
         },
         pathwayId: {
@@ -54,7 +53,24 @@ export default {
     },
     computed: {
         filteredCourses() {
-            return search(this.courses, this.search);
+            let tempCourses = JSON.parse(JSON.stringify(this.courses));
+            if(this.search && this.search != ''){
+                tempCourses = Object.fromEntries(Object.entries(tempCourses)
+                    .filter(([key]) => key
+                        .toUpperCase()
+                        .includes(this.search.toUpperCase())));
+            }
+            for(const course in tempCourses) {
+                if(tempCourses[course] == null) {
+                    tempCourses[course]= {};
+                    tempCourses[course]["name"] = course;
+                    tempCourses[course]["hasData"] = false;
+                }
+                else {
+                    tempCourses[course]["hasData"] = true;
+                }
+            }
+            return tempCourses;
         }
     },
     methods: {

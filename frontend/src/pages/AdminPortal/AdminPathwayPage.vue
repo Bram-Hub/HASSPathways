@@ -19,7 +19,6 @@
                 :headers="headers"
                 :items="filteredCourses"
             >
-
                 <template slot="no-data">
                     No classes found, make sure to select a pathway in the dropdown above
                 </template>

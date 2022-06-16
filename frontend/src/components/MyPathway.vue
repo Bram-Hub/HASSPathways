@@ -6,7 +6,7 @@
     >
         <v-card-title class="font-weight-bold text-truncate card-title title-container">
             <span class="title-text text-truncate">
-                {{ pathways[title].name }}
+                {{ title }}
             </span>
 
             <v-menu bottom right>
@@ -46,7 +46,10 @@
                 >
                     <p class="pa-0 mb-2">
                         {{ course.name }}<br>
-                        <small style="opacity: 0.8">{{ course.prefix }}-{{ course.ID }}</small>
+                        <small v-if="course.hasData" style="opacity: 0.8">{{ course.subj }}-{{ course.ID }}</small>
+                        <small v-if="!course.hasData" style="opacity: 0.8">
+                            No data available
+                        </small>
                     </p>
                 </span>
             </div>
@@ -56,7 +59,7 @@
 
 <script>
 import getColorFromCategry from '../helpers/category-colors.js';
-import { pathways, pathwayCategories, courses as allCourses } from '../data/data.js'
+import { pathwayCategories, courses as allCourses } from '../data/data.js'
 
 export default {
     name: 'MyPathway',
@@ -75,8 +78,7 @@ export default {
         }
     },
     data() {
-        return { 
-            pathways,
+        return {
             menuItems: [
                 { title: 'Edit Pathway', icon: 'mdi-pencil', action: 'edit' },
                 { title: 'Graph View', icon: 'mdi-graph', action: 'graph' },
@@ -88,7 +90,22 @@ export default {
         formatCourseCategory(classes) {
             if (!classes || !classes.length)
                 return []; // Shouldn't happen!
-            return Object.values(allCourses).filter(x => classes.includes(x.key));
+            let out = [];
+            for(const clazz in classes) {
+                if(allCourses[classes[clazz]]) {
+                    let myClass = allCourses[classes[clazz]];
+                    myClass.hasData = true;
+                    out.push(myClass);
+                }
+                else {
+                    out.push({
+                        name: classes[clazz],
+                        hasData: false
+                    })
+                }
+            }
+
+            return out;
         },
         colorHash(pathway) {
             let category = pathwayCategories.filter(x => x.pathways.includes(pathway))[0];

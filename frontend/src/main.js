@@ -76,9 +76,9 @@ const store = new Vuex.Store({
             if(state.pathways[pathwayID])
                 delete state.pathways[pathwayID];
         },
-        addClass(state, {name, ID}) {
+        addClass(state, name) {
             if(!state.classes[name])
-                state.classes[name] = ID; 
+                state.classes[name] = name; 
         },
         delClass(state, name) {
             if(state.classes[name])

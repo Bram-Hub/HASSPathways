@@ -8,7 +8,7 @@
         >
             <template #activator="{ on, attrs }">
                 <v-chip
-                    :class="[!item.modifiers.includes(modifier) ? 'modifier--inactive' : '' , 'modifier', 'modifier--text']"
+                    :class="[!myModifiers.includes(modifier) ? 'modifier--inactive' : '' , 'modifier', 'modifier--text']"
                     :color="modifiers[modifier].color || 'primary'"
                     v-bind="attrs"
                     v-on="on"
@@ -24,29 +24,46 @@
 <script>
 /**
  * Item is a course Object as defined in CourseTable.vue 
- * The modifiers property is an array of keys in the list
- * of modifiers in the data below, ie
- *   item.modifiers = [ 'HI',' fall', 'spring' ]
+ * The course object contains the offered and properties keys.
  *
  * The entire course object is passed for possible additional future formatting
  */
 
-import { modifiers, modifierOrder, iconModifiers, textModifiers } from '../data/course-modifiers.js'
+import { modifiers, iconModifiers, textModifiers } from '../data/course-modifiers.js'
 
 export default {
     name: 'CourseTableModifiers',
     props: {
         item: {
             type: Object,
-            required: true,
-            validator: item => item.modifiers.every(
-                modifier => Object.keys(modifiers).includes(modifier))
+            required: true
         }
     },
     data: () => {
-        console.assert(modifierOrder.every(k => Object.keys(modifiers).includes(k)),
-            'modifierOrder contains modifiers that do not exist!');
-        return { modifiers, modifierOrder, iconModifiers, textModifiers };
+        return { 
+            modifiers,
+            iconModifiers,
+            textModifiers
+        };
+    },
+    computed: {
+        // This function should generate
+        // an array of all modifiers
+        myModifiers() {
+            let mods = [];
+            for(const offer in this.item.offered) {
+                if(this.item.offered[offer]) {
+                    mods.push(offer);
+                }
+            }
+            for(const prop in this.item.properties) {
+                if(this.item.properties[prop]) {
+                    mods.push(prop);
+                }
+            }
+            
+            return mods;
+        }
     }
 }
 </script>
