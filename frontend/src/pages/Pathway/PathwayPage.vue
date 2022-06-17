@@ -268,6 +268,7 @@ export default {
 </script>
 
 <style scoped>
+
 #graphView {
     /* border: 1px solid fuchsia; */
     display: flex;
@@ -313,6 +314,7 @@ export default {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .header h1{
     display: inline-block;
 }
