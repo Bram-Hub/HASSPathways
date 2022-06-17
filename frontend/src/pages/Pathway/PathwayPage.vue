@@ -244,9 +244,6 @@ export default {
 </script>
 
 <style scoped>
-#container {
-    /* margin: 0; */
-}
 .header h1{
     display: inline-block;
 }
