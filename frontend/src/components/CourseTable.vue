@@ -83,10 +83,6 @@ export default {
             return this.$children
                 .filter( child => child.$options._componentTag == "CourseTableCourse" && child.selected )
                 .map( child => true )
-            // // console.log(this.$children)
-            // return this.$children
-            //     .filter(child => child.isSelected)
-            //     .map(child => child.key);
         }
     }
 }

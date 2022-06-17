@@ -1,7 +1,6 @@
 <template>
     <v-container style="width:75%">
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
-                    <!-- <v-btn @click="test()">click me</v-btn> -->
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
@@ -211,15 +210,15 @@ export default {
             
         },
         deselectCourses() {
-            let tab = this.tab;
-            this.courses[tab].forEach(course => {
-                const c = { pathwayID: this.pathwayID, course: course.key };
+            Object.values(this.courses[this.classTabs[this.tab]])
+            .forEach(course => {
+                const c = { pathwayID: this.pathwayID, course: course.name };
                 // delete course
                 this.$store.commit('delCourse', c);
             })
             // deselect course
-            this.$refs[tab][0].deselectAll(); 
-           /* <!-- ! this is sus -->
+            this.$refs[this.tab][0].deselectAll(); 
+            /* <!-- ! this is sus -->
             * this WILL break with the current implementation of graph view
             *  because this.$refs[tab] gives me an array of all of the courseTable components
             *   on the DOM. Right now, there is only one, but with the current implementation

@@ -5,13 +5,10 @@
             class="card-img"
             :src="require('../assets/pathway-groups/' + image)"
         >
-
-
             <div class="darken" />
 
             <v-card-title class="font-weight-bold text-truncate card-title">
                 {{ title }}
-                
             </v-card-title>
         </v-img>
         

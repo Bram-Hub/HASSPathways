@@ -4,7 +4,6 @@
         elevation="1"
         :style="{ borderColor: colorHash(title) }"
     >
-
         <v-card-title class="font-weight-bold text-truncate card-title title-container">
             <span class="title-text text-truncate">
                 {{ title }}
@@ -29,8 +28,8 @@
                         <v-icon 
                             v-bind="attrs" 
                             dense
-                            v-on="on" 
                             color="red"
+                            v-on="on" 
                             @click="listAction('delete')" 
                         >
                             mdi-delete
@@ -39,7 +38,6 @@
                     <span>Delete pathway</span>
                 </v-tooltip>
             </div>
-
         </v-card-title>
         
         <div class="courses-container">
