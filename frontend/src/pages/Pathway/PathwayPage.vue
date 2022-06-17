@@ -210,14 +210,16 @@ export default {
             
         },
         deselectCourses() {
-            Object.values(this.courses[this.classTabs[this.tab]])
-            .forEach(course => {
-                const c = { pathwayID: this.pathwayID, course: course.name };
+            let pathway = this.$store.state.pathways[this.pathwayID];
+            pathway.courses.forEach(course => {
+                const c = { pathwayID: this.pathwayID, course: course };
                 // delete course
                 this.$store.commit('delCourse', c);
             })
             // deselect course
-            this.$refs[this.tab][0].deselectAll(); 
+            for(const i in this.classTabs) {
+                this.$refs[i][0].deselectAll(); 
+            }
             /* <!-- ! this is sus -->
             * this WILL break with the current implementation of graph view
             *  because this.$refs[tab] gives me an array of all of the courseTable components

@@ -78,11 +78,6 @@ export default {
             this.$children.forEach(child => {
                 if (child.setSelected) child.setSelected(0);
             });
-        },
-        getSelected() {
-            return this.$children
-                .filter( child => child.$options._componentTag == "CourseTableCourse" && child.selected )
-                .map( child => true )
         }
     }
 }
