@@ -7,43 +7,43 @@
 
             <v-divider class="my-4" />
 
-            <ul>
-                <li v-bind="attrs" v-on="on">
+            <ul id="btn-cntnr">
+                <v-btn id="admn-btn">
                     <router-link
                         :to="{ name: 'admin-pathway' }"
                         class="text-decoration-none"
-                        id="admin-btn"
+                        id="admn-fnt"
                     >
                         <v-icon left dark>
                             mdi-magnify
                         </v-icon>
                         Search for a class by pathway
                     </router-link>
-                </li>
-                <li v-bind="attrs" v-on="on">
+                </v-btn>
+                <v-btn id="admn-btn">
                     <router-link
                         :to="{ name: 'admin-search-course-code' }"
                         class="text-decoration-none"
-                        id="admin-btn"
+                        id="admn-fnt"
                     >
                         <v-icon left dark>
                             mdi-book-edit
                         </v-icon>
                         Edit a class by course code
                     </router-link>
-                </li>
-                <li v-bind="attrs" v-on="on">
+                </v-btn>
+                <v-btn id="admn-btn">
                     <router-link
                         :to="{ name: 'admin-course' }"
                         class="text-decoration-none"
-                        id="admin-btn"
+                        id="admn-fnt"
                     >
                         <v-icon left dark>
                             mdi-book-plus
                         </v-icon>
                         Add a new course to the website
                     </router-link>
-                </li>
+                </v-btn>
             </ul>
         </v-container>
     </div>
@@ -66,17 +66,20 @@ export default {
 </script>
 
 <style scoped>
-ul li {
+#btn-cntnr {
+    padding: 0px !important;
+}
+#admn-btn {
     list-style: none;
     text-align: center;
-    min-width: 26vw;
     display: inline-block;
     background-color: #f73e3e;
-    padding: 3px;
-    margin: 0px 0px 2vw 2vw;
+    margin: 0px 1vw 1vw 0px;
+    height: 50px;
+    max-width: 900px;
 }
-#admin-btn {
+#admn-fnt {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 </style>
