@@ -1,7 +1,7 @@
 <template>
     <v-container style="width:75%">
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
-                    <!-- <v-btn @click="test()">click me</v-btn> -->
+        <!-- <v-btn @click="debug()">click me</v-btn> -->
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
@@ -53,24 +53,10 @@
                         </v-icon>
                     </v-btn>
                 </div>
-                <div v-for="(item, index) in classTabs" :key="item" class="tab">
-                    <v-card
-                        class="d-flex align-center pa-4 mx-auto justify-center"
-                        outlined
-                    >
-                        <div>
-                            {{ item }}
-                        </div>
-                    </v-card>
-                    <!-- <hr> -->
-                    <CourseTable
-                        :ref="index"
-                        :courses="courses[index]"
-                        :pathway-id="pathwayID"
-                        :show-desc="false"
-                        :description-on-hover="descriptionOnHover"
-                    />
-                </div>
+                <v-btn @click="debug()">click me</v-btn>
+                <!-- <div v-for="(item, index) in classTabs" :key="item" class="tab">
+                    
+                </div> -->
             </div>
         </v-container>
         <v-container v-show="!showGraph">
@@ -207,19 +193,19 @@ export default {
         this.bookmarkSelected = this.bookmarked;
     },
     methods : {
-        test() {
-            let output = Object.entries(this.$store.state.pathways).map(v => { return {
-                name: v[0],
-                courses: v[1].courses,
-                bookmarked: v[1].bookmarked
-            }});
-            console.log(output)
-            console.log(this.$store.getters.pathwayBookmarked(this.pathwayID))
+        debug() {
+            // let output = Object.entries(this.$store.state.pathways).map(v => { return {
+            //     name: v[0],
+            //     courses: v[1].courses,
+            //     bookmarked: v[1].bookmarked
+            // }});
+            // console.log(output)
+            // console.log(this.$store.getters.pathwayBookmarked(this.pathwayID))
+            console.log(this)
+            console.log(this.courses)
         },
         selectBookmark() { 
             this.bookmarkSelected = !this.bookmarkSelected;
-            // const c = { pathwayID: this.pathwayID, course: "null" };
-            // this.$store.commit('addCourse', c);
             this.$store.commit('bookmarkPathway', this.pathwayID);
         },
         deselectBookmark() { 
@@ -245,7 +231,7 @@ export default {
                 this.$store.commit('delCourse', c);
             })
             // go to the coursetable component and then deselect all things
-            console.log(this.$refs[tab])
+            // console.log(this.$refs[tab])
             this.$refs[tab][0].deselectAll(); 
            /* <!-- ! this is sus -->
             * this WILL break with the current implementation of graph view
