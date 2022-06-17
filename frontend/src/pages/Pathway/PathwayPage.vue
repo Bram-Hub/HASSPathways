@@ -62,6 +62,7 @@
                       @checkbox-clicked="onCheckboxClicked()"
                       :show-desc="false"
                       :searchBar="false"
+                      :graphView="true"
                   />
                 </div>
             </div>

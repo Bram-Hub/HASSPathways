@@ -17,15 +17,18 @@
                 style="width: 400px; max-width: 100%"
             />
         </v-card>
+        <div :class="{container: graphView}">
+            <CourseTableCourse
+                v-for="item in filteredCourses"
+                :key="item.name"
+                :course="item"
+                :pathway-id="pathwayId"
+                :show-desc="showDesc"
+                :description-on-hover="descriptionOnHover"
+                :graphView="graphView"
+            />
+        </div>
 
-        <CourseTableCourse 
-            v-for="item in filteredCourses" 
-            :key="item.name" 
-            :course="item"
-            :pathway-id="pathwayId"
-            :show-desc="showDesc"
-            :description-on-hover="descriptionOnHover"
-        />
 
         <p v-if="filteredCourses.length === 0" class="no-search-results">
             No search results
@@ -63,6 +66,10 @@ export default {
             type: Boolean,
             required: false,
             default: true,
+        },
+        graphView: {
+            type: Boolean,
+            required: false,
         }
     },
     data() {
@@ -110,6 +117,10 @@ export default {
 </script>
 
 <style scoped>
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
 .table-header-search {
     transform: scale(0.8);
     transform-origin: bottom left;

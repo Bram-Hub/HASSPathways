@@ -1,15 +1,15 @@
 <template>
     <v-card
-        :class="[selectedClass(), 'w-100', 'my-2', 'class-card']"
+        :class="[selectedClass(), 'w-100', 'my-2', 'class-card', {graph: graphView}]"
         fluid
         outlined
-
         @click="toggleCheckbox()"
         @keydown.13="toggleCheckbox()"
+
     >
         <v-list-item one-line>
             <v-list-item-content class="pb-0"> 
-                <div style="cursor: pointer">
+                <div style="cursor: pointer" >
                     <h1 class="text-h5 class-card__title">
                         {{ course.name }}
                         <v-checkbox
@@ -75,6 +75,10 @@ export default {
             type: Boolean,
             required: false,
             default: true,
+        },
+        graphView: {
+            type: Boolean,
+            required: false,
         }
     },
     data: () => {
@@ -118,6 +122,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.graph {
+    width: 50%;
+}
 .v-tooltip__content {
   opacity: 2.0;
 }
