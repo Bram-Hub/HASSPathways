@@ -22,27 +22,28 @@
                   Edit
                 </v-btn>
                 <label class="label" :for="course.name"> {{ course.name + ", " + course.prefix + "-" + course.ID }} </label>
-                <div>
-                    <v-dialog>
-                        <template #activator="on">
-                            <v-btn color="red" v-on="on">
-                                Remove
-                            </v-btn>
-                        </template>
-                        <v-card>
-                            <v-card-text>
-                                Are you sure you want to delete this course?
-                            </v-card-text>
-                            <v-card-actions>
-                                <v-btn @click="remove(course)">
-                                    Yes
-                                </v-btn>
-                            </v-card-actions>
-                        </v-card>
-                    </v-dialog>
-                </div>
+                <v-btn color="red" @click="chooseCourse(course)">
+                    Remove
+                </v-btn>
             </div>
         </v-container>
+        <template>
+            <v-dialog v-model="dialog" width="500">
+                <v-card>
+                    <v-card-text>
+                        Are you sure you want to delete this course?
+                    </v-card-text>
+                    <v-card-actions>
+                        <v-btn @click="dialog = false">
+                            No
+                        </v-btn>
+                        <v-btn @click="remove()">
+                            Yes
+                        </v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-dialog>
+        </template>
     </div>
 </template>
 
@@ -58,7 +59,9 @@ export default {
     data() {
         return {
             breadcrumbs: breadcrumbs.admin_search_cc_page,
-            searchValue: ''
+            searchValue: '',
+            dialog: false,
+            chosenCourse: '',
         }
     },
     computed: {
@@ -81,8 +84,13 @@ export default {
         }
     },
     methods: {
-        remove(course) {
-            console.log(course)
+        chooseCourse(course) {
+            this.chosenCourse = course
+            this.dialog = true
+        },
+        remove() {
+            this.dialog = false;
+            console.log(this.chosenCourse);
         }
     }
 }
