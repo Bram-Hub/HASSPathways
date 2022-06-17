@@ -17,12 +17,12 @@
             <div v-for="course in filteredCourses" :key="course.name">
                 <v-btn
                     :id="course.name"
-                    :to="`/admin-portal/course?class=${encodeURIComponent(course.name.slice().toLowerCase().replace(/ /g, '_'))}`"
+                    :to="`/admin-portal/course?class=${course.name}`"
                 >
                   Edit
                 </v-btn>
                 <label class="label" :for="course.name"> {{ course.name + ", " + course.prefix + "-" + course.ID }} </label>
-                <v-btn color="red" @click="chooseCourse(course)">
+                <v-btn color="red" @click="chooseCourse(course.name)">
                     Remove
                 </v-btn>
             </div>
@@ -61,7 +61,7 @@ export default {
             breadcrumbs: breadcrumbs.admin_search_cc_page,
             searchValue: '',
             dialog: false,
-            chosenCourse: '',
+            chosenCourse: null,
         }
     },
     computed: {
@@ -90,7 +90,7 @@ export default {
         },
         remove() {
             this.dialog = false;
-            console.log(this.chosenCourse);
+            console.log("Remove " + this.chosenCourse);
         }
     }
 }
