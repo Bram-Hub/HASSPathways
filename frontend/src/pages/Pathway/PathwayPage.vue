@@ -1,7 +1,41 @@
 <template>
-    <v-container>
+    <v-container style="width:75%">
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
-        <h1>{{ pathway.name }}</h1>
+                    <!-- <v-btn @click="test()">click me</v-btn> -->
+        <div class="header">
+            <h1>{{ pathway.name }}</h1>
+
+            <span class="bookmark-holder">
+                <v-tooltip v-if="bookmarkSelected" bottom>
+                    <template #activator="{on, attrs}">
+                        <v-icon 
+                            class="selected" 
+                            v-bind="attrs" 
+                            large
+                            v-on="on" 
+                            @click="deselectBookmark()" 
+                        >
+                            mdi-bookmark
+                        </v-icon>
+                    </template>
+                    <span>Remove pathway from "My Pathways"</span>
+                </v-tooltip>
+                <v-tooltip v-else bottom>
+                    <template #activator="{on, attrs}">
+                        <v-icon 
+                            class="unselected" 
+                            v-bind="attrs" 
+                            large
+                            v-on="on"  
+                            @click="selectBookmark()" 
+                        >
+                            mdi-bookmark-outline
+                        </v-icon>
+                    </template>
+                    <span>Add pathway to "My Pathways"</span>  
+                </v-tooltip>
+            </span>
+        </div>
         <p>{{ pathway.description }}</p>
         <v-btn @click="toggleGraph()">
             click me to toggle graph view
@@ -113,9 +147,15 @@ export default {
             showGraph: false,
             changeTabOnSelection: false,
             descriptionOnHover: false,
+            bookmarkSelected: false,
         }
     },
     computed: {
+        // Returns true if the pathway is already in the 
+        //  'My Pathways' page
+        bookmarked() {
+            return this.$store.getters.pathwayBookmarked(this.pathwayID);
+        },
         // Get id of the pathway, ie 'chinese_language'
         pathwayID() {
             // Should always be valid, see router/index.js
@@ -163,10 +203,39 @@ export default {
             ].filter((_, index) => this.priorities[index] && this.priorities[index].length);
         }
     },
-    methods: {
+    mounted() {
+        this.bookmarkSelected = this.bookmarked;
+    },
+    methods : {
+        test() {
+            let output = Object.entries(this.$store.state.pathways).map(v => { return {
+                name: v[0],
+                courses: v[1].courses,
+                bookmarked: v[1].bookmarked
+            }});
+            console.log(output)
+            console.log(this.$store.getters.pathwayBookmarked(this.pathwayID))
+        },
+        selectBookmark() { 
+            this.bookmarkSelected = !this.bookmarkSelected;
+            // const c = { pathwayID: this.pathwayID, course: "null" };
+            // this.$store.commit('addCourse', c);
+            this.$store.commit('bookmarkPathway', this.pathwayID);
+        },
+        deselectBookmark() { 
+            // <!--// idk how to use vuex to get which classes are already selected
+            // <!--//  so im just going to go through each checkbox and see if
+            // <!--//   it is toggled or not
+            // nvm i figured it out
+
+            this.$store.commit('unBookmarkPathway', this.pathwayID);
+            this.bookmarkSelected = !this.bookmarkSelected;
+
+        },
         onCheckboxClicked(){
             if(this.changeTabOnSelection)
                 this.tab += 1;
+            
         },
         deselectCourses() {
             let tab = this.tab;
@@ -177,16 +246,22 @@ export default {
             })
             // go to the coursetable component and then deselect all things
             console.log(this.$refs[tab])
-            this.$refs[tab][1].deselectAll();       //! this is sus
-            // this.$refs[tab] is an array of all of the courseTable components
-            //  right now there are two on each page, with this.$refs[tab][0] being the component
-            //   on graph view, and $this.refs[tab][1] being the component on the regular view
-            //    
-            // this should be changed in the future
+            this.$refs[tab][0].deselectAll(); 
+           /* <!-- ! this is sus -->
+            * this WILL break with the current implementation of graph view
+            *  because this.$refs[tab] gives me an array of all of the courseTable components
+            *   on the DOM. Right now, there is only one, but with the current implementation
+            *    of graph view, there will be more courseTable components which will make the
+            *     array that this.$refs[tab] gives have multiple couresTable elements
+            *      this should be revamped in the future to change how I deselect courses
+            * 
+            * this should be changed in the future
+            */
         },
         toggleGraph() {
             // console.log(this.courses);
             this.showGraph = !this.showGraph;
+
         }
     }
 }
@@ -234,6 +309,15 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.header h1{
+    display: inline-block;
+}
+.bookmark-holder {
+    display: inline-flex;
+    top: 0;
+    cursor: pointer;
+    z-index: 9;
 }
 .fab-container {
     position: fixed;

@@ -10,12 +10,33 @@
             </span>
 
             <div class="header">
-                <v-icon dense @click="listAction('edit')">
-                    mdi-pencil
-                </v-icon>
-                <v-icon dense color="red" @click="listAction('delete')">
-                    mdi-delete
-                </v-icon>
+                <v-tooltip bottom>
+                    <template #activator="{on, attrs}">
+                        <v-icon 
+                            v-bind="attrs" 
+                            dense
+                            v-on="on" 
+                            @click="listAction('edit')" 
+                        >
+                            mdi-pencil
+                        </v-icon>
+                    </template>
+                    <span>Edit pathway</span>
+                </v-tooltip>
+                <v-tooltip bottom>
+                    <template #activator="{on, attrs}">
+                        <v-icon 
+                            v-bind="attrs" 
+                            dense
+                            v-on="on" 
+                            color="red"
+                            @click="listAction('delete')" 
+                        >
+                            mdi-delete
+                        </v-icon>
+                    </template>
+                    <span>Delete pathway</span>
+                </v-tooltip>
             </div>
         </v-card-title>
         <div class="courses-container">
@@ -77,6 +98,7 @@ export default {
             }
             else if(action == "delete") {
                 this.$store.commit('delPathway', this.title);
+                // this.$store.commit('unBookmarkPathway', this.title) dont need this i think
                 this.$emit('update');
             }
         }

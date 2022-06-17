@@ -76,8 +76,12 @@ export default {
         },
         getSelected() {
             return this.$children
-                .filter(child => child.setSelected)
-                .map(child => child.key);
+                .filter( child => child.$options._componentTag == "CourseTableCourse" && child.selected )
+                .map( child => true )
+            // // console.log(this.$children)
+            // return this.$children
+            //     .filter(child => child.isSelected)
+            //     .map(child => child.key);
         }
     }
 }
