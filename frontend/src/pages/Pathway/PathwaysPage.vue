@@ -31,7 +31,6 @@
 <script>
 import PathwayCategory from '../../components/PathwayCategory'
 import Breadcrumbs from '../../components/Breadcrumbs'
-
 import { pathwayCategories } from '../../data/data.js'
 import breadcrumbs from '../../data/breadcrumbs.js'
 

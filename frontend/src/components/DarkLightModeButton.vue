@@ -3,7 +3,7 @@
         <template #activator="{on}">
             <v-btn
                 class="mr-2 button"
-                small fab tile elevation="0"
+                small fab elevation="0"
                 v-on="on"
                 @click="darkMode"
             >
@@ -13,12 +13,12 @@
             </v-btn>
         </template>
         <span>Switch to Light Mode</span>
-    </v-tooltip>
+    </v-tooltip> 
     <v-tooltip v-else bottom>
         <template #activator="{on}">
             <v-btn
                 class="mr-2 button"
-                small fab tile elevation="0"
+                small fab elevation="0"
                 v-on="on"
                 @click="darkMode"
             >
@@ -51,7 +51,7 @@ export default {
 }
 
 .button {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .button:hover {
