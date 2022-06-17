@@ -98,6 +98,9 @@ export default {
             // Convert truthy/falsy values -> 0/1 for vuetify checkbox
             selected = selected ? 1 : 0;
             this.selected = selected;
+        },
+        isSelected() {
+            return this.selected;
         }
     }
 }
