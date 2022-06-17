@@ -169,9 +169,9 @@ export default {
             const singlePathway = pathways[key];
             if(course) {
                 for(const prio in singlePathway) {
-                    if(prio.substring(0, 8) == "priority") {
+                    if(singlePathway[prio] instanceof Object && !(singlePathway[prio] instanceof Array)) {
                         const array = singlePathway[prio];
-                        if(array.includes(course.name.slice().toLowerCase().replace(/ /g, '_'))) {
+                        if(Object.keys(array).includes(course.name)) {
                             myPathways.add(singlePathway.name);
                         }
                         this.pathways.push(singlePathway.name);
