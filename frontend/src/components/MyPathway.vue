@@ -81,11 +81,6 @@ export default {
             required: true
         }
     },
-    data() {
-        return { 
-            pathways,
-        }
-    },
     methods: {
         formatCourseCategory(classes) {
             if (!classes || !classes.length)
