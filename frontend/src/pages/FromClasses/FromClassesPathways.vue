@@ -58,16 +58,16 @@ export default {
         get_pathways() {
             let myPathways = [];
             for(const key in pathways) {
-                let thisPathway = {name: "", courses: new Map()}; 
+                let thisPathway = {name: "", courses: new Set()}; 
                 const singlePathway = pathways[key];
                 thisPathway.name = key;
                 for(const prio in singlePathway) {
-                    if(prio.substring(0, 8) == "priority") {
+                    //Checks if it has classes within it
+                    if(singlePathway[prio] instanceof Object && !(singlePathway[prio] instanceof Array)) {
                         const courses = singlePathway[prio];
-                        for(const i in courses) {
-                            if(this.$store.state.classes[courses[i]]) {
-                                let ID = this.$store.state.classes[courses[i]];
-                                thisPathway.courses.set(courses[i], ID);
+                        for(const name in courses) {
+                            if(this.$store.state.classes[name]) {
+                                thisPathway.courses.add(name);
                             }
                         }
                     }

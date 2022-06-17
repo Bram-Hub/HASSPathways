@@ -31,7 +31,7 @@
                 <template #activator="{ on, attrs }">
                     <li class="pathway" v-bind="attrs" v-on="on">
                         <a :href="`/pathway?pathway=${encodeURIComponent(pathway)}`" class="text-decoration-none">
-                            <b>{{ pathwaysData[pathway].name }}</b>
+                            <b>{{ pathway }}</b>
                         </a>
                     </li>
                 </template>
