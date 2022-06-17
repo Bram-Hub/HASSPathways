@@ -124,6 +124,7 @@ export default {
 <style scoped lang="scss">
 .graph {
     width: 50%;
+    margin: 0;
 }
 .v-tooltip__content {
   opacity: 2.0;

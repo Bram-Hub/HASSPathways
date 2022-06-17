@@ -17,7 +17,7 @@
                 style="width: 400px; max-width: 100%"
             />
         </v-card>
-        <div>
+        <div :class="{graphContent : graphView}">
             <CourseTableCourse
                 v-for="item in filteredCourses"
                 :key="item.name"
@@ -117,9 +117,17 @@ export default {
 </script>
 
 <style scoped>
-.container {
-    /*display: grid;*/
-    /*grid-template-columns: repeat(2, 50%);*/
+.graphContent {
+    /* display: grid;
+    grid-template-columns: repeat(2, 50%); */
+    display: flex;
+    /* flex-grow: auto; */
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.graph-content CourseTableCourse {
+    margin: 0;
 }
 .table-header-search {
     transform: scale(0.8);

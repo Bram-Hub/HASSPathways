@@ -335,10 +335,10 @@ export default {
     justify-content: space-between;
 }
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
     .fab-container {
         right: 50px;
         bottom: 50px;
     }
-}
+} */
 </style>
