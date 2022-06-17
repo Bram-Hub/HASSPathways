@@ -1,5 +1,5 @@
 <template>
-    <v-container style="width:75%">
+    <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
         <!-- <v-btn @click="debug()">click me</v-btn> -->
         <div class="header">
@@ -89,38 +89,31 @@
                 </v-tab>
             </v-tabs>
 
-            <v-tabs-items v-model="tab" touchless>
-                <v-tab-item v-for="(item, index) in classTabs" :key="item" :eager="true">
-                    <CourseTable :ref="index" :courses="courses[index]" :pathway-id="pathwayID" :show-desc="true" />
-                </v-tab-item>
-            </v-tabs-items>
+        <v-tabs-items v-model="tab" touchless>    
+            <v-tab-item 
+                v-for="(item, index) in classTabs"
+                :key="item"
+                :eager="true"
+            >
+                <CourseTable
+                    :ref="index"
+                    :courses="courses[item]"
+                    :pathway-id="pathwayID"
+                    @checkbox-clicked="onCheckboxClicked()"
+                    :show-desc="true"
+                />
+            </v-tab-item>
+        </v-tabs-items>
         </v-container>
     </v-container>
 </template>
 
 <script>
 import { pathwayCategories, pathways, courses } from '../../data/data.js'
-import { modifierOrder } from '../../data/course-modifiers.js'
 import CourseTable from '../../components/CourseTable'
 // import GraphTab from '../../components/GraphTab.vue'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
-
-/**
- * Converts array of class ids, ie ['art_history', ...]
- * into array of class objects
- * @param {array{string}} courseIds
- * @return {array{object}} courses
- */
-function getCourses(courseIds) {
-    let r = courseIds
-        .map(course => courses[course])
-        .filter(c => c.offered.fall || c.offered.spring || c.offered.summer);
-
-    // Set the modifiers property (array of modifiers)
-    r.forEach(c => c.modifiers = modifierOrder.filter(p => c.offered[p] || c.properties[p]))
-    return r;
-}
 
 export default {
     components: {
@@ -159,14 +152,30 @@ export default {
                     return category.name;
             return '';
         },
-        // Array of all pathway courses, grouped
+        // Outputs an object containing the
+        // different priorities for the pathway
         priorities() {
             let pathway = this.pathway;
-            return [pathway.priority1, pathway.priority2, pathway.priority3, pathway.priority4];
+            let out = {};
+            out["Required"] = pathway.required ? pathway.required : null;
+            out["One Of"] = pathway.one_of ? pathway.one_of : null;
+            out["Remaining"] = pathway.remaining ? pathway.remaining : null;
+            return out;
         },
-        // Get array of all courses, grouped
+        // Converts the courses into an actual array of objects for
+        // priorities while they contain actual course objects
         courses() {
-            return this.priorities.map(getCourses);
+            let curr = this.priorities;
+
+            // Search through all prios
+            for(const prio in curr) {
+                // Search through each course in the pathway
+                for(const course_name in curr[prio]) {
+                    const course = courses[course_name];
+                    curr[prio][course_name] = course ? course : null;
+                }
+            }
+            return curr;
         },
         // Get breadcrumb data
         breadcrumbs() {
@@ -179,14 +188,11 @@ export default {
         },
         classTabs() {
             // Enable only non-empty tabs
-            // Note: assumes empty tabs will always occur at end
-            // with no spaces between
             return [
-                '1st Course',
-                '2nd Course',
-                '3rd Course',
-                'Minor (optional)'
-            ].filter((_, index) => this.priorities[index] && this.priorities[index].length);
+                'Required',
+                'One Of',
+                'Remaining'
+            ].filter((_, index) => Object.values(this.priorities)[index]);
         }
     },
     mounted() {

@@ -134,7 +134,7 @@ export default {
     computed: {
         foundCrumbs() {
             const course = this.getCourse();
-            console.log()
+            
             if(course) {
                 return breadcrumbs.admin_course_page.map(x => x || {
                     text: course.name,

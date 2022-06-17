@@ -1,61 +1,55 @@
 <template>
-    <v-tooltip :disabled="!descriptionOnHover" right max-width="350">
-        <template v-slot:activator="{ on }">
-            <v-card
-                :class="[selectedClass(), 'w-100', 'my-2', 'class-card']"
-                fluid
-                outlined
+    <v-card
+        :class="[selectedClass(), 'w-100', 'my-2', 'class-card']"
+        fluid
+        outlined
 
-                @click="toggleCheckbox()"
-                @keydown.13="toggleCheckbox()"
-                v-on="on"
-            >
-                <v-list-item one-line>
-                    <v-list-item-content class="pb-0">
-                        <div style="cursor: pointer">
-                            <h1 class="text-h5 class-card__title">
-                                {{ course.name }}
-                                <v-checkbox
-                                    :input-value="selected"
-                                    :false-value="0"
-                                    :true-value="1"
+        @click="toggleCheckbox()"
+        @keydown.13="toggleCheckbox()"
+    >
+        <v-list-item one-line>
+            <v-list-item-content class="pb-0"> 
+                <div style="cursor: pointer">
+                    <h1 class="text-h5 class-card__title">
+                        {{ course.name }}
+                        <v-checkbox
+                            :input-value="selected"
+                            :false-value="0"
+                            :true-value="1"
 
-                                    :aria-label="`Toggle selection for ${course.name}`"
+                            :aria-label="`Toggle selection for ${course.name}`"
 
-                                    color="primary"
-                                    value="primary"
-                                    hide-details
-                                    class="d-inline-block ma-0 float-right"
-                                    style="z-index: 99"
-                                />
-                            </h1>
-
-                            <small class="class-card__subtitle">
-                                {{ course.prefix }}-{{ course.ID }}
-                                <CourseTableModifiers
-                                    class="mt-4 class-card__subtitle__modifiers"
-                                    :item="course"
-                                />
-
-                            </small>
-                        </div>
-                    </v-list-item-content>
-                </v-list-item>
-                <v-card-text v-if="showDesc==true" class="class-card__desc">
-                    {{ course.description }}
-                </v-card-text>
-            </v-card>
-        </template>
-        <span>
+                            color="primary"
+                            value="primary"
+                            hide-details
+                            class="d-inline-block ma-0 float-right"
+                            style="z-index: 99"
+                        />
+                    </h1>
+                    <small v-if="course.hasData" class="class-card__subtitle">
+                        {{ course.subj }}-{{ course.ID }}
+                        <CourseTableModifiers
+                            class="mt-4 class-card__subtitle__modifiers"
+                            :item="course"
+                        />
+                        
+                    </small>
+                </div>
+            </v-list-item-content>
+        </v-list-item>
+        <v-card-text v-if="course.hasData" class="class-card__desc">
             {{ course.description }}
-        </span>
-    </v-tooltip>
+        </v-card-text>
+        <v-card-text v-if="!course.hasData" class="class-card__desc">
+            Data not found within RPI catalog, see SIS for more info.
+        </v-card-text>
+    </v-card>
 </template>
 
 <script>
 import CourseTableModifiers from './CourseTableModifiers'
 
-const requiredProps = ['name', 'prefix', 'ID', 'description', 'modifiers'];
+const requiredProps = ['hasData', 'name'];
 
 export default {
     name: 'CourseTableCourse',
@@ -90,7 +84,7 @@ export default {
         // Load saved selection
         let courses = this.$store.state.pathways[this.pathwayId] || { courses: [] };
         courses = courses.courses;
-        this.selected = courses.includes(this.course.key) ? 1 : 0;
+        this.selected = courses.includes(this.course.name) ? 1 : 0;
     },
     methods: {
         toggleCheckbox() {
@@ -99,7 +93,7 @@ export default {
                 this.selected = 1 - this.selected;
 
                 // Save selection
-                const c = { pathwayID: this.pathwayId, course: this.course.key };
+                const c = { pathwayID: this.pathwayId, course: this.course.name };
                 if (this.selected){
                     this.$store.commit('addCourse', c);                   
                     this.$emit('checkbox-clicked')
