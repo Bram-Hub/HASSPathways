@@ -12,24 +12,36 @@
                     <router-link
                         :to="{ name: 'admin-pathway' }"
                         class="text-decoration-none"
+                        id="admin-btn"
                     >
-                        Search for a class by pathway.
+                        <v-icon left dark>
+                            mdi-magnify
+                        </v-icon>
+                        Search for a class by pathway
                     </router-link>
                 </li>
                 <li v-bind="attrs" v-on="on">
                     <router-link
                         :to="{ name: 'admin-search-course-code' }"
                         class="text-decoration-none"
+                        id="admin-btn"
                     >
-                        Edit a class by course code.
+                        <v-icon left dark>
+                            mdi-book-edit
+                        </v-icon>
+                        Edit a class by course code
                     </router-link>
                 </li>
                 <li v-bind="attrs" v-on="on">
                     <router-link
                         :to="{ name: 'admin-course' }"
                         class="text-decoration-none"
+                        id="admin-btn"
                     >
-                        Add a new course to the website.
+                        <v-icon left dark>
+                            mdi-book-plus
+                        </v-icon>
+                        Add a new course to the website
                     </router-link>
                 </li>
             </ul>
@@ -52,3 +64,19 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+ul li {
+    list-style: none;
+    text-align: center;
+    min-width: 26vw;
+    display: inline-block;
+    background-color: #f73e3e;
+    padding: 3px;
+    margin: 0px 0px 2vw 2vw;
+}
+#admin-btn {
+    color: white;
+    font-size: 20px;
+}
+</style>

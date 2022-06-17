@@ -4,38 +4,42 @@
         elevation="1"
         :style="{ borderColor: colorHash(title) }"
     >
+
         <v-card-title class="font-weight-bold text-truncate card-title title-container">
             <span class="title-text text-truncate">
                 {{ title }}
             </span>
 
-            <v-menu bottom right>
-                <template #activator="{ on, attrs }">
-                    <v-btn
-                        icon
-                        v-bind="attrs"
-                        v-on="on"
-                    >
-                        <v-icon>mdi-dots-vertical</v-icon>
-                    </v-btn>
-                </template>
+            <div class="header">
+                <v-tooltip bottom>
+                    <template #activator="{on, attrs}">
+                        <v-icon 
+                            v-bind="attrs" 
+                            dense
+                            v-on="on" 
+                            @click="listAction('edit')" 
+                        >
+                            mdi-pencil
+                        </v-icon>
+                    </template>
+                    <span>Edit pathway</span>
+                </v-tooltip>
+                <v-tooltip bottom>
+                    <template #activator="{on, attrs}">
+                        <v-icon 
+                            v-bind="attrs" 
+                            dense
+                            v-on="on" 
+                            color="red"
+                            @click="listAction('delete')" 
+                        >
+                            mdi-delete
+                        </v-icon>
+                    </template>
+                    <span>Delete pathway</span>
+                </v-tooltip>
+            </div>
 
-                <v-list dense>
-                    <v-list-item
-                        v-for="(item, i) in menuItems"
-                        :key="i"
-                        link
-                        @click="listAction(item.action)"
-                    >
-                        <v-list-item-icon class="mr-3">
-                            <v-icon :color="item.color" dense v-text="item.icon" />
-                        </v-list-item-icon>
-                        <v-list-item-title>
-                            {{ item.title }}
-                        </v-list-item-title>
-                    </v-list-item>
-                </v-list>
-            </v-menu>
         </v-card-title>
         
         <div class="courses-container">
@@ -78,12 +82,8 @@ export default {
         }
     },
     data() {
-        return {
-            menuItems: [
-                { title: 'Edit Pathway', icon: 'mdi-pencil', action: 'edit' },
-                { title: 'Graph View', icon: 'mdi-graph', action: 'graph' },
-                { title: 'Delete Pathway', icon: 'mdi-delete', color: 'red', action: 'delete' },
-            ],
+        return { 
+            pathways,
         }
     },
     methods: {
@@ -119,6 +119,7 @@ export default {
             }
             else if(action == "delete") {
                 this.$store.commit('delPathway', this.title);
+                // this.$store.commit('unBookmarkPathway', this.title) dont need this i think
                 this.$emit('update');
             }
         }
@@ -127,6 +128,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+
 .card {
     margin: 5px;
     width: 340px;
@@ -145,12 +148,18 @@ export default {
         flex-wrap: nowrap;
         justify-content: space-between;
         padding: 12px 16px;
+        flex-direction: column;
+
+        .header {
+            align-self: end;
+        }
 
         .title-text {
             padding-right: 20px;
             display: inline-block;
             width: 100%;
             font-size: 14pt;
+            flex-shrink: 0;
         }
 
         .menu-icon {

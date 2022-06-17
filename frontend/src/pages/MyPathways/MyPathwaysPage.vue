@@ -2,6 +2,7 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
+                    <!-- <v-btn @click="debug()">click me</v-btn> -->
 
             <h1>My HASS Pathways</h1>
 
@@ -48,8 +49,13 @@ export default {
         };
     },
     async mounted() {
+        // this.get_pathways().forEach(pathway => {
+        //     console.log(pathway.name)
+        // })
         this.get_pathways().forEach(pathway => {
-            if (pathway.courses.length == 0) {
+            // console.log(pathway.courses.length)
+            console.log(pathway)
+            if (pathway.courses.length == 0 && !pathway.bookmarked ) {
                 this.$store.commit('delPathway', pathway.name);
                 this.update();
             }
@@ -57,10 +63,19 @@ export default {
 
     },
     methods: {
+        debug() {
+            let output = Object.entries(this.$store.state.pathways).map(v => { return {
+                name: v[0],
+                courses: v[1].courses,
+                bookmarked: (v[1].bookmarked == true ? true : false),
+            }});
+            console.log(output) 
+        },
         get_pathways() {
             let output = Object.entries(this.$store.state.pathways).map(v => { return {
                 name: v[0],
-                courses: v[1].courses
+                courses: v[1].courses,
+                bookmarked: (v[1].bookmarked == true ? true : false),
             }});
             return output 
         },
