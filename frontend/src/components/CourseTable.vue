@@ -3,7 +3,8 @@
         <!-- Table header with search and open/close all buttons
           -- A scale transform is applied to make it smaller -->
         <v-card
-            class="table-header-search elevation-0 ( pt-2 pb-2 pr-4 ) d-flex" 
+            v-if="searchBar"
+            class="table-header-search elevation-0 ( pt-2 pb-2 pr-4 ) d-flex"
         > 
             <v-text-field
                 v-model="search"
@@ -57,6 +58,11 @@ export default {
             type: Boolean,
             required: false,
             default: true,
+        },
+        searchBar: {
+            type: Boolean,
+            required: false,
+            default: true,
         }
     },
     data() {
@@ -65,7 +71,7 @@ export default {
     computed: {
         filteredCourses() {
             let tempCourses = JSON.parse(JSON.stringify(this.courses));
-            if(this.search && this.search != ''){
+            if(this.search && this.search !== ''){
                 tempCourses = Object.fromEntries(Object.entries(tempCourses)
                     .filter(([key]) => key
                         .toUpperCase()
