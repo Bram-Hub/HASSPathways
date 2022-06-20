@@ -110,7 +110,7 @@ export default {
 
 <style scoped lang="scss">
 .class-card {
-    max-width: 700px;
+    /* max-width: 700px; */
     border-radius: 0;
 
     &.class-card--selected {
