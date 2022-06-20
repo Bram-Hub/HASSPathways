@@ -55,7 +55,9 @@ export default {
     },
     computed: {
         filteredCourses() {
-            let tempCourses = JSON.parse(JSON.stringify(this.courses));
+            // let tempCourses = JSON.parse(JSON.stringify(this.courses));
+            let tempCourses = this.courses;
+
             if(this.search && this.search != ''){
                 tempCourses = Object.fromEntries(Object.entries(tempCourses)
                     .filter(([key]) => key
@@ -72,7 +74,17 @@ export default {
                     tempCourses[course]["hasData"] = true;
                 }
             }
-            return tempCourses;
+
+            tempCourses = Object.values(tempCourses).sort(
+                function(a, b){
+                    if(a.subj == b.subj){
+                        if(a.ID < b.ID) return -1
+                        else return 1
+                    } else if (a.subj < b.subj) return -1
+                    else return 1
+                }
+            )
+            return tempCourses
         }
     },
     methods: {
