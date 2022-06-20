@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <v-container>
+    <div style="width: 75%; margin: 0 auto;">
+        <v-container fluid>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
             <h1>Welcome to HASS Pathways!</h1>
             <p>Here you can explore the different pathways RPI has to offer. To get started choose from on of the options below and start exploring your options!</p>
