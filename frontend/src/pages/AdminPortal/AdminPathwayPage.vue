@@ -19,7 +19,6 @@
                 :headers="headers"
                 :items="filteredCourses"
             >
-
                 <template slot="no-data">
                     No classes found, make sure to select a pathway in the dropdown above
                 </template>
@@ -34,7 +33,7 @@
 
                 <template #item.prefix="{ item }">
                     <v-text-field
-                        v-model="item.prefix"
+                        v-model="item.subj"
                         single-line
                         clearable   
                     />
@@ -137,10 +136,10 @@ export default {
             this.pathways.push(pathways[key].name);
         }
     },
-    methods: {
+    methods: {  
         toClass(clazz) {
             let urlStart = "/admin-portal/course?class=";
-            let urlEnd = clazz.toLowerCase().replace(/ /g, '_').replace(/,/g, '');
+            let urlEnd = clazz;
             const finalURL = urlStart + urlEnd;
             return finalURL;
         },
@@ -148,16 +147,18 @@ export default {
             if(this.selectedPathway == null || this.selectedPathway == "") {
                 return [];
             }
-            let pathwayID = this.selectedPathway.toLowerCase().replace(/ /g, '_').replace(/,/g, '');
+            let pathwayID = this.selectedPathway;
             let pathway = pathways[pathwayID];
             if(pathway != null) {
                 let classes = new Set();
                 for(const prio in pathway) {
-                    if(prio.substring(0, 8) == "priority") {
+                    if(pathway[prio] instanceof Object && !(pathway[prio] instanceof Array)) {
                         for(const course in pathway[prio]) {
-                            let clazz = courses[pathway[prio][course]];
-                            clazz = JSON.parse(JSON.stringify(clazz));
-                            classes.add(clazz);
+                            if(courses[course]) {
+                                let clazz = courses[course];
+                                clazz = JSON.parse(JSON.stringify(clazz));
+                                classes.add(clazz);
+                            }
                         }
                     }
                 }
@@ -171,7 +172,7 @@ export default {
             const classes = this.filteredCourses;
 
             for(const clazz in classes) {
-                const key = classes[clazz].name.toLowerCase().replace(/ /g, '_').replace(/,/g, '').replace(/-/g, '_');
+                const key = classes[clazz].name;
                 const curr = JSON.parse(JSON.stringify(classes[clazz]));
                 const course = courses[key];
                 if(JSON.stringify(curr) != JSON.stringify(course)) {
@@ -180,7 +181,6 @@ export default {
             }
         },
         remove(name) {
-            name = name.toLowerCase().replace(/ /g, '_').replace(/,/g, '').replace(/-/g, '_');
             console.log("remove " + name + " from " + this.selectedPathway);
         }
     }

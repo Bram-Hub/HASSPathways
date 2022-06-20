@@ -5,8 +5,8 @@
             <h1>Search for the classes to edit!</h1>
             <h3>Type in the name of the course or the course ID to search for the courses you have taken</h3>
             <div class="search-field">
-                <v-text-field 
-                    v-model="searchValue" 
+                <v-text-field
+                    v-model="searchValue"
                     outlined
                     rounded
                     solo
@@ -15,15 +15,35 @@
                 />
             </div>
             <div v-for="course in filteredCourses" :key="course.name">
-                <v-btn 
+                <v-btn
                     :id="course.name"
-                    :to="`/admin-portal/course?class=${encodeURIComponent(course.name.slice().toLowerCase().replace(/ /g, '_'))}`"
-                > 
-                    Edit
+                    :to="`/admin-portal/course?class=${course.name}`"
+                >
+                  Edit
                 </v-btn>
                 <label class="label" :for="course.name"> {{ course.name + ", " + course.prefix + "-" + course.ID }} </label>
+                <v-btn color="red" @click="chooseCourse(course.name)">
+                    Remove
+                </v-btn>
             </div>
         </v-container>
+        <template>
+            <v-dialog v-model="dialog" width="500">
+                <v-card>
+                    <v-card-text>
+                        Are you sure you want to delete this course?
+                    </v-card-text>
+                    <v-card-actions>
+                        <v-btn @click="dialog = false">
+                            No
+                        </v-btn>
+                        <v-btn @click="remove()">
+                            Yes
+                        </v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-dialog>
+        </template>
     </div>
 </template>
 
@@ -39,7 +59,9 @@ export default {
     data() {
         return {
             breadcrumbs: breadcrumbs.admin_search_cc_page,
-            searchValue: ''
+            searchValue: '',
+            dialog: false,
+            chosenCourse: null,
         }
     },
     computed: {
@@ -59,6 +81,16 @@ export default {
                 })
             }
             return Object.fromEntries(tempCourses);
+        }
+    },
+    methods: {
+        chooseCourse(course) {
+            this.chosenCourse = course
+            this.dialog = true
+        },
+        remove() {
+            this.dialog = false;
+            console.log("Remove " + this.chosenCourse);
         }
     }
 }

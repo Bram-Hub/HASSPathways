@@ -3,7 +3,9 @@
         <v-container>
             <Breadcrumbs :breadcrumbs="foundCrumbs" />
 
-            <h1 class="mb-4">Modify Course Info</h1>
+            <h1 class="mb-4">
+                Modify Course Info
+            </h1>
             <div style="max-width: 600px">
                 <v-text-field
                     v-model="name"
@@ -88,7 +90,10 @@
                     outlined tile
                     @click="submit()"
                 >
-                    Submit Changes<v-icon right>mdi-check</v-icon>
+                    Submit Changes
+                    <v-icon right>
+                        mdi-check
+                    </v-icon>
                 </v-btn>
             </div>
         </v-container>
@@ -130,7 +135,7 @@ export default {
     computed: {
         foundCrumbs() {
             const course = this.getCourse();
-            console.log()
+            
             if(course) {
                 return breadcrumbs.admin_course_page.map(x => x || {
                     text: course.name,
@@ -164,9 +169,9 @@ export default {
             const singlePathway = pathways[key];
             if(course) {
                 for(const prio in singlePathway) {
-                    if(prio.substring(0, 8) == "priority") {
+                    if(singlePathway[prio] instanceof Object && !(singlePathway[prio] instanceof Array)) {
                         const array = singlePathway[prio];
-                        if(array.includes(course.name.slice().toLowerCase().replace(/ /g, '_'))) {
+                        if(Object.keys(array).includes(course.name)) {
                             myPathways.add(singlePathway.name);
                         }
                         this.pathways.push(singlePathway.name);

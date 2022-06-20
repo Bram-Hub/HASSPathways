@@ -26,9 +26,8 @@
                             style="z-index: 99"
                         />
                     </h1>
-
-                    <small class="class-card__subtitle">
-                        {{ course.prefix }}-{{ course.ID }}
+                    <small v-if="course.hasData" class="class-card__subtitle">
+                        {{ course.subj }}-{{ course.ID }}
                         <CourseTableModifiers
                             class="mt-4 class-card__subtitle__modifiers"
                             :item="course"
@@ -38,8 +37,11 @@
                 </div>
             </v-list-item-content>
         </v-list-item>
-        <v-card-text class="class-card__desc">
+        <v-card-text v-if="course.hasData" class="class-card__desc">
             {{ course.description }}
+        </v-card-text>
+        <v-card-text v-if="!course.hasData" class="class-card__desc">
+            Data not found within RPI catalog, see SIS for more info.
         </v-card-text>
     </v-card>
 </template>
@@ -47,7 +49,7 @@
 <script>
 import CourseTableModifiers from './CourseTableModifiers'
 
-const requiredProps = ['name', 'prefix', 'ID', 'description', 'modifiers'];
+const requiredProps = ['hasData', 'name'];
 
 export default {
     name: 'CourseTableCourse',
@@ -73,7 +75,7 @@ export default {
         // Load saved selection
         let courses = this.$store.state.pathways[this.pathwayId] || { courses: [] };
         courses = courses.courses;
-        this.selected = courses.includes(this.course.key) ? 1 : 0;
+        this.selected = courses.includes(this.course.name) ? 1 : 0;
     },
     methods: {
         toggleCheckbox() {
@@ -82,7 +84,7 @@ export default {
                 this.selected = 1 - this.selected;
 
                 // Save selection
-                const c = { pathwayID: this.pathwayId, course: this.course.key };
+                const c = { pathwayID: this.pathwayId, course: this.course.name };
                 if (this.selected){
                     this.$store.commit('addCourse', c);                   
                     this.$emit('checkbox-clicked')
@@ -98,6 +100,9 @@ export default {
             // Convert truthy/falsy values -> 0/1 for vuetify checkbox
             selected = selected ? 1 : 0;
             this.selected = selected;
+        },
+        isSelected() {
+            return this.selected;
         }
     }
 }
@@ -105,7 +110,7 @@ export default {
 
 <style scoped lang="scss">
 .class-card {
-    max-width: 700px;
+    /* max-width: 700px; */
     border-radius: 0;
 
     &.class-card--selected {
