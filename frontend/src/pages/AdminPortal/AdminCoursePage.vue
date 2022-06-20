@@ -154,7 +154,7 @@ export default {
         const course = this.getCourse();
         if(course) {
             this.name = course.name;
-            this.dept =  course.prefix;
+            this.dept =  course.subj;
             this.ID = course.ID;
             this.CI = course.properties.CI;
             this.HI = course.properties.HI;
@@ -194,7 +194,7 @@ export default {
             if(!newCourse) {
                 newCourse = {
                     name: "",
-                    prefix: "",
+                    subj: "",
                     ID: 0,
                     properties: {
                         CI: 0,
@@ -211,7 +211,7 @@ export default {
                 };
             }
             newCourse.name = this.name;
-            newCourse.prefix = this.dept;
+            newCourse.subj = this.dept;
             newCourse.ID = this.ID;
             newCourse.properties.CI = this.CI;
             newCourse.properties.HI = this.HI;
