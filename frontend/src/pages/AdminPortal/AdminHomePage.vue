@@ -6,7 +6,7 @@
             <p>Here you can edit the courses and pathways on the website!</p>
             <v-divider class="my-4" />
             <ul id="btn-cntnr">
-                <v-btn id="admn-btn" :to="{ name: 'admin-search-course-code' }" class="text-decoration-none">
+                <v-btn id="admn-btn" :to="{ name: 'admin-pathway' }" class="text-decoration-none">
                     <v-icon left dark>
                         mdi-magnify
                     </v-icon>
