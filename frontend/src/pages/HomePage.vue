@@ -73,5 +73,6 @@ export default {
     min-width: 330px !important;
     max-width: 92vw !important;
     overflow-x: hidden;
+    margin-bottom: 5px;
 }
 </style>
