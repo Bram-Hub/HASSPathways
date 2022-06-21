@@ -17,7 +17,8 @@
                 style="width: 400px; max-width: 100%"
             />
         </v-card>
-        <div :class="{graphContent : graphView}">
+        <!-- <div :class="{graphContent : graphView}"> -->
+        <div :class="{graphContainer: graphView}">
             <CourseTableCourse
                 v-for="item in filteredCourses"
                 :key="item.name"
@@ -121,16 +122,18 @@ export default {
 
 <style scoped>
 .graphContent {
-    /* display: grid;
-    grid-template-columns: repeat(2, 50%); */
     display: flex;
-    /* flex-grow: auto; */
     width: 100%;
     flex-wrap: wrap;
 }
 
 .graph-content CourseTableCourse {
     margin: 0;
+}
+.graphContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
 }
 .table-header-search {
     transform-origin: bottom left;
