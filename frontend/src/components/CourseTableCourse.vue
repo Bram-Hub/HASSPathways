@@ -130,7 +130,7 @@ export default {
   opacity: 2.0;
 }
 .class-card {
-    max-width: 700px;
+    /* max-width: 700px; */
     border-radius: 0;
 
     &.class-card--selected {

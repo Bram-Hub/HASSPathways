@@ -2,7 +2,6 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-                    <!-- <v-btn @click="debug()">click me</v-btn> -->
 
             <h1>My HASS Pathways</h1>
 
@@ -53,8 +52,6 @@ export default {
         //     console.log(pathway.name)
         // })
         this.get_pathways().forEach(pathway => {
-            // console.log(pathway.courses.length)
-            console.log(pathway)
             if (pathway.courses.length == 0 && !pathway.bookmarked ) {
                 this.$store.commit('delPathway', pathway.name);
                 this.update();

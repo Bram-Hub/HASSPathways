@@ -9,7 +9,6 @@
 
             <v-card-title class="font-weight-bold text-truncate card-title">
                 {{ title }}
-                
             </v-card-title>
         </v-img>
         

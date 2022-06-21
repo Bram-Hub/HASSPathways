@@ -77,8 +77,10 @@ export default {
     },
     computed: {
         filteredCourses() {
-            let tempCourses = JSON.parse(JSON.stringify(this.courses));
-            if(this.search && this.search !== ''){
+            // let tempCourses = JSON.parse(JSON.stringify(this.courses));
+            let tempCourses = this.courses;
+
+            if(this.search && this.search != ''){
                 tempCourses = Object.fromEntries(Object.entries(tempCourses)
                     .filter(([key]) => key
                         .toUpperCase()
@@ -94,7 +96,17 @@ export default {
                     tempCourses[course]["hasData"] = true;
                 }
             }
-            return tempCourses;
+
+            tempCourses = Object.values(tempCourses).sort(
+                function(a, b){
+                    if(a.subj == b.subj){
+                        if(a.ID < b.ID) return -1
+                        else return 1
+                    } else if (a.subj < b.subj) return -1
+                    else return 1
+                }
+            )
+            return tempCourses
         }
     },
     methods: {
@@ -102,15 +114,6 @@ export default {
             this.$children.forEach(child => {
                 if (child.setSelected) child.setSelected(0);
             });
-        },
-        getSelected() {
-            return this.$children
-                .filter( child => child.$options._componentTag == "CourseTableCourse" && child.selected )
-                .map( child => true )
-            // // console.log(this.$children)
-            // return this.$children
-            //     .filter(child => child.isSelected)
-            //     .map(child => child.key);
         }
     }
 }
@@ -130,7 +133,6 @@ export default {
     margin: 0;
 }
 .table-header-search {
-    transform: scale(0.8);
     transform-origin: bottom left;
 }
 
