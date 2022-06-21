@@ -15,6 +15,10 @@
                     <p>Check the individual pathway requirements. Some pathways might require one course to be 4000 level and some might not.</p>
                 </li>
                 <li>
+                    <h4>Do I need to take a communication intensive course for my pathway?</h4>
+                    <p>This is not a requirement for the pathway.</p>
+                </li>
+                <li>
                     <h4>Am I allowed to come up with my own pathway?</h4>
                     <p>Students are not allowed to create their own pathway.</p>
                 </li>
