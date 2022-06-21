@@ -49,7 +49,7 @@
                         @click="descriptionOnHover = !descriptionOnHover;"
                     >
                         <v-icon>
-                            {{ descriptionOnHover ? 'mdi-comment-text-outline' : 'mdi-comment-text' }}
+                            {{ !descriptionOnHover ? 'mdi-comment-text-outline' : 'mdi-comment-text' }}
                         </v-icon>
                     </v-btn>
                 </div>
