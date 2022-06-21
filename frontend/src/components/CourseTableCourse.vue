@@ -9,7 +9,7 @@
                 <v-card
                     v-show="descriptionOnHover"
                     v-bind="attrs" v-on="on"
-                    :class="[selectedClass(), 'w-100', 'my-2', 'class-card', {graph: graphView}]"
+                    :class="[selectedClass(), 'w-100', 'my-2', 'class-card', {graph: graphView}, 'maxHeight']"
                     fluid
                     outlined
                     @click="toggleCheckbox()"
@@ -60,7 +60,7 @@
         </v-tooltip>
         <v-card
             v-show="!descriptionOnHover"
-            :class="[selectedClass(), 'w-100', 'my-2', 'class-card', {graph: graphView}]"
+            :class="[selectedClass(), 'w-100', 'my-2', 'class-card', {graph: graphView}, 'maxHeight']"
             fluid
             outlined
             @click="toggleCheckbox()"
@@ -192,6 +192,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+.maxHeight {
+    height: 100%;
+}
 .graph {
     margin: 0;
 }
