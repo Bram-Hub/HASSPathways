@@ -112,7 +112,11 @@
                         </v-icon>
                     </v-btn>
                 </v-card-title>
-
+                <h5 style="color: x11gray;" class="ml-4"> Current selections ({{this.selected.length}}): 
+                    <li v-for="(course, index) in this.selected" v-bind:key="(course, index)" style="list-style: none; display: inline;">
+                        {{course.name}}{{index &lt; selected.length - 1 ? ", " : ""}}
+                    </li>
+                </h5>
                 <v-data-table
                     v-model="selected"
                     :headers="courseHeaders"
@@ -166,7 +170,7 @@ import { courses } from '../../data/data.js'
 
 const TABLE_HEADERS = [
     {
-        text: 'ID',
+        text: 'Course Code',
         value: 'identifier',
         width: '130px'
     },
@@ -176,18 +180,6 @@ const TABLE_HEADERS = [
     }
 ];
 
-/**
- * Names in the store are stored slightly differently
- * (All lower case, spaces replaced with _, whitespace removed)
- * This function does the conversion
- * 
- * @param {string} name
- * @return {string}
- */
-function nameToKey(name) {
-    return name.slice().toLowerCase().replace(/ /g, '_');
-}
-
 export default {
     components: {
         Breadcrumbs
@@ -196,8 +188,7 @@ export default {
         const courseList = Object.values(courses).map(course => {
             return {
                 name: course.name,
-                identifier: course.prefix + '-' + course.ID, // For display
-                id: course.prefix + course.ID // For store
+                identifier: course.subj + '-' + course.ID, // For display
             };
         });
 
@@ -206,7 +197,7 @@ export default {
             searchValue: '',
             courses: courseList,
             courseHeaders: TABLE_HEADERS,
-            selected: courseList.filter(course => this.$store.state.classes[nameToKey(course.name)]),
+            selected: courseList.filter(course => this.$store.state.classes[course.name]),
             dialog: false
         }
     },
@@ -218,12 +209,9 @@ export default {
             select(!isSelected);
 
             if (!isSelected) { // The user just checked
-                this.$store.commit('addClass', {
-                    ID: item.id,
-                    name: nameToKey(item.name)
-                });
+                this.$store.commit('addClass', item.name);
             } else {
-                this.$store.commit('delClass', nameToKey(item.name));
+                this.$store.commit('delClass', item.name);
             }
         },
 

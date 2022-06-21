@@ -22,7 +22,6 @@ export const modifiers = {
         color: colors.green.darken3,
         search: ['spring']
     },
-
     'CI': {
         name: 'CI',
         tooltip: 'Communication intensive',

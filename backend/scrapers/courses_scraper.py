@@ -9,6 +9,7 @@ import os
 from tqdm import tqdm
 import json
 from lxml import etree
+import csv
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
@@ -72,6 +73,16 @@ def get_catalog_description(fields, course_name):
 
     return ""
 
+def obtain_CI(name):
+    csv_file = open('CI_classes.csv', 'r')
+    reader = csv.reader(csv_file)
+
+    for row in reader:
+        course_name = row[3]
+        if name.strip().lower() == course_name.strip().lower():
+            return True
+
+    return False
 
 def get_course_data(course_ids: List[str]) -> Dict:
     data = {}
@@ -82,14 +93,11 @@ def get_course_data(course_ids: List[str]) -> Dict:
 
     depts = []
 
-    f = open('hass_pathways.json', 'r')
-    pathways = json.load(f)
+    f = open('depts.json', 'r')
+    f = json.load(f)
 
-    for pathway_name in pathways:
-        for field in pathways[pathway_name]:
-            if field != 'description' and field != 'remaining_header' and field != 'minor':
-                for course in pathways[pathway_name][field]:
-                    depts.append(course[:4])
+    for dept in f:
+        depts.append(dept)
 
     for chunk in course_chunks:
         ids = "".join([f"&ids[]={id}" for id in chunk])
@@ -107,11 +115,15 @@ def get_course_data(course_ids: List[str]) -> Dict:
             fall = False
             spring = False
             summer = False
+            even = False
+            odd = False
+            offered_text = ""
 
             for field in fields:
                 if field.get("type") == 'acalog-field-519':
                     field_text = field.xpath("./data/text()")
                     if len(field_text) > 0:
+                        # print(field_text)
                         field_text = field_text[0].strip().lower()
                         if "fall" in field_text:
                             fall = True
@@ -119,9 +131,13 @@ def get_course_data(course_ids: List[str]) -> Dict:
                             spring = True
                         if "summer" in field_text:
                             summer = True
-            
+                        if "even" in field_text:
+                            even = True
+                        if "odd" in field_text:
+                            odd = True
+                        offered_text = field_text
                 
-            data[f"{subj}-{ID}"] = {
+            data[course_name] = {
                 "subj": subj,
                 "ID": ID,
                 "name": course_name,
@@ -129,12 +145,19 @@ def get_course_data(course_ids: List[str]) -> Dict:
                 "offered": {
                     "fall": fall,
                     "spring": spring,
-                    "summer": summer
+                    "summer": summer,
+                    "odd": odd,
+                    "even": even,
+                    "text": offered_text
+                },
+                "properties": {
+                    "CI": obtain_CI(course_name),
+                    "HI": True if subj == "IHSS" else False,
+                    "major_restricted": False
                 }
             }
 
     return data
-
 
 if __name__ == "__main__":
     if sys.argv[-1] == "help" or sys.argv[-1] == "--help":
@@ -152,6 +175,7 @@ if __name__ == "__main__":
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         course_ids = get_course_ids(catalog_id)
         data = get_course_data(course_ids)
+
         f = open('courses.json', 'w')
         json.dump(data, f, sort_keys=True, indent=2, ensure_ascii=False)
         f.close()

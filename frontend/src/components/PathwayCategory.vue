@@ -6,6 +6,7 @@
             :src="require('../assets/pathway-groups/' + image)"
         >
             <div class="darken" />
+
             <v-card-title class="font-weight-bold text-truncate card-title">
                 {{ title }}
             </v-card-title>
@@ -27,7 +28,7 @@
                 <template #activator="{ on, attrs }">
                     <li class="pathway" v-bind="attrs" v-on="on">
                         <a :href="`/pathway?pathway=${encodeURIComponent(pathway)}`" class="text-decoration-none">
-                            <b>{{ pathwaysData[pathway].name }}</b>
+                            <b>{{ pathway }}</b>
                         </a>
                     </li>
                 </template>
@@ -66,6 +67,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+
+
+.bookmark-holder:hover {
+    cursor: pointer;
+}
 .card {
     width: 100%;
     max-width: calc(100vw - 24px);
@@ -91,6 +98,7 @@ export default {
     position: absolute;
     bottom: 0;
     display: block;
+    width: 100%;
 }
 
 .pathways-container {
