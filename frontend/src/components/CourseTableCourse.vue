@@ -11,7 +11,6 @@
             <v-list-item-content class="pb-0"> 
                 <div style="cursor: pointer" >
                     <h1 class="text-h5 class-card__title">
-                        {{ course.name }}
                         <v-checkbox
                             :input-value="selected"
                             :false-value="0"
@@ -25,11 +24,14 @@
                             class="d-inline-block ma-0 float-right"
                             style="z-index: 99"
                         />
+                        {{ course.name }}
+                        
                     </h1>
                     <small v-if="course.hasData" class="class-card__subtitle">
                         {{ course.subj }}-{{ course.ID }}
                         <CourseTableModifiers
                             class="mt-4 class-card__subtitle__modifiers"
+                            :class="{graphChange:graphView}"
                             :item="course"
                         />
                         
@@ -122,9 +124,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.graph {
-    width: 50%;
-}
+// .graph {
+//     width: 50%;
+// }
 .v-tooltip__content {
   opacity: 2.0;
 }
@@ -140,7 +142,7 @@ export default {
         line-height: 1.05em;
         display: inline-block;
         font-size: 1.2em !important;
-        width: 100%
+        width: 100%;
     }
 
     .class-card__subtitle {
@@ -154,8 +156,11 @@ export default {
 
             position: relative;
             top: -5px;
-            margin-left: 10px;
+            // margin-left: 10px;
             margin-top: 0 !important
+        }
+        .graphChange {
+            display: block;
         }
     }
 
@@ -163,4 +168,6 @@ export default {
         padding: 8px 20px;
     }
 }
+
+
 </style>
