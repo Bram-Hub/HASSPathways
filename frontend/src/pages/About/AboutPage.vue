@@ -16,7 +16,7 @@
                 </li>
                 <li>
                     <h4>Do I need to take a communication intensive course for my pathway?</h4>
-                    <p>This is not a requirement for the pathway.</p>
+                    <p>This is not a requirement for the pathways.</p>
                 </li>
                 <li>
                     <h4>Am I allowed to come up with my own pathway?</h4>
