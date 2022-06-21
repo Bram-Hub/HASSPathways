@@ -1,52 +1,51 @@
 <template>
-    <div>
-        <v-container>
+    <div style="width: 75%; margin: 0 auto;">
+        <v-container fluid>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <h1>Welcome to HASS Pathways!</h1>
-            <p>Here you can explore the different pathways RPI has to offer. To get started choose from on of the options below and start exploring your options!</p>
+            <h1 style="text-align: center;">
+                Welcome to HASS Pathways!
+            </h1>
+            <p style="text-align: center;">
+                Here you can explore the different pathways RPI has to offer. To get started choose from on of the options below and start exploring your options!
+            </p>
             <v-divider class="my-4" />
-            
-            <div style="text-align: center">
+            <v-row
+                align="center"
+                justify="space-around"
+            >
                 <v-btn
-                    class="button pathway-btn [ mr-2 mt-2 font-weight-bold ]"
-                    elevation="0"
+                    pathway-btn
+                    large
                     color="primary"
-                    tile
-                    x-large
                     :to="{ name: 'pathways' }"
                 >
                     <v-icon left dark>
                         mdi-compass
                     </v-icon>
-                    <span class="text">Explore pathways</span>
+                    Explore pathways
                 </v-btn>
                 <v-btn
-                    class="button pathway-btn [ mr-2 mt-2 font-weight-bold ]"
+                    pathway-btn
+                    large
                     color="primary"
-                    elevation="0"
-                    tile
-                    x-large
                     :to="{ name: 'search-classes' }"
                 >
                     <v-icon left dark>
                         mdi-magnify
                     </v-icon>
-                    <span class="text" style="display: block">Find pathways from classes</span>
+                    Find pathways from classes
                 </v-btn>
-
-                <br>
                 <v-btn
-                    class="button mt-4"
-                    elevation="0"
-                    tile
+                    pathway-btn
+                    large
                     :to="{ name: 'admin-portal' }"
                 >
                     <v-icon left dark>
                         mdi-cog
                     </v-icon>
-                    <span class="text">Admin and secure portal</span>
+                    Admin and secure portal
                 </v-btn>
-            </div>
+            </v-row>
         </v-container>
     </div>
 </template>
@@ -69,9 +68,7 @@ export default {
 
 <style scoped>
 .pathway-btn {
-    width: 40%;
-    min-width: 330px !important;
-    max-width: 92vw !important;
-    overflow-x: hidden;
-}
+    /* min-width: 330px !important; */
+    overflow-x: hidden !important;
+ }
 </style>

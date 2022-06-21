@@ -28,8 +28,8 @@
                         <v-icon 
                             v-bind="attrs" 
                             dense
-                            v-on="on" 
                             color="red"
+                            v-on="on" 
                             @click="listAction('delete')" 
                         >
                             mdi-delete
