@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
-         <!-- <v-btn @click="debug()">click me</v-btn> -->
+         <v-btn @click="debug()">click me</v-btn>
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
@@ -63,6 +63,7 @@
                       :show-desc="false"
                       :searchBar="false"
                       :graphView="true"
+                      :descriptionOnHover="descriptionOnHover"
                   />
                 </div>
             </div>
@@ -208,15 +209,7 @@ export default {
     },
     methods : {
         debug() {
-            // let output = Object.entries(this.$store.state.pathways).map(v => { return {
-            //     name: v[0],
-            //     courses: v[1].courses,
-            //     bookmarked: v[1].bookmarked
-            // }});
-            // console.log(output)
-            // console.log(this.$store.getters.pathwayBookmarked(this.pathwayID))
-            console.log(this)
-            console.log(this.courses)
+            console.log(this.descriptionOnHover)
         },
         selectBookmark() { 
             this.bookmarkSelected = !this.bookmarkSelected;

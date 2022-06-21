@@ -1,51 +1,113 @@
 <template>
-    <v-card
-        :class="[selectedClass(), 'w-100', 'my-2', 'class-card', {graph: graphView}]"
-        fluid
-        outlined
-        @click="toggleCheckbox()"
-        @keydown.13="toggleCheckbox()"
 
-    >
-        <v-list-item one-line>
-            <v-list-item-content class="pb-0"> 
-                <div style="cursor: pointer" >
-                    <h1 class="text-h5 class-card__title">
-                        <v-checkbox
-                            :input-value="selected"
-                            :false-value="0"
-                            :true-value="1"
+    <div>
+        <v-tooltip
+            v-show="descriptionOnHover"
+            bottom
+        >
+            <template #activator="{ on, attrs }">
+                <v-card
+                    v-show="descriptionOnHover"
+                    v-bind="attrs" v-on="on"
+                    :class="[selectedClass(), 'w-100', 'my-2', 'class-card', {graph: graphView}]"
+                    fluid
+                    outlined
+                    @click="toggleCheckbox()"
+                    @keydown.13="toggleCheckbox()"
 
-                            :aria-label="`Toggle selection for ${course.name}`"
+                >
+                    <v-list-item one-line>
+                        <v-list-item-content class="pb-0"> 
+                            <div style="cursor: pointer" >
+                                <h1 class="text-h5 class-card__title">
+                                    <v-checkbox
+                                        :input-value="selected"
+                                        :false-value="0"
+                                        :true-value="1"
 
-                            color="primary"
-                            value="primary"
-                            hide-details
-                            class="d-inline-block ma-0 float-right"
-                            style="z-index: 99"
-                        />
-                        {{ course.name }}
-                        
-                    </h1>
-                    <small v-if="course.hasData" class="class-card__subtitle">
-                        {{ course.subj }}-{{ course.ID }}
-                        <CourseTableModifiers
-                            class="mt-4 class-card__subtitle__modifiers"
-                            :class="{graphChange:graphView}"
-                            :item="course"
-                        />
-                        
-                    </small>
-                </div>
-            </v-list-item-content>
-        </v-list-item>
-        <v-card-text v-if="course.hasData && showDesc" class="class-card__desc">
-            {{ course.description }}
-        </v-card-text>
-        <v-card-text v-if="!course.hasData" class="class-card__desc">
-            Data not found within RPI catalog, see SIS for more info.
-        </v-card-text>
-    </v-card>
+                                        :aria-label="`Toggle selection for ${course.name}`"
+
+                                        color="primary"
+                                        value="primary"
+                                        hide-details
+                                        class="d-inline-block ma-0 float-right"
+                                        style="z-index: 99"
+                                    />
+                                    {{ course.name }}
+                                    
+                                </h1>
+                                <small v-if="course.hasData" class="class-card__subtitle">
+                                    {{ course.subj }}-{{ course.ID }}
+                                    <CourseTableModifiers
+                                        class="mt-4 class-card__subtitle__modifiers"
+                                        :class="{graphChange:graphView}"
+                                        :item="course"
+                                    />
+                                    
+                                </small>
+                            </div>
+                        </v-list-item-content>
+                    </v-list-item>
+                    <v-card-text v-if="course.hasData && showDesc" class="class-card__desc">
+                        {{ course.description }}
+                    </v-card-text>
+                    <v-card-text v-if="!course.hasData" class="class-card__desc">
+                        Data not found within RPI catalog, see SIS for more info.
+                    </v-card-text>
+                </v-card>
+            </template>
+            <span v-show="descriptionOnHover">{{course.description}}</span>
+        </v-tooltip>
+        <v-card
+            v-show="!descriptionOnHover"
+            :class="[selectedClass(), 'w-100', 'my-2', 'class-card', {graph: graphView}]"
+            fluid
+            outlined
+            @click="toggleCheckbox()"
+            @keydown.13="toggleCheckbox()"
+
+        >
+            <v-list-item one-line>
+                <v-list-item-content class="pb-0"> 
+                    <div style="cursor: pointer" >
+                        <h1 class="text-h5 class-card__title">
+                            <v-checkbox
+                                :input-value="selected"
+                                :false-value="0"
+                                :true-value="1"
+
+                                :aria-label="`Toggle selection for ${course.name}`"
+
+                                color="primary"
+                                value="primary"
+                                hide-details
+                                class="d-inline-block ma-0 float-right"
+                                style="z-index: 99"
+                            />
+                            {{ course.name }}
+                            
+                        </h1>
+                        <small v-if="course.hasData" class="class-card__subtitle">
+                            {{ course.subj }}-{{ course.ID }}
+                            <CourseTableModifiers
+                                class="mt-4 class-card__subtitle__modifiers"
+                                :class="{graphChange:graphView}"
+                                :item="course"
+                            />
+                            
+                        </small>
+                    </div>
+                </v-list-item-content>
+            </v-list-item>
+            <v-card-text v-if="course.hasData && showDesc" class="class-card__desc">
+                {{ course.description }}
+            </v-card-text>
+            <v-card-text v-if="!course.hasData" class="class-card__desc">
+                Data not found within RPI catalog, see SIS for more info.
+            </v-card-text>
+        </v-card>
+    </div>
+    
 </template>
 
 <script>
@@ -84,7 +146,9 @@ export default {
         }
     },
     data: () => {
-        return { selected: 0 }
+        return { 
+            selected: 0,
+        }
     },
     mounted() {
         // Load saved selection
@@ -93,6 +157,10 @@ export default {
         this.selected = courses.includes(this.course.name) ? 1 : 0;
     },
     methods: {
+        debug() {
+            console.log(this.descriptionOnHover);
+            // this.descriptionOnHover = !this.descriptionOnHover;
+        },
         toggleCheckbox() {
             let selection = window.getSelection();
             if (selection.isCollapsed) {
@@ -125,7 +193,6 @@ export default {
 
 <style scoped lang="scss">
 .graph {
-    width: 50%;
     margin: 0;
 }
 .v-tooltip__content {

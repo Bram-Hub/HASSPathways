@@ -25,7 +25,7 @@
                 :course="item"
                 :pathway-id="pathwayId"
                 :show-desc="showDesc"
-                :description-on-hover="descriptionOnHover"
+                :descriptionOnHover="descriptionOnHover"
                 :graphView="graphView"
             />
         </div>
@@ -61,7 +61,7 @@ export default {
         descriptionOnHover: {
             type: Boolean,
             required: false,
-            default: true,
+            default: false,
         },
         searchBar: {
             type: Boolean,
@@ -76,6 +76,11 @@ export default {
     data() {
         return { search: '' }
     },
+    // watch: {
+    //     descriptionOnHover( newValue ) {
+    //         console.log(`old value: ${this.descriptionOnHover} new value: ${newValue}`);
+    //     }
+    // },
     computed: {
         filteredCourses() {
             // let tempCourses = JSON.parse(JSON.stringify(this.courses));
