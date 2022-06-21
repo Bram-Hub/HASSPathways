@@ -9,6 +9,7 @@ import os
 from tqdm import tqdm
 import json
 from lxml import etree
+import csv
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
@@ -72,7 +73,15 @@ def get_catalog_description(fields, course_name):
 
     return ""
 
-def obtain_CI(subj, code):
+def obtain_CI(name):
+    csv_file = open('CI_classes.csv', 'r')
+    reader = csv.reader(csv_file)
+
+    for row in reader:
+        course_name = row[3]
+        if name.strip().lower() == course_name.strip().lower():
+            return True
+
     return False
 
 def get_course_data(course_ids: List[str]) -> Dict:
@@ -142,7 +151,7 @@ def get_course_data(course_ids: List[str]) -> Dict:
                     "text": offered_text
                 },
                 "properties": {
-                    "CI": obtain_CI(subj, ID),
+                    "CI": obtain_CI(course_name),
                     "HI": True if subj == "IHSS" else False,
                     "major_restricted": False
                 }
