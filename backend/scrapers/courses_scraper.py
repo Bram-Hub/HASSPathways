@@ -110,6 +110,8 @@ def get_course_data(course_ids: List[str]) -> Dict:
             if not (subj in depts):
                 continue
             ID = course.xpath("./content/code/text()")[0].strip()
+            if ID[0] == '6':
+                continue
             course_name = course.xpath("./content/name/text()")[0].strip()
             fields = course.xpath("./content/field")
             fall = False
