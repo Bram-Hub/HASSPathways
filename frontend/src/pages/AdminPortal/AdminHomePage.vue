@@ -5,7 +5,11 @@
             <h1>Welcome to the Admin Portal!</h1>
             <p>Here you can edit the courses and pathways on the website!</p>
             <v-divider class="my-4" />
-            <ul id="btn-cntnr">
+            <v-row
+                align="center"
+                justify="center"
+            >
+            <ul id="btn-cntnr" align="center" justify="space-around">
                 <v-btn id="admn-btn" :to="{ name: 'admin-pathway' }" class="text-decoration-none">
                     <v-icon left dark>
                         mdi-magnify
@@ -25,6 +29,7 @@
                     Add a new course to the website
                 </v-btn>
             </ul>
+            </v-row>
         </v-container>
     </div>
 </template>
@@ -49,6 +54,9 @@ export default {
 #btn-cntnr {
     padding: 0px !important;
     text-align: center;
+    /*min-width: 300px !important;*/
+    /*overflow-x: hidden !important;*/
+
 }
 #admn-btn {
     list-style: none;
@@ -61,5 +69,6 @@ export default {
     color: white;
     font-size: 15px !important;
     padding-top: 15px;
+    
 }
 </style>
