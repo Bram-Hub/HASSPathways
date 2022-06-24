@@ -82,6 +82,7 @@
             >
             <div v-if="item === 'Remaining'" id="info">
                 <h4 v-if="fourthousand">At least one course must be at the 4000 level</h4>
+                <h4 v-if="minor">Add one more course from this selection to have a minor in {{minorName}}</h4>
             </div>
                 <CourseTable
                     :ref="index"
@@ -179,6 +180,12 @@ export default {
         },
         fourthousand() {
             return this.pathway.remaining_header.indexOf("4000") !== -1
+        },
+        minor() {
+            return 'minor' in this.pathway
+        },
+        minorName() {
+            return this.minor ? this.pathway.minor : null
         }
     },
     mounted() {
