@@ -65,10 +65,26 @@ export default {
     background-color: #f73e3e;
     margin: 0px 1vw 1vw 0px;
     height: 50px;
-    max-width: 355px;
+    max-width: 900px;
     color: white;
     font-size: 15px !important;
     padding-top: 15px;
     
+}
+
+@media(max-width: 900px){
+    #admn-btn {
+        list-style: none;
+        text-align: center;
+        display: inline-block;
+        background-color: #f73e3e;
+        margin: 0px 1vw 1vw 0px;
+        height: 50px;
+        max-width: 355px;
+        color: white;
+        font-size: 15px !important;
+        padding-top: 15px;
+    
+    }
 }
 </style>
