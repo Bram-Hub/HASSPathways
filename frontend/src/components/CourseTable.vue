@@ -77,8 +77,7 @@ export default {
     },
     computed: {
         filteredCourses() {
-            // let tempCourses = JSON.parse(JSON.stringify(this.courses));
-            let tempCourses = this.courses;
+            let tempCourses = JSON.parse(JSON.stringify(this.courses));
 
             if(this.search && this.search != ''){
                 tempCourses = Object.fromEntries(Object.entries(tempCourses)
