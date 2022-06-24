@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
-         <v-btn @click="debug()">click me</v-btn>
+        <!-- <v-btn @click="debug()">click me</v-btn> -->
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
@@ -57,7 +57,7 @@
                   <h2 class="courseTitle">{{key}}</h2>
                   <!-- {{ updateCnt }} -->
                   <CourseTable
-                      ref="courseIndex"
+                      :ref="key"
                       :courses="courses[key]"
                       :pathway-id="pathwayID"
                       @checkbox-clicked="onCheckboxClicked"
@@ -65,6 +65,7 @@
                       :searchBar="false"
                       :graphView="true"
                       :descriptionOnHover="descriptionOnHover"
+                      :category="key"
                   />
                 </div>
             </div>
@@ -107,11 +108,12 @@
             >
                 <!-- {{ updateCnt }} -->
                 <CourseTable
-                    ref="courseIndex"
+                    :ref="item"
                     :courses="courses[item]"
                     :pathway-id="pathwayID"
                     @checkbox-clicked="onCheckboxClicked"
                     :show-desc="true"
+                    :category="item"
                 />
             </v-tab-item>
         </v-tabs-items>
@@ -138,7 +140,6 @@ export default {
             changeTabOnSelection: false,
             descriptionOnHover: false,
             bookmarkSelected: false,
-            courseIndex: 0,
         }
     },
     computed: {
@@ -245,14 +246,18 @@ export default {
         },
         onCheckboxClicked( data ) { // course name of checkbox will be passed through as the data variable
             if(this.changeTabOnSelection) { this.tab += 1; }
-                
-            console.log( this.$refs.courseIndex );
-            console.log(data)
-            this.$refs.courseIndex.forEach( child => {
-                child.selectDeselect( data );
-            } )
-            // if the course has been selected, go into all of the other coursetables
+
+            let children = this.$refs[data.ref]
+            // if the course has been selected, go into all of the other coursetables of the same ref
             //  and make sure that they are also checked. Otherwise, deselect them.
+
+            children.forEach ( child => {
+                child.$children
+                    .filter( c =>  c.$options._componentTag === "CourseTableCourse" && c.course.name === data.name)
+                    .map( c => c.setSelected( data.selected ))
+            })
+
+            
 
 
         },

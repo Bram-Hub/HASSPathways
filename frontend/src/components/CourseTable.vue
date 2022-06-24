@@ -45,6 +45,10 @@ export default {
     name: 'CourseTable',
     components: { CourseTableCourse },
     props: {
+        category: {
+            type: String,
+            required: true
+        },
         courses: {
             type: Object,
             required: true
@@ -134,10 +138,8 @@ export default {
             } );
         },
         update( data ) {   
-            // console.log(data)
-            console.log(`emitting ${data} to pathwaypage.vue`)
-        // data: { name: course name, selected: true/false }
-            // console.log("update inside coursetable.vue")
+            data.ref = this.category;
+            // data: { name: course name, selected: true/false, category: "One Of"/"Remaining"/... }
             this.$emit('checkbox-clicked', data);
         }
     }
