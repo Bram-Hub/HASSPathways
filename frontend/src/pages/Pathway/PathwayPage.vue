@@ -61,8 +61,8 @@
                         :courses="courses[key]"
                         :pathway-id="pathwayID"
                         :show-desc="false"
-                        :searchBar="false"
-                        :graphView="true"
+                        :search-bar="false"
+                        :graph-view="true"
                         @checkbox-clicked="onCheckboxClicked()"
                     />
                 </div>

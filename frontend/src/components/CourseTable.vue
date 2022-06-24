@@ -25,7 +25,7 @@
                 :pathway-id="pathwayId"
                 :show-desc="showDesc"
                 :description-on-hover="descriptionOnHover"
-                :graphView="graphView"
+                :graph-view="graphView"
             />
         </div>
 
