@@ -7,12 +7,12 @@
             <span class="bookmark-holder">
                 <v-tooltip v-if="bookmarkSelected" bottom>
                     <template #activator="{on, attrs}">
-                        <v-icon 
-                            class="selected" 
-                            v-bind="attrs" 
+                        <v-icon
+                            class="selected"
+                            v-bind="attrs"
                             large
-                            v-on="on" 
-                            @click="deselectBookmark()" 
+                            v-on="on"
+                            @click="deselectBookmark()"
                         >
                             mdi-bookmark
                         </v-icon>
@@ -21,17 +21,17 @@
                 </v-tooltip>
                 <v-tooltip v-else bottom>
                     <template #activator="{on, attrs}">
-                        <v-icon 
-                            class="unselected" 
-                            v-bind="attrs" 
+                        <v-icon
+                            class="unselected"
+                            v-bind="attrs"
                             large
-                            v-on="on"  
-                            @click="selectBookmark()" 
+                            v-on="on"
+                            @click="selectBookmark()"
                         >
                             mdi-bookmark-outline
                         </v-icon>
                     </template>
-                    <span>Add pathway to "My Pathways"</span>  
+                    <span>Add pathway to "My Pathways"</span>
                 </v-tooltip>
             </span>
         </div>
@@ -74,12 +74,15 @@
             </v-tab>
         </v-tabs>
 
-        <v-tabs-items v-model="tab" touchless>    
-            <v-tab-item 
+        <v-tabs-items v-model="tab" touchless>
+            <v-tab-item
                 v-for="(item, index) in classTabs"
                 :key="item"
                 :eager="true"
             >
+            <div v-if="item === 'Remaining'" id="info">
+                <h4 v-if="fourthousand">At least one course must be at the 4000 level</h4>
+            </div>
                 <CourseTable
                     :ref="index"
                     :courses="courses[item]"
@@ -110,7 +113,7 @@ export default {
         }
     },
     computed: {
-        // Returns true if the pathway is already in the 
+        // Returns true if the pathway is already in the
         //  'My Pathways' page
         bookmarked() {
             return this.$store.getters.pathwayBookmarked(this.pathwayID);
@@ -173,6 +176,9 @@ export default {
                 'One Of',
                 'Remaining'
             ].filter((_, index) => Object.values(this.priorities)[index]);
+        },
+        fourthousand() {
+            return this.pathway.remaining_header.indexOf("4000") !== -1
         }
     },
     mounted() {
@@ -188,13 +194,13 @@ export default {
             console.log(output)
             console.log(this.$store.getters.pathwayBookmarked(this.pathwayID))
         },
-        selectBookmark() { 
+        selectBookmark() {
             this.bookmarkSelected = !this.bookmarkSelected;
             // const c = { pathwayID: this.pathwayID, course: "null" };
             // this.$store.commit('addCourse', c);
             this.$store.commit('bookmarkPathway', this.pathwayID);
         },
-        deselectBookmark() { 
+        deselectBookmark() {
             // <!--// idk how to use vuex to get which classes are already selected
             // <!--//  so im just going to go through each checkbox and see if
             // <!--//   it is toggled or not
@@ -207,7 +213,7 @@ export default {
         onCheckboxClicked(){
             if(this.changeTabOnSelection)
                 this.tab += 1;
-            
+
         },
         deselectCourses() {
             let pathway = this.$store.state.pathways[this.pathwayID];
@@ -218,7 +224,7 @@ export default {
             })
             // deselect course
             for(const i in this.classTabs) {
-                this.$refs[i][0].deselectAll(); 
+                this.$refs[i][0].deselectAll();
             }
             /* <!-- ! this is sus -->
             * this WILL break with the current implementation of graph view
@@ -227,12 +233,12 @@ export default {
             *    of graph view, there will be more courseTable components which will make the
             *     array that this.$refs[tab] gives have multiple couresTable elements
             *      this should be revamped in the future to change how I deselect courses
-            * 
+            *
             * <!-- --from graph view's branch-- -->
             * this.$refs[tab] is an array of all of the courseTable components
             *  right now there are two on each page, with this.$refs[tab][0] being the component
             *   on graph view, and $this.refs[tab][1] being the component on the regular view
-            *    
+            *
             * this should be changed in the future
             */
         }
@@ -260,7 +266,7 @@ export default {
     width: 56px;
     height: 120px;
     z-index: 999;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
