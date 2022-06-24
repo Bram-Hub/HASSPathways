@@ -39,7 +39,6 @@
                 </v-tooltip>
             </div>
         </v-card-title>
-        
         <div class="courses-container">
             <div class="course-items-container">
                 <span
