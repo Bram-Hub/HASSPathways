@@ -124,17 +124,6 @@ export default {
                 if (child.setSelected) child.setSelected(0);
             });
         },
-        selectDeselect( data ) {
-            // console.log(data)
-            // go through the children looking for the course and make sure that it is selected/deselected
-            this.$children.forEach( child => {
-                if ( child.$options._componentTag === "CourseTableCourse" ) {
-                    if ( child.course.name === data.name ) {
-                        child.setSelected( data.selected )
-                    }
-                }
-            } );
-        },
         update( data ) {   
             data.ref = this.category;
             // data: { name: course name, selected: true/false, category: "One Of"/"Remaining"/... }

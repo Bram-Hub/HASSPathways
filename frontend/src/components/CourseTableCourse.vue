@@ -175,8 +175,6 @@ export default {
                     this.$store.commit('delCourse', c);
                     this.$emit('checkbox-clicked', { name: this.course.name, selected: false });
                 }
-                // this.$emit('checkbox-clicked', this.course.name);
-                // console.log(this.course)
             }
         },
         selectedClass() {
