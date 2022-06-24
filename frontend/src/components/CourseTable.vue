@@ -27,6 +27,7 @@
                 :show-desc="showDesc"
                 :descriptionOnHover="descriptionOnHover"
                 :graphView="graphView"
+                @checkbox-clicked="update"
             />
         </div>
 
@@ -120,6 +121,24 @@ export default {
             this.$children.forEach(child => {
                 if (child.setSelected) child.setSelected(0);
             });
+        },
+        selectDeselect( data ) {
+            // console.log(data)
+            // go through the children looking for the course and make sure that it is selected/deselected
+            this.$children.forEach( child => {
+                if ( child.$options._componentTag === "CourseTableCourse" ) {
+                    if ( child.course.name === data.name ) {
+                        child.setSelected( data.selected )
+                    }
+                }
+            } );
+        },
+        update( data ) {   
+            // console.log(data)
+            console.log(`emitting ${data} to pathwaypage.vue`)
+        // data: { name: course name, selected: true/false }
+            // console.log("update inside coursetable.vue")
+            this.$emit('checkbox-clicked', data);
         }
     }
 }

@@ -169,11 +169,14 @@ export default {
                 // Save selection
                 const c = { pathwayID: this.pathwayId, course: this.course.name };
                 if (this.selected){
-                    this.$store.commit('addCourse', c);                   
-                    this.$emit('checkbox-clicked')
+                    this.$store.commit('addCourse', c);            
+                    this.$emit('checkbox-clicked', { name: this.course.name, selected: true } );
                 } else {
                     this.$store.commit('delCourse', c);
+                    this.$emit('checkbox-clicked', { name: this.course.name, selected: false } );
                 }
+                // this.$emit('checkbox-clicked', this.course.name);
+                // console.log(this.course)
             }
         },
         selectedClass() {

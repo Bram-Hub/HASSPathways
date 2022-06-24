@@ -55,11 +55,12 @@
                 </div>
                 <div v-for="key in classTabs" :key="key" class="tab">
                   <h2 class="courseTitle">{{key}}</h2>
+                  <!-- {{ updateCnt }} -->
                   <CourseTable
-                      :ref="key"
+                      ref="courseIndex"
                       :courses="courses[key]"
                       :pathway-id="pathwayID"
-                      @checkbox-clicked="onCheckboxClicked()"
+                      @checkbox-clicked="onCheckboxClicked"
                       :show-desc="false"
                       :searchBar="false"
                       :graphView="true"
@@ -104,11 +105,12 @@
                 :key="item"
                 :eager="true"
             >
+                <!-- {{ updateCnt }} -->
                 <CourseTable
-                    :ref="index"
+                    ref="courseIndex"
                     :courses="courses[item]"
                     :pathway-id="pathwayID"
-                    @checkbox-clicked="onCheckboxClicked()"
+                    @checkbox-clicked="onCheckboxClicked"
                     :show-desc="true"
                 />
             </v-tab-item>
@@ -136,9 +138,14 @@ export default {
             changeTabOnSelection: false,
             descriptionOnHover: false,
             bookmarkSelected: false,
+            courseIndex: 0,
         }
     },
     computed: {
+        // test() {
+        //     this.courseIndex++;
+        //     return this.courseIndex;
+        // },
         // Returns true if the pathway is already in the 
         //  'My Pathways' page
         bookmarked() {
@@ -224,45 +231,30 @@ export default {
                     }
                     let key_j = Object.keys( lengths )[j];
                     console.log(`Ratio for ${key_i}:${key_j}: ${Math.floor(lengthsArr[i]/lengthsArr[j])}`)
-                    
-                    // if ( lengthsArr[i] / lengthsArr[j] >= 2 ) {
-                    //     let key_j = Object.keys( lengths )[j];
-                    //     // console.log( `${key_i}\t${key_j}`)
-                    //     console.log(`the category ${key_i} has over 2x the courses as ${key_j}`)
-                    //     console.log(``)
-                    //     // console.log( lengthsArr[i] )
-                    //     // console.log( lengthsArr[j] )
-                    // }
                 }
             }
-            // let lengths = this.classTabs.map( category => Object.keys( this.courses[category]).length )
-            
-
             console.log(lengths)
-            // this.classTabs.forEach( category => {
-            //     console.log( category + ":");
-            //     // console.log( this.courses[category] )
-            //     console.log( Object.keys( this.courses[category] ).length );
-            // });
         },
         selectBookmark() { 
             this.bookmarkSelected = !this.bookmarkSelected;
             this.$store.commit('bookmarkPathway', this.pathwayID);
         },
         deselectBookmark() { 
-            // <!--// idk how to use vuex to get which classes are already selected
-            // <!--//  so im just going to go through each checkbox and see if
-            // <!--//   it is toggled or not
-            // nvm i figured it out
-
             this.$store.commit('unBookmarkPathway', this.pathwayID);
             this.bookmarkSelected = !this.bookmarkSelected;
-
         },
-        onCheckboxClicked(){
-            if(this.changeTabOnSelection)
-                this.tab += 1;
-            
+        onCheckboxClicked( data ) { // course name of checkbox will be passed through as the data variable
+            if(this.changeTabOnSelection) { this.tab += 1; }
+                
+            console.log( this.$refs.courseIndex );
+            console.log(data)
+            this.$refs.courseIndex.forEach( child => {
+                child.selectDeselect( data );
+            } )
+            // if the course has been selected, go into all of the other coursetables
+            //  and make sure that they are also checked. Otherwise, deselect them.
+
+
         },
         deselectCourses() {
             let pathway = this.$store.state.pathways[this.pathwayID];
@@ -289,8 +281,7 @@ export default {
         toggleGraph() {
             // console.log(this.courses);
             this.showGraph = !this.showGraph;
-
-        }
+        },
     }
 }
 </script>
