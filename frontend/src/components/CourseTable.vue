@@ -17,16 +17,15 @@
                 style="width: 400px; max-width: 100%"
             />
         </v-card>
-        <!-- <div :class="{graphContent : graphView}"> -->
-        <div :class="{graphContainer: graphView}">
+        <div :class="{graphContainer: graph}">
             <CourseTableCourse
                 v-for="item in filteredCourses"
                 :key="item.name"
                 :course="item"
                 :pathway-id="pathwayId"
-                :show-desc="showDesc"
-                :descriptionOnHover="descriptionOnHover"
-                :graphView="graphView"
+                :desc="desc"
+                :hover="hover"
+                :graph="graph"
                 @checkbox-clicked="update"
             />
         </div>
@@ -58,12 +57,12 @@ export default {
             required: false,
             default: null
         },
-        showDesc: {
+        desc: {
             type: Boolean,
             required: false,
             default: true,
         },
-        descriptionOnHover: {
+        hover: {
             type: Boolean,
             required: false,
             default: false,
@@ -73,7 +72,7 @@ export default {
             required: false,
             default: true,
         },
-        graphView: {
+        graph: {
             type: Boolean,
             required: false,
         }

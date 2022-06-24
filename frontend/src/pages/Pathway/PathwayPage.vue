@@ -7,32 +7,28 @@
 
             <span class="bookmark-holder">
                 <v-tooltip v-if="bookmarkSelected" bottom>
-                    <template #activator="{on, attrs}">
-                        <v-icon 
-                            class="selected" 
-                            v-bind="attrs" 
+                    <template #activator="{ on, attrs }">
+                        <v-icon
+                            class="selected"
+                            v-bind="attrs"
                             large
-                            v-on="on" 
-                            @click="deselectBookmark()" 
-                        >
-                            mdi-bookmark
-                        </v-icon>
+                            v-on="on"
+                            @click="deselectBookmark()"
+                        >mdi-bookmark</v-icon>
                     </template>
                     <span>Remove pathway from "My Pathways"</span>
                 </v-tooltip>
                 <v-tooltip v-else bottom>
-                    <template #activator="{on, attrs}">
-                        <v-icon 
-                            class="unselected" 
-                            v-bind="attrs" 
+                    <template #activator="{ on, attrs }">
+                        <v-icon
+                            class="unselected"
+                            v-bind="attrs"
                             large
-                            v-on="on"  
-                            @click="selectBookmark()" 
-                        >
-                            mdi-bookmark-outline
-                        </v-icon>
+                            v-on="on"
+                            @click="selectBookmark()"
+                        >mdi-bookmark-outline</v-icon>
                     </template>
-                    <span>Add pathway to "My Pathways"</span>  
+                    <span>Add pathway to "My Pathways"</span>
                 </v-tooltip>
             </span>
         </div>
@@ -44,45 +40,61 @@
             <div id="graphView">
                 <div class="graph-fab-container">
                     <v-btn
-                        color="grey" elevation="2" fab
+                        color="grey"
+                        elevation="2"
+                        fab
                         aria-label="Show class description on hover"
-                        @click="descriptionOnHover = !descriptionOnHover;"
+                        @click="hover = !hover"
                     >
                         <v-icon>
-                            {{ !descriptionOnHover ? 'mdi-comment-text-outline' : 'mdi-comment-text' }}
+                            {{
+                                !hover
+                                    ? 'mdi-comment-text-outline'
+                                    : 'mdi-comment-text'
+                            }}
                         </v-icon>
                     </v-btn>
                 </div>
                 <div v-for="key in classTabs" :key="key" class="tab">
-                  <h2 class="courseTitle">{{key}}</h2>
-                  <CourseTable
-                      :ref="key"
-                      :courses="courses[key]"
-                      :pathway-id="pathwayID"
-                      @checkbox-clicked="onCheckboxClicked"
-                      :show-desc="false"
-                      :searchBar="false"
-                      :graphView="true"
-                      :descriptionOnHover="descriptionOnHover"
-                      :category="key"
-                  />
+                    <h2 class="courseTitle">
+                        {{ key }}
+                    </h2>
+                    <CourseTable
+                        :ref="key"
+                        :courses="courses[key]"
+                        :pathway-id="pathwayID"
+                        :desc="false"
+                        :searchBar="false"
+                        :graph="true"
+                        :hover="hover"
+                        :category="key"
+                        @checkbox-clicked="onCheckboxClicked"
+                    />
                 </div>
             </div>
         </v-container>
         <v-container v-show="!showGraph">
             <div class="fab-container">
                 <v-btn
-                    color="light grey" elevation="2" fab
+                    color="light grey"
+                    elevation="2"
+                    fab
                     aria-label="Switch to nex tab on class selection"
-                    @click="changeTabOnSelection = !changeTabOnSelection;"
+                    @click="changeTabOnSelection = !changeTabOnSelection"
                 >
                     <v-icon>
-                        {{ changeTabOnSelection ? 'mdi-rotate-right-variant' : 'mdi-checkbox-blank-circle-outline' }}
+                        {{
+                            changeTabOnSelection
+                                ? 'mdi-rotate-right-variant'
+                                : 'mdi-checkbox-blank-circle-outline'
+                        }}
                     </v-icon>
                 </v-btn>
 
                 <v-btn
-                    color="red" elevation="2" fab
+                    color="red"
+                    elevation="2"
+                    fab
                     aria-label="Clear courses"
                     @click="deselectCourses()"
                 >
@@ -99,22 +111,18 @@
                 </v-tab>
             </v-tabs>
 
-        <v-tabs-items v-model="tab" touchless>    
-            <v-tab-item 
-                v-for="(item, index) in classTabs"
-                :key="item"
-                :eager="true"
-            >
-                <CourseTable
-                    :ref="item"
-                    :courses="courses[item]"
-                    :pathway-id="pathwayID"
-                    @checkbox-clicked="onCheckboxClicked"
-                    :show-desc="true"
-                    :category="item"
-                />
-            </v-tab-item>
-        </v-tabs-items>
+            <v-tabs-items v-model="tab" touchless>
+                <v-tab-item v-for="item in classTabs" :key="item" :eager="true">
+                    <CourseTable
+                        :ref="item"
+                        :courses="courses[item]"
+                        :pathway-id="pathwayID"
+                        :show-desc="true"
+                        :category="item"
+                        @checkbox-clicked="onCheckboxClicked"
+                    />
+                </v-tab-item>
+            </v-tabs-items>
         </v-container>
     </v-container>
 </template>
@@ -128,7 +136,8 @@ import breadcrumbs from '../../data/breadcrumbs.js'
 
 export default {
     components: {
-        CourseTable, Breadcrumbs
+        CourseTable,
+        Breadcrumbs,
     },
     data() {
         return {
@@ -136,7 +145,7 @@ export default {
             category: '',
             showGraph: false,
             changeTabOnSelection: false,
-            descriptionOnHover: false,
+            hover: false,
             bookmarkSelected: false,
         }
     },
@@ -145,152 +154,160 @@ export default {
         //     this.courseIndex++;
         //     return this.courseIndex;
         // },
-        // Returns true if the pathway is already in the 
+        // Returns true if the pathway is already in the
         //  'My Pathways' page
         bookmarked() {
-            return this.$store.getters.pathwayBookmarked(this.pathwayID);
+            return this.$store.getters.pathwayBookmarked(this.pathwayID)
         },
         // Get id of the pathway, ie 'chinese_language'
         pathwayID() {
             // Should always be valid, see router/index.js
-            let pathwayID = this.$route.query.pathway;
-            return pathwayID;
+            let pathwayID = this.$route.query.pathway
+            return pathwayID
         },
         // Get actual pathway object
         pathway() {
-            return pathways[this.pathwayID];
+            return pathways[this.pathwayID]
         },
         // Name of category to display, ie 'Major Restricted'
         categoryName() {
             for (let category of pathwayCategories)
-                if (category.pathways.includes(this.pathwayID))
-                    return category.name;
-            return '';
+                if (category.pathways.includes(this.pathwayID)) return category.name
+            return ''
         },
         // Outputs an object containing the
         // different priorities for the pathway
         priorities() {
-            let pathway = this.pathway;
-            let out = {};
-            out["Required"] = pathway.required ? pathway.required : null;
-            out["One Of"] = pathway.one_of ? pathway.one_of : null;
-            out["Remaining"] = pathway.remaining ? pathway.remaining : null;
-            return out;
+            let pathway = this.pathway
+            let out = {}
+            out['Required'] = pathway.required ? pathway.required : null
+            out['One Of'] = pathway.one_of ? pathway.one_of : null
+            out['Remaining'] = pathway.remaining ? pathway.remaining : null
+            return out
         },
         // Converts the courses into an actual array of objects for
         // priorities while they contain actual course objects
         courses() {
-            let curr = this.priorities;
+            let curr = this.priorities
 
             // Search through all prios
-            for(const prio in curr) {
+            for (const prio in curr) {
                 // Search through each course in the pathway
-                for(const course_name in curr[prio]) {
-                    const course = courses[course_name];
-                    curr[prio][course_name] = course ? course : null;
+                for (const course_name in curr[prio]) {
+                    const course = courses[course_name]
+                    curr[prio][course_name] = course ? course : null
                 }
             }
-            return curr;
+            return curr
         },
         // Get breadcrumb data
         breadcrumbs() {
-            return breadcrumbs.pathway_template.map(x => x || {
-                text: this.categoryName ?
-                    `${this.pathway.name} (${this.categoryName})` :
-                    this.pathway.name,
-                href: '/pathway?pathway=' + encodeURIComponent(this.pathwayID)
-            });
+            return breadcrumbs.pathway_template.map(
+                (x) =>
+                    x || {
+                        text: this.categoryName
+                            ? `${this.pathway.name} (${this.categoryName})`
+                            : this.pathway.name,
+                        href: '/pathway?pathway=' + encodeURIComponent(this.pathwayID),
+                    }
+            )
         },
         classTabs() {
             // Enable only non-empty tabs
-            return [
-                'Required',
-                'One Of',
-                'Remaining'
-            ].filter((_, index) => Object.values(this.priorities)[index]);
-        }
+            return ['Required', 'One Of', 'Remaining'].filter(
+                (_, index) => Object.values(this.priorities)[index]
+            )
+        },
     },
     mounted() {
-        this.bookmarkSelected = this.bookmarked;
+        this.bookmarkSelected = this.bookmarked
     },
-    methods : {
+    methods: {
         debug() {
-            // console.log(this.descriptionOnHover)
-            console.log("calculating how wide each section should be")
-            let lengths = {};
-            let lengthsArr = this.classTabs.map( category => Object.keys( this.courses[category]).length );
-            this.classTabs.forEach( category => {
-                lengths[category] = Object.keys( this.courses[category] ).length;
+            // console.log(this.hover)
+            console.log('calculating how wide each section should be')
+            let lengths = {}
+            let lengthsArr = this.classTabs.map(
+                (category) => Object.keys(this.courses[category]).length
+            )
+            this.classTabs.forEach((category) => {
+                lengths[category] = Object.keys(this.courses[category]).length
             })
-            for ( let i = 0 ; i < lengthsArr.length ; i++ ) {
-                let key_i = Object.keys( lengths )[i];
-                for ( let j = 0 ; j < lengthsArr.length ; j++ ) {
-                    if ( i == j ) {
-                        continue;
+            for (let i = 0; i < lengthsArr.length; i++) {
+                let key_i = Object.keys(lengths)[i]
+                for (let j = 0; j < lengthsArr.length; j++) {
+                    if (i == j) {
+                        continue
                     }
-                    let key_j = Object.keys( lengths )[j];
-                    console.log(`Ratio for ${key_i}:${key_j}: ${Math.floor(lengthsArr[i]/lengthsArr[j])}`)
+                    let key_j = Object.keys(lengths)[j]
+                    console.log(
+                        `Ratio for ${key_i}:${key_j}: ${Math.floor(
+                            lengthsArr[i] / lengthsArr[j]
+                        )}`
+                    )
                 }
             }
             console.log(lengths)
         },
-        selectBookmark() { 
-            this.bookmarkSelected = !this.bookmarkSelected;
-            this.$store.commit('bookmarkPathway', this.pathwayID);
+        selectBookmark() {
+            this.bookmarkSelected = !this.bookmarkSelected
+            this.$store.commit('bookmarkPathway', this.pathwayID)
         },
-        deselectBookmark() { 
-            this.$store.commit('unBookmarkPathway', this.pathwayID);
-            this.bookmarkSelected = !this.bookmarkSelected;
+        deselectBookmark() {
+            this.$store.commit('unBookmarkPathway', this.pathwayID)
+            this.bookmarkSelected = !this.bookmarkSelected
         },
-        onCheckboxClicked( data ) { // course name of checkbox will be passed through as the data variable
-            if(this.changeTabOnSelection) { this.tab += 1; }
+        onCheckboxClicked(data) {
+            // course name of checkbox will be passed through as the data variable
+            if (this.changeTabOnSelection) {
+                this.tab += 1
+            }
 
             let children = this.$refs[data.ref]
             // if the course has been selected, go into all of the other coursetables of the same ref
             //  and make sure that they are also checked. Otherwise, deselect them.
 
-            children.forEach ( child => {
+            children.forEach((child) => {
                 child.$children
-                    .filter( c =>  c.$options._componentTag === "CourseTableCourse" && c.course.name === data.name)
-                    .map( c => c.setSelected( data.selected ))
+                    .filter(
+                        (c) =>
+                            c.$options._componentTag === 'CourseTableCourse' &&
+                            c.course.name === data.name
+                    )
+                    .map((c) => c.setSelected(data.selected))
             })
-
-            
-
-
         },
         deselectCourses() {
-            let pathway = this.$store.state.pathways[this.pathwayID];
-            pathway.courses.forEach(course => {
-                const c = { pathwayID: this.pathwayID, course: course };
+            let pathway = this.$store.state.pathways[this.pathwayID]
+            pathway.courses.forEach((course) => {
+                const c = { pathwayID: this.pathwayID, course: course }
                 // delete course
-                this.$store.commit('delCourse', c);
+                this.$store.commit('delCourse', c)
             })
             // deselect course
-            for(const i in this.classTabs) {
-                this.$refs[i][0].deselectAll(); 
+            for (const i in this.classTabs) {
+                this.$refs[i][0].deselectAll()
             }
             /* <!-- ! this is sus -->
-            * this WILL break with the current implementation of graph view
-            *  because this.$refs[tab] gives me an array of all of the courseTable components
-            *   on the DOM. Right now, there is only one, but with the current implementation
-            *    of graph view, there will be more courseTable components which will make the
-            *     array that this.$refs[tab] gives have multiple couresTable elements
-            *      this should be revamped in the future to change how I deselect courses
-            * 
-            * this should be changed in the future
-            */
+             * this WILL break with the current implementation of graph view
+             *  because this.$refs[tab] gives me an array of all of the courseTable components
+             *   on the DOM. Right now, there is only one, but with the current implementation
+             *    of graph view, there will be more courseTable components which will make the
+             *     array that this.$refs[tab] gives have multiple couresTable elements
+             *      this should be revamped in the future to change how I deselect courses
+             *
+             * this should be changed in the future
+             */
         },
         toggleGraph() {
             // console.log(this.courses);
-            this.showGraph = !this.showGraph;
+            this.showGraph = !this.showGraph
         },
-    }
+    },
 }
 </script>
 
 <style scoped>
-
 #graphView {
     /* border: 1px solid fuchsia; */
     display: flex;
@@ -298,7 +315,7 @@ export default {
     justify-content: normal;
     flex-direction: row;
 }
-#graphView>.tab {
+#graphView > .tab {
     flex: 1 1 160px;
     margin: 0 2%;
     /* border: 1px red solid; */
@@ -337,7 +354,7 @@ export default {
     justify-content: space-between;
 }
 
-.header h1{
+.header h1 {
     display: inline-block;
 }
 .bookmark-holder {
