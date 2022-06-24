@@ -12,7 +12,9 @@
                     You can add pathways here.
                 </router-link>
             </p>
-            <v-btn @click="bookmarkedOnly = !bookmarkedOnly">Toggle bookmarked pathways</v-btn>
+            <v-btn @click="bookmarkedOnly = !bookmarkedOnly">
+                Toggle bookmarked pathways
+            </v-btn>
 
             <v-divider class="my-4" />
 
@@ -25,7 +27,6 @@
                 :pathway-category="item.name"
                 @update="update()"
             />
-
         </v-container>
     </div>
 </template>

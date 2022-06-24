@@ -38,6 +38,17 @@
                 <v-btn
                     pathway-btn
                     large
+                    color="primary"
+                    :to="{ name: 'about' }"
+                >
+                    <v-icon left dark>
+                        mdi-help-circle-outline
+                    </v-icon>
+                    Learn about Pathways
+                </v-btn>
+                <v-btn
+                    pathway-btn
+                    large
                     :to="{ name: 'admin-portal' }"
                 >
                     <v-icon left dark>
@@ -68,7 +79,10 @@ export default {
 
 <style scoped>
 .pathway-btn {
-    /* min-width: 330px !important; */
-    overflow-x: hidden !important;
+    width: 40%;
+    min-width: 330px !important;
+    max-width: 92vw !important;
+    overflow-x: hidden;
+    margin-bottom: 5px;
  }
 </style>

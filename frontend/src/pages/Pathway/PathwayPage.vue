@@ -41,7 +41,7 @@
             click me to toggle graph view
         </v-btn>
         <v-container v-show="showGraph">
-          <div id="graphView">
+            <div id="graphView">
                 <div class="graph-fab-container">
                     <v-btn
                         color="grey" elevation="2" fab
@@ -55,7 +55,6 @@
                 </div>
                 <div v-for="key in classTabs" :key="key" class="tab">
                   <h2 class="courseTitle">{{key}}</h2>
-                  <!-- {{ updateCnt }} -->
                   <CourseTable
                       :ref="key"
                       :courses="courses[key]"
@@ -106,7 +105,6 @@
                 :key="item"
                 :eager="true"
             >
-                <!-- {{ updateCnt }} -->
                 <CourseTable
                     :ref="item"
                     :courses="courses[item]"
