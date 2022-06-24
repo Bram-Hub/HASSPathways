@@ -209,7 +209,41 @@ export default {
     },
     methods : {
         debug() {
-            console.log(this.descriptionOnHover)
+            // console.log(this.descriptionOnHover)
+            console.log("calculating how wide each section should be")
+            let lengths = {};
+            let lengthsArr = this.classTabs.map( category => Object.keys( this.courses[category]).length );
+            this.classTabs.forEach( category => {
+                lengths[category] = Object.keys( this.courses[category] ).length;
+            })
+            for ( let i = 0 ; i < lengthsArr.length ; i++ ) {
+                let key_i = Object.keys( lengths )[i];
+                for ( let j = 0 ; j < lengthsArr.length ; j++ ) {
+                    if ( i == j ) {
+                        continue;
+                    }
+                    let key_j = Object.keys( lengths )[j];
+                    console.log(`Ratio for ${key_i}:${key_j}: ${Math.floor(lengthsArr[i]/lengthsArr[j])}`)
+                    
+                    // if ( lengthsArr[i] / lengthsArr[j] >= 2 ) {
+                    //     let key_j = Object.keys( lengths )[j];
+                    //     // console.log( `${key_i}\t${key_j}`)
+                    //     console.log(`the category ${key_i} has over 2x the courses as ${key_j}`)
+                    //     console.log(``)
+                    //     // console.log( lengthsArr[i] )
+                    //     // console.log( lengthsArr[j] )
+                    // }
+                }
+            }
+            // let lengths = this.classTabs.map( category => Object.keys( this.courses[category]).length )
+            
+
+            console.log(lengths)
+            // this.classTabs.forEach( category => {
+            //     console.log( category + ":");
+            //     // console.log( this.courses[category] )
+            //     console.log( Object.keys( this.courses[category] ).length );
+            // });
         },
         selectBookmark() { 
             this.bookmarkSelected = !this.bookmarkSelected;
