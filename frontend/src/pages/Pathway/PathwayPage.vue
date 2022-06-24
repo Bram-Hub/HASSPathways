@@ -81,8 +81,8 @@
                 :eager="true"
             >
             <div v-if="item === 'Remaining'" id="info">
-                <h4 v-if="fourthousand">At least one course must be at the 4000 level</h4>
-                <h4 v-if="minor">Add one more course from this selection to have a minor in {{minorName}}</h4>
+                <p v-if="fourThousand">At least one course must be at the 4000 level</p>
+                <p v-if="minor">Add one more course from this selection to have a minor in {{minorName}}</p>
             </div>
                 <CourseTable
                     :ref="index"
@@ -178,14 +178,21 @@ export default {
                 'Remaining'
             ].filter((_, index) => Object.values(this.priorities)[index]);
         },
-        fourthousand() {
+        fourThousand() {
             return this.pathway.remaining_header.indexOf("4000") !== -1
         },
         minor() {
             return 'minor' in this.pathway
         },
         minorName() {
-            return this.minor ? this.pathway.minor : null
+            if (!this.minor) return null
+            let all = ""
+            let fullarr = this.pathway.minor
+            for (let el of fullarr) {
+                let ind = el.toLowerCase().indexOf("minor") //get rid of redundant "minor" in json name
+                all = all.concat(ind == -1 ? el : el.substring(0,ind)).concat(" or ")
+            }
+            return all.substring(0,all.length-4) //get rid of final " or "
         }
     },
     mounted() {
@@ -277,6 +284,10 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+#info {
+    padding-top: 20px;
+    text-align: center;
 }
 
 @media only screen and (min-width: 600px) {
