@@ -151,63 +151,6 @@
     },
     "subj": "PSYC"
   },
-  "Advanced Behavioral Statistics": {
-    "ID": "6570",
-    "description": "An accelerated course covering important behavioral statistical concepts including probability, sampling distributions, hypothesis resting, ANOVA, and multiple regression. Course requires usage of statistical software package and is taught using the general linear model framework.",
-    "name": "Advanced Behavioral Statistics",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COGS"
-  },
-  "Advanced Computer Music Composition and Performance": {
-    "ID": "6160",
-    "description": "This course assumes knowledge and experience in computer music applications and performance. It is directed to undergraduate students as an upper-level seminar guiding their progress through the composition of a significant musical work. The class is divided between a group seminar, focusing on aesthetic, theoretical, and technical issues, and a workshop/lab in performance, computer applications, and composition.",
-    "name": "Advanced Computer Music Composition and Performance",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ARTS"
-  },
-  "Advanced Cost-Benefit Analysis": {
-    "ID": "6210",
-    "description": "The techniques necessary to appraise the economic desirability and private-sector impact of various public projects and policies are studied. Concepts such as discounting, capital rationing, project selection, shadow pricing, risk assessment, unpriced goods, and economic surplus are developed. Among the topics from which illustrative case studies are drawn are urban and transport planning, energy, water resources, government regulation, and the environment. Suitable for graduate students in professional programs.",
-    "name": "Advanced Cost-Benefit Analysis",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "fall and spring terms annually"
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
   "Advanced Data Analytics & Policy Evaluation": {
     "ID": "4590",
     "description": "Covers advanced estimation and inference techniques for data analysis and policy evaluation. Topics will vary from year to year to introduce advanced statistical methods used in recent literature. Topics may include visualization techniques to summarize and display high dimensional data, selected topics in discrete choice models, spatial analysis, and analysis of panel data. Particularly, methods for panel data will be emphasized. This includes fixed, random, mixed, and multi-level effects models to control for or account for variation from individual characteristics. Dynamic panel data models consider lagged dependent variables as regressors.",
@@ -219,25 +162,6 @@
       "spring": true,
       "summer": false,
       "text": "spring term annually"
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Advanced Data Analytics and Policy Evaluation": {
-    "ID": "6040",
-    "description": "Covers advanced estimation and inference techniques for data analysis and policy evaluation. Topics will vary from year to year to introduce advanced statistical methods used in recent literature. Topics may include visualization techniques to summarize and display high dimensional data, selected topics in discrete choice models, spatial analysis, and analysis of panel data. Particularly, methods for panel data will be emphasized. This includes fixed, random, mixed, and multi-level effects models to control for or account for variation from individual characteristics. Dynamic panel data models consider lagged dependent variables as regressors.....",
-    "name": "Advanced Data Analytics and Policy Evaluation",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
     },
     "properties": {
       "CI": false,
@@ -266,7 +190,7 @@
     "subj": "ARTS"
   },
   "Advanced Digital Imaging": {
-    "ID": "6860",
+    "ID": "4860",
     "description": "This upper level studio and seminar explores individual visual arts projects contributing to thesis or dissertation development. Topics in creative personal expression in imaging, installation, digital/traditional mixed media and emerging genres will be studied drawing from issues raised in class projects. Advanced studies may include high resolution digital photography, montage, archival printing, gesture drawing, painting, assemblage, processing, stencil art, projection, and evolving genres which lead to an independent final project and web portfolio.",
     "name": "Advanced Digital Imaging",
     "offered": {
@@ -285,8 +209,8 @@
     "subj": "ARTS"
   },
   "Advanced Drawing": {
-    "ID": "6200",
-    "description": "ARTS 6200 focuses on advanced problem solving through a series of challenging observational drawing projects. Emphasis is placed on developing a sophisticated and convincing use of drawing language to approach traditional subject matter. As students gain greater fluency, they also gain a greater critical awareness and understanding of the artistic decision-making process.",
+    "ID": "4200",
+    "description": "Advanced Drawing is designed to help students who have mastered basic drawing skills to enhance those skills and utilize them to explore visual ideas. Emphasis is placed on individual development of skills and subject matter to help students express themselves visually. Examples and studies are used from master drawings of the past to learn about the history of art and to stimulate ideas for the students' own work.",
     "name": "Advanced Drawing",
     "offered": {
       "even": false,
@@ -303,198 +227,8 @@
     },
     "subj": "ARTS"
   },
-  "Advanced Economics of Government Regulation and Firm Strategy": {
-    "ID": "6150",
-    "description": "Can government intervention improve the performance of private markets and if so, when and how? How is regulatory policy actually made, and what effects has it had? These questions are applied to the experience in the U.S. and elsewhere with telecommunications, electricity, transportation, financial services, job safety, health, and environmental regulation.",
-    "name": "Advanced Economics of Government Regulation and Firm Strategy",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "upon availability of instructor."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Advanced Game Design/User-Experience Methods": {
-    "ID": "6500",
-    "description": "Advanced Game Design/User-Experience Methods is a blended theory and production studio course where students apply critical theory towards the design of games. The course provides students with the opportunity to design and develop their own game concepts, and also gives students foundational design principles ranging from user experience design, human-computer interaction, co- design, and product testing. The goal of the course is for students to acquire critical design and evaluation skills for the understanding and creating digital artifacts that will remain valid over a long period of technological innovation, equipping them to design for the post-VR landscape and beyond.",
-    "name": "Advanced Game Design/User-Experience Methods",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually"
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "GSAS"
-  },
-  "Advanced International Economics and Globalization": {
-    "ID": "6190",
-    "description": "This course investigates the significance of economic globalization, covering the following topics: international trade and financial flows, technological innovation and intellectual property, technology transfer, national governments and transnational corporations, natural resources, health and the environment, impacts on selected industries and countries, and roles of the World Trade Organization and International Monetary Fund. The major controversies surrounding globalization are identified, and alternative arguments are evaluated based on available evidence.",
-    "name": "Advanced International Economics and Globalization",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "upon availability of instructor."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Advanced Macroeconomic Analysis": {
-    "ID": "6590",
-    "description": "This course examines theory of national income determination, the role of monetary and nonmonetary factors in this economic system as described by various schools of macroeconomics. Alternative perspectives on monetary and fiscal policies are critically examined.",
-    "name": "Advanced Macroeconomic Analysis",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Advanced Manufacturing Processes and Systems": {
-    "ID": "6120",
-    "description": "Advanced Manufacturing Processes and Systems (AMP) is a project-based lecture/laboratory course that teaches graduate engineering students how to develop new manufacturing processes and systems.",
-    "name": "Advanced Manufacturing Processes and Systems",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
-  },
-  "Advanced Mathematical Methods in Economics": {
-    "ID": "6120",
-    "description": "Mathematical techniques applied to theoretical models in economics. Reviews and introduces core mathematical topics at the graduate economics level, applied to topics such as optimal behaviors of economics agents, equilibria among multiple interacting agents, economics growth processes and inter-temporal decision making, decision making in stochastic environments, and techniques to develop and work with economic models. Assumes thorough knowledge of calculus and some familiarity with linear algebra and probability theory.",
-    "name": "Advanced Mathematical Methods in Economics",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Advanced Natural Resource Economics": {
-    "ID": "6240",
-    "description": "Addresses the allocation of natural resources through applied study of fisheries, forestry, oil, minerals, water, and biodiversity resources. Mathematical analysis will be done using Microsoft Excel with Solver. Social and policy dynamics of allocation decisions will be explored through case studies. Field trips will address ecological and physical aspects of resource management. The intent is to develop a balanced perspective and tools to address resource management decisions across their diverse economic, social, and environmental dimensions.",
-    "name": "Advanced Natural Resource Economics",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "upon availability of instructor."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Advanced Public Finance": {
-    "ID": "6160",
-    "description": "Emphasis is placed on the analysis of efficient resource use in the public sector at the federal level. Expenditure theory and tax incidence are discussed. The effects of personal income, corporation, sales, payroll, and property taxes on resource allocation, equity, growth, and technological change are considered.",
-    "name": "Advanced Public Finance",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "upon availability of instructor."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Advanced Research Methods": {
-    "ID": "6120",
-    "description": "This course provides a foundation for professional-level research in science and technology studies. Through group research exercises, students explore the intersection between research issues (ethics, reliability, validity, quantification) and types of observation.",
-    "name": "Advanced Research Methods",
-    "offered": {
-      "even": true,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term even-numbered years."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
-  },
-  "Advanced Structure of Industry": {
-    "ID": "6140",
-    "description": "An advanced analysis of current problems confronting major American industries, regulated and unregulated. Recent changes in growth patterns, market structures, and pricing policies are examined. Considerable emphasis is placed on emerging trends in technology and public policy, which are likely to affect significantly the future of these industries.",
-    "name": "Advanced Structure of Industry",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "upon availability of instructor."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
   "Advanced Topics in Linguistics": {
-    "ID": "6780",
+    "ID": "4780",
     "description": "This course will serve as a seminar for advanced students of linguistics. The material to be covered will be selected collaboratively by the instructor and each cohort of students. Students, who ideally will have taken at least two linguistics-oriented courses previously, will be guided in pursuing topics that they have found particularly compelling in previous courses.",
     "name": "Advanced Topics in Linguistics",
     "offered": {
@@ -627,8 +361,8 @@
     "subj": "ARTS"
   },
   "Applied Game Theory": {
-    "ID": "6220",
-    "description": "Game theory has been emerging as a branch of mathematical economics and applied to analyze situations where each decision-maker needs to think strategically about others' perspectives and actions in order to determine ones' own optimal choice. This course provides an introduction and presents selected topics in game theory. Students will look into basic definitions and equilibrium concepts and develop a wide range of applications in Economics, Biology, sports, health care, and various fields. The goal of the lecture is to improve understanding of strategic interaction in economic, business, and social situations.",
+    "ID": "4220",
+    "description": "Game theory has been emerging as a branch of mathematical economics and applied to analyze situations where each decision-maker needs to think strategically about others' perspectives and actions in order to determine ones' own optimal choice. This course provides an introduction and presents selected topics in game theory. It will look into basic definitions and equilibrium concepts and develop a wide range of applications in Economics, Biology, sports, health care, and various fields. The goal of the lecture is to improve understanding of strategic interaction in economic, business, and social situations.",
     "name": "Applied Game Theory",
     "offered": {
       "even": false,
@@ -646,7 +380,7 @@
     "subj": "ECON"
   },
   "Applied Microeconomics": {
-    "ID": "6010",
+    "ID": "4010",
     "description": "Core topics of microeconomic theory are covered: consumer demand, firm production, decisions under uncertainty, game theory, markets for goods with perfect and imperfect competition, and market failures. Microeconomic theory is applied to real cases. Examples include product pricing, technological innovation, firm growth, consumer and producer welfare, social welfare impacts of government policy, monopoly and oligopoly, and resource allocation.",
     "name": "Applied Microeconomics",
     "offered": {
@@ -655,7 +389,7 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": "fall and spring terms annually"
     },
     "properties": {
       "CI": false,
@@ -703,8 +437,8 @@
     "subj": "ARTS"
   },
   "Art and Code and Interactivity": {
-    "ID": "6090",
-    "description": "This course is primarily concerned with learning how to build any interactive experience or artwork from concept to completion. It will introduce open-source, cross-platform programming libraries and tools used by artists and programmers to create interactive experiences and artworks for museum installations, festivals, VJ-ing, projection mapping, interactive experiences/artworks, and more. Then, the course starts to address the questions: Is code an art form? What is interactive art? Is software art?",
+    "ID": "4090",
+    "description": "This course is primarily concerned with learning how to build any interactive experience or artwork from concept to completion. It will introduce open-source, cross-platform programming libraries and tools used by artists and programmers to create interactive experiences and artworks for museum installations, festivals, VJ-ing, projection mapping, interactive experiences/artworks, and more. It will then start to address the questions: Is code an art form? What is interactive art? Is software art?",
     "name": "Art and Code and Interactivity",
     "offered": {
       "even": false,
@@ -741,35 +475,16 @@
     "subj": "GSAS"
   },
   "Art, Community, and Technology": {
-    "ID": "6250",
-    "description": "This course explores the complex roles and relationships of art, education, and technology by giving students direct experience in the community. Students will develop a plan to work with a media arts center, community organization, or school; final teams will produce real-world arts and education projects that can become significant additions to their professional portfolio. The projects can include a range of practices including but not limited to traditional arts, creative writing, creative IT, community art, and activism. Graduate students who take this course will write a mid-term and final paper, plus offer an independent public presentation of their work.",
+    "ID": "4250",
+    "description": "Through direct experience in the community, this course explores the complex roles and relationships of art, education, and technology. Students will develop a plan to work with a media arts center, community organization, or school; final teams will produce real-world arts and education projects that ultimately will be realized as significant additions to their professional portfolio. The projects can include a range from traditional arts practice to creative writing, creative IT models, to community art and activism.",
     "name": "Art, Community, and Technology",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "upon availability of instructor."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ARTS"
-  },
-  "Arts Graduate Colloquium": {
-    "ID": "6900",
-    "description": "This course provides a forum for interdisciplinary graduate discourse and community at Rensselaer. Students will curate a series of presentations by guest speakers, faculty, and graduate students. Related readings and writing assignments will be based on colloquium presentations. Arts Ph.D. students are required to take the colloquium each semester until the semester they take their qualifying examination and enroll for dissertation credits.",
-    "name": "Arts Graduate Colloquium",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
       "spring": true,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": "spring term annually"
     },
     "properties": {
       "CI": false,
@@ -817,7 +532,7 @@
     "subj": "ARTS"
   },
   "Behavioral Economics": {
-    "ID": "6270",
+    "ID": "4270",
     "description": "Integrates theory from psychology, neuroscience, and other social sciences into traditional economic models of human behavior. By relaxing the standard assumptions of perfect rationality and selfishness, more realistic modeling features such as loss aversion, present-bias, social norms, and habit formation improve economic analyses. These techniques are used to analyze individuals' health behaviors, health insurance markets, and healthcare policy.",
     "name": "Behavioral Economics",
     "offered": {
@@ -836,7 +551,7 @@
     "subj": "ECON"
   },
   "Behavioral Financial Economics": {
-    "ID": "6340",
+    "ID": "4340",
     "description": "This course describes how individuals and firms make financial decisions, and how those decisions might deviate from those predicted by traditional financial or economic theory. The course examines how the insights of behavioral economics complement the traditional finance paradigm by introducing some of the main psychological biases in financial decision-making and examining the impacts of these biases in financial markets and other financial settings. It will also introduce students to behavioral and experimental methodologies in finance, economics, and other disciplines.",
     "name": "Behavioral Financial Economics",
     "offered": {
@@ -873,44 +588,6 @@
     },
     "subj": "PSYC"
   },
-  "Behavioral and Experimental Economics I": {
-    "ID": "6800",
-    "description": "Study economic behavior as it departs from perfectly rational, complete-information models. This course presents the main theories and findings from the behavioral economics literature as they relate to individuals' choices over time, risk, and uncertainty. Additional topics include individuals' use of decision heuristics and models of social preferences, such as altruism, fairness, reciprocity, and inequality aversion. Experimental methods are developed.",
-    "name": "Behavioral and Experimental Economics I",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Behavioral and Experimental Economics II": {
-    "ID": "6810",
-    "description": "This course expands on material covered in Behavioral Economics I by studying the latest and more advanced modeling and experimental approaches for individuals' decision-making and empirical applications. Specific advanced topics include the role of habit formation on intertemporal choice and limited attention models for complex decisions. The course will additionally cover recent literature and findings from cognitive and computational psychology.",
-    "name": "Behavioral and Experimental Economics II",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
   "Behind the TV Screen": {
     "ID": "1030",
     "description": "Television is considered a defining social, political and cultural feature of consumer culture. Television is morphing into something more expansive and diverse. In this course, we will study the impact of television and learn to make it. Through hands-on experience, students produce and direct their own multi-camera projects. Students work on technical and creative aspects of production. Students learn to operate studio gear including green screen, live switcher, cameras, audio, teleprompter, lights, etc.",
@@ -929,25 +606,6 @@
       "major_restricted": false
     },
     "subj": "IHSS"
-  },
-  "Big Data Policy": {
-    "ID": "6440",
-    "description": "Although the term 'big data' is relatively new on the scene, the idea of collecting, protecting, and sharing large data sets has been around since before computers were a major player. Similarly, the concept of a 'policy,' high-level guidelines providing a general course of action (or inaction) in a given area, is not new. Putting those two concepts together, however, is a recent phenomenon which has created a set of intriguing challenges. What is 'open data?' What does it mean to 'share' data? Who makes such policies and how are they implemented? Do data policies look the same all over the world? What are the economic, cultural, and technological implications/impacts of/on a given data policy? How would one even go about understanding and evaluating a data policy? This course takes the basics of policy design and analysis, blends in critical thinking skills, ethics, group dynamics, national perspectives, and international perspectives, and applies it all to the world of big data.",
-    "name": "Big Data Policy",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ITWS"
   },
   "Bioethics": {
     "ID": "4250",
@@ -969,16 +627,16 @@
     "subj": "STSO"
   },
   "Biopunk: Arts Lab Practice": {
-    "ID": "6120",
+    "ID": "4120",
     "description": "Biopunk: Arts Lab Practice is a studio, lab and lecture class introducing students to bioart, and microbial life and resilient ecological practices. We use punk, queer and biological laboratory techniques to creatively produce science, design and art works. Students will be required to complete readings, experiment, and create their own visions of a speculative biofuture. Emphasis will be on the history and contemporary investigations of the microbiome and how to culturally explore these scenarios of how we live amongst multiple diverse communities and species.",
     "name": "Biopunk: Arts Lab Practice",
     "offered": {
       "even": false,
-      "fall": false,
+      "fall": true,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "fall term annually"
     },
     "properties": {
       "CI": false,
@@ -988,8 +646,8 @@
     "subj": "ARTS"
   },
   "Brand Identity Design": {
-    "ID": "6730",
-    "description": "A brand is more than just a cool logo design. \"A brand is a perception or set of associations consumers have of a business.\" -(Felicia C. Sullivan) These perceptions originate from a consistent verbal and visual story communicated through a multitude of media platforms. In this class, we'll define the brand story, create messaging, and design the logo, stationery, signage, packaging, advertising, schwag, motion graphics, etc. The course culminates with the design of an identity standards manual defining the rules and principles to effectively communicate a consistent brand image.",
+    "ID": "4730",
+    "description": "A brand is more than just a cool logo design. \"A brand is a perception or set of associations consumers have of a business.\" - (Felicia C. Sullivan) These perceptions originate from a consistent verbal and visual story communicated through a multitude of media platforms. In this class we'll define the brand story, create messaging, and design the logo, stationery, signage, packaging, advertising, schwag, motion graphics etc. The course culminates with the design of an identity standards manual defining the rules and principles to effectively communicate a consistent brand image.",
     "name": "Brand Identity Design",
     "offered": {
       "even": false,
@@ -1006,27 +664,8 @@
     },
     "subj": "COMM"
   },
-  "Business Intelligence Analysis": {
-    "ID": "6215",
-    "description": "Students use visualization and cluster analysis tools to gain deeper insights into complex business relationships. Students apply data analytic process to real-world business problems and questions, including pricing decisions, customer analysis, competitive analysis, financial forecasts, customer decision models, organizational performance dashboards. Students tune models to represent current-state and adjust models as underlying assumptions change. Students cannot receive credit for both this course and ENGR 6205 or ENGR 6210.",
-    "name": "Business Intelligence Analysis",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
-  },
   "Business Issues for Engineers and Scientists": {
-    "ID": "6300",
+    "ID": "4300",
     "description": "Investigates business-related considerations in successfully commercializing new technology in a new venture or within an existing enterprise: market and customer analysis, beating the competition, planning and managing for profitability, high-tech marketing and sales, and business partnerships and acquisitions. Not a general management course; focuses explicitly on what is relevant for engineers and scientists working in a commercial environment. For junior/senior undergraduate or graduate students.",
     "name": "Business Issues for Engineers and Scientists",
     "offered": {
@@ -1177,25 +816,6 @@
     },
     "subj": "LANG"
   },
-  "Cognition": {
-    "ID": "6200",
-    "description": "This course covers reasoning, decision making, and behavioral game theory, which are major domains in human higher order cognition. Each topic begins with normative theories and continues through formal and mathematical models, and the introduction of empirical studies. The course emphasizes integrations of competing approaches within a domain, integration between reasoning and decision making, and integration between individual decision making and game-theoretic interactions. Each year, the course has a theme. The theme for this year is quantum cognition, which applies quantum theory in cognitive modeling. This course is designed as self-contained, and has no prerequisites. A middle term presentation and a final term paper are required for each student. Graduate students only.",
-    "name": "Cognition",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COGS"
-  },
   "Cognition and the Brain": {
     "ID": "4600",
     "description": "Perception and thought are considered in terms of processes represented in the brain. The localization and lateralization of function are examined, drawing upon research on the behavioral effects of brain damage as well as brain-imaging studies and other approaches. Examples of topics include object recognition, memory, language, emotion, spatial ability, and motor processes.",
@@ -1253,44 +873,6 @@
     },
     "subj": "PSYC"
   },
-  "Cognitive Modeling I": {
-    "ID": "6210",
-    "description": "This is a graduate level course that introduces the student to computational cognitive modeling. Cognitive modeling is the simulation of human cognitive, perceptual, and motor processes based on a cognitive architecture. The benefit of cognitive modeling is that it facilitates the testing of ideas about human processes through comparison of model data with empirical data. This course covers ACT-R, a symbolic architecture and LEABRA, a neural-level architecture.",
-    "name": "Cognitive Modeling I",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COGS"
-  },
-  "Cognitive Modeling II": {
-    "ID": "6220",
-    "description": "This is a graduate level course that extends the objectives of Cognitive Modeling I to additional cognitive architectures. The first part of the course is a survey of cognitive modeling paradigms. The second part will be a more in-depth coverage of two or three architectures and will be done by teams of students. Each team will study one architecture including the development of a model.",
-    "name": "Cognitive Modeling II",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COGS"
-  },
   "Cognitive Psychology": {
     "ID": "4370",
     "description": "The focus of this course is on the flow of information from sensory input to retrieval from long-term memory. Within this framework, topics such as mnemonics, pattern recognition, attention, computer simulation, reasoning, and the relationship between culture and thought are discussed.",
@@ -1311,7 +893,7 @@
     "subj": "PSYC"
   },
   "Communication Studies": {
-    "ID": "6940",
+    "ID": "4940",
     "description": "Readings and projects adapted to the needs of individual students.",
     "name": "Communication Studies",
     "offered": {
@@ -1330,16 +912,16 @@
     "subj": "COMM"
   },
   "Communication Theory and Practice": {
-    "ID": "6510",
-    "description": "Provides students an opportunity to enact communication practice from a strong foundation of textual and visual communication theory. Focuses on theories of text-making and distribution across media, qualitative and quantitative approaches to communication research, and applied rhetoric.",
+    "ID": "2520",
+    "description": "This course introduces students to basic topics in communication theory and research. It includes topics in interpersonal, group, organizational, mediated, and mass communication. Students will study and apply theories to real world situations and events and explore the social and cultural impact of new media technology.",
     "name": "Communication Theory and Practice",
     "offered": {
       "even": false,
       "fall": true,
       "odd": false,
-      "spring": false,
+      "spring": true,
       "summer": false,
-      "text": "fall term annually."
+      "text": "fall and spring terms annually."
     },
     "properties": {
       "CI": true,
@@ -1423,25 +1005,6 @@
       "major_restricted": false
     },
     "subj": "GSAS"
-  },
-  "Concepts in Science and Technology Studies": {
-    "ID": "6010",
-    "description": "This course is required for the M.S. in STS. Students are introduced to the literature and current issues in the interdisciplinary field of Science and Technology Studies.",
-    "name": "Concepts in Science and Technology Studies",
-    "offered": {
-      "even": true,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term even-numbered years."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
   },
   "Consumer Culture": {
     "ID": "4720",
@@ -1595,25 +1158,6 @@
     },
     "subj": "WRIT"
   },
-  "Critical Game Design: History/Theory/Futures": {
-    "ID": "6400",
-    "description": "A seminar course that focuses on the history and theory of alternative and socially-engaged design for interactive media. Students will read and discuss design history, art history, conceptual artistic practice, and new and emerging theories about digital, critical, and speculative design and the digital humanities. The course is designed to advance students' understanding of bodies of academic literature and theory that explore the hybridization of hermeneutic analysis and design and making practice.",
-    "name": "Critical Game Design: History/Theory/Futures",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually"
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "GSAS"
-  },
   "Critical Television": {
     "ID": "2750",
     "description": "This course engages students in a critical examination of television and its historical and present status as a dominant popular culture medium. Television in this context is broadly understood as an evolving medium for motion pictures in the age of technological convergence. Using a variety of analytical and theoretical approaches, we'll consider the significant influence television has on individual, social, and cultural experiences—addressing questions of representation, identity, economics, and ideology. The class uses a collaborative learning process, allowing students to influence the content and emphasis of the class and thereby reflecting the democratic nature of popular culture media.",
@@ -1653,7 +1197,7 @@
     "subj": "PSYC"
   },
   "Cross-linguistic Perspectives": {
-    "ID": "6560",
+    "ID": "4560",
     "description": "This course will explore the different strategies used by different languages to fulfill the same needs of human communication. A sampling of topics: quickly learning the basics of a new language using linguistic principles; cross-linguistic knowledge elicitation and engineering; principles of generative grammar; space, time, agency, and other linguistic phenomena viewed cross-linguistically.",
     "name": "Cross-linguistic Perspectives",
     "offered": {
@@ -1662,7 +1206,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "upon availability of instructor."
     },
     "properties": {
       "CI": false,
@@ -1691,7 +1235,7 @@
     "subj": "STSO"
   },
   "Data Analysis in Economics and Finance": {
-    "ID": "6030",
+    "ID": "4580",
     "description": "This course provides skills to apply econometrics to diverse economic topics. Mathematical methods of econometrics are developed for tools such as alternative estimation strategies, instrumental variables, regression discontinuity, nonparametric and quantile estimators, and simultaneous equation models. Methods to identify causal effects are emphasized. Students do hands-on data work that puts to use these econometric tools.",
     "name": "Data Analysis in Economics and Finance",
     "offered": {
@@ -1700,7 +1244,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": "fall term annually"
     },
     "properties": {
       "CI": false,
@@ -1710,8 +1254,8 @@
     "subj": "ECON"
   },
   "Data Analytics": {
-    "ID": "6600",
-    "description": "The world at-large is confronted with increasingly larger and complex sets of structured/unstructured information; from cyber and human sources. Traditional enterprises are moving toward analytics-driven approaches for core business functions. Data and information analytics extends analysis (descriptive models of data) by using data mining and machine learning methods, with optimization and validation, to recommend action or guide and communicate decision-making. Thus, analytics is an entire methodology rather then individual analyses or analysis steps.",
+    "ID": "4600",
+    "description": "The world at-large is confronted with increasingly larger and complex sets of structured/unstructured information; from cyber and human sources. Traditional enterprises are moving toward analytics-driven approaches for core business functions. Data and information analytics extends analysis (descriptive models of data) by using data mining and machine learning methods, with optimization and validation, to recommend action or guide and communicate decision-making. Thus, analytics is an entire methodology rather than individual analyses or analysis steps.",
     "name": "Data Analytics",
     "offered": {
       "even": false,
@@ -1728,27 +1272,8 @@
     },
     "subj": "ITWS"
   },
-  "Data Architecture": {
-    "ID": "6220",
-    "description": "Students design and deploy analytical systems that serve as the basis for the analysis, processing, storage, and interface of the machine learing process. Students choose learning models appropriate to the result desired using decision tree, Bayesian, neural net, and vector machine approaches. Students use multiple statistical approaches to evaluate results that lead to best results.",
-    "name": "Data Architecture",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
-  },
   "Data Science": {
-    "ID": "6350",
+    "ID": "4350",
     "description": "Data science is advancing the inductive conduct of science and is driven by the greater volumes, complexity, and heterogeneity of data being made available over the Internet. It combines aspects of data management, library science, computer science, and physical science. It is changing the way all of these disciplines do both their individual and collaborative work. Key methodologies in application areas based on real research experience are taught.",
     "name": "Data Science",
     "offered": {
@@ -1767,7 +1292,7 @@
     "subj": "ITWS"
   },
   "Data and Society": {
-    "ID": "6360",
+    "ID": "4360",
     "description": "Data and Society provides a broad overview of how society is leveraging and responding to the social, organizational, policy, and technical opportunities and challenges of a data-driven world. Course themes focus on various aspects of the data ecosystem, data and innovation, and data and the broader community. Assignments build writing, presentation, and critical thinking, and assessment skills, all of which are important for professional success. This is a communication-intensive course.",
     "name": "Data and Society",
     "offered": {
@@ -1785,27 +1310,8 @@
     },
     "subj": "ITWS"
   },
-  "Data-driven Decision Making": {
-    "ID": "6200",
-    "description": "Students frame questions and problems in forms that can be analyzed using data analytic tools. Students use data wrangling and preparation methods to prepare for analysis. Students use analytical tools to evaluate analytic models using linear/nonlinear multivariate methodologies. Students validate results and develop algorithms that can be used to make recommendations and forecasts. Students work with stakeholders to scope and frame questions and problems so that actionable results can be achieved.",
-    "name": "Data-driven Decision Making",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
-  },
   "Database Applications and Systems (DBAS)": {
-    "ID": "6250",
+    "ID": "4250",
     "description": "This advanced course in database applications and database systems provides students with a strong foundation in modern database design, data modeling, data normalization, SQL, NoSQL, query optimization, database security, and how databases fit into larger software architectures. Substantial programming and design projects are required.",
     "name": "Database Applications and Systems (DBAS)",
     "offered": {
@@ -1822,25 +1328,6 @@
       "major_restricted": false
     },
     "subj": "ITWS"
-  },
-  "Deep Learning in AI Systems": {
-    "ID": "6222",
-    "description": "Working directly with a faculty member, students build machine learning systems that can be used as the foundation for decision-making intelligences, where learning systems transition from recommendations to decision capacities. Over the semester, the student proposes the model, develops the model, and trains the system to improve performance.",
-    "name": "Deep Learning in AI Systems",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
   },
   "Deep Listening": {
     "ID": "2180",
@@ -2223,7 +1710,7 @@
     "subj": "PSYC"
   },
   "Eco Chic: Living Art": {
-    "ID": "6240",
+    "ID": "4240",
     "description": "Eco Chic: Living Art is an upper level production and theory class about art, biology, and the study of life covering topics such as environmentalism, land art, food art, sustainable practices with art, body art, bio-art. Part lecture, part hands-on workshop, Eco Chic encourages students to redefine and experimentally express their relationships with the varied aspects of everyday living systems and manipulating life.",
     "name": "Eco Chic: Living Art",
     "offered": {
@@ -2232,7 +1719,7 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "spring term even-numbered years"
+      "text": "spring term even years"
     },
     "properties": {
       "CI": false,
@@ -2242,8 +1729,8 @@
     "subj": "ARTS"
   },
   "Econometric Methods for Big Data": {
-    "ID": "6280",
-    "description": "Examine advanced econometric and statistical methods for the analysis of high-dimensional data, otherwise known as \"Big Data.\" In this setting, detailed information for each unit of observation informs machine learning techniques such as classification and regression trees; rECandom forests; penalized regressions; and boosted estimation. These prediction methods are then utilized to improve causal modeling, with applications in the study of healthcare demand and supply modeling, and behavior of consumers and businesses.",
+    "ID": "4280",
+    "description": "Examine advanced econometric and statistical methods for the analysis of high-dimensional data, otherwise known as \"Big Data.\" In this setting, detailed information for each unit of observation informs machine learning techniques such as classification and regression trees; random forests; penalized regressions; and boosted estimation. These prediction methods are then utilized to improve causal modeling, with applications in the study of healthcare demand and supply modeling, and behavior of consumers and businesses.",
     "name": "Econometric Methods for Big Data",
     "offered": {
       "even": false,
@@ -2279,85 +1766,9 @@
     },
     "subj": "ECON"
   },
-  "Econometrics I": {
-    "ID": "6730",
-    "description": "Theoretical treatment of economic statistics. Topics include a rigorous treatment of set theory and fundamentals of probability theory, statistical estimation and hypothesis testing, analysis of variance, and regression. Also includes advanced topics such as maximum likelihood, generalized method of moments, empirical likelihood, and bootstrap, as well as finite-sample analysis and large-sample asymptotics.",
-    "name": "Econometrics I",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Econometrics II": {
-    "ID": "6740",
-    "description": "Statistical methods are developed for classic linear and non-linear regression analysis. Econometric tools such as instrumental variables, regression discontinuity, and difference-in-differences are emphasized for causal identification. Extensions are made to new topics such as simulation-based methods including bootstrap, nonparametric and semiparametricestimators, and quantileregression methods.",
-    "name": "Econometrics II",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Economic Data Analytics and Modeling I": {
-    "ID": "6750",
-    "description": "Develops econometric models for causal inference using tools for big data. Machine learning and other resource-intensive modeling techniques are integrated into traditional economic approaches. Also covers procedures for the development, processing, and combination of novel data sources; methods to process extremely large datasets; data exploration and development tools; nonparametric methods. Economics applications are considered throughout.",
-    "name": "Economic Data Analytics and Modeling I",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Economic Data Analytics and Modeling II": {
-    "ID": "6760",
-    "description": "Covers advanced topics in the theory and application of econometrics and data modeling. Topics emphasized include causal identification, advanced instrumental variable models, dynamic models, panel data models, model selection, simulation-based inference methods, survival analysis models, censoring, quantile regression, non-linear models, and discrete choice models.",
-    "name": "Economic Data Analytics and Modeling II",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
   "Economic Models of Decision-Making": {
-    "ID": "6320",
-    "description": "An exploration of models of decision-making under alternative assumptions, expanding on \"rational\" models of introductory economics. The course will discuss the assumptions of these standard models and their shortcomings. The shortcomings will be addressed through exploration of limited attention and considerations of fairness, uncertainty, and strategic interaction. Applications in areas such as consumer and household finance, marketing, and public policy will be emphasized throughout.",
+    "ID": "4320",
+    "description": "An exploration of models of decision-making under alternative assumptions, expanding on \"rational\" models of introductory economics. The course will discuss the assumptions of these standard models and their shortcomings. The shortcomings will be addressed through the exploration of limited attention and considerations of fairness, uncertainty, and strategic interaction. Applications in areas such as consumer and household finance, marketing, and public policy will be emphasized throughout.",
     "name": "Economic Models of Decision-Making",
     "offered": {
       "even": false,
@@ -2365,7 +1776,7 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "fall and spring terms annually"
+      "text": "fall and spring terms annually."
     },
     "properties": {
       "CI": false,
@@ -2375,7 +1786,7 @@
     "subj": "ECON"
   },
   "Economics of Biotech and Medical Innovations": {
-    "ID": "6290",
+    "ID": "4290",
     "description": "Students will learn about markets related to healthcare, insurance, biopharmaceuticals, and medical devices. Examine economic issues, models and quantitative analysis related to firms' activities in areas such as innovation, R&D expenditures, patenting, pricing, mergers and acquisitions, and competition in markets. Examine the role played by health insurance systems. Study the economic implications of regulations, such as those by the U.S. FDA. Economic and policy aspects will be examined within the context of the U.S. healthcare sector, along with selected comparisons to European national healthcare systems.",
     "name": "Economics of Biotech and Medical Innovations",
     "offered": {
@@ -2450,65 +1861,8 @@
     },
     "subj": "ECON"
   },
-  "Economics of Growth and Innovation": {
-    "ID": "6130",
-    "description": "Dynamic models of national and international economic growth are introduced and analyzed. Technological innovation is central to growth, and models consider the endogenous determinants of technological innovation and diffusion. National institutions that affect growth, such as law, education, and infrastructure, are considered. Variation in intellectual property rights across countries are examined, together with their effects on economic growth and development. Theories of growth are compared to empirical fact.",
-    "name": "Economics of Growth and Innovation",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Economics of Innovation I": {
-    "ID": "6770",
-    "description": "Core issues in the economics of technology and innovation are covered along with policy ramifications. Topics include models of strategic R&D and patenting, quality and price measures, drivers of innovation in firms and fields of knowledge, technology adoption and diffusion, and regional innovation.",
-    "name": "Economics of Innovation I",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Economics of Innovation II": {
-    "ID": "6780",
-    "description": "Analyzes theories and findings on how regional and national economic growth relates to innovation. Contrasting theories and empirical evidence regarding agglomeration impacts on innovation, local effects of universities and government laboratories, employment, and trade flows. Regional impacts of corporations, entrepreneurship, labor force, education, and policy.",
-    "name": "Economics of Innovation II",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
   "Economics of Innovation and New Technologies": {
-    "ID": "6110",
+    "ID": "4110",
     "description": "Technological innovation is responsible for most economic growth and is crucial to deal with major societal concerns. This course examines the economics of innovation and new technologies. It shows how technologies are created and put to use, from basic science through invention and development to diffusion and practical use. Additional topics include R&D determinants, sources of innovation, product improvement, cost reduction, incentivizing and stimulating innovation, patents, evolution of innovation and technology, innovative competition in industry, and the national innovation environment.",
     "name": "Economics of Innovation and New Technologies",
     "offered": {
@@ -2544,25 +1898,6 @@
       "major_restricted": false
     },
     "subj": "ECON"
-  },
-  "Electronic Arts Overview": {
-    "ID": "6110",
-    "description": "This seminar will provide a historical context for understanding and analyzing practices and theories of contemporary electronic art. The curriculum is a mix of field surveys, readings of primary sources in aesthetic, media and critical theory, and examination of contemporary topics and controversies. The seminar is also intended to support the development and articulation of the student's creative practice. Open to graduate students across the Institute.",
-    "name": "Electronic Arts Overview",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ARTS"
   },
   "Electronic Arts Theory Seminar": {
     "ID": "4100",
@@ -2620,44 +1955,6 @@
       "major_restricted": false
     },
     "subj": "ENGR"
-  },
-  "Energy and Environmental Economics I": {
-    "ID": "6860",
-    "description": "Covers the economics of conventional and alternative energy sources. Topics in energy economics such as the demand for energy, supply of energy, evolving alternative energy sources, consumption, efficiency, adoption, and diffusion of new energy technologies, externalities, and the economics of climate change. The course will examine environmental impacts and their analysis, and introduce models and methods of analysis including cost-benefit analysis, discounting, the value of a statistical life, and health as human capital.",
-    "name": "Energy and Environmental Economics I",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Energy and Environmental Economics II": {
-    "ID": "6870",
-    "description": "Study environmental economics and its relation to energy systems. Analyzes environmental externalities and regulatory solutions through theoretical models and empirical evidence. Study government responses related to regulations, taxes, and subsidies to address problems of market failure, and tools to evaluate the costs and benefits of environmental policies. Examine optimal environmental regulations and the trade-offs between market and regulatory imperfections. Methods are developed with applications to topics including health and climate impacts of emissions and their regulatory policies.",
-    "name": "Energy and Environmental Economics II",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
   },
   "Engineering Communications": {
     "ID": "1400",
@@ -2812,7 +2109,7 @@
     "subj": "ENGR"
   },
   "Ensemble Nonlinear": {
-    "ID": "6600",
+    "ID": "4600",
     "description": "A technology-based performance ensemble, as well as a practice-based studio course, focused on the composition, design, and programming of new musical works and instruments. Students create and perform electronic music using laptops, microprocessors, digital networks and a range of new interfaces for musical expression. ARTS 4600/6600 combines studio and ensemble. The ensemble only section (ARTS 2600) may be taken multiple times as a 1-credit performance ensemble in partial satisfaction of the Music major or minor ensemble requirements, or once as a 4-credit seminar at either the 4000 or 6000 level.",
     "name": "Ensemble Nonlinear",
     "offered": {
@@ -2829,44 +2126,6 @@
       "major_restricted": false
     },
     "subj": "ARTS"
-  },
-  "Environment and Health": {
-    "ID": "6400",
-    "description": "This course explores how the health impacts of environmental problems are understood and responded to through medical, legal, and regulatory intervention. Case studies are used to highlight different strategies for dealing with environmental illness, comparing the perspectives of affected people, medical professionals, lawyers, government officials, industry representatives, and media. A core component of the course is devoted to problems related to exposure to toxic chemicals, including readings on popular epidemiology, mass torts, transboundary victimization, and medical rehabilitation models.",
-    "name": "Environment and Health",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "upon availability of instructor."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
-  },
-  "Environment and Social Theory": {
-    "ID": "6300",
-    "description": "This course focuses on contemporary social theory to understand the historical origins, institutional structures, and dominant trajectories of environmental-social change. Three main questions structure inquiry into the links among science, technology, environment, and social theory: 1) why do modern societies degrade their environments? 2) why do environmental movements arise, or what are the social structural, cultural, and political origins of environmentalism? and 3) can some particular politics curtail environmental degradation?",
-    "name": "Environment and Social Theory",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "upon availability of instructor."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
   },
   "Environment and Society": {
     "ID": "2300",
@@ -3001,25 +2260,6 @@
     },
     "subj": "PHIL"
   },
-  "Ethnography": {
-    "ID": "6410",
-    "description": "This course focuses on methods, theories, and perspectives of ethnography, and on their applications to the various disciplines in which graduate students are working. Students will undertake original field research. Emphasis is given to foundational activities: defining a problem, research design, proposal writing, field methods, qualitative data analysis, writing ethnography, and protection of human subjects.",
-    "name": "Ethnography",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": true,
-      "spring": true,
-      "summer": false,
-      "text": "spring term odd-numbered years."
-    },
-    "properties": {
-      "CI": false,
-      "HI": true,
-      "major_restricted": false
-    },
-    "subj": "IHSS"
-  },
   "Experiential Learning Project": {
     "ID": "4800",
     "description": "This is an individually tailored reading course in which the student does readings and also completes an internship-type field project. The goal is to provide students with immersion in a multicultural milieu involving science and technology issues. Projects include student exchange programs, co-op placement, public service internships, community service, and other individually tailored projects subject to adviser approval. Students are expected to write up a description of their field project that integrates their field experience with the readings.",
@@ -3040,7 +2280,7 @@
     "subj": "IHSS"
   },
   "Experimental Economics": {
-    "ID": "6360",
+    "ID": "4360",
     "description": "This course explores human motivation and behavior across different settings and experimental paradigms. The course familiarizes students with previous work in selected topics in behavioral and experimental economics such as charitable giving, individual decision making and preferences, health, scarcity, and worker motivation. It also prepares students to design, implement and analyze their own economics experiments.",
     "name": "Experimental Economics",
     "offered": {
@@ -3078,8 +2318,8 @@
     "subj": "GSAS"
   },
   "Experimental Telepresence": {
-    "ID": "6420",
-    "description": "Research, plan, create, and execute portfolio projects involving networked improvisation, composition, and performance via Internet and Internet 2. Study and use telematic technology such as Lola, JackTrip, SKYPE, mobile, and other devices in performances with others in distant locations. Participate in multimedia improvisation ensemble (Tintinnabulate) as a resource for implementing projects.",
+    "ID": "4420",
+    "description": "Experimental Telepresence investigates the INTERNET as an experimental venue for audio and video performance through improvisation and composition. Students will learn protocols for telepresence connections, connect with other institutions using a variety of media in local and co-located performances. The seminar multimedia ensemble Tintinnabulate will be used as a resource of projects.",
     "name": "Experimental Telepresence",
     "offered": {
       "even": false,
@@ -3240,44 +2480,6 @@
       "spring": false,
       "summer": false,
       "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COMM"
-  },
-  "Foundations of Human-Computer Interaction Usability": {
-    "ID": "6420",
-    "description": "This course will consider methods for gathering users' requirements for product functions and information, ways to test products and information for usability and suitability, and procedures for incorporating the results learned through testing. Students will design and conduct usability tests on products, documents, and interfaces of interest.",
-    "name": "Foundations of Human-Computer Interaction Usability",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COMM"
-  },
-  "Foundations of Technical Communication": {
-    "ID": "6200",
-    "description": "Technical communication today has a remarkably broad scope, including almost every area of life that involves technology, such as health, business, government, and scientific communication. This course addresses an essential part of communication studies and human-computer interaction: the authorship of the signifying level of interface design. Technical communication has grown way beyond people sitting in front of beige boxes writing manuals on how to operate other beige boxes. Instead, it has emerged as a central collection of skills aimed at how to get the right information to the right people at the right time, in a usable form. It has as much to do with information architecture, knowledge management, and information design as with writing reports and instructions. In addition, RPI has a long-standing heritage in technical communication, as the first academic degree in the field was offered here. In technical communication, RPI still maintains a high level of respect and market value for students and faculty at other institutions.",
-    "name": "Foundations of Technical Communication",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
     },
     "properties": {
       "CI": false,
@@ -3495,25 +2697,6 @@
     },
     "subj": "GSAS"
   },
-  "Game Studies Theory and Praxis": {
-    "ID": "6100",
-    "description": "As foundational course in the practice of critical game design, this course introduces students to major theorists in the field of game studies and topics including theories of play, space, narratology, ludology, identity, representation, culture and society. Students make integrative connections between theory and practice with a semester-long iterative design project, including critical writing, paper prototyping and peer feedback. Students explore game studies concepts both in a traditional research paper format, and in design practice.",
-    "name": "Game Studies Theory and Praxis",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually"
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "GSAS"
-  },
   "Gender, Science, and Technology": {
     "ID": "4560",
     "description": "In this course, students will engage with a variety of perspectives in science and technology studies, feminist theory, queer and transgender theory, cultural studies, science fiction, and other fields that explore how science and technology reciprocally contribute to and are shaped by cultural norms around gender. Students reflect on their own experiences with gender expectations and formulate their own questions and develop a research project over the course of the semester.",
@@ -3571,25 +2754,6 @@
     },
     "subj": "STSO"
   },
-  "Graduate Studio Critique": {
-    "ID": "6080",
-    "description": "Development and completion of individual creative projects with a focus on studio production, method, and process. Students are expected to foster an environment in which serious and sophisticated peer critique can take place.",
-    "name": "Graduate Studio Critique",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "fall and spring terms annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ARTS"
-  },
   "Graphic Storytelling": {
     "ID": "2070",
     "description": "A studio arts course exploring the fundamental concepts, techniques, styles, and mechanics used in the creation of graphic narrative. Contents to be covered include the fundamentals of sequential art, the purposes and formats of storyboards, basic terminology and concepts used in storyboarding, and the applications of storyboard techniques. Key visual storytelling structures are explored for the following industry applications: comics, animated films, graphic novels, commercials, documentaries, live action feature films, and video gaming.",
@@ -3629,8 +2793,8 @@
     "subj": "IHSS"
   },
   "Hactivism": {
-    "ID": "6560",
-    "description": "This course explores the history, methods, and goals of hackers with special attention paid to their role in social movements. It broadly interprets the term \"hacktivism\" to include computer hacking, media hacking, and \"reality hacking\" in the service of social change. Students will gain an understanding of how and why hackers have emerged as a major social force. Graduate students will produce an ethnographic record and analysis of a publicly recognized hacking event or figure.",
+    "ID": "4560",
+    "description": "This course explores the history, methods, and goals of hackers with special attention paid to their role in social movements. It broadly interprets the term \"hacktivism\" to include computer hacking, media hacking and \"reality hacking\" in the service of social change. Students will gain an understanding of how and why hackers have emerged as a major social force.",
     "name": "Hactivism",
     "offered": {
       "even": false,
@@ -3648,7 +2812,7 @@
     "subj": "ARTS"
   },
   "Health Economics and Policy": {
-    "ID": "6170",
+    "ID": "4170",
     "description": "Examine various facets of the healthcare industry. Application of microeconomic theory and tools will be used to: analyze healthcare demand and supply; examine the impact of public policies; study market segments such as health insurance and pharmaceuticals; explore economic choices of healthcare professionals; identify potential socioeconomic and demographic determinants of health status and healthcare; and gain insights into issues related to the ongoing healthcare policy reform.",
     "name": "Health Economics and Policy",
     "offered": {
@@ -3665,63 +2829,6 @@
       "major_restricted": false
     },
     "subj": "ECON"
-  },
-  "Health Economics and Policy I": {
-    "ID": "6820",
-    "description": "Study the economic theory of health and health care, and its applications. Topics include the measurement and determinants of health; economics of uncertainty, adverse selection, and moral hazard; economic models of demand for healthcare and demand for insurance; key markets in the healthcare sector such as physicians, hospitals, and insurance companies; policy effects on the matching between health care demand and supply; and political economy and organizational reform in medical care.",
-    "name": "Health Economics and Policy I",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Health Economics and Policy II": {
-    "ID": "6830",
-    "description": "Study topics such as markets for pharmaceuticals, medical devices, medical technology, and health innovation; FDA and other types of regulations in pharmaceuticals and medical devices; models of hospital competition and provider incentives; health information technologies and their adoption and diffusion; advances in personalized healthcare; and externalities in health.",
-    "name": "Health Economics and Policy II",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Health Industry Analytics": {
-    "ID": "6210",
-    "description": "Students use visualization and cluster analysis tools to gain deeper insight into health industry relationships. Students apply data analytic process to real-world health care problems and questions, including resources scheduling optimization, therapeutic effectiveness analysis, population intervention studies, demographically-related health trends, and benchmark setting for standard of care dashboard development. Students tune models to represent current-state and adjust models as underlying assumptions change. Students cannot receive credit for both this course and ENGR 6205 or ENGR 6215.",
-    "name": "Health Industry Analytics",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
   },
   "Histories of Jazz and Improvised Music": {
     "ID": "2510",
@@ -3779,25 +2886,6 @@
       "major_restricted": false
     },
     "subj": "GSAS"
-  },
-  "History and Ethnography": {
-    "ID": "6580",
-    "description": "History and Ethnography is an introductory/intermediate graduate theory and methods seminar that outfits students to undertake original empirical and interpretive work in the humanities and social sciences. The course combines historical and ethnographic approaches with discourse analysis or other qualitative analytic approaches. Such methodologies may also be mixed with quantitative approaches. There are substantial fieldwork and archival components to the course. Both historical and ethnographic methodologies provide a basis for \"capturing\" the \"data\" that provides the evidence base for analysis.",
-    "name": "History and Ethnography",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "upon availability of instructor."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
   },
   "History of American Technology": {
     "ID": "4510",
@@ -3990,8 +3078,8 @@
     "subj": "PSYC"
   },
   "Inflatable Sculpture": {
-    "ID": "6230",
-    "description": "This class studies, creates, and publicly presents inflatable sculptures. The history of inflatables are examined, with special attention paid to how they have been used in political movements that imagine utopian social futures, and how those applications contrast with commercial uses (such as advertising) that have become commonplace in public spaces today. Throughout, the class will explore, design, and build inflated structures that may include video and sound elements. Graduate students will also be required to write a paper.",
+    "ID": "4230",
+    "description": "This class studies, creates, and publicly presents inflatable sculptures. The history of inflatables are examined, with special attention paid to how they have been used in political movements that imagine utopian social futures, and how those applications contrast with commercial uses (such as advertising) that have become commonplace in public spaces today. Throughout the class will explore, design, and build inflated structures that may include video and sound elements.",
     "name": "Inflatable Sculpture",
     "offered": {
       "even": false,
@@ -4046,25 +3134,6 @@
     },
     "subj": "ITWS"
   },
-  "Information Technology Master's Capstone": {
-    "ID": "6800",
-    "description": "Integration of the knowledge and professional practice of the Master's in IT core and concentration courses. Topics in database systems, networking, software design, human computer interaction, management of technology, and ethics are applied within a framework of global e-business strategy. The course utilizes a Team Project with a real organization to practice major IT concepts. Team members select, develop, and present a significant technology implementation project, incorporating strategy, systems development, and business planning.",
-    "name": "Information Technology Master's Capstone",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "fall and spring terms annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ITWS"
-  },
   "Information Technology and Web Science Capstone": {
     "ID": "4100",
     "description": "Students work on collaborative projects to design innovative ITWS solutions which address a specific problem or area of need in the student's field. Students work to identify a problem and research viable solutions. They go on to propose, design, and prototype their ITWS solution learning best practices for ITWS project management, communication, and user-center design. This course serves as the culminating experience for the undergraduate ITWS program. Restricted to ITWS majors. This is a communication-intensive course.",
@@ -4083,25 +3152,6 @@
       "major_restricted": false
     },
     "subj": "ITWS"
-  },
-  "Intelligent Virtual Agent": {
-    "ID": "6640",
-    "description": "This course introduces various computational approaches for creating intelligent conversational agents. This course will take the form of a combination of lectures, presentations by students, class discussions, and independent study.",
-    "name": "Intelligent Virtual Agent",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COGS"
   },
   "Intelligent Virtual Agents": {
     "ID": "4640",
@@ -4142,8 +3192,8 @@
     "subj": "ARTS"
   },
   "Interactive Data Visualization": {
-    "ID": "6880",
-    "description": "This course covers interactive, multimedia interface design (for Web sites and apps) for data visualization or other forms of interactive information design. Innovative designs that explore new directions in interactive data design are highlighted. Topics include multisensory information design using graphics, sound, touch, and large-scale data projection. Interface design topics include user-centered design, information architecture, rapid prototyping, cross-cultural design, and intellectual property. Students may choose the applications they want to design for the class project.",
+    "ID": "4880",
+    "description": "The course covers interactive, multimedia interface design (for Web sites and apps) for data visualization or other forms of interactive information design. Innovative designs that explore new directions in interactive data design are highlighted. Topics include multisensory information design using graphics, sound, touch, and large-scale data projection. Interface design topics include user-centered design, information architecture, rapid prototyping, cross-cultural design, and intellectual property. Students may choose the applications they want to design for the class project.",
     "name": "Interactive Data Visualization",
     "offered": {
       "even": false,
@@ -4161,7 +3211,7 @@
     "subj": "COMM"
   },
   "Interactive Narrative": {
-    "ID": "6780",
+    "ID": "4780",
     "description": "This course introduces students to narrative theory and interactive narratives in a variety of genres such as oral story-telling, literature, poetry, film, artists' books, historical narrative, hypertext fiction, Net Art, social media narratives, and computer games. Students will have the opportunity to design and develop an original interactive narrative.",
     "name": "Interactive Narrative",
     "offered": {
@@ -4170,7 +3220,7 @@
       "odd": true,
       "spring": true,
       "summer": false,
-      "text": "spring term, odd-numbered years."
+      "text": "spring term odd-numbered years."
     },
     "properties": {
       "CI": true,
@@ -4180,16 +3230,16 @@
     "subj": "COMM"
   },
   "Interdisciplinary Research Seminar": {
-    "ID": "6880",
-    "description": "This is a course introducing upper-year undergraduates and graduate students to advanced research topics of the Rensselaer music faculty. Each semester a member of the music faculty will focus the seminar on a research topic or paradigm related to their own body of artistic and technological research. Sample topics might include Spatial music and sound, New Instrument Design, Network Music, Music Information Retrieval, Ethnomusicology, Sonification Art and Science, Music and Logic, Spectralism and Beyond, Music Herstory (feminist music composition), Experimental music, and sound history. Through hands-on creative research, students will explore questions of both musical and technological significance while engaging that same topic through their own hands-on creative practice.",
+    "ID": "4880",
+    "description": "This is a course introducing music majors to advanced research topics of the Rensselaer music faculty. Each semester a member of the music faculty will focus the seminar on a research topic or paradigm related to their own body of artistic and technological research. Sample topics might include Spatial music and sound, New Instrument Design, Network Music, Music Information Retrieval, Ethnomusicology, Sonification Art and Science, Music and Logic, Spectralism and Beyond, Music Herstory (feminist music composition), Experimental music and sound history. Through hands-on creative research, students will explore questions of both musical and technological significance while engaging that same topic through their own hands-on creative practice.",
     "name": "Interdisciplinary Research Seminar",
     "offered": {
       "even": false,
-      "fall": false,
+      "fall": true,
       "odd": false,
-      "spring": false,
+      "spring": true,
       "summer": false,
-      "text": ""
+      "text": "fall and spring terms annually."
     },
     "properties": {
       "CI": true,
@@ -4331,44 +3381,6 @@
     },
     "subj": "ARTS"
   },
-  "International Economics and Development I": {
-    "ID": "6840",
-    "description": "Study classical models of international trade that consider factor endowments, comparative advantage, labor capabilities, strategic use of trade barriers, and multilateral trade agreements. Examine contemporary models which explore increasing returns, heterogeneity in firm productivity and products, product mix, firm size distributions, globalization, multinationals, and offshoring.",
-    "name": "International Economics and Development I",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "International Economics and Development II": {
-    "ID": "6850",
-    "description": "Covers topics such as the impact of foreign trade and investment on labor markets, job creation and destruction, income inequality, production location and agglomeration, international technology transfer, and regional economic development.",
-    "name": "International Economics and Development II",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
   "International Economics and Globalization": {
     "ID": "4190",
     "description": "This course investigates the significance of economic globalization, covering the following topics: international trade and financial flows, technological innovation and intellectual property, technology transfer, national government and transnational corporations, natural resources, health and the environment, impacts on selected industries and countries, and roles of the world trade organization and international monetary fund. The major controversies surrounding globalization are identified, and alternative arguments are evaluated based on available evidence.",
@@ -4444,25 +3456,6 @@
       "major_restricted": false
     },
     "subj": "COGS"
-  },
-  "Introduction to Economic Theory": {
-    "ID": "6490",
-    "description": "The course examines the basic concepts and techniques of economic analysis and their applications to economics problems at the level of the firm, industry, and economy as a whole. Topics include theory of product and factor pricing, national income and employment theory, monetary and fiscal theories, economic growth and fluctuations.",
-    "name": "Introduction to Economic Theory",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "upon availability of instructor."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
   },
   "Introduction to Engineering Analysis": {
     "ID": "1100",
@@ -4807,7 +3800,7 @@
     "subj": "LITR"
   },
   "Language Studies": {
-    "ID": "6940",
+    "ID": "4940",
     "description": "Readings and projects adapted to the needs of individual students.",
     "name": "Language Studies",
     "offered": {
@@ -4845,8 +3838,8 @@
     "subj": "IHSS"
   },
   "Language-Endowed Intelligent Agents": {
-    "ID": "6880",
-    "description": "This course will concentrate on the knowledge-based modeling of intelligent agents, with a special emphasis on semantically-oriented language processing. Theoretical and conceptual discussions will be balanced by practical work within the implemented OntoAgent cognitive architecture. The course will cover the modeling of decision-making, the various aspects of natural-language processing, and the art of knowledge engineering.",
+    "ID": "4880",
+    "description": "This course will concentrate on the knowledge-based modeling of intelligent agents, with a special emphasis on semantically-oriented language processing. Theoretical and conceptual discussions will be balanced by practical work within the implemented OntoAgent cognitive architecture. It will discuss the modeling of decision-making, the various aspects of natural-language processing, and the art of knowledge engineering.",
     "name": "Language-Endowed Intelligent Agents",
     "offered": {
       "even": false,
@@ -4901,44 +3894,6 @@
     },
     "subj": "IHSS"
   },
-  "Lean Six Sigma I": {
-    "ID": "6230",
-    "description": "Learn the fundamentals of lean and six sigma philosophies and gain experience with a toolkit to improve existing processes by applying them to relevant workplace process. The Define, Measure, Analyze, Improve, and Control (DMAIC) improvement cycle is used, in which students learn and gain experience using multiple tools for each step of the improvement cycle, including voice of customer (VOC), quality functional deployment (QFD), 5S, Kaizens, and plan-do-check-act (PDCA).",
-    "name": "Lean Six Sigma I",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
-  },
-  "Lean Six Sigma II": {
-    "ID": "6231",
-    "description": "Building on the experience with DMAIC, students learn to identify the need for a new process, quantify its value and create it so that the quality of the results meet a predefined quality standard. To do so, the Define, Measure, Analyze, Design, Optimize, and Verify (DMADOV) is used. The first three phases of DMAIC lay the foundation, but new tools and skills are learned in the context of new process creation. These include: developing an elevator speech, data collection and statistical methods for design of experiments (DOE), root cause analysis, and developing key performance indicators (KPIs) and dashboards.",
-    "name": "Lean Six Sigma II",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
-  },
   "Learning": {
     "ID": "4450",
     "description": "The first half of this course is devoted to presentation of traditional theories of learning. Classical and operant conditioning and single-subject methodology are studied in depth. During the second half of the course, students apply their knowledge of operant conditioning principles in the context of a group-based field study.",
@@ -4959,7 +3914,7 @@
     "subj": "PSYC"
   },
   "Learning and Advanced Game AI": {
-    "ID": "6430",
+    "ID": "4430",
     "description": "Digital gaming is one of the most rapidly developing fields. The effort required for developing games is not trivial. To make a game fun to play, the design of the game levels and/or the AI-driven opponents need to be intelligent and adaptive to the players' strategies and skills. In this course, students will learn and explore using machine learning techniques to automate the design process of digital games. The course will cover basic and advanced topics in Artificial Intelligence and Learning, such as Decision Trees, Neural Networks, Genetic Algorithms, and Reinforcement Learning. Students will gain hands-on experience in applying these techniques in computer games. The course will also introduce psychological theories and studies about people's decision-making and emotional processes and how they are related to the players' experience in games. This course will take the form of a combination of lectures, presentations by students, class discussions, and independent study.",
     "name": "Learning and Advanced Game AI",
     "offered": {
@@ -4997,7 +3952,7 @@
     "subj": "GSAS"
   },
   "Life Drawing and Anatomy for Artists": {
-    "ID": "6260",
+    "ID": "4260",
     "description": "Life Drawing and Anatomy for Artists is an advanced drawing class that will focus on drawing the human figure. Students will work from live models to refine their drawing skills; clay models from anatomical texts will be made to develop a working knowledge of anatomy for artists. Gesture, proportion, and expression of the human figure will be emphasized; general concepts of design and composition will also be presented.",
     "name": "Life Drawing and Anatomy for Artists",
     "offered": {
@@ -5006,7 +3961,7 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "spring term annually."
+      "text": "spring term annually"
     },
     "properties": {
       "CI": false,
@@ -5054,7 +4009,7 @@
     "subj": "GSAS"
   },
   "Literature Studies": {
-    "ID": "6940",
+    "ID": "2940",
     "description": "Readings and projects adapted to the needs of individual students.",
     "name": "Literature Studies",
     "offered": {
@@ -5071,44 +4026,6 @@
       "major_restricted": false
     },
     "subj": "LITR"
-  },
-  "Logic and Artificial Intelligence": {
-    "ID": "6240",
-    "description": "This course is about the connection between logic and artificial intelligence (AI). It may be partitioned into three general sections: 1) the straightforward application of first order logic (FOL) in AI; 2) the broadening of FOL to enable a robot to reason in a commonsense way (nonmonotonic reasoning, induction, etc.) and to formalize a robot agent's belief and knowledge system (modal logics, etc.); and 3) using a logical approach to the Frame Problem and to building a planner.",
-    "name": "Logic and Artificial Intelligence",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COGS"
-  },
-  "Machine Learning Frameworks": {
-    "ID": "6221",
-    "description": "Students develop predictive models that lead to the least likelihood of unintended variance and build natural language and recommendation engines for common applications such as enhancement engines. Students observe results and tune recommendation models to achieve more accurate predictions and recommendations.",
-    "name": "Machine Learning Frameworks",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
   },
   "Managing IT Resources": {
     "ID": "4310",
@@ -5167,82 +4084,6 @@
     },
     "subj": "ENGR"
   },
-  "Master's Internship": {
-    "ID": "6970",
-    "description": "",
-    "name": "Master's Internship",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
-  },
-  "Master's Project": {
-    "ID": "6980",
-    "description": "Active participation in a master's-level project, under the supervision of a faculty adviser, leading to a master's project report. Grades S or U are assigned at the end of the semester. If recommended by the adviser, the master's project may be accepted by the Office of Graduate Education to be archived in the library.",
-    "name": "Master's Project",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "fall and spring terms annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ITWS"
-  },
-  "Master's Thesis": {
-    "ID": "6990",
-    "description": "Active participation in research, under the supervision of a faculty adviser, leading to a master's thesis. Grades of S or U are assigned by the adviser each term to reflect the student's research progress for the given semester. Once the thesis has been presented, approved by the adviser, and accepted by the Office of Graduate Education, it will be archived in a standard format in the library.",
-    "name": "Master's Thesis",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
-  },
-  "Master’s Thesis": {
-    "ID": "6990",
-    "description": "Active participation in research, under the supervision of a faculty adviser, leading to a master’s thesis. Grades of S or U are assigned by the adviser each term to reflect the student's research progress for the given semester. Once the thesis has been presented, approved by the adviser, and accepted by the Office of Graduate Education, it will be archived in a standard format in the library.",
-    "name": "Master’s Thesis",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "fall and spring terms annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ITWS"
-  },
   "Materials Science": {
     "ID": "1600",
     "description": "Introduction to the scientific principles that dictate the structure and properties of engineering materials, including metals, ceramics, semiconductors, and polymers. Physical properties of materials (mechanical, electrical, thermal, optical) are discussed in terms of the underlying bonding and structure, spanning multiple length scales from atomic packing to micron scale defects, in practical engineering materials. Throughout the course, the material behaviors are understood from the viewpoint of thermodynamics and kinetics.",
@@ -5300,28 +4141,9 @@
     },
     "subj": "PSYC"
   },
-  "Media Studies": {
-    "ID": "6790",
-    "description": "This HASS graduate seminar examines major theories and approaches to studying the media from a broad cultural studies perspective. Analysis of foundational and contemporary readings will allow students to consider, from their own field's perspective, topics such as the politics of representation and the representation of politics; commercialization; surveillance; depictions of gender, race, and class; and the fictional, factual, and fake. Examples will be drawn mainly from the mass media, particularly television and film.",
-    "name": "Media Studies",
-    "offered": {
-      "even": true,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term even-numbered years"
-    },
-    "properties": {
-      "CI": false,
-      "HI": true,
-      "major_restricted": false
-    },
-    "subj": "IHSS"
-  },
   "Media Watch": {
-    "ID": "6150",
-    "description": "This seminar is an investigation of the successes and failures of the news media, set within historical and contemporary contexts. The title \"media watch\" is intended to evoke a watch-dog approach found in independent media sources and organizations like human rights watch. Assignments involve analyzing how issues are portrayed in the media and students choose their topics according to their interests. The course can therefore enhance capstone, thesis, or dissertation work.",
+    "ID": "4150",
+    "description": "This seminar is an investigation of the successes and failures of the news media, set within historical and contemporary contexts. The title \"media watch\" is intended to evoke a watch-dog approach found in independent media sources and organizations like human rights watch. Assignments involve analyzing how issues are portrayed in the media, and students choose their topics according to their interests. The course can therefore enhance capstone, thesis, or dissertation work.",
     "name": "Media Watch",
     "offered": {
       "even": false,
@@ -5395,29 +4217,10 @@
     },
     "subj": "PHIL"
   },
-  "Microeconomics I": {
-    "ID": "6550",
-    "description": "The central propositions of contemporary economic analysis are discussed. Topics include individual decision-making, consumption, production, the interaction of firms and households, competitive equilibrium, general equilibrium theory, welfare theorems, externalities, uncertainty, and the implications for economic policy.",
-    "name": "Microeconomics I",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Microeconomics II": {
-    "ID": "6720",
-    "description": "Topics include market power, adverse selection, moral hazard, signaling, screening, mechanism design, externalities, public goods, information economics, and principal-agent problems. Implications for economic policy are also considered.",
-    "name": "Microeconomics II",
+  "Microeconomics of Decision-Making": {
+    "ID": "4350",
+    "description": "This course will examine alternative models of economic and non-economic decision-making. The course will cover models of rational decision-making under certainty and uncertainty, bounded rationality, preference-based approaches (e.g., loss aversion, ambiguity aversion, disappointment aversion), and heuristic decision-making. The emphasis throughout will be on the proper interpretation of more general models of decision-making as well as real-world applications.",
+    "name": "Microeconomics of Decision-Making",
     "offered": {
       "even": false,
       "fall": false,
@@ -5425,25 +4228,6 @@
       "spring": true,
       "summer": false,
       "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
-  "Microeconomics of Decision-Making": {
-    "ID": "6350",
-    "description": "This course will examine alternative models of economic and non-economic decision-making. The course will cover models of rational decision-making under certainty and uncertainty, bounded rationality, preference-based approaches (e.g., loss aversion, ambiguity aversion, disappointment aversion), and heuristic decision-making. The emphasis throughout will be on the proper interpretation of more general models of decision-making as well as real-world applications.",
-    "name": "Microeconomics of Decision-Making",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
     },
     "properties": {
       "CI": false,
@@ -5470,63 +4254,6 @@
       "major_restricted": false
     },
     "subj": "IHSS"
-  },
-  "Modeling Business Decisions": {
-    "ID": "6216",
-    "description": "Working with a faculty member, students develop a big data inquiry model for a complex business issue, question, or problem of their choosing. Over the semester, the student frames the question to be analyzed, collects and prepares business data for analysis, performs the analysis, and presents actionable results and recommendations back to the organization. Students cannot receive credit for both this course and ENGR 6206 or ENGR 6211.",
-    "name": "Modeling Business Decisions",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
-  },
-  "Modeling Health Decisions": {
-    "ID": "6211",
-    "description": "Working with a faculty member, students develop a big data health industry model for an issue, question, or problem of their choosing. Over the semester, the student frames the question to be analyzed, collects and prepares business data for analysis, performs the analysis, and presents actionable results and recommendations back to the organization. Students cannot receive credit for both this course and ENGR 6206 or ENGR 6216.",
-    "name": "Modeling Health Decisions",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
-  },
-  "Modeling Production Decisions": {
-    "ID": "6206",
-    "description": "Working with a faculty member, students develop a big data inquiry model for a production related issue, question, or problem of their choosing. Over the semester, the student frames the question to be analyzed, collects and prepares data for analysis, performs the analysis and presents actionable results and recommendations back to the organization. Students cannot receive credit for both this course and ENGR 6211 or ENGR 6216.",
-    "name": "Modeling Production Decisions",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
   },
   "Modeling and Analysis of Uncertainty": {
     "ID": "2600",
@@ -5605,7 +4332,7 @@
     "subj": "PSYC"
   },
   "Multimedia Performance Systems": {
-    "ID": "6030",
+    "ID": "4030",
     "description": "Multimedia Performance Systems explores the composition and programming of real-time performance systems. The course will examine the basics of MIDI, sound synthesis, digital signal processing, and image/video manipulation. Final projects will consist of a real-time performance system or interactive installation.",
     "name": "Multimedia Performance Systems",
     "offered": {
@@ -5757,16 +4484,16 @@
     "subj": "IHSS"
   },
   "New Media Theory": {
-    "ID": "6130",
-    "description": "This course asks what is really new about New Media, and looks at creative practices, theoretical discourses, and social contexts to find answers. The course concentrates on cutting edge cultural expression using information and communication technologies. The objective is to equip students with multiple perspectives — aesthetic, communications, historical — with which to analyze, critique, and develop original concepts about the uses of new media in art and culture.",
+    "ID": "4130",
+    "description": "This course asks what is really new about New Media, and looks at creative practices, theoretical discourses, and social contexts to find answers. The course concentrates on cutting edge cultural expression using information and communication technologies. The objective to equip students with multiple perspectives - aesthetic, communications, historical - with which to analyze, critique, and develop original concepts about the uses of new media in art and culture.",
     "name": "New Media Theory",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": false,
+      "spring": true,
       "summer": false,
-      "text": ""
+      "text": "spring term annually."
     },
     "properties": {
       "CI": true,
@@ -5795,8 +4522,8 @@
     "subj": "ECON"
   },
   "Painting": {
-    "ID": "6220",
-    "description": "A painting course in opaque media such as oil or acrylic with emphasis on color interaction, composition, and pictorial design. Using sources from observation and the history of painting, students are taught to see and convey effects of color on/in 2-D pictorial space and to develop critical skills in looking at paintings.",
+    "ID": "4220",
+    "description": "A painting course in opaque media such as oil or acrylic with emphasis on color interaction, composition, and pictorial design. Using sources from observation and the history of painting, students are taught to see and convey effects of color on/in 2D pictorial space and to develop critical skills in looking at paintings.",
     "name": "Painting",
     "offered": {
       "even": false,
@@ -5804,7 +4531,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": "fall term annually"
     },
     "properties": {
       "CI": false,
@@ -5812,25 +4539,6 @@
       "major_restricted": false
     },
     "subj": "ARTS"
-  },
-  "Perception and Action": {
-    "ID": "6420",
-    "description": "This course is a graduate level introduction to the topic of perception and action, and will focus on the significance of perception, motor control, and perceptual-motor learning as they relate to the performance of routine and skilled tasks. It will explore perception and action from information processing, computational, dynamical systems, and ecological perspectives, review current empirical and computational research, and consider some applications, including training, rehabilitation, human-machine interaction, and robotics.",
-    "name": "Perception and Action",
-    "offered": {
-      "even": true,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term even-numbered years."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COGS"
   },
   "Personality": {
     "ID": "4400",
@@ -6079,25 +4787,6 @@
     },
     "subj": "COMM"
   },
-  "Production and Logistic Analysis": {
-    "ID": "6205",
-    "description": "Students use visualization and cluster analysis tools to gain deeper insights into production and logistic relationships. Students apply data analytic process to real-world production problems and questions, including evaluating production throughput, factor isolation and output risk analysis, modeling production changes, forecasting environmental control factor changes, and minimization of defects and shortages. Students tune models to represent current-state and adjust models as underlying assumptions change. Students cannot receive credit for both this course and ENGR 6210 or ENGR 6215.",
-    "name": "Production and Logistic Analysis",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ENGR"
-  },
   "Production and Operations Management": {
     "ID": "2700",
     "description": "Overview of methods used in the design and operation of production and service systems and basic cost accounting. Topics include forecasting, capacity planning, line balancing, production scheduling, staff scheduling, inventory control, just in time, time study, project planning, and discrete item cost accounting. Goal of course is to educate students in basic operations management principles and models and in discrete goods cost accounting. Students cannot receive credit for this course and ISYE 2210.",
@@ -6193,28 +4882,9 @@
     },
     "subj": "ENGR"
   },
-  "Professional Project": {
-    "ID": "6980",
-    "description": "Active participation in a semester-long project, under the supervision of a faculty adviser. A Professional Project often serves as a culminating experience for a Professional Master's program but, with departmental or school approval, can be used to fulfill other program requirements. With approval, students may register for more than one Professional Project. Professional Projects must result in documentation established by each department or school, but are not submitted to the Office of Graduate Education and are not archived in the library. Grades of A, B, C, or F are assigned by the faculty adviser at the end of the semester. If not completed on time, a formal Incomplete grade may be assigned by the faculty adviser, listing the work remaining to be completed and the time limit for completing this work.",
-    "name": "Professional Project",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
-  },
   "Programming for Cognitive Science and Artificial Intelligence": {
-    "ID": "6410",
-    "description": "This course is a graduate course that teaches Cognitive Science and Artificial Intelligence concepts by enabling the student to develop and understand computer programs that implement them. It covers data collection and analysis, task environments, natural language, cognitive architectures, and learning. Some previous programming experience is very beneficial but not required.",
+    "ID": "4410",
+    "description": "Research in Cognitive Science and Artificial Intelligence (AI) is driven by data. Researchers in these fields collect, manipulate, model and analyze data generated by real-world processes. Since the amount of data available has grown exponentially, the ability to automate these tasks through computer programs is essential. Specifically, probabilistic and statistical computing are needed to learn from the data. The objectives of this course are for the student to perform exploratory data analysis and to acquire the basics of statistical and machine learning in order to model real-world datasets.",
     "name": "Programming for Cognitive Science and Artificial Intelligence",
     "offered": {
       "even": false,
@@ -6232,8 +4902,8 @@
     "subj": "COGS"
   },
   "Proposing and Persuading": {
-    "ID": "6550",
-    "description": "This course provides strategies for how to find funding, write persuasive narratives, develop budgets, and leverage academic or professional networks to craft competitive proposals. Here you will learn how to seek opportunities for developing proposals to support projects in your field of interest.",
+    "ID": "4550",
+    "description": "Make things happen: start a business, raise funds, solicit work, support research, win a place on a conference program, take initiative, change the way things are done around here. This course will teach students how to write proposals that persuade. Students will learn to turn situations into occasions for proposing, write a variety of proposals, locate Request for Proposals, develop a work plan for feasible projects that come in on-time and on-budget, use networks to strengthen proposals, detail a budget, and edit for clarity and grace.",
     "name": "Proposing and Persuading",
     "offered": {
       "even": false,
@@ -6241,7 +4911,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually"
+      "text": "fall term annually."
     },
     "properties": {
       "CI": true,
@@ -6327,16 +4997,16 @@
     "subj": "ECON"
   },
   "Queer Ecologies": {
-    "ID": "6140",
+    "ID": "4140",
     "description": "Queer Ecologies is an undergraduate and graduate arts course that uses art to think about our eco-futures. We will look at the disruptive nature of Cartesian thinking and binary positioning in relation to sexuality and ecologies. The \"queering\" is a means to refuse this binary thinking and consider expansive interdisciplinary practices that have evolved from LGBTQ+ and feminist theory, decolonial thinking, extinction and death studies, environmental justice, critiques of science and big pharma, biopolitics, bioethics, biology, science fiction, aesthetics, art and play.",
     "name": "Queer Ecologies",
     "offered": {
       "even": false,
       "fall": false,
-      "odd": false,
-      "spring": false,
+      "odd": true,
+      "spring": true,
       "summer": false,
-      "text": ""
+      "text": "spring semester, odd-numbered years"
     },
     "properties": {
       "CI": false,
@@ -6384,16 +5054,16 @@
     "subj": "ARTS"
   },
   "Readings in Cognitive Science": {
-    "ID": "6940",
+    "ID": "4940",
     "description": "An individually arranged independent study course under the supervision of a member of the Cognitive Science Department. The topic is selected by consultation between student and faculty member.",
     "name": "Readings in Cognitive Science",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "properties": {
       "CI": false,
@@ -6403,7 +5073,7 @@
     "subj": "COGS"
   },
   "Readings in Economics": {
-    "ID": "6940",
+    "ID": "4940",
     "description": "",
     "name": "Readings in Economics",
     "offered": {
@@ -6441,7 +5111,7 @@
     "subj": "PSYC"
   },
   "Readings in Science and Technology Studies": {
-    "ID": "6940",
+    "ID": "4940",
     "description": "With an individual faculty member on an agreed-upon topic.",
     "name": "Readings in Science and Technology Studies",
     "offered": {
@@ -6460,16 +5130,16 @@
     "subj": "STSO"
   },
   "Reality TV and Post-Factual Media": {
-    "ID": "6530",
-    "description": "This course considers the sociopolitical and ethical dimensions of reality television, one of the most significant developments in recent popular culture. An analysis of a variety of reality formats allows students to understand the evolution, economics, and, above all, the cultural and political significance of modern media. Topics include post-truth or post-factual communication; the representation of gender, class, and race; celebrity; advertising and commercialization; audience interaction; surveillance; mediation and reality.",
+    "ID": "4530",
+    "description": "This course considers the sociopolitical and ethical dimensions of reality television and post-factual media content. An analysis of a variety of \"reality\" and news formats allows students to understand the evolution, economics, and, above all, the cultural and political significance of modern media. Topics include: simulation; social representation; commercialization; social media; surveillance; nationalism; and globalization.",
     "name": "Reality TV and Post-Factual Media",
     "offered": {
       "even": false,
-      "fall": true,
-      "odd": true,
-      "spring": false,
+      "fall": false,
+      "odd": false,
+      "spring": true,
       "summer": false,
-      "text": "fall term, odd-numbered years"
+      "text": "spring term annually."
     },
     "properties": {
       "CI": false,
@@ -6573,25 +5243,6 @@
     },
     "subj": "STSO"
   },
-  "Research Methods": {
-    "ID": "6570",
-    "description": "This seminar is an investigation of creative, theoretical, and historical research methods in the interdisciplinary arts. Students will be introduced to arts practice-based research discourses and will gain competence in writing and research techniques, conventions, and methods. This course is a requirement for all Arts Department doctoral students.",
-    "name": "Research Methods",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": true,
-      "major_restricted": false
-    },
-    "subj": "IHSS"
-  },
   "Research Methods and Statistics I": {
     "ID": "2310",
     "description": "This course, the first in a two-course sequence, provides an introduction to basic methods of behavioral and social science research, including experimental, quasi-experimental, and non-experimental research designs, psychometric considerations (e.g., reliability, validity, control, importance, levels of measurement), approaches to data collection and analysis, and communication of results. Students will demonstrate their understanding of the topics covered by writing a detailed research proposal formatted according to American Psychological Association (APA) guidelines. Students will also gain experience in using a selection of parametric (e.g., correlation, simple and multiple regression, ANOVA) and non-parametric (e.g., Chi-square, Mann-Whitney U, Wilcoxon T, Kruskal-Wallis, Friedman's ANOVA) statistical procedures. Data analysis will be carried out using R, an open-source programming language for statistical calculation and graphics, and R-Studio, an open-source integrated development environment for R.",
@@ -6630,10 +5281,10 @@
     },
     "subj": "PSYC"
   },
-  "Research Methods in Critical Game Design": {
-    "ID": "6300",
-    "description": "This multidisciplinary course provides theoretical and methodological orientation to critical games research, and seeks to address both the broad and pragmatic implications of the question, \"What does it mean to conduct research via games?\" Through a hybrid lecture-workshop class format, students will engage with methodological research techniques in the various disciplines that game design draws upon--Visual Arts, Humanities and Media Studies, Social Science, and Computer Science--as well as experiment with independent research design and proposal writing.",
-    "name": "Research Methods in Critical Game Design",
+  "Research Writing": {
+    "ID": "4410",
+    "description": "In this class, students will write on topics from their major discipline and investigate the kinds of texts that professionals in their field produce. They will identify and explore research questions, use discipline-specific library databases, and write research reports. In addition, they will develop effective note-taking and research skills and learn strategies for effective prose style.",
+    "name": "Research Writing",
     "offered": {
       "even": false,
       "fall": false,
@@ -6643,44 +5294,6 @@
       "text": "spring term annually"
     },
     "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "GSAS"
-  },
-  "Research Methods in STS": {
-    "ID": "6110",
-    "description": "This course offers an overview of social science techniques and research design and logistics and approaches widely used in STS.",
-    "name": "Research Methods in STS",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": true,
-      "spring": false,
-      "summer": false,
-      "text": "fall term odd-numbered years."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
-  },
-  "Research Writing": {
-    "ID": "6410",
-    "description": "In this class, students will write on topics from their major discipline and investigate the kinds of texts that professionals in the field produce. They will identify and explore research questions, use discipline-specific library databases, and write research reports. In addition, students will develop effective note-taking and research skills and learn strategies for effective prose style.",
-    "name": "Research Writing",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually."
-    },
-    "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
@@ -6688,8 +5301,8 @@
     "subj": "WRIT"
   },
   "Rethinking Documentary: Video Production": {
-    "ID": "6040",
-    "description": "Rethinking Documentary is a graduate level production course in film and video. Taking a broad look at what defines \"documentary\" media, this course incorporates criticism with production to examine key issues in the discipline, such as truth versus fiction, personal responsibility, community involvement, the efficacy of video intervention and the authority of mass media. Students are required to produce a range of video works questioning conventional documentary styles, using radical and interventionist techniques to tell compelling or poetic stories.",
+    "ID": "4040",
+    "description": "This is a production course investigating non-traditional approaches to documentary or non-fiction film/video. Taking a broad look at what defines \"documentary\" media, this course will incorporate criticism with production. Students will produce a range of video works questioning conventional documentary styles, using radical and interventionist techniques. Students will study traditional documentary works including ethnographic films, cinema verité, propaganda films, \"home movies,\" reality TV, tabloid news, autobiographic and activist videos.",
     "name": "Rethinking Documentary: Video Production",
     "offered": {
       "even": false,
@@ -6697,7 +5310,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": "fall term annually"
     },
     "properties": {
       "CI": false,
@@ -6705,25 +5318,6 @@
       "major_restricted": false
     },
     "subj": "ARTS"
-  },
-  "Rhetoric of the Photograph": {
-    "ID": "6700",
-    "description": "Photography is the first modern visual technology that is reproducible yet still has an aura of \"objectivity,\" and its study addresses issues that are central to all forms of contemporary image-making, from art and architecture to politics, social media, and game design. Using the rhetorical triad of producer, photographer, and audience, the course introduces students across HASS to various methodologies of visual analysis through semiotics, phenomenology, neuropsychology, and psychodynamics of affect.",
-    "name": "Rhetoric of the Photograph",
-    "offered": {
-      "even": true,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term, even-numbered years."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COMM"
   },
   "STS and Sustainability Senior Project": {
     "ID": "4990",
@@ -6745,8 +5339,8 @@
     "subj": "STSO"
   },
   "Science Fictions": {
-    "ID": "6640",
-    "description": "Science Fictions is an advanced narrative video production and theory course. The class looks at thematic areas of science fiction, utopia and dystopia, paranormal, and speculative fiction. 'Speculative fiction' is a genre that looks at the real world and extends what we know about it, building on the 'real.' The class has two threads: to study narrative structure and create a series of sci-fi videos; to discuss and analyze mainstream and avant-garde science fictions film and themes from the early 1900s to the present.",
+    "ID": "4640",
+    "description": "Science Fictions is an advanced narrative video production and theory course. The class looks at thematic areas of science fiction, utopia and dystopia, paranormal, and speculative fiction. 'Speculative fiction' is a genre that looks at the real world and extends what is known about it, building on the 'real.' The class has two threads: to study narrative structure and create a series of sci-fi videos; to discuss and analyze mainstream and avant-garde science fiction films and themes from the early 1900s to the present.",
     "name": "Science Fictions",
     "offered": {
       "even": false,
@@ -6762,25 +5356,6 @@
       "major_restricted": false
     },
     "subj": "ARTS"
-  },
-  "Science Studies": {
-    "ID": "6200",
-    "description": "A broad survey of the field of science studies from the vantage point of various disciplinary and interdisciplinary perspectives that have contributed to the development of science studies. The texts, theories, and arguments that were important for the historical development of the field are covered, as well as contemporary issues. The seminar provides the resources and develops the skills needed for understanding, criticizing, constructing, and developing research in the field.",
-    "name": "Science Studies",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": true,
-      "spring": false,
-      "summer": false,
-      "text": "fall term odd-numbered years."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
   },
   "Science and Fiction": {
     "ID": "4150",
@@ -6819,25 +5394,6 @@
       "major_restricted": false
     },
     "subj": "IHSS"
-  },
-  "Science and Technology Policy": {
-    "ID": "6100",
-    "description": "This course is an advanced introduction to the policy-relevant side of STS. We will examine three broad topics: 1. How states shape scientific research and the development of technologies and infrastructures. 2. How legislators and regulatory bureaucracies use scientific knowledge and expert opinion in decision-making processes. 3. How publics, particularly social movements, engage in political processes that are dominated by scientific and technological experts.",
-    "name": "Science and Technology Policy",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": true,
-      "spring": true,
-      "summer": false,
-      "text": "spring term, odd-numbered years"
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
   },
   "Science, Technology, and Society": {
     "ID": "1110",
@@ -6933,44 +5489,6 @@
       "major_restricted": false
     },
     "subj": "STSO"
-  },
-  "Seminar in Cognitive Engineering": {
-    "ID": "6100",
-    "description": "Integrated cognitive systems comprise human cognitive, perception, and motor subsystems in coordinated action with interactive devices. Examples may be as simple as a human using a VCR or as complex as the behavior exhibited by Air Force pilots. This course will introduce students to the cognitive theory behind integrated cognitive systems, the techniques for collecting and analyzing data such as eye movements and action protocols, as well as the software tools available for the representation of interactive behavior.",
-    "name": "Seminar in Cognitive Engineering",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "fall and spring terms annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COGS"
-  },
-  "Seminar in Research Design": {
-    "ID": "6690",
-    "description": "An in-depth study of quasi-experimental and experimental design of behavioral research. Topics include test construction and development, factor analysis, meta-analysis, repeated measures, and MANOVA.",
-    "name": "Seminar in Research Design",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COGS"
   },
   "Senior Thesis": {
     "ID": "4990",
@@ -7087,7 +5605,7 @@
     "subj": "STSO"
   },
   "Software Development": {
-    "ID": "6700",
+    "ID": "4700",
     "description": "This course teaches students about the roles and infrastructure of IT departments in modern organizations, IT software engineering technologies and methodologies for software development life cycle through hands-on experience. The course is for students with software development background to enhance their knowledge of software development and management, the software development industry, open source community, etc.",
     "name": "Software Development",
     "offered": {
@@ -7295,27 +5813,8 @@
     },
     "subj": "ECON"
   },
-  "Studies in Electronic Arts": {
-    "ID": "6940",
-    "description": "Individual and collaborative projects and assignments adapted to the needs of individual students at the graduate level.",
-    "name": "Studies in Electronic Arts",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "variable."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ARTS"
-  },
   "Studies in Games": {
-    "ID": "6940",
+    "ID": "4940",
     "description": "",
     "name": "Studies in Games",
     "offered": {
@@ -7334,7 +5833,7 @@
     "subj": "GSAS"
   },
   "Studies in Writing": {
-    "ID": "6940",
+    "ID": "4940",
     "description": "",
     "name": "Studies in Writing",
     "offered": {
@@ -7447,25 +5946,6 @@
     },
     "subj": "STSO"
   },
-  "Technology Studies": {
-    "ID": "6040",
-    "description": "The seminar examines interactions between technology and society from the vantage point of the various disciplinary and interdisciplinary perspectives that have contributed to technology studies. The texts, theories, and arguments that were important for the historical development of the field are covered, as well as contemporary issues. The seminar provides the resources and develops the skill needed for understanding, criticizing, constructing, and developing research in the field.",
-    "name": "Technology Studies",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": true,
-      "spring": false,
-      "summer": false,
-      "text": "fall term odd-numbered years."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
-  },
   "The American Dream": {
     "ID": "1776",
     "description": "The term \"American Dream\" is familiar, but what role, specifically, does the imaginative play in American literature and culture, past and present? This course focuses on the power of imagination to shape a nation through the analysis of fiction, poetry, film, essays, comics, advertising, and historical documents. We will use diverse social histories as a means to explore contemporary experience, focusing on the tension between American dreams and American realities. Requirements include reading/viewing responses, student presentations, and a semester capstone assignment that allows students to choose between a textual or multimedia project.",
@@ -7543,7 +6023,7 @@
     "subj": "IHSS"
   },
   "The Linguistics of Computational Linguistics": {
-    "ID": "6340",
+    "ID": "4340",
     "description": "This course will explore how linguistics, the scientific study of the properties of human language and languages, can be applied to the development of intelligent agents that can fluently and meaningfully communicate with people in natural language. It will focus on linguistic phenomena that have so far been particularly resistant to effective machine processing, such as lexical ambiguity resolution, reference resolution, ellipsis, indirect speech acts, implicature, and non-literal language (e.g., metaphor and irony).",
     "name": "The Linguistics of Computational Linguistics",
     "offered": {
@@ -7599,27 +6079,8 @@
     },
     "subj": "ENGR"
   },
-  "Topics in Applied Econometrics": {
-    "ID": "6580",
-    "description": "Applications of advanced econometric techniques such as two-and three-stage least squares, maximum likelihood, seemingly unrelated regression, full information likelihood, distributed lags, and autocorrelation correction to a variety of business and economic problems, including the capital asset pricing model, learning curve, economies of scale, hedonic price indexes, investment, production, and limited dependent variable models.",
-    "name": "Topics in Applied Econometrics",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "upon availability of instructor."
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
-  },
   "Topics in Cognitive Science": {
-    "ID": "6960",
+    "ID": "4960",
     "description": "An advanced course concerned with selected topics in cognitive science.",
     "name": "Topics in Cognitive Science",
     "offered": {
@@ -7638,7 +6099,7 @@
     "subj": "COGS"
   },
   "Topics in Communication": {
-    "ID": "6960",
+    "ID": "4960",
     "description": "Experimental courses tried out in one or two terms.",
     "name": "Topics in Communication",
     "offered": {
@@ -7657,7 +6118,7 @@
     "subj": "COMM"
   },
   "Topics in Deep Listening": {
-    "ID": "6180",
+    "ID": "4180",
     "description": "This course continues the practice and study of Deep Listening beyond the foundational course \"Deep Listening.\" Topics include a wide range of investigations, research, and creativity in Deep Listening.",
     "name": "Topics in Deep Listening",
     "offered": {
@@ -7674,25 +6135,6 @@
       "major_restricted": false
     },
     "subj": "ARTS"
-  },
-  "Topics in Economic Theory": {
-    "ID": "6960",
-    "description": "Selected topics in economic analysis and problems to meet the special needs of graduate students in various curricula throughout the Institute. This allows students to pursue more in-depth work in their areas of study.",
-    "name": "Topics in Economic Theory",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
   },
   "Topics in Economics": {
     "ID": "4960",
@@ -7713,25 +6155,6 @@
     },
     "subj": "ECON"
   },
-  "Topics in Electronic Arts": {
-    "ID": "6960",
-    "description": "Experimental courses offered for one to two semesters.",
-    "name": "Topics in Electronic Arts",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": ""
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ARTS"
-  },
   "Topics in Engineering": {
     "ID": "2960",
     "description": "",
@@ -7751,27 +6174,8 @@
     },
     "subj": "ENGR"
   },
-  "Topics in Game Research": {
-    "ID": "6200",
-    "description": "Topics in Games Research is a special topics course for the Critical Game Design MS and PhD program in which students are exposed to cutting-edge research being conducted by faculty, learn advanced scholarly research methods, and experience a research-infused pedagogy. The content of this course will shift each semester, reflecting the research focus of the faculty member who offers it. This course may also be used to develop new curriculum. May be taken multiple times for credit.",
-    "name": "Topics in Game Research",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "fall and spring terms annually"
-    },
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "GSAS"
-  },
   "Topics in Games": {
-    "ID": "6960",
+    "ID": "4960",
     "description": "",
     "name": "Topics in Games",
     "offered": {
@@ -7790,7 +6194,7 @@
     "subj": "GSAS"
   },
   "Topics in Interdisciplinary Humanities and Social Science Studies": {
-    "ID": "6960",
+    "ID": "4960",
     "description": "",
     "name": "Topics in Interdisciplinary Humanities and Social Science Studies",
     "offered": {
@@ -7809,7 +6213,7 @@
     "subj": "IHSS"
   },
   "Topics in Language": {
-    "ID": "6960",
+    "ID": "4960",
     "description": "",
     "name": "Topics in Language",
     "offered": {
@@ -7828,7 +6232,7 @@
     "subj": "LANG"
   },
   "Topics in Literature": {
-    "ID": "6960",
+    "ID": "4960",
     "description": "Experimental courses tried out in one or two terms.",
     "name": "Topics in Literature",
     "offered": {
@@ -7885,8 +6289,8 @@
     "subj": "PSYC"
   },
   "Topics in Science and Technology Studies": {
-    "ID": "6960",
-    "description": "Selected topics.",
+    "ID": "4960",
+    "description": "",
     "name": "Topics in Science and Technology Studies",
     "offered": {
       "even": false,
@@ -7904,7 +6308,7 @@
     "subj": "STSO"
   },
   "Topics in Writing": {
-    "ID": "6960",
+    "ID": "4960",
     "description": "",
     "name": "Topics in Writing",
     "offered": {
@@ -8018,8 +6422,8 @@
     "subj": "COMM"
   },
   "Visual Design: Theory and Application": {
-    "ID": "6560",
-    "description": "This course introduces students to the theoretical and practical use of graphics as a form of visual communication. Discussions include such topics as visual perception, design theory, formatted text, and graphics. Students have an opportunity to put theory into practice using computer graphics software.",
+    "ID": "4460",
+    "description": "This course introduces students to the theoretical and practical use of graphics as a form of visual communication. Discussions include topics such as the psychology of visual perception, design theory, creative process, formatted text, and graphics. Students have an opportunity to put theory into practice using computer graphics.",
     "name": "Visual Design: Theory and Application",
     "offered": {
       "even": true,
@@ -8037,8 +6441,8 @@
     "subj": "COMM"
   },
   "Visual Poetics and Narrative": {
-    "ID": "6320",
-    "description": "This studio course explores new directions in art and design that include visual poetry (visual expression in which the shape and arrangement of text, images, and symbols covey the message) and interactive narrative. Visual poetics and narrative appear in advertisement, music videos, and other forms of communication. Students will experiment with these forms of communication and learn how these concepts apply in artistic and commercial contexts. The class format includes lectures, discussions, and studio work.",
+    "ID": "4320",
+    "description": "This studio course explores new directions in art and design that include visual poetry (visual expression in which they shape an arrangement of text, images, symbols to convey the message) and interactive narrative. Visual poetics and narrative appear in advertisement, music videos, and other forms of communication. Students will experiment with these forms of communication and learn how these concepts apply in artistic and commercial contexts. The class format includes lectures, discussions, and studio work.",
     "name": "Visual Poetics and Narrative",
     "offered": {
       "even": false,
@@ -8208,8 +6612,8 @@
     "subj": "ARTS"
   },
   "Writing and Response": {
-    "ID": "6380",
-    "description": "This course explores effective strategies for talking with others about oral presentations and written texts. Practice in consulting is grounded in theory and research in composition studies, reader-response, and tutoring. Students also study their own writing and reading processes through reflection and discussion. Those who complete the course with a grade of A- or A may apply to work as writing consultants in the Center for Communication Practices.",
+    "ID": "4380",
+    "description": "This course explores effective strategies for talking with others about oral presentations and written texts. Practice in consulting is grounded in theory and research in composition studies, reader-response, and tutoring. Students also study their own writing and reading processes through reflection and discussion. Those who complete the course with a grade of A- or A may apply to work as writing consultants in the Center for Global Communication + Design.",
     "name": "Writing and Response",
     "offered": {
       "even": false,
@@ -8284,8 +6688,8 @@
     "subj": "WRIT"
   },
   "X-Informatics": {
-    "ID": "6400",
-    "description": "Informatics covers a broad range of disciplines addressing challenges in the explosion of data and information resources. X-informatics provides commonality for implementations in specific disciplines, e.g. X=astro, geo. Informatics' theoretical bases are information and computer science, cognitive science, social science, library science, aggregating these studies and adding the practice of information processing and the engineering of information systems. This course grounds the material that students will learn in discipline areas by coursework and project assignments.",
+    "ID": "4400",
+    "description": "Informatics covers a broad range of disciplines addressing challenges in the explosion of data and information resources. X-informatics provides commonality for implementations in specific disciplines, e.g. X=astro, geo. Informatics' theoretical bases are information and computer science, cognitive science, social science, library science, aggregating these studies and adding the practice of information processing, and the engineering of information systems. This course grounds the material that students will learn in discipline areas by coursework and project assignments.",
     "name": "X-Informatics",
     "offered": {
       "even": false,

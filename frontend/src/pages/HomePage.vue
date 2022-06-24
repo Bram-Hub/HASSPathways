@@ -84,13 +84,18 @@ export default {
 
     width: 40%;
     min-width: 400px !important;
-}
+
+
+
+    overflow-x: hidden !important;
+    width: 40%;
+    max-width: 92vw !important;
+    overflow-x: hidden;
+    margin-bottom: 5px;
+ }
 
 #admin {
     font-weight: bold;
 }
-
-    overflow-x: hidden !important;
- }
 
 </style>

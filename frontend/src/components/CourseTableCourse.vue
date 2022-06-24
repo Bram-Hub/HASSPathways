@@ -1,9 +1,8 @@
 <template>
     <v-card
-        :class="[selectedClass(), 'w-100', 'my-2', 'class-card']"
+        :class="[selectedClass(), 'w-100', 'my-2', 'class-card', {graph: graphView}]"
         fluid
         outlined
-
         @click="toggleCheckbox()"
         @keydown.13="toggleCheckbox()"
     >
@@ -11,7 +10,6 @@
             <v-list-item-content class="pb-0"> 
                 <div style="cursor: pointer">
                     <h1 class="text-h5 class-card__title">
-                        {{ course.name }}
                         <v-checkbox
                             :input-value="selected"
                             :false-value="0"
@@ -25,11 +23,13 @@
                             class="d-inline-block ma-0 float-right"
                             style="z-index: 99"
                         />
+                        {{ course.name }}
                     </h1>
                     <small v-if="course.hasData" class="class-card__subtitle">
                         {{ course.subj }}-{{ course.ID }}
                         <CourseTableModifiers
                             class="mt-4 class-card__subtitle__modifiers"
+                            :class="{graphChange:graphView}"
                             :item="course"
                         />
                         
@@ -37,7 +37,7 @@
                 </div>
             </v-list-item-content>
         </v-list-item>
-        <v-card-text v-if="course.hasData" class="class-card__desc">
+        <v-card-text v-if="course.hasData && showDesc" class="class-card__desc">
             {{ course.description }}
         </v-card-text>
         <v-card-text v-if="!course.hasData" class="class-card__desc">
@@ -66,6 +66,19 @@ export default {
             type: String,
             required: false,
             default: null
+        },
+        showDesc: {
+            type: Boolean,
+            required: false,
+        },
+        descriptionOnHover: {
+            type: Boolean,
+            required: false,
+            default: true,
+        },
+        graphView: {
+            type: Boolean,
+            required: false,
         }
     },
     data: () => {
@@ -109,6 +122,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// .graph {
+//     width: 50%;
+// }
+.v-tooltip__content {
+  opacity: 2.0;
+}
 .class-card {
     /* max-width: 700px; */
     border-radius: 0;
@@ -121,7 +140,7 @@ export default {
         line-height: 1.05em;
         display: inline-block;
         font-size: 1.2em !important;
-        width: 100%
+        width: 100%;
     }
 
     .class-card__subtitle {
@@ -135,8 +154,11 @@ export default {
 
             position: relative;
             top: -5px;
-            margin-left: 10px;
+            // margin-left: 10px;
             margin-top: 0 !important
+        }
+        .graphChange {
+            display: block;
         }
     }
 
@@ -144,4 +166,6 @@ export default {
         padding: 8px 20px;
     }
 }
+
+
 </style>
