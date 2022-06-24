@@ -58,6 +58,13 @@
 
         <v-divider class="my-4" />
 
+        <div id="info">
+            <p v-if="fourThousand">At least one course must be at the 4000 level</p>
+            <p v-if="minor">This pathway is compatible with the {{minorName}} minor</p>
+        </div>
+
+        <v-divider v-if="fourThousand || minor" class="my-4" />
+
         <v-tabs
             v-model="tab"
             background-color="transparent"
@@ -80,10 +87,6 @@
                 :key="item"
                 :eager="true"
             >
-            <div v-if="item === 'Remaining'" id="info">
-                <p v-if="fourThousand">At least one course must be at the 4000 level</p>
-                <p v-if="minor">Add one more course from this selection to have a minor in {{minorName}}</p>
-            </div>
                 <CourseTable
                     :ref="index"
                     :courses="courses[item]"
