@@ -19,9 +19,9 @@
                     :id="course.name"
                     :to="`/admin-portal/course?class=${course.name}`"
                 >
-                  Edit
+                    Edit
                 </v-btn>
-                <label class="label" :for="course.name"> {{ course.name + ", " + course.prefix + "-" + course.ID }} </label>
+                <label class="label" :for="course.name"> {{ course.name + ", " + course.subj + "-" + course.ID }} </label>
                 <v-btn color="red" @click="chooseCourse(course.name)">
                     Remove
                 </v-btn>

@@ -2,7 +2,6 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="foundCrumbs" />
-
             <h1 class="mb-4">
                 Modify Course Info
             </h1>
@@ -17,7 +16,7 @@
                 <v-row>
                     <v-col>
                         <v-text-field
-                            v-model="dept"
+                            v-model="subj"
                             outlined dense
                             label="Department Code"
                             class="text-input"
@@ -42,6 +41,13 @@
                     v-model="description"
                     outlined dense
                     label="Description"
+                    class="text-input"
+                />
+
+                <v-text-field
+                    v-model="off_text"
+                    outlined dense
+                    label="Offered Text"
                     class="text-input"
                 />
 
@@ -72,6 +78,18 @@
                 <v-checkbox 
                     v-model="spring"
                     label="Offered in Spring"
+                    class="mt-1 mb-8"
+                    dense :hide-details="true"
+                />
+                <v-checkbox 
+                    v-model="even"
+                    label="Offered even years"
+                    class="mt-1 mb-8"
+                    dense :hide-details="true"
+                />
+                <v-checkbox 
+                    v-model="odd"
+                    label="Offered odd years"
                     class="mt-1 mb-8"
                     dense :hide-details="true"
                 />
@@ -119,9 +137,12 @@ export default {
             CI: false,
             HI: false,
             description: "",
+            off_text: "",
             fall: false,
             summer: false,
             spring: false,
+            odd: false,
+            even: false,
             major_rest: false,
             minors: [],
             myPathways: [],
@@ -139,7 +160,7 @@ export default {
             if(course) {
                 return breadcrumbs.admin_course_page.map(x => x || {
                     text: course.name,
-                    href: '/admin-portal/course?class=' + encodeURIComponent(course.name.slice().toLowerCase().replace(/ /g, '_'))
+                    href: '/admin-portal/course?class=' + course.name
                 });
             }
             else {
@@ -154,7 +175,7 @@ export default {
         const course = this.getCourse();
         if(course) {
             this.name = course.name;
-            this.dept =  course.prefix;
+            this.subj =  course.subj;
             this.ID = course.ID;
             this.CI = course.properties.CI;
             this.HI = course.properties.HI;
@@ -162,7 +183,10 @@ export default {
             this.fall = course.offered.fall;
             this.summer = course.offered.summer;
             this.spring = course.offered.spring;
+            this.off_text = course.offered.text;
             this.major_rest = course.properties.major_restricted;
+            this.even = course.offered.even;
+            this.odd = course.offered.odd;
         }
         let myPathways = new Set();
         for(const key in pathways) {
@@ -187,31 +211,34 @@ export default {
             if(!this.$route.query.class) {
                 return null;
             }
+            
             return courses[this.$route.query.class];
         },
         submit() {
             let newCourse = this.getCourse();
             if(!newCourse) {
                 newCourse = {
+                    ID: "",
+                    description: "",
                     name: "",
-                    prefix: "",
-                    ID: 0,
+                    offered: {
+                        even: false,
+                        fall: false,
+                        odd: false,
+                        spring: false,
+                        summer: false,
+                        text: ""
+                    },
                     properties: {
                         CI: 0,
                         HI: 0,
                         major_restricted: 0
                     },
-                    description: "",
-                    offered: {
-                        fall: 0,
-                        summer: 0,
-                        spring: 0
-                    },
-                    key: ""
+                    subj: "",
                 };
             }
             newCourse.name = this.name;
-            newCourse.prefix = this.dept;
+            newCourse.subj = this.subj;
             newCourse.ID = this.ID;
             newCourse.properties.CI = this.CI;
             newCourse.properties.HI = this.HI;
@@ -219,8 +246,10 @@ export default {
             newCourse.offered.fall = this.fall;
             newCourse.offered.summer = this.summer;
             newCourse.offered.spring = this.spring;
+            newCourse.offered.even = this.even;
+            newCourse.offered.odd = this.odd;
+            newCourse.offered.text = this.off_text;
             newCourse.properties.major_restricted = this.major_rest;
-            newCourse.key = this.name.slice().toLowerCase().replace(/ /g, '_');
 
             const endpoint = 'http://127.0.0.1:5000/edit'
             axios.post(endpoint, {
