@@ -106,6 +106,11 @@ export default {
         cursor: pointer;
         }
     .search-field {
-        width: 400px;
+        width: 380px;
+    }
+    @media(max-width: 400px){
+        .search-field{
+            width: 340px;
+        }
     }
 </style>
