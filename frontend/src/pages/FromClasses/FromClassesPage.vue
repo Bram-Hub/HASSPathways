@@ -80,9 +80,10 @@
                         </v-icon>
                     </v-btn>
                 </v-card-title>
-                <h5 style="color: x11gray;" class="ml-4"> Current selections ({{this.selected.length}}): 
-                    <li v-for="(course, index) in this.selected" v-bind:key="(course, index)" style="list-style: none; display: inline;">
-                        {{course.name}}{{index &lt; selected.length - 1 ? ", " : ""}}
+                <h5 style="color: x11gray;" class="ml-4">
+                    Current selections ({{ this.selected.length }}): 
+                    <li v-for="(course, index) in this.selected" :key="(course, index)" style="list-style: none; display: inline;">
+                        {{ course.name }}{{ index &lt; selected.length - 1 ? ", " : "" }}
                     </li>
                 </h5>
                 <v-data-table
