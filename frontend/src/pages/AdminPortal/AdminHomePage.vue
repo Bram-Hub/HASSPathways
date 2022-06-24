@@ -7,7 +7,7 @@
             <v-divider class="my-4" />
             <v-row
                 align="center"
-                justify="center"
+                justify="space-around"
             >
             <ul id="btn-cntnr" align="center" justify="space-around">
                 <v-btn id="admn-btn" :to="{ name: 'admin-pathway' }" class="text-decoration-none">
@@ -65,7 +65,7 @@ export default {
     background-color: #f73e3e;
     margin: 0px 1vw 1vw 0px;
     height: 50px;
-    max-width: 900px;
+    max-width: 355px;
     color: white;
     font-size: 15px !important;
     padding-top: 15px;
