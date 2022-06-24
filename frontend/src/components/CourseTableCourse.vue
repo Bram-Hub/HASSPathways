@@ -5,11 +5,10 @@
         outlined
         @click="toggleCheckbox()"
         @keydown.13="toggleCheckbox()"
-
     >
         <v-list-item one-line>
             <v-list-item-content class="pb-0"> 
-                <div style="cursor: pointer" >
+                <div style="cursor: pointer">
                     <h1 class="text-h5 class-card__title">
                         <v-checkbox
                             :input-value="selected"
@@ -25,7 +24,6 @@
                             style="z-index: 99"
                         />
                         {{ course.name }}
-                        
                     </h1>
                     <small v-if="course.hasData" class="class-card__subtitle">
                         {{ course.subj }}-{{ course.ID }}

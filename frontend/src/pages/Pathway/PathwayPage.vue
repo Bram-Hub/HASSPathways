@@ -1,7 +1,6 @@
 <template>
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
-         <!-- <v-btn @click="debug()">click me</v-btn> -->
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
@@ -41,7 +40,7 @@
             click me to toggle graph view
         </v-btn>
         <v-container v-show="showGraph">
-          <div id="graphView">
+            <div id="graphView">
                 <div class="graph-fab-container">
                     <v-btn
                         color="grey" elevation="2" fab
@@ -54,16 +53,18 @@
                     </v-btn>
                 </div>
                 <div v-for="key in classTabs" :key="key" class="tab">
-                  <h2 class="courseTitle">{{key}}</h2>
-                  <CourseTable
-                      :ref="key"
-                      :courses="courses[key]"
-                      :pathway-id="pathwayID"
-                      @checkbox-clicked="onCheckboxClicked()"
-                      :show-desc="false"
-                      :searchBar="false"
-                      :graphView="true"
-                  />
+                    <h2 class="courseTitle">
+                        {{ key }}
+                    </h2>
+                    <CourseTable
+                        :ref="key"
+                        :courses="courses[key]"
+                        :pathway-id="pathwayID"
+                        :show-desc="false"
+                        :searchBar="false"
+                        :graphView="true"
+                        @checkbox-clicked="onCheckboxClicked()"
+                    />
                 </div>
             </div>
         </v-container>
@@ -97,21 +98,21 @@
                 </v-tab>
             </v-tabs>
 
-        <v-tabs-items v-model="tab" touchless>    
-            <v-tab-item 
-                v-for="(item, index) in classTabs"
-                :key="item"
-                :eager="true"
-            >
-                <CourseTable
-                    :ref="index"
-                    :courses="courses[item]"
-                    :pathway-id="pathwayID"
-                    @checkbox-clicked="onCheckboxClicked()"
-                    :show-desc="true"
-                />
-            </v-tab-item>
-        </v-tabs-items>
+            <v-tabs-items v-model="tab" touchless>    
+                <v-tab-item 
+                    v-for="(item, index) in classTabs"
+                    :key="item"
+                    :eager="true"
+                >
+                    <CourseTable
+                        :ref="index"
+                        :courses="courses[item]"
+                        :pathway-id="pathwayID"
+                        :show-desc="true"
+                        @checkbox-clicked="onCheckboxClicked()"
+                    />
+                </v-tab-item>
+            </v-tabs-items>
         </v-container>
     </v-container>
 </template>
