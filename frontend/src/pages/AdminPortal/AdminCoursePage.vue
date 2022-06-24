@@ -2,7 +2,6 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="foundCrumbs" />
-
             <h1 class="mb-4">
                 Modify Course Info
             </h1>
