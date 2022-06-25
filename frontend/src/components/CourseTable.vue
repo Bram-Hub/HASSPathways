@@ -26,6 +26,7 @@
                 :show-desc="showDesc"
                 :description-on-hover="descriptionOnHover"
                 :graph-view="graphView"
+                @checkbox-clicked="$emit('checkbox-clicked')"
             />
         </div>
 
