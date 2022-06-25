@@ -98,6 +98,10 @@ export default {
 
             tempCourses = Object.values(tempCourses).sort(
                 function(a, b){
+                    if(a.subj === undefined) return  1
+                    if(b.subj === undefined) return -1
+                    if(a.ID === undefined)   return  1
+                    if(b.ID === undefined)   return -1
                     if(a.subj == b.subj){
                         if(a.ID < b.ID) return -1
                         else return 1
@@ -105,6 +109,7 @@ export default {
                     else return 1
                 }
             )
+
             return tempCourses
         }
     },
