@@ -54,7 +54,9 @@
                     <v-icon left dark>
                         mdi-cog
                     </v-icon>
-                    Admin and secure portal
+                    <span v-if="!$vuetify.theme.dark" class="text" id="admin">Admin and secure portal</span>
+                   <span v-else class="text">Admin and secure portal</span>
+                    
                 </v-btn>
             </v-row>
         </v-container>
@@ -79,10 +81,21 @@ export default {
 
 <style scoped>
 .pathway-btn {
+
     width: 40%;
-    min-width: 330px !important;
+    min-width: 400px !important;
+
+
+
+    overflow-x: hidden !important;
+    width: 40%;
     max-width: 92vw !important;
     overflow-x: hidden;
     margin-bottom: 5px;
  }
+
+#admin {
+    font-weight: bold;
+}
+
 </style>
