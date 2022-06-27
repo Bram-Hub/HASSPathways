@@ -9,7 +9,6 @@
                 Here you can explore the different pathways RPI has to offer. To get started choose from on of the options below and start exploring your options!
             </p>
             <v-divider class="my-4" />
-
             <div class="btn-container">
                 <div class="homepage-btn">
                     <v-btn
@@ -63,45 +62,6 @@
                     </v-btn>
                 </div>
             </div>
-
-
-            <!-- <v-row
-                 align="center"
-                 justify="space-around"
-                 >
-                 <v-btn
-                 pathway-btn
-                 large
-                 color="primary"
-                 :to="{ name: 'search-classes' }"
-                 >
-                 <v-icon left dark>
-                 mdi-magnify
-                 </v-icon>
-                 Find pathways from classes
-                 </v-btn>
-                 <v-btn
-                 pathway-btn
-                 large
-                 color="primary"
-                 :to="{ name: 'about' }"
-                 >
-                 <v-icon left dark>
-                 mdi-help-circle-outline
-                 </v-icon>
-                 Learn about Pathways
-                 </v-btn>
-                 <v-btn
-                 pathway-btn
-                 large
-                 :to="{ name: 'admin-portal' }"
-                 >
-                 <v-icon left dark>
-                 mdi-cog
-                 </v-icon>
-                 Admin and secure portal
-                 </v-btn>
-                 </v-row> -->
         </v-container>
     </div>
 </template>
@@ -137,5 +97,5 @@ export default {
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
- }
+}
 </style>
