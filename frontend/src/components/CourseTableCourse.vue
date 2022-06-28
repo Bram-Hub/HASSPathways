@@ -215,6 +215,9 @@ export default {
         display: inline-block;
         font-size: 1.2em !important;
         width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .class-card__subtitle {
