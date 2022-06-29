@@ -19,7 +19,7 @@
                     :id="course.name"
                     :to="`/admin-portal/course?class=${course.name}`"
                 >
-                  Edit
+                    Edit
                 </v-btn>
                 <label class="label" :for="course.name"> {{ course.name + ", " + course.subj + "-" + course.ID }} </label>
                 <v-btn color="red" @click="chooseCourse(course.name)">
@@ -27,23 +27,21 @@
                 </v-btn>
             </div>
         </v-container>
-        <template>
-            <v-dialog v-model="dialog" width="500">
-                <v-card>
-                    <v-card-text>
-                        Are you sure you want to delete this course?
-                    </v-card-text>
-                    <v-card-actions>
-                        <v-btn @click="dialog = false">
-                            No
-                        </v-btn>
-                        <v-btn @click="remove()">
-                            Yes
-                        </v-btn>
-                    </v-card-actions>
-                </v-card>
-            </v-dialog>
-        </template>
+        <v-dialog v-model="dialog" width="500">
+            <v-card>
+                <v-card-text>
+                    Are you sure you want to delete this course?
+                </v-card-text>
+                <v-card-actions>
+                    <v-btn @click="dialog = false">
+                        No
+                    </v-btn>
+                    <v-btn @click="remove()">
+                        Yes
+                    </v-btn>
+                </v-card-actions>
+            </v-card>
+        </v-dialog>
     </div>
 </template>
 

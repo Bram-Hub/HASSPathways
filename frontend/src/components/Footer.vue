@@ -4,7 +4,7 @@
             <div>
                 We love feedback! Come visit our 
                 <a
-                    href="https://github.com/Bram-Hub/HASSPathways"
+                    href="https://github.com/anderm18/HASSPathways"
                     target="_blank"
                     class="text-decoration-none"
                 >

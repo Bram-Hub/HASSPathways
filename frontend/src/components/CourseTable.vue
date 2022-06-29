@@ -2,34 +2,38 @@
     <v-container style="min-height: 50vh">
         <!-- Table header with search and open/close all buttons
           -- A scale transform is applied to make it smaller -->
-        <div style="max-width: 700px;">
-            <v-card
-                class="table-header-search elevation-0 ( pt-2 pb-2 ) d-flex"
-            >
-                <v-text-field
-                    v-model="search"
-                    append-icon="mdi-magnify"
-                    label="Search"
-                    outlined
-                    dense
-                    hide-details
-                    class="ma-0"
-                    style="width: 400px; max-width: 100%"
-                />
-            </v-card>
-
+        <v-card
+            v-if="searchBar"
+            class="table-header-search elevation-0 ( pt-2 pb-2 pr-4 ) d-flex"
+        > 
+            <v-text-field
+                v-model="search"
+                append-icon="mdi-magnify"
+                label="Search"
+                outlined
+                dense
+                hide-details
+                class="ma-0"
+                style="width: 400px; max-width: 100%"
+            />
+        </v-card>
+        <div :class="{graphContainer: graphView}">
             <CourseTableCourse
                 v-for="item in filteredCourses"
                 :key="item.name"
                 :course="item"
                 :pathway-id="pathwayId"
+                :show-desc="showDesc"
+                :description-on-hover="descriptionOnHover"
+                :graph-view="graphView"
                 @checkbox-clicked="$emit('checkbox-clicked')"
             />
-
-            <p v-if="filteredCourses.length === 0" class="no-search-results">
-                No search results
-            </p>
         </div>
+
+
+        <p v-if="filteredCourses.length === 0" class="no-search-results">
+            No search results
+        </p>
     </v-container>
 </template>
 
@@ -48,6 +52,25 @@ export default {
             type: String,
             required: false,
             default: null
+        },
+        showDesc: {
+            type: Boolean,
+            required: false,
+            default: true,
+        },
+        descriptionOnHover: {
+            type: Boolean,
+            required: false,
+            default: true,
+        },
+        searchBar: {
+            type: Boolean,
+            required: false,
+            default: true,
+        },
+        graphView: {
+            type: Boolean,
+            required: false,
         }
     },
     data() {
@@ -55,8 +78,7 @@ export default {
     },
     computed: {
         filteredCourses() {
-            // let tempCourses = JSON.parse(JSON.stringify(this.courses));
-            let tempCourses = this.courses;
+            let tempCourses = JSON.parse(JSON.stringify(this.courses));
 
             if(this.search && this.search != ''){
                 tempCourses = Object.fromEntries(Object.entries(tempCourses)
@@ -77,6 +99,10 @@ export default {
 
             tempCourses = Object.values(tempCourses).sort(
                 function(a, b){
+                    if(a.subj === undefined) return  1
+                    if(b.subj === undefined) return -1
+                    if(a.ID === undefined)   return  1
+                    if(b.ID === undefined)   return -1
                     if(a.subj == b.subj){
                         if(a.ID < b.ID) return -1
                         else return 1
@@ -84,6 +110,7 @@ export default {
                     else return 1
                 }
             )
+
             return tempCourses
         }
     },
@@ -98,6 +125,11 @@ export default {
 </script>
 
 <style scoped>
+.graphContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+}
 .table-header-search {
     transform-origin: bottom left;
 }
