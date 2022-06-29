@@ -142,7 +142,7 @@ def get_course_data(course_ids: List[str]) -> Dict:
                 elif field.get("type") == 'acalog-field-517':
                     field_text = field.xpath("./data/p/text()")
                     if len(field_text) > 0:
-                        prereqs = field_text
+                        prereqs = field_text[0].strip()
 
             data[course_name] = {
                 "subj": subj,

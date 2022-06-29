@@ -11,9 +11,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "Prerequisites: ARTS 1020, ARTS 1040, or ARTS 1200."
-    ],
+    "prerequisites": "Prerequisites: ARTS 1020, ARTS 1040, or ARTS 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -33,9 +31,7 @@
       "summer": false,
       "text": "fall term, even-numbered years"
     },
-    "prerequisites": [
-      "Prerequisite: COMM 2660"
-    ],
+    "prerequisites": "Prerequisite: COMM 2660",
     "properties": {
       "CI": false,
       "HI": false,
@@ -55,9 +51,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 2230 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ARTS 2230 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -97,9 +91,7 @@
       "summer": false,
       "text": "fall term"
     },
-    "prerequisites": [
-      "ARTS 2230"
-    ],
+    "prerequisites": "ARTS 2230",
     "properties": {
       "CI": false,
       "HI": false,
@@ -119,9 +111,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 2230 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ARTS 2230 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -161,9 +151,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite:  PSYC 1200."
-    ],
+    "prerequisites": "Prerequisite:  PSYC 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -183,9 +171,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "Prerequisites: ECON 4570 and MATH 2010, or permission of instructor"
-    ],
+    "prerequisites": "Prerequisites: ECON 4570 and MATH 2010, or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -205,9 +191,7 @@
       "summer": false,
       "text": "upon availability."
     },
-    "prerequisites": [
-      "Prerequisites: ARTS 4070 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisites: ARTS 4070 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -227,9 +211,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: one related 2000-level arts course or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: one related 2000-level arts course or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -249,9 +231,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 1200, or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ARTS 1200, or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -271,9 +251,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "COGS 2340 Introduction to Linguistics or permission of instructor."
-    ],
+    "prerequisites": "COGS 2340 Introduction to Linguistics or permission of instructor.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -293,9 +271,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "IHSS 1030, IHSS 1040, or ARTS 1030"
-    ],
+    "prerequisites": "IHSS 1030, IHSS 1040, or ARTS 1030",
     "properties": {
       "CI": false,
       "HI": false,
@@ -375,9 +351,7 @@
       "summer": false,
       "text": "spring term, even-numbered years"
     },
-    "prerequisites": [
-      "Prerequisite: One of the following: PSYC 1200, COGS 2120, COGS 2340, COGS 4330, or PSYC 4370"
-    ],
+    "prerequisites": "Prerequisite: One of the following: PSYC 1200, COGS 2120, COGS 2340, COGS 4330, or PSYC 4370",
     "properties": {
       "CI": false,
       "HI": false,
@@ -397,9 +371,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "ARTS 4060 or ARTS 4070."
-    ],
+    "prerequisites": "ARTS 4060 or ARTS 4070.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -419,9 +391,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "ECON 1200 or IHSS 1200 and MATH 2010."
-    ],
+    "prerequisites": "ECON 1200 or IHSS 1200 and MATH 2010.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -441,9 +411,7 @@
       "summer": false,
       "text": "fall and spring terms annually"
     },
-    "prerequisites": [
-      "ECON 2010 and MATH 2010"
-    ],
+    "prerequisites": "ECON 2010 and MATH 2010",
     "properties": {
       "CI": false,
       "HI": false,
@@ -503,9 +471,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 1020 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ARTS 1020 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -545,9 +511,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "Prerequisites: ARTS 1020, ARTS 1030, ARTS 1040, ARTS 1200, ARTS 2020, ARTS 2380, ARTS 2220, IHSS 1030, IHSS 1040, IHSS 1170, IHSS 1180, or permission of instructor."
-    ],
+    "prerequisites": "Prerequisites: ARTS 1020, ARTS 1030, ARTS 1040, ARTS 1200, ARTS 2020, ARTS 2380, ARTS 2220, IHSS 1030, IHSS 1040, IHSS 1170, IHSS 1180, or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -567,9 +531,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: junior and senior EART majors only."
-    ],
+    "prerequisites": "Prerequisite: junior and senior EART majors only.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -609,9 +571,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "ECON 1200 or IHSS 1200 and MATH 1010 or MATH 1500."
-    ],
+    "prerequisites": "ECON 1200 or IHSS 1200 and MATH 1010 or MATH 1500.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -631,9 +591,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "ECON 1200 or IHSS 1200"
-    ],
+    "prerequisites": "ECON 1200 or IHSS 1200",
     "properties": {
       "CI": false,
       "HI": false,
@@ -653,9 +611,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: PSYC 1200 or PHIL/PSYC 2120."
-    ],
+    "prerequisites": "Prerequisite: PSYC 1200 or PHIL/PSYC 2120.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -695,9 +651,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "Prerequisite: One of the following: STSO 2510, STSO 2520, STSO 2500, PHIL 1110, IHSS 1160, IHSS 1150, PHIL 4240, or permission of instructor"
-    ],
+    "prerequisites": "Prerequisite: One of the following: STSO 2510, STSO 2520, STSO 2500, PHIL 1110, IHSS 1160, IHSS 1150, PHIL 4240, or permission of instructor",
     "properties": {
       "CI": true,
       "HI": false,
@@ -717,9 +671,7 @@
       "summer": false,
       "text": "fall term annually"
     },
-    "prerequisites": [
-      "Prerequisites: ARTS 1020, ARTS 1030, ARTS 1040, ARTS 1200, ARTS 2020, ARTS 2380, ARTS 2220, IHSS 1030, IHSS 1040, IHSS 1170, IHSS 1180, ARTS 4140, or permission of instructor."
-    ],
+    "prerequisites": "Prerequisites: ARTS 1020, ARTS 1030, ARTS 1040, ARTS 1200, ARTS 2020, ARTS 2380, ARTS 2220, IHSS 1030, IHSS 1040, IHSS 1170, IHSS 1180, ARTS 4140, or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -739,9 +691,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "Prerequisite: COMM 2660-Introduction to Graphic Design or COMM 2570-Typography or COMM 2680-2D Motion Graphics"
-    ],
+    "prerequisites": "Prerequisite: COMM 2660-Introduction to Graphic Design or COMM 2570-Typography or COMM 2680-2D Motion Graphics",
     "properties": {
       "CI": false,
       "HI": false,
@@ -781,9 +731,7 @@
       "summer": true,
       "text": "fall, spring, and summer terms annually."
     },
-    "prerequisites": [
-      "Permission of a supervising faculty member."
-    ],
+    "prerequisites": "Permission of a supervising faculty member.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -803,9 +751,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Audition with instructor."
-    ],
+    "prerequisites": "Audition with instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -845,9 +791,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: LANG 1410 or equivalent or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: LANG 1410 or equivalent or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -867,9 +811,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: LANG 2410 or equivalent or permission of instructor. "
-    ],
+    "prerequisites": "Prerequisite: LANG 2410 or equivalent or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -889,9 +831,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: LANG 4420 or equivalent or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: LANG 4420 or equivalent or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -911,9 +851,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: LANG 4430 or equivalent or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: LANG 4430 or equivalent or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -933,10 +871,7 @@
       "summer": true,
       "text": "summer term annually."
     },
-    "prerequisites": [
-      "COGS/PSYC 4330 or COGS/PSYC 4360 or PSYC 4370 or permission of instructor.",
-      "\n "
-    ],
+    "prerequisites": "COGS/PSYC 4330 or COGS/PSYC 4360 or PSYC 4370 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -956,9 +891,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: PSYC/PHIL 2120 or PSYC 4370 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: PSYC/PHIL 2120 or PSYC 4370 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -978,9 +911,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisites: PSYC 1200 or PHIL/PSYC 2120 and CSCI 2300. Recommended: CSCI 4150 and/or PSYC 4370 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisites: PSYC 1200 or PHIL/PSYC 2120 and CSCI 2300. Recommended: CSCI 4150 and/or PSYC 4370 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1000,9 +931,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "PSYC 1200 or COGS 2120."
-    ],
+    "prerequisites": "PSYC 1200 or COGS 2120.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1062,9 +991,7 @@
       "summer": false,
       "text": "fall or spring term annually"
     },
-    "prerequisites": [
-      "Prerequisites: ARTS 4380 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisites: ARTS 4380 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1084,9 +1011,7 @@
       "summer": false,
       "text": "spring term odd-numbered years."
     },
-    "prerequisites": [
-      "Prerequisite: PHIL 2140."
-    ],
+    "prerequisites": "Prerequisite: PHIL 2140.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1126,9 +1051,7 @@
       "summer": true,
       "text": "fall and summer term annually"
     },
-    "prerequisites": [
-      "Prerequisite: One of the following: CSCI 2200, CSCI 2300, CSCI 2500 OR CSCI 2600"
-    ],
+    "prerequisites": "Prerequisite: One of the following: CSCI 2200, CSCI 2300, CSCI 2500 OR CSCI 2600",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1148,9 +1071,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisites: any 1000- or 2000-level STS course or permission of instructor."
-    ],
+    "prerequisites": "Prerequisites: any 1000- or 2000-level STS course or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1190,9 +1111,7 @@
       "summer": false,
       "text": "fall and spring terms annually"
     },
-    "prerequisites": [
-      "Prerequisite: (ECON 1200 or IHSS 1200) and MATH 2010"
-    ],
+    "prerequisites": "Prerequisite: (ECON 1200 or IHSS 1200) and MATH 2010",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1212,10 +1131,7 @@
       "summer": false,
       "text": "spring term even-numbered years."
     },
-    "prerequisites": [
-      "ARTS 1020 and CSCI 1100.",
-      " "
-    ],
+    "prerequisites": "ARTS 1020 and CSCI 1100.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1235,9 +1151,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Senior EMAC and EART majors only."
-    ],
+    "prerequisites": "Senior EMAC and EART majors only.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1257,9 +1171,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Creative Seminar I, senior EMAC and EART majors only."
-    ],
+    "prerequisites": "Creative Seminar I, senior EMAC and EART majors only.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1359,9 +1271,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "COGS 2340 Introduction to Linguistics or permission of the instructor."
-    ],
+    "prerequisites": "COGS 2340 Introduction to Linguistics or permission of the instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1401,9 +1311,7 @@
       "summer": false,
       "text": "fall term annually"
     },
-    "prerequisites": [
-      "Prerequisites: ECON 4570, MATH 2010, or permission of instructor"
-    ],
+    "prerequisites": "Prerequisites: ECON 4570, MATH 2010, or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1443,9 +1351,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "CSCI 1200 Data Structures, CSCI 4380 Database Systems preferred."
-    ],
+    "prerequisites": "CSCI 1200 Data Structures, CSCI 4380 Database Systems preferred.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1465,9 +1371,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "ITWS 4350/6350, CSCI 4350/6350 or permission of instructor."
-    ],
+    "prerequisites": "ITWS 4350/6350, CSCI 4350/6350 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1487,9 +1391,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "CSCI-2300"
-    ],
+    "prerequisites": "CSCI-2300",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1529,9 +1431,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: ENGR 2020 - Design and Innovation Studio III"
-    ],
+    "prerequisites": "Prerequisite: ENGR 2020 - Design and Innovation Studio III",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1551,9 +1451,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisites: ENGR 2020."
-    ],
+    "prerequisites": "Prerequisites: ENGR 2020.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -1593,9 +1491,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: ENGR 2020 - Design and Innovation Studio III"
-    ],
+    "prerequisites": "Prerequisite: ENGR 2020 - Design and Innovation Studio III",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1615,9 +1511,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: ENGR 2020 Design and Innovation Studio III."
-    ],
+    "prerequisites": "Prerequisite: ENGR 2020 Design and Innovation Studio III.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1657,9 +1551,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "Prerequisite: IHSS 1610"
-    ],
+    "prerequisites": "Prerequisite: IHSS 1610",
     "properties": {
       "CI": true,
       "HI": false,
@@ -1679,9 +1571,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: IHSS 2610 Design and Innovation Studio II.  "
-    ],
+    "prerequisites": "Prerequisite: IHSS 2610 Design and Innovation Studio II.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1741,9 +1631,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisite: ECON 1200/IHSS 1200 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ECON 1200/IHSS 1200 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1883,9 +1771,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: 1000-level course (or higher) in STS"
-    ],
+    "prerequisites": "Prerequisite: 1000-level course (or higher) in STS",
     "properties": {
       "CI": true,
       "HI": false,
@@ -1905,9 +1791,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite:  PSYC 1200."
-    ],
+    "prerequisites": "Prerequisite:  PSYC 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1927,9 +1811,7 @@
       "summer": false,
       "text": "spring term even years"
     },
-    "prerequisites": [
-      "ARTS 1020, ARTS 1030, ARTS 1040, ARTS 1200, ARTS 2020, ARTS 2380, ARTS 2220, IHSS 1030, IHSS 1040, IHSS 1170, IHSS 1180, ARTS 4120, ARTS 4140, or permission of instructor"
-    ],
+    "prerequisites": "ARTS 1020, ARTS 1030, ARTS 1040, ARTS 1200, ARTS 2020, ARTS 2380, ARTS 2220, IHSS 1030, IHSS 1040, IHSS 1170, IHSS 1180, ARTS 4120, ARTS 4140, or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1949,9 +1831,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "ECON 1200 or IHSS 1200, and MATH 1500 or MATH 1010, and ENGR 2600, MGMT 2100, MATP 4600, or PSYC 2310."
-    ],
+    "prerequisites": "ECON 1200 or IHSS 1200, and MATH 1500 or MATH 1010, and ENGR 2600, MGMT 2100, MATP 4600, or PSYC 2310.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1971,10 +1851,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisites: MATH 2010 and ENGR 2600 or MGMT 2100 or MATP 4600 or PSYC 2310 or BIOL 4200 or permission of instructor",
-      " "
-    ],
+    "prerequisites": "Prerequisites: MATH 2010 and ENGR 2600 or MGMT 2100 or MATP 4600 or PSYC 2310 or BIOL 4200 or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -1994,9 +1871,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "ECON 1200 or IHSS 1200."
-    ],
+    "prerequisites": "ECON 1200 or IHSS 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2016,9 +1891,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "ECON 1200 or IHSS 1200."
-    ],
+    "prerequisites": "ECON 1200 or IHSS 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2038,9 +1911,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "ECON 1200/IHSS 1200."
-    ],
+    "prerequisites": "ECON 1200/IHSS 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2060,9 +1931,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisite: ECON 1200/IHSS 1200 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ECON 1200/IHSS 1200 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2082,9 +1951,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "ECON 2020 and MATH 2010"
-    ],
+    "prerequisites": "ECON 2020 and MATH 2010",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2104,9 +1971,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "IHSS 1200 or ECON 1200, and MATH 1010 or MATH 1500."
-    ],
+    "prerequisites": "IHSS 1200 or ECON 1200, and MATH 1010 or MATH 1500.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -2126,9 +1991,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisites: ECON 1200/IHSS 1200 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisites: ECON 1200/IHSS 1200 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2148,9 +2011,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: 2000-level ARTS course or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: 2000-level ARTS course or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2170,9 +2031,7 @@
       "summer": true,
       "text": "fall, spring, and summer terms annually."
     },
-    "prerequisites": [
-      "Prerequisite:  PHYS 1200; corequisite:  MATH 2400."
-    ],
+    "prerequisites": "Prerequisite:  PHYS 1200; corequisite:  MATH 2400.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2192,10 +2051,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: One of CSCI 1010, CSCI 1100, CSCI 1190 or permission of instructor. ",
-      "\n "
-    ],
+    "prerequisites": "Prerequisite: One of CSCI 1010, CSCI 1100, CSCI 1190 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2215,9 +2071,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisites:  a mobile computing platform with Internet capability and working knowledge of the operating system is required. Microsoft Windows operating system strongly recommended."
-    ],
+    "prerequisites": "Prerequisites:  a mobile computing platform with Internet capability and working knowledge of the operating system is required. Microsoft Windows operating system strongly recommended.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2237,9 +2091,7 @@
       "summer": true,
       "text": "fall, spring, and summer terms annually."
     },
-    "prerequisites": [
-      "Prerequisites: ENGR 1100 or ECSE 1010 and PHYS 1100. Corequisite: MATH 2400."
-    ],
+    "prerequisites": "Prerequisites: ENGR 1100 or ECSE 1010 and PHYS 1100. Corequisite: MATH 2400.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2299,9 +2151,7 @@
       "summer": false,
       "text": "upon availability  of instructor."
     },
-    "prerequisites": [
-      "Prerequisite: One of the following: STSO 1110, STSO 2520, STSO 2500, STSO 2210, or permission of instructor"
-    ],
+    "prerequisites": "Prerequisite: One of the following: STSO 1110, STSO 2520, STSO 2500, STSO 2210, or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2401,10 +2251,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: STSO 1110, IHSS 1110, IHSS 1240, IHSS 1320, or permission of instructor",
-      " "
-    ],
+    "prerequisites": "Prerequisite: STSO 1110, IHSS 1110, IHSS 1240, IHSS 1320, or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2424,9 +2271,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisite: ECON 1200/IHSS 1200 or permission of instructor. ECON 2010 recommended."
-    ],
+    "prerequisites": "Prerequisite: ECON 1200/IHSS 1200 or permission of instructor. ECON 2010 recommended.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -2446,10 +2291,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "Prerequisites: One of the following: IHSS 1240, IHSS 1110, STSO 1110, STSO 2300, or permission of instructor ",
-      " "
-    ],
+    "prerequisites": "Prerequisites: One of the following: IHSS 1240, IHSS 1110, STSO 1110, STSO 2300, or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2469,10 +2311,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "Prerequisites: STSS 2300 Environment & Society or&nbsp;STSS 2210 Design, Culture, and Society",
-      " "
-    ],
+    "prerequisites": "Prerequisites: STSS 2300 Environment & Society or&nbsp;STSS 2210 Design, Culture, and Society",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2492,9 +2331,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisite: junior or senior standing or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: junior or senior standing or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2514,9 +2351,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisite:  ECON 2010 or equivalent or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite:  ECON 2010 or equivalent or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2556,9 +2391,7 @@
       "summer": false,
       "text": "upon sufficient demand."
     },
-    "prerequisites": [
-      "Prerequisite: completion of other course requirements for the minor."
-    ],
+    "prerequisites": "Prerequisite: completion of other course requirements for the minor.",
     "properties": {
       "CI": false,
       "HI": true,
@@ -2578,9 +2411,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "ECON 1200 or IHSS 1200"
-    ],
+    "prerequisites": "ECON 1200 or IHSS 1200",
     "properties": {
       "CI": true,
       "HI": false,
@@ -2600,9 +2431,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisites: GSAS 4540/CSCI4540: Game Development I "
-    ],
+    "prerequisites": "Prerequisites: GSAS 4540/CSCI4540: Game Development I",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2722,10 +2551,7 @@
       "summer": false,
       "text": "fall semester, even-numbered years"
     },
-    "prerequisites": [
-      "Prerequisite: STSO 2210, STSO 2300, STSO 2500, STSO 2510, STSO 2520, or permission of instructor.",
-      " "
-    ],
+    "prerequisites": "Prerequisite: STSO 2210, STSO 2300, STSO 2500, STSO 2510, STSO 2520, or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2745,9 +2571,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite:  PSYC 4740."
-    ],
+    "prerequisites": "Prerequisite:  PSYC 4740.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -2767,9 +2591,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "High school algebra. No previous experience with computer programming is required or expected."
-    ],
+    "prerequisites": "High school algebra. No previous experience with computer programming is required or expected.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2849,9 +2671,7 @@
       "summer": false,
       "text": "fall and spring terms annually"
     },
-    "prerequisites": [
-      "GSAS 4510: Experimental Game Design"
-    ],
+    "prerequisites": "GSAS 4510: Experimental Game Design",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2891,9 +2711,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: CSCI 2300 and GSAS 2540"
-    ],
+    "prerequisites": "Prerequisite: CSCI 2300 and GSAS 2540",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2913,9 +2731,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "ARTS 2230: 3D Digital Modeling"
-    ],
+    "prerequisites": "ARTS 2230: 3D Digital Modeling",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2935,9 +2751,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: CSCI 4530 or ECSE 4750"
-    ],
+    "prerequisites": "Prerequisite: CSCI 4530 or ECSE 4750",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2957,9 +2771,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: GSAS 2510 and GSAS 2540"
-    ],
+    "prerequisites": "Prerequisite: GSAS 2510 and GSAS 2540",
     "properties": {
       "CI": false,
       "HI": false,
@@ -2979,9 +2791,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: GSAS 4520 Game Development I or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: GSAS 4520 Game Development I or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3001,9 +2811,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "GSAS 2520 - Introduction to Game Storytelling or COMM 4240 - Writing for Games I."
-    ],
+    "prerequisites": "GSAS 2520 - Introduction to Game Storytelling or COMM 4240 - Writing for Games I.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3043,9 +2851,7 @@
       "summer": false,
       "text": "fall term, odd-numbered years"
     },
-    "prerequisites": [
-      "Prerequisite: One of the following: STSO 2100, STSO 2300, STSO 2510, STSO 2520, STSO 2500, STSO 2210, or permission of instructor"
-    ],
+    "prerequisites": "Prerequisite: One of the following: STSO 2100, STSO 2300, STSO 2510, STSO 2520, STSO 2500, STSO 2210, or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3085,9 +2891,7 @@
       "summer": false,
       "text": "spring term odd-numbered years."
     },
-    "prerequisites": [
-      "Prerequisite: STSO 2300 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: STSO 2300 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3107,9 +2911,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 1020 or ARTS 1200 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ARTS 1020 or ARTS 1200 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3149,9 +2951,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Junior or senior standing, or permission of instructor."
-    ],
+    "prerequisites": "Junior or senior standing, or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3171,9 +2971,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "IHSS 1200/ECON 1200 and MATH 1010 or MATH 1500."
-    ],
+    "prerequisites": "IHSS 1200/ECON 1200 and MATH 1010 or MATH 1500.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3253,9 +3051,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: one course in American history or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: one course in American history or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3295,9 +3091,7 @@
       "summer": false,
       "text": "fall term, odd-numbered years."
     },
-    "prerequisites": [
-      "IHSS 1410 Century of the Gene, IHSS 1420 Global Health Challenges, IHSS 1430 Health of Contemporary Africa, STSO 1110 Science, Technology, and Society, STSO 2500 American History, or STSO 2520 Sociology."
-    ],
+    "prerequisites": "IHSS 1410 Century of the Gene, IHSS 1420 Global Health Challenges, IHSS 1430 Health of Contemporary Africa, STSO 1110 Science, Technology, and Society, STSO 2500 American History, or STSO 2520 Sociology.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3317,9 +3111,7 @@
       "summer": false,
       "text": "spring term, odd-numbered years"
     },
-    "prerequisites": [
-      "IHSS 1410 Century of the Gene, IHSS 1420 Global Health Challenges, IHSS 1430 Health of Contemporary Africa, IHSS 1410 Century of the Gene, IHSS 1420 Global Health Challenges, IHSS 1430 Health of Contemporary Africa, STSO 1110 Science, Technology and Society, STSO 2520 Sociology, or STSO 2500 American History."
-    ],
+    "prerequisites": "IHSS 1410 Century of the Gene, IHSS 1420 Global Health Challenges, IHSS 1430 Health of Contemporary Africa, IHSS 1410 Century of the Gene, IHSS 1420 Global Health Challenges, IHSS 1430 Health of Contemporary Africa, STSO 1110 Science, Technology and Society, STSO 2520 Sociology, or STSO 2500 American History.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -3339,9 +3131,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisites: One of the following: IHSS 1420, IHSS 1430, STSO1110, STSO 2500, STSO 2520, or permission of instructor."
-    ],
+    "prerequisites": "Prerequisites: One of the following: IHSS 1420, IHSS 1430, STSO1110, STSO 2500, STSO 2520, or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3381,9 +3171,7 @@
       "summer": false,
       "text": "upon sufficient demand."
     },
-    "prerequisites": [
-      "Prerequisite:  PSYC 2220 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite:  PSYC 2220 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3403,9 +3191,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: PSYC 1200 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: PSYC 1200 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3445,9 +3231,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite:  PSYC 1200."
-    ],
+    "prerequisites": "Prerequisite:  PSYC 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3467,9 +3251,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Junior or senior standing or permission of instructor."
-    ],
+    "prerequisites": "Junior or senior standing or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3489,9 +3271,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: COMM 2660"
-    ],
+    "prerequisites": "Prerequisite: COMM 2660",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3511,9 +3291,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisites:  CSCI 2500 or ECSE 2660; and prerequisite or corequisite CSCI 2300. "
-    ],
+    "prerequisites": "Prerequisites:  CSCI 2500 or ECSE 2660; and prerequisite or corequisite CSCI 2300.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3533,9 +3311,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "ITWS 2210 and ITWS 4310."
-    ],
+    "prerequisites": "ITWS 2210 and ITWS 4310.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3555,9 +3331,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "CSCI 1200 and CSCI 2300."
-    ],
+    "prerequisites": "CSCI 1200 and CSCI 2300.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3577,9 +3351,7 @@
       "summer": false,
       "text": "fall and spring term annually."
     },
-    "prerequisites": [
-      "Prerequisites: ARTS 2010 or ARTS 2020 or permission of the instructor."
-    ],
+    "prerequisites": "Prerequisites: ARTS 2010 or ARTS 2020 or permission of the instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3599,9 +3371,7 @@
       "summer": true,
       "text": "summer term annually."
     },
-    "prerequisites": [
-      "Prerequisites: CSCI 1010 or CSCI 1100 or permission of the instructor."
-    ],
+    "prerequisites": "Prerequisites: CSCI 1010 or CSCI 1100 or permission of the instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3641,9 +3411,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: one of the folloowing: ARTS 2380, ARTS 2020, or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: one of the folloowing: ARTS 2380, ARTS 2020, or permission of instructor.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -3663,10 +3431,7 @@
       "summer": false,
       "text": "spring term, even-numbered years"
     },
-    "prerequisites": [
-      "Prerequisites: CSCI 1100 or permission of instructor",
-      " "
-    ],
+    "prerequisites": "Prerequisites: CSCI 1100 or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3686,9 +3451,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 1020 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ARTS 1020 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3708,9 +3471,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "ARTS 1200."
-    ],
+    "prerequisites": "ARTS 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3730,9 +3491,7 @@
       "summer": false,
       "text": "spring term even-numbered years."
     },
-    "prerequisites": [
-      "Prerequisite: PHIL 2140."
-    ],
+    "prerequisites": "Prerequisite: PHIL 2140.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3752,9 +3511,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "IHSS 1200 and MATH 1010 or MATH 1500, or permission of instructor."
-    ],
+    "prerequisites": "IHSS 1200 and MATH 1010 or MATH 1500, or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3774,9 +3531,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "IHSS 1200 and MATH 1010 or MATH 1500, or permission of instructor."
-    ],
+    "prerequisites": "IHSS 1200 and MATH 1010 or MATH 1500, or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3796,9 +3551,7 @@
       "summer": false,
       "text": "fall term even-numbered years."
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 1030 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ARTS 1030 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3818,9 +3571,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisite: ECON 1200/IHSS 1200 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ECON 1200/IHSS 1200 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3860,9 +3611,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "PSYC 1200, PHIL/PSYC/COGS 2120, or permission of instructor. "
-    ],
+    "prerequisites": "PSYC 1200, PHIL/PSYC/COGS 2120, or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -3922,9 +3671,7 @@
       "summer": true,
       "text": "fall, spring, and summer terms annually."
     },
-    "prerequisites": [
-      "Prerequisites: ENGR 1100 or ECSE 1010 and CIVL 1200 or ENGR 1200 or ENGR 1400. Corequisite: PHYS 1200."
-    ],
+    "prerequisites": "Prerequisites: ENGR 1100 or ECSE 1010 and CIVL 1200 or ENGR 1200 or ENGR 1400. Corequisite: PHYS 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4184,9 +3931,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: PSYC 1200."
-    ],
+    "prerequisites": "Prerequisite: PSYC 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4226,9 +3971,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "One of the following: STSO1110, IHSS 1110, IHSS 1240, IHSS 1320, or permission of instructor."
-    ],
+    "prerequisites": "One of the following: STSO1110, IHSS 1110, IHSS 1240, IHSS 1320, or permission of instructor.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -4308,9 +4051,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "A 2000-level computer science course or its equivalent, or permission of the instructor."
-    ],
+    "prerequisites": "A 2000-level computer science course or its equivalent, or permission of the instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4330,9 +4071,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "ECON 1200/IHSS 1200."
-    ],
+    "prerequisites": "ECON 1200/IHSS 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4372,9 +4111,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite:  PSYC 1200."
-    ],
+    "prerequisites": "Prerequisite:  PSYC 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4394,9 +4131,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: COGS 4420 - Game AI or CSCI 4150 - Introduction to Artificial Intelligence"
-    ],
+    "prerequisites": "Prerequisite: COGS 4420 - Game AI or CSCI 4150 - Introduction to Artificial Intelligence",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4416,10 +4151,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "Prerequisites: One of the following: GSAS 1040, GSAS 1600, GSAS 2510, GSAS 2520, or GSAS 2540",
-      " "
-    ],
+    "prerequisites": "Prerequisites: One of the following: GSAS 1040, GSAS 1600, GSAS 2510, GSAS 2520, or GSAS 2540",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4439,9 +4171,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 1200 or portfolio review by instructor"
-    ],
+    "prerequisites": "Prerequisite: ARTS 1200 or portfolio review by instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4521,9 +4251,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite or Corequisite: ITWS 2110 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite or Corequisite: ITWS 2110 or permission of instructor.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -4543,9 +4271,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisites: Both ENGR 1300 and ENGR 2710 are suggested."
-    ],
+    "prerequisites": "Prerequisites: Both ENGR 1300 and ENGR 2710 are suggested.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4565,9 +4291,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: ENGR 4710."
-    ],
+    "prerequisites": "Prerequisite: ENGR 4710.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4587,9 +4311,7 @@
       "summer": true,
       "text": "fall, spring, and summer terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: CHEM 1100."
-    ],
+    "prerequisites": "Prerequisite: CHEM 1100.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4609,9 +4331,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: ECON 2010 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ECON 2010 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4631,9 +4351,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "PSYC 1200 and PSYC 4310 or COGS 2120 and CSCI 1100."
-    ],
+    "prerequisites": "PSYC 1200 and PSYC 4310 or COGS 2120 and CSCI 1100.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4653,9 +4371,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisites:  2000-level art, media, or cultural history course, or permission of instructor."
-    ],
+    "prerequisites": "Prerequisites:  2000-level art, media, or cultural history course, or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4695,9 +4411,7 @@
       "summer": false,
       "text": "spring term, odd-numbered years"
     },
-    "prerequisites": [
-      "Prerequisite: STSO 2510, STSO 2520, STSO 2500, or permission of instructor"
-    ],
+    "prerequisites": "Prerequisite: STSO 2510, STSO 2520, STSO 2500, or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4717,9 +4431,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: one course in philosophy."
-    ],
+    "prerequisites": "Prerequisite: one course in philosophy.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4739,9 +4451,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "ECON 2010 or ECON 2020 and MATH 2010."
-    ],
+    "prerequisites": "ECON 2010 or ECON 2020 and MATH 2010.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4781,9 +4491,7 @@
       "summer": true,
       "text": "fall, spring, and summer terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: MATH 1010."
-    ],
+    "prerequisites": "Prerequisite: MATH 1010.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4823,9 +4531,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: ECON 1200/IHSS 1200 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ECON 1200/IHSS 1200 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4845,9 +4551,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite:  PSYC 1200."
-    ],
+    "prerequisites": "Prerequisite:  PSYC 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4867,9 +4571,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite:  ARTS 2020, graduate status, or permission of instructor. This course is a good introduction for ARTS 4010, ARTS 4510, and special project seminars in the Electronic Arts."
-    ],
+    "prerequisites": "Prerequisite:  ARTS 2020, graduate status, or permission of instructor. This course is a good introduction for ARTS 4010, ARTS 4510, and special project seminars in the Electronic Arts.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4909,9 +4611,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "ARTS 1380 or demonstrable proficiency in music."
-    ],
+    "prerequisites": "ARTS 1380 or demonstrable proficiency in music.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4931,9 +4631,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 2380 or demonstratable proficiency in the prerequisite material"
-    ],
+    "prerequisites": "Prerequisite: ARTS 2380 or demonstratable proficiency in the prerequisite material",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4973,9 +4671,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 2020 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ARTS 2020 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -4995,9 +4691,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisite: ECON 1200/IHSS 1200 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ECON 1200/IHSS 1200 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5017,9 +4711,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: limited to first-year students enrolled in the Vasudha Living and Learning Community, or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: limited to first-year students enrolled in the Vasudha Living and Learning Community, or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": true,
@@ -5039,9 +4731,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisites:  ARTS 2500, ARTS 2540, or a 2000-level history-theory course in Audio Culture."
-    ],
+    "prerequisites": "Prerequisites:  ARTS 2500, ARTS 2540, or a 2000-level history-theory course in Audio Culture.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -5061,10 +4751,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "ECON 2020.",
-      " "
-    ],
+    "prerequisites": "ECON 2020.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -5084,9 +4771,7 @@
       "summer": false,
       "text": "fall term annually"
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 1200."
-    ],
+    "prerequisites": "Prerequisite: ARTS 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5106,9 +4791,7 @@
       "summer": false,
       "text": "fall and spring terms annually"
     },
-    "prerequisites": [
-      "PSYC 1200."
-    ],
+    "prerequisites": "PSYC 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5148,9 +4831,7 @@
       "summer": false,
       "text": ""
     },
-    "prerequisites": [
-      "Permission of instructor."
-    ],
+    "prerequisites": "Permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5170,9 +4851,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisite: PHIL 2140."
-    ],
+    "prerequisites": "Prerequisite: PHIL 2140.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5252,9 +4931,7 @@
       "summer": false,
       "text": "spring term odd-numbered years."
     },
-    "prerequisites": [
-      "Prerequisites: One of the following: STSO 2010, STSO 2100, STSS 2210, STSO 2300, STSS 2510, STSO 2520, STSO 2500, or permission of instructor"
-    ],
+    "prerequisites": "Prerequisites: One of the following: STSO 2010, STSO 2100, STSS 2210, STSO 2300, STSS 2510, STSO 2520, STSO 2500, or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5294,10 +4971,7 @@
       "summer": true,
       "text": "fall, spring, and summer terms annually."
     },
-    "prerequisites": [
-      "General Psychology.",
-      " "
-    ],
+    "prerequisites": "General Psychology.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5337,9 +5011,7 @@
       "summer": true,
       "text": "fall, spring, and summer terms annually."
     },
-    "prerequisites": [
-      "Students may begin lessons at any level of ability, but auditions may be required where demand for a particular instrument exceeds class capacity."
-    ],
+    "prerequisites": "Students may begin lessons at any level of ability, but auditions may be required where demand for a particular instrument exceeds class capacity.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5379,9 +5051,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "MATH 1020 or equivalent."
-    ],
+    "prerequisites": "MATH 1020 or equivalent.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5421,9 +5091,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite:  ENGR 2050. Restricted to junior and senior engineering majors."
-    ],
+    "prerequisites": "Prerequisite:  ENGR 2050. Restricted to junior and senior engineering majors.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5463,9 +5131,7 @@
       "summer": true,
       "text": "fall, spring, and summer terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: In conjunction with sophomore and junior courses."
-    ],
+    "prerequisites": "Prerequisite: In conjunction with sophomore and junior courses.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5485,9 +5151,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "CSCI 2300 or permission of instructor."
-    ],
+    "prerequisites": "CSCI 2300 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5507,9 +5171,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "WRIT 1110, WRIT 2110, COMM 2520, or permission of instructor."
-    ],
+    "prerequisites": "WRIT 1110, WRIT 2110, COMM 2520, or permission of instructor.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -5529,9 +5191,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: PSYC 1200."
-    ],
+    "prerequisites": "Prerequisite: PSYC 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5571,9 +5231,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite:  PSYC 1200."
-    ],
+    "prerequisites": "Prerequisite:  PSYC 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5593,9 +5251,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisite: ECON 2010 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ECON 2010 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5715,9 +5371,7 @@
       "summer": false,
       "text": ""
     },
-    "prerequisites": [
-      "Prerequisite:  PSYC 1200 and/or permission of supervising faculty member."
-    ],
+    "prerequisites": "Prerequisite:  PSYC 1200 and/or permission of supervising faculty member.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5797,9 +5451,7 @@
       "summer": false,
       "text": "spring term odd-numbered years."
     },
-    "prerequisites": [
-      "COMM 2520."
-    ],
+    "prerequisites": "COMM 2520.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -5819,9 +5471,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Audition with instructor."
-    ],
+    "prerequisites": "Audition with instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5841,9 +5491,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: demonstration of adequate skill in playing an orchestral instrument through audition."
-    ],
+    "prerequisites": "Prerequisite: demonstration of adequate skill in playing an orchestral instrument through audition.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5883,9 +5531,7 @@
       "summer": true,
       "text": "fall, spring, and summer terms annually."
     },
-    "prerequisites": [
-      " PSYC 1200 or COGS 2120 or permission of instructor."
-    ],
+    "prerequisites": "PSYC 1200 or COGS 2120 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5905,9 +5551,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisites: PSYC 2310, ENGR 2600, or MGMT 2100."
-    ],
+    "prerequisites": "Prerequisites: PSYC 2310, ENGR 2600, or MGMT 2100.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5947,9 +5591,7 @@
       "summer": false,
       "text": "fall term annually"
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 1030, IHSS 1030, IHSS 1040, or permission of instructor"
-    ],
+    "prerequisites": "Prerequisite: ARTS 1030, IHSS 1030, IHSS 1040, or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5969,9 +5611,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: STSO 4980"
-    ],
+    "prerequisites": "Prerequisite: STSO 4980",
     "properties": {
       "CI": false,
       "HI": false,
@@ -5991,9 +5631,7 @@
       "summer": false,
       "text": "spring term annually"
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 1020, ARTS 1030, ARTS 1040, ARTS 1200, ARTS 2020, ARTS 2380, ARTS 2220, IHSS 1030, IHSS 1040, IHSS 1170, IHSS 1180, ARTS 4120, ARTS 4140, or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ARTS 1020, ARTS 1030, ARTS 1040, ARTS 1200, ARTS 2020, ARTS 2380, ARTS 2220, IHSS 1030, IHSS 1040, IHSS 1170, IHSS 1180, ARTS 4120, ARTS 4140, or permission of instructor.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -6073,9 +5711,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisite: PHIL 1110."
-    ],
+    "prerequisites": "Prerequisite: PHIL 1110.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6115,9 +5751,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: ARTS 2210."
-    ],
+    "prerequisites": "Prerequisite: ARTS 2210.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6137,9 +5771,7 @@
       "summer": false,
       "text": "spring term even-numbered years."
     },
-    "prerequisites": [
-      "Prerequisite: any course with an STSO designation or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: any course with an STSO designation or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6159,9 +5791,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Permission of instructor."
-    ],
+    "prerequisites": "Permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6181,9 +5811,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "PSYC 1200 or PHIL/PSYC 2120."
-    ],
+    "prerequisites": "PSYC 1200 or PHIL/PSYC 2120.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6203,10 +5831,7 @@
       "summer": false,
       "text": "fall term even-numbered years"
     },
-    "prerequisites": [
-      "IHSS 1150, IHSS 1140, PSYC 1200 or permission of instructor.",
-      "\n "
-    ],
+    "prerequisites": "IHSS 1150, IHSS 1140, PSYC 1200 or permission of instructor.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -6226,9 +5851,7 @@
       "summer": false,
       "text": "upon availability"
     },
-    "prerequisites": [
-      "Any WRIT or COMM course"
-    ],
+    "prerequisites": "Any WRIT or COMM course",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6248,9 +5871,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: PSYC 1200."
-    ],
+    "prerequisites": "Prerequisite: PSYC 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6290,9 +5911,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Prerequisite:  Programming languages (Java, or C#, or C++, and Script, XML, SQL), concepts of OO and design patterns, and basics of IDE."
-    ],
+    "prerequisites": "Prerequisite:  Programming languages (Java, or C#, or C++, and Script, XML, SQL), concepts of OO and design patterns, and basics of IDE.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6352,9 +5971,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "ARTS 2700 Sound Recording and Production I."
-    ],
+    "prerequisites": "ARTS 2700 Sound Recording and Production I.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6374,9 +5991,7 @@
       "summer": false,
       "text": "fall and spring terms annually."
     },
-    "prerequisites": [
-      "Permission of instructor."
-    ],
+    "prerequisites": "Permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6416,9 +6031,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite:  PSYC 1200, PSYC 2800, or permission of instructor. Maximum enrollment: 24."
-    ],
+    "prerequisites": "Prerequisite:  PSYC 1200, PSYC 2800, or permission of instructor. Maximum enrollment: 24.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6458,9 +6071,7 @@
       "summer": true,
       "text": "fall, spring and summer terms annually."
     },
-    "prerequisites": [
-      "Prerequisite: ENGR 1100 or ECSE 1010."
-    ],
+    "prerequisites": "Prerequisite: ENGR 1100 or ECSE 1010.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6480,9 +6091,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "PSYC 1200 or permission of instructor"
-    ],
+    "prerequisites": "PSYC 1200 or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6502,9 +6111,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Prerequisite: ECON 2010 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: ECON 2010 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6624,9 +6231,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: STSO 2300 or permission of instructor"
-    ],
+    "prerequisites": "Prerequisite: STSO 2300 or permission of instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6646,9 +6251,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite: STSO 1110, STSO 2300, or permission of the instructor"
-    ],
+    "prerequisites": "Prerequisite: STSO 1110, STSO 2300, or permission of the instructor",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6748,9 +6351,7 @@
       "summer": false,
       "text": ""
     },
-    "prerequisites": [
-      "COGS 2340 Introduction to Linguistics or permission of the instructor. "
-    ],
+    "prerequisites": "COGS 2340 Introduction to Linguistics or permission of the instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6790,9 +6391,7 @@
       "summer": true,
       "text": "fall, spring, and summer terms annually."
     },
-    "prerequisites": [
-      "Prerequisites: ENGR 1100 or ECSE 1010 and PHYS 1100. Corequisite: MATH 2400."
-    ],
+    "prerequisites": "Prerequisites: ENGR 1100 or ECSE 1010 and PHYS 1100. Corequisite: MATH 2400.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6852,9 +6451,7 @@
       "summer": false,
       "text": "upon availability of instructor."
     },
-    "prerequisites": [
-      "Permission of instructor. "
-    ],
+    "prerequisites": "Permission of instructor.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -6874,9 +6471,7 @@
       "summer": false,
       "text": ""
     },
-    "prerequisites": [
-      "Prerequisites: ECON 1200/IHSS 1200 and permission of instructor."
-    ],
+    "prerequisites": "Prerequisites: ECON 1200/IHSS 1200 and permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -6996,9 +6591,7 @@
       "summer": false,
       "text": ""
     },
-    "prerequisites": [
-      "Permission of instructor."
-    ],
+    "prerequisites": "Permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -7018,9 +6611,7 @@
       "summer": false,
       "text": ""
     },
-    "prerequisites": [
-      "Prerequisite: PSYC 1200 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: PSYC 1200 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -7140,9 +6731,7 @@
       "summer": true,
       "text": "fall, spring, and summer terms annually."
     },
-    "prerequisites": [
-      "Permission of a supervising faculty member."
-    ],
+    "prerequisites": "Permission of a supervising faculty member.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -7162,9 +6751,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite: One 2000-level HASS undergraduate course of permission of instructor."
-    ],
+    "prerequisites": "Prerequisite: One 2000-level HASS undergraduate course of permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -7264,9 +6851,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisite:  ITWS 2110 and CSCI 1200."
-    ],
+    "prerequisites": "Prerequisite:  ITWS 2110 and CSCI 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -7286,9 +6871,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "Prerequisite:  ITWS 1100.  Corequisite:  CSCI 1200."
-    ],
+    "prerequisites": "Prerequisite:  ITWS 1100.  Corequisite:  CSCI 1200.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -7368,9 +6951,7 @@
       "summer": false,
       "text": "upon availability."
     },
-    "prerequisites": [
-      "Prerequisites: ARTS 1030 or permission of instructor."
-    ],
+    "prerequisites": "Prerequisites: ARTS 1030 or permission of instructor.",
     "properties": {
       "CI": false,
       "HI": false,
@@ -7410,9 +6991,7 @@
       "summer": false,
       "text": "spring term annually."
     },
-    "prerequisites": [
-      "Prerequisites: GSAS 2520 Introduction to Game Storytelling, WRIT 2330 Creative Writing: The Short Story, or permission of instructor."
-    ],
+    "prerequisites": "Prerequisites: GSAS 2520 Introduction to Game Storytelling, WRIT 2330 Creative Writing: The Short Story, or permission of instructor.",
     "properties": {
       "CI": true,
       "HI": false,
@@ -7432,9 +7011,7 @@
       "summer": false,
       "text": "fall term annually."
     },
-    "prerequisites": [
-      "GSAS 4240"
-    ],
+    "prerequisites": "GSAS 4240",
     "properties": {
       "CI": false,
       "HI": false,
