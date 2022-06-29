@@ -1,4 +1,4 @@
-# This scraper is mainly sourced from the QUACs team and 
+# This scraper is mainly sourced from the QUACs team and
 # is a modified version of their catalog scraper
 
 from typing import Dict, List, Tuple
@@ -84,6 +84,37 @@ def obtain_CI(name):
 
     return False
 
+def get_prereqs(i, year):
+    base_course_url = f"http://catalog.rpi.edu/preview_course.php?catoid={year}&coid="
+    r = requests.get(base_course_url + str(i), headers={"User-Agent": "Mozilla"})
+    page = BeautifulSoup(r.text, features="html.parser")
+
+    data = {}
+    tags = page.find_all("td","block_content_popup")
+    if len(tags) == 0:
+        return data
+    tag = tags[0]
+    title_text = (tag.find_all("h1"))[0].get_text()
+    subject = title_text[0:4]
+    data['subj'] = subject
+    id = title_text[5:9]
+    data['id'] = id
+    course_name = title_text[title_text.find("-")+2:]
+    data['name'] = course_name
+
+    full_text = tag.get_text()
+    place = full_text.find("Prerequisites/Corequisites")
+    end = full_text.find("When Offered")
+    if end == -1:
+        end = full_text.find("Credit Hours")
+    if place != -1:
+        # The prereqs listing is not in its own html element but is in plaintext with the rest of the information
+        # on the page, so we have to search for it
+        prereqs = full_text[place+28:end].strip()
+        if not (prereqs.lower().startswith("None")):
+            data['prereq'] = prereqs
+    return data
+
 def get_course_data(course_ids: List[str]) -> Dict:
     data = {}
     # Break the courses into chunks of CHUNK_SIZE to make the api happy
@@ -105,7 +136,7 @@ def get_course_data(course_ids: List[str]) -> Dict:
 
         courses_xml = html.fromstring(requests.get(url).text.encode("utf8"))
         courses = courses_xml.xpath("//courses/course[not(@child-of)]")
-        for course in courses:  
+        for course in courses:
             subj = course.xpath("./content/prefix/text()")[0].strip()
             if not (subj in depts):
                 continue
@@ -138,7 +169,7 @@ def get_course_data(course_ids: List[str]) -> Dict:
                         if "odd" in field_text:
                             odd = True
                         offered_text = field_text
-                
+
             data[course_name] = {
                 "subj": subj,
                 "ID": ID,
@@ -173,6 +204,9 @@ if __name__ == "__main__":
         catalogs = catalogs[:1]
     else:
         print("Parsing all years")
+
+    for coid in range(42899,49207):
+        prereq_data = get_prereqs(coid,22)
 
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         course_ids = get_course_ids(catalog_id)
