@@ -149,12 +149,19 @@ export default {
     gap: 10px 20px; */
     display: flex;
     flex: 50%;
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    /* flex-direction: column; */
     
 }
 .graphContainer * {
     /* max-width: 250px; */
     width: min(70%, 250px);
+    /* width: 50%; */
+    /* width: max(100%) */
+    margin: 10px 20px;
+    flex-grow: 1;
 }
 .table-header-search {
     transform-origin: bottom left;

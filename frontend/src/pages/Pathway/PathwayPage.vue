@@ -317,7 +317,7 @@ export default {
             // this.$refs.tab[0].style.flexBasis = `${resized[1]*100}%`;
             this.$refs.tab.forEach( (tab, index) => {
                 console.log(tab);
-                tab.style.flexBasis = `${resized[1-index]*100}%`;
+                tab.style.flexBasis = `${resized[index]*100}%`;
             })
             // containers.forEach( (id, index) => {
             //     document.getElementById(id).style.flexBasis = resized[index];
