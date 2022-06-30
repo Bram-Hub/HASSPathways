@@ -1,6 +1,14 @@
 <template>
-    <div style="max-width: 500px; float: right;">
-        <v-select :items="allyears" :label="year" />
+    <div>
+        <div class="yeardropdown">
+            <v-select
+                v-model="selection"
+                no-data-text
+                :items="allyears"
+                :placeholder="this.$store.year"
+                @input="updateYear()"
+            />
+        </div>
     </div>
 </template>
 
@@ -11,7 +19,7 @@ export default {
     name: 'YearSelection',
     data() {
         return {
-            year: "2021-2022"
+            selection: ""
         }
     },
     computed: {
@@ -21,11 +29,20 @@ export default {
         allyears() {
             return ["2021-2022","2020-2021","2019-2020","2018-2019","2017-2018"]
         }
+    },
+    methods: {
+        updateYear() {
+            console.log(this.$store.getters.getYear)
+            this.$store.commit('changeYear',this.selection)
+        }
     }
 }
 </script>
 
 
 <style>
-
+.yeardropdown {
+    max-width: 200px;
+    float: right;
+}
 </style>

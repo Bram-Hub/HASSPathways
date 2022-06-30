@@ -3,7 +3,7 @@
         <v-container fluid>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
             <YearSelection />
-            <h1 style="text-align: center;">
+            <h1 style="text-align: center; clear:both;">
                 Welcome to HASS Pathways!
             </h1>
             <p style="text-align: center;">
@@ -70,7 +70,7 @@
 <script>
 import Breadcrumbs from '../components/Breadcrumbs'
 import breadcrumbs from '../data/breadcrumbs.js'
-import YearSelection from '../components/YearSelection'
+import YearSelection from '../components/YearSelection.vue'
 
 export default {
     components: {
