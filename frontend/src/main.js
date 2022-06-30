@@ -42,7 +42,7 @@ const store = new Vuex.Store({
         // List of pathways that have been bookmarked
         bookmarkedPathways: {},
         // The calendar year to display the information about
-        year: ""
+        year: "2021-2022"
 
     },
     plugins: [createPersistedState()],
@@ -56,6 +56,9 @@ const store = new Vuex.Store({
         setDarkMode(state, val=true) {
             state.darkMode = val;
             localStorage.setItem(DARK_MODE, val);
+        },
+        changeYear(state,newYear) {
+            state.year = newYear;
         },
         updateCourses(state, { pathwayID, newCourses }) {
             checkDefaultCourses(state, pathwayID);

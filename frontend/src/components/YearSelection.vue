@@ -5,7 +5,7 @@
                 v-model="selection"
                 no-data-text
                 :items="allyears"
-                :placeholder="this.$store.year"
+                :placeholder="this.$store.state.year"
                 @input="updateYear()"
             />
         </div>
@@ -32,7 +32,6 @@ export default {
     },
     methods: {
         updateYear() {
-            console.log(this.$store.getters.getYear)
             this.$store.commit('changeYear',this.selection)
         }
     }
