@@ -59,22 +59,25 @@
                         </v-icon>
                     </v-btn>
                 </div>
-                <div v-for="key in classTabs" :key="key" class="tab">
-                    <h2 class="courseTitle">
-                        {{ key }}
-                    </h2>
-                    <CourseTable
-                        :ref="key"
-                        :courses="courses[key]"
-                        :pathway-id="pathwayID"
-                        :desc="false"
-                        :searchBar="false"
-                        :graph="true"
-                        :hover="hover"
-                        :category="key"
-                        @checkbox-clicked="onCheckboxClicked"
-                    />
+                <div id="graphTabs">
+                    <div v-for="key in classTabs" :key="key" class="tab" ref="tab">
+                        <h2 class="courseTitle">
+                            {{ key }}
+                        </h2>
+                        <CourseTable
+                            :ref="key"
+                            :courses="courses[key]"
+                            :pathway-id="pathwayID"
+                            :desc="false"
+                            :searchBar="false"
+                            :graph="true"
+                            :hover="hover"
+                            :category="key"
+                            @checkbox-clicked="onCheckboxClicked"
+                        />
+                    </div>
                 </div>
+
             </div>
         </v-container>
         <v-container v-show="!showGraph">
@@ -154,10 +157,6 @@ export default {
         }
     },
     computed: {
-        // test() {
-        //     this.courseIndex++;
-        //     return this.courseIndex;
-        // },
         // Returns true if the pathway is already in the
         //  'My Pathways' page
         bookmarked() {
@@ -308,8 +307,30 @@ export default {
             this.showGraph = !this.showGraph
         },
         resize(left, right) {
-            
+            // console.log(this.priorities)
+            let containers = Object.keys(this.priorities);
+            containers = containers.filter( p => this.priorities[p] )
+            // console.log(containers)
+            console.log(this.$refs)
+            let resized = [ left/(right + left), right/(right + left )];
+            // console.log(resized)
+            // this.$refs.tab[0].style.flexBasis = `${resized[1]*100}%`;
+            this.$refs.tab.forEach( (tab, index) => {
+                console.log(tab);
+                tab.style.flexBasis = `${resized[1-index]*100}%`;
+            })
+            // containers.forEach( (id, index) => {
+            //     document.getElementById(id).style.flexBasis = resized[index];
+            //     // if ( index == 0 ) console.log(el.style.flexBasis)
+                
+            //     // // el.style.flexBasis = `${resized[index]}`;
+            //     // if ( index == 0 ) console.log(el.style.flexBasis)
+            // })
+        },
+        getWidth(key) {
+            this.debug();
         }
+
     },
 }
 </script>
@@ -341,10 +362,10 @@ export default {
     margin: 0 auto;
     font-weight: bolder;
 }
-.graphTab {
+#graphTabs {
     /* flex: 1 1 20vw; */
-    border: 1px solid cyan;
-    /* display: flex; */
+    display: flex;
+    flex: auto;
     /* max-width: 20vw; */
 }
 

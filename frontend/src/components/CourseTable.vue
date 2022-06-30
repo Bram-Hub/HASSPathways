@@ -153,7 +153,8 @@ export default {
     
 }
 .graphContainer * {
-    max-width: 250px;
+    /* max-width: 250px; */
+    width: min(70%, 250px);
 }
 .table-header-search {
     transform-origin: bottom left;

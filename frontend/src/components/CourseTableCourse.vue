@@ -15,18 +15,19 @@
                     <v-list-item one-line>
                         <v-list-item-content class="pb-0">
                             <div style="cursor: pointer">
+                                <v-checkbox
+                                    :input-value="selected"
+                                    :false-value="0"
+                                    :true-value="1"
+                                    :aria-label="`Toggle selection for ${course.name}`"
+                                    color="primary"
+                                    value="primary"
+                                    hide-details
+                                    class="d-inline-block ma-0 float-right"
+                                    style="z-index: 99"
+                                />
                                 <h1 class="text-h5 class-card__title">
-                                    <v-checkbox
-                                        :input-value="selected"
-                                        :false-value="0"
-                                        :true-value="1"
-                                        :aria-label="`Toggle selection for ${course.name}`"
-                                        color="primary"
-                                        value="primary"
-                                        hide-details
-                                        class="d-inline-block ma-0 float-right"
-                                        style="z-index: 99"
-                                    />
+
 
                                     {{ course.name }}
                                 </h1>
@@ -67,8 +68,11 @@
         >
             <v-list-item one-line>
                 <v-list-item-content class="pb-0">
-                    <div style="cursor: pointer">
+                    <div style="cursor: pointer" :class="{courseCard: graph}">
+
+                        <h1 class="text-h5 class-card__title">
                             <v-checkbox
+                                v-if="!graph"
                                 :input-value="selected"
                                 :false-value="0"
                                 :true-value="1"
@@ -79,9 +83,6 @@
                                 class="d-inline-block ma-0 float-right"
                                 style="z-index: 99"
                             />
-                        <h1 class="text-h5 class-card__title">
-
-
                             {{ course.name }}
                         </h1>
                         <small v-if="course.hasData" class="class-card__subtitle">
@@ -197,9 +198,7 @@ export default {
 .maxHeight {
     height: 100%;
 }
-.graph {
-    margin: 0;
-}
+
 .v-tooltip__content {
     opacity: 2;
 }
@@ -215,8 +214,9 @@ export default {
         line-height: 1.05em;
         display: inline-block;
         font-size: 1.2em !important;
-        width: fit-content;
-        width: min(100px, 70%);
+        // width: fit-content;
+        width: min(200px, 100%);
+        // width: min(100px, 70%);
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -238,12 +238,23 @@ export default {
         }
         .graphChange {
             display: flex;
-            
         }
     }
 
     .class-card__desc {
         padding: 8px 20px;
     }
+}
+
+
+.graph {
+    margin: 0;
+
+    .class-card__title {
+        font-size: 1em !important;
+    }
+}
+.courseCard {
+    flex: 0 !important;
 }
 </style>
