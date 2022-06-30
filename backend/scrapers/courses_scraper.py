@@ -84,6 +84,24 @@ def obtain_CI(name):
 
     return False
 
+def courses_from_string(inp):
+    depts = []
+
+    f = open('depts.json', 'r')
+    f = json.load(f)
+
+    for dept in f:
+        depts.append(dept)
+
+    crses = set()
+    for dept in depts:
+        fnd = inp.find(dept)
+        if fnd != -1:
+            if inp[fnd+8].isdigit():
+                if inp[fnd+5] != '6':
+                    crses.add(inp[fnd:fnd+9])
+    return list(crses)
+
 def get_course_data(course_ids: List[str]) -> Dict:
     data = {}
     # Break the courses into chunks of CHUNK_SIZE to make the api happy
@@ -120,9 +138,16 @@ def get_course_data(course_ids: List[str]) -> Dict:
             even = False
             odd = False
             offered_text = ""
+            cross_listed = []
 
             for field in fields:
-                if field.get("type") == 'acalog-field-519':
+                if field.get("type") == 'acalog-field-522':
+                    field_text = field.xpath("./data/text()")
+                    if len(field_text) > 0:
+                        field_text = field_text[0].strip().upper()
+                        cross_listed = courses_from_string(field_text)
+
+                elif field.get("type") == 'acalog-field-519':
                     field_text = field.xpath("./data/text()")
                     if len(field_text) > 0:
                         # print(field_text)
@@ -156,7 +181,8 @@ def get_course_data(course_ids: List[str]) -> Dict:
                     "CI": obtain_CI(course_name),
                     "HI": True if subj == "IHSS" else False,
                     "major_restricted": False
-                }
+                },
+                "cross listed": cross_listed 
             }
 
     return data
