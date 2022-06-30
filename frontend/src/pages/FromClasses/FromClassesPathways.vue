@@ -2,6 +2,7 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
+            <YearSelection />
             <h1>Matching Pathways</h1>
             <p>
                 Here are the pathways that match the selected courses!
@@ -42,11 +43,13 @@ import Breadcrumbs from '../../components/Breadcrumbs'
 import MyPathway from '../../components/MyPathway'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import { pathways } from '../../data/data.js'
+import YearSelection from '../../components/YearSelection.vue'
 
 export default {
     components: {
         Breadcrumbs,
-        MyPathway
+        MyPathway,
+        YearSelection
     },
     data() {
         return {
@@ -58,7 +61,7 @@ export default {
         get_pathways() {
             let myPathways = [];
             for(const key in pathways) {
-                let thisPathway = {name: "", courses: new Set()}; 
+                let thisPathway = {name: "", courses: new Set()};
                 const singlePathway = pathways[key];
                 thisPathway.name = key;
                 for(const prio in singlePathway) {

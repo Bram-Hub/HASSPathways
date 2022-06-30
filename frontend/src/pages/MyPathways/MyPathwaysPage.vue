@@ -2,6 +2,7 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
+            <YearSelection />
             <!-- <v-btn @click="debug()">click me</v-btn> -->
 
             <h1>My HASS Pathways</h1>
@@ -35,10 +36,11 @@
 import MyPathway from '../../components/MyPathway'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
+import YearSelection from '../../components/YearSelection.vue'
 
 export default {
     components: {
-        MyPathway, Breadcrumbs
+        MyPathway, Breadcrumbs, YearSelection
     },
     props: {
         path: {
@@ -92,7 +94,7 @@ export default {
                 courses: v[1].courses,
                 bookmarked: (v[1].bookmarked == true ? true : false),
             }});
-            return output 
+            return output
         },
         update() {
             this.$forceUpdate();

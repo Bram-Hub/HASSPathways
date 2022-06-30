@@ -9,6 +9,7 @@
                 @input="updateYear()"
             />
         </div>
+        <div style="clear: both;"></div>
     </div>
 </template>
 

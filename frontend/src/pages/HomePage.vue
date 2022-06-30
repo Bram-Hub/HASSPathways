@@ -3,7 +3,7 @@
         <v-container fluid>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
             <YearSelection />
-            <h1 style="text-align: center; clear:both;">
+            <h1 style="text-align: center;">
                 Welcome to HASS Pathways!
             </h1>
             <p style="text-align: center;">
