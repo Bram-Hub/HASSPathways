@@ -144,9 +144,16 @@ export default {
     margin: 0;
 }
 .graphContainer {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px 20px;
+    gap: 10px 20px; */
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    
+}
+.graphContainer * {
+    max-width: 250px;
 }
 .table-header-search {
     transform-origin: bottom left;

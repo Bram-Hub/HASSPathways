@@ -37,6 +37,10 @@
             click me to toggle graph view
         </v-btn>
         <v-container v-show="showGraph">
+        <v-btn @click="resize(1, 2)">1:2</v-btn>
+        <v-btn @click="resize(1, 1)">1:1</v-btn> 
+        <v-btn @click="resize(2, 1)">2:1</v-btn>
+        <hr/>
             <div id="graphView">
                 <div class="graph-fab-container">
                     <v-btn
@@ -303,6 +307,9 @@ export default {
             // console.log(this.courses);
             this.showGraph = !this.showGraph
         },
+        resize(left, right) {
+            
+        }
     },
 }
 </script>
