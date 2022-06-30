@@ -111,26 +111,45 @@
 
             <v-divider class="my-4" />
 
-            <v-tabs v-model="tab" background-color="transparent" color="basil" grow>
-                <v-tabs-slider color="primary" />
-                <v-tab v-for="item in classTabs" :key="item">
-                    <small>{{ item }}</small>
-                </v-tab>
-            </v-tabs>
+        <div id="info">
+            <p v-if="fourThousand">At least one course must be at the 4000 level</p>
+            <p v-if="minor">This pathway is compatible with the {{minorName}} minor</p>
+        </div>
 
-            <v-tabs-items v-model="tab" touchless>
-                <v-tab-item v-for="item in classTabs" :key="item" :eager="true">
-                    <CourseTable
-                        :ref="item"
-                        :courses="courses[item]"
-                        :pathway-id="pathwayID"
-                        :show-desc="true"
-                        :category="item"
-                        @checkbox-clicked="onCheckboxClicked"
-                    />
-                </v-tab-item>
-            </v-tabs-items>
-        </v-container>
+        <v-divider v-if="fourThousand || minor" class="my-4" />
+
+        <v-tabs
+            v-model="tab"
+            background-color="transparent"
+            color="basil"
+            grow
+        >
+            <v-tabs-slider color="primary" />
+            <v-tab
+                v-for="item in classTabs"
+                :key="item"
+            >
+                <small>{{ item }}</small>
+            </v-tab>
+        </v-tabs>
+
+        <v-tabs-items v-model="tab" touchless>
+            <v-tab-item
+                v-for="(item, index) in classTabs"
+                :key="item"
+                :eager="true"
+            >
+                <CourseTable
+                    :ref="item"
+                    :courses="courses[item]"
+                    :pathway-id="pathwayID"
+                    :show-desc="true"
+                    :category="item"
+                    @checkbox-clicked="onCheckboxClicked()"
+                />
+            </v-tab-item>
+        </v-tabs-items>
+    </v-container>
     </v-container>
 </template>
 
@@ -217,10 +236,28 @@ export default {
         },
         classTabs() {
             // Enable only non-empty tabs
-            return ['Required', 'One Of', 'Remaining'].filter(
-                (_, index) => Object.values(this.priorities)[index]
-            )
+            return [
+                'Required',
+                'One Of',
+                'Remaining'
+            ].filter((_, index) => Object.values(this.priorities)[index]);
         },
+        fourThousand() {
+            return this.pathway.remaining_header.indexOf("4000") !== -1
+        },
+        minor() {
+            return 'minor' in this.pathway
+        },
+        minorName() {
+            if (!this.minor) return null
+            let all = ""
+            let fullarr = this.pathway.minor
+            for (let el of fullarr) {
+                let ind = el.toLowerCase().indexOf("minor") //get rid of redundant "minor" in json name
+                all = all.concat(ind == -1 ? el : el.substring(0,ind)).concat(" or ")
+            }
+            return all.substring(0,all.length-4) //get rid of final " or "
+        }
     },
     mounted() {
         this.bookmarkSelected = this.bookmarked
@@ -269,7 +306,6 @@ export default {
             let children = this.$refs[data.ref]
             // if the course has been selected, go into all of the other coursetables of the same ref
             //  and make sure that they are also checked. Otherwise, deselect them.
-
             children.forEach((child) => {
                 child.$children
                     .filter(
@@ -402,6 +438,10 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+#info {
+    padding-top: 20px;
+    text-align: center;
 }
 
 /* @media only screen and (min-width: 600px) {
