@@ -1,4 +1,4 @@
-# This scraper is mainly sourced from the QUACs team and 
+# This scraper is mainly sourced from the QUACs team and
 # is a modified version of their catalog scraper
 
 from typing import Dict, List, Tuple
@@ -9,6 +9,7 @@ import os
 from tqdm import tqdm
 import json
 from lxml import etree
+import csv
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
@@ -72,7 +73,15 @@ def get_catalog_description(fields, course_name):
 
     return ""
 
-def obtain_CI(subj, code):
+def obtain_CI(name):
+    csv_file = open('CI_classes.csv', 'r')
+    reader = csv.reader(csv_file)
+
+    for row in reader:
+        course_name = row[3]
+        if name.strip().lower() == course_name.strip().lower():
+            return True
+
     return False
 
 def get_course_data(course_ids: List[str]) -> Dict:
@@ -96,11 +105,13 @@ def get_course_data(course_ids: List[str]) -> Dict:
 
         courses_xml = html.fromstring(requests.get(url).text.encode("utf8"))
         courses = courses_xml.xpath("//courses/course[not(@child-of)]")
-        for course in courses:  
+        for course in courses:
             subj = course.xpath("./content/prefix/text()")[0].strip()
             if not (subj in depts):
                 continue
             ID = course.xpath("./content/code/text()")[0].strip()
+            if ID[0] == '6':
+                continue
             course_name = course.xpath("./content/name/text()")[0].strip()
             fields = course.xpath("./content/field")
             fall = False
@@ -109,6 +120,7 @@ def get_course_data(course_ids: List[str]) -> Dict:
             even = False
             odd = False
             offered_text = ""
+            prereqs = "None"
 
             for field in fields:
                 if field.get("type") == 'acalog-field-519':
@@ -127,7 +139,11 @@ def get_course_data(course_ids: List[str]) -> Dict:
                         if "odd" in field_text:
                             odd = True
                         offered_text = field_text
-                
+                elif field.get("type") == 'acalog-field-517':
+                    field_text = field.xpath("./data/p/text()")
+                    if len(field_text) > 0:
+                        prereqs = field_text[0].strip()
+
             data[course_name] = {
                 "subj": subj,
                 "ID": ID,
@@ -142,10 +158,11 @@ def get_course_data(course_ids: List[str]) -> Dict:
                     "text": offered_text
                 },
                 "properties": {
-                    "CI": obtain_CI(subj, ID),
+                    "CI": obtain_CI(course_name),
                     "HI": True if subj == "IHSS" else False,
                     "major_restricted": False
-                }
+                },
+                "prerequisites": prereqs
             }
 
     return data

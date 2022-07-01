@@ -1,5 +1,5 @@
 <template>
-    <v-container style="width:75%">
+    <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
         <div class="header">
             <h1>{{ pathway.name }}</h1>
@@ -7,12 +7,12 @@
             <span class="bookmark-holder">
                 <v-tooltip v-if="bookmarkSelected" bottom>
                     <template #activator="{on, attrs}">
-                        <v-icon 
-                            class="selected" 
-                            v-bind="attrs" 
+                        <v-icon
+                            class="selected"
+                            v-bind="attrs"
                             large
-                            v-on="on" 
-                            @click="deselectBookmark()" 
+                            v-on="on"
+                            @click="deselectBookmark()"
                         >
                             mdi-bookmark
                         </v-icon>
@@ -21,49 +21,93 @@
                 </v-tooltip>
                 <v-tooltip v-else bottom>
                     <template #activator="{on, attrs}">
-                        <v-icon 
-                            class="unselected" 
-                            v-bind="attrs" 
+                        <v-icon
+                            class="unselected"
+                            v-bind="attrs"
                             large
-                            v-on="on"  
-                            @click="selectBookmark()" 
+                            v-on="on"
+                            @click="selectBookmark()"
                         >
                             mdi-bookmark-outline
                         </v-icon>
                     </template>
-                    <span>Add pathway to "My Pathways"</span>  
+                    <span>Add pathway to "My Pathways"</span>
                 </v-tooltip>
             </span>
         </div>
         <p>{{ pathway.description }}</p>
-        <div class="fab-container">
-            <v-btn
-                color="light grey" elevation="2" fab
-                aria-label="Switch to next tab on class selection"
-                @click="changeTabOnSelection = !changeTabOnSelection;"
-            >
-                <v-icon>
-                    {{ changeTabOnSelection ? 'mdi-rotate-right-variant' : 'mdi-checkbox-blank-circle-outline' }}
-                </v-icon>
-            </v-btn>
+        <v-btn @click="toggleGraph()">
+            click me to toggle graph view
+        </v-btn>
+        <v-container v-show="showGraph">
+            <div id="graphView">
+                <div class="graph-fab-container">
+                    <v-btn
+                        color="grey" elevation="2" fab
+                        aria-label="Show class description on hover"
+                        @click="descriptionOnHover = !descriptionOnHover;"
+                    >
+                        <v-icon>
+                            {{ descriptionOnHover ? 'mdi-comment-text-outline' : 'mdi-comment-text' }}
+                        </v-icon>
+                    </v-btn>
+                </div>
+                <div v-for="key in classTabs" :key="key" class="tab">
+                    <h2 class="courseTitle">
+                        {{ key }}
+                    </h2>
+                    <CourseTable
+                        :ref="key"
+                        :courses="courses[key]"
+                        :pathway-id="pathwayID"
+                        :show-desc="false"
+                        :search-bar="false"
+                        :graph-view="true"
+                        @checkbox-clicked="onCheckboxClicked()"
+                    />
+                </div>
+            </div>
+        </v-container>
+        <v-container v-show="!showGraph">
+            <div class="fab-container">
+                <v-btn
+                    color="light grey" elevation="2" fab
+                    aria-label="Switch to nex tab on class selection"
+                    @click="changeTabOnSelection = !changeTabOnSelection;"
+                >
+                    <v-icon>
+                        {{ changeTabOnSelection ? 'mdi-rotate-right-variant' : 'mdi-checkbox-blank-circle-outline' }}
+                    </v-icon>
+                </v-btn>
 
-            <v-btn
-                color="red" elevation="2" fab
-                aria-label="Clear courses"
-                @click="deselectCourses()"
-            >
-                <v-icon>mdi-delete</v-icon>
-            </v-btn>
-        </div>
+                <v-btn
+                    color="red" elevation="2" fab
+                    aria-label="Clear courses"
+                    @click="deselectCourses()"
+                >
+                    <v-icon>mdi-delete</v-icon>
+                </v-btn>
+            </div>
+        </v-container>
 
         <v-divider class="my-4" />
+
+        <div id="info">
+            <p v-if="fourThousand">
+                At least one course must be at the 4000 level
+            </p>
+            <p v-if="minor">
+                This pathway is compatible with the {{ minorName }} minor
+            </p>
+        </div>
+
+        <v-divider v-if="fourThousand || minor" class="my-4" />
 
         <v-tabs
             v-model="tab"
             background-color="transparent"
             color="basil"
             grow
-            center-active
         >
             <v-tabs-slider color="primary" />
             <v-tab
@@ -74,8 +118,8 @@
             </v-tab>
         </v-tabs>
 
-        <v-tabs-items v-model="tab" touchless>    
-            <v-tab-item 
+        <v-tabs-items v-model="tab" touchless>
+            <v-tab-item
                 v-for="(item, index) in classTabs"
                 :key="item"
                 :eager="true"
@@ -84,6 +128,7 @@
                     :ref="index"
                     :courses="courses[item]"
                     :pathway-id="pathwayID"
+                    :show-desc="true"
                     @checkbox-clicked="onCheckboxClicked()"
                 />
             </v-tab-item>
@@ -94,6 +139,7 @@
 <script>
 import { pathwayCategories, pathways, courses } from '../../data/data.js'
 import CourseTable from '../../components/CourseTable'
+// import GraphTab from '../../components/GraphTab.vue'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 
@@ -103,14 +149,16 @@ export default {
     },
     data() {
         return {
-            tab: 0,
+            tab: null,
             category: '',
+            showGraph: false,
             changeTabOnSelection: false,
+            descriptionOnHover: false,
             bookmarkSelected: false,
         }
     },
     computed: {
-        // Returns true if the pathway is already in the 
+        // Returns true if the pathway is already in the
         //  'My Pathways' page
         bookmarked() {
             return this.$store.getters.pathwayBookmarked(this.pathwayID);
@@ -173,28 +221,44 @@ export default {
                 'One Of',
                 'Remaining'
             ].filter((_, index) => Object.values(this.priorities)[index]);
+        },
+        fourThousand() {
+            return this.pathway.remaining_header.indexOf("4000") !== -1
+        },
+        minor() {
+            return 'minor' in this.pathway
+        },
+        minorName() {
+            if (!this.minor) return null
+            let all = ""
+            let fullarr = this.pathway.minor
+            for (let el of fullarr) {
+                let ind = el.toLowerCase().indexOf("minor") //get rid of redundant "minor" in json name
+                all = all.concat(ind == -1 ? el : el.substring(0,ind)).concat(" or ")
+            }
+            return all.substring(0,all.length-4) //get rid of final " or "
         }
     },
     mounted() {
         this.bookmarkSelected = this.bookmarked;
     },
     methods : {
-        test() {
-            let output = Object.entries(this.$store.state.pathways).map(v => { return {
-                name: v[0],
-                courses: v[1].courses,
-                bookmarked: v[1].bookmarked
-            }});
-            console.log(output)
-            console.log(this.$store.getters.pathwayBookmarked(this.pathwayID))
+        debug() {
+            // let output = Object.entries(this.$store.state.pathways).map(v => { return {
+            //     name: v[0],
+            //     courses: v[1].courses,
+            //     bookmarked: v[1].bookmarked
+            // }});
+            // console.log(output)
+            // console.log(this.$store.getters.pathwayBookmarked(this.pathwayID))
+            console.log(this)
+            console.log(this.courses)
         },
-        selectBookmark() { 
+        selectBookmark() {
             this.bookmarkSelected = !this.bookmarkSelected;
-            // const c = { pathwayID: this.pathwayID, course: "null" };
-            // this.$store.commit('addCourse', c);
             this.$store.commit('bookmarkPathway', this.pathwayID);
         },
-        deselectBookmark() { 
+        deselectBookmark() {
             // <!--// idk how to use vuex to get which classes are already selected
             // <!--//  so im just going to go through each checkbox and see if
             // <!--//   it is toggled or not
@@ -207,7 +271,7 @@ export default {
         onCheckboxClicked(){
             if(this.changeTabOnSelection)
                 this.tab += 1;
-            
+
         },
         deselectCourses() {
             let pathway = this.$store.state.pathways[this.pathwayID];
@@ -218,7 +282,7 @@ export default {
             })
             // deselect course
             for(const i in this.classTabs) {
-                this.$refs[i][0].deselectAll(); 
+                this.$refs[i][0].deselectAll();
             }
             /* <!-- ! this is sus -->
             * this WILL break with the current implementation of graph view
@@ -227,23 +291,67 @@ export default {
             *    of graph view, there will be more courseTable components which will make the
             *     array that this.$refs[tab] gives have multiple couresTable elements
             *      this should be revamped in the future to change how I deselect courses
-            * 
-            * <!-- --from graph view's branch-- -->
-            * this.$refs[tab] is an array of all of the courseTable components
-            *  right now there are two on each page, with this.$refs[tab][0] being the component
-            *   on graph view, and $this.refs[tab][1] being the component on the regular view
-            *    
+            *
             * this should be changed in the future
             */
+        },
+        toggleGraph() {
+            // console.log(this.courses);
+            this.showGraph = !this.showGraph;
+
         }
     }
 }
 </script>
 
 <style scoped>
-#container {
-    /* margin: 0; */
+
+#graphView {
+    /* border: 1px solid fuchsia; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: normal;
+    flex-direction: row;
 }
+#graphView>.tab {
+    flex: 1 1 160px;
+    margin: 0 2%;
+    /* border: 1px red solid; */
+}
+.tab {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 5%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0 auto;
+}
+.courseTitle {
+    margin: 0 auto;
+    font-weight: bolder;
+}
+.graphTab {
+    /* flex: 1 1 20vw; */
+    border: 1px solid cyan;
+    /* display: flex; */
+    /* max-width: 20vw; */
+}
+
+.graph-fab-container {
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    width: 56px;
+    height: 90px;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .header h1{
     display: inline-block;
 }
@@ -260,10 +368,14 @@ export default {
     width: 56px;
     height: 120px;
     z-index: 999;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+#info {
+    padding-top: 20px;
+    text-align: center;
 }
 
 @media only screen and (min-width: 600px) {

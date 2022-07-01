@@ -1,5 +1,5 @@
 <template>
-    <v-breadcrumbs :items="breadcrumbs" class="px-0">
+    <v-breadcrumbs large :items="breadcrumbs" class="px-0 breadcrumb-padding">
         <template #divider>
             <v-icon>mdi-chevron-right</v-icon>
         </template>
@@ -19,3 +19,11 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+.breadcrumb-padding {
+    padding-top: 0px;
+    padding-bottom: 8px;
+    font-size: large;
+}
+</style>
