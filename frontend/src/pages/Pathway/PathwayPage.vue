@@ -36,7 +36,8 @@
             </span>
         </div>
         <p>{{ pathway.description }}</p>
-        <v-btn @click="toggleGraph()">
+
+        <v-btn id="btn" @click="toggleGraph()">
             click me to toggle graph view
         </v-btn>
         <v-container v-show="showGraph">
@@ -306,6 +307,13 @@ export default {
 
 <style scoped>
 
+/* <!-- needed to make button sizes aligned with graph on mobile --> */
+#btn{
+    width: 100%;
+    justify-self: center;
+    justify-content: center;
+}
+
 #graphView {
     /* border: 1px solid fuchsia; */
     display: flex;
@@ -316,6 +324,7 @@ export default {
 #graphView>.tab {
     flex: 1 1 160px;
     margin: 0 2%;
+    
     /* border: 1px red solid; */
 }
 .tab {
@@ -327,6 +336,7 @@ export default {
     box-sizing: border-box;
     padding: 5px;
     margin: 0 auto;
+    
 }
 .courseTitle {
     margin: 0 auto;
