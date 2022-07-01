@@ -4,36 +4,9 @@
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
-            <span class="bookmark-holder">
-                <v-tooltip v-if="bookmarkSelected" bottom>
-                    <template #activator="{on, attrs}">
-                        <v-icon 
-                            class="selected" 
-                            v-bind="attrs" 
-                            large
-                            v-on="on" 
-                            @click="deselectBookmark()" 
-                        >
-                            mdi-bookmark
-                        </v-icon>
-                    </template>
-                    <span>Remove pathway from "My Pathways"</span>
-                </v-tooltip>
-                <v-tooltip v-else bottom>
-                    <template #activator="{on, attrs}">
-                        <v-icon 
-                            class="unselected" 
-                            v-bind="attrs" 
-                            large
-                            v-on="on"  
-                            @click="selectBookmark()" 
-                        >
-                            mdi-bookmark-outline
-                        </v-icon>
-                    </template>
-                    <span>Add pathway to "My Pathways"</span>  
-                </v-tooltip>
-            </span>
+            <Bookmark 
+                :pathway-id="pathwayID"
+            />
         </div>
         <p>{{ pathway.description }}</p>
         <v-btn @click="toggleGraph()">
@@ -122,11 +95,12 @@ import { pathwayCategories, pathways, courses } from '../../data/data.js'
 import CourseTable from '../../components/CourseTable'
 // import GraphTab from '../../components/GraphTab.vue'
 import Breadcrumbs from '../../components/Breadcrumbs'
+import Bookmark from '../../components/Bookmark'
 import breadcrumbs from '../../data/breadcrumbs.js'
 
 export default {
     components: {
-        CourseTable, Breadcrumbs
+        CourseTable, Breadcrumbs, Bookmark
     },
     data() {
         return {
@@ -135,16 +109,12 @@ export default {
             showGraph: false,
             changeTabOnSelection: false,
             descriptionOnHover: false,
-            bookmarkSelected: false,
         }
     },
     computed: {
         // Returns true if the pathway is already in the 
-        //  'My Pathways' page
-        bookmarked() {
-            return this.$store.getters.pathwayBookmarked(this.pathwayID);
-        },
-        // Get id of the pathway, ie 'chinese_language'
+        //  'My Pathways' page 
+        // Get id of the pathway, ie 'Chinese Language'
         pathwayID() {
             // Should always be valid, see router/index.js
             let pathwayID = this.$route.query.pathway;
@@ -208,9 +178,6 @@ export default {
             return prios;
         }
     },
-    mounted() {
-        this.bookmarkSelected = this.bookmarked;
-    },
     methods : {
         debug() {
             // let output = Object.entries(this.$store.state.pathways).map(v => { return {
@@ -223,24 +190,9 @@ export default {
             console.log(this)
             console.log(this.courses)
         },
-        selectBookmark() { 
-            this.bookmarkSelected = !this.bookmarkSelected;
-            this.$store.commit('bookmarkPathway', this.pathwayID);
-        },
-        deselectBookmark() { 
-            // <!--// idk how to use vuex to get which classes are already selected
-            // <!--//  so im just going to go through each checkbox and see if
-            // <!--//   it is toggled or not
-            // nvm i figured it out
-
-            this.$store.commit('unBookmarkPathway', this.pathwayID);
-            this.bookmarkSelected = !this.bookmarkSelected;
-
-        },
         onCheckboxClicked(){
             if(this.changeTabOnSelection)
                 this.tab += 1;
-            
         },
         deselectCourses() {
             let pathway = this.$store.state.pathways[this.pathwayID];
@@ -324,12 +276,7 @@ export default {
 .header h1{
     display: inline-block;
 }
-.bookmark-holder {
-    display: inline-flex;
-    top: 0;
-    cursor: pointer;
-    z-index: 9;
-}
+
 .fab-container {
     position: fixed;
     right: 10px;
