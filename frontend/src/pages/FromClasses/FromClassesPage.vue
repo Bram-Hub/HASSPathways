@@ -16,24 +16,24 @@
             </div>
             
             <v-btn color="primary" outlined to="/from-classes">
-               <span style="font-weight: bold">Compute Pathway</span><v-icon>mdi-arrow-right-circle</v-icon>
+                <span style="font-weight: bold">Compute Pathway</span><v-icon>mdi-arrow-right-circle</v-icon>
             </v-btn>
             <v-btn color="primary" outlined @click="clear()">
-               <span style="font-weight: bold">Clear Selections</span> <v-icon>mdi-close-circle-outline</v-icon>
+                <span style="font-weight: bold">Clear Selections</span> <v-icon>mdi-close-circle-outline</v-icon>
             </v-btn>
             <span style="font-weight: bold">
-            <div v-for="course in filteredCourses" :key="course.name">
+                <div v-for="course in filteredCourses" :key="course.name">
             
-                <input 
-                    :id="course.name" 
-                    type="checkbox" 
-                    class="check"
-                    :checked="checkCourse(course)"
-                    @change="toggleCheckbox($event, course)"
-                >
-                <label class="label" :for="course.name"> {{ course.name + ", " + course.prefix + "-" + course.ID }} </label>
-            </div>
-        </span>
+                    <input 
+                        :id="course.name" 
+                        type="checkbox" 
+                        class="check"
+                        :checked="checkCourse(course)"
+                        @change="toggleCheckbox($event, course)"
+                    >
+                    <label class="label" :for="course.name"> {{ course.name + ", " + course.prefix + "-" + course.ID }} </label>
+                </div>
+            </span>
             <h1>HASS Pathways From Classes</h1>
 
             <p>Search for the classes you have taken and then continue to the next page to display the computed pathways for you!</p>

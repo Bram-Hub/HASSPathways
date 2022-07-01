@@ -7,12 +7,12 @@
             <span class="bookmark-holder">
                 <v-tooltip v-if="bookmarkSelected" bottom>
                     <template #activator="{on, attrs}">
-                        <v-icon 
-                            class="selected" 
-                            v-bind="attrs" 
+                        <v-icon
+                            class="selected"
+                            v-bind="attrs"
                             large
-                            v-on="on" 
-                            @click="deselectBookmark()" 
+                            v-on="on"
+                            @click="deselectBookmark()"
                         >
                             mdi-bookmark
                         </v-icon>
@@ -21,17 +21,17 @@
                 </v-tooltip>
                 <v-tooltip v-else bottom>
                     <template #activator="{on, attrs}">
-                        <v-icon 
-                            class="unselected" 
-                            v-bind="attrs" 
+                        <v-icon
+                            class="unselected"
+                            v-bind="attrs"
                             large
-                            v-on="on"  
-                            @click="selectBookmark()" 
+                            v-on="on"
+                            @click="selectBookmark()"
                         >
                             mdi-bookmark-outline
                         </v-icon>
                     </template>
-                    <span>Add pathway to "My Pathways"</span>  
+                    <span>Add pathway to "My Pathways"</span>
                 </v-tooltip>
             </span>
         </div>
@@ -88,32 +88,51 @@
                     <v-icon>mdi-delete</v-icon>
                 </v-btn>
             </div>
-
-            <v-divider class="my-4" />
-
-            <v-tabs v-model="tab" background-color="transparent" color="basil" grow>
-                <v-tabs-slider color="primary" />
-                <v-tab v-for="item in classTabs" :key="item">
-                    <small>{{ item }}</small>
-                </v-tab>
-            </v-tabs>
-
-            <v-tabs-items v-model="tab" touchless>    
-                <v-tab-item 
-                    v-for="(item, index) in classTabs"
-                    :key="item"
-                    :eager="true"
-                >
-                    <CourseTable
-                        :ref="index"
-                        :courses="courses[item]"
-                        :pathway-id="pathwayID"
-                        :show-desc="true"
-                        @checkbox-clicked="onCheckboxClicked()"
-                    />
-                </v-tab-item>
-            </v-tabs-items>
         </v-container>
+
+        <v-divider class="my-4" />
+
+        <div id="info">
+            <p v-if="fourThousand">
+                At least one course must be at the 4000 level
+            </p>
+            <p v-if="minor">
+                This pathway is compatible with the {{ minorName }} minor
+            </p>
+        </div>
+
+        <v-divider v-if="fourThousand || minor" class="my-4" />
+
+        <v-tabs
+            v-model="tab"
+            background-color="transparent"
+            color="basil"
+            grow
+        >
+            <v-tabs-slider color="primary" />
+            <v-tab
+                v-for="item in classTabs"
+                :key="item"
+            >
+                <small>{{ item }}</small>
+            </v-tab>
+        </v-tabs>
+
+        <v-tabs-items v-model="tab" touchless>
+            <v-tab-item
+                v-for="(item, index) in classTabs"
+                :key="item"
+                :eager="true"
+            >
+                <CourseTable
+                    :ref="index"
+                    :courses="courses[item]"
+                    :pathway-id="pathwayID"
+                    :show-desc="true"
+                    @checkbox-clicked="onCheckboxClicked()"
+                />
+            </v-tab-item>
+        </v-tabs-items>
     </v-container>
 </template>
 
@@ -139,7 +158,7 @@ export default {
         }
     },
     computed: {
-        // Returns true if the pathway is already in the 
+        // Returns true if the pathway is already in the
         //  'My Pathways' page
         bookmarked() {
             return this.$store.getters.pathwayBookmarked(this.pathwayID);
@@ -202,6 +221,22 @@ export default {
                 'One Of',
                 'Remaining'
             ].filter((_, index) => Object.values(this.priorities)[index]);
+        },
+        fourThousand() {
+            return this.pathway.remaining_header.indexOf("4000") !== -1
+        },
+        minor() {
+            return 'minor' in this.pathway
+        },
+        minorName() {
+            if (!this.minor) return null
+            let all = ""
+            let fullarr = this.pathway.minor
+            for (let el of fullarr) {
+                let ind = el.toLowerCase().indexOf("minor") //get rid of redundant "minor" in json name
+                all = all.concat(ind == -1 ? el : el.substring(0,ind)).concat(" or ")
+            }
+            return all.substring(0,all.length-4) //get rid of final " or "
         }
     },
     mounted() {
@@ -219,11 +254,11 @@ export default {
             console.log(this)
             console.log(this.courses)
         },
-        selectBookmark() { 
+        selectBookmark() {
             this.bookmarkSelected = !this.bookmarkSelected;
             this.$store.commit('bookmarkPathway', this.pathwayID);
         },
-        deselectBookmark() { 
+        deselectBookmark() {
             // <!--// idk how to use vuex to get which classes are already selected
             // <!--//  so im just going to go through each checkbox and see if
             // <!--//   it is toggled or not
@@ -236,7 +271,7 @@ export default {
         onCheckboxClicked(){
             if(this.changeTabOnSelection)
                 this.tab += 1;
-            
+
         },
         deselectCourses() {
             let pathway = this.$store.state.pathways[this.pathwayID];
@@ -247,7 +282,7 @@ export default {
             })
             // deselect course
             for(const i in this.classTabs) {
-                this.$refs[i][0].deselectAll(); 
+                this.$refs[i][0].deselectAll();
             }
             /* <!-- ! this is sus -->
             * this WILL break with the current implementation of graph view
@@ -256,7 +291,7 @@ export default {
             *    of graph view, there will be more courseTable components which will make the
             *     array that this.$refs[tab] gives have multiple couresTable elements
             *      this should be revamped in the future to change how I deselect courses
-            * 
+            *
             * this should be changed in the future
             */
         },
@@ -337,6 +372,10 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+#info {
+    padding-top: 20px;
+    text-align: center;
 }
 
 @media only screen and (min-width: 600px) {
