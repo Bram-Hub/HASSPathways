@@ -166,9 +166,11 @@ export default {
         priorities() {
             let pathway = this.pathway;
             let out = {};
-            out["Required"] = pathway.required ? pathway.required : null;
-            out["One Of"] = pathway.one_of ? pathway.one_of : null;
-            out["Remaining"] = pathway.remaining ? pathway.remaining : null;
+            for (const key in pathway) {
+                if (pathway[key] instanceof Object && !(pathway[key] instanceof Array)) {
+                    out[key] = pathway[key];
+                }
+            }
             return out;
         },
         // Converts the courses into an actual array of objects for
@@ -197,11 +199,13 @@ export default {
         },
         classTabs() {
             // Enable only non-empty tabs
-            return [
-                'Required',
-                'One Of',
-                'Remaining'
-            ].filter((_, index) => Object.values(this.priorities)[index]);
+            let prios = Object.keys(this.priorities);
+            for(const i in prios) {
+                if(prios[i].substring(0, 6) == "One Of") {
+                    prios[i] = "One Of";
+                }
+            }
+            return prios;
         }
     },
     mounted() {
