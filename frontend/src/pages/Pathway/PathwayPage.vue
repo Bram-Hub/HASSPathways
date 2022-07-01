@@ -88,12 +88,17 @@
                     <v-icon>mdi-delete</v-icon>
                 </v-btn>
             </div>
+        </v-container>
 
-            <v-divider class="my-4" />
+        <v-divider class="my-4" />
 
         <div id="info">
-            <p v-if="fourThousand">At least one course must be at the 4000 level</p>
-            <p v-if="minor">This pathway is compatible with the {{minorName}} minor</p>
+            <p v-if="fourThousand">
+                At least one course must be at the 4000 level
+            </p>
+            <p v-if="minor">
+                This pathway is compatible with the {{ minorName }} minor
+            </p>
         </div>
 
         <v-divider v-if="fourThousand || minor" class="my-4" />
@@ -286,7 +291,7 @@ export default {
             *    of graph view, there will be more courseTable components which will make the
             *     array that this.$refs[tab] gives have multiple couresTable elements
             *      this should be revamped in the future to change how I deselect courses
-            * 
+            *
             * this should be changed in the future
             */
         },
