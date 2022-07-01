@@ -4,9 +4,7 @@
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
-            <Bookmark 
-                :pathway-id="pathwayID"
-            />
+            <Bookmark :pathway-id="pathwayID" />
         </div>
         <p>{{ pathway.description }}</p>
         <v-btn @click="toggleGraph()">

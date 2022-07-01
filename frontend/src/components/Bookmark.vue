@@ -40,6 +40,11 @@ export default {
             type: String,
             required: true
         },
+        courses: {
+            type: Array,
+            required: false,
+            default: null
+        }
     },
     data() {
         return {
@@ -57,12 +62,19 @@ export default {
     methods : {
         selectBookmark() { 
             this.bookmarkSelected = !this.bookmarkSelected;
-            console.log(this.pathwayId);
+            if(this.courses) {
+                for(const i in this.courses) {
+                    const c = { pathwayID: this.pathwayId, course: this.courses[i]};
+                    this.$store.commit('addCourse', c);  
+                }
+            }
             this.$store.commit('bookmarkPathway', this.pathwayId);
+            this.$emit('update');
         },
         deselectBookmark() { 
             this.$store.commit('unBookmarkPathway', this.pathwayId);
             this.bookmarkSelected = !this.bookmarkSelected;
+            this.$emit('update');
         }
     }
 }

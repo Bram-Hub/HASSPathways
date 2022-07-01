@@ -88,15 +88,24 @@ export default {
             console.log(this.bookmarked)
         },
         get_pathways() {
-            let output = Object.entries(this.$store.state.pathways).map(v => { return {
+            let output = Object.entries(this.myPathways).map(v => 
+            v = {
                 name: v[0],
                 courses: v[1].courses,
-                bookmarked: (v[1].bookmarked == true ? true : false),
-            }});
-            return output 
+                bookmarked: (v[1].bookmarked ? true : false),
+            });
+            return output; 
         },
         update() {
+
             this.myPathways = JSON.parse(JSON.stringify(this.$store.state.pathways));
+            for(const name in this.myPathways) {
+                const pathway = this.myPathways[name];
+                if(pathway.courses.length == 0 && !pathway.bookmarked) {
+                    this.$store.commit('delPathway', pathway.name);
+                    delete this.myPathways[name];
+                }
+            }
         }
     }
 }
