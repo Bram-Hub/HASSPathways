@@ -241,4 +241,25 @@ export default {
 
 .table-row { cursor: pointer; }
 .table-row_selected { background-color: rgba(229, 57, 53, 0.15); }
+
+::-webkit-scrollbar { 
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgray; /* note: darkgray is lighter than gray */
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+
+
 </style>
+
+
