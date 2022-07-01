@@ -5,22 +5,21 @@
                 v-model="selection"
                 no-data-text
                 :items="allyears"
-                :placeholder="this.$store.state.year"
                 @input="updateYear()"
             />
         </div>
-        <div style="clear: both;"></div>
+        <div style="clear: both;" />
     </div>
 </template>
 
 <script>
-import { pathways } from '../data/data.js'
+//import { pathways } from '../data/data.js'
 
 export default {
     name: 'YearSelection',
     data() {
         return {
-            selection: ""
+            selection: this.$store.state.year
         }
     },
     computed: {
