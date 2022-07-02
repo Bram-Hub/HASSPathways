@@ -1,4 +1,4 @@
-# This scraper is mainly sourced from the QUACs team and 
+# This scraper is mainly sourced from the QUACs team and
 # is a modified version of their catalog scraper
 
 from typing import Dict, List, Tuple
@@ -123,7 +123,7 @@ def get_course_data(course_ids: List[str]) -> Dict:
 
         courses_xml = html.fromstring(requests.get(url).text.encode("utf8"))
         courses = courses_xml.xpath("//courses/course[not(@child-of)]")
-        for course in courses:  
+        for course in courses:
             subj = course.xpath("./content/prefix/text()")[0].strip()
             if not (subj in depts):
                 continue
@@ -139,6 +139,7 @@ def get_course_data(course_ids: List[str]) -> Dict:
             odd = False
             offered_text = ""
             cross_listed = []
+            prereqs = []
 
             for field in fields:
                 if field.get("type") == 'acalog-field-522':
@@ -163,7 +164,12 @@ def get_course_data(course_ids: List[str]) -> Dict:
                         if "odd" in field_text:
                             odd = True
                         offered_text = field_text
-                
+                elif field.get("type") == 'acalog-field-517':
+                    field_text = field.xpath("./data/p/text()")
+                    if len(field_text) > 0:
+                        field_text = field_text[0].strip().upper()
+                        prereqs = courses_from_string(field_text)
+
             data[course_name] = {
                 "subj": subj,
                 "ID": ID,
@@ -182,7 +188,8 @@ def get_course_data(course_ids: List[str]) -> Dict:
                     "HI": True if subj == "IHSS" else False,
                     "major_restricted": False
                 },
-                "cross listed": cross_listed 
+                "cross listed": cross_listed,
+                "prerequisites": prereqs
             }
 
     return data
