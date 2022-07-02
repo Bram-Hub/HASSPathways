@@ -10,7 +10,6 @@
             </span>
 
             <div class="header">
-
                 <v-row>
                     <v-col>
                         <v-tooltip bottom>

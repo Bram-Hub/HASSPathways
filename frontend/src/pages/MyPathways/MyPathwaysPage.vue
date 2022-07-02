@@ -62,11 +62,12 @@ export default {
         },
         pathways() {
             let output = Object.entries(this.myPathways).map(v => 
-            v = {
-                name: v[0],
-                courses: v[1].courses,
-                bookmarked: (v[1].bookmarked ? true : false),
-            });
+                v = {
+                    name: v[0],
+                    courses: v[1].courses,
+                    bookmarked: (v[1].bookmarked ? true : false),
+                }
+            );
             return output;
         },
         bookmarked() {
@@ -89,11 +90,12 @@ export default {
         },
         get_pathways() {
             let output = Object.entries(this.myPathways).map(v => 
-            v = {
-                name: v[0],
-                courses: v[1].courses,
-                bookmarked: (v[1].bookmarked ? true : false),
-            });
+                v = {
+                    name: v[0],
+                    courses: v[1].courses,
+                    bookmarked: (v[1].bookmarked ? true : false),
+                }
+            );
             return output; 
         },
         update() {

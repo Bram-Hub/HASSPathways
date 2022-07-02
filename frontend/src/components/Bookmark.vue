@@ -51,13 +51,13 @@ export default {
             bookmarkSelected: false
         }
     },
-    mounted() {
-        this.bookmarkSelected = this.bookmarked;
-    },
     computed: {
         bookmarked() {
             return this.$store.getters.pathwayBookmarked(this.pathwayId);
         }
+    },
+    mounted() {
+        this.bookmarkSelected = this.bookmarked;
     },
     methods : {
         selectBookmark() { 

@@ -23,13 +23,13 @@
                         </v-icon>
                     </v-btn>
                 </div>
-                <div v-for="key in classTabs" :key="key" class="tab">
+                <div v-for="(item, index) in classTabs" :key="index" class="tab">
                     <h2 class="courseTitle">
-                        {{ key }}
+                        {{ item[0] }}
                     </h2>
                     <CourseTable
-                        :ref="key"
-                        :courses="courses[key]"
+                        :ref="index"
+                        :courses="courses[item[1]]"
                         :pathway-id="pathwayID"
                         :show-desc="false"
                         :search-bar="false"
@@ -64,20 +64,20 @@
 
             <v-tabs v-model="tab" background-color="transparent" color="basil" grow>
                 <v-tabs-slider color="primary" />
-                <v-tab v-for="item in classTabs" :key="item">
-                    <small>{{ item }}</small>
+                <v-tab v-for="(item, index) in classTabs" :key="index">
+                    <small>{{ item[0] }}</small>
                 </v-tab>
             </v-tabs>
 
             <v-tabs-items v-model="tab" touchless>    
                 <v-tab-item 
                     v-for="(item, index) in classTabs"
-                    :key="item"
+                    :key="index"
                     :eager="true"
                 >
                     <CourseTable
                         :ref="index"
-                        :courses="courses[item]"
+                        :courses="courses[item[1]]"
                         :pathway-id="pathwayID"
                         :show-desc="true"
                         @checkbox-clicked="onCheckboxClicked()"
@@ -145,7 +145,6 @@ export default {
         // priorities while they contain actual course objects
         courses() {
             let curr = this.priorities;
-
             // Search through all prios
             for(const prio in curr) {
                 // Search through each course in the pathway
@@ -169,8 +168,9 @@ export default {
             // Enable only non-empty tabs
             let prios = Object.keys(this.priorities);
             for(const i in prios) {
-                if(prios[i].substring(0, 6) == "One Of") {
-                    prios[i] = "One Of";
+                prios[i] = [prios[i], prios[i]];
+                if(prios[i][0].substring(0, 6) == "One Of") {
+                    prios[i][0] = "One Of";
                 }
             }
             return prios;

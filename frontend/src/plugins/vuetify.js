@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Vuetify, { colors } from 'vuetify/lib'
+import Vuetify from 'vuetify/lib'
 
 Vue.use(Vuetify);
 
