@@ -83,7 +83,7 @@
             <v-tabs-slider color="primary" />
             <v-tab
                 v-for="item in classTabs"
-                :key="item"
+                :key="item[1]"
             >
                 <small>{{ item[0] }}</small>
             </v-tab>
