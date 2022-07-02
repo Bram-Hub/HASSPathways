@@ -68,7 +68,7 @@ def parse_body(page):
             body["Required"] = temp
         elif header == "Choose one of the following:":
             temp = parse_courses(tag)
-            body["One Of" + one_of] = temp
+            body["One Of" + str(one_of)] = temp
             one_of += 1
         elif "compatible minor" in header.lower():
             temp = set()
