@@ -66,7 +66,7 @@ def parse_body(page):
         if header == "Required:":
             temp = parse_courses(tag)
             body["Required"] = temp
-        elif header == "Choose one of the following:":
+        elif "one of" in header.lower():
             temp = parse_courses(tag)
             body["One Of" + str(one_of)] = temp
             one_of += 1

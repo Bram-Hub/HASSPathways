@@ -419,7 +419,7 @@
         "remaining_header": "Choose 12 credits from the following:"
     },
     "Gender, Race, Sexuality, Ethnicity, and Social Change": {
-        "Remaining": {
+        "One Of0": {
             "Language and Culture": "IHSS1492",
             "Media and Society": "IHSS1560",
             "Race and Film in U.S. Culture and History": "IHSS1300",
@@ -429,9 +429,19 @@
             "The Genome and You": "IHSS1150",
             "Worlds on Display": "IHSS19XX"
         },
+        "Remaining": {
+            "Cultural Anthropology": "STSO2510",
+            "Documentary Film": "COMM2440",
+            "Gender, Science, and Technology": "STSO4560",
+            "Popular Music and Society": "ARTS2550",
+            "Queer Ecologies": "ARTS4140",
+            "Religion in the Media": "COMM4550",
+            "Sociology": "STSO2520",
+            "Women Writers": "LITR4770"
+        },
         "description": "This pathway enables students to cultivate an appreciation of how diverse identities are lived, experienced, and analyzed. Courses in this pathway center gender, dis/ability, race/ethnicity, and social class as ways of knowing and as analytic approaches for understanding distinctions that human societies make and unmake over time. Gender is used as an analytic tool for critical thinking about such topics as studies of sex differences and sexualities; race and gender in science, engineering, or gaming; or studies of the environment, war and peace, and other social impacts. Racial-ethnic formation is similarly used as an analytical tool for visualizing intersecting inequalities; history of science, medicine, arts, and technology.",
         "name": "Gender, Race, Sexuality, Ethnicity, and Social Change",
-        "remaining_header": "Can select only one of the following to be applied to pathway:"
+        "remaining_header": "Choose 12 credits from the following:"
     },
     "Graphic Design": {
         "Remaining": {
@@ -479,7 +489,7 @@
             "History of Science and Technology": "STSO4530",
             "Medicine, Culture, and Society": "STSO4400",
             "Politics of Design": "STSO4350",
-            "Professional Development  2 \u2013Technical Issues and Solutions": "STSO4100",
+            "Professional Development  2 \u00e2\u0080\u0093Technical Issues and Solutions": "STSO4100",
             "Readings in Science and Technology Studies": "STSO4940",
             "Research Design": "STSO4980",
             "Revolutions in Perspective": "IHSS1960",
@@ -850,7 +860,7 @@
         "remaining_header": "Choose remaining credits from the following:"
     },
     "Science, Technology, and Society": {
-        "Remaining": {
+        "One Of0": {
             "American History": "STSO2500",
             "American Politics in Crisis": "STSO4590",
             "Bioethics": "STSO4250",
@@ -876,7 +886,7 @@
             "IT and Society": "IHSS1220",
             "Medicine, Culture, and Society": "STSO4400",
             "Politics of Design": "STSO4350",
-            "Professional Development  2 \u2013Technical Issues and Solutions": "STSO4100",
+            "Professional Development  2 \u00e2\u0080\u0093Technical Issues and Solutions": "STSO4100",
             "Readings in Science and Technology Studies": "STSO4940",
             "Research Design": "STSO4980",
             "STS and Sustainability Senior Project": "STSO4990",
@@ -891,8 +901,7 @@
         "minor": [
             "Science, Technology, and Society Minor"
         ],
-        "name": "Science, Technology, and Society",
-        "remaining_header": "Choose one of the following: a minimum of 4 credits must be completed at the 4000-level"
+        "name": "Science, Technology, and Society"
     },
     "Strategic Communication": {
         "Remaining": {
@@ -1092,8 +1101,8 @@
         },
         "description": "This pathway allows students to study video, performance, and social impact through the integration of theory and practice. Students are prepared to analyze and critique moving images; plan, produce and edit their own media productions in video/television and/or performance; and communicate through visual as well as audio mediums. Strategically situating art, media and technology in a social context, students engage in creative practice designed to make change from the local to the global.\u00a0",
         "minor": [
-            "Video, Performance, and Social Practice",
-            "Electronic Arts Minor"
+            "Electronic Arts Minor",
+            "Video, Performance, and Social Practice"
         ],
         "name": "Video, Performance, and Social Practice",
         "remaining_header": "Choose remaining credits from the following, with at least 4 credits at the 4000 level:"
