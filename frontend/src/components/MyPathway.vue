@@ -14,11 +14,11 @@
                     <v-col>
                         <v-tooltip bottom>
                             <template #activator="{on, attrs}">
-                                <v-icon 
-                                    v-bind="attrs" 
+                                <v-icon
+                                    v-bind="attrs"
                                     dense
-                                    v-on="on" 
-                                    @click="listAction('edit')" 
+                                    v-on="on"
+                                    @click="listAction('edit')"
                                 >
                                     mdi-pencil
                                 </v-icon>
@@ -29,12 +29,12 @@
                     <v-col>
                         <v-tooltip bottom>
                             <template #activator="{on, attrs}">
-                                <v-icon 
-                                    v-bind="attrs" 
+                                <v-icon
+                                    v-bind="attrs"
                                     dense
                                     color="red"
-                                    v-on="on" 
-                                    @click="listAction('delete')" 
+                                    v-on="on"
+                                    @click="listAction('delete')"
                                 >
                                     mdi-delete
                                 </v-icon>
@@ -62,7 +62,12 @@
                 >
                     <p class="pa-0 mb-2">
                         {{ course.name }}<br>
-                        <small v-if="course.hasData" style="opacity: 0.8">{{ course.subj }}-{{ course.ID }}</small>
+                        <small v-if="course.hasData" style="opacity: 0.8">
+                            {{ course.subj }}-{{ course.ID }}
+                            <label v-for="el in course['cross listed']" :key="el">
+                                / {{ el.substring(0,4) }}-{{ el.substring(5) }}
+                            </label>
+                        </small>
                         <small v-if="!course.hasData" style="opacity: 0.8">
                             No data available
                         </small>
@@ -115,7 +120,7 @@ export default {
                     })
                 }
             }
-
+            console.log(out);
             return out;
         },
         colorHash(pathway) {
@@ -194,7 +199,7 @@ export default {
         overflow-y: auto;
         background-color: rgba(0, 0, 0, 0.1); // TODO: padding for title, make theme dependent
         height: 100%;
-        
+
         .course-items-container {
             padding-top: 12px;
             margin-bottom: 12px;

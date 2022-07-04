@@ -28,7 +28,7 @@
                     <small v-if="course.hasData" class="class-card__subtitle">
                         {{ course.subj }}-{{ course.ID }}
                         <label v-for="el in course['cross listed']" :key="el">
-                            / {{el.substring(0,4)}}-{{el.substring(5)}}
+                            / {{ el.substring(0,4) }}-{{ el.substring(5) }}
                         </label>
                         <CourseTableModifiers
                             class="mt-4 class-card__subtitle__modifiers"
