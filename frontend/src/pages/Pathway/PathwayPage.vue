@@ -1,6 +1,7 @@
 <template>
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
+        <YearSelection />
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
@@ -114,10 +115,11 @@ import CourseTable from '../../components/CourseTable'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import Bookmark from '../../components/Bookmark'
 import breadcrumbs from '../../data/breadcrumbs.js'
+import YearSelection from '../../components/YearSelection.vue'
 
 export default {
     components: {
-        CourseTable, Breadcrumbs, Bookmark
+        CourseTable, Breadcrumbs, YearSelection, Bookmark
     },
     data() {
         return {
@@ -129,8 +131,8 @@ export default {
         }
     },
     computed: {
-        // Returns true if the pathway is already in the 
-        //  'My Pathways' page 
+        // Returns true if the pathway is already in the
+        //  'My Pathways' page
         // Get id of the pathway, ie 'Chinese Language'
         pathwayID() {
             // Should always be valid, see router/index.js

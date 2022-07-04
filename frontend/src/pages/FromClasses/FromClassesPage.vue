@@ -2,19 +2,20 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
+            <YearSelection />
             <h1>Search for the classes you have taken and then continue to the next page to display the computed pathways for you!</h1>
             <h3>Type in the name of the course or the course ID to search for the courses you have taken</h3>
             <div class="search-field">
-                <v-text-field 
-                    v-model="searchValue" 
+                <v-text-field
+                    v-model="searchValue"
                     outlined
                     rounded
                     solo
                     label="Search Class"
-                    class="search-field"    
+                    class="search-field"
                 />
             </div>
-            
+
             <v-btn color="primary" outlined to="/from-classes">
                 <span style="font-weight: bold">Compute Pathway</span>
                 <v-icon>mdi-arrow-right-circle</v-icon>
@@ -25,22 +26,22 @@
             </v-btn>
             <span style="font-weight: bold">
                 <div v-for="course in filteredCourses" :key="course.name">
-                    <input 
-                        :id="course.name" 
-                        type="checkbox" 
+                    <input
+                        :id="course.name"
+                        type="checkbox"
                         class="check"
                         :checked="checkCourse(course)"
                         @change="toggleCheckbox($event, course)"
                     >
                     <label class="label" :for="course.name">
-                        {{ course.name + ", " + course.prefix + "-" + course.ID }} 
+                        {{ course.name + ", " + course.prefix + "-" + course.ID }}
                     </label>
                 </div>
             </span>
             <h1>HASS Pathways From Classes</h1>
 
             <p>Search for the classes you have taken and then continue to the next page to display the computed pathways for you!</p>
-            
+
             <v-card outlined tile>
                 <v-card-title>
                     <v-text-field
@@ -62,7 +63,7 @@
                         overlay-opacity="0.8"
                     >
                         <template #activator="{ on, attrs }">
-                            <v-btn 
+                            <v-btn
                                 color="red" outlined tile
                                 class="mr-2 font-weight-bold mobile-btn"
 
@@ -116,7 +117,7 @@
                     </v-btn>
                 </v-card-title>
                 <h5 style="color: x11gray;" class="ml-4">
-                    Current selections ({{ this.selected.length }}): 
+                    Current selections ({{ this.selected.length }}):
                     <li v-for="(course, index) in this.selected" :key="(course, index)" style="list-style: none; display: inline;">
                         {{ course.name }}{{ index &lt; selected.length - 1 ? ", " : "" }}
                     </li>
@@ -145,7 +146,7 @@
 
                     <!-- Override default row HTMl so we can add ripples + custom click stuff -->
                     <template #item="{ item, isSelected, select }">
-                        <tr 
+                        <tr
                             v-ripple
                             :class="'table-row ' + (isSelected ? 'table-row_selected' : '')"
                             @click="rowClick(item, select, isSelected)"
@@ -171,6 +172,7 @@
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import { courses } from '../../data/data.js'
+import YearSelection from '../../components/YearSelection.vue'
 
 const TABLE_HEADERS = [
     {
@@ -186,7 +188,7 @@ const TABLE_HEADERS = [
 
 export default {
     components: {
-        Breadcrumbs
+        Breadcrumbs, YearSelection
     },
     data() {
         const courseList = Object.values(courses).map(course => {
@@ -207,7 +209,7 @@ export default {
     },
     methods: {
         // On row click, toggle selected state
-        rowClick: function (item, select, isSelected) {    
+        rowClick: function (item, select, isSelected) {
             // Is selected is previous selection state
             // So if isSelected is false, then that means the box is checked
             select(!isSelected);

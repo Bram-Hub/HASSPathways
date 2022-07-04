@@ -2,6 +2,7 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
+            <YearSelection />
             <!-- <v-btn @click="debug()">click me</v-btn> -->
 
             <h1>My HASS Pathways</h1>
@@ -18,7 +19,7 @@
 
             <v-divider class="my-4" />
 
-            <MyPathway 
+            <MyPathway
                 v-for="(item, index) in pathwaysToShow"
                 :key="index"
                 :title="item.name"
@@ -34,10 +35,11 @@
 import MyPathway from '../../components/MyPathway'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
+import YearSelection from '../../components/YearSelection.vue'
 
 export default {
     components: {
-        MyPathway, Breadcrumbs
+        MyPathway, Breadcrumbs, YearSelection
     },
     props: {
         path: {
@@ -61,7 +63,7 @@ export default {
             }
         },
         pathways() {
-            let output = Object.entries(this.myPathways).map(v => 
+            let output = Object.entries(this.myPathways).map(v =>
                 v = {
                     name: v[0],
                     courses: v[1].courses,
@@ -89,14 +91,14 @@ export default {
             console.log(this.bookmarked)
         },
         get_pathways() {
-            let output = Object.entries(this.myPathways).map(v => 
+            let output = Object.entries(this.myPathways).map(v =>
                 v = {
                     name: v[0],
                     courses: v[1].courses,
                     bookmarked: (v[1].bookmarked ? true : false),
                 }
             );
-            return output; 
+            return output;
         },
         update() {
 
