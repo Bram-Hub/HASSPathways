@@ -65,7 +65,7 @@
                         <small v-if="course.hasData" style="opacity: 0.8">
                             {{ course.subj }}-{{ course.ID }}
                             <label v-for="el in course['cross listed']" :key="el">
-                                / {{ el.substring(0,4) }}-{{ el.substring(5) }}
+                                / {{ el }}
                             </label>
                         </small>
                         <small v-if="!course.hasData" style="opacity: 0.8">

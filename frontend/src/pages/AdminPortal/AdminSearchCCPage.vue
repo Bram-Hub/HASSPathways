@@ -21,7 +21,7 @@
                 >
                     Edit
                 </v-btn>
-                <label class="label" :for="course.name"> {{ course.name + ", " + course.subj + "-" + course.ID + course['cross listed'].map(el => ' / ' + el.substring(0,4) + '-' + el.substring(5)).join("") }} </label>
+                <label class="label" :for="course.name"> {{ course.name + ", " + course.subj + "-" + course.ID + course['cross listed'].map(el => ' / ' + el).join("") }} </label>
                 <v-btn color="red" @click="chooseCourse(course.name)">
                     Remove
                 </v-btn>
