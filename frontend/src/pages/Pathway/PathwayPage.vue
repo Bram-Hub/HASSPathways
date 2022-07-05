@@ -1,39 +1,11 @@
 <template>
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
+        <YearSelection />
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
-            <span class="bookmark-holder">
-                <v-tooltip v-if="bookmarkSelected" bottom>
-                    <template #activator="{on, attrs}">
-                        <v-icon
-                            class="selected"
-                            v-bind="attrs"
-                            large
-                            v-on="on"
-                            @click="deselectBookmark()"
-                        >
-                            mdi-bookmark
-                        </v-icon>
-                    </template>
-                    <span>Remove pathway from "My Pathways"</span>
-                </v-tooltip>
-                <v-tooltip v-else bottom>
-                    <template #activator="{on, attrs}">
-                        <v-icon
-                            class="unselected"
-                            v-bind="attrs"
-                            large
-                            v-on="on"
-                            @click="selectBookmark()"
-                        >
-                            mdi-bookmark-outline
-                        </v-icon>
-                    </template>
-                    <span>Add pathway to "My Pathways"</span>
-                </v-tooltip>
-            </span>
+            <Bookmark :pathway-id="pathwayID" />
         </div>
         <p>{{ pathway.description }}</p>
         <v-btn @click="toggleGraph()">
@@ -52,13 +24,13 @@
                         </v-icon>
                     </v-btn>
                 </div>
-                <div v-for="key in classTabs" :key="key" class="tab">
+                <div v-for="(item, index) in classTabs" :key="index" class="tab">
                     <h2 class="courseTitle">
-                        {{ key }}
+                        {{ item[0] }}
                     </h2>
                     <CourseTable
-                        :ref="key"
-                        :courses="courses[key]"
+                        :ref="index"
+                        :courses="courses[item[1]]"
                         :pathway-id="pathwayID"
                         :show-desc="false"
                         :search-bar="false"
@@ -112,21 +84,21 @@
             <v-tabs-slider color="primary" />
             <v-tab
                 v-for="item in classTabs"
-                :key="item"
+                :key="item[1]"
             >
-                <small>{{ item }}</small>
+                <small>{{ item[0] }}</small>
             </v-tab>
         </v-tabs>
 
         <v-tabs-items v-model="tab" touchless>
             <v-tab-item
                 v-for="(item, index) in classTabs"
-                :key="item"
+                :key="item[1]"
                 :eager="true"
             >
                 <CourseTable
                     :ref="index"
-                    :courses="courses[item]"
+                    :courses="courses[item[1]]"
                     :pathway-id="pathwayID"
                     :show-desc="true"
                     @checkbox-clicked="onCheckboxClicked()"
@@ -141,11 +113,13 @@ import { pathwayCategories, pathways, courses } from '../../data/data.js'
 import CourseTable from '../../components/CourseTable'
 // import GraphTab from '../../components/GraphTab.vue'
 import Breadcrumbs from '../../components/Breadcrumbs'
+import Bookmark from '../../components/Bookmark'
 import breadcrumbs from '../../data/breadcrumbs.js'
+import YearSelection from '../../components/YearSelection.vue'
 
 export default {
     components: {
-        CourseTable, Breadcrumbs
+        CourseTable, Breadcrumbs, YearSelection, Bookmark
     },
     data() {
         return {
@@ -154,16 +128,12 @@ export default {
             showGraph: false,
             changeTabOnSelection: false,
             descriptionOnHover: false,
-            bookmarkSelected: false,
         }
     },
     computed: {
         // Returns true if the pathway is already in the
         //  'My Pathways' page
-        bookmarked() {
-            return this.$store.getters.pathwayBookmarked(this.pathwayID);
-        },
-        // Get id of the pathway, ie 'chinese_language'
+        // Get id of the pathway, ie 'Chinese Language'
         pathwayID() {
             // Should always be valid, see router/index.js
             let pathwayID = this.$route.query.pathway;
@@ -185,16 +155,17 @@ export default {
         priorities() {
             let pathway = this.pathway;
             let out = {};
-            out["Required"] = pathway.required ? pathway.required : null;
-            out["One Of"] = pathway.one_of ? pathway.one_of : null;
-            out["Remaining"] = pathway.remaining ? pathway.remaining : null;
+            for (const key in pathway) {
+                if (pathway[key] instanceof Object && !(pathway[key] instanceof Array)) {
+                    out[key] = pathway[key];
+                }
+            }
             return out;
         },
         // Converts the courses into an actual array of objects for
         // priorities while they contain actual course objects
         courses() {
             let curr = this.priorities;
-
             // Search through all prios
             for(const prio in curr) {
                 // Search through each course in the pathway
@@ -216,11 +187,14 @@ export default {
         },
         classTabs() {
             // Enable only non-empty tabs
-            return [
-                'Required',
-                'One Of',
-                'Remaining'
-            ].filter((_, index) => Object.values(this.priorities)[index]);
+            let prios = Object.keys(this.priorities);
+            for(const i in prios) {
+                prios[i] = [prios[i], prios[i]];
+                if(prios[i][0].substring(0, 6) == "One Of") {
+                    prios[i][0] = "One Of";
+                }
+            }
+            return prios;
         },
         fourThousand() {
             return this.pathway.remaining_header.indexOf("4000") !== -1
@@ -239,9 +213,6 @@ export default {
             return all.substring(0,all.length-4) //get rid of final " or "
         }
     },
-    mounted() {
-        this.bookmarkSelected = this.bookmarked;
-    },
     methods : {
         debug() {
             // let output = Object.entries(this.$store.state.pathways).map(v => { return {
@@ -254,24 +225,9 @@ export default {
             console.log(this)
             console.log(this.courses)
         },
-        selectBookmark() {
-            this.bookmarkSelected = !this.bookmarkSelected;
-            this.$store.commit('bookmarkPathway', this.pathwayID);
-        },
-        deselectBookmark() {
-            // <!--// idk how to use vuex to get which classes are already selected
-            // <!--//  so im just going to go through each checkbox and see if
-            // <!--//   it is toggled or not
-            // nvm i figured it out
-
-            this.$store.commit('unBookmarkPathway', this.pathwayID);
-            this.bookmarkSelected = !this.bookmarkSelected;
-
-        },
         onCheckboxClicked(){
             if(this.changeTabOnSelection)
                 this.tab += 1;
-
         },
         deselectCourses() {
             let pathway = this.$store.state.pathways[this.pathwayID];
@@ -355,12 +311,7 @@ export default {
 .header h1{
     display: inline-block;
 }
-.bookmark-holder {
-    display: inline-flex;
-    top: 0;
-    cursor: pointer;
-    z-index: 9;
-}
+
 .fab-container {
     position: fixed;
     right: 10px;

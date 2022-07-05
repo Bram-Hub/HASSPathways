@@ -12,7 +12,7 @@
             <v-divider class="my-4" />
 
             <div class="pathway-categories fade-in">
-                <PathwayCategory 
+                <PathwayCategory
                     v-for="item in pathwayCategories"
                     :key="item.name"
                     :title="item.name"
@@ -30,9 +30,10 @@ import PathwayCategory from '../../components/PathwayCategory'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import { pathwayCategories } from '../../data/data.js'
 import breadcrumbs from '../../data/breadcrumbs.js'
+import YearSelection from '../../components/YearSelection.vue'
 
 export default {
-    components: { PathwayCategory, Breadcrumbs },
+    components: { PathwayCategory, Breadcrumbs, YearSelection },
     data: () => {
         return {
             pathwayCategories,
