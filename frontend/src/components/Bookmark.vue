@@ -63,6 +63,7 @@ export default {
         selectBookmark() { 
             this.bookmarkSelected = !this.bookmarkSelected;
             if(this.courses) {
+                this.$store.Array.clear();
                 for(const i in this.courses) {
                     const c = { pathwayID: this.pathwayId, course: this.courses[i]};
                     this.$store.commit('addCourse', c);  
