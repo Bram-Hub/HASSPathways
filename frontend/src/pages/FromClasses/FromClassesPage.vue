@@ -2,42 +2,11 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <h1>Search for the classes you have taken and then continue to the next page to display the computed pathways for you!</h1>
-            <h3>Type in the name of the course or the course ID to search for the courses you have taken</h3>
-            <div class="search-field">
-                <v-text-field 
-                    v-model="searchValue" 
-                    outlined
-                    rounded
-                    solo
-                    label="Search Class"
-                    class="search-field"    
-                />
-            </div>
-            
-            <v-btn color="primary" outlined to="/from-classes">
-                <span style="font-weight: bold">Compute Pathway</span><v-icon>mdi-arrow-right-circle</v-icon>
-            </v-btn>
-            <v-btn color="primary" outlined @click="clear()">
-                <span style="font-weight: bold">Clear Selections</span> <v-icon>mdi-close-circle-outline</v-icon>
-            </v-btn>
-            <span style="font-weight: bold">
-                <div v-for="course in filteredCourses" :key="course.name">
-            
-                    <input 
-                        :id="course.name" 
-                        type="checkbox" 
-                        class="check"
-                        :checked="checkCourse(course)"
-                        @change="toggleCheckbox($event, course)"
-                    >
-                    <label class="label" :for="course.name"> {{ course.name + ", " + course.prefix + "-" + course.ID }} </label>
-                </div>
-            </span>
-            <h1>HASS Pathways From Classes</h1>
+            <YearSelection />
 
+            <h1>HASS Pathways From Classes</h1>
             <p>Search for the classes you have taken and then continue to the next page to display the computed pathways for you!</p>
-            
+
             <v-card outlined tile>
                 <v-card-title>
                     <v-text-field
@@ -59,7 +28,7 @@
                         overlay-opacity="0.8"
                     >
                         <template #activator="{ on, attrs }">
-                            <v-btn 
+                            <v-btn
                                 color="red" outlined tile
                                 class="mr-2 font-weight-bold mobile-btn"
 
@@ -113,7 +82,7 @@
                     </v-btn>
                 </v-card-title>
                 <h5 style="color: x11gray;" class="ml-4">
-                    Current selections ({{ this.selected.length }}): 
+                    Current selections ({{ this.selected.length }}):
                     <li v-for="(course, index) in this.selected" :key="(course, index)" style="list-style: none; display: inline;">
                         {{ course.name }}{{ index &lt; selected.length - 1 ? ", " : "" }}
                     </li>
@@ -142,7 +111,7 @@
 
                     <!-- Override default row HTMl so we can add ripples + custom click stuff -->
                     <template #item="{ item, isSelected, select }">
-                        <tr 
+                        <tr
                             v-ripple
                             :class="'table-row ' + (isSelected ? 'table-row_selected' : '')"
                             @click="rowClick(item, select, isSelected)"
@@ -168,6 +137,7 @@
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import { courses } from '../../data/data.js'
+import YearSelection from '../../components/YearSelection.vue'
 
 const TABLE_HEADERS = [
     {
@@ -183,13 +153,13 @@ const TABLE_HEADERS = [
 
 export default {
     components: {
-        Breadcrumbs
+        Breadcrumbs, YearSelection
     },
     data() {
         const courseList = Object.values(courses).map(course => {
             return {
                 name: course.name,
-                identifier: course.subj + '-' + course.ID, // For display
+                identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
             };
         });
 
@@ -204,7 +174,7 @@ export default {
     },
     methods: {
         // On row click, toggle selected state
-        rowClick: function (item, select, isSelected) {    
+        rowClick: function (item, select, isSelected) {
             // Is selected is previous selection state
             // So if isSelected is false, then that means the box is checked
             select(!isSelected);
@@ -241,4 +211,25 @@ export default {
 
 .table-row { cursor: pointer; }
 .table-row_selected { background-color: rgba(229, 57, 53, 0.15); }
+
+::-webkit-scrollbar { 
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgray; /* note: darkgray is lighter than gray */
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+
+
 </style>
+
+

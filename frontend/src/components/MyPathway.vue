@@ -10,33 +10,48 @@
             </span>
 
             <div class="header">
-                <v-tooltip bottom>
-                    <template #activator="{on, attrs}">
-                        <v-icon 
-                            v-bind="attrs" 
-                            dense
-                            v-on="on" 
-                            @click="listAction('edit')" 
-                        >
-                            mdi-pencil
-                        </v-icon>
-                    </template>
-                    <span>Edit pathway</span>
-                </v-tooltip>
-                <v-tooltip bottom>
-                    <template #activator="{on, attrs}">
-                        <v-icon 
-                            v-bind="attrs" 
-                            dense
-                            color="red"
-                            v-on="on" 
-                            @click="listAction('delete')" 
-                        >
-                            mdi-delete
-                        </v-icon>
-                    </template>
-                    <span>Delete pathway</span>
-                </v-tooltip>
+                <v-row>
+                    <v-col>
+                        <v-tooltip bottom>
+                            <template #activator="{on, attrs}">
+                                <v-icon
+                                    v-bind="attrs"
+                                    dense
+                                    v-on="on"
+                                    @click="listAction('edit')"
+                                >
+                                    mdi-pencil
+                                </v-icon>
+                            </template>
+                            <span>Edit pathway</span>
+                        </v-tooltip>
+                    </v-col>
+                    <v-col>
+                        <v-tooltip bottom>
+                            <template #activator="{on, attrs}">
+                                <v-icon
+                                    v-bind="attrs"
+                                    dense
+                                    color="red"
+                                    v-on="on"
+                                    @click="listAction('delete')"
+                                >
+                                    mdi-delete
+                                </v-icon>
+                            </template>
+                            <span>Delete pathway</span>
+                        </v-tooltip>
+                    </v-col>
+                    <v-col>
+                        <div class="bookmark">
+                            <Bookmark
+                                :pathway-id="title"
+                                :courses="courses"
+                                @update="$emit('update')"
+                            />
+                        </div>
+                    </v-col>
+                </v-row>
             </div>
         </v-card-title>
         <div class="courses-container">
@@ -47,7 +62,12 @@
                 >
                     <p class="pa-0 mb-2">
                         {{ course.name }}<br>
-                        <small v-if="course.hasData" style="opacity: 0.8">{{ course.subj }}-{{ course.ID }}</small>
+                        <small v-if="course.hasData" style="opacity: 0.8">
+                            {{ course.subj }}-{{ course.ID }}
+                            <label v-for="el in course['cross listed']" :key="el">
+                                / {{ el }}
+                            </label>
+                        </small>
                         <small v-if="!course.hasData" style="opacity: 0.8">
                             No data available
                         </small>
@@ -59,11 +79,15 @@
 </template>
 
 <script>
-import getColorFromCategry from '../helpers/category-colors.js';
+import getColorFromCategry from '../helpers/category-colors.js'
+import Bookmark from './Bookmark'
 import { pathwayCategories, courses as allCourses } from '../data/data.js'
 
 export default {
     name: 'MyPathway',
+    components: {
+        Bookmark
+    },
     props: {
         title: {
             type: String,
@@ -96,7 +120,7 @@ export default {
                     })
                 }
             }
-
+            console.log(out);
             return out;
         },
         colorHash(pathway) {
@@ -144,6 +168,8 @@ export default {
 
         .header {
             align-self: end;
+            .bookmark {
+            }
         }
 
         .title-text {
@@ -173,7 +199,7 @@ export default {
         overflow-y: auto;
         background-color: rgba(0, 0, 0, 0.1); // TODO: padding for title, make theme dependent
         height: 100%;
-        
+
         .course-items-container {
             padding-top: 12px;
             margin-bottom: 12px;

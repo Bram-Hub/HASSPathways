@@ -2,9 +2,7 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <v-btn class="search" href="/search-classes">
-                Search for a class
-            </v-btn>
+            <YearSelection />
             <h1>HASS Pathways</h1>
             <p>
                 Select a pathway below to get started, or <router-link to="/search-classes">
@@ -15,7 +13,7 @@
             <v-divider class="my-4" />
 
             <div class="pathway-categories fade-in">
-                <PathwayCategory 
+                <PathwayCategory
                     v-for="item in pathwayCategories"
                     :key="item.name"
                     :title="item.name"
@@ -33,9 +31,10 @@ import PathwayCategory from '../../components/PathwayCategory'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import { pathwayCategories } from '../../data/data.js'
 import breadcrumbs from '../../data/breadcrumbs.js'
+import YearSelection from '../../components/YearSelection.vue'
 
 export default {
-    components: { PathwayCategory, Breadcrumbs },
+    components: { PathwayCategory, Breadcrumbs, YearSelection },
     data: () => {
         return {
             pathwayCategories,
