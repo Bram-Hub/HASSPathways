@@ -37,9 +37,6 @@
             click me to toggle graph view
         </v-btn>
         <v-container v-show="showGraph">
-        <v-btn @click="resize(1, 2)">1:2</v-btn>
-        <v-btn @click="resize(1, 1)">1:1</v-btn> 
-        <v-btn @click="resize(2, 1)">2:1</v-btn>
         <hr/>
             <div id="graphView">
                 <div class="graph-fab-container">
@@ -60,7 +57,7 @@
                     </v-btn>
                 </div>
                 <div id="graphTabs">
-                    <div v-for="key in classTabs" :key="key" class="tab" ref="tab">
+                    <div v-for="(key, index) in classTabs" :key="key" ref="tab" :class="[ 'tab' ]">
                         <h2 class="courseTitle">
                             {{ key }}
                         </h2>
@@ -260,34 +257,37 @@ export default {
         }
     },
     mounted() {
-        this.bookmarkSelected = this.bookmarked
+        this.bookmarkSelected = this.bookmarked;
+        // this.resize( this.ratio() );
+        // this.$nextTick( this.resize( this.ratio() ) );
     },
     methods: {
         debug() {
-            // console.log(this.hover)
-            console.log('calculating how wide each section should be')
-            let lengths = {}
-            let lengthsArr = this.classTabs.map(
-                (category) => Object.keys(this.courses[category]).length
-            )
-            this.classTabs.forEach((category) => {
-                lengths[category] = Object.keys(this.courses[category]).length
-            })
-            for (let i = 0; i < lengthsArr.length; i++) {
-                let key_i = Object.keys(lengths)[i]
-                for (let j = 0; j < lengthsArr.length; j++) {
-                    if (i == j) {
-                        continue
-                    }
-                    let key_j = Object.keys(lengths)[j]
-                    console.log(
-                        `Ratio for ${key_i}:${key_j}: ${Math.floor(
-                            lengthsArr[i] / lengthsArr[j]
-                        )}`
-                    )
-                }
-            }
-            console.log(lengths)
+            // // console.log(this.hover)
+            // console.log('calculating how wide each section should be')
+            // let lengths = {}
+            // let lengthsArr = this.classTabs.map(
+            //     (category) => Object.keys(this.courses[category]).length
+            // )
+            // this.classTabs.forEach((category) => {
+            //     lengths[category] = Object.keys(this.courses[category]).length
+            // })
+            // for (let i = 0; i < lengthsArr.length; i++) {
+            //     let key_i = Object.keys(lengths)[i]
+            //     for (let j = 0; j < lengthsArr.length; j++) {
+            //         if (i == j) {
+            //             continue
+            //         }
+            //         let key_j = Object.keys(lengths)[j]
+            //         console.log(
+            //             `Ratio for ${key_i}:${key_j}: ${Math.floor(
+            //                 lengthsArr[i] / lengthsArr[j]
+            //             )}`
+            //         )
+            //     }
+            // }
+            // console.log(lengths)
+            // this.ratio();
         },
         selectBookmark() {
             this.bookmarkSelected = !this.bookmarkSelected
@@ -339,33 +339,37 @@ export default {
              */
         },
         toggleGraph() {
-            // console.log(this.courses);
             this.showGraph = !this.showGraph
+            this.resize( this.ratio() );
         },
-        resize(left, right) {
-            // console.log(this.priorities)
+        resize( params ) {
+            let left = params[0];
+            let right = params[1];
             let containers = Object.keys(this.priorities);
             containers = containers.filter( p => this.priorities[p] )
-            // console.log(containers)
-            console.log(this.$refs)
+            // console.log(this.$refs)
             let resized = [ left/(right + left), right/(right + left )];
-            // console.log(resized)
-            // this.$refs.tab[0].style.flexBasis = `${resized[1]*100}%`;
             this.$refs.tab.forEach( (tab, index) => {
-                console.log(tab);
                 tab.style.flexBasis = `${resized[index]*100}%`;
+                console.log(tab)
             })
-            // containers.forEach( (id, index) => {
-            //     document.getElementById(id).style.flexBasis = resized[index];
-            //     // if ( index == 0 ) console.log(el.style.flexBasis)
-                
-            //     // // el.style.flexBasis = `${resized[index]}`;
-            //     // if ( index == 0 ) console.log(el.style.flexBasis)
-            // })
         },
-        getWidth(key) {
-            this.debug();
+        ratio() {
+            let lengthsArr = this.classTabs.map(
+                (category) => Object.keys(this.courses[category]).length
+            )
+            console.log(lengthsArr)
+            let sum = lengthsArr.reduce( ( a, b ) => a + b )
+            // console.log(sum)
+            let result = lengthsArr.map( l => Math.round( l/sum ) )
+            // console.log(result)
+            return result;
+        },
+        closest( num ) {
+            let nums = [ 1, 2 ];
+
         }
+        
 
     },
 }
