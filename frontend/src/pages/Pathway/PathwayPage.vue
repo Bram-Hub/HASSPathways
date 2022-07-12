@@ -37,7 +37,6 @@
             click me to toggle graph view
         </v-btn>
         <v-container v-show="showGraph">
-        <hr/>
             <div id="graphView">
                 <div class="graph-fab-container">
                     <v-btn
@@ -309,22 +308,35 @@ export default {
             let left = params[0];
             let right = params[1];
             let containers = Object.keys(this.priorities);
+
+            // only looks at categories that have something in it
+            //  instead of null
             containers = containers.filter( p => this.priorities[p] )
+
+            // converting ratios to percents out of 100%
+            //  could probably change this in the future for the ratio()
+            //   function to handle this
             let resized = [ left/(right + left), right/(right + left )];
+
+            // setting the flex-basis property of the divs to be the 
+            //  percents we calculated above
             this.$refs.tab.forEach( (tab, index) => {
                 tab.style.flexBasis = `${resized[index]*100}%`;
-                console.log(tab)
             })
         },
         ratio() {
+            // creates an array of all of the lengths of classes
             let lengthsArr = this.classTabs.map(
                 (category) => Object.keys(this.courses[category]).length
             )
-            console.log(lengthsArr)
+            // we could just return this but that would make the
+            //  displays of the tabs not uniform accross different pages
+            // finds the sum of all of the array above
             let sum = lengthsArr.reduce( ( a, b ) => a + b )
-            let result = lengthsArr.map( l => Math.round( l/sum ) )
+            // rounds the numbers to be either 1 or 2
+            let result = lengthsArr.map( l => ( l/sum < 0.35 ? 1 : 2 )  )
             return result;
-        },
+        }
     },
 }
 </script>
