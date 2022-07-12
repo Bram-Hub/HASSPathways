@@ -258,36 +258,9 @@ export default {
     },
     mounted() {
         this.bookmarkSelected = this.bookmarked;
-        // this.resize( this.ratio() );
-        // this.$nextTick( this.resize( this.ratio() ) );
     },
     methods: {
         debug() {
-            // // console.log(this.hover)
-            // console.log('calculating how wide each section should be')
-            // let lengths = {}
-            // let lengthsArr = this.classTabs.map(
-            //     (category) => Object.keys(this.courses[category]).length
-            // )
-            // this.classTabs.forEach((category) => {
-            //     lengths[category] = Object.keys(this.courses[category]).length
-            // })
-            // for (let i = 0; i < lengthsArr.length; i++) {
-            //     let key_i = Object.keys(lengths)[i]
-            //     for (let j = 0; j < lengthsArr.length; j++) {
-            //         if (i == j) {
-            //             continue
-            //         }
-            //         let key_j = Object.keys(lengths)[j]
-            //         console.log(
-            //             `Ratio for ${key_i}:${key_j}: ${Math.floor(
-            //                 lengthsArr[i] / lengthsArr[j]
-            //             )}`
-            //         )
-            //     }
-            // }
-            // console.log(lengths)
-            // this.ratio();
         },
         selectBookmark() {
             this.bookmarkSelected = !this.bookmarkSelected
@@ -327,16 +300,6 @@ export default {
             for (const i in this.classTabs) {
                 this.$refs[i][0].deselectAll()
             }
-            /* <!-- ! this is sus -->
-             * this WILL break with the current implementation of graph view
-             *  because this.$refs[tab] gives me an array of all of the courseTable components
-             *   on the DOM. Right now, there is only one, but with the current implementation
-             *    of graph view, there will be more courseTable components which will make the
-             *     array that this.$refs[tab] gives have multiple couresTable elements
-             *      this should be revamped in the future to change how I deselect courses
-             *
-             * this should be changed in the future
-             */
         },
         toggleGraph() {
             this.showGraph = !this.showGraph
@@ -347,7 +310,6 @@ export default {
             let right = params[1];
             let containers = Object.keys(this.priorities);
             containers = containers.filter( p => this.priorities[p] )
-            // console.log(this.$refs)
             let resized = [ left/(right + left), right/(right + left )];
             this.$refs.tab.forEach( (tab, index) => {
                 tab.style.flexBasis = `${resized[index]*100}%`;
@@ -360,17 +322,9 @@ export default {
             )
             console.log(lengthsArr)
             let sum = lengthsArr.reduce( ( a, b ) => a + b )
-            // console.log(sum)
             let result = lengthsArr.map( l => Math.round( l/sum ) )
-            // console.log(result)
             return result;
         },
-        closest( num ) {
-            let nums = [ 1, 2 ];
-
-        }
-        
-
     },
 }
 </script>
