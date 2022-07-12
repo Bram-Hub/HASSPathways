@@ -7,7 +7,7 @@
         @keydown.13="toggleCheckbox()"
     >
         <v-list-item one-line>
-            <v-list-item-content class="pb-0"> 
+            <v-list-item-content class="pb-0">
                 <div style="cursor: pointer">
                     <h1 class="text-h5 class-card__title">
                         <v-checkbox
@@ -27,12 +27,15 @@
                     </h1>
                     <small v-if="course.hasData" class="class-card__subtitle">
                         {{ course.subj }}-{{ course.ID }}
+                        <label v-for="el in course['cross listed']" :key="el">
+                            / {{ el }}
+                        </label>
                         <CourseTableModifiers
                             class="mt-4 class-card__subtitle__modifiers"
                             :class="{graphChange:graphView}"
                             :item="course"
                         />
-                        
+
                     </small>
                 </div>
             </v-list-item-content>
@@ -91,6 +94,9 @@ export default {
         this.selected = courses.includes(this.course.name) ? 1 : 0;
     },
     methods: {
+        func(el) {
+            console.log(el);
+        },
         toggleCheckbox() {
             let selection = window.getSelection();
             if (selection.isCollapsed) {
@@ -99,7 +105,7 @@ export default {
                 // Save selection
                 const c = { pathwayID: this.pathwayId, course: this.course.name };
                 if (this.selected){
-                    this.$store.commit('addCourse', c);                   
+                    this.$store.commit('addCourse', c);
                     this.$emit('checkbox-clicked')
                 } else {
                     this.$store.commit('delCourse', c);

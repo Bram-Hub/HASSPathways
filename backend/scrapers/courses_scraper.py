@@ -99,7 +99,7 @@ def courses_from_string(inp):
         if fnd != -1:
             if inp[fnd+8].isdigit():
                 if inp[fnd+5] != '6':
-                    crses.add(inp[fnd:fnd+9])
+                    crses.add(inp[fnd:fnd+4] + '-' + inp[fnd+5:fnd+9])
     return list(crses)
 
 def get_course_data(course_ids: List[str]) -> Dict:
@@ -211,6 +211,6 @@ if __name__ == "__main__":
         course_ids = get_course_ids(catalog_id)
         data = get_course_data(course_ids)
 
-        f = open('courses.json', 'w')
+        f = open('../../frontend/src/data/json/courses.json', 'w')
         json.dump(data, f, sort_keys=True, indent=2, ensure_ascii=False)
         f.close()

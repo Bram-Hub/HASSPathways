@@ -159,7 +159,7 @@ export default {
         const courseList = Object.values(courses).map(course => {
             return {
                 name: course.name,
-                identifier: course.subj + '-' + course.ID, // For display
+                identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
             };
         });
 
