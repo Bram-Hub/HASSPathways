@@ -2,6 +2,7 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
+            <YearSelection />
 
             <h1>My HASS Pathways</h1>
 
@@ -21,10 +22,11 @@
 <script>
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
+import YearSelection from '../../components/YearSelection.vue'
 
 export default {
     components: {
-        Breadcrumbs
+        Breadcrumbs, YearSelection
     },
     props: {
         path: {
