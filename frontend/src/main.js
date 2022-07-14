@@ -128,8 +128,13 @@ const store = new Vuex.Store({
                 return (state.pathways[pathwayID].bookmarked == true ? true : false)
             }
 
+        },
+        getCourses: (state) => (pathwayID) => {
+            if (state.pathways[pathwayID]) {
+                return state.pathways[pathwayID].courses;
+            }
+            return [];
         }
-
     }
 });
 
