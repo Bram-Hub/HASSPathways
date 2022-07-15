@@ -35,7 +35,7 @@
         },
         "description": "Artificial Intelligence is quickly becoming pervasive in our lives. Study how Artificial Intelligence can benefit from concepts and ideas from cognitive science, and explore the ways in which Artificial Intelligence is changing our lives.",
         "minor": [
-            "Cognitive Science of Artificial Intelligence Minor"
+            "Cognitive Science of Artificial Intelligence"
         ],
         "name": "Artificial Intelligence",
         "remaining_header": "Choose remaining credits from the following:"
@@ -53,7 +53,7 @@
         "Required": {
             "Introduction to Psychological Science": "PSYC1200"
         },
-        "description": "Behavioral and cognitive neuroscience focus on understanding the brain mechanisms that allow humans and other animals to perceive, think, feel, remember, and act.\u00a0 Students pursuing this pathway will cultivate an understanding of brain and behavior/cognition relationships by critically analyzing research findings.",
+        "description": "Behavioral and cognitive neuroscience focus on understanding the brain mechanisms that allow humans and other animals to perceive, think, feel, remember, and act.  Students pursuing this pathway will cultivate an understanding of brain and behavior/cognition relationships by critically analyzing research findings.",
         "minor": [
             "Behavioral and Cognitive Neuroscience"
         ],
@@ -70,7 +70,7 @@
         },
         "description": "Integrated with Chinese culture, students will learn all four types of language skills (listening, speaking, reading, and writing). After completing the Chinese pathway, students will be able to communicate in Chinese at their targeted proficiency levels and think critically and creatively with global and multicultural awareness.",
         "minor": [
-            "Chinese Language Minor"
+            "Chinese Language"
         ],
         "name": "Chinese Language",
         "remaining_header": "Choose 12 credits from the following:"
@@ -100,7 +100,7 @@
             "Sculpture II": "ARTS4210",
             "Sound Recording and Production I": "ARTS2700",
             "Topics in Communication": "COMM4960",
-            "Topics in the Arts Credi": "ARTS4960",
+            "Topics in the Arts": "ARTS4960",
             "Typography": "COMM2570",
             "Visual Design: Theory and Application": "COMM4460",
             "Visual Poetics and Narrative": "COMM4320"
@@ -113,7 +113,7 @@
         "Remaining": {
             "Design and Innovation  Studio C": "STSO4610",
             "Design and Innovation Studio B": "STSO4605",
-            "Design and Innovation Studio C": "ENGR4610"
+            "Design and Innovation Studio C": null
         },
         "Required": {
             "Design and Innovation Studio I": "IHSS1610",
@@ -168,7 +168,7 @@
         },
         "description": "Study different types of theories and statistical methods used by economists. Students are prepared to gain a broad understanding of how consumers, firms and governments make decisions, and their implications.",
         "minor": [
-            "Economics Minor"
+            "Economics"
         ],
         "name": "Economics",
         "remaining_header": "Choose remaining credits from:"
@@ -184,7 +184,7 @@
         },
         "description": "Study markets and policies in banking and finance. Students are prepared to use different types of mathematical models and econometric techniques used by economists to study the behavior of individuals, firms, and the economy.",
         "minor": [
-            "Economics of Banking and Finance Minor"
+            "Economics of Banking and Finance"
         ],
         "name": "Economics of Banking and Finance"
     },
@@ -268,7 +268,7 @@
         },
         "description": "Study different types of economic models related to innovation and new technologies. Students are prepared to use economic theory, econometric and statistical methods, and data to examine patents, R&D, and innovation more broadly, as well as in specific industries in the economy.",
         "minor": [
-            "Economics of Technology and Innovation Minor"
+            "Economics of Technology and Innovation"
         ],
         "name": "Economics of Technology and Innovation",
         "remaining_header": "Choose remaining credits from the following:"
@@ -296,7 +296,7 @@
         },
         "description": "This pathway allows students to study a range of approaches to electronic, or digital arts, such as digital imaging, graphic storytelling, interactive media, and 3D animation. This immersive study will give students a comprehensive view of how to use digital tools to tell stories, and to critically and creatively explore the arts at the intersection of the humanities, and the physical, computational, engineering, and social sciences.",
         "minor": [
-            "Electronic Arts Minor"
+            "Electronic Arts"
         ],
         "name": "Electronic Arts",
         "remaining_header": "Choose remaining credits from the following:"
@@ -369,7 +369,7 @@
             "War and Society": "IHSS1510",
             "War and Technology: Past, Present, and Future": "IHSS1570"
         },
-        "description": "Humans can do, and have done, some really stupid things: People are not as rational as they would like to think and are subject to scores of cognitive and social biases. That said, however, people also have the power to correct for these, and to do good and constructive work. It is time to see how such cognitive and social powers can be harnessed for the good. How can critical thinking be used constructively? How can people learn from their past mistakes? How can social institutions and policies be set up to ensure that wise\u00a0decisions are made to create a world that lasts into the extended future?",
+        "description": "Humans can do, and have done, some really stupid things: People are not as rational as they would like to think and are subject to scores of cognitive and social biases. That said, however, people also have the power to correct for these, and to do good and constructive work. It is time to see how such cognitive and social powers can be harnessed for the good. How can critical thinking be used constructively? How can people learn from their past mistakes? How can social institutions and policies be set up to ensure that wise decisions are made to create a world that lasts into the extended future?",
         "name": "Extent and Limits of Rationality",
         "remaining_header": "Select 12 credits from the following:"
     },
@@ -383,7 +383,7 @@
             "Media and Society": "IHSS1560",
             "Race and Film in U.S. Culture and History": "IHSS1300",
             "Science and Scientific Misconduct": "IHSS1160",
-            "The American Drea": "IHSS1776"
+            "The American Dream": "IHSS1776"
         },
         "Remaining": {
             "Advertising and Culture": "COMM4580",
@@ -460,7 +460,7 @@
         },
         "description": "Study Graphic Design through the integration of theory and practice, in print and digital media. Students are prepared to use creative and critical thinking to solve visual communication problems and reach target audiences with words, symbols and images.",
         "minor": [
-            "Graphic Design Minor"
+            "Graphic Design"
         ],
         "name": "Graphic Design",
         "remaining_header": "Choose 12 credits from the following, with at least 4 credits at the 4000-level:"
@@ -489,7 +489,7 @@
             "History of Science and Technology": "STSO4530",
             "Medicine, Culture, and Society": "STSO4400",
             "Politics of Design": "STSO4350",
-            "Professional Development  2 \u00e2\u0080\u0093Technical Issues and Solutions": "STSO4100",
+            "Professional Development  2 –Technical Issues and Solutions": "STSO4100",
             "Readings in Science and Technology Studies": "STSO4940",
             "Research Design": "STSO4980",
             "Revolutions in Perspective": "IHSS1960",
@@ -498,16 +498,16 @@
             "Self-Organization in Science and Society": "STSO4580",
             "Sustainability Education": "STSO4280",
             "Sustainability and STS Sustainability Careers": "STSO4300",
-            "The American Drea": "IHSS1776",
+            "The American Dream": "IHSS1776",
             "Topics in Science and Technology Studies": "STSO4960",
             "War and Technology: Past, Present, and Future": "IHSS1570"
         },
         "Required": {
             "American History": "STSO2500"
         },
-        "description": "The pathway in History is designed for students interested in U.S. and world history. Courses primarily focus on the social history and evolution of technology, scientific enterprise, medicine, and law.\u00a0",
+        "description": "The pathway in History is designed for students interested in U.S. and world history. Courses primarily focus on the social history and evolution of technology, scientific enterprise, medicine, and law.",
         "minor": [
-            "History Minor"
+            "History"
         ],
         "name": "History",
         "remaining_header": "Choose remaining credits from the following:"
@@ -550,7 +550,7 @@
         },
         "description": "The Interactive Media/Data Design pathway covers communication design theory and practice, interaction design theory and practice, and information design to prepare students for creating different forms of interactive, multimedia communication and data representation. Students use critical thinking, creative thinking, multimedia design, and data representation to develop effective forms of communication in diverse global contexts.",
         "minor": [
-            "Graphic Design Minor"
+            "Graphic Design"
         ],
         "name": "Interactive Media/Data Design",
         "remaining_header": "Choose 12 credits from the following, with at least 4 credits at the 4000 level:"
@@ -568,6 +568,28 @@
         "description": "This pathway promotes the development of skills to help students effectively communicate both domestically, and internationally, as well as enhance appreciation for other cultures. Students who select this pathway must have all courses that are part of the pathway be in the same language. Transfer credit from American Sign Language (ASL) courses can be applied to this pathway.",
         "name": "Language",
         "remaining_header": "Choose 12 credits from the following, with at least 8 credit hours at, or above, the 2000-level and at least 3 credit hours at the 4000-level:"
+    },
+    "Law and Policy": {
+        "One Of0": {
+            "Law, Values, and Public Policy: Perspectives on Science and Technology": "IHSS1350",
+            "Revolutions in Comparative Perspective": "IHSS19XX",
+            "Science, Technology, and Society": "STSO1110",
+            "Sociology of Inequality": "IHSS19XX",
+            "War and Society": "IHSS1510"
+        },
+        "Remaining": {
+            "American Politics in Crisis": "STSO4590",
+            "Drugs in History": "STSO4430",
+            "Engineering Ethics": "STSO4210",
+            "Gender, Science, and Technology": "STSO4560"
+        },
+        "Required": {},
+        "description": "The Law and Policy pathway is designed for students interested in the design of policy and legislation and students on a pre-law track. Skills and knowledge may be applied to fields such as environment and climate change, technological innovation, public health law, or intellectual property law.",
+        "minor": [
+            "Law and Policy"
+        ],
+        "name": "Law and Policy",
+        "remaining_header": "Choose remaining credits from the following:"
     },
     "Linguistics": {
         "Remaining": {
@@ -587,12 +609,12 @@
         "Required": {
             "Introduction to Linguistics": "COGS2340"
         },
-        "description": "Study linguistics from various perspectives, from cognitive analysis of linguistic expressions to the use of language for communication and other social settings. You\u2019ll also learn how to effectively communicate and handle foreign languages.",
+        "description": "Study linguistics from various perspectives, from cognitive analysis of linguistic expressions to the use of language for communication and other social settings. You'll also learn how to effectively communicate and handle foreign languages.",
         "minor": [
-            "Linguistics Minor"
+            "Linguistics"
         ],
         "name": "Linguistics",
-        "remaining_header": "Choose remaining credits from the following\u200b\u200b\u200b\u200b, with at least 4 credits at the 4000-level:"
+        "remaining_header": "Choose remaining credits from the following​​​​, with at least 4 credits at the 4000-level:"
     },
     "Literature and Creative Writing": {
         "Remaining": {
@@ -608,7 +630,7 @@
             "Science and Fiction": "LITR4150",
             "Speech Communication": "WRIT2340",
             "Strategic Writing": "WRIT2110",
-            "The American Drea": "IHSS1776",
+            "The American Dream": "IHSS1776",
             "The Film Experience": "LITR2410",
             "Topics in Literature": "LITR4960",
             "Visual Poetics and Narrative": "COMM4320",
@@ -617,7 +639,7 @@
         },
         "description": "The Literature and Creative Writing Pathway offers discussion-oriented courses across a range of literary genres and themes, with a choice of emphasis on either literature, creative writing, or both. Students will learn to read and write literary art critically and creatively, with clarity and imagination, and with sensitivity to multi-cultural expressions of diversity.",
         "minor": [
-            "Literature and Creative Writing Minor"
+            "Literature and Creative Writing"
         ],
         "name": "Literature and Creative Writing",
         "remaining_header": "Choose 12 credits from the following, at least 4 credits at the 4000 level:"
@@ -639,7 +661,7 @@
             "Science and Scientific Misconduct": "IHSS1160",
             "The Genome and You": "IHSS1150"
         },
-        "description": "Humans live in the age of information \u2026 and misinformation \u2026 of big data, data mining, and machine learning \u2026 of new media presenting unparalleled means of communication \u2026 of unseen and opaque algorithms driving our news feeds\u2026 and of rushing to judgment on viral videos. It is important to develop some \u2018information intelligence\u2019 and \u2018data dexterity\u2019. Such dexterity and intelligence includes technical skills of quantitative data analysis and IT technology, but also includes critical thinking skills regarding how information is collected, judged, interpreted, and represented, and how big data and information is feeding humans\u2019 collective awareness driving their decisions and affecting their world surroundings.",
+        "description": "Humans live in the age of information … and misinformation … of big data, data mining, and machine learning ... of new media presenting unparalleled means of communication ... of unseen and opaque algorithms driving our news feeds... and of rushing to judgment on viral videos. It is important to develop some 'information intelligence' and 'data dexterity'. Such dexterity and intelligence includes technical skills of quantitative data analysis and IT technology, but also includes critical thinking skills regarding how information is collected, judged, interpreted, and represented, and how big data and information is feeding humans' collective awareness driving their decisions and affecting their world surroundings.",
         "name": "Living in a World of Data",
         "remaining_header": "Choose remaining credits from the following:"
     },
@@ -656,10 +678,10 @@
         },
         "description": "This Pathway is for students with an interest in symbolic logic, and the connections between formal logic and mathematics, computer science, Artificial Intelligence, and the human mind.",
         "minor": [
-            "Philosophy of Logic, Computation, and Mind Minor"
+            "Philosophy of Logic, Computation, and Mind"
         ],
         "name": "Logical Thinking",
-        "remaining_header": "Choose 12 credits from a choice of the following\u200b\u200b\u200b\u200b, with at least 4 credits at the 4000-level:"
+        "remaining_header": "Choose 12 credits from a choice of the following​​​​, with at least 4 credits at the 4000-level:"
     },
     "Media and Culture": {
         "Remaining": {
@@ -676,13 +698,13 @@
             "Rethinking Documentary: Video Production": "ARTS4040",
             "Superheroes in the Classroom": "COMM2616",
             "Technology and the Top Ten": "IHSS19XX",
-            "The American Drea": "IHSS1776",
+            "The American Dream": "IHSS1776",
             "The Film Experience": "COMM29XX",
             "Visual Culture": "COMM4540"
         },
         "description": "This pathway examines different forms of expression and their cultural contexts in a variety of media, including film, television, photography, and new media. Its components will enhance creative and critical thinking, communication practices, and awareness of cultural and individual identities. The focus on cultural and media literacy will improve the career readiness and social awareness of those in any program at RPI.",
         "minor": [
-            "Media and Culture Minor"
+            "Media and Culture"
         ],
         "name": "Media and Culture",
         "remaining_header": "Choose 12 credits from the following, with at least 4 credits at the 4000-level:"
@@ -714,7 +736,7 @@
         },
         "description": "Discover Cognitive Science: a young but fast-growing field focused on the study of the mind from the perspectives of philosophy, psychology, neuroscience, linguistics, and artificial intelligence.",
         "minor": [
-            "Cognitive Science Minor"
+            "Cognitive Science"
         ],
         "name": "Mind, Brain, and Intelligence",
         "remaining_header": "Choose remaining credits from the following:"
@@ -739,9 +761,9 @@
             "Sound Recording and Production I": "ARTS2700",
             "Sound Recording and Production II": "ARTS4700"
         },
-        "description": "Students learn to compose music starting with the Western Classical tradition then branching out to modern and experimental methods. \u00a0Students also learn to program and apply modern information technology to music creation and production. \u00a0",
+        "description": "Students learn to compose music starting with the Western Classical tradition then branching out to modern and experimental methods.  Students also learn to program and apply modern information technology to music creation and production.",
         "minor": [
-            "Music Minor"
+            "Music"
         ],
         "name": "Music Composition and Production",
         "remaining_header": "Choose remaining credits from the following:"
@@ -756,18 +778,18 @@
             "Remixing in Digital Culture": "IHSS19XX"
         },
         "Remaining": {
-            "Chamber Music Ensemble Credit Hours: 1 (course can be repeated multiple times for add": "ARTS2350",
+            "Chamber Music Ensemble": "ARTS2350",
             "Deep Listening": "ARTS2180",
             "Ensemble Nonlinear": "ARTS2600",
-            "Private Music Lessons Credit Hours: 1 (course can be repeated multiple ti": "ARTS2750",
-            "Rensselaer Concert Choir Credit Hours: 1 (course can be repeated multiple ti": "ARTS2310",
-            "Rensselaer Orchestra Credit Hours: 1 (course can be repeated multiple ti": "ARTS2300",
+            "Private Music Lessons": "ARTS2750",
+            "Rensselaer Concert Choir": "ARTS2310",
+            "Rensselaer Orchestra": "ARTS2300",
             "Topics in Deep Listening": "ARTS4180",
-            "Topics in the Arts Credi": "ARTS2960"
+            "Topics in the Arts": "ARTS2960"
         },
-        "description": "Students learn to perform focal and instrumental music from a variety of styles, Classical to Afro-Cuban\u00a0to experimental.",
+        "description": "Students learn to perform focal and instrumental music from a variety of styles, Classical to Afro-Cuban to experimental.",
         "minor": [
-            "Music Minor"
+            "Music"
         ],
         "name": "Music Performance",
         "remaining_header": "Choose remaining credits from the following:"
@@ -790,9 +812,9 @@
             "Topics in Deep Listening": "ARTS4180",
             "World Music": "ARTS2520"
         },
-        "description": "Students gain\u00a0historical and inter-cultural knowledge of music from the Western and various non-Western cultures.",
+        "description": "Students gain historical and inter-cultural knowledge of music from the Western and various non-Western cultures.",
         "minor": [
-            "Music Minor"
+            "Music"
         ],
         "name": "Music and Culture",
         "remaining_header": "Choose remaining credits from the following:"
@@ -824,9 +846,9 @@
             "Scientific Revolutions": "PHIL4310",
             "Topics in Philosophy": "PHIL4940"
         },
-        "description": "Learn to reason more precisely, think more critically, and ask more penetrating and foundational questions about enduring and contemporary problems in ethics, science, technology, religion, and politics \u2014 including some of the biggest challenges that humanity currently faces.",
+        "description": "Learn to reason more precisely, think more critically, and ask more penetrating and foundational questions about enduring and contemporary problems in ethics, science, technology, religion, and politics — including some of the biggest challenges that humanity currently faces.",
         "minor": [
-            "Philosophy Minor"
+            "Philosophy"
         ],
         "name": "Philosophy",
         "remaining_header": "Choose remaining credits from the following with at least 4 credits at the 4000-level:"
@@ -854,7 +876,7 @@
         },
         "description": "The pathway in Public Health is designed for students interested in health-related careers who wish to develop skills and knowledge about global public health challenges. It also offers important courses for students on a pre-medical track.",
         "minor": [
-            "Public Health Minor"
+            "Public Health"
         ],
         "name": "Public Health",
         "remaining_header": "Choose remaining credits from the following:"
@@ -886,7 +908,7 @@
             "IT and Society": "IHSS1220",
             "Medicine, Culture, and Society": "STSO4400",
             "Politics of Design": "STSO4350",
-            "Professional Development  2 \u00e2\u0080\u0093Technical Issues and Solutions": "STSO4100",
+            "Professional Development  2 –Technical Issues and Solutions": "STSO4100",
             "Readings in Science and Technology Studies": "STSO4940",
             "Research Design": "STSO4980",
             "STS and Sustainability Senior Project": "STSO4990",
@@ -899,7 +921,7 @@
         },
         "description": "The pathway in Science, Technology, and Society (STS) is designed for students broadly interested in the social and political dimensions of science, technology, engineering, and medicine. Students use political and social science methods to investigate scientific and technological developments.",
         "minor": [
-            "Science, Technology, and Society Minor"
+            "Science, Technology, and Society"
         ],
         "name": "Science, Technology, and Society"
     },
@@ -927,7 +949,7 @@
         },
         "description": "This pathway is designed to train versatile, critical, and self-possessed 21st- century communicators. Students who successfully complete this pathway will demonstrate the ability to make focused, audience-appropriate arguments; communicate effectively across diverse rhetorical, sociocultural, and disciplinary contexts; and respond creatively to the analytical demands involved with developing, arranging, and revising ideas and arguments.",
         "minor": [
-            "Strategic Communication Minor"
+            "Strategic Communication"
         ],
         "name": "Strategic Communication",
         "remaining_header": "Choose 12 credits of the following, with at least 4 credits at the 4000 level:"
@@ -951,7 +973,7 @@
             "Art History": "ARTS1050",
             "The Multimedia Century": "ARTS2540"
         },
-        "description": "Study traditional studio arts such as drawing, painting, sculpture in conjunction with art history to learn techniques, history, and theory in the visual arts.\u00a0 Students will develop basic skills in perspective, proportion, composition, form making, light and shadow, color,\u00a02 and 3D Design,\u00a0and learn to\u00a0articulate ideas about\u00a0their own,\u00a0other students\u2019, and historical\u00a0works\u00a0through class discussions and critiques.",
+        "description": "Study traditional studio arts such as drawing, painting, sculpture in conjunction with art history to learn techniques, history, and theory in the visual arts.  Students will develop basic skills in perspective, proportion, composition, form making, light and shadow, color, 2 and 3D Design, and learn to articulate ideas about their own, other students', and historical works through class discussions and critiques.",
         "minor": [
             "Studio Arts"
         ],
@@ -980,7 +1002,7 @@
         },
         "description": "The pathway in Sustainability focuses on the interactions between various systems - social, political, cultural, economic, technological and ecological - that undergird environmental sustainability. Students use interdisciplinary approaches to investigate environmental problems.",
         "minor": [
-            "Sustainability Studies Minor"
+            "Sustainability Studies"
         ],
         "name": "Sustainability",
         "remaining_header": "Choose remaining credits from the following: must complete at least 4 credits at the 4000-level"
@@ -1001,7 +1023,7 @@
             "Science and Scientific Misconduct": "IHSS1160",
             "Science, Technology, and Society": "STSO1110",
             "Strategic Writing": "WRIT2110",
-            "Topics in the Arts Credi": "ARTS4960",
+            "Topics in the Arts": "ARTS4960",
             "War and Technology: Past, Present, and Future": "IHSS1570",
             "Well-being: Cultivating Curiosity": "IHSS1175"
         },
@@ -1011,17 +1033,30 @@
     },
     "Transfer Student Arts and Humanities": {
         "Remaining": {
-            "": "WRIT"
+            "ARTSXXXX": "ARTSXXXX",
+            "COMMXXXX": "COMMXXXX",
+            "GSASXXXX": "GSASXXXX",
+            "IHSSXXXX": "IHSSXXXX",
+            "LANGXXXX": "LANGXXXX",
+            "LITRXXXX": "LITRXXXX",
+            "PHILXXXX": "PHILXXXX",
+            "STSHXXXX": "STSHXXXX",
+            "WRITXXXX": "WRITXXXX"
         },
-        "description": "This\u00a0pathway\u00a0is intended for transfer students that enter with junior status and\u00a0who have completed significant coursework within the arts and humanities to be applied toward a pathway.\u00a0 Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.\u00a0",
+        "description": "This pathway is intended for transfer students that enter with junior status and who have completed significant coursework within the arts and humanities to be applied toward a pathway.  Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
         "name": "Transfer Student Arts and Humanities",
         "remaining_header": "Choose 12 credits of the following course prefixes, with at least 8 credit hours at, or above, the 2000 level and at least 3 credit hours at the 4000 level:"
     },
     "Transfer Student Social Science": {
         "Remaining": {
-            "": "STSS"
+            "COGSXXXX": "COGSXXXX",
+            "ECONXXXX": "ECONXXXX",
+            "GSASXXXX": "GSASXXXX",
+            "IHSSXXXX": "IHSSXXXX",
+            "PSYCXXXX": "PSYCXXXX",
+            "STSSXXXX": "STSSXXXX"
         },
-        "description": "This pathway is intended for transfer students that enter with junior status and\u00a0who have completed significant coursework within the social sciences\u00a0to be applied toward a pathway.\u00a0 Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.\u00a0",
+        "description": "This pathway is intended for transfer students that enter with junior status and who have completed significant coursework within the social sciences to be applied toward a pathway.  Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
         "name": "Transfer Student Social Science",
         "remaining_header": "Choose 12 credits of the following course prefixes, with at least 8 credit hours at, or above, the 2000 level and at least 3 credit hours at the 4000 level:"
     },
@@ -1067,10 +1102,10 @@
         "Required": {
             "Introduction to Psychological Science": "PSYC1200"
         },
-        "description": "The ability to understand and predict how people act and think is more important than ever in addressing many of the greatest challenges that we face as a society.\u00a0 In this pathway, students will learn how behavior and thought are influenced by cognitive, emotional, developmental, social, and environmental factors, and how to apply psychological principles.",
+        "description": "The ability to understand and predict how people act and think is more important than ever in addressing many of the greatest challenges that we face as a society.  In this pathway, students will learn how behavior and thought are influenced by cognitive, emotional, developmental, social, and environmental factors, and how to apply psychological principles.",
         "minor": [
-            "Psychological Science Minor",
-            "General Psychology Minor"
+            "General Psychology",
+            "Psychological Science"
         ],
         "name": "Understanding Human Behavior",
         "remaining_header": "Choose remaining credits from the following, with at least 4 credits at the 4000 level::"
@@ -1099,10 +1134,10 @@
             "The Multimedia Century": "ARTS2540",
             "Writing and Directing for Video": "ARTS4630"
         },
-        "description": "This pathway allows students to study video, performance, and social impact through the integration of theory and practice. Students are prepared to analyze and critique moving images; plan, produce and edit their own media productions in video/television and/or performance; and communicate through visual as well as audio mediums. Strategically situating art, media and technology in a social context, students engage in creative practice designed to make change from the local to the global.\u00a0",
+        "description": "This pathway allows students to study video, performance, and social impact through the integration of theory and practice. Students are prepared to analyze and critique moving images; plan, produce and edit their own media productions in video/television and/or performance; and communicate through visual as well as audio mediums. Strategically situating art, media and technology in a social context, students engage in creative practice designed to make change from the local to the global.",
         "minor": [
-            "Electronic Arts Minor",
-            "Video, Performance, and Social Practice"
+            "Video, Performance, and Social Practice",
+            "Electronic Arts"
         ],
         "name": "Video, Performance, and Social Practice",
         "remaining_header": "Choose remaining credits from the following, with at least 4 credits at the 4000 level:"
@@ -1127,17 +1162,17 @@
             "Introduction to Psychological Science": "PSYC1200",
             "Positive Psychology": "PSYC4730",
             "Psychology of Mindfulness": "PSYC4430",
-            "Rensselaer Concert Choir Credit Hours: 1 (course can be repeated multiple ti": "ARTS2310",
+            "Rensselaer Concert Choir": "ARTS2310",
             "Sensibilities": "PSYC4440",
             "Stress and the Brain": "PSYC4610",
-            "Topics in Psychology Credi": "PSYC4960",
-            "Topics in the Arts Credi": "ARTS2960"
+            "Topics in Psychology": "PSYC4960",
+            "Topics in the Arts": "ARTS2960"
         },
-        "description": "How do humans maintain a sense of well-being in their lives? Each person\u2019s path to well-being in body and mind is unique\u2014arising from an awareness of his or her needs, goals, and what each finds fulfilling. The Well-being Interdisciplinary Pathway includes a wide variety of courses that explore the nature of what it is to be human and to orient oneself in the world, to have relationships, make decisions, be creative, and make discoveries.",
+        "description": "How do humans maintain a sense of well-being in their lives?",
         "minor": [
             "Well-being"
         ],
         "name": "Well-being: Body and Mind",
-        "remaining_header": "Choose remaining credits from the following\u200b\u200b\u200b\u200b, with at least 4 credits at the 4000 level:"
+        "remaining_header": "Choose remaining credits from the following​​​​, with at least 4 credits at the 4000 level:"
     }
 }

@@ -8,9 +8,7 @@
             <Bookmark :pathway-id="pathwayID" />
         </div>
         <p>{{ pathway.description }}</p>
-        <v-btn @click="toggleGraph()">
-            click me to toggle graph view
-        </v-btn>
+        <v-btn @click="toggleGraph()"> click me to toggle graph view </v-btn>
         <v-container v-show="showGraph">
             <div id="graphView">
                 <div class="graph-fab-container">
@@ -34,15 +32,8 @@
                     <h2 class="courseTitle">
                         {{ item[0] }}
                     </h2>
-                    <CourseTable
-                        :ref="index"
-                        :courses="courses[item[1]]"
-                        :pathway-id="pathwayID"
-                        :show-desc="false"
-                        :search-bar="false"
-                        :graph-view="true"
-                        @checkbox-clicked="onCheckboxClicked()"
-                    />
+                    <CourseTable :ref="index" :courses="courses[item[1]]" :pathway-id="pathwayID" :show-desc="false"
+                        :search-bar="false" :graph-view="true" @checkbox-clicked="onCheckboxClicked()" />
                 </div>
 
             </div>
@@ -75,35 +66,23 @@
                     <v-icon>mdi-delete</v-icon>
                 </v-btn>
             </div>
-        </v-container>
+            <v-divider class="my-4" />
 
-        <v-divider class="my-4" />
+            <div id="info">
+                <p v-if="fourThousand">At least one course must be at the 4000 level</p>
+                <p v-if="minor">
+                    This pathway is compatible with the {{ minorName }} minor
+                </p>
+            </div>
 
-        <div id="info">
-            <p v-if="fourThousand">
-                At least one course must be at the 4000 level
-            </p>
-            <p v-if="minor">
-                This pathway is compatible with the {{ minorName }} minor
-            </p>
-        </div>
+            <v-divider v-if="fourThousand || minor" class="my-4" />
 
-        <v-divider v-if="fourThousand || minor" class="my-4" />
-
-        <v-tabs
-            v-model="tab"
-            background-color="transparent"
-            color="basil"
-            grow
-        >
-            <v-tabs-slider color="primary" />
-            <v-tab
-                v-for="item in classTabs"
-                :key="item[1]"
-            >
-                <small>{{ item[0] }}</small>
-            </v-tab>
-        </v-tabs>
+            <v-tabs v-model="tab" background-color="transparent" color="basil" grow>
+                <v-tabs-slider color="primary" />
+                <v-tab v-for="item in classTabs" :key="item[1]">
+                    <small>{{ item[0] }}</small>
+                </v-tab>
+            </v-tabs>
 
         <v-tabs-items v-model="tab" touchless>
             <v-tab-item
@@ -121,6 +100,7 @@
                 />
             </v-tab-item>
         </v-tabs-items>
+        </v-container>
     </v-container>
 </template>
 
@@ -135,7 +115,10 @@ import YearSelection from '../../components/YearSelection.vue'
 
 export default {
     components: {
-        CourseTable, Breadcrumbs, YearSelection, Bookmark
+        CourseTable,
+        Breadcrumbs,
+        YearSelection,
+        Bookmark,
     },
     data() {
         return {
@@ -168,19 +151,22 @@ export default {
         // Outputs an object containing the
         // different priorities for the pathway
         priorities() {
-            let pathway = this.pathway;
-            let out = {};
+            let pathway = this.pathway
+            let out = {}
             for (const key in pathway) {
-                if (pathway[key] instanceof Object && !(pathway[key] instanceof Array)) {
-                    out[key] = pathway[key];
+                if (
+                    pathway[key] instanceof Object &&
+                    !(pathway[key] instanceof Array)
+                ) {
+                    out[key] = pathway[key]
                 }
             }
-            return out;
+            return out
         },
         // Converts the courses into an actual array of objects for
         // priorities while they contain actual course objects
         courses() {
-            let curr = this.priorities;
+            let curr = this.priorities
             // Search through all prios
             for (const prio in curr) {
                 // Search through each course in the pathway
@@ -205,38 +191,37 @@ export default {
         },
         classTabs() {
             // Enable only non-empty tabs
-            let prios = Object.keys(this.priorities);
-            for(const i in prios) {
-                prios[i] = [prios[i], prios[i]];
-                if(prios[i][0].substring(0, 6) == "One Of") {
-                    prios[i][0] = "One Of";
+            let prios = Object.keys(this.priorities)
+            for (const i in prios) {
+                prios[i] = [prios[i], prios[i]]
+                if (prios[i][0].substring(0, 6) == 'One Of') {
+                    prios[i][0] = 'One Of'
                 }
             }
-            return prios;
+            return prios
         },
         fourThousand() {
-            return this.pathway.remaining_header.indexOf("4000") !== -1
+            return this.pathway.remaining_header.indexOf('4000') !== -1
         },
         minor() {
             return 'minor' in this.pathway
         },
         minorName() {
             if (!this.minor) return null
-            let all = ""
+            let all = ''
             let fullarr = this.pathway.minor
             for (let el of fullarr) {
-                let ind = el.toLowerCase().indexOf("minor") //get rid of redundant "minor" in json name
-                all = all.concat(ind == -1 ? el : el.substring(0,ind)).concat(" or ")
+                let ind = el.toLowerCase().indexOf('minor') //get rid of redundant "minor" in json name
+                all = all.concat(ind == -1 ? el : el.substring(0, ind)).concat(' or ')
             }
-            return all.substring(0,all.length-4) //get rid of final " or "
-        }
+            return all.substring(0, all.length - 4) //get rid of final " or "
+        },
     },
-    methods : {
+    methods: {
         debug() {
         },
-        onCheckboxClicked(){
-            if(this.changeTabOnSelection)
-                this.tab += 1;
+        onCheckboxClicked() {
+            if (this.changeTabOnSelection) this.tab += 1
         },
         deselectCourses() {
             let pathway = this.$store.state.pathways[this.pathwayID]
@@ -304,6 +289,7 @@ export default {
     margin: 0 2%;
     /* border: 1px red solid; */
 }
+
 .tab {
     display: flex;
     flex-wrap: nowrap;
@@ -314,6 +300,7 @@ export default {
     padding: 5px;
     margin: 0 auto;
 }
+
 .courseTitle {
     margin: 0 auto;
     font-weight: bolder;
@@ -354,6 +341,7 @@ export default {
     flex-direction: column;
     justify-content: space-between;
 }
+
 #info {
     padding-top: 20px;
     text-align: center;
