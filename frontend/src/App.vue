@@ -58,6 +58,12 @@ export default {
     overflow-y: hidden;
 }
 
+Footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .main-content {
     min-height: 100vh;
 }
