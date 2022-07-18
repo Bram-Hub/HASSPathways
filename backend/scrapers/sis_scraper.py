@@ -1,4 +1,4 @@
--#!/usr/bin/env python3
+#!/usr/bin/env python3
 
 # run directly with python sis_scraper.py
  
@@ -8,7 +8,7 @@ import json
 import courses_scraper
 from datetime import date
 from bs4 import BeautifulSoup
-import pandas as pd
+# import pandas as pd
 # Scrapes sis.rpi.edu to get Communication Intensive attributes and rewrites
 # courses.json to update the information.
 #
@@ -80,14 +80,31 @@ async def main():
 
     ci_courses = await get_all_ci_courses(term, subjects)
 
+    # df = []
+    # for course in ci_courses:
+    #     df.append([course[:4], course[5:9], course[12:]])
+    # df = pd.DataFrame(df, columns = ["SUBJECT", "ID", "NAME"])
+    # df.to_csv("ci_courses.csv", index = False)
 
-    df = []
-    for course in ci_courses:
-        df.append([course[:4], course[5:9], course[12:]])
-    df = pd.DataFrame(df, columns = ["SUBJECT", "ID", "NAME"])
-    df.to_csv("ci_courses.csv", index = False)
+    # f = open('../../frontend/src/data/json/courses.json', 'w')
 
+def overwrite_courses_json(ci_courses):
+    set_ci_courses = set()
+    for index, row in df.iterrows():
+        print(row)
+        ci_id = f"{row['SUBJECT']} {row['ID']}"
+        ci_courses.add(ci_id)
 
+    f = open('../../frontend/src/data/json/courses.json')
+    courses= json.load(f)
+    f.close()
+    for i in courses.keys():
+        value = courses[i]
+        courses_id = f"{value['subj']} {value['ID']}"
+        if courses_id in ci_courses:
+            courses[i]["propertie"]["CI"] = True
+    with open("../../frontend/src/data/json/courses.json", "w") as f:
+        json.dump(courses, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == '__main__':
