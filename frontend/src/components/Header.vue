@@ -34,7 +34,7 @@ export default {
 }
 
 /* Remove navbar padding */
-/deep/ .v-toolbar__content {
+.v-toolbar__content {
     padding: 0px !important;
 }
 </style>
