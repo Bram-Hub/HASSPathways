@@ -9,9 +9,9 @@
             <p style="text-align: center;">
                 Here you can explore the different pathways RPI has to offer. To get started choose from on of the options below and start exploring your options!
             </p>
-            <v-divider class="py-4" />
+            <v-divider class="my-4" />
             <v-row
-                
+                align="center"
                 justify="space-around"
             >
                 <v-btn
