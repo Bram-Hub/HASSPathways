@@ -8,7 +8,7 @@ import json
 import courses_scraper
 from datetime import date
 from bs4 import BeautifulSoup
-import pandas as pd
+# import pandas as pd
 # Scrapes sis.rpi.edu to get Communication Intensive attributes and rewrites
 # courses.json to update the information.
 #
@@ -20,6 +20,7 @@ import pandas as pd
 # code from quacs sis scraper:
 # 
 # https://github.com/quacs/quacs/blob/master/scrapers/sis_scraper/util.py#L42-L85
+
 
 def get_ci_courses(text):
     soup = BeautifulSoup(text, 'html.parser')
@@ -73,19 +74,46 @@ async def get_all_ci_courses(term, subjects):
                 ci_courses += get_ci_courses(html)
     return ci_courses
 
-
-async def scrape_CI():
+async def scrape_CI(year = None, semester_type = None):
     print("Starting CI course scraping")
-    term = get_closest_semester()
+    term = ""
+    if year is not None and semester_type is None:   raise Exception("invalid input arguments")
+    elif year is None and semester_type is not None: raise Exception("invalid input arguments")
+    elif year is None and semester_type is None:
+        term = get_closest_semester()
+    elif year is not None and semester_type is not None:
+        possible_semesters = {"spring": "01", "summer": "05", "fall": "09", "winter": "12"}
+
+        if semester_type not in possible_semesters: raise Exception(f"Invalid semester inputted for SIS scraper. Possible values: {possible_semesters.keys()}.")
+        if len(str(year)) != 4: raise Exception("Invalid year inputted into SIS scraper. Use a value such as 20XX.")
+
+        sem_num = possible_semesters[semester_type]
+        term = str(year) + sem_num
+
     subjects = get_departments()
 
     ci_courses = await get_all_ci_courses(term, subjects)
-
-    df = []
-    for course in ci_courses:
-        df.append([course[:4], course[5:9], course[12:]])
-    df = pd.DataFrame(df, columns = ["SUBJECT", "ID", "NAME"])
-    file = "ci_courses.csv"
-    df.to_csv(file, index = False)
     print("Finished CI course scraping")
-    return file
+    overwrite_courses_json(ci_courses)
+
+def overwrite_courses_json(ci_courses):
+    json_path = "../../frontend/src/data/json/courses.json"
+    set_ci_courses = set()
+    for i in ci_courses:
+        ci_id = f"{i[:4]} {i[5:9]}"
+        set_ci_courses.add(ci_id)
+
+    f = open(json_path)
+    courses= json.load(f)
+    f.close()
+    for i in courses.keys():
+        value = courses[i]
+        courses_id = f"{value['subj']} {value['ID']}"
+        if courses_id in set_ci_courses:
+            courses[i]["properties"]["CI"] = True
+    with open(json_path, "w") as f:
+        json.dump(courses, f, ensure_ascii=False, indent=2)
+
+
+if __name__ == '__main__':
+    asyncio.run(scrape_CI())
