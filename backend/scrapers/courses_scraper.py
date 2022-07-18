@@ -73,12 +73,12 @@ def get_catalog_description(fields, course_name):
 
     return ""
 
-def obtain_CI(name):
-    csv_file = open('CI_classes.csv', 'r')
+def obtain_CI(name, CI_file):
+    csv_file = open(CI_file, 'r')
     reader = csv.reader(csv_file)
 
     for row in reader:
-        course_name = row[3]
+        course_name = row[2]
         if name.strip().lower() == course_name.strip().lower():
             return True
 
@@ -102,7 +102,7 @@ def courses_from_string(inp):
                     crses.add(inp[fnd:fnd+4] + '-' + inp[fnd+5:fnd+9])
     return list(crses)
 
-def get_course_data(course_ids: List[str]) -> Dict:
+def get_course_data(course_ids: List[str], catalog_id, CI_file) -> Dict:
     data = {}
     # Break the courses into chunks of CHUNK_SIZE to make the api happy
     course_chunks = [
@@ -184,7 +184,7 @@ def get_course_data(course_ids: List[str]) -> Dict:
                     "text": offered_text
                 },
                 "properties": {
-                    "CI": obtain_CI(course_name),
+                    "CI": obtain_CI(course_name, CI_file),
                     "HI": True if subj == "IHSS" else False,
                     "major_restricted": False
                 },
@@ -194,23 +194,16 @@ def get_course_data(course_ids: List[str]) -> Dict:
 
     return data
 
-if __name__ == "__main__":
-    if sys.argv[-1] == "help" or sys.argv[-1] == "--help":
-        print(f"USAGE: python3 {sys.argv[0]} [ALL_YEARS]")
-        sys.exit(1)
-
+def scrape_courses(CI_file):
+    print("Starting courses scraping")
     catalogs = get_catalogs()
 
-    if sys.argv[-1] != "ALL_YEARS":
-        print("Parsing single year")
-        catalogs = catalogs[:1]
-    else:
-        print("Parsing all years")
-
+    catalogs = catalogs[:4]
+    courses_per_year = {}
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         course_ids = get_course_ids(catalog_id)
-        data = get_course_data(course_ids)
+        data = get_course_data(course_ids, catalog_id, CI_file)
 
-        f = open('../../frontend/src/data/json/courses.json', 'w')
-        json.dump(data, f, sort_keys=True, indent=2, ensure_ascii=False)
-        f.close()
+        courses_per_year[year] = data
+    print("Finished courses scraping")
+    return courses_per_year

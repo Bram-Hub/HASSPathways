@@ -1,4 +1,4 @@
--#!/usr/bin/env python3
+#!/usr/bin/env python3
 
 # run directly with python sis_scraper.py
  
@@ -74,21 +74,18 @@ async def get_all_ci_courses(term, subjects):
     return ci_courses
 
 
-async def main():
+async def scrape_CI():
+    print("Starting CI course scraping")
     term = get_closest_semester()
     subjects = get_departments()
 
     ci_courses = await get_all_ci_courses(term, subjects)
 
-
     df = []
     for course in ci_courses:
         df.append([course[:4], course[5:9], course[12:]])
     df = pd.DataFrame(df, columns = ["SUBJECT", "ID", "NAME"])
-    df.to_csv("ci_courses.csv", index = False)
-
-
-
-
-if __name__ == '__main__':
-    asyncio.run(main())
+    file = "ci_courses.csv"
+    df.to_csv(file, index = False)
+    print("Finished CI course scraping")
+    return file

@@ -8,13 +8,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1020"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -23,21 +21,19 @@
     "subj": "ARTS"
   },
   "2D Motion Graphics": {
-    "ID": "4970",
+    "ID": "2680",
     "cross listed": [],
-    "description": "This course is a hands-on investigation into communicating effectively using motion graphics. Students will learn the art of communicating in a time-based medium using typography, graphics, photos, illustrations, video, and audio. Investigations include logo and brand animations, title sequences, graphic and typographic narratives, and researching, interpreting, and animating data to communicate real-world problems.",
+    "description": "This course is a hands-on investigation into communicating effectively using motion graphics. Through a historical lens, students will learn the art of storytelling in a time-based medium using type, graphics, photos, and illustrations. Projects could include logo animations, animated infographics, title sequences, and short form narratives. Principles covered will include storyboarding and planning, design and composition, timing, pacing, sound and/or music development and synchronization. Students enrolling should have a working knowledge of Adobe Photoshop and Illustrator.",
     "name": "2D Motion Graphics",
     "offered": {
-      "even": true,
-      "fall": true,
+      "even": false,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term, even-numbered years"
+      "text": ""
     },
-    "prerequisites": [
-      "COMM-2660"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -52,15 +48,13 @@
     "name": "3D Animation",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-2230"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -75,11 +69,11 @@
     "name": "3D Digital Modeling",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -96,15 +90,13 @@
     "name": "3D Technical Direction",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term"
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-2230"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -121,13 +113,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-2230"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -141,12 +131,12 @@
     "description": "This course examines the emergence of environmental consciousness in the United States throughout the 20th century. Students in this course will study the original writings of some of the most important thinkers and activists in the history of environmentalism, examine the social contexts in which their ideas formed, and consider their relevance to contemporary sustainability issues.",
     "name": "A Century of Environmental Thought",
     "offered": {
-      "even": true,
+      "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term, even-numbered years."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -165,13 +155,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -188,13 +176,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-4570"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -213,11 +199,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-4070"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -234,9 +218,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -255,13 +239,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -280,11 +262,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "COGS-2340"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -301,14 +281,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1030"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -322,12 +299,12 @@
     "description": "An examination of the cultural impact of advertising in various media: TV, radio, print, and the Web. How does advertising inform human experience and identity? How has it shaped the culture? Who pays for it and why? Note: This is not a How-To course. The focus is critical analysis, not acquiring skills for producing advertising.",
     "name": "Advertising and Culture",
     "offered": {
-      "even": true,
+      "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term even-numbered years."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -346,9 +323,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -356,7 +333,7 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSH"
   },
   "American Politics in Crisis": {
     "ID": "4590",
@@ -365,11 +342,11 @@
     "name": "American Politics in Crisis",
     "offered": {
       "even": false,
-      "fall": true,
-      "odd": true,
+      "fall": false,
+      "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term odd-numbered years"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -377,33 +354,7 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
-  },
-  "Animal Cognition and Interaction with Humans": {
-    "ID": "4220",
-    "cross listed": [
-      "COGS-4220"
-    ],
-    "description": "In this course, students will deepen their understanding of research principles and experimental practices in cognitive and behavioral science, and they will gain experience in applying concepts often discussed in human-oriented contexts (e.g., learning, theory of mind) to the animal world. In addition, they will be prepared to participate in revolutionizing our treatment of both the animals and the people with whom we share our lives.",
-    "name": "Animal Cognition and Interaction with Humans",
-    "offered": {
-      "even": true,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term, even-numbered years"
-    },
-    "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
-    ],
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "PSYC"
+    "subj": "STSS"
   },
   "Animation Production": {
     "ID": "4460",
@@ -414,19 +365,38 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-4060"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
     "subj": "ARTS"
+  },
+  "Applied Econometrics": {
+    "ID": "4580",
+    "cross listed": [],
+    "description": "This course provides skills to apply econometrics to diverse economic topics. Mathematical methods of econometrics are developed for tools such as alternative estimation strategies, instrumental variables, regression discontinuity, nonparametric and quantile estimators, and simultaneous equation models. Methods to identify causal effects are emphasized. Students do hands-on data work that puts to use these econometric tools.",
+    "name": "Applied Econometrics",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ECON"
   },
   "Applied Game Theory": {
     "ID": "4220",
@@ -435,16 +405,13 @@
     "name": "Applied Game Theory",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -459,15 +426,13 @@
     "name": "Applied Microeconomics",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually"
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-2010"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -482,15 +447,15 @@
     "name": "Are Humans Rational?",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -503,15 +468,15 @@
     "name": "Art History",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -528,11 +493,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1020"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -547,11 +510,11 @@
     "name": "Art for Interactive Media",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -570,14 +533,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1020",
-      "IHSS-1030"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -592,11 +552,11 @@
     "name": "B.S. EARTS Thesis",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -613,11 +573,11 @@
     "name": "Basic Drawing",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -634,16 +594,13 @@
     "name": "Behavioral Economics",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -658,16 +615,13 @@
     "name": "Behavioral Financial Economics",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -677,22 +631,18 @@
   },
   "Behavioral Neuroscience": {
     "ID": "4360",
-    "cross listed": [
-      "COGS-4360"
-    ],
+    "cross listed": [],
     "description": "This course is an introduction to the role of physiological mechanisms in behavioral processes. There will be detailed examination and discussion of the involvement of biological systems in feeding and drinking, sexual behavior, sleep and arousal, learning and memory, psychopathology and psychopharmacology.",
     "name": "Behavioral Neuroscience",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -707,11 +657,11 @@
     "name": "Behind the TV Screen",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -723,30 +673,24 @@
   },
   "Bioethics": {
     "ID": "4250",
-    "cross listed": [
-      "PHIL-4500"
-    ],
-    "description": "This course involves a philosophical analysis of some of the basic moral issues raised by recent and anticipated developments in the areas of biology and medicine. The general question \"What are moral problems, and how does one resolve them?\" is examined in the context of concrete cases involving issues such as abortion, euthanasia, organ transplants, experimentation on human patients, cloning, genetic engineering, and behavior control and modification.",
+    "cross listed": [],
+    "description": "This course explores historical perspectives on bioethics through concrete cases and practical problems faced in the design and execution of some of the highest profile biomedical research and most consequential clinical decisions of the twentieth century. Topics include vaccine development; human radiation experiments; new genetic and reproductive technologies; right-to-die, death-with-dignity, and physician-assisted suicide; human experimentation, including prisoners, the sick, and the disabled; neuroethics; animal research; and emergent topics such as stem cell research, prenatal diagnostics, and genetic testing. This is a communication-intensive course.",
     "name": "Bioethics",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "STSO-2510",
-      "IHSS-1160",
-      "PHIL-1110"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSH"
   },
   "Biopunk: Arts Lab Practice": {
     "ID": "4120",
@@ -755,16 +699,13 @@
     "name": "Biopunk: Arts Lab Practice",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1020",
-      "IHSS-1030"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -781,15 +722,13 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "COMM-2660"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -802,11 +741,11 @@
     "name": "Business Issues for Engineers and Scientists",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -823,19 +762,40 @@
     "name": "Capstone Experience in Philosophy",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
-      "summer": true,
-      "text": "fall, spring, and summer terms annually."
+      "spring": false,
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
     "subj": "PHIL"
+  },
+  "Century of the Gene": {
+    "ID": "1410",
+    "cross listed": [],
+    "description": "This course details the scientific and social history of genetics, from Darwin and Mendel to the Human Genome Project. Special focus areas include: plant and animal breeding in the early twentieth century; eugenics movements in the U.S. and elsewhere; bacterial and fruit fly genetics; the development of molecular biology; the invention of recombinant-DNA technologies; the emergence of the biotechnology industry; the sociobiology controversies; genetics and evolutionary theory; and the Human Genome Project and contemporary genomics.",
+    "name": "Century of the Gene",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": true,
+      "major_restricted": false
+    },
+    "subj": "IHSS"
   },
   "Chamber Music Ensemble": {
     "ID": "2350",
@@ -844,11 +804,11 @@
     "name": "Chamber Music Ensemble",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -858,6 +818,27 @@
     },
     "subj": "ARTS"
   },
+  "China and the United States": {
+    "ID": "4540",
+    "cross listed": [],
+    "description": "This class studies the history, politics, and economics of China in its relationship to the United States. Beginning with readings on modern Chinese history, the founding of the People's Republic of China, Communist Party, Cultural Revolution, new opening of connections between the U.S. and China, economic reforms of the past three decades, and current relationships between two countries, students will discuss a range of contemporary issues of concern to both the American and Chinese people.",
+    "name": "China and the United States",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSS"
+  },
   "Chinese I": {
     "ID": "1410",
     "cross listed": [],
@@ -865,11 +846,11 @@
     "name": "Chinese I",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -886,15 +867,13 @@
     "name": "Chinese II",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "LANG-1410"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -909,17 +888,15 @@
     "name": "Chinese III",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "LANG-2410"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -932,15 +909,13 @@
     "name": "Chinese IV",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "LANG-4420"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -957,13 +932,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "LANG-4430"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -973,9 +946,7 @@
   },
   "Cognition and the Brain": {
     "ID": "4600",
-    "cross listed": [
-      "COGS-4600"
-    ],
+    "cross listed": [],
     "description": "Perception and thought are considered in terms of processes represented in the brain. The localization and lateralization of function are examined, drawing upon research on the behavioral effects of brain damage as well as brain-imaging studies and other approaches. Examples of topics include object recognition, memory, language, emotion, spatial ability, and motor processes.",
     "name": "Cognition and the Brain",
     "offered": {
@@ -983,12 +954,10 @@
       "fall": false,
       "odd": false,
       "spring": false,
-      "summer": true,
-      "text": "summer term annually."
+      "summer": false,
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-4330"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -998,22 +967,18 @@
   },
   "Cognitive Engineering": {
     "ID": "4620",
-    "cross listed": [
-      "COGS-4620"
-    ],
+    "cross listed": [],
     "description": "Covers cognitive theory from an applied perspective to understand and predict the interactions among human cognition, artifact (i.e. tools), and task. Cognitive task analysis techniques will be taught and used throughout the course, as well techniques for collecting and analyzing fine-grained behavioral data. Topics covered may include visual search and visual attention, cognitive skills and its acquisition, hard and soft constraints on interactive behavior, human error, soft constraints on judgment and decision-making, and experts and expertise.",
     "name": "Cognitive Engineering",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PHIL-2120"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1030,13 +995,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1051,22 +1014,40 @@
     "name": "Cognitive Psychology",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
     "subj": "PSYC"
+  },
+  "Color Theory": {
+    "ID": "2640",
+    "cross listed": [],
+    "description": "Color, the most relative of all visual attributes, is explored in this studio course through a series of exercises and graphic design problems. Course topics include: recollection and visual memory, reading and contexture, relativity and subjectivity, color and light, color and communication, and \"cultural\" color. We will place an emphasis on the work and theories of Joseph Albers.",
+    "name": "Color Theory",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "COMM"
   },
   "Communication Studies": {
     "ID": "4940",
@@ -1096,11 +1077,11 @@
     "name": "Communication Theory and Practice",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1117,15 +1098,13 @@
     "name": "Composition Seminar",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall or spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-4380"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1141,14 +1120,12 @@
     "offered": {
       "even": false,
       "fall": false,
-      "odd": true,
-      "spring": true,
+      "odd": false,
+      "spring": false,
       "summer": false,
-      "text": "spring term odd-numbered years."
+      "text": ""
     },
-    "prerequisites": [
-      "PHIL-2140"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1156,39 +1133,18 @@
     },
     "subj": "PHIL"
   },
-  "Computer Graphics for Games": {
-    "ID": "4530",
-    "cross listed": [],
-    "description": "This course covers the history and practice of traditional computer graphics but emphasizes modern techniques for modeling, viewing, and rendering techniques in 3D computer graphics systems, including modern shader pipeline programming in OpenGL using C++. Topics include raster graphics techniques as well as the mathematical foundations and matrix transformations relevant to 3D graphics; clipping and projection; hidden surface removal; managing 3D graphics data structures; hierarchical systems; rasterization; culling; 2D and 3D texture mapping; methods for building and using 3D models; lighting and material models and implementation; shadows, shadow mapping, and generating soft shadows; skyboxes, skydomes, and environment mapping; normal, bump, and height mapping; parametric surface representation; introduction to animation; tessellation and geometry shaders; compositing; terrain generation; atmospheric effects such as fog and clouds; generating and applying 3D noise; performance issues such as minimizing dynamic allocation and controlling the level of detail; special effects.",
-    "name": "Computer Graphics for Games",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": true,
-      "text": "fall and summer term annually"
-    },
-    "prerequisites": [],
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "GSAS"
-  },
   "Consumer Culture": {
     "ID": "4720",
     "cross listed": [],
-    "description": "What is consumer culture? What are its roots, its consequences, and alternatives? Documentaries and the research of anthropologists, historians, and religious scholars examine consumer culture in the U.S. and UK including recognition of the global locations in which consumer goods are made. Topics include buying and selling, shopping, retail, manufacture, material culture, pricing, consumer goods, disposal, kinship, identity, exchange, and advertising, with attention paid to differences in race, class, and gender.",
+    "description": "What is consumer culture? What are its roots, its consequences, and alternatives? Documentaries and the research of anthropologists, historians, and religious scholars examine consumer culture in the United States and the United Kingdom including recognition of the global locations in which our consumer goods are made. Topics include buying and selling, shopping, retail, manufacture, material culture, pricing, consumer goods, disposal, kinship, identity, exchange, and advertising, with attention paid to differences in race, class, and gender.",
     "name": "Consumer Culture",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1196,7 +1152,7 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Contemporary Improvisation Ensemble": {
     "ID": "2080",
@@ -1207,9 +1163,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1219,23 +1175,41 @@
     },
     "subj": "ARTS"
   },
+  "Contemporary Political Thought": {
+    "ID": "4570",
+    "cross listed": [],
+    "description": "This class studies central questions and theories in contemporary political thought. At a time in which conventional understandings of the structures, dynamics, and outcomes of political life no longer offer reliable guidance for one's thinking, the course will examine a number of alternative modes of understanding and argument.",
+    "name": "Contemporary Political Thought",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSS"
+  },
   "Cost-Benefit Analysis": {
     "ID": "4210",
     "cross listed": [],
-    "description": "The techniques necessary to appraise the economic desirability and private-sector impact of various public projects and policies are studied. Concepts such as discounting, capital rationing, project selection, shadow pricing, risk assessment, unpriced goods, and economic surplus are developed. Among the topics from which illustrative case studies are drawn are urban and transport planning, energy, water resources, government regulation, and the environment.",
+    "description": "Addresses the identification and measurement of the economic gains and losses to different sectors of the economy resulting from public projects and policies. Among the projects studied are those in the area of transportation, energy, environment, and urban development. Also considered is the evaluation of the effects of government on business, as for example, consumer product and workplace safety regulation.",
     "name": "Cost-Benefit Analysis",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually"
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1249,16 +1223,14 @@
     "description": "Data design offers a way to reveal, analyze, and engage with data, from scientific visualization to information design to artistic sonification. At the same time, the translation from abstract data to image and sound carries risks of manipulation and subjective interpretation. This course introduces contemporary practices in the perceptualizing of data using digital tools for creative exploration and critical analysis. It explores the evolution of visualization and the notion of truth through visual representation.",
     "name": "Creative Data Design",
     "offered": {
-      "even": true,
+      "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term even-numbered years."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1020"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1267,17 +1239,17 @@
     "subj": "ARTS"
   },
   "Creative Seminar I": {
-    "ID": "4840",
+    "ID": "4340",
     "cross listed": [],
-    "description": "This course is for senior EMAC and EART majors and is the core creative forum for the development and presentation of the senior thesis. The course is the first part of a two-semester study provided in two seminar courses. The focus of the course is to develop a proposal for for a written thesis and a creative project that students will execute in the second seminar and exhibit in an exhibition.",
+    "description": "This course is for senior EMAC and EART majors and is the core creative forum for the development and presentation of the senior thesis. The course is the first part of a two-semester study provided in two seminar courses. The focus of the course is to develop a proposal for a written thesis and a creative project that students will execute in the second seminar and exhibit in an exhibition.",
     "name": "Creative Seminar I",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1285,20 +1257,20 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "ARTS"
+    "subj": "COMM"
   },
   "Creative Seminar II": {
-    "ID": "4850",
+    "ID": "4350",
     "cross listed": [],
-    "description": "This course is for senior EMAC and EART majors. The goal of the Creative Seminar II is to develop and formulate ideas from Creative Seminar I into a unique project for the artists/communicator that will demonstrate his/her independent ideas, research, writing, and design skills. Students will develop a written thesis, creative project (e.g., art, graphic design, interaction design, music, performance), prepare and present their project in a public exhibition, and design the publicity for the show.",
+    "description": "This course is for senior EMAC and EART majors. The goal of the Creative Seminar II is to develop and formulate ideas from Creative Seminar I into a unique project for the artist/communicator that will demonstrate his/her independent ideas, research, writing, and design skills. Students will develop a written thesis, creative project (e.g., art, graphic design, interaction design, music, performance), prepare and present their project in a public exhibition, and design the publicity for the show.",
     "name": "Creative Seminar II",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1306,7 +1278,7 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "ARTS"
+    "subj": "COMM"
   },
   "Creative Writing:  The Short Story": {
     "ID": "2330",
@@ -1315,11 +1287,11 @@
     "name": "Creative Writing:  The Short Story",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1336,11 +1308,32 @@
     "name": "Creative Writing: Creative Non-Fiction",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "WRIT"
+  },
+  "Creative Writing: Poetry": {
+    "ID": "2310",
+    "cross listed": [],
+    "description": "This course is for students with little or no previous creative writing experience; students must have a good command of written English and grammar. Readings introduce traditional, modern, and post-modern poetic practice emphasizing imagery, figurative language, voice, line, and other formal aspects of poetry. Notebooks track development of student writing from reading exemplary texts to drafting revision of original poems. Writing workshop format includes analysis of published poems and peer discussion and critique of student work. For final projects, students create chapbooks, thematically sequenced poetry collections.",
+    "name": "Creative Writing: Poetry",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1350,41 +1343,18 @@
     },
     "subj": "WRIT"
   },
-  "Critical Television": {
-    "ID": "2750",
-    "cross listed": [],
-    "description": "This course engages students in a critical examination of television and its historical and present status as a dominant popular culture medium. Television in this context is broadly understood as an evolving medium for motion pictures in the age of technological convergence. Using a variety of analytical and theoretical approaches, we'll consider the significant influence television has on individual, social, and cultural experiences—addressing questions of representation, identity, economics, and ideology. The class uses a collaborative learning process, allowing students to influence the content and emphasis of the class and thereby reflecting the democratic nature of popular culture media.",
-    "name": "Critical Television",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually"
-    },
-    "prerequisites": [],
-    "properties": {
-      "CI": true,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COMM"
-  },
   "Critical Thinking": {
     "ID": "2100",
-    "cross listed": [
-      "PHIL-2100"
-    ],
+    "cross listed": [],
     "description": "This course provides tools for the identification, analysis, and evaluation of the various patterns of reasoning as they occur in the real world. Patterns of reasoning include deductive reasoning, inductive reasoning, scientific reasoning, statistical reasoning, and causal reasoning. The course also covers some basic psychology and sociology of reasoning and belief and concludes with a critical discussion of science and the scientific method.",
     "name": "Critical Thinking",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1405,11 +1375,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "COGS-2340"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1425,10 +1393,10 @@
     "offered": {
       "even": false,
       "fall": false,
-      "odd": true,
-      "spring": true,
+      "odd": false,
+      "spring": false,
       "summer": false,
-      "text": "spring term, odd-numbered years"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1436,30 +1404,7 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
-  },
-  "Data Analysis in Economics and Finance": {
-    "ID": "4580",
-    "cross listed": [],
-    "description": "This course provides skills to apply econometrics to diverse economic topics. Mathematical methods of econometrics are developed for tools such as alternative estimation strategies, instrumental variables, regression discontinuity, nonparametric and quantile estimators, and simultaneous equation models. Methods to identify causal effects are emphasized. Students do hands-on data work that puts to use these econometric tools.",
-    "name": "Data Analysis in Economics and Finance",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually"
-    },
-    "prerequisites": [
-      "ECON-4570"
-    ],
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "ECON"
+    "subj": "STSS"
   },
   "Data Analytics": {
     "ID": "4600",
@@ -1468,11 +1413,11 @@
     "name": "Data Analytics",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1489,11 +1434,11 @@
     "name": "Data Science",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1512,13 +1457,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ITWS-4350"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1533,11 +1476,11 @@
     "name": "Database Applications and Systems (DBAS)",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1554,11 +1497,11 @@
     "name": "Deep Listening",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1571,15 +1514,15 @@
   "Design and Innovation  Studio C": {
     "ID": "4610",
     "cross listed": [],
-    "description": "DIS Studio C focuses on the co-production of products, organizations, and problem-solving strategies. Students will explore how to facilitate communication across multiple disciplinary and audience modalities, including stakeholders, designers, and users. Projects and course discussions will train students to translate social scientific and engineering problem-solving judgments and to evaluate how complex problems come to be defined. This course is required for DIS students who are dual-majoring with the School of Engineering.",
+    "description": "The sixth design studio for non-engineering majors participating in the interdisciplinary programs in Design and Innovation, this course introduces students to organizational dimensions of new concept design, development, and dissemination, including entrepreneurship, organization planning, product management, and branding and marketing. The course requires students to synthesize social, technical, business, and formal concerns in the design of innovative objects, environments, or systems.",
     "name": "Design and Innovation  Studio C",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1587,20 +1530,20 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Design and Innovation Senior Project": {
     "ID": "4970",
     "cross listed": [],
-    "description": "Design and Innovation Senior Project serves as a capstone course for DIS majors. Students work individually, supervised by a faculty member, to produce a design project, justified by and described in a written thesis. Class time largely operates as structured research and writing assistance, where students support one another with peer-review as well as receive one-on-one guidance from the instructor.",
+    "description": "Design and Innovation Senior Project serves as a capstone course for DSIS majors. Students work individually, supervised by a faculty member, to produce a written thesis. Class time largely operates as structured research and writing assistance, where students support one another with peer-review as well as receive one-on-one guidance from the instructor.",
     "name": "Design and Innovation Senior Project",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1608,20 +1551,20 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Design and Innovation Studio A": {
     "ID": "4600",
     "cross listed": [],
-    "description": "DIS Studio A introduces students to the principles and practices of design for environmental sustainability. It is open to majors in Design, Innovation, and Society (DIS), Sustainability Studies, and Science, Technology, and Society (STS). This is an intensive studio/seminar hybrid that will advance students' understanding, through practice, of iterative design processes and the multiple dimensions of sustainability. The specific methodologies, concepts, and topics will vary according to the expertise and research specialization of the faculty member teaching the course and may include themes such as disability, feminism, critical race theory, or other approaches as they intersect with environmental sustainability.",
+    "description": "DIS Studio A is an intensive studio/seminar hybrid that will advance students understanding, through practice, of iterative design process that is heavily informed by Science and Technology Studies and the social sciences and humanities more broadly. The specific methodologies, concepts, and content-foci will vary according to the expertise and experience of the faculty member teaching the course and could include a focus on sustainability, disability, feminism, critical race theory, or other approaches.",
     "name": "Design and Innovation Studio A",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
       "spring": false,
-      "summer": true,
-      "text": "summer term annually."
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1629,20 +1572,20 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Design and Innovation Studio B": {
-    "ID": "4605",
+    "ID": "4610",
     "cross listed": [],
-    "description": "Design for the Future: This course introduces students to design for the future by connecting critical readings to applied practices. Students are expected to participate in both individual and group research, including hands-on explorations of design ideas and problem spaces for re-thinking objects of the future. The specific methodologies, concepts, and topics will vary according to the expertise and research specialization of the faculty member teaching the course and may include themes such as the future of cities, climate futures, and designing for peace.",
+    "description": "Studio B focuses on an enriched sense of program and user needs definition through methodologies of the humanities and social sciences. Studio projects, presentations, and readings explore the relation of race, class, and gender to technology, and the potential of design to address societal problems. The course has often focused on incorporating information technology in educational tools for low-income primary school students.",
     "name": "Design and Innovation Studio B",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1650,24 +1593,24 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSH"
   },
   "Design and Innovation Studio I": {
     "ID": "1610",
     "cross listed": [],
-    "description": "The first design studio in the Design, Innovation, and Society studio series introduces DIS majors to general design through a series of short projects. We learn the basic steps of design processes, from problem definition to concept ideation and selection, to quick low-resolution prototyping. The projects stress creative thinking and critical analysis, partnered with close discussions of how design and society intersect. This is a communication-intensive course.",
+    "description": "The first design studio in the Product Design and Innovation Program introduces students to general design through a series of short projects. The projects stress creative thinking and invention, observation and perception, communication and visualization, sketching, photography, model-making, and especially open-ended exploration.",
     "name": "Design and Innovation Studio I",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -1676,25 +1619,23 @@
   "Design and Innovation Studio II": {
     "ID": "2610",
     "cross listed": [],
-    "description": "DIS Studio II introduces students to general principles of user-experience design and industrial design as a set of approaches for attending to matters of aesthetics and form, usability, and meaning-making. It considers industrial designers as a community of practice. Assignments require students to synthesize social, technical, and formal concerns in the design of innovative objects. Students also gain competencies in CAD, real-time rendering, and project presentation.",
+    "description": "This studio design course focuses on an enriched sense of problem definition through an emphasis on the reach and interconnectedness of technology, and the conditionality of design selection criteria. Its design exercises, readings, and discussion press beyond marginal substitutions toward a broadened sense of possibility from, for example, \"hyper cars\" and human-powered homes to small-scale local agriculture and extreme ecological living systems.",
     "name": "Design and Innovation Studio II",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "IHSS-1610"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": true,
-      "HI": false,
+      "CI": false,
+      "HI": true,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "IHSS"
   },
   "Design, Culture, and Society": {
     "ID": "2210",
@@ -1705,40 +1646,17 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "prerequisites": [],
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
-  },
-  "Designing Musical Games": {
-    "ID": "2610",
-    "cross listed": [
-      "ARTS-2610"
-    ],
-    "description": "Students will explore the artistic role of music and sound in gaming by building their own interactive sound and music-rich games and 2D/3D rendered environments. Within the context of their own creative game projects, students will learn the basics of designing sound and composing music for interactive game spaces. Using workflow programming languages and software tools, students will program basic gaming interactions, link them to interactive audio software, and create musical gaming experiences.",
-    "name": "Designing Musical Games",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "GSAS"
+    "subj": "STSS"
   },
   "Development of Economic Thought": {
     "ID": "4180",
@@ -1751,12 +1669,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1771,11 +1686,11 @@
     "name": "Digital Filmmaking",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1792,11 +1707,11 @@
     "name": "Digital Imaging",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1825,7 +1740,7 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Doctoral Thesis": {
     "ID": "9990",
@@ -1834,11 +1749,11 @@
     "name": "Doctoral Thesis",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1857,13 +1772,13 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -1876,11 +1791,11 @@
     "name": "Documentary in the 21st Century: Identity Production",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1893,15 +1808,15 @@
   "Drugs in History": {
     "ID": "4430",
     "cross listed": [],
-    "description": "This course teaches basic historical, anthropological, and sociological concepts that can be used to make sense of a wide variety of contemporary phenomena students encounter in everyday life. The focus is on analyzing how licit and illicit drugs serve as \"technologies\" within specific social contexts or subcultures; what drug policy reveals about social, political, and economic organization; and the impacts of biomedical knowledge and practice on specific population groups. The course focuses on the representation of drug use and drug users in popular culture, science and medicine, and history and the social sciences.",
+    "description": "This course teaches basic historical, anthropological, and sociological concepts that can be used to make sense of a wide variety of contemporary phenomena students encounter in everyday life. The focus is on analyzing how licit and illicit drugs serve as \"technologies\" within specific social contexts or subcultures; what drug policy reveals about social, political, and economic organization; and the impacts of biomedical knowledge and practice on specific population groups. Also a focus is the representation of drug use and drug users in popular culture, science and medicine, and history and the social sciences.",
     "name": "Drugs in History",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -1909,7 +1824,7 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Drugs, Society, and Behavior": {
     "ID": "4500",
@@ -1918,15 +1833,13 @@
     "name": "Drugs, Society, and Behavior",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1940,17 +1853,14 @@
     "description": "Eco Chic: Living Art is an upper level production and theory class about art, biology, and the study of life covering topics such as environmentalism, land art, food art, sustainable practices with art, body art, bio-art. Part lecture, part hands-on workshop, Eco Chic encourages students to redefine and experimentally express their relationships with the varied aspects of everyday living systems and manipulating life.",
     "name": "Eco Chic: Living Art",
     "offered": {
-      "even": true,
+      "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term even years"
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1020",
-      "IHSS-1030"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1965,17 +1875,13 @@
     "name": "Econometric Methods for Big Data",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "PSYC-2310",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1990,15 +1896,13 @@
     "name": "Econometrics",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-2310"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2013,16 +1917,13 @@
     "name": "Economic Models of Decision-Making",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2039,14 +1940,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2061,16 +1959,13 @@
     "name": "Economics of Financial Institutions and Markets",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2089,12 +1984,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2111,13 +2003,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-2020"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2132,18 +2022,15 @@
     "name": "Economics of Innovation and New Technologies",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2160,12 +2047,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2180,11 +2064,11 @@
     "name": "Electronic Arts Theory Seminar",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2193,6 +2077,27 @@
       "major_restricted": false
     },
     "subj": "ARTS"
+  },
+  "Energy Politics": {
+    "ID": "4310",
+    "cross listed": [],
+    "description": "Through lectures and in-class discussions, this course explores the history, domestic and international politics, policy, philosophy, economics, environmental consequences, media coverage of, and alternatives to, the U.S. addiction to fossil fuels. Students, who may earn either humanities or social science credit, maintain analytical blogs with twice-weekly posts or write and present semester-length research papers, take a midterm exam and a comprehensive final exam. Satisfies the PDI II Requirement.",
+    "name": "Energy Politics",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSS"
   },
   "Engineering Ethics": {
     "ID": "4210",
@@ -2205,32 +2110,28 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability  of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "STSO-1110"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSH"
   },
   "Ensemble Nonlinear": {
     "ID": "4600",
-    "cross listed": [
-      "ARTS-2600"
-    ],
+    "cross listed": [],
     "description": "A technology-based performance ensemble, as well as a practice-based studio course, focused on the composition, design, and programming of new musical works and instruments. Students create and perform electronic music using laptops, microprocessors, digital networks and a range of new interfaces for musical expression. ARTS 4600/6600 combines studio and ensemble. The ensemble only section (ARTS 2600) may be taken multiple times as a 1-credit performance ensemble in partial satisfaction of the Music major or minor ensemble requirements, or once as a 4-credit seminar at either the 4000 or 6000 level.",
     "name": "Ensemble Nonlinear",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2249,20 +2150,17 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "IHSS-1110",
-      "STSO-1110"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Environmental Economics": {
     "ID": "4230",
@@ -2275,12 +2173,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2288,58 +2183,30 @@
     },
     "subj": "ECON"
   },
-  "Environmental Justice": {
-    "ID": "4330",
+  "Environmental Law": {
+    "ID": "4700",
     "cross listed": [],
-    "description": "What is environmental justice? Why are some people exposed to environmental hazards while others are not? In this class, we will explore the intersection of environmental concerns and social justice. We will read the works of activists and scholars working across a range of disciplines, engage in discussion, analysis, research, and mapping. We will learn about global historical processes that structure contemporary inequity and contemporary cases including environmental justice work in our own community.",
-    "name": "Environmental Justice",
+    "description": "This is an introduction to environmental law and policy, with emphasis on the practical use and application of legal concepts. Students will work to develop critical thinking and advocacy skills. Professionals who work with environmental issues need to effectively argue for a position. Therefore, class participation plays a significant role in this course. Students should come to class prepared to discuss, debate, and (re)consider. Effectively advocating for one point of view requires an understanding of other perspectives. One must approach every issue with an open mind and a willingness to engage on a legal and policy level rather than from a personal or political perspective. This objective detachment is one of the hardest and most crucial skills students will work to learn. Over the course of the semester, the class will feature guest speakers (dates and identities TBA). Assigned readings for the guest speakers will replace those on the syllabus for that day. Depending on student progress and interests, the readings may change.",
+    "name": "Environmental Law",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "IHSS-1240",
-      "STSO-1110"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
-  },
-  "Environmental Media & Data": {
-    "ID": "4330",
-    "cross listed": [],
-    "description": "In this course, students will explore how a very wide variety of data and media relate to our ever-evolving environment. We will build critical media literacy through encounters with media as both consumers and producers, learning along the way about how media literacy relates to other forms of literacy: ecological, political, scientific, historical, epistemological, etc. Simultaneously, we will question what \"the environment\" means, critique the limits of \"sustainability\" discourse, examine our assumptions around \"the media,\" question notions of \"data\" (big, little, quantitative, qualitative), etc. We will situate all of these terms in broader contexts and examine their histories, connotations, and connections.",
-    "name": "Environmental Media & Data",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually"
-    },
-    "prerequisites": [
-      "STSS-2300"
-    ],
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "STSO"
+    "subj": "STSH"
   },
   "Environmental Philosophy": {
     "ID": "4340",
-    "cross listed": [
-      "PHIL-4300"
-    ],
+    "cross listed": [],
     "description": "While concepts such as quality of life, environment, nature, global ecology, and the like figure heavily in contemporary discussions, they are seldom integrated into an environmental philosophy. The course tries to achieve this integration by understanding some of the religious, mythic-poetic, and scientific dimensions of the human-nature matrix. Some specific environmental problems are examined to illustrate the system of values implied by various solutions.",
     "name": "Environmental Philosophy",
     "offered": {
@@ -2348,7 +2215,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2356,7 +2223,28 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSH"
+  },
+  "Environmental Politics and Policy": {
+    "ID": "4370",
+    "cross listed": [],
+    "description": "A highly interactive introduction to environmental politics and policy in the United States. Major themes include the background and context of environmental politics and policy, the policy-making process, environmental issues selected and reported on by students, the varieties of environmentalism, and environmental ethics.",
+    "name": "Environmental Politics and Policy",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSS"
   },
   "Environmental and Resource Economics": {
     "ID": "4260",
@@ -2369,11 +2257,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-2010"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2388,11 +2274,11 @@
     "name": "Ethics",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall or spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2413,7 +2299,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon sufficient demand."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2432,14 +2318,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2454,15 +2337,13 @@
     "name": "Experimental Game Design",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "GSAS-4540"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2479,9 +2360,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2498,11 +2379,11 @@
     "name": "Exploring Movement and Sound",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2519,11 +2400,11 @@
     "name": "Exploring Music @Rensselaer",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2540,11 +2421,11 @@
     "name": "Fiction: From Film to the Internet",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2561,15 +2442,15 @@
     "name": "Film Theory",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -2581,22 +2462,20 @@
     "description": "This course provides students with a wide-ranging understanding of the environmental and social context of food, agriculture, and hunger. Drawing primarily on sociological concepts and research, the class will take a \"food systems\" approach, analyzing food as it travels from farm to table as part of an interconnected process. Students will examine why humans eat the way they do and how individuals' food choices affect other people and the environment.",
     "name": "Food, Farms, and Famine",
     "offered": {
-      "even": true,
-      "fall": true,
+      "even": false,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall semester, even-numbered years"
+      "text": ""
     },
-    "prerequisites": [
-      "STSO-2210"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Forensic Psychology": {
     "ID": "4750",
@@ -2607,13 +2486,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-4740"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2628,11 +2505,11 @@
     "name": "Foundations of HCI Usability",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2649,11 +2526,11 @@
     "name": "Fundamentals of 2D Design",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2666,15 +2543,15 @@
   "Fundamentals of Music and Sound": {
     "ID": "1380",
     "cross listed": [],
-    "description": "This course is a hands-on introduction to the primary building blocks of music and musicianship in a 21st Century context. No formal musical background is expected. The course will explore acoustics and psychoacoustics, rhythm, pitch, harmony, melody, timbre, improvisation, composition, and music notation through performance, listening, written exercises, and creative projects.",
+    "description": "This course is a hands-on introduction to the primary building blocks of music and musicianship in a 21st Century context. The course will explore acoustics and psychoacoustics, rhythm, pitch, harmony, melody, timbre, improvisation, composition, and music notation through engaged listening practices and creative projects. No formal musical background is expected.",
     "name": "Fundamentals of Music and Sound",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2691,15 +2568,13 @@
     "name": "GSAS Capstone",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually"
+      "text": ""
     },
-    "prerequisites": [
-      "GSAS-4510"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2714,11 +2589,11 @@
     "name": "GSAS Research Project",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2735,15 +2610,13 @@
     "name": "Game AI",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "GSAS-2540"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2760,13 +2633,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-2230"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2783,9 +2654,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2802,15 +2673,13 @@
     "name": "Game Development I",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "GSAS-2510"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2827,13 +2696,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "GSAS-4520"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2850,35 +2717,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "prerequisites": [
-      "COMM-4240",
-      "GSAS-2520"
-    ],
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "GSAS"
-  },
-  "Game Sound and Musical Play": {
-    "ID": "2560",
-    "cross listed": [
-      "ARTS-2560"
-    ],
-    "description": "What makes play musical and music playful? How does game sound and music contribute to gameworld creation, gameplay, and virtual performance? Ludomusicology—the relation of music to play—addresses these questions and challenges us to take play seriously. This course considers the diverse relationships among music, play, media, and performance, including game sound, music-stylistic features of game consoles and systems, children's games, remixing and sampling, the role musical games play in cultural identity, and more.",
-    "name": "Game Sound and Musical Play",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
       "spring": false,
-      "summer": true,
-      "text": "summer term annually"
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -2891,25 +2732,44 @@
   "Gender, Science, and Technology": {
     "ID": "4560",
     "cross listed": [],
-    "description": "In this course, students will engage with a variety of perspectives in science and technology studies, feminist theory, queer and transgender theory, cultural studies, science fiction, and other fields that explore how science and technology reciprocally contribute to and are shaped by cultural norms around gender. Students reflect on their own experiences with gender expectations and formulate their own questions and develop a research project over the course of the semester.",
+    "description": "\"Sex\" is the biological distinction between being male and female. \"Gender\" is the social construction of masculinity and femininity. The purpose of this course is to explore if, and if so, how, science and technology reciprocally contribute to and are shaped by gender ideals and images. Gender is used as a tool for critical thinking about such topics as studies of sex differences, women in science and engineering, the environment, and war and peace.",
     "name": "Gender, Science, and Technology",
     "offered": {
       "even": false,
-      "fall": true,
-      "odd": true,
+      "fall": false,
+      "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term, odd-numbered years"
+      "text": ""
     },
-    "prerequisites": [
-      "STSO-2100"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
+  },
+  "Global Health Challenges": {
+    "ID": "1420",
+    "cross listed": [],
+    "description": "This course will examine and offer possible solutions to current and emerging global health issues. Our emphasis will be on social and health problems in low income and middle-income countries in contrast to the health care needs in high-income countries. We will look at selective chronic and acute illnesses, ethnomedical practices, medical ethics, and environmental racism when dealing with low-income and developing countries.",
+    "name": "Global Health Challenges",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": true,
+      "major_restricted": false
+    },
+    "subj": "IHSS"
   },
   "Globalization and Development": {
     "ID": "4500",
@@ -2919,20 +2779,18 @@
     "offered": {
       "even": false,
       "fall": false,
-      "odd": true,
-      "spring": true,
+      "odd": false,
+      "spring": false,
       "summer": false,
-      "text": "spring term odd-numbered years."
+      "text": ""
     },
-    "prerequisites": [
-      "STSO-2300"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Graphic Storytelling": {
     "ID": "2070",
@@ -2941,15 +2799,13 @@
     "name": "Graphic Storytelling",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1020"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2966,13 +2822,13 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": true,
       "major_restricted": false
     },
@@ -2989,7 +2845,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3006,43 +2862,40 @@
     "name": "Health Economics and Policy",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
     "subj": "ECON"
   },
-  "Histories of Jazz and Improvised Music": {
-    "ID": "2510",
+  "Health in Contemporary Africa": {
+    "ID": "1430",
     "cross listed": [],
-    "description": "Since its emergence over a century ago, the energy, vitality, and challenging nature of jazz have had a significant impact on music throughout the world. The question of \"what is jazz\" remains a lively and contentious discussion to this day. This course charts the emergence, evolution, and expanded influence of jazz and jazz-inspired music, as well as the many controversial musical, social, and philosophical questions it continues to provoke. Through listening, analysis, discussion, writing, and creative projects, students will develop a greater appreciation and understanding of improvised music in a great variety of contexts, and the crucial role American jazz played in revitalizing improvisational practice throughout the 20th and 21st Centuries. No musical background is required.",
-    "name": "Histories of Jazz and Improvised Music",
+    "description": "This course will introduce students to Africa via demographic and epidemiologic transitions. We will focus on maternal and child health, HIV/AIDS, female genital cutting, culture-bound illnesses, and neglected diseases.",
+    "name": "Health in Contemporary Africa",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
       "CI": false,
-      "HI": false,
+      "HI": true,
       "major_restricted": false
     },
-    "subj": "ARTS"
+    "subj": "IHSS"
   },
   "Histories of Western Music": {
     "ID": "2500",
@@ -3051,15 +2904,15 @@
     "name": "Histories of Western Music",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3072,11 +2925,11 @@
     "name": "History and Culture of Games",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
-      "summer": true,
-      "text": "fall, spring, and summer terms annually."
+      "spring": false,
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3095,17 +2948,17 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSH"
   },
   "History of Animation": {
     "ID": "1170",
@@ -3116,13 +2969,55 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term, annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
       "CI": true,
+      "HI": true,
+      "major_restricted": false
+    },
+    "subj": "IHSS"
+  },
+  "History of Design": {
+    "ID": "1540",
+    "cross listed": [],
+    "description": "Design is and has been a means to solve problems by addressing how the materiality of form enhances function. Through a historical perspective this course will discover how design shapes, and is shaped by, culture and society. Sampling a range of fields, including graphics, architecture, and fashion, the course considers how design thinking takes on challenges from the most mundane to complex social or environmental concerns. While many see design as an artistic or decorative practice, this course will recognize the impact of design's interconnection with economics, politics, and culture.",
+    "name": "History of Design",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": true,
+      "major_restricted": false
+    },
+    "subj": "IHSS"
+  },
+  "History of Jazz and Improvised Music": {
+    "ID": "1080",
+    "cross listed": [],
+    "description": "The question of \"what is jazz\" remains a lively and contentious discussion to this day. This course charts the emergence, evolution, and influence of jazz music, as well as the many controversial musical, social, and philosophical questions it continues to provoke. The work of influential figures in American and European improvised music will be examined in detail, and the continuing development of jazz-inspired contemporary practices will be explored. Through listening, analysis, discussion, writing, and creative projects, students will develop a greater appreciation and understanding of improvised music in a great variety of contexts, and the crucial role American jazz played in revitalizing improvisational practice throughout the 20th and 21st Centuries. By the end of the course, students will be able to identify major figures in jazz and improvised music, identify different styles and eras, and have a basic vocabulary for discussing music both analytically and in personal responses.",
+    "name": "History of Jazz and Improvised Music",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -3135,22 +3030,19 @@
     "name": "History of Medicine",
     "offered": {
       "even": false,
-      "fall": true,
-      "odd": true,
+      "fall": false,
+      "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term, odd-numbered years."
+      "text": ""
     },
-    "prerequisites": [
-      "IHSS-1410",
-      "STSO-1110"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSH"
   },
   "History of Mental Health": {
     "ID": "4440",
@@ -3160,21 +3052,18 @@
     "offered": {
       "even": false,
       "fall": false,
-      "odd": true,
-      "spring": true,
+      "odd": false,
+      "spring": false,
       "summer": false,
-      "text": "spring term, odd-numbered years"
+      "text": ""
     },
-    "prerequisites": [
-      "IHSS-1410",
-      "STSO-1110"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSH"
   },
   "History of Science and Technology": {
     "ID": "4530",
@@ -3185,34 +3074,30 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "IHSS-1420"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSH"
   },
   "Hormones, Brain, and Behavior": {
     "ID": "4700",
-    "cross listed": [
-      "COGS-4700"
-    ],
+    "cross listed": [],
     "description": "This course will examine hormone and brain/behavior relationships across the lifespan. Hormones are molecules that are secreted by glands (the majority of which are located outside the brain) and have distal effects on their targets, such as the brain, throughout development. A focus will be on hormones' effects, mechanisms, and brain regions of interest for behavior and cognitive processes, such as perception, learning/memory, social cognition, motivation, and emotion.",
     "name": "Hormones, Brain, and Behavior",
     "offered": {
       "even": false,
-      "fall": true,
-      "odd": true,
+      "fall": false,
+      "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term odd-numbered years."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3233,11 +3118,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon sufficient demand."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-2220"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3254,13 +3137,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3268,24 +3149,43 @@
     },
     "subj": "PSYC"
   },
+  "Human Rights in History": {
+    "ID": "1500",
+    "cross listed": [],
+    "description": "This course explores the historical development of modern international human rights through the lens of American foreign policy. Through lecture and discussion of the assigned readings, this course will guide students in critical analysis of the narratives and national myths surrounding human rights in the history of the United States and the world. Major themes include the origins of human rights, human rights abuses, the human rights regime, human rights institutions, and problems of enforcement.",
+    "name": "Human Rights in History",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": true,
+      "major_restricted": false
+    },
+    "subj": "IHSS"
+  },
   "IT and Society": {
     "ID": "1220",
-    "cross listed": [
-      "IHSS-1220"
-    ],
+    "cross listed": [],
     "description": "Will IT increase prosperity? For whom? What role should governments play in IT development? Do corporations have new responsibilities in the Information Era? What about IT professionals? This course explores the issues, the arguments and working solutions. The first section examines macro indicators and trends. The second section examines the microeconomics and politics of specific arenas—the software industry, the automated work place, telemedicine, television. The last section explores opportunities for improving society, using IT.",
     "name": "IT and Society",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -3298,15 +3198,13 @@
     "name": "Industrial and Organizational Psychology",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3325,7 +3223,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3338,19 +3236,17 @@
   "Information Design": {
     "ID": "4470",
     "cross listed": [],
-    "description": "This course examines the design of technical information systems and their output in useful and well-designed documents and interfaces. The course includes the history of data visualization, visual rhetoric, and information systems such as DITA.",
+    "description": "This course examines methods of graphic representation of data. Course work requires graphing of information derived from researched databases. Visual presentations of historic data will be examined to determine the most efficient way to represent complex information without distorting the data within. Information designers clarify these displays and enrich the understanding of the modern world.",
     "name": "Information Design",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "COMM-2660"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3367,9 +3263,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3386,15 +3282,13 @@
     "name": "Information Technology and Web Science Capstone",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ITWS-2210"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3411,9 +3305,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3430,15 +3324,13 @@
     "name": "Interactive Arts Programming",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-2010"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3456,8 +3348,8 @@
       "fall": false,
       "odd": false,
       "spring": false,
-      "summer": true,
-      "text": "summer term annually."
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3475,14 +3367,14 @@
     "offered": {
       "even": false,
       "fall": false,
-      "odd": true,
-      "spring": true,
+      "odd": false,
+      "spring": false,
       "summer": false,
-      "text": "spring term odd-numbered years."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3495,17 +3387,15 @@
     "name": "Interdisciplinary Research Seminar",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-2380"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3514,15 +3404,15 @@
   "Interface Design: Hypermedia Theory and Application": {
     "ID": "4690",
     "cross listed": [],
-    "description": "This course covers theory, research, and practice in interactive, multimedia interface design. Topics include visual perception, information architecture, rapid prototyping, usability testing, cross-cultural design, interactive data visualization, augmented reality, and intellectual property.",
+    "description": "This course focuses on the design theory and research behind effective interface design for hypermedia programs (multimedia computer programs with interactive inks). These interactive programs are the standard form of communication on the WWW, CDs, and DVDs. Students apply theory and research by designing and developing an interactive multimedia program (for WWW or CD).",
     "name": "Interface Design: Hypermedia Theory and Application",
     "offered": {
-      "even": true,
+      "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term, even-numbered years"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3539,15 +3429,13 @@
     "name": "Intermediate Digital Imaging",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1020"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3562,15 +3450,13 @@
     "name": "Intermediate Drawing",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3584,16 +3470,14 @@
     "description": "This course is a continuation of PHIL 2140, covering basic metatheory of logic (including formal syntax and semantics, model theory, and soundness and completeness of proof systems), applications of logic (including automated theorem proving, deductive problem solving, and the axiomatization of various branches of mathematics), and alternative systems of logic (including sequent systems, diagrammatic logic, and modal logic).",
     "name": "Intermediate Logic",
     "offered": {
-      "even": true,
+      "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term even-numbered years."
+      "text": ""
     },
-    "prerequisites": [
-      "PHIL-2140"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3608,15 +3492,13 @@
     "name": "Intermediate Macroeconomic Theory",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3631,15 +3513,13 @@
     "name": "Intermediate Microeconomic Theory",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3653,16 +3533,14 @@
     "description": "Intermediate Video is a hands-on intensive course that teaches the language, aesthetics, and techniques of video production. Working in groups and individually, students will develop and produce several short video projects. Emphasis will be on the acquisition of creative and technical production skills in visualizing, scripting, aesthetics, shooting, sound design, and editing.",
     "name": "Intermediate Video",
     "offered": {
-      "even": true,
-      "fall": true,
+      "even": false,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term even-numbered years."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1030"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3681,38 +3559,72 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
     "subj": "ECON"
   },
+  "International Relations": {
+    "ID": "2330",
+    "cross listed": [],
+    "description": "The world today faces enormous problems: the bloody horrors of war, the unconscionable and widening economic gap between rich and poor countries, and the looming threat of catastrophic environmental degradation. This course examines the causes and consequences of these problems, wonders what a world beyond greed and hate would look like, and considers what it will take to build a better world. Toward these ends, several themes are explored, including the nature of the international system, contemporary challenges to the state system, and alternatives to hunger, exploitation, and international violence.",
+    "name": "International Relations",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSS"
+  },
+  "Introduction to Afro-Cuban Percussion": {
+    "ID": "2340",
+    "cross listed": [],
+    "description": "This course is an introduction to Afro-Cuban folkloric music traditions through lecture demonstration and class participation. The emphasis is on learning to play Afro-Cuban rhythms and percussion instruments (clave, conga, cowbell, shekere).",
+    "name": "Introduction to Afro-Cuban Percussion",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ARTS"
+  },
   "Introduction to Cognitive Neuroscience": {
     "ID": "4330",
-    "cross listed": [
-      "COGS-4330"
-    ],
+    "cross listed": [],
     "description": "This survey course is intended as an introduction to Cognitive Neuroscience. The topics covered will focus on exploring the neural underpinnings for cognitive processes, such as sensation, language, attention, motor control, executive functions, social communication, emotions, consciousness, and learning/memory. Basic aspects of nervous system function and neuroanatomy, brain development/evolution, structural and functional imaging techniques, and other research methods used in Cognitive Neuroscience will be discussed.",
     "name": "Introduction to Cognitive Neuroscience",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3727,11 +3639,11 @@
     "name": "Introduction to Cognitive Science",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3748,11 +3660,11 @@
     "name": "Introduction to Game Design",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall or spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3769,11 +3681,11 @@
     "name": "Introduction to Game Programming",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall or spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3790,11 +3702,11 @@
     "name": "Introduction to Game Storytelling",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3811,15 +3723,15 @@
     "name": "Introduction to Graphic Design",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -3834,9 +3746,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3853,11 +3765,11 @@
     "name": "Introduction to Information Technology and Web Science",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3874,11 +3786,11 @@
     "name": "Introduction to Linguistics",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall term annually; spring term upon availability of instructor"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3895,11 +3807,11 @@
     "name": "Introduction to Literature",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3916,11 +3828,11 @@
     "name": "Introduction to Logic",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3937,11 +3849,11 @@
     "name": "Introduction to Philosophy",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3962,7 +3874,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -3979,11 +3891,11 @@
     "name": "Introduction to Psychological Science",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -4000,15 +3912,13 @@
     "name": "Introduction to Sports Psychology",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4023,11 +3933,11 @@
     "name": "Introductory Economics",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -4044,21 +3954,19 @@
     "name": "Investigating Society",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "IHSS-1110"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Irish Literature": {
     "ID": "4230",
@@ -4068,10 +3976,10 @@
     "offered": {
       "even": false,
       "fall": false,
-      "odd": true,
-      "spring": true,
+      "odd": false,
+      "spring": false,
       "summer": false,
-      "text": "spring term odd-numbered years."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -4103,25 +4011,46 @@
     "subj": "LANG"
   },
   "Language and Culture": {
-    "ID": "1492",
+    "ID": "4620",
     "cross listed": [],
-    "description": "Language is one of the most powerful forces in the human experience and shapes the production of social identities and cultural assumptions about the world. This course examines the role that language plays in articulating, maintaining, and subverting power relations in society. Topics include language ideology, politics, gender, race/ethnicity, linguistic engineering, language death and revitalization, and disinformation.",
+    "description": "This course examines the role that language plays in the production of social identities and cultural assumptions about the world. Course topics include: language and worldview; linguistic contact and change, language ideology and nationalism, religious language, \"politically correct\" speech, and the key role that language plays in structuring race, gender and class-based systems of social inequality. Guest lectures from the Languages faculty.",
     "name": "Language and Culture",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
       "CI": false,
-      "HI": true,
+      "HI": false,
       "major_restricted": false
     },
-    "subj": "IHSS"
+    "subj": "COMM"
+  },
+  "Language in Real Time": {
+    "ID": "2120",
+    "cross listed": [],
+    "description": "This course offers an introduction to theories and methods used to study language in its real time contexts. It begins by exploring the structure of sounds and words. The course moves on to investigate how language variation at those structural levels bleeds into social life – including the cultural and socio-historical production of identities, ideologies, and inequalities. The \"exercise\" component of this course provides a hands-on opportunity for engaging with the topics explored in course readings and lectures. Completing exercises will offer practice in, for example, using the International Phonetic Alphabet, transcribing and analyzing natural speech, and using various theoretical offerings to examine how social perspectives and attitudes impact both the use and interpretation of linguistic forms.",
+    "name": "Language in Real Time",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "COMM"
   },
   "Language-Endowed Intelligent Agents": {
     "ID": "4880",
@@ -4134,7 +4063,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -4153,20 +4082,38 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
     "subj": "ECON"
+  },
+  "Law and Society": {
+    "ID": "2700",
+    "cross listed": [],
+    "description": "There ought to be a law. . .\" Law shapes people's lives in countless ways; it is everywhere. Law permits, prohibits, enables, legitimizes, protects, and prosecutes. Law is more than the written word, the \"black letter law.\" People make the law—judges, attorneys, police officers, legislators, defendants, and plaintiffs. This course will explore the law's social, political, cultural, and historical aspects. Using an interdisciplinary approach, the course will examine how social theorists conceptualize and explain the relationship between law and society. Students will be exposed to the theoretical frameworks that are used to examine how the law shapes society, and society shapes the law, and develop an understanding of the social processes that affect the legal system. The course will advance students' capacity to think critically and communicate effectively about themes, concepts, and arguments surrounding the law and learn what law is; where it comes from; who creates it; and what roles it plays in shaping society.",
+    "name": "Law and Society",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSS"
   },
   "Law, Values, and Public Policy: Perspectives on Science and Technology": {
     "ID": "1350",
@@ -4179,7 +4126,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -4198,13 +4145,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4219,44 +4164,19 @@
     "name": "Learning and Advanced Game AI",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "COGS-4420"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
     "subj": "COGS"
-  },
-  "Level Design": {
-    "ID": "4270",
-    "cross listed": [],
-    "description": "This project-based course introduces students to the tools and concepts used to create levels for games and simulations. It explores how various fields and theories (architecture, psychogeography, and theory of the Dérive, player psychology), influence the level design and alter or enhance the ludic concepts (flow and critical path, risks-rewards, tutoring, balance of difficulty, and storytelling). Level analysis will help students to recall these concepts. Students will demonstrate their understanding by designing three \"paper\" maps (stealth, puzzle adventure, 3rd person) and implementing two developed levels (2D and 3D).",
-    "name": "Level Design",
-    "offered": {
-      "even": false,
-      "fall": false,
-      "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually"
-    },
-    "prerequisites": [
-      "GSAS-1040"
-    ],
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "GSAS"
   },
   "Life Drawing and Anatomy for Artists": {
     "ID": "4260",
@@ -4267,40 +4187,17 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
     "subj": "ARTS"
-  },
-  "Life in Color": {
-    "ID": "1562",
-    "cross listed": [],
-    "description": "Color is used every day to help us decode information, inform communications, influence our buying decisions, distinguish scientific properties, and impact our emotions and health. In this course, we'll study the impact of color and learn how to use it effectively. Through a series of creative hands-on graphic design projects, we will investigate color memory, relativity, and subjectivity, communicating with color, physiological and psychological responses to color, and color across cultures.",
-    "name": "Life in Color",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually"
-    },
-    "prerequisites": [],
-    "properties": {
-      "CI": false,
-      "HI": true,
-      "major_restricted": false
-    },
-    "subj": "IHSS"
   },
   "Lighting, Rendering, & Cinematography": {
     "ID": "4200",
@@ -4313,7 +4210,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -4351,17 +4248,15 @@
     "name": "Managing IT Resources",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ITWS-2110"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -4374,15 +4269,13 @@
     "name": "Mathematical Methods in Economics",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-2010"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4399,14 +4292,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4425,7 +4315,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -4442,15 +4332,15 @@
     "name": "Media and Society",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": true,
       "major_restricted": false
     },
@@ -4464,20 +4354,18 @@
     "offered": {
       "even": false,
       "fall": false,
-      "odd": true,
-      "spring": true,
+      "odd": false,
+      "spring": false,
       "summer": false,
-      "text": "spring term, odd-numbered years"
+      "text": ""
     },
-    "prerequisites": [
-      "STSO-2510"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Metaphysics and Consciousness": {
     "ID": "4480",
@@ -4486,15 +4374,15 @@
     "name": "Metaphysics and Consciousness",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -4509,13 +4397,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-2010"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4525,18 +4411,16 @@
   },
   "Minds and Machines": {
     "ID": "1140",
-    "cross listed": [
-      "PHIL-1120"
-    ],
+    "cross listed": [],
     "description": "This course is an introduction to the philosophy of mind and cognitive science. Students meet in small sections to have class discussions and debates about questions like: What are minds? Are minds physical or non-physical? Do humans have free will? Does reliance on technology turn humans into cyborgs? How close are humans to building an intelligent robot or machine? Do we want this to be a goal? Students will learn how make a philosophical argument, and how to express them in writing or through an oral presentation.",
     "name": "Minds and Machines",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -4555,9 +4439,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -4574,16 +4458,13 @@
     "name": "Money and Banking",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4598,15 +4479,13 @@
     "name": "Motivation and Performance",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4621,15 +4500,13 @@
     "name": "Multimedia Performance Systems",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-2020"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4644,15 +4521,15 @@
     "name": "Music and Nature",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": true,
       "major_restricted": false
     },
@@ -4661,19 +4538,17 @@
   "Music and Sound I": {
     "ID": "2380",
     "cross listed": [],
-    "description": "The first in a two-course sequence combining music theory, musicianship, and engaged listening practices applicable to a broad range of traditional and contemporary musical styles, with an emphasis on creative practice. This course covers the fundamentals of tonal harmony including scales, chord symbols and figured bass notation, diatonic chord progressions, and counterpoint. Musicianship includes aural identification of intervals, scales, and chords, rhythm and exercises in sight-singing, dictation, and improvisation. Engaged listening practices include responsive listening, reading, and written exercises as well as in-class discussion. Weekly assignments include composition, analysis, and performance.",
+    "description": "This is the first course in a two-course sequence in music theory and aural skills. The course covers the fundamentals of diatonic harmony and two-part species counterpoint. Aural skills include interval, scale and chord identification, rhythmic and tonal solfege, and dictation. Learning activities include weekly assignments in analysis, composition, performance, improvisation, and self-paced use of software in the acquisition of aural skills.",
     "name": "Music and Sound I",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1380"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4684,19 +4559,17 @@
   "Music and Sound II": {
     "ID": "4380",
     "cross listed": [],
-    "description": "The second in a two-course sequence combining music theory, aural skills, and engaged listening practices applicable to a broad range of musical styles, with an emphasis on creative practice. This course covers chromatic, extended, and contemporary tonal harmony and its interrelationship with form. Musicianship exercises include advanced chord identification, rhythm exercises, dictation, and improvisation. Engaged listening practices include responsive listening, reading, and written exercises as well as in-class discussion. Weekly assignments include composition, analysis, and performance.",
+    "description": "A continuation of studies in harmony, analysis, and ear-training. With an introduction to orchestration and 20th century techniques, the course will culminate with an original composition.",
     "name": "Music and Sound II",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-2380"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4707,15 +4580,15 @@
   "Music and Technology I": {
     "ID": "2020",
     "cross listed": [],
-    "description": "Music technology-based research and composition taught in the context of modern computerized production methods. Technical topics include basic principles of music programming languages, digital sound synthesis and sampling, and the use of computer systems for musical control of electronic instruments. Musical topics include a study of important musical works and compositional techniques of the 21st century. Student projects involve hands-on work on a variety of computer programming languages, instruments, and software. This course is a prerequisite for further creative work with Rensselaer's computer music facilities.",
+    "description": "Music composition taught in the context of modern computerized production methods. Technical topics include basic principles of computer sound generation, digital sound sampling, and the use of small computers for musical control of electronic instruments. Musical topics include a study of important musical works and compositional techniques of the 20th century. Student projects involve hands-on work on a variety of computer instruments and software. This course is a prerequisite for further creative work with Rensselaer's computer music facilities.",
     "name": "Music and Technology I",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -4728,19 +4601,17 @@
   "Music and Technology II": {
     "ID": "4160",
     "cross listed": [],
-    "description": "This course assumes knowledge and experience in computer music programming, applications, and performance. It is directed to undergraduate students as an upper-level seminar guiding their progress through the composition of a significant musical work or the design and development of a significant research project. The class is divided between a group seminar, focusing on aesthetic, theoretical, and technical issues, and a workshop/lab in musical systems design, performance, computer music applications, and composition.",
+    "description": "This course assumes knowledge and experience in computer music applications and performance. It is directed to undergraduate students as an upper-level seminar guiding their progress through the composition of a significant musical work. The class is divided between a group seminar, focusing on aesthetic, theoretical, and technical issues, and a workshop/lab in performance, computer applications and composition.",
     "name": "Music and Technology II",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-2020"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4759,12 +4630,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4779,15 +4647,15 @@
     "name": "Nature/Society",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": true,
       "major_restricted": false
     },
@@ -4802,13 +4670,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-2500"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4827,11 +4693,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-2020"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4846,15 +4710,13 @@
     "name": "Painting",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4869,17 +4731,15 @@
     "name": "Personality",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually"
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -4892,11 +4752,11 @@
     "name": "Perspectives on Photography",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -4938,11 +4798,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "PHIL-2140"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4957,11 +4815,11 @@
     "name": "Philosophy of Biology",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall or spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -4979,10 +4837,10 @@
     "offered": {
       "even": false,
       "fall": false,
-      "odd": true,
-      "spring": true,
+      "odd": false,
+      "spring": false,
       "summer": false,
-      "text": "spring term odd-numbered years."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5000,10 +4858,10 @@
     "offered": {
       "even": false,
       "fall": false,
-      "odd": true,
-      "spring": true,
+      "odd": false,
+      "spring": false,
       "summer": false,
-      "text": "spring term, odd-numbered years"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5021,42 +4879,39 @@
     "offered": {
       "even": false,
       "fall": false,
-      "odd": true,
-      "spring": true,
+      "odd": false,
+      "spring": false,
       "summer": false,
-      "text": "spring term odd-numbered years."
+      "text": ""
     },
-    "prerequisites": [
-      "STSS-2210",
-      "STSO-2010"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Popular Music and Society": {
-    "ID": "2550",
+    "ID": "1710",
     "cross listed": [],
-    "description": "This topics-based course examines popular music in society, considering the ways it may express identities, motivate political movements, and function within various economic, mediated, and technological environments. This course explores popular music representing diverse genres (country, hip hop, EDM, Top 40) as it relates to social life, the intersections of race, gender, class, and sexuality, and media and technology.",
+    "description": "What makes music popular? This course examines popular music in society, considering the ways in which it may express identities, motivate political movements, and function within various economic and technological environments. Lectures are supplemented by listening assignments, both to recordings and live performances.",
     "name": "Popular Music and Society",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
-      "HI": false,
+      "CI": false,
+      "HI": true,
       "major_restricted": false
     },
-    "subj": "ARTS"
+    "subj": "IHSS"
   },
   "Positive Psychology": {
     "ID": "4730",
@@ -5065,11 +4920,11 @@
     "name": "Positive Psychology",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
-      "summer": true,
-      "text": "fall, spring, and summer terms annually."
+      "spring": false,
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5086,11 +4941,11 @@
     "name": "Principles of Economics",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5107,11 +4962,11 @@
     "name": "Private Music Lessons",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
-      "summer": true,
-      "text": "fall, spring, and summer terms annually."
+      "spring": false,
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5121,27 +4976,6 @@
     },
     "subj": "ARTS"
   },
-  "Pro-Seminar in Communication, Media, and Design": {
-    "ID": "4930",
-    "cross listed": [],
-    "description": "Designed for first-semester senior Communication, Media, and Design majors, Pro-Seminar is the capstone course for the development of the Senior Project. Students will create a professional portfolio piece that showcases their work in the diverse disciplines of communication and media",
-    "name": "Pro-Seminar in Communication, Media, and Design",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
-      "spring": false,
-      "summer": false,
-      "text": "fall term annually"
-    },
-    "prerequisites": [],
-    "properties": {
-      "CI": false,
-      "HI": false,
-      "major_restricted": false
-    },
-    "subj": "COMM"
-  },
   "Professional Development  2 –Technical Issues and Solutions": {
     "ID": "4100",
     "cross listed": [],
@@ -5149,11 +4983,11 @@
     "name": "Professional Development  2 –Technical Issues and Solutions",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
-      "summer": true,
-      "text": "fall, spring, and summer terms annually"
+      "spring": false,
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5161,7 +4995,7 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Professional Development II: Leadership Theories": {
     "ID": "4170",
@@ -5170,11 +5004,11 @@
     "name": "Professional Development II: Leadership Theories",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5191,11 +5025,11 @@
     "name": "Programming for Cognitive Science and Artificial Intelligence",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5212,18 +5046,15 @@
     "name": "Proposing and Persuading",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "COMM-2520",
-      "WRIT-1110"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5236,17 +5067,15 @@
     "name": "Psychology and The Law",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -5259,11 +5088,11 @@
     "name": "Psychology of Mindfulness",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
-      "summer": true,
-      "text": "fall and summer terms annually."
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5282,13 +5111,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5307,17 +5134,36 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-2010"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
     "subj": "ECON"
+  },
+  "Public Service and Social Justice": {
+    "ID": "4800",
+    "cross listed": [],
+    "description": "This course offers an insight into public policy from the vantage point of the public or private sector: airport planning, architecture, banking, biological research, clinical psychology, computer science, consumer protection, corporate management, engineering, environmental planning, geology, local government, materials and mechanical engineering, noise pollution abatement, personnel management review, premedical, public finance and taxation, public health management, public relations, social work, state legislature, stock market, transportation planning, and urban planning.",
+    "name": "Public Service and Social Justice",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSS"
   },
   "Queer Ecologies": {
     "ID": "4140",
@@ -5327,10 +5173,10 @@
     "offered": {
       "even": false,
       "fall": false,
-      "odd": true,
-      "spring": true,
+      "odd": false,
+      "spring": false,
       "summer": false,
-      "text": "spring semester, odd-numbered years"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5351,7 +5197,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5370,9 +5216,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5437,9 +5283,7 @@
       "summer": false,
       "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5466,7 +5310,28 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSH"
+  },
+  "Readings in Science and Technology Studies, Anthropology/Archaeology, History, Political Science, or Sociology": {
+    "ID": "4940",
+    "cross listed": [],
+    "description": "With an individual faculty member on an agreed-upon topic.",
+    "name": "Readings in Science and Technology Studies, Anthropology/Archaeology, History, Political Science, or Sociology",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSS"
   },
   "Reality TV and Post-Factual Media": {
     "ID": "4530",
@@ -5477,9 +5342,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5496,11 +5361,11 @@
     "name": "Religion in a Global World",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5518,16 +5383,14 @@
     "offered": {
       "even": false,
       "fall": false,
-      "odd": true,
-      "spring": true,
+      "odd": false,
+      "spring": false,
       "summer": false,
-      "text": "spring term odd-numbered years."
+      "text": ""
     },
-    "prerequisites": [
-      "COMM-2520"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5540,11 +5403,11 @@
     "name": "Rensselaer Concert Choir",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5561,11 +5424,11 @@
     "name": "Rensselaer Orchestra",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5578,15 +5441,15 @@
   "Research Design": {
     "ID": "4980",
     "cross listed": [],
-    "description": "This is the first part of a two-semester senior project sequence for majors in Sustainability Studies (SUST) and Science, Technology, and Society (STSO). The course focuses on qualitative research design and research proposal development.",
+    "description": "This is the first part of a two-semester senior project sequence for majors in Sustainability Studies (SUST) and Science, Technology, and Society (STS). The course focuses on qualitative research design and research proposal development.",
     "name": "Research Design",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5594,7 +5457,7 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Research Methods and Statistics I": {
     "ID": "2310",
@@ -5603,18 +5466,15 @@
     "name": "Research Methods and Statistics I",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
-      "summer": true,
-      "text": "fall, spring, and summer terms annually."
+      "spring": false,
+      "summer": false,
+      "text": ""
     },
-    "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -5627,17 +5487,15 @@
     "name": "Research Methods and Statistics II",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-2310"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -5652,9 +5510,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5664,6 +5522,27 @@
     },
     "subj": "WRIT"
   },
+  "Resilience Planning": {
+    "ID": "4320",
+    "cross listed": [],
+    "description": "What does resilience really mean and why does it matter? In this course, students will unpack the multiple meanings that make up \"resilience\" and learn about its relevance to human society. Upon entering the Anthropocene, climate change will ensure that sporadic, disruptive change will be the norm. Disruptions will come on numerous levels and at a variety of scales. Is resilience about strengthening defenses so that \"resilient\" landscapes, infrastructure and organizations can bounce back, or is it more? Students will be asked to contribute to a collective understanding of how systems thinking and resilience thinking can help strengthen the ability to adapt and transform when humans are faced with social and ecological change. Can resilience planning help with the difficult conversations that are needed to balance the socio-economic and ecological trade-offs that the Anthropocene demands?",
+    "name": "Resilience Planning",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSS"
+  },
   "Rethinking Documentary: Video Production": {
     "ID": "4040",
     "cross listed": [],
@@ -5671,16 +5550,34 @@
     "name": "Rethinking Documentary: Video Production",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1030"
-    ],
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ARTS"
+  },
+  "Roots of Africa Music Ensemble": {
+    "ID": "2360",
+    "cross listed": [],
+    "description": "Roots of Africa Ensemble is a course devoted to learning and performing in African, Afro-Cuban, and New World Percussion. Students will learn to play current music performed by the ensemble, a percussion ensemble engaged in workshop study and public performance of folkloric music, orginal works by various composers, including compositions by Dr. Eddie Ade Knowles. Under his direction, students will learn significance of performance within folklore ensembles and how to play instruments from Africa, Cuba, and the New World.",
+    "name": "Roots of Africa Music Ensemble",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5697,19 +5594,38 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "STSO-4980"
-    ],
+    "prerequisites": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSS"
+  },
+  "Science Fiction Cinema and Social Criticism": {
+    "ID": "2010",
+    "cross listed": [],
+    "description": "This class studies relationships between science fiction films and serious works of modern social criticism. Through a careful reading of texts, analytical viewing of films, and comparison of the two experiences, the course will explore some of the most significant issues in modern society.",
+    "name": "Science Fiction Cinema and Social Criticism",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Science Fictions": {
     "ID": "4640",
@@ -5720,14 +5636,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually"
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1020",
-      "IHSS-1030"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -5745,8 +5658,8 @@
       "fall": false,
       "odd": false,
       "spring": false,
-      "summer": true,
-      "text": "summer term annually"
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5765,9 +5678,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5779,26 +5692,24 @@
   },
   "Science, Technology, and Society": {
     "ID": "1110",
-    "cross listed": [
-      "STSH-1110"
-    ],
-    "description": "This course examines science and technology in their social, cultural, and political context. Readings are drawn from social sciences, fiction, and contemporary journalism. Case studies will include genetic testing, automation, vaccines, engineering education, AIDS activism, mental health, surveillance, and climate change. The class is designed to give students the freedom to develop and express their own ideas.",
+    "cross listed": [],
+    "description": "An introduction to the social, historical, and ethical influences on modern science and technology. Cases include development of the atomic bomb, mechanization of the workplace, Apollo space program, and others. Readings are drawn from history, fiction, and social sciences; films and documentary videos highlight questions about the application of scientific knowledge to human affairs. The class is designed to give students freedom to develop and express their own ideas.",
     "name": "Science, Technology, and Society",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Scientific Revolutions": {
     "ID": "4310",
@@ -5811,11 +5722,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "PHIL-1110"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5830,11 +5739,11 @@
     "name": "Sculpture I",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5851,15 +5760,13 @@
     "name": "Sculpture II",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-2210"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5873,12 +5780,12 @@
     "description": "Self-organization has become increasingly important in science and engineering. Self-assembly of molecular structures are critical to nanotechnology; self-organizing swarms of insects are modeled in biology and robotics, and so on. But recursive loops in which things govern themselves are also foundational to society. Indigenous societies are renowned for their ecological self-stabilization. Wikipedia, Open Sources Software, and other means of \"crowdsourcing\" offer new visions for a more democratic civil society.",
     "name": "Self-Organization in Science and Society",
     "offered": {
-      "even": true,
+      "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term even-numbered years."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5886,7 +5793,28 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
+  },
+  "Seminar in Economics": {
+    "ID": "4900",
+    "cross listed": [],
+    "description": "Discussion and analysis of selected topics in economic theory and of current economic issues.",
+    "name": "Seminar in Economics",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ECON"
   },
   "Senior Thesis": {
     "ID": "4990",
@@ -5895,11 +5823,11 @@
     "name": "Senior Thesis",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5918,13 +5846,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5934,23 +5860,18 @@
   },
   "Sensibilities": {
     "ID": "4440",
-    "cross listed": [
-      "COGS-4440"
-    ],
+    "cross listed": [],
     "description": "\"Sensibilities\"—a special ART_X@Rensselaer (Art Across the Curriculum) seminar—draws from the tremendous resource of EMPAC to inspire students to cultivate writing skills through the cross-disciplinary theme of the senses/perception. During the semester students will have opportunities to observe unique art/science presentations and performances in an intimate setting at EMPAC, providing rich experiences for discussions and writing. Classes include reading science and art texts, as well as writing workshops to develop authorial voice and experimentation.",
     "name": "Sensibilities",
     "offered": {
-      "even": true,
-      "fall": true,
+      "even": false,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term even-numbered years"
+      "text": ""
     },
-    "prerequisites": [
-      "IHSS-1150",
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -5958,18 +5879,18 @@
     },
     "subj": "PSYC"
   },
-  "Social Media & Strategic Communication": {
-    "ID": "4188",
+  "Social Demography: Society by the Numbers": {
+    "ID": "4520",
     "cross listed": [],
-    "description": "The purpose of this course is to introduce the basics of strategic communication in digital and social media platforms, with a specific interest in the applications of digital and social media for communication professionals. In this course, students will learn key principles and techniques for digital content creation and promotion. Students will brainstorm, conceptualize, and develop an online presence and apply writing, research, and critical thinking to the practice of strategic communication.",
-    "name": "Social Media & Strategic Communication",
+    "description": "Study of global and national population characteristics, distribution, and trends. The course focuses on mortality, fertility, and migration along with the social issues or problems that are related to them.",
+    "name": "Social Demography: Society by the Numbers",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -5977,7 +5898,7 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "COMM"
+    "subj": "STSS"
   },
   "Social Psychology": {
     "ID": "2730",
@@ -5986,15 +5907,13 @@
     "name": "Social Psychology",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6009,11 +5928,11 @@
     "name": "Sociology",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6021,7 +5940,7 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
   "Software Development": {
     "ID": "4700",
@@ -6030,11 +5949,11 @@
     "name": "Software Development",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6051,11 +5970,11 @@
     "name": "Songwriting Workshop",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6072,11 +5991,11 @@
     "name": "Sound Recording and Production I",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6095,13 +6014,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-2700"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6116,11 +6033,11 @@
     "name": "Special Projects",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6137,11 +6054,11 @@
     "name": "Speech Communication",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6160,13 +6077,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6181,11 +6096,11 @@
     "name": "Strategic Writing",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6197,22 +6112,18 @@
   },
   "Stress and the Brain": {
     "ID": "4610",
-    "cross listed": [
-      "COGS-4610"
-    ],
+    "cross listed": [],
     "description": "This seminar course is a detailed examination of the mind-brain relationship, through study of the stress response. Stress is simply defined as any challenge to an individual's homeostasis, or balance. This course will explore the neurobiological underpinnings of the stress response, with particular focus on how stressors can alter perception, affective and cognitive processing in the individual, which can in turn feedback to alter the general health of the individual (body and mind/brain).",
     "name": "Stress and the Brain",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6231,11 +6142,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
-    "prerequisites": [
-      "ECON-2010"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6306,26 +6215,26 @@
     },
     "subj": "ARTS"
   },
-  "Superheroes in the Classroom": {
-    "ID": "2616",
+  "Sustainability Careers": {
+    "ID": "4300",
     "cross listed": [],
-    "description": "This course engages students with the transmedial genre of superheroes, which has become one the most influential genres in film, television, video games, toys, and of course comics—not to mention the cultural artifacts that are associated with its iconography. Through an examination of the genre's origins and history, its economic and aesthetic aspects, and the ideological issues that surround its narratives—including representational dynamics of race, class, gender, sexuality and other vectors of identity—students in this course will become more critically aware consumers of popular culture media.",
-    "name": "Superheroes in the Classroom",
+    "description": "Advancing environmental sustainability will depend on many kinds of expertise. In this course, students will explore the evolving terrain of green jobs and diverse sustainability-oriented career pathways that leverage the expertise they have developed through their undergraduate studies. The course provides students the opportunity to conduct research that examines where sustainability-oriented work is being done and how people with varied expertise are making a contribution.",
+    "name": "Sustainability Careers",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
       "spring": false,
-      "summer": true,
-      "text": "summer term annually"
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "COMM"
+    "subj": "STSH"
   },
   "Sustainability Debates": {
     "ID": "1240",
@@ -6334,11 +6243,11 @@
     "name": "Sustainability Debates",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6357,42 +6266,59 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "STSO-2300"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
   },
-  "Sustainability and STS Sustainability Careers": {
-    "ID": "4300",
+  "Sustainability Problems": {
+    "ID": "4270",
     "cross listed": [],
-    "description": "This course is required for students majoring in STS or Sustainability Studies. Students should take it in their sophomore year to best prepare for Arch internships and leverage the expertise they are developing through their undergraduate studies. Students will investigate the evolving terrain of career pathways at the intersection of science, technology, sustainability, and social change, learn job search strategies, and network with career role models.",
-    "name": "Sustainability and STS Sustainability Careers",
+    "description": "In this course, students will map the matrix of problems that make sustainability difficult – problems with the U.S. political, legal, and educational system, with media, culture, and individual behavior. Students will also identify sustainability pathways in transportation, urban design, education, alternative energy, etc. Throughout, students will analyze and try to produce effective environmental communication.",
+    "name": "Sustainability Problems",
     "offered": {
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "STSO-1110"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
+  },
+  "Sustainability by Design": {
+    "ID": "4290",
+    "cross listed": [],
+    "description": "Sustainability by Design will center around student-led project-based research, with a focus on getting to know one's own specific potential, leveraging student connections to communities, and making a difference in larger systems that can often seem intractable. Students will learn how to think and act within whole systems and design solutions that identify and push on leverage points in these systems. This process will bring analysis and design together in a multitude of ways, and the course can be thought of as a hybrid seminar/studio course, where students will learn about many design principles and practices and apply these lessons in practice, forming feedback loops between theory and action. At their best, students will transform systems from a degenerative state, to a sustainable one, and beyond to achieve regenerative systems.",
+    "name": "Sustainability by Design",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSS"
   },
   "The American Dream": {
     "ID": "1776",
@@ -6401,15 +6327,15 @@
     "name": "The American Dream",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring term annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -6424,38 +6350,17 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
-      "summer": false,
-      "text": "spring term annually."
-    },
-    "prerequisites": [],
-    "properties": {
-      "CI": false,
-      "HI": true,
-      "major_restricted": false
-    },
-    "subj": "IHSS"
-  },
-  "The Film Experience": {
-    "ID": "2410",
-    "cross listed": [],
-    "description": "This course will engage you with film and motion pictures from a variety of reflexive, critical, and historical perspectives. While serving as an overview of analytical approaches to film, the course will be shaped to reflect your interests as a learning community, with the aim of transforming your relationship to motion pictures and developing within you a critical, thoughtful, and informed approach to the medium.",
-    "name": "The Film Experience",
-    "offered": {
-      "even": false,
-      "fall": true,
-      "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
       "CI": true,
-      "HI": false,
+      "HI": true,
       "major_restricted": false
     },
-    "subj": "LITR"
+    "subj": "IHSS"
   },
   "The Genome and You": {
     "ID": "1150",
@@ -6464,11 +6369,11 @@
     "name": "The Genome and You",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6491,9 +6396,7 @@
       "summer": false,
       "text": ""
     },
-    "prerequisites": [
-      "COGS-2340"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6508,15 +6411,15 @@
     "name": "The Multimedia Century",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -6575,7 +6478,7 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability of instructor."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6598,10 +6501,7 @@
       "summer": false,
       "text": ""
     },
-    "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6675,7 +6575,7 @@
   "Topics in Literature": {
     "ID": "4960",
     "cross listed": [],
-    "description": "Experimental courses tried out in one or two terms.",
+    "description": "",
     "name": "Topics in Literature",
     "offered": {
       "even": false,
@@ -6727,9 +6627,7 @@
       "summer": false,
       "text": ""
     },
-    "prerequisites": [
-      "PSYC-1200"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6756,7 +6654,28 @@
       "HI": false,
       "major_restricted": false
     },
-    "subj": "STSO"
+    "subj": "STSS"
+  },
+  "Topics in Science and Technology Studies, Anthropology/ Archaeology, History, Political Science, or Sociology": {
+    "ID": "1960",
+    "cross listed": [],
+    "description": "",
+    "name": "Topics in Science and Technology Studies, Anthropology/ Archaeology, History, Political Science, or Sociology",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSS"
   },
   "Topics in Writing": {
     "ID": "4960",
@@ -6803,15 +6722,15 @@
   "Topics in the History and Analysis of Music": {
     "ID": "4500",
     "cross listed": [],
-    "description": "This course illuminates specific musical works and performances in depth, drawn from a range of periods, cultures, and genres by analyzing them in their historical, cultural, technological, and critical context. The emphasis is on music since 1900 and sample topics might include Remix in Digital Culture, Music in Protest and Social Justice, Gender and Sexuality in Music, Music and the Moving Image, and Sounding Identity, among others",
+    "description": "This course illuminates specific musical works in depth, drawn from a range of periods and cultures, by analyzing them in their historical, cultural, and critical context. The emphasis is on music since 1900, while including coverage of older works, and on the creative choices made by composers working within particular genres and repertoires. Ability to read Western music notation is required.",
     "name": "Topics in the History and Analysis of Music",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6830,9 +6749,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6849,11 +6768,11 @@
     "name": "Undergraduate Thesis",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
-      "summer": true,
-      "text": "fall, spring, and summer terms annually."
+      "spring": false,
+      "summer": false,
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6870,11 +6789,11 @@
     "name": "Visual Culture",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6890,12 +6809,12 @@
     "description": "This course introduces students to the theoretical and practical use of graphics as a form of visual communication. Discussions include topics such as the psychology of visual perception, design theory, creative process, formatted text, and graphics. Students have an opportunity to put theory into practice using computer graphics.",
     "name": "Visual Design: Theory and Application",
     "offered": {
-      "even": true,
-      "fall": true,
+      "even": false,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term, even-numbered years"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6912,11 +6831,11 @@
     "name": "Visual Poetics and Narrative",
     "offered": {
       "even": false,
-      "fall": true,
-      "odd": true,
+      "fall": false,
+      "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term, odd-numbered years"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6933,11 +6852,11 @@
     "name": "War and Society",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6954,11 +6873,11 @@
     "name": "War and Technology: Past, Present, and Future",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -6977,13 +6896,11 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ITWS-2110"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6998,15 +6915,13 @@
     "name": "Web Systems Development",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "ITWS-1100"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7021,15 +6936,15 @@
     "name": "Well-being: Cultivating Curiosity",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -7042,11 +6957,11 @@
     "name": "Women Writers",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -7063,11 +6978,11 @@
     "name": "World Music",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually"
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -7088,11 +7003,9 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "upon availability."
+      "text": ""
     },
-    "prerequisites": [
-      "ARTS-1030"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7109,9 +7022,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -7130,20 +7043,17 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "GSAS-2520",
-      "WRIT-2330"
-    ],
+    "prerequisites": [],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "GSAS"
+    "subj": "COMM"
   },
   "Writing for Games II": {
     "ID": "4250",
@@ -7152,21 +7062,40 @@
     "name": "Writing for Games II",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "fall term annually."
+      "text": ""
     },
-    "prerequisites": [
-      "GSAS-4240"
-    ],
+    "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
-    "subj": "GSAS"
+    "subj": "COMM"
+  },
+  "Writing for the Screen": {
+    "ID": "2110",
+    "cross listed": [],
+    "description": "In this course students consider how different \"screens,\" from mobile apps to motion pictures, require different approaches to communication. Students learn to critically read, write, and create various genres of visual media, including educational, entertainment, experimental, informational, and commercial content for film, television, Internet, and mobile media. The course invites students to solve challenging communication problems, explore how media shape worldviews and identities, and reflect on how compelling stories bring about new ways of \"seeing.\"",
+    "name": "Writing for the Screen",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "COMM"
   },
   "Writing in Context": {
     "ID": "1110",
@@ -7175,11 +7104,11 @@
     "name": "Writing in Context",
     "offered": {
       "even": false,
-      "fall": true,
+      "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "fall and spring terms annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {
@@ -7198,9 +7127,9 @@
       "even": false,
       "fall": false,
       "odd": false,
-      "spring": true,
+      "spring": false,
       "summer": false,
-      "text": "spring term annually."
+      "text": ""
     },
     "prerequisites": [],
     "properties": {

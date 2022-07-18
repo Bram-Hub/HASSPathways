@@ -55,7 +55,7 @@ def course_from_string(inp, depts):
                 if inp[fnd+5] != '6':
                     return inp[fnd:fnd+4] + inp[fnd+5:fnd+9]
 
-def handle_electives(cont, courses, depts):
+def handle_electives(cont, courses, depts, year):
     level = '0'
     for char in cont:
         if char.isdigit():
@@ -70,7 +70,8 @@ def handle_electives(cont, courses, depts):
             break
     if subj == "TEMP":
         return
-    f = open('../../frontend/src/data/json/courses.json', 'r')
+    path = '../../frontend/src/data/json/' + str(year)
+    f = open(path + '/courses.json', 'r')
     all_courses = json.load(f)
     for course in all_courses:
         ID = all_courses[course]["ID"]
@@ -79,7 +80,7 @@ def handle_electives(cont, courses, depts):
             courses[course] = subjC+ID
     f.close()
 
-def parse_courses(core, name):
+def parse_courses(core, name, year):
     courses = {}
     depts = []
     f = open('depts.json', 'r')
@@ -109,7 +110,7 @@ def parse_courses(core, name):
                 courses[crs] = crs
             # handle as an elective meaning we will have to some funky stuff
             elif "elective" in cont.lower() or "any" in cont.lower() or "level" in cont.lower():
-                handle_electives(cont, courses, depts)
+                handle_electives(cont, courses, depts, year)
             else:
                 subjID = course_from_string(cont, depts)
                 name = ""
@@ -131,7 +132,7 @@ def parse_courses(core, name):
         courses[name] = subjID
     return courses
 
-def get_pathway_data(pathway_ids: List[str]) -> Dict:
+def get_pathway_data(pathway_ids: List[str], catalog_id, year) -> Dict:
     data = {}
 
     ids = "".join([f"&ids[]={path}" for path in pathway_ids])
@@ -154,10 +155,10 @@ def get_pathway_data(pathway_ids: List[str]) -> Dict:
             anchor_name = core.xpath("./anchors/a")[0].get('name').lower()
 
             if "required" in anchor_name:
-                courses = parse_courses(core, name)
+                courses = parse_courses(core, name, year)
                 data[name]["Required"] = courses
             elif "oneof" in anchor_name:
-                courses = parse_courses(core, name)
+                courses = parse_courses(core, name, year)
                 one_of_name = "One Of" + str(one_of_index)
                 data[name][one_of_name] = courses
                 one_of_index += 1
@@ -165,28 +166,21 @@ def get_pathway_data(pathway_ids: List[str]) -> Dict:
                 minors = list(filter(lambda x: x != "", [minor.replace("Minor", "").replace("minor", "").strip() for minor in core.xpath("./content/descendant::*/text()")]))
                 data[name]["minor"] = minors
             else:
-                courses = parse_courses(core, name)
+                courses = parse_courses(core, name, year)
                 data[name]["Remaining"] = courses
                 data[name]["remaining_header"] = core.xpath("./title/text()")[0].strip()
     return data
 
-if __name__ == "__main__":
-    if sys.argv[-1] == "help" or sys.argv[-1] == "--help":
-        print(f"USAGE: python3 {sys.argv[0]} [ALL_YEARS]")
-        sys.exit(1)
-
+def scrape_pathways():
+    print("Starting pathway scraping")
     catalogs = get_catalogs()
 
-    if sys.argv[-1] != "ALL_YEARS":
-        print("Parsing single year")
-        catalogs = catalogs[:1]
-    else:
-        print("Parsing all years")
-
+    catalogs = catalogs[:4]
+    pathways_per_year = {}
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         pathway_ids = get_pathway_ids(catalog_id)
-        data = get_pathway_data(pathway_ids)
+        data = get_pathway_data(pathway_ids, catalog_id, year)
 
-        f = open('../../frontend/src/data/json/pathways.json', 'w')
-        json.dump(data, f, sort_keys=True, indent=4, ensure_ascii=False)
-        f.close()
+        pathways_per_year[year] = data
+    print("Finished pathway scraping")
+    return pathways_per_year
