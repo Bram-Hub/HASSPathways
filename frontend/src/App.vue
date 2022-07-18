@@ -6,7 +6,7 @@
             <router-view />
         </v-main>
 
-        <Footer />
+        <Footer id="footer" />
     </v-app>
 </template>
 
@@ -58,7 +58,7 @@ export default {
     overflow-y: hidden;
 }
 
-Footer {
+#footer {
     position: fixed;
     bottom: 0;
     width: 100%;
