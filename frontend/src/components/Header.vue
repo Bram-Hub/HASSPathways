@@ -8,23 +8,26 @@
                 :src="this.$vuetify.theme.dark ? require('../assets/dark-mode-logo.png') : require('../assets/light-mode-logo.png')"
             />
         </router-link>
-
         <v-container fluid>
             <v-layout row align-center justify-end>
+                <YearSelection />
                 <DarkLightModeButton />
                 <HeaderNav />
             </v-layout>
         </v-container>
     </v-app-bar>
-</template>
+</template>       
 
 <script>
 import DarkLightModeButton from './DarkLightModeButton.vue'
 import HeaderNav from './HeaderNav.vue'
+import YearSelection from '../components/YearSelection.vue'
 
 export default {
     name: 'Header',
-    components: { DarkLightModeButton, HeaderNav }
+    components: { DarkLightModeButton, 
+    HeaderNav,
+    YearSelection }
 }
 </script>
 
