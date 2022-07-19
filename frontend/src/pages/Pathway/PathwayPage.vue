@@ -335,10 +335,10 @@ export default {
     font-weight: bolder;
 }
 #graphTabs {
-    /* flex: 1 1 20vw; */
     display: flex;
     flex: auto;
-    /* max-width: 20vw; */
+    gap: 1%;
+    flex-wrap: wrap;
 }
 
 .graph-fab-container {
