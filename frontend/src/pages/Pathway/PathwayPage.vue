@@ -338,7 +338,12 @@ export default {
     display: flex;
     flex: auto;
     gap: 1%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+}
+@media only screen and (max-width: 850px) {
+    #graphTabs {
+        flex-wrap: wrap;
+    }
 }
 
 .graph-fab-container {
