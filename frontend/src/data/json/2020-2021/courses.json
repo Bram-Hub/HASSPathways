@@ -266,7 +266,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -308,7 +308,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -350,7 +350,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -602,7 +602,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -665,7 +665,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -686,7 +686,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -728,7 +728,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -896,7 +896,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -1085,7 +1085,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -1337,7 +1337,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -1505,7 +1505,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -1547,7 +1547,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -1652,7 +1652,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -1778,7 +1778,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -1820,7 +1820,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2093,7 +2093,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2156,7 +2156,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2177,7 +2177,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2282,7 +2282,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2324,7 +2324,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2450,7 +2450,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2492,7 +2492,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2828,7 +2828,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -2870,7 +2870,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2933,7 +2933,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2954,7 +2954,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2975,7 +2975,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -3038,7 +3038,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3185,7 +3185,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3563,7 +3563,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3731,7 +3731,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3962,7 +3962,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -4046,7 +4046,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -4340,7 +4340,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -4382,7 +4382,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -4424,7 +4424,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -4529,7 +4529,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -4655,7 +4655,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -4676,7 +4676,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -4697,7 +4697,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -4739,7 +4739,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -4844,7 +4844,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5075,7 +5075,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5096,7 +5096,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5369,7 +5369,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -5474,7 +5474,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5495,7 +5495,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5516,7 +5516,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5600,7 +5600,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5642,7 +5642,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5663,7 +5663,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5684,7 +5684,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -5810,7 +5810,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5873,7 +5873,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5978,7 +5978,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -6062,7 +6062,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -6104,7 +6104,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -6251,7 +6251,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -6272,7 +6272,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -6356,7 +6356,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -6419,7 +6419,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -6482,7 +6482,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -6776,7 +6776,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -6965,7 +6965,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -6986,7 +6986,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7028,7 +7028,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7049,7 +7049,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7070,7 +7070,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7091,7 +7091,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7112,7 +7112,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },

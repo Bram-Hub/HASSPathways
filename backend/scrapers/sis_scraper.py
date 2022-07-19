@@ -34,6 +34,7 @@ def get_ci_courses(text):
     for i in range(len(titles)):
         title = BeautifulSoup(titles[i], features='lxml').find('a').get_text()
         course_details = details[i]
+        print(i)
         if "Course Attributes: " in course_details \
         and "Communication Intensive" in course_details:
             ci_courses.append(title)
@@ -69,14 +70,15 @@ async def get_all_ci_courses(term, subjects):
                 "https://sis.rpi.edu/rss/bwckctlg.p_display_courses",
                 data=f"term_in={term}&call_proc_in=&sel_subj=dummy&sel_levl=dummy&sel_schd=dummy&sel_coll=dummy&sel_divs=dummy&sel_dept=dummy&sel_attr=dummy&sel_subj={subj}&sel_crse_strt=&sel_crse_end=&sel_title=&sel_levl=%25&sel_schd=%25&sel_coll=%25&sel_divs=%25&sel_dept=%25&sel_from_cred=&sel_to_cred=&sel_attr=%25",
             ) as request:
+                print(f"term_in={term}&call_proc_in=&sel_subj=dummy&sel_levl=dummy&sel_schd=dummy&sel_coll=dummy&sel_divs=dummy&sel_dept=dummy&sel_attr=dummy&sel_subj={subj}&sel_crse_strt=&sel_crse_end=&sel_title=&sel_levl=%25&sel_schd=%25&sel_coll=%25&sel_divs=%25&sel_dept=%25&sel_from_cred=&sel_to_cred=&sel_attr=%25")
                 html = await request.text()
-                print(f"Finished getting {subj}")
                 ci_courses += get_ci_courses(html)
     return ci_courses
 
-async def scrape_CI(year = None, semester_type = None):
-    print("Starting CI course scraping")
+async def scrape_CI(year = None, semester_type = None, file = None):
     term = ""
+    if file is None:
+        raise Exception("invalid input arguments")
     if year is not None and semester_type is None:   raise Exception("invalid input arguments")
     elif year is None and semester_type is not None: raise Exception("invalid input arguments")
     elif year is None and semester_type is None:
@@ -93,27 +95,21 @@ async def scrape_CI(year = None, semester_type = None):
     subjects = get_departments()
 
     ci_courses = await get_all_ci_courses(term, subjects)
-    print("Finished CI course scraping")
-    overwrite_courses_json(ci_courses)
+    overwrite_courses_json(ci_courses, file)
 
-def overwrite_courses_json(ci_courses):
-    json_path = "../../frontend/src/data/json/courses.json"
+def overwrite_courses_json(ci_courses, file):
     set_ci_courses = set()
     for i in ci_courses:
         ci_id = f"{i[:4]} {i[5:9]}"
         set_ci_courses.add(ci_id)
 
-    f = open(json_path)
-    courses= json.load(f)
+    f = open(file)
+    courses = json.load(f)
     f.close()
     for i in courses.keys():
         value = courses[i]
         courses_id = f"{value['subj']} {value['ID']}"
         if courses_id in set_ci_courses:
             courses[i]["properties"]["CI"] = True
-    with open(json_path, "w") as f:
+    with open(file, "w") as f:
         json.dump(courses, f, ensure_ascii=False, indent=2)
-
-
-if __name__ == '__main__':
-    asyncio.run(scrape_CI())

@@ -73,17 +73,6 @@ def get_catalog_description(fields, course_name):
 
     return ""
 
-def obtain_CI(name, CI_file):
-    csv_file = open(CI_file, 'r')
-    reader = csv.reader(csv_file)
-
-    for row in reader:
-        course_name = row[2]
-        if name.strip().lower() == course_name.strip().lower():
-            return True
-
-    return False
-
 def courses_from_string(inp):
     depts = []
 
@@ -102,7 +91,7 @@ def courses_from_string(inp):
                     crses.add(inp[fnd:fnd+4] + '-' + inp[fnd+5:fnd+9])
     return list(crses)
 
-def get_course_data(course_ids: List[str], catalog_id, CI_file) -> Dict:
+def get_course_data(course_ids: List[str], catalog_id) -> Dict:
     data = {}
     # Break the courses into chunks of CHUNK_SIZE to make the api happy
     course_chunks = [
@@ -184,7 +173,7 @@ def get_course_data(course_ids: List[str], catalog_id, CI_file) -> Dict:
                     "text": offered_text
                 },
                 "properties": {
-                    "CI": obtain_CI(course_name, CI_file),
+                    "CI": False,
                     "HI": True if subj == "IHSS" else False,
                     "major_restricted": False
                 },
@@ -194,7 +183,7 @@ def get_course_data(course_ids: List[str], catalog_id, CI_file) -> Dict:
 
     return data
 
-def scrape_courses(CI_file):
+def scrape_courses():
     print("Starting courses scraping")
     catalogs = get_catalogs()
 
@@ -202,7 +191,7 @@ def scrape_courses(CI_file):
     courses_per_year = {}
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         course_ids = get_course_ids(catalog_id)
-        data = get_course_data(course_ids, catalog_id, CI_file)
+        data = get_course_data(course_ids, catalog_id)
 
         courses_per_year[year] = data
     print("Finished courses scraping")

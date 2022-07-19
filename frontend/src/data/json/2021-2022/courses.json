@@ -150,7 +150,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": true,
       "major_restricted": false
     },
@@ -373,7 +373,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -395,8 +395,8 @@
       "text": "spring term, even-numbered years"
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": false,
@@ -442,8 +442,8 @@
       "text": "fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -511,7 +511,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -575,8 +575,8 @@
       "text": "spring term annually"
     },
     "prerequisites": [
-      "ARTS-1020",
-      "IHSS-1030"
+      "IHSS-1030",
+      "ARTS-1020"
     ],
     "properties": {
       "CI": false,
@@ -641,8 +641,8 @@
       "text": "fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -665,8 +665,8 @@
       "text": "fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -737,8 +737,8 @@
       "text": "spring term annually"
     },
     "prerequisites": [
-      "STSO-2510",
       "IHSS-1160",
+      "STSO-2510",
       "PHIL-1110"
     ],
     "properties": {
@@ -762,8 +762,8 @@
       "text": "fall term annually"
     },
     "prerequisites": [
-      "ARTS-1020",
-      "IHSS-1030"
+      "IHSS-1030",
+      "ARTS-1020"
     ],
     "properties": {
       "CI": false,
@@ -831,7 +831,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -1058,8 +1058,8 @@
       "text": "fall and spring terms annually."
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": false,
@@ -1233,8 +1233,8 @@
       "text": "fall and spring terms annually"
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -1323,7 +1323,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -1344,7 +1344,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -1411,7 +1411,7 @@
       "COGS-2340"
     ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -1690,7 +1690,7 @@
       "IHSS-1610"
     ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -1754,8 +1754,8 @@
       "text": "upon availability of instructor."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -1948,8 +1948,8 @@
       "text": "spring term even years"
     },
     "prerequisites": [
-      "ARTS-1020",
-      "IHSS-1030"
+      "IHSS-1030",
+      "ARTS-1020"
     ],
     "properties": {
       "CI": false,
@@ -1972,9 +1972,9 @@
       "text": "fall and spring terms annually."
     },
     "prerequisites": [
+      "IHSS-1200",
       "ECON-1200",
-      "PSYC-2310",
-      "IHSS-1200"
+      "PSYC-2310"
     ],
     "properties": {
       "CI": false,
@@ -2020,8 +2020,8 @@
       "text": "fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -2044,8 +2044,8 @@
       "text": "spring term annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -2068,8 +2068,8 @@
       "text": "fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -2092,8 +2092,8 @@
       "text": "upon availability of instructor."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -2139,11 +2139,11 @@
       "text": "fall term annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -2163,11 +2163,11 @@
       "text": "upon availability of instructor."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -2254,8 +2254,8 @@
       "text": "spring term annually."
     },
     "prerequisites": [
-      "IHSS-1110",
-      "STSO-1110"
+      "STSO-1110",
+      "IHSS-1110"
     ],
     "properties": {
       "CI": true,
@@ -2278,8 +2278,8 @@
       "text": "upon availability of instructor."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -2437,8 +2437,8 @@
       "text": "spring term annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -2506,7 +2506,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -2527,7 +2527,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": true,
       "major_restricted": false
     },
@@ -2548,7 +2548,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": true,
       "major_restricted": false
     },
@@ -2855,8 +2855,8 @@
       "text": "spring term annually."
     },
     "prerequisites": [
-      "COMM-4240",
-      "GSAS-2520"
+      "GSAS-2520",
+      "COMM-4240"
     ],
     "properties": {
       "CI": false,
@@ -2882,7 +2882,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -2928,7 +2928,7 @@
       "STSO-2300"
     ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -3013,8 +3013,8 @@
       "text": "fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -3038,7 +3038,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -3059,7 +3059,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -3101,7 +3101,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3142,8 +3142,8 @@
       "text": "fall term, odd-numbered years."
     },
     "prerequisites": [
-      "IHSS-1410",
-      "STSO-1110"
+      "STSO-1110",
+      "IHSS-1410"
     ],
     "properties": {
       "CI": true,
@@ -3166,8 +3166,8 @@
       "text": "spring term, odd-numbered years"
     },
     "prerequisites": [
-      "IHSS-1410",
-      "STSO-1110"
+      "STSO-1110",
+      "IHSS-1410"
     ],
     "properties": {
       "CI": false,
@@ -3193,7 +3193,7 @@
       "IHSS-1420"
     ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -3396,7 +3396,7 @@
       "ITWS-2210"
     ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -3684,8 +3684,8 @@
       "text": "upon availability of instructor."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -3710,8 +3710,8 @@
       "text": "spring term annually."
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": false,
@@ -3798,7 +3798,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -3861,7 +3861,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -3903,7 +3903,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -4158,8 +4158,8 @@
       "text": "spring term annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -4404,8 +4404,8 @@
       "text": "spring term annually."
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": false,
@@ -4561,7 +4561,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -4581,8 +4581,8 @@
       "text": "fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -4762,11 +4762,11 @@
       "text": "upon availability of instructor."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -5027,8 +5027,8 @@
       "text": "spring term odd-numbered years."
     },
     "prerequisites": [
-      "STSS-2210",
-      "STSO-2010"
+      "STSO-2010",
+      "STSS-2210"
     ],
     "properties": {
       "CI": false,
@@ -5223,7 +5223,7 @@
       "COMM-2520"
     ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -5355,7 +5355,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": true,
       "major_restricted": false
     },
@@ -5483,7 +5483,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -5610,8 +5610,8 @@
       "text": "fall, spring, and summer terms annually."
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": true,
@@ -5725,8 +5725,8 @@
       "text": "spring term annually"
     },
     "prerequisites": [
-      "ARTS-1020",
-      "IHSS-1030"
+      "IHSS-1030",
+      "ARTS-1020"
     ],
     "properties": {
       "CI": true,
@@ -5794,7 +5794,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -6365,7 +6365,7 @@
       "STSO-2300"
     ],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -6495,7 +6495,7 @@
       "COGS-2340"
     ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -6599,8 +6599,8 @@
       "text": ""
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -6815,7 +6815,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -6941,7 +6941,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": true,
       "major_restricted": false
     },
@@ -7029,7 +7029,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": true,
       "major_restricted": false
     },
@@ -7162,7 +7162,7 @@
       "GSAS-4240"
     ],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },

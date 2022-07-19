@@ -4,13 +4,15 @@ import sis_scraper
 import asyncio
 import os
 import json
+from tqdm import tqdm
+
 if __name__ == "__main__":
     years = list(map(lambda x: x[0], courses_scraper.get_catalogs()))
     years = years[:4]
-    CI_file = asyncio.run(sis_scraper.scrape_CI())
-    all_courses = courses_scraper.scrape_courses(CI_file)
+    all_courses = courses_scraper.scrape_courses()
 
-    for year in years:
+    print("Started scraping CI courses")
+    for year in tqdm(years):
         path = '../../frontend/src/data/json/' + str(year)
         try:
             # Make dir if does not already exist
@@ -20,6 +22,12 @@ if __name__ == "__main__":
         f = open(path + '/courses.json', 'w')
         json.dump(all_courses[year], f, sort_keys=True, indent=2, ensure_ascii=False)
         f.close()
+        split_years = [year[:4], year[5:]]
+        asyncio.run(sis_scraper.scrape_CI(split_years[0], "fall", path + '/courses.json'))
+        asyncio.run(sis_scraper.scrape_CI(split_years[1], "spring", path + '/courses.json'))
+        asyncio.run(sis_scraper.scrape_CI(split_years[1], "summer", path + '/courses.json'))
+    print("Finished scraping CI courses")
+
     all_pathways = pathway_scraper.scrape_pathways()
     for year in years:
         path = '../../frontend/src/data/json/' + str(year)
@@ -27,4 +35,3 @@ if __name__ == "__main__":
         f = open(path + '/pathways.json', 'w')
         json.dump(all_pathways[year], f, sort_keys=True, indent=2, ensure_ascii=False)
         f.close()
-    os.remove(CI_file)
