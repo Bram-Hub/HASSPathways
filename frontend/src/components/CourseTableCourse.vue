@@ -214,9 +214,7 @@ export default {
         line-height: 1.05em;
         display: inline-block;
         font-size: 1.2em !important;
-        // width: fit-content;
-        width: min(200px, 100%);
-        // width: min(100px, 70%);
+        width: 100%;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -252,6 +250,7 @@ export default {
 
     .class-card__title {
         font-size: 1em !important;
+        width: min(200px, 100%);
     }
 }
 .courseCard {
