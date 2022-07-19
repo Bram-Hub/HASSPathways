@@ -64,6 +64,14 @@ export default {
             
             return mods;
         }
+    },
+    mounted() {
+        this.debug();
+    },
+    methods: {
+        debug() {
+            console.log( this.myModifiers );
+        }
     }
 }
 </script>

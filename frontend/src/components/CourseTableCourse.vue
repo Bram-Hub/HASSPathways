@@ -222,7 +222,8 @@ export default {
 
     .class-card__subtitle {
         font-size: 0.9em;
-        display: block;
+        display: flex;
+        flex-direction: column;
 
         .class-card__subtitle__modifiers {
             transform: scale(0.75);
