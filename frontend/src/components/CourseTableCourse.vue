@@ -68,7 +68,9 @@
         >
             <v-list-item one-line>
                 <v-list-item-content class="pb-0">
-                    <v-checkbox
+                    
+                    <div style="cursor: pointer" :class="{courseCard: graph}">
+                            <v-checkbox
                                 :input-value="selected"
                                 :false-value="0"
                                 :true-value="1"
@@ -76,11 +78,9 @@
                                 color="primary"
                                 value="primary"
                                 hide-details
-                                class="d-inline-block ma-0 float-right"
+                                class="ma-0 checkbox"
                                 style="z-index: 99"
                             />
-                    <div style="cursor: pointer" :class="{courseCard: graph}">
-
                         <h1 class="text-h5 class-card__title">
                             
                             {{ course.name }}
@@ -242,6 +242,10 @@ export default {
     .class-card__desc {
         padding: 8px 20px;
     }
+}
+.checkbox {
+    position: absolute;
+    right: 15px;
 }
 
 
