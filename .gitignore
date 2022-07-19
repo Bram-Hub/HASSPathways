@@ -5,3 +5,4 @@ launch.json
 package-lock.json
 package.json
 frontend/package-lock.json
+*.pyc
