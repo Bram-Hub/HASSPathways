@@ -84,24 +84,6 @@ def obtain_CI(name):
 
     return False
 
-def courses_from_string(inp):
-    depts = []
-
-    f = open('depts.json', 'r')
-    f = json.load(f)
-
-    for dept in f:
-        depts.append(dept)
-
-    crses = set()
-    for dept in depts:
-        fnd = inp.find(dept)
-        if fnd != -1:
-            if inp[fnd+8].isdigit():
-                if inp[fnd+5] != '6':
-                    crses.add(inp[fnd:fnd+4] + '-' + inp[fnd+5:fnd+9])
-    return list(crses)
-
 def get_course_data(course_ids: List[str]) -> Dict:
     data = {}
     # Break the courses into chunks of CHUNK_SIZE to make the api happy
@@ -138,17 +120,10 @@ def get_course_data(course_ids: List[str]) -> Dict:
             even = False
             odd = False
             offered_text = ""
-            cross_listed = []
-            prereqs = []
+            prereqs = "None"
 
             for field in fields:
-                if field.get("type") == 'acalog-field-522':
-                    field_text = field.xpath("./data/text()")
-                    if len(field_text) > 0:
-                        field_text = field_text[0].strip().upper()
-                        cross_listed = courses_from_string(field_text)
-
-                elif field.get("type") == 'acalog-field-519':
+                if field.get("type") == 'acalog-field-519':
                     field_text = field.xpath("./data/text()")
                     if len(field_text) > 0:
                         # print(field_text)
@@ -167,8 +142,7 @@ def get_course_data(course_ids: List[str]) -> Dict:
                 elif field.get("type") == 'acalog-field-517':
                     field_text = field.xpath("./data/p/text()")
                     if len(field_text) > 0:
-                        field_text = field_text[0].strip().upper()
-                        prereqs = courses_from_string(field_text)
+                        prereqs = field_text[0].strip()
 
             data[course_name] = {
                 "subj": subj,
@@ -188,7 +162,6 @@ def get_course_data(course_ids: List[str]) -> Dict:
                     "HI": True if subj == "IHSS" else False,
                     "major_restricted": False
                 },
-                "cross listed": cross_listed,
                 "prerequisites": prereqs
             }
 
@@ -211,6 +184,6 @@ if __name__ == "__main__":
         course_ids = get_course_ids(catalog_id)
         data = get_course_data(course_ids)
 
-        f = open('../../frontend/src/data/json/courses.json', 'w')
+        f = open('courses.json', 'w')
         json.dump(data, f, sort_keys=True, indent=2, ensure_ascii=False)
         f.close()

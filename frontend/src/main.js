@@ -40,10 +40,8 @@ const store = new Vuex.Store({
         //List of classes taken, stores them in the format of DEPT-LEVEL
         classes: {},
         // List of pathways that have been bookmarked
-        bookmarkedPathways: {},
-        // The calendar year to display the information about
-        year: "2021-2022"
-
+        bookmarkedPathways: {}
+        
     },
     plugins: [createPersistedState()],
     mutations: {
@@ -56,9 +54,6 @@ const store = new Vuex.Store({
         setDarkMode(state, val=true) {
             state.darkMode = val;
             localStorage.setItem(DARK_MODE, val);
-        },
-        changeYear(state,newYear) {
-            state.year = newYear;
         },
         updateCourses(state, { pathwayID, newCourses }) {
             checkDefaultCourses(state, pathwayID);
@@ -86,7 +81,7 @@ const store = new Vuex.Store({
         },
         addClass(state, name) {
             if(!state.classes[name])
-                state.classes[name] = name;
+                state.classes[name] = name; 
         },
         delClass(state, name) {
             if(state.classes[name])
@@ -104,7 +99,7 @@ const store = new Vuex.Store({
                 } else {
                     state.pathways[pathwayID].bookmarked = true;
                 }
-            }
+            } 
         },
         bookmarkPathway(state, pathwayID) {
             if (state.pathways[pathwayID]) {
@@ -129,7 +124,7 @@ const store = new Vuex.Store({
             }
 
         }
-
+        
     }
 });
 

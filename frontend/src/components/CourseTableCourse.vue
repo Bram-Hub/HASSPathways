@@ -1,52 +1,115 @@
 <template>
-    <v-card
-        :class="[selectedClass(), 'w-100', 'my-2', 'class-card', {graph: graphView}]"
-        fluid
-        outlined
-        @click="toggleCheckbox()"
-        @keydown.13="toggleCheckbox()"
-    >
-        <v-list-item one-line>
-            <v-list-item-content class="pb-0">
-                <div style="cursor: pointer">
-                    <h1 class="text-h5 class-card__title">
-                        <v-checkbox
-                            :input-value="selected"
-                            :false-value="0"
-                            :true-value="1"
+    <div>
+        <v-tooltip v-show="hover" bottom>
+            <template #activator="{ on, attrs }">
+                <v-card
+                    v-show="hover"
+                    :class="[selectedClass(), 'w-100', 'my-2', 'class-card', { graph: graph }, 'maxHeight']"
+                    fluid
+                    outlined
+                    v-bind="attrs"
+                    @click="toggleCheckbox()"
+                    @keydown.13="toggleCheckbox()"
+                    v-on="on"
+                >
+                    <v-list-item one-line>
+                        <v-list-item-content class="pb-0">
+                            <div style="cursor: pointer">
+                                <v-checkbox
+                                    :input-value="selected"
+                                    :false-value="0"
+                                    :true-value="1"
+                                    :aria-label="`Toggle selection for ${course.name}`"
+                                    color="primary"
+                                    value="primary"
+                                    hide-details
+                                    class="d-inline-block ma-0 float-right"
+                                    style="z-index: 99"
+                                />
+                                <h1 class="text-h5 class-card__title">
 
-                            :aria-label="`Toggle selection for ${course.name}`"
 
-                            color="primary"
-                            value="primary"
-                            hide-details
-                            class="d-inline-block ma-0 float-right"
-                            style="z-index: 99"
-                        />
-                        {{ course.name }}
-                    </h1>
-                    <small v-if="course.hasData" class="class-card__subtitle">
-                        {{ course.subj }}-{{ course.ID }}
-                        <label v-for="el in course['cross listed']" :key="el">
-                            / {{ el }}
-                        </label>
-                        <CourseTableModifiers
-                            class="mt-4 class-card__subtitle__modifiers"
-                            :class="{graphChange:graphView}"
-                            :item="course"
-                        />
+                                    {{ course.name }}
+                                </h1>
+                                <small v-if="course.hasData" class="class-card__subtitle">
+                                    {{ course.subj }}-{{ course.ID }}
+                                    <CourseTableModifiers
+                                        class="mt-4 class-card__subtitle__modifiers"
+                                        :class="{ graphChange: graph }"
+                                        :item="course"
+                                    />
+                                </small>
+                            </div>
+                        </v-list-item-content>
+                    </v-list-item>
+                    <v-card-text
+                        v-if="course.hasData && desc"
+                        class="class-card__desc"
+                    >
+                        {{ course.description }}
+                    </v-card-text>
+                    <v-card-text
+                        v-if="!course.hasData"
+                        class="class-card__desc"
+                    >
+                        Data not found within RPI catalog, see SIS for more info.
+                    </v-card-text>
+                </v-card>
+            </template>
+            <span v-show="hover">{{ course.description }}</span>
+        </v-tooltip>
+        <v-card
+            v-show="!hover"
+            :class="[selectedClass(), 'w-100', 'my-2', 'class-card', { graph: graph }, 'maxHeight']"
+            fluid
+            outlined
+            @click="toggleCheckbox()"
+            @keydown.13="toggleCheckbox()"
+        >
+            <v-list-item one-line>
+                <v-list-item-content class="pb-0">
+                    <div style="cursor: pointer" :class="{courseCard: graph}">
 
-                    </small>
-                </div>
-            </v-list-item-content>
-        </v-list-item>
-        <v-card-text v-if="course.hasData && showDesc" class="class-card__desc">
-            {{ course.description }}
-        </v-card-text>
-        <v-card-text v-if="!course.hasData" class="class-card__desc">
-            Data not found within RPI catalog, see SIS for more info.
-        </v-card-text>
-    </v-card>
+                        <h1 class="text-h5 class-card__title">
+                            <v-checkbox
+                                v-if="!graph"
+                                :input-value="selected"
+                                :false-value="0"
+                                :true-value="1"
+                                :aria-label="`Toggle selection for ${course.name}`"
+                                color="primary"
+                                value="primary"
+                                hide-details
+                                class="d-inline-block ma-0 float-right"
+                                style="z-index: 99"
+                            />
+                            {{ course.name }}
+                        </h1>
+                        <small v-if="course.hasData" class="class-card__subtitle">
+                            {{ course.subj }}-{{ course.ID }}
+                            <CourseTableModifiers
+                                class="mt-4 class-card__subtitle__modifiers"
+                                :class="{ graphChange: graph }"
+                                :item="course"
+                            />
+                        </small>
+                    </div>
+                </v-list-item-content>
+            </v-list-item>
+            <v-card-text
+                v-if="course.hasData && desc"
+                class="class-card__desc"
+            >
+                {{ course.description }}
+            </v-card-text>
+            <v-card-text
+                v-if="!course.hasData"
+                class="class-card__desc"
+            >
+                Data not found within RPI catalog, see SIS for more info.
+            </v-card-text>
+        </v-card>
+    </div>
 </template>
 
 <script>
@@ -100,9 +163,6 @@ export default {
             console.log(this.hover);
             // this.hover = !this.hover;
         },
-        func(el) {
-            console.log(el);
-        },
         toggleCheckbox() {
             let selection = window.getSelection();
             if (selection.isCollapsed) {
@@ -110,9 +170,9 @@ export default {
 
                 // Save selection
                 const c = { pathwayID: this.pathwayId, course: this.course.name };
-                if (this.selected){
+                if (this.selected) {
                     this.$store.commit('addCourse', c);
-                    this.$emit('checkbox-clicked')
+                    this.$emit('checkbox-clicked', { name: this.course.name, selected: true });
                 } else {
                     this.$store.commit('delCourse', c);
                     this.$emit('checkbox-clicked', { name: this.course.name, selected: false });

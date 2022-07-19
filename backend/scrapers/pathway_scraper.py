@@ -56,7 +56,6 @@ def parse_body(page):
     body = {}
     body["name"] = name
     body["description"] = page.find_all("p")[4].get_text()
-    one_of = 0
     for tag in page.find_all("div", "acalog-core"):
         header = tag.find_all("h2")
         if len(header) == 0:
@@ -65,11 +64,10 @@ def parse_body(page):
         header = header[0].get_text()
         if header == "Required:":
             temp = parse_courses(tag)
-            body["Required"] = temp
-        elif "one of" in header.lower():
+            body["required"] = temp
+        elif header == "Choose one of the following:":
             temp = parse_courses(tag)
-            body["One Of" + str(one_of)] = temp
-            one_of += 1
+            body["one_of"] = temp
         elif "compatible minor" in header.lower():
             temp = set()
             for a in tag.find_all("a"):
@@ -88,7 +86,7 @@ def parse_body(page):
         else:
             body["remaining_header"] = header
             temp = parse_courses(tag)
-            body["Remaining"] = temp
+            body["remaining"] = temp
 
     return body
 
