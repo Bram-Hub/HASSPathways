@@ -128,7 +128,6 @@
 <script>
 import { pathwayCategories, pathways, courses } from '../../data/data.js'
 import CourseTable from '../../components/CourseTable'
-// import GraphTab from '../../components/GraphTab.vue'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import YearSelection from '../../components/YearSelection'
