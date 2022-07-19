@@ -21,12 +21,13 @@ from bs4 import BeautifulSoup
 # 
 # https://github.com/quacs/quacs/blob/master/scrapers/sis_scraper/util.py#L42-L85
 
-
+# See the following for an example of the api:
+# https://sis.rpi.edu/rss/bwckctlg.p_display_courses?term_in=202204&sel_crse_strt=0&sel_crse_end=9999&sel_subj=&sel_levl=&sel_schd=&sel_coll=&sel_divs=&sel_dept=&sel_attr=
 def get_ci_courses(text):
     soup = BeautifulSoup(text, 'html.parser')
-    table = soup.find('table', {"class": "datadisplaytable"})
-    table_text = str(table)
-    entries = table_text.split("<tr>")[1:]
+    tables = text.split("datadisplaytable")
+
+    entries = tables[1].split("<tr>")[1:]
     titles = entries[::2]
     details = entries[1::2]
 
@@ -41,11 +42,21 @@ def get_ci_courses(text):
 
     return ci_courses
 
-def get_departments():
-    f = open("depts.json")
-    data = json.load(f)
-    f.close()
-    return data
+async def get_term_subjects(term):
+    async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(limit=5)) as session:
+            async with session.post(
+                    "https://sis.rpi.edu/rss/bwckctlg.p_display_courses",
+                    data = f"term_in={term}&sel_crse_strt=0&sel_crse_end=9999&sel_subj=&sel_levl=&sel_schd=&sel_coll=&sel_divs=&sel_dept=&sel_attr="
+            ) as request:
+                html = await request.text()
+
+    soup = BeautifulSoup(html, 'html.parser')
+    subjects = []
+    for element in soup.find_all("option"):
+        subjects.append(element["value"])
+
+    subjects.sort() # Sort for appealing reasons
+    return subjects
  
 def get_closest_semester():
     d = date.today()
@@ -75,6 +86,25 @@ async def get_all_ci_courses(term, subjects):
                 ci_courses += get_ci_courses(html)
     return ci_courses
 
+def overwrite_courses_json(ci_courses, file):
+    set_ci_courses = set()
+    for i in ci_courses:
+        ci_id = f"{i[:4]} {i[5:9]}"
+        set_ci_courses.add(ci_id)
+
+    f = open(file)
+    courses = json.load(f)
+    f.close()
+    for i in courses.keys():
+        value = courses[i]
+        courses_id = f"{value['subj']} {value['ID']}"
+        if courses_id in set_ci_courses:
+            courses[i]["properties"]["CI"] = True
+    with open(file, "w") as f:
+        json.dump(courses, f, ensure_ascii=False, indent=2)
+
+
+
 async def scrape_CI(year = None, semester_type = None, file = None):
     term = ""
     if file is None:
@@ -92,24 +122,7 @@ async def scrape_CI(year = None, semester_type = None, file = None):
         sem_num = possible_semesters[semester_type]
         term = str(year) + sem_num
 
-    subjects = get_departments()
+    subjects = await get_term_subjects(term)
 
     ci_courses = await get_all_ci_courses(term, subjects)
     overwrite_courses_json(ci_courses, file)
-
-def overwrite_courses_json(ci_courses, file):
-    set_ci_courses = set()
-    for i in ci_courses:
-        ci_id = f"{i[:4]} {i[5:9]}"
-        set_ci_courses.add(ci_id)
-
-    f = open(file)
-    courses = json.load(f)
-    f.close()
-    for i in courses.keys():
-        value = courses[i]
-        courses_id = f"{value['subj']} {value['ID']}"
-        if courses_id in set_ci_courses:
-            courses[i]["properties"]["CI"] = True
-    with open(file, "w") as f:
-        json.dump(courses, f, ensure_ascii=False, indent=2)
