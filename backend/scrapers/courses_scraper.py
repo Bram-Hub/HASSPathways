@@ -131,17 +131,14 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
             prereqs = []
 
             for field in fields:
-                if field.get("type") == 'acalog-field-522':
-                    field_text = field.xpath("./data/text()")
-                    if len(field_text) > 0:
-                        field_text = field_text[0].strip().upper()
-                        cross_listed = courses_from_string(field_text)
+                field_text = field.xpath("./data/text()")
+                if len(field_text) > 0:
+                    field_text = field_text[0].strip().upper()
+                    if 'cross listed' in field_text.lower():
+                        if len(field_text) > 0:
+                            cross_listed = courses_from_string(field_text)
 
-                elif field.get("type") == 'acalog-field-519':
-                    field_text = field.xpath("./data/text()")
-                    if len(field_text) > 0:
-                        # print(field_text)
-                        field_text = field_text[0].strip().lower()
+                    elif 'offered' in field_text.lower():
                         if "fall" in field_text:
                             fall = True
                         if "spring" in field_text:
@@ -153,11 +150,8 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
                         if "odd" in field_text:
                             odd = True
                         offered_text = field_text
-                elif field.get("type") == 'acalog-field-517':
-                    field_text = field.xpath("./data/p/text()")
-                    if len(field_text) > 0:
-                        field_text = field_text[0].strip().upper()
-                        prereqs = courses_from_string(field_text)
+                    elif 'prerequisite' in field_text.lower():
+                            prereqs = courses_from_string(field_text)
 
             data[course_name] = {
                 "subj": subj,
@@ -192,7 +186,8 @@ def scrape_courses():
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         course_ids = get_course_ids(catalog_id)
         data = get_course_data(course_ids, catalog_id)
-
+        
         courses_per_year[year] = data
+
     print("Finished courses scraping")
     return courses_per_year

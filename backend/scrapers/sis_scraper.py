@@ -35,7 +35,6 @@ def get_ci_courses(text):
     for i in range(len(titles)):
         title = BeautifulSoup(titles[i], features='lxml').find('a').get_text()
         course_details = details[i]
-        print(i)
         if "Course Attributes: " in course_details \
         and "Communication Intensive" in course_details:
             ci_courses.append(title)
@@ -81,7 +80,6 @@ async def get_all_ci_courses(term, subjects):
                 "https://sis.rpi.edu/rss/bwckctlg.p_display_courses",
                 data=f"term_in={term}&call_proc_in=&sel_subj=dummy&sel_levl=dummy&sel_schd=dummy&sel_coll=dummy&sel_divs=dummy&sel_dept=dummy&sel_attr=dummy&sel_subj={subj}&sel_crse_strt=&sel_crse_end=&sel_title=&sel_levl=%25&sel_schd=%25&sel_coll=%25&sel_divs=%25&sel_dept=%25&sel_from_cred=&sel_to_cred=&sel_attr=%25",
             ) as request:
-                print(f"term_in={term}&call_proc_in=&sel_subj=dummy&sel_levl=dummy&sel_schd=dummy&sel_coll=dummy&sel_divs=dummy&sel_dept=dummy&sel_attr=dummy&sel_subj={subj}&sel_crse_strt=&sel_crse_end=&sel_title=&sel_levl=%25&sel_schd=%25&sel_coll=%25&sel_divs=%25&sel_dept=%25&sel_from_cred=&sel_to_cred=&sel_attr=%25")
                 html = await request.text()
                 ci_courses += get_ci_courses(html)
     return ci_courses

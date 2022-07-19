@@ -33,5 +33,5 @@ if __name__ == "__main__":
         path = '../../frontend/src/data/json/' + str(year)
 
         f = open(path + '/pathways.json', 'w')
-        json.dump(all_pathways[year], f, sort_keys=True, indent=2, ensure_ascii=False)
+        json.dump(all_pathways[year], f, sort_keys=True, indent=2, ensure_ascii=True)
         f.close()
