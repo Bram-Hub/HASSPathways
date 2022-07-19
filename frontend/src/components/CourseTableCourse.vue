@@ -68,11 +68,7 @@
         >
             <v-list-item one-line>
                 <v-list-item-content class="pb-0">
-                    <div style="cursor: pointer" :class="{courseCard: graph}">
-
-                        <h1 class="text-h5 class-card__title">
-                            <v-checkbox
-                                v-if="!graph"
+                    <v-checkbox
                                 :input-value="selected"
                                 :false-value="0"
                                 :true-value="1"
@@ -83,6 +79,10 @@
                                 class="d-inline-block ma-0 float-right"
                                 style="z-index: 99"
                             />
+                    <div style="cursor: pointer" :class="{courseCard: graph}">
+
+                        <h1 class="text-h5 class-card__title">
+                            
                             {{ course.name }}
                         </h1>
                         <small v-if="course.hasData" class="class-card__subtitle">
@@ -247,13 +247,23 @@ export default {
 
 .graph {
     margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 
     .class-card__title {
         font-size: 1em !important;
-        width: min(200px, 100%);
+        // width: min(200px, 100%);
+        width: 80%;
     }
+}
+
+.v-list-item__content {
+    display: block;
 }
 .courseCard {
     flex: 0 !important;
+    
 }
 </style>
