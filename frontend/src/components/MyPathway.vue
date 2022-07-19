@@ -96,7 +96,6 @@ export default {
                     })
                 }
             }
-
             return out;
         },
         colorHash(pathway) {

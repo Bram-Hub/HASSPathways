@@ -146,7 +146,6 @@
             </v-tab-item>
         </v-tabs-items>
     </v-container>
-    </v-container>
 </template>
 
 <script>
@@ -180,18 +179,19 @@ export default {
         // Get id of the pathway, ie 'chinese_language'
         pathwayID() {
             // Should always be valid, see router/index.js
-            let pathwayID = this.$route.query.pathway
-            return pathwayID
+            let pathwayID = this.$route.query.pathway;
+            return pathwayID;
         },
         // Get actual pathway object
         pathway() {
-            return pathways[this.pathwayID]
+            return pathways[this.pathwayID];
         },
         // Name of category to display, ie 'Major Restricted'
         categoryName() {
             for (let category of pathwayCategories)
-                if (category.pathways.includes(this.pathwayID)) return category.name
-            return ''
+                if (category.pathways.includes(this.pathwayID))
+                    return category.name;
+            return '';
         },
         // Outputs an object containing the
         // different priorities for the pathway
@@ -209,26 +209,23 @@ export default {
             let curr = this.priorities
 
             // Search through all prios
-            for (const prio in curr) {
+            for(const prio in curr) {
                 // Search through each course in the pathway
-                for (const course_name in curr[prio]) {
-                    const course = courses[course_name]
-                    curr[prio][course_name] = course ? course : null
+                for(const course_name in curr[prio]) {
+                    const course = courses[course_name];
+                    curr[prio][course_name] = course ? course : null;
                 }
             }
-            return curr
+            return curr;
         },
         // Get breadcrumb data
         breadcrumbs() {
-            return breadcrumbs.pathway_template.map(
-                (x) =>
-                    x || {
-                        text: this.categoryName
-                            ? `${this.pathway.name} (${this.categoryName})`
-                            : this.pathway.name,
-                        href: '/pathway?pathway=' + encodeURIComponent(this.pathwayID),
-                    }
-            )
+            return breadcrumbs.pathway_template.map(x => x || {
+                text: this.categoryName ?
+                    `${this.pathway.name} (${this.categoryName})` :
+                    this.pathway.name,
+                href: '/pathway?pathway=' + encodeURIComponent(this.pathwayID)
+            });
         },
         classTabs() {
             // Enable only non-empty tabs
@@ -258,7 +255,7 @@ export default {
     mounted() {
         this.bookmarkSelected = this.bookmarked;
     },
-    methods: {
+    methods : {
         debug() {
         },
         selectBookmark() {
@@ -289,15 +286,15 @@ export default {
             })
         },
         deselectCourses() {
-            let pathway = this.$store.state.pathways[this.pathwayID]
-            pathway.courses.forEach((course) => {
-                const c = { pathwayID: this.pathwayID, course: course }
+            let pathway = this.$store.state.pathways[this.pathwayID];
+            pathway.courses.forEach(course => {
+                const c = { pathwayID: this.pathwayID, course: course };
                 // delete course
-                this.$store.commit('delCourse', c)
+                this.$store.commit('delCourse', c);
             })
             // deselect course
-            for (const i in this.classTabs) {
-                this.$refs[i][0].deselectAll()
+            for(const i in this.classTabs) {
+                this.$refs[i][0].deselectAll();
             }
         },
         toggleGraph() {
@@ -342,6 +339,7 @@ export default {
 </script>
 
 <style scoped>
+
 #graphView {
     /* border: 1px solid fuchsia; */
     display: flex;
@@ -388,7 +386,7 @@ export default {
     justify-content: space-between;
 }
 
-.header h1 {
+.header h1{
     display: inline-block;
 }
 .bookmark-holder {
