@@ -8,7 +8,7 @@
             <Bookmark :pathway-id="pathwayID" />
         </div>
         <p>{{ pathway.description }}</p>
-        <v-btn @click="toggleGraph()">
+        <v-btn id="mobile-btn" @click="toggleGraph()">
             click me to toggle graph view
         </v-btn>
         <v-container v-show="showGraph">
@@ -274,6 +274,12 @@ export default {
     margin: 0 2%;
     /* border: 1px red solid; */
 }
+
+#mobile-btn {
+        width: 100%;
+        margin-top: 10px;
+}
+    
 .tab {
     display: flex;
     flex-wrap: nowrap;
@@ -329,10 +335,16 @@ export default {
     text-align: center;
 }
 
+
 @media only screen and (min-width: 600px) {
     .fab-container {
         right: 50px;
         bottom: 50px;
     }
+    
+    #mobile-btn {
+        width: 340px;
+    }
+    
 }
 </style>
