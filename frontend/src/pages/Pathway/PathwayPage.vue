@@ -2,6 +2,7 @@
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
         <!-- <v-btn @click="debug()">click me</v-btn> -->
+        <div class="header">
             <h1>{{ pathway.name }}</h1>
 
             <Bookmark :pathway-id="pathwayID" />
@@ -128,6 +129,7 @@ import { pathwayCategories, pathways, courses } from '../../data/data.js'
 import CourseTable from '../../components/CourseTable'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
+import Bookmark from '../../components/Bookmark'
 
 export default {
     components: {

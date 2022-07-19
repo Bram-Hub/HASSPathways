@@ -12,6 +12,7 @@
                     :color="modifiers[modifier].color || 'dd4e47'"
                     v-bind="attrs"
                     v-on="on"
+                    small
                 >
                     {{ modifiers[modifier].name }}
                 </v-chip>
@@ -79,6 +80,7 @@ export default {
 <style scoped lang="scss">
 // Base styles applied to all modifiers
 .modifier {
+    margin-top: 7px;
     margin-right: 3px;
     cursor: help;
     user-select: none;

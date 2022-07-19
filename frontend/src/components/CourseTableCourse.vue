@@ -34,7 +34,7 @@
                                 <small v-if="course.hasData" class="class-card__subtitle">
                                     {{ course.subj }}-{{ course.ID }}
                                     <CourseTableModifiers
-                                        class="mt-4 class-card__subtitle__modifiers float-right"
+                                        class="mt-4 class-card__subtitle__modifiers"
                                         :class="{ graphChange: graph }"
                                         :item="course"
                                     />
@@ -88,7 +88,7 @@
                         <small v-if="course.hasData" class="class-card__subtitle">
                             {{ course.subj }}-{{ course.ID }}
                             <CourseTableModifiers
-                                class="mt-4 class-card__subtitle__modifiers float-right"
+                                class="mt-4 class-card__subtitle__modifiers"
                                 :class="{ graphChange: graph }"
                                 :item="course"
                             />
@@ -202,10 +202,7 @@ export default {
 .v-tooltip__content {
     opacity: 2;
 }
-.checkbox {
-    transform: scale(0.8);
-    transform-origin: top-left;
- }
+
 .class-card {
     /* max-width: 700px; */
     border-radius: 0;
@@ -230,8 +227,6 @@ export default {
         flex-direction: column;
 
         .class-card__subtitle__modifiers {
-            transform: scale(0.90);
-            transform-origin: top right;
             display: inline-block;
 
             position: relative;
