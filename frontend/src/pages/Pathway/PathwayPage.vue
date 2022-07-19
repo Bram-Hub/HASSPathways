@@ -2,35 +2,11 @@
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
         <!-- <v-btn @click="debug()">click me</v-btn> -->
+        <YearSelection />
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
-            <span class="bookmark-holder">
-                <v-tooltip v-if="bookmarkSelected" bottom>
-                    <template #activator="{ on, attrs }">
-                        <v-icon
-                            class="selected"
-                            v-bind="attrs"
-                            large
-                            v-on="on"
-                            @click="deselectBookmark()"
-                        >mdi-bookmark</v-icon>
-                    </template>
-                    <span>Remove pathway from "My Pathways"</span>
-                </v-tooltip>
-                <v-tooltip v-else bottom>
-                    <template #activator="{ on, attrs }">
-                        <v-icon
-                            class="unselected"
-                            v-bind="attrs"
-                            large
-                            v-on="on"
-                            @click="selectBookmark()"
-                        >mdi-bookmark-outline</v-icon>
-                    </template>
-                    <span>Add pathway to "My Pathways"</span>
-                </v-tooltip>
-            </span>
+            <Bookmark :pathway-id="pathwayID" />
         </div>
         <p>{{ pathway.description }}</p>
         <v-btn @click="toggleGraph()">
@@ -154,11 +130,13 @@ import CourseTable from '../../components/CourseTable'
 // import GraphTab from '../../components/GraphTab.vue'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
+import YearSelection from '../../components/YearSelection.vue'
 
 export default {
     components: {
         CourseTable,
         Breadcrumbs,
+        YearSelection
     },
     data() {
         return {
