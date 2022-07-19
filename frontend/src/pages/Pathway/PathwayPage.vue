@@ -343,7 +343,7 @@ export default {
     }
     
     #mobile-btn {
-        width: 340px;
+        width: 300px;
     }
     
 }
