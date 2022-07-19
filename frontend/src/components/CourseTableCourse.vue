@@ -252,6 +252,10 @@ export default {
     flex-direction: column;
     gap: 5px;
 
+    .v-list-item__content {
+        display: block;
+    }
+
     .class-card__title {
         font-size: 1em !important;
         // width: min(200px, 100%);
@@ -259,9 +263,7 @@ export default {
     }
 }
 
-.v-list-item__content {
-    display: block;
-}
+
 .courseCard {
     flex: 0 !important;
     
