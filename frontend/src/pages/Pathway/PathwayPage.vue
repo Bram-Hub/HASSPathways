@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
-        <!-- <v-btn @click="debug()">click me</v-btn> -->
+        <v-btn @click="debug()">click me</v-btn>
         <YearSelection />
         <div class="header">
             <h1>{{ pathway.name }}</h1>
@@ -32,19 +32,19 @@
                     </v-btn>
                 </div>
                 <div id="graphTabs">
-                    <div v-for="(key, index) in classTabs" :key="key" ref="tab" :class="[ 'tab' ]">
+                    <div v-for="(item, index) in classTabs" :key="index" ref="tab" :class="[ 'tab' ]">
                         <h2 class="courseTitle">
-                            {{ key }}
+                            {{ item[0] }}
                         </h2>
                         <CourseTable
-                            :ref="key"
-                            :courses="courses[key]"
+                            :ref="item[0]"
+                            :courses="courses[item[1]]"
                             :pathway-id="pathwayID"
                             :desc="false"
                             :searchBar="false"
                             :graph="true"
                             :hover="hover"
-                            :category="key"
+                            :category="item[0]"
                             @checkbox-clicked="onCheckboxClicked"
                         />
                     </div>
@@ -99,28 +99,29 @@
             <v-tabs-slider color="primary" />
             <v-tab
                 v-for="item in classTabs"
-                :key="item"
+                :key="item[0]"
             >
-                <small>{{ item }}</small>
+                <small>{{ item[0] }}</small>
             </v-tab>
         </v-tabs>
 
         <v-tabs-items v-model="tab" touchless>
             <v-tab-item
                 v-for="(item, index) in classTabs"
-                :key="item"
+                :key="item[1]"
                 :eager="true"
             >
                 <CourseTable
-                    :ref="item"
-                    :courses="courses[item]"
+                    :ref="index"
+                    :courses="courses[item[1]]"
                     :pathway-id="pathwayID"
                     :show-desc="true"
-                    :category="item"
-                    @checkbox-clicked="onCheckboxClicked()"
+                    :category="item[0]"
+                    @checkbox-clicked="onCheckboxClicked"
                 />
             </v-tab-item>
         </v-tabs-items>
+    </v-container>
     </v-container>
 </template>
 
@@ -130,13 +131,12 @@ import CourseTable from '../../components/CourseTable'
 // import GraphTab from '../../components/GraphTab.vue'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
-import YearSelection from '../../components/YearSelection.vue'
+import YearSelection from '../../components/YearSelection'
+import Bookmark from '../../components/Bookmark'
 
 export default {
     components: {
-        CourseTable,
-        Breadcrumbs,
-        YearSelection
+        CourseTable, Breadcrumbs, YearSelection, Bookmark
     },
     data() {
         return {
@@ -144,16 +144,10 @@ export default {
             category: '',
             showGraph: false,
             changeTabOnSelection: false,
-            hover: false,
-            bookmarkSelected: false,
+            hover: false
         }
     },
     computed: {
-        // Returns true if the pathway is already in the
-        //  'My Pathways' page
-        bookmarked() {
-            return this.$store.getters.pathwayBookmarked(this.pathwayID)
-        },
         // Get id of the pathway, ie 'chinese_language'
         pathwayID() {
             // Should always be valid, see router/index.js
@@ -174,18 +168,19 @@ export default {
         // Outputs an object containing the
         // different priorities for the pathway
         priorities() {
-            let pathway = this.pathway
-            let out = {}
-            out['Required'] = pathway.required ? pathway.required : null
-            out['One Of'] = pathway.one_of ? pathway.one_of : null
-            out['Remaining'] = pathway.remaining ? pathway.remaining : null
-            return out
+            let pathway = this.pathway;
+            let out = {};
+            for (const key in pathway) {
+                if (pathway[key] instanceof Object && !(pathway[key] instanceof Array)) {
+                    out[key] = pathway[key];
+                }
+            }
+            return out;
         },
         // Converts the courses into an actual array of objects for
         // priorities while they contain actual course objects
         courses() {
-            let curr = this.priorities
-
+            let curr = this.priorities;
             // Search through all prios
             for(const prio in curr) {
                 // Search through each course in the pathway
@@ -207,11 +202,14 @@ export default {
         },
         classTabs() {
             // Enable only non-empty tabs
-            return [
-                'Required',
-                'One Of',
-                'Remaining'
-            ].filter((_, index) => Object.values(this.priorities)[index]);
+            let prios = Object.keys(this.priorities);
+            for(const i in prios) {
+                prios[i] = [prios[i], prios[i]];
+                if(prios[i][0].substring(0, 6) == "One Of") {
+                    prios[i][0] = "One Of";
+                }
+            }
+            return prios;
         },
         fourThousand() {
             return this.pathway.remaining_header.indexOf("4000") !== -1
@@ -235,14 +233,7 @@ export default {
     },
     methods : {
         debug() {
-        },
-        selectBookmark() {
-            this.bookmarkSelected = !this.bookmarkSelected
-            this.$store.commit('bookmarkPathway', this.pathwayID)
-        },
-        deselectBookmark() {
-            this.$store.commit('unBookmarkPathway', this.pathwayID)
-            this.bookmarkSelected = !this.bookmarkSelected
+            console.log(this.classTabs);
         },
         onCheckboxClicked(data) {
             // course name of checkbox will be passed through as the data variable
