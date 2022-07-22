@@ -71,7 +71,7 @@ export default {
     },
     methods: {
         debug() {
-            console.log( this.myModifiers );
+            // console.log( this.myModifiers );
         }
     }
 }

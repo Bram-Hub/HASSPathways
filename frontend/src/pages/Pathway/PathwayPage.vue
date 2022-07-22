@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
-        <!-- <v-btn @click="debug()">click me</v-btn> -->
+        <v-btn @click="debug()">click me</v-btn>
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
@@ -231,6 +231,8 @@ export default {
     methods : {
         debug() {
             console.log(this.classTabs);
+            console.log(this.priorities);
+            console.log(this.pathway);
         },
         onCheckboxClicked(data) {
             // course name of checkbox will be passed through as the data variable
@@ -265,7 +267,11 @@ export default {
         },
         toggleGraph() {
             this.showGraph = !this.showGraph
-            this.resize( this.ratio() );
+            if ( this.pathwayID != "economics" ) {
+                this.resize( this.ratio() );
+            } else {    // economics :(
+                
+            }
         },
         resize( params ) {
             let left = params[0];
