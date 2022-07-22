@@ -124,8 +124,8 @@
         >
             <v-tabs-slider color="primary" />
             <v-tab
-                v-for="item in classTabs"
-                :key="item[0]"
+                v-for="(item, index) in classTabs"
+                :key="index"
             >
                 <small>{{ item[0] }}</small>
             </v-tab>
@@ -134,7 +134,7 @@
         <v-tabs-items v-model="tab" touchless>
             <v-tab-item
                 v-for="(item, index) in classTabs"
-                :key="item[1]"
+                :key="index"
                 :eager="true"
             >
                 <CourseTable
@@ -264,7 +264,6 @@ export default {
     },
     mounted() {
         this.bookmarkSelected = this.bookmarked;
-        console.log(this.pathwayID);
     },
     methods : {
         debug() {
@@ -303,14 +302,7 @@ export default {
             }
         },
         toggleGraph() {
-            this.showGraph = !this.showGraph
-            if ( this.pathwayID != "Economics" ) {
-                console.log("not econ")
-                this.resize( this.ratio() );
-            } else {    // economics :(
-                this.multiResize( this.ratio() );
-                // console.log(this.ratio())
-            }
+            this.resize( this.ratio() );
         },
         resize( params ) {
             let left = params[0];
@@ -333,9 +325,19 @@ export default {
         },
         ratio() {
             // creates an array of all of the lengths of classes
-            let lengthsArr = this.classTabs.map(
-                (category) => Object.keys(this.courses[category]).length
-            )
+            let lengthsArr;
+            if ( this.pathwayID == "Economics" ) {
+                lengthsArr = this.sections.map( section => {
+                    return section
+                            .map( category => Object.keys( this.courses[category[1]]).length )
+                            .reduce( ( a, b ) => a + b );
+                })
+            } else {
+                lengthsArr = this.classTabs.map(
+                    (category) => Object.keys(this.courses[category]).length
+                )
+            }
+            
             // we could just return this but that would make the
             //  displays of the tabs not uniform accross different pages
             // finds the sum of all of the array above
@@ -344,22 +346,7 @@ export default {
             let result = lengthsArr.map( l => ( l/sum < 0.35 ? 1 : 2 )  )
             return result;
         },
-        multiResize( params ) {
-            let left = params[0];
-            let right = params[1];
-            let containers = Object.keys(this.priorities);
-            containers = containers.filter( p => this.priorities[p] )
-            // console.log(containers)
-            let resized = [ left/(right + left), right/(right + left )];
-            this.$refs.tab.forEach( (tab, index) => {
-                // console.log(tab)
-                tab.style.flexBasis = `${resized[index]*100}%`;
-
-            })
-
-        },
         multiRatio() {
-            console.log(this.courses)
             let lengthsArr = this.sections.map( section => {
                 return section
                         .map( category => Object.keys( this.courses[category[1]]).length )
