@@ -5,7 +5,7 @@
             <h1>Matching Pathways</h1>
             <p>
                 Here are the pathways that match the selected courses!
-                You can view the pathway further by clicking the 3 dots then edit pathway,
+                You can view the pathway further by clicking the pencil icon,
                 or <router-link :to="{ name: 'search-classes' }">
                     go back to picking courses.
                 </router-link>
