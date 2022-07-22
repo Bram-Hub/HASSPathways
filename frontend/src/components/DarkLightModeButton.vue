@@ -1,11 +1,10 @@
 <template>
     <v-tooltip v-if="$vuetify.theme.dark" bottom>
-        <template #activator="{on}">
+        <template #activator="{off}">
             <v-switch
-                class="mr-2 button"
                 inset
                 small fab elevation="0"
-                v-on="on"
+                v-on="off"
                 @click="darkMode"
                 size="small"
                 prepend-icon="mdi-moon-waxing-crescent"
@@ -19,10 +18,8 @@
     <v-tooltip v-else bottom>
         <template #activator="{on}">
             <v-switch
-                class="mr-2 button"
                 small fab elevation="0"
                 inset
-                v-on="on"
                 prepend-icon="mdi-white-balance-sunny" 
                 color="yellow darken-2"
                 value="yellow darken-2"
