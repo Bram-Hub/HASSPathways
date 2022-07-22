@@ -31,22 +31,49 @@
                     </v-btn>
                 </div>
                 <div id="graphTabs">
-                    <div v-for="(item, index) in classTabs" :key="index" ref="tab" :class="[ 'tab' ]">
-                        <h2 class="courseTitle">
-                            {{ item[0] }}
-                        </h2>
-                        <CourseTable
-                            :ref="item[0]"
-                            :courses="courses[item[1]]"
-                            :pathway-id="pathwayID"
-                            :desc="false"
-                            :searchBar="false"
-                            :graph="true"
-                            :hover="hover"
-                            :category="item[0]"
-                            @checkbox-clicked="onCheckboxClicked"
-                        />
-                    </div>
+                    <v-container v-if="pathwayID!='Economics'" style="display:flex">
+                        <div v-for="(item, index) in classTabs" :key="index" ref="tab" :class="[ 'tab' ]">
+                            <h2 class="courseTitle">
+                                {{ item[0] }}
+                            </h2>
+                            <CourseTable
+                                :ref="item[0]"
+                                :courses="courses[item[1]]"
+                                :pathway-id="pathwayID"
+                                :desc="false"
+                                :searchBar="false"
+                                :graph="true"
+                                :hover="hover"
+                                :category="item[0]"
+                                @checkbox-clicked="onCheckboxClicked"
+                            />
+                        </div>
+                    </v-container>
+                    <v-container v-else style="display:flex">
+                        <div v-for="(section, index) in sections" :key="index" ref="tab">
+                            <div class="tab">
+                                <div v-for="(item, index) in section" :key="index">
+                                    <h2 class="courseTitle">
+                                        {{ item[0] }}
+                                    </h2>
+                                    <CourseTable
+                                        :ref="item[0]"
+                                        :courses="courses[item[1]]"
+                                        :pathway-id="pathwayID"
+                                        :desc="false"
+                                        :searchBar="false"
+                                        :graph="true"
+                                        :hover="hover"
+                                        :category="item[0]"
+                                        @checkbox-clicked="onCheckboxClicked"
+                                    />
+                                    <hr v-show="index==0 && section.length==2"/>
+                                </div>
+                            </div>
+                                
+                        </div>
+                    </v-container>
+                    
                 </div>
 
             </div>
@@ -145,6 +172,16 @@ export default {
         }
     },
     computed: {
+        // split up the classTabs into sections
+        sections() {
+            let sections = [], size = 2;
+            let items = [...this.classTabs];
+
+            while (items.length > 0)
+                sections.push(items.splice(0, size));
+                
+            return sections;
+        },
         // Get id of the pathway, ie 'chinese_language'
         pathwayID() {
             // Should always be valid, see router/index.js
@@ -227,12 +264,12 @@ export default {
     },
     mounted() {
         this.bookmarkSelected = this.bookmarked;
+        console.log(this.pathwayID);
     },
     methods : {
         debug() {
-            console.log(this.classTabs);
-            console.log(this.priorities);
-            console.log(this.pathway);
+            console.log(this.multiRatio());
+            this.multiResize( this.multiRatio() );
         },
         onCheckboxClicked(data) {
             // course name of checkbox will be passed through as the data variable
@@ -267,10 +304,12 @@ export default {
         },
         toggleGraph() {
             this.showGraph = !this.showGraph
-            if ( this.pathwayID != "economics" ) {
+            if ( this.pathwayID != "Economics" ) {
+                console.log("not econ")
                 this.resize( this.ratio() );
             } else {    // economics :(
-                
+                this.multiResize( this.ratio() );
+                // console.log(this.ratio())
             }
         },
         resize( params ) {
@@ -281,7 +320,6 @@ export default {
             // only looks at categories that have something in it
             //  instead of null
             containers = containers.filter( p => this.priorities[p] )
-
             // converting ratios to percents out of 100%
             //  could probably change this in the future for the ratio()
             //   function to handle this
@@ -305,7 +343,32 @@ export default {
             // rounds the numbers to be either 1 or 2
             let result = lengthsArr.map( l => ( l/sum < 0.35 ? 1 : 2 )  )
             return result;
-        }
+        },
+        multiResize( params ) {
+            let left = params[0];
+            let right = params[1];
+            let containers = Object.keys(this.priorities);
+            containers = containers.filter( p => this.priorities[p] )
+            // console.log(containers)
+            let resized = [ left/(right + left), right/(right + left )];
+            this.$refs.tab.forEach( (tab, index) => {
+                // console.log(tab)
+                tab.style.flexBasis = `${resized[index]*100}%`;
+
+            })
+
+        },
+        multiRatio() {
+            console.log(this.courses)
+            let lengthsArr = this.sections.map( section => {
+                return section
+                        .map( category => Object.keys( this.courses[category[1]]).length )
+                        .reduce( ( a, b ) => a + b );
+            })
+            let sum = lengthsArr.reduce( ( a, b ) => a + b );
+            let result = lengthsArr.map( l => ( l/sum < 0.35 ? 1 : 2 ) );
+            return result;
+        },
     },
 }
 </script>
@@ -324,6 +387,9 @@ export default {
     margin: 0 2%;
     /* border: 1px red solid; */
 }
+#graphTabs > .container {
+    gap: 10px;
+}
 .tab {
     display: flex;
     flex-wrap: nowrap;
@@ -335,6 +401,7 @@ export default {
     margin: 0 auto;
 }
 .courseTitle {
+    width: fit-content;
     margin: 0 auto;
     font-weight: bolder;
 }

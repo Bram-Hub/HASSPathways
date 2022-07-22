@@ -1,5 +1,5 @@
 <template>
-    <v-container style="min-height: 50vh">
+    <v-container :class="{ minHeight : !graph}">
         <!-- Table header with search and open/close all buttons
           -- A scale transform is applied to make it smaller -->
         <v-card
@@ -138,6 +138,10 @@ export default {
 </script>
 
 <style scoped>
+
+.minHeight {
+    min-height: 50vh;
+}
 .graphContent {
     display: flex;
     width: 100%;
@@ -156,8 +160,8 @@ export default {
     
 }
 .graphContainer * {
-    width: min(70%, 250px);
-    margin: 10px 20px;
+    width: 300px;
+    margin: 5px 5px;
     flex-grow: 1;
 }
 .table-header-search {
