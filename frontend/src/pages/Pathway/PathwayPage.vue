@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
-        <v-btn @click="debug()">click me</v-btn>
+        <!-- <v-btn @click="debug()">click me</v-btn> -->
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
