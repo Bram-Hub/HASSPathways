@@ -6,7 +6,7 @@
             transition="scale-transition"
             @click="toggleCheckbox()"
         >
-            This course has pre-requisite(s)! 
+            This course has been added, but be aware that this course has pre-requisite(s).
             <br/>
             {{ course.prerequisites }}
         </v-alert>
