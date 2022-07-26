@@ -7,7 +7,7 @@
             @click="toggleCheckbox()"
         >
             This course has been added, but be aware that this course has pre-requisite(s).
-            <br/>
+            <br>
             {{ course.prerequisites }}
         </v-alert>
         <v-tooltip v-show="hover" bottom>

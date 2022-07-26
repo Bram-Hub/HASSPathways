@@ -52,7 +52,7 @@
                     <v-container v-else style="display:flex">
                         <div v-for="(section, index) in sections" :key="index" ref="tab">
                             <div class="tab">
-                                <div v-for="(item, index) in section" :key="index">
+                                <div v-for="(item, index_) in section" :key="index_">
                                     <h2 class="courseTitle">
                                         {{ item[0] }}
                                     </h2>
@@ -67,7 +67,7 @@
                                         :category="item[0]"
                                         @checkbox-clicked="onCheckboxClicked"
                                     />
-                                    <hr v-show="index==0 && section.length==2">
+                                    <hr v-show="index_==0 && section.length==2">
                                 </div>
                             </div>
                         </div>
@@ -310,11 +310,7 @@ export default {
         resize( params ) {
             let left = params[0];
             let right = params[1];
-            let containers = Object.keys(this.priorities);
 
-            // only looks at categories that have something in it
-            //  instead of null
-            containers = containers.filter( p => this.priorities[p] )
             // converting ratios to percents out of 100%
             //  could probably change this in the future for the ratio()
             //   function to handle this

@@ -51,8 +51,8 @@
                                 <v-icon 
                                     v-bind="attrs" 
                                     dense
-                                    v-on="on" 
-                                    class="float-right"
+                                    class="float-right" 
+                                    v-on="on"
                                 >
                                     mdi-alert
                                 </v-icon>
