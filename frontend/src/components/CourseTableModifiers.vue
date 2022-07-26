@@ -62,7 +62,12 @@ export default {
                     mods.push(prop);
                 }
             }
+        
+            if(this.item.prerequisites != "None") {
+                mods.push('pre_requisite')
+            }
             
+            console.log(mods)
             return mods;
         }
     },
@@ -71,7 +76,10 @@ export default {
     },
     methods: {
         debug() {
-            // console.log( this.myModifiers );
+            // console.log( this.item );
+            if ( this.item.prerequisites != "None" ) {
+                console.log(this.item)
+            }
         }
     }
 }

@@ -48,8 +48,8 @@ export const modifiers = {
     },
     'pre_requisite': {
         name: 'PR',
-        tooltip: 'This course has pre-requisite(s)',
-        color: colors.red.accent3,
+        tooltip: 'Pre-requisite(s) ',
+        color: colors.teal.lighten1,
         search: ['prerequisite', 'pre-requisite', 'pre', 'requisite']
     }
 };

@@ -1,5 +1,15 @@
 <template>
     <div>
+        <v-alert 
+            :value="alert"
+            type="warning" 
+            transition="scale-transition"
+            @click="toggleCheckbox()"
+        >
+            This course has pre-requisite(s)! 
+            <br/>
+            {{ course.prerequisites }}
+        </v-alert>
         <v-tooltip v-show="hover" bottom>
             <template #activator="{ on, attrs }">
                 <v-card
@@ -150,6 +160,7 @@ export default {
     data: () => {
         return {
             selected: 0,
+            alert: false,
         }
     },
     mounted() {
@@ -173,9 +184,21 @@ export default {
                 if (this.selected) {
                     this.$store.commit('addCourse', c);
                     this.$emit('checkbox-clicked', { name: this.course.name, selected: true });
+                    // now check to see if there are pre-requisites present
+                    if ( this.course.prerequisites != "None" ) {
+                        // console.log("pre-requisite")
+                        this.alert = true;
+                        // this.$emit("showAlert", this.course.prerequisites );
+                    }
                 } else {
                     this.$store.commit('delCourse', c);
                     this.$emit('checkbox-clicked', { name: this.course.name, selected: false });
+                    this.alert = false;
+                    if ( this.course.prerequisites != "None" ) {
+                        // console.log("pre-requisite")
+                        this.alert = false;
+                        // this.$emit("hideAlert", this.course.prerequisites );
+                    }
                 }
             }
         },
@@ -195,6 +218,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+.v-alert {
+    width: 98.6%;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+}
 .maxHeight {
     height: 100%;
 }

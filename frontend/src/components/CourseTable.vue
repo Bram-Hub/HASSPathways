@@ -27,6 +27,7 @@
                 :hover="hover"
                 :graph="graph"
                 @checkbox-clicked="update"
+                @alert="toggleAlert"
             />
         </div>
 
@@ -132,6 +133,9 @@ export default {
             data.ref = this.category;
             // data: { name: course name, selected: true/false, category: "One Of"/"Remaining"/... }
             this.$emit('checkbox-clicked', data);
+        },
+        toggleAlert( data ) {
+            console.log( data )
         }
     }
 }
