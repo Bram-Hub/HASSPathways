@@ -65,7 +65,9 @@ export default {
             if(this.courses) {
                 for(const i in this.courses) {
                     const c = { pathwayID: this.pathwayId, course: this.courses[i]};
-                    this.$store.commit('addCourse', c);  
+                    if(!(this.$store.getters.getCourses(this.pathwayId).includes(c.course))) {
+                        this.$store.commit('addCourse', c);
+                    }
                 }
             }
             this.$store.commit('bookmarkPathway', this.pathwayId);
