@@ -86,9 +86,10 @@ def courses_from_string(inp):
     for dept in depts:
         fnd = inp.find(dept)
         if fnd != -1:
-            if inp[fnd+8].isdigit():
-                if inp[fnd+5] != '6':
-                    crses.add(inp[fnd:fnd+4] + '-' + inp[fnd+5:fnd+9])
+            if fnd+8 < len(inp):
+                if inp[fnd+8].isdigit():
+                    if inp[fnd+5] != '6':
+                        crses.add(inp[fnd:fnd+4] + '-' + inp[fnd+5:fnd+9])
     return list(crses)
 
 def get_course_data(course_ids: List[str], catalog_id) -> Dict:
@@ -130,28 +131,30 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
             cross_listed = []
             prereqs = []
 
+            base = int(fields[0].get('type')[-3:])
             for field in fields:
-                field_text = field.xpath("./data/text()")
+                field_text = field.xpath("./descendant-or-self::*/text()")
                 if len(field_text) > 0:
-                    field_text = field_text[0].strip().upper()
-                    if 'cross listed' in field_text.lower():
-                        if len(field_text) > 0:
-                            cross_listed = courses_from_string(field_text)
+                    field_text = field_text[0].strip()
 
-                    elif 'offered' in field_text.lower():
-                        if "fall" in field_text:
+                    if field.get('type')[-3:] == str(base - 8):
+                        if len(field_text) > 0:
+                            cross_listed = courses_from_string(field_text.upper())
+                    elif field.get('type')[-3:] == str(base - 11):
+                        if "fall" in field_text.lower():
                             fall = True
-                        if "spring" in field_text:
+                        if "spring" in field_text.lower():
                             spring = True
-                        if "summer" in field_text:
+                        if "summer" in field_text.lower():
                             summer = True
-                        if "even" in field_text:
+                        if "even" in field_text.lower():
                             even = True
-                        if "odd" in field_text:
+                        if "odd" in field_text.lower():
                             odd = True
                         offered_text = field_text
-                    elif 'prerequisite' in field_text.lower():
-                            prereqs = courses_from_string(field_text)
+                    elif field.get('type')[-3:] == str(base - 13):
+                        if len(field_text) > 0:
+                            prereqs = courses_from_string(field_text.upper())
 
             data[course_name] = {
                 "subj": subj,

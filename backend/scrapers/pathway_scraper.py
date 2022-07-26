@@ -98,10 +98,8 @@ def parse_courses(core, name, year):
             if s in depts:
                 app = True
         if app:
-            t = (t.strip()
-            .replace('\u2013', '-')
-            .replace('\u00a0', ' ')
-            .replace('\u200b', ''))
+            t = (t.strip())
+            t = t.encode("ascii", "ignore").strip().decode()
             content.append(t)
     if not(len(content) == 0):
         for cont in content:
@@ -123,10 +121,7 @@ def parse_courses(core, name, year):
 
     for course in courses_xml:
         # fixes all weird unicode and stuff
-        course = (course.strip()
-            .replace('\u2013', '-')
-            .replace('\u00a0', ' ')
-            .replace('\u200b', ''))
+        course = course.strip().encode("ascii", "ignore").strip().decode()
         subjID = course_from_string(course, depts)
         name = course.split("-", 1)[1].split("Credit")[0].strip()
         courses[name] = subjID
@@ -146,7 +141,7 @@ def get_pathway_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         data[name] = {}
         data[name]["name"] = name
         desc = pathway.xpath("./content/p/text()")[0].strip()
-        data[name]["description"] = desc
+        data[name]["description"] = desc.encode("ascii", "ignore").strip().decode()
         cores = pathway.xpath("./cores/core")
         cores += pathway.xpath("./cores/core/children/core")
         one_of_index = 0
@@ -163,7 +158,9 @@ def get_pathway_data(pathway_ids: List[str], catalog_id, year) -> Dict:
                 data[name][one_of_name] = courses
                 one_of_index += 1
             elif "minor" in anchor_name:
-                minors = list(filter(lambda x: x != "", [minor.replace("Minor", "").replace("minor", "").strip() for minor in core.xpath("./content/descendant::*/text()")]))
+                minors = list(filter(lambda x: x != "", \
+                 [minor.replace("Minor", "").replace("minor", "").strip() \
+                 for minor in core.xpath("./content/descendant::*/text()")]))
                 data[name]["minor"] = minors
             else:
                 courses = parse_courses(core, name, year)

@@ -56,7 +56,7 @@
     "Required": {
       "General Psychology": "PSYC1200"
     },
-    "description": "Behavioral and cognitive neuroscience focus on understanding the brain mechanisms that allow humans and other animals to perceive, think, feel, remember, and act.  Students pursuing this pathway will cultivate an understanding of brain and behavior/cognition relationships by critically analyzing research findings.",
+    "description": "Behavioral and cognitive neuroscience focus on understanding the brain mechanisms that allow humans and other animals to perceive, think, feel, remember, and act. Students pursuing this pathway will cultivate an understanding of brain and behavior/cognition relationships by critically analyzing research findings.",
     "minor": [
       "Behavioral and Cognitive Neuroscience"
     ],
@@ -315,7 +315,7 @@
       "Minds and Machines": "IHSS1140",
       "Science and Scientific Misconduct": "IHSS1160",
       "Science, Technology, and Society": "STSS1110",
-      "Sociology of Inequality": "IHSS19XX",
+      "Sociology ofInequality": "IHSS19XX",
       "Technology and Social Interaction": "IHSS19XX",
       "The Genome and You": "IHSS1150"
     },
@@ -355,14 +355,14 @@
       "Proposing and Persuading": "WRIT4550",
       "Speech Communication": "WRIT2340"
     },
-    "description": "Humans can do, and have done, some really stupid things: People are not as rational as they would like to think and are subject to scores of cognitive and social biases. That said, however, people also have the power to correct for these, and to do good and constructive work. It is time to see how such cognitive and social powers can be harnessed for the good. How can critical thinking be used constructively? How can people learn from their past mistakes? How can social institutions and policies be set up to ensure that  wise decisions are made to create a world that lasts into the extended future?",
+    "description": "Humans can do, and have done, some really stupid things: People are not as rational as they would like to think and are subject to scores of cognitive and social biases. That said, however, people also have the power to correct for these, and to do good and constructive work. It is time to see how such cognitive and social powers can be harnessed for the good. How can critical thinking be used constructively? How can people learn from their past mistakes? How can social institutions and policies be set up to ensure that wise decisions are made to create a world that lasts into the extended future?",
     "name": "Extent and Limits of Rationality",
     "remaining_header": "Choose remaining credits from the following:"
   },
   "Fact and Fiction": {
     "One Of0": {
       "Digital Filmmaking": "ARTS1030",
-      "Documentary:  Whose Narrative?": "IHSS19XX",
+      "Documentary: Whose Narrative?": "IHSS19XX",
       "Fiction from Film to the Internet": "IHSS1976",
       "Introduction to Philosophy": "PHIL1110",
       "Media and Society": "IHSS1560",
@@ -425,7 +425,7 @@
       "Race, Class, Gender, and Technology": "IHSS19XX",
       "Religion in a Global World": "IHSS1666",
       "Revolutions in Comparative Perspective": "IHSS19XX",
-      "Sociology of Inequality": "IHSS19XX",
+      "Sociology ofInequality": "IHSS19XX",
       "Songs of Identity": "IHSS1968",
       "Technology and Social Interaction": "IHSS19XX",
       "The Genome and You": "IHSS1150"
@@ -473,7 +473,7 @@
       "Human Rights in History": "IHSS1500",
       "Revolutions in Comparative Perspective": "IHSS19XX",
       "Science, Technology, and Society": "STSS1110",
-      "Sociology of Inequality": "IHSS19XX",
+      "Sociology ofInequality": "IHSS19XX",
       "War and Technology: Past, Present, and Future": "IHSS1570"
     },
     "Remaining": {
@@ -549,7 +549,7 @@
       "Law, Values, and Public Policy: Perspectives on Science and Technology": "IHSS1350",
       "Revolutions in Comparative Perspective": "IHSS19XX",
       "Science, Technology, and Society": "STSS1110",
-      "Sociology of Inequality": "IHSS19XX",
+      "Sociology ofInequality": "IHSS19XX",
       "War and Society": "IHSS1510"
     },
     "Remaining": {
@@ -598,7 +598,7 @@
       "Linguistics"
     ],
     "name": "Linguistics",
-    "remaining_header": "Choose remaining credits from the following​​​​, with at least 4 credits at the 4000-level:"
+    "remaining_header": "Choose remaining credits from the following\u200b\u200b\u200b\u200b, with at least 4 credits at the 4000-level:"
   },
   "Literature and Creative Writing": {
     "Remaining": {
@@ -634,7 +634,7 @@
     "One Of0": {
       "IT and Society": "ITWS1220",
       "Minds and Machines": "IHSS1140",
-      "Open Source:  Art, Music, Culture": "IHSS1965",
+      "Open Source: Art, Music, Culture": "IHSS1965",
       "Principles of Economics": "IHSS1200",
       "Science and Scientific Misconduct": "IHSS1160",
       "The Genome and You": "IHSS1150"
@@ -651,7 +651,7 @@
       "Research Methods and Statistics I": "PSYC2310",
       "Social Demography: Society by the Numbers": "STSS4520"
     },
-    "description": "Humans live in the age of information … and misinformation … of big data, data mining, and machine learning ... of new media presenting unparalleled means of communication ... of unseen and opaque algorithms driving our news feeds... and of rushing to judgment on viral videos. It is important to develop some 'information intelligence' and 'data dexterity'. Such dexterity and intelligence includes technical skills of quantitative data analysis and IT technology, but also includes critical thinking skills regarding how information is collected, judged, interpreted, and represented, and how big data and information is feeding humans' collective awareness driving their decisions and affecting their world surroundings.",
+    "description": "Humans live in the age of information  and misinformation  of big data, data mining, and machine learning ... of new media presenting unparalleled means of communication ... of unseen and opaque algorithms driving our news feeds... and of rushing to judgment on viral videos. It is important to develop some 'information intelligence' and 'data dexterity'. Such dexterity and intelligence includes technical skills of quantitative data analysis and IT technology, but also includes critical thinking skills regarding how information is collected, judged, interpreted, and represented, and how big data and information is feeding humans' collective awareness driving their decisions and affecting their world surroundings.",
     "name": "Living in a World of Data",
     "remaining_header": "Choose remaining credits from the following:"
   },
@@ -671,7 +671,7 @@
       "Philosophy of Logic, Computation, and Mind"
     ],
     "name": "Logical Thinking",
-    "remaining_header": "Choose remaining credits from the following​​​​, with at least 4 credits at the 4000 level:"
+    "remaining_header": "Choose remaining credits from the following\u200b\u200b\u200b\u200b, with at least 4 credits at the 4000 level:"
   },
   "Media and Culture": {
     "Remaining": {
@@ -679,7 +679,7 @@
       "Behind the Television Screen": "IHSS19XX",
       "Communication Theory and Practice": "COMM2520",
       "Documentary Film": "COMM2440",
-      "Documentary:  Whose Narrative?": "IHSS19XX",
+      "Documentary: Whose Narrative?": "IHSS19XX",
       "Media and Society": "IHSS1560",
       "Perspectives on Photography": "COMM2410",
       "Reality TV and Post-Factual Media": "COMM4530",
@@ -749,7 +749,7 @@
       "Music and Technology II": "ARTS4160",
       "Sound Recording and Production I": "ARTS2700"
     },
-    "description": "Students learn to compose music starting with the Western Classical tradition then branching out to modern and experimental methods.  Students also learn to program and apply modern information technology to music creation and production.",
+    "description": "Students learn to compose music starting with the Western Classical tradition then branching out to modern and experimental methods. Students also learn to program and apply modern information technology to music creation and production.",
     "minor": [
       "Music"
     ],
@@ -776,7 +776,7 @@
       "Topics in Deep Listening": "ARTS4180",
       "Topics in the Arts": "ARTS2960"
     },
-    "description": "Students learn to perform focal and instrumental music from a variety of styles, Classical to Afro-Cuban to experimental.",
+    "description": "Students learn to perform focal and instrumental music from a variety of styles, Classical to Afro-Cubanto experimental.",
     "minor": [
       "Music"
     ],
@@ -800,7 +800,7 @@
       "Topics in the Arts": "ARTS4960",
       "World Music": "ARTS2520"
     },
-    "description": "Students gain historical and inter-cultural knowledge of music from the Western and various non-Western cultures.",
+    "description": "Students gainhistorical and inter-cultural knowledge of music from the Western and various non-Western cultures.",
     "minor": [
       "Music"
     ],
@@ -834,7 +834,7 @@
       "Scientific Revolutions": "PHIL4310",
       "Topics in Philosophy": "PHIL4940"
     },
-    "description": "Learn to reason more precisely, think more critically, and ask more penetrating and foundational questions about enduring and contemporary problems in ethics, science, technology, religion, and politics — including some of the biggest challenges that humanity currently faces.",
+    "description": "Learn to reason more precisely, think more critically, and ask more penetrating and foundational questions about enduring and contemporary problems in ethics, science, technology, religion, and politics  including some of the biggest challenges that humanity currently faces.",
     "minor": [
       "Philosophy"
     ],
@@ -954,7 +954,7 @@
     "Required": {
       "Art History": "ARTS1050"
     },
-    "description": "Study traditional studio arts such as drawing, painting, sculpture in conjunction with art history to learn techniques, history, and theory in the visual arts.  Students will develop basic skills in perspective, proportion, composition, form making, light and shadow, color, 2 and 3D Design, and learn to articulate ideas about their own, other students', and historical works through class discussions and critiques.",
+    "description": "Study traditional studio arts such as drawing, painting, sculpture in conjunction with art history to learn techniques, history, and theory in the visual arts. Students will develop basic skills in perspective, proportion, composition, form making, light and shadow, color,2 and 3D Design,and learn toarticulate ideas abouttheir own,other students', and historicalworksthrough class discussions and critiques.",
     "minor": [
       "Studio Arts"
     ],
@@ -997,7 +997,7 @@
   },
   "Thinking with Science": {
     "One Of0": {
-      "Open Source:  Art, Music, Culture": "IHSS1965",
+      "Open Source: Art, Music, Culture": "IHSS1965",
       "Science and Scientific Misconduct": "IHSS1160",
       "Science, Technology, and Society": "STSS1110",
       "Technology and Social Interaction": "IHSS19XX",
@@ -1035,7 +1035,7 @@
       "STSHXXXX": "STSHXXXX",
       "WRITXXXX": "WRITXXXX"
     },
-    "description": "This pathway is intended for transfer students that enter with junior status and who have completed significant coursework within the arts and humanities to be applied toward a pathway.  Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
+    "description": "Thispathwayis intended for transfer students that enter with junior status andwho have completed significant coursework within the arts and humanities to be applied toward a pathway. Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
     "name": "Transfer Student Arts and Humanities",
     "remaining_header": "Choose 12 credits of the following course prefixes, with at least 8 credit hours at, or above, the 2000 level and at least 3 credit hours at the 4000 level:"
   },
@@ -1048,7 +1048,7 @@
       "PSYCXXXX": "PSYCXXXX",
       "STSSXXXX": "STSSXXXX"
     },
-    "description": "This pathway is intended for transfer students that enter with junior status and who have completed significant coursework within the social sciences to be applied toward a pathway.  Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
+    "description": "This pathway is intended for transfer students that enter with junior status andwho have completed significant coursework within the social sciencesto be applied toward a pathway. Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
     "name": "Transfer Student Social Science",
     "remaining_header": "Choose 12 credits of the following course prefixes, with at least 8 credit hours at, or above, the 2000 level and at least 3 credit hours at the 4000 level:"
   },
@@ -1097,7 +1097,7 @@
     "Required": {
       "General Psychology": "PSYC1200"
     },
-    "description": "The ability to understand and predict how people act and think is more important than ever in addressing many of the greatest challenges that we face as a society.  In this pathway, students will learn how behavior and thought are influenced by cognitive, emotional, developmental, social, and environmental factors, and how to apply psychological principles.",
+    "description": "The ability to understand and predict how people act and think is more important than ever in addressing many of the greatest challenges that we face as a society. In this pathway, students will learn how behavior and thought are influenced by cognitive, emotional, developmental, social, and environmental factors, and how to apply psychological principles.",
     "minor": [
       "General Psychology",
       "Psychological Science"
@@ -1109,7 +1109,7 @@
     "One Of0": {
       "Behind the Television Screen": "IHSS19XX",
       "Digital Filmmaking": "ARTS1030",
-      "Documentary:  Whose Narrative?": "IHSS19XX",
+      "Documentary: Whose Narrative?": "IHSS19XX",
       "Open Source: Art, Music, Culture": "IHSS1965",
       "Race and Film in U.S. Culture and History": "IHSS1300",
       "Remixing in Digital Culture": "IHSS19XX",
@@ -1166,6 +1166,6 @@
       "Well-being"
     ],
     "name": "Well-being: Body and Mind",
-    "remaining_header": "Choose remaining credits from the following​​​​, with at least 4 credits at the 4000 level:"
+    "remaining_header": "Choose remaining credits from the following\u200b\u200b\u200b\u200b, with at least 4 credits at the 4000 level:"
   }
 }
