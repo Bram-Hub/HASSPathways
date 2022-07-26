@@ -8,10 +8,10 @@
                 <v-text-field
                     v-model="searchValue"
                     outlined
-                    rounded
                     solo
                     label="Search Class"
                     class="search-field"
+                    style="margin-top: 10px"
                 />
             </div>
             <div v-for="course in filteredCourses" :key="course.name">
