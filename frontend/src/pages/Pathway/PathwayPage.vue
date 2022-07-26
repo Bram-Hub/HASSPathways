@@ -41,7 +41,7 @@
                                 :courses="courses[item[1]]"
                                 :pathway-id="pathwayID"
                                 :desc="false"
-                                :searchBar="false"
+                                :search-bar="false"
                                 :graph="true"
                                 :hover="hover"
                                 :category="item[0]"
@@ -61,21 +61,18 @@
                                         :courses="courses[item[1]]"
                                         :pathway-id="pathwayID"
                                         :desc="false"
-                                        :searchBar="false"
+                                        :search-bar="false"
                                         :graph="true"
                                         :hover="hover"
                                         :category="item[0]"
                                         @checkbox-clicked="onCheckboxClicked"
                                     />
-                                    <hr v-show="index==0 && section.length==2"/>
+                                    <hr v-show="index==0 && section.length==2">
                                 </div>
                             </div>
-                                
                         </div>
                     </v-container>
-                    
                 </div>
-
             </div>
         </v-container>
         <v-container v-show="!showGraph">
@@ -109,45 +106,49 @@
 
             <v-divider class="my-4" />
 
-        <div id="info">
-            <p v-if="fourThousand">At least one course must be at the 4000 level</p>
-            <p v-if="minor">This pathway is compatible with the {{minorName}} minor</p>
-        </div>
+            <div id="info">
+                <p v-if="fourThousand">
+                    At least one course must be at the 4000 level
+                </p>
+                <p v-if="minor">
+                    This pathway is compatible with the {{ minorName }} minor
+                </p>
+            </div>
 
-        <v-divider v-if="fourThousand || minor" class="my-4" />
+            <v-divider v-if="fourThousand || minor" class="my-4" />
 
-        <v-tabs
-            v-model="tab"
-            background-color="transparent"
-            color="basil"
-            grow
-        >
-            <v-tabs-slider color="primary" />
-            <v-tab
-                v-for="(item, index) in classTabs"
-                :key="index"
+            <v-tabs
+                v-model="tab"
+                background-color="transparent"
+                color="basil"
+                grow
             >
-                <small>{{ item[0] }}</small>
-            </v-tab>
-        </v-tabs>
+                <v-tabs-slider color="primary" />
+                <v-tab
+                    v-for="(item, index) in classTabs"
+                    :key="index"
+                >
+                    <small>{{ item[0] }}</small>
+                </v-tab>
+            </v-tabs>
 
-        <v-tabs-items v-model="tab" touchless>
-            <v-tab-item
-                v-for="(item, index) in classTabs"
-                :key="index"
-                :eager="true"
-            >
-                <CourseTable
-                    :ref="index"
-                    :courses="courses[item[1]]"
-                    :pathway-id="pathwayID"
-                    :show-desc="true"
-                    :category="item[0]"
-                    @checkbox-clicked="onCheckboxClicked"
-                />
-            </v-tab-item>
-        </v-tabs-items>
-    </v-container>
+            <v-tabs-items v-model="tab" touchless>
+                <v-tab-item
+                    v-for="(item, index) in classTabs"
+                    :key="index"
+                    :eager="true"
+                >
+                    <CourseTable
+                        :ref="index"
+                        :courses="courses[item[1]]"
+                        :pathway-id="pathwayID"
+                        :show-desc="true"
+                        :category="item[0]"
+                        @checkbox-clicked="onCheckboxClicked"
+                    />
+                </v-tab-item>
+            </v-tabs-items>
+        </v-container>
     </v-container>
 </template>
 
@@ -329,8 +330,8 @@ export default {
             if ( this.pathwayID == "Economics" ) {
                 lengthsArr = this.sections.map( section => {
                     return section
-                            .map( category => Object.keys( this.courses[category[1]]).length )
-                            .reduce( ( a, b ) => a + b );
+                        .map( category => Object.keys( this.courses[category[1]]).length )
+                        .reduce( ( a, b ) => a + b );
                 })
             } else {
                 lengthsArr = this.classTabs.map(
@@ -349,8 +350,8 @@ export default {
         multiRatio() {
             let lengthsArr = this.sections.map( section => {
                 return section
-                        .map( category => Object.keys( this.courses[category[1]]).length )
-                        .reduce( ( a, b ) => a + b );
+                    .map( category => Object.keys( this.courses[category[1]]).length )
+                    .reduce( ( a, b ) => a + b );
             })
             let sum = lengthsArr.reduce( ( a, b ) => a + b );
             let result = lengthsArr.map( l => ( l/sum < 0.35 ? 1 : 2 ) );

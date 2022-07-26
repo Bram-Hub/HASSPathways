@@ -11,8 +11,8 @@
                     :class="[!myModifiers.includes(modifier) ? 'modifier--inactive' : '' , 'modifier', 'modifier--text']"
                     :color="modifiers[modifier].color || 'dd4e47'"
                     v-bind="attrs"
-                    v-on="on"
                     small
+                    v-on="on"
                 >
                     {{ modifiers[modifier].name }}
                 </v-chip>

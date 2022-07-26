@@ -37,8 +37,6 @@
                                     style="z-index: 99"
                                 />
                                 <h1 class="text-h5 class-card__title">
-
-
                                     {{ course.name }}
                                 </h1>
                                 <small v-if="course.hasData" class="class-card__subtitle">
@@ -78,21 +76,19 @@
         >
             <v-list-item one-line>
                 <v-list-item-content class="pb-0">
-                    
                     <div style="cursor: pointer" :class="{courseCard: graph}">
-                            <v-checkbox
-                                :input-value="selected"
-                                :false-value="0"
-                                :true-value="1"
-                                :aria-label="`Toggle selection for ${course.name}`"
-                                color="primary"
-                                value="primary"
-                                hide-details
-                                class="ma-0 checkbox"
-                                style="z-index: 99"
-                            />
+                        <v-checkbox
+                            :input-value="selected"
+                            :false-value="0"
+                            :true-value="1"
+                            :aria-label="`Toggle selection for ${course.name}`"
+                            color="primary"
+                            value="primary"
+                            hide-details
+                            class="ma-0 checkbox"
+                            style="z-index: 99"
+                        />
                         <h1 class="text-h5 class-card__title">
-                            
                             {{ course.name }}
                         </h1>
                         <small v-if="course.hasData" class="class-card__subtitle">
