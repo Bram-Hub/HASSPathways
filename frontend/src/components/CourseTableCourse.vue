@@ -216,7 +216,9 @@ export default {
 <style scoped lang="scss">
 
 .v-alert {
-    width: 98.6%;
+    // width: 98.6%;
+    width:fit-content;
+    align-self: center;
     position: absolute;
     z-index: 100;
     cursor: pointer;

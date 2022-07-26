@@ -67,12 +67,11 @@ export default {
                 mods.push('pre_requisite')
             }
             
-            console.log(mods)
             return mods;
         }
     },
     mounted() {
-        this.debug();
+        // this.debug();
     },
     methods: {
         debug() {

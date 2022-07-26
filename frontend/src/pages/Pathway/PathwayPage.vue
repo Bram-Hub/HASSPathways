@@ -303,6 +303,7 @@ export default {
             }
         },
         toggleGraph() {
+            this.showGraph = !this.showGraph;
             this.resize( this.ratio() );
         },
         resize( params ) {
@@ -322,6 +323,7 @@ export default {
             //  percents we calculated above
             this.$refs.tab.forEach( (tab, index) => {
                 tab.style.flexBasis = `${resized[index]*100}%`;
+                console.log(tab)
             })
         },
         ratio() {
@@ -335,7 +337,7 @@ export default {
                 })
             } else {
                 lengthsArr = this.classTabs.map(
-                    (category) => Object.keys(this.courses[category]).length
+                    (category) => Object.keys(this.courses[category[1]]).length
                 )
             }
             
@@ -345,16 +347,6 @@ export default {
             let sum = lengthsArr.reduce( ( a, b ) => a + b )
             // rounds the numbers to be either 1 or 2
             let result = lengthsArr.map( l => ( l/sum < 0.35 ? 1 : 2 )  )
-            return result;
-        },
-        multiRatio() {
-            let lengthsArr = this.sections.map( section => {
-                return section
-                    .map( category => Object.keys( this.courses[category[1]]).length )
-                    .reduce( ( a, b ) => a + b );
-            })
-            let sum = lengthsArr.reduce( ( a, b ) => a + b );
-            let result = lengthsArr.map( l => ( l/sum < 0.35 ? 1 : 2 ) );
             return result;
         },
     },
