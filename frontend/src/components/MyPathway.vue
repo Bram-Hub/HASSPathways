@@ -46,11 +46,26 @@
                     :key="i"
                 >
                     <p class="pa-0 mb-2">
+                        <v-tooltip v-if="hasPreReq(course.name)" bottom>
+                            <template #activator="{on, attrs}">
+                                <v-icon 
+                                    v-bind="attrs" 
+                                    dense
+                                    v-on="on" 
+                                    class="float-right"
+                                >
+                                    mdi-alert
+                                </v-icon>
+                            </template>
+                            <span>There are pre-requisite(s) for this course</span>
+                        </v-tooltip>
                         {{ course.name }}<br>
                         <small v-if="course.hasData" style="opacity: 0.8">{{ course.subj }}-{{ course.ID }}</small>
-                        <small v-if="!course.hasData" style="opacity: 0.8">
+                        <small v-else style="opacity: 0.8">
                             No data available
                         </small>
+                        
+
                     </p>
                 </span>
             </div>
@@ -61,6 +76,7 @@
 <script>
 import getColorFromCategry from '../helpers/category-colors.js';
 import { pathwayCategories, courses as allCourses } from '../data/data.js'
+
 
 export default {
     name: 'MyPathway',
@@ -76,9 +92,17 @@ export default {
         pathwayCategory: {
             type: String,
             required: true
+        },
+        preRequisite: {
+            type: Boolean
         }
     },
+    mounted() {
+    },
     methods: {
+        hasPreReq( courseName ) {
+            return allCourses[courseName].prerequisites !== "None"
+        },
         formatCourseCategory(classes) {
             if (!classes || !classes.length)
                 return []; // Shouldn't happen!

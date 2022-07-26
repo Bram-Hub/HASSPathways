@@ -268,8 +268,9 @@ export default {
     },
     methods : {
         debug() {
-            console.log(this.multiRatio());
-            this.multiResize( this.multiRatio() );
+            // console.log(this.multiRatio());
+            // this.multiResize( this.multiRatio() );
+            console.log(pathways)
         },
         onCheckboxClicked(data) {
             // course name of checkbox will be passed through as the data variable

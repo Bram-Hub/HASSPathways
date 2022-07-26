@@ -25,6 +25,7 @@
                 :title="item.name"
                 :courses="item.courses"
                 :pathway-category="item.name"
+                :pre-requisite="item.preRequisite"
                 @update="update()"
             />
         </v-container>
@@ -80,6 +81,7 @@ export default {
                 this.update();
             }
         })
+
     },
     methods: {
         debug() {

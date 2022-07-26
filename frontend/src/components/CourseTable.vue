@@ -27,7 +27,6 @@
                 :hover="hover"
                 :graph="graph"
                 @checkbox-clicked="update"
-                @alert="toggleAlert"
             />
         </div>
 
@@ -117,7 +116,7 @@ export default {
                         if(a.subj < b.subj) return -1
                         else                return 1
                     } else if (a.ID < b.ID) return -1
-                    else return 1
+                     else return 1
                 }
             )
             return tempCourses
@@ -133,9 +132,6 @@ export default {
             data.ref = this.category;
             // data: { name: course name, selected: true/false, category: "One Of"/"Remaining"/... }
             this.$emit('checkbox-clicked', data);
-        },
-        toggleAlert( data ) {
-            console.log( data )
         }
     }
 }
