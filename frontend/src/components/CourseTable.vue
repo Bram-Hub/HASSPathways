@@ -106,7 +106,7 @@ export default {
                         if(a.subj < b.subj) return -1
                         else                return 1
                     } else if (a.ID < b.ID) return -1
-                     else return 1
+                    else return 1
                 }
             )
             return tempCourses
