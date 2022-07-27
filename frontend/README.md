@@ -1,5 +1,9 @@
 # frontend
 
+## More Info
+
+See the `docs` folder
+
 ## Project setup
 ```
 npm install
