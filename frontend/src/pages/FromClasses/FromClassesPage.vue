@@ -2,7 +2,6 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <YearSelection />
 
             <h1>HASS Pathways From Classes</h1>
             <p>Search for the classes you have taken and then continue to the next page to display the computed pathways for you!</p>
@@ -140,7 +139,6 @@
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import { courses } from '../../data/data.js'
-import YearSelection from '../../components/YearSelection.vue'
 
 const TABLE_HEADERS = [
     {
@@ -156,7 +154,7 @@ const TABLE_HEADERS = [
 
 export default {
     components: {
-        Breadcrumbs, YearSelection
+        Breadcrumbs
     },
     data() {
         const courseList = Object.values(courses).map(course => {
@@ -241,5 +239,4 @@ export default {
 
 
 </style>
-
 
