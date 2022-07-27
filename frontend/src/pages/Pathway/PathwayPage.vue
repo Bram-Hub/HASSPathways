@@ -1,6 +1,7 @@
 <template>
     <v-container>
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
+        <!-- <v-btn @click="debug()">click me</v-btn> -->
         <div class="header">
             <h1>{{ pathway.name }}</h1>
 
@@ -14,106 +15,149 @@
             <div id="graphView">
                 <div class="graph-fab-container">
                     <v-btn
-                        color="grey" elevation="2" fab
+                        color="grey"
+                        elevation="2"
+                        fab
                         aria-label="Show class description on hover"
-                        @click="descriptionOnHover = !descriptionOnHover;"
+                        @click="hover = !hover"
                     >
                         <v-icon>
-                            {{ descriptionOnHover ? 'mdi-comment-text-outline' : 'mdi-comment-text' }}
+                            {{
+                                !hover
+                                    ? 'mdi-comment-text-outline'
+                                    : 'mdi-comment-text'
+                            }}
                         </v-icon>
                     </v-btn>
                 </div>
-                <div v-for="(item, index) in classTabs" :key="index" class="tab">
-                    <h2 class="courseTitle">
-                        {{ item[0] }}
-                    </h2>
-                    <CourseTable
-                        :ref="index"
-                        :courses="courses[item[1]]"
-                        :pathway-id="pathwayID"
-                        :show-desc="false"
-                        :search-bar="false"
-                        :graph-view="true"
-                        @checkbox-clicked="onCheckboxClicked()"
-                    />
+                <div id="graphTabs">
+                    <v-container v-if="pathwayID!='Economics'" style="display:flex">
+                        <div v-for="(item, index) in classTabs" :key="index" ref="tab" :class="[ 'tab' ]">
+                            <h2 class="courseTitle">
+                                {{ item[0] }}
+                            </h2>
+                            <CourseTable
+                                :ref="item[0]"
+                                :courses="courses[item[1]]"
+                                :pathway-id="pathwayID"
+                                :desc="false"
+                                :search-bar="false"
+                                :graph="true"
+                                :hover="hover"
+                                :category="item[0]"
+                                @checkbox-clicked="onCheckboxClicked"
+                            />
+                        </div>
+                    </v-container>
+                    <v-container v-else style="display:flex">
+                        <div v-for="(section, index) in sections" :key="index" ref="tab">
+                            <div class="tab">
+                                <div v-for="(item, index_) in section" :key="index_">
+                                    <h2 class="courseTitle">
+                                        {{ item[0] }}
+                                    </h2>
+                                    <CourseTable
+                                        :ref="item[0]"
+                                        :courses="courses[item[1]]"
+                                        :pathway-id="pathwayID"
+                                        :desc="false"
+                                        :search-bar="false"
+                                        :graph="true"
+                                        :hover="hover"
+                                        :category="item[0]"
+                                        @checkbox-clicked="onCheckboxClicked"
+                                    />
+                                    <hr v-show="index_==0 && section.length==2">
+                                </div>
+                            </div>
+                        </div>
+                    </v-container>
                 </div>
             </div>
         </v-container>
         <v-container v-show="!showGraph">
             <div class="fab-container">
                 <v-btn
-                    color="light grey" elevation="2" fab
+                    color="light grey"
+                    elevation="2"
+                    fab
                     aria-label="Switch to nex tab on class selection"
-                    @click="changeTabOnSelection = !changeTabOnSelection;"
+                    @click="changeTabOnSelection = !changeTabOnSelection"
                 >
                     <v-icon>
-                        {{ changeTabOnSelection ? 'mdi-rotate-right-variant' : 'mdi-checkbox-blank-circle-outline' }}
+                        {{
+                            changeTabOnSelection
+                                ? 'mdi-rotate-right-variant'
+                                : 'mdi-checkbox-blank-circle-outline'
+                        }}
                     </v-icon>
                 </v-btn>
 
                 <v-btn
-                    color="red" elevation="2" fab
+                    color="red"
+                    elevation="2"
+                    fab
                     aria-label="Clear courses"
                     @click="deselectCourses()"
                 >
                     <v-icon>mdi-delete</v-icon>
                 </v-btn>
             </div>
+
+            <v-divider class="my-4" />
+
+            <div id="info">
+                <p v-if="fourThousand">
+                    At least one course must be at the 4000 level
+                </p>
+                <p v-if="minor">
+                    This pathway is compatible with the {{ minorName }} minor
+                </p>
+            </div>
+
+            <v-divider v-if="fourThousand || minor" class="my-4" />
+
+            <v-tabs
+                v-model="tab"
+                background-color="transparent"
+                color="basil"
+                grow
+            >
+                <v-tabs-slider color="primary" />
+                <v-tab
+                    v-for="(item, index) in classTabs"
+                    :key="index"
+                >
+                    <small>{{ item[0] }}</small>
+                </v-tab>
+            </v-tabs>
+
+            <v-tabs-items v-model="tab" touchless>
+                <v-tab-item
+                    v-for="(item, index) in classTabs"
+                    :key="index"
+                    :eager="true"
+                >
+                    <CourseTable
+                        :ref="index"
+                        :courses="courses[item[1]]"
+                        :pathway-id="pathwayID"
+                        :show-desc="true"
+                        :category="item[0]"
+                        @checkbox-clicked="onCheckboxClicked"
+                    />
+                </v-tab-item>
+            </v-tabs-items>
         </v-container>
-
-        <v-divider class="my-4" />
-
-        <div id="info">
-            <p v-if="fourThousand">
-                At least one course must be at the 4000 level
-            </p>
-            <p v-if="minor">
-                This pathway is compatible with the {{ minorName }} minor
-            </p>
-        </div>
-
-        <v-divider v-if="fourThousand || minor" class="my-4" />
-
-        <v-tabs
-            v-model="tab"
-            background-color="transparent"
-            color="basil"
-            grow
-        >
-            <v-tabs-slider color="primary" />
-            <v-tab
-                v-for="item in classTabs"
-                :key="item[1]"
-            >
-                <small>{{ item[0] }}</small>
-            </v-tab>
-        </v-tabs>
-
-        <v-tabs-items v-model="tab" touchless>
-            <v-tab-item
-                v-for="(item, index) in classTabs"
-                :key="item[1]"
-                :eager="true"
-            >
-                <CourseTable
-                    :ref="index"
-                    :courses="courses[item[1]]"
-                    :pathway-id="pathwayID"
-                    :show-desc="true"
-                    @checkbox-clicked="onCheckboxClicked()"
-                />
-            </v-tab-item>
-        </v-tabs-items>
     </v-container>
 </template>
 
 <script>
 import { pathwayCategories, pathways, courses } from '../../data/data.js'
 import CourseTable from '../../components/CourseTable'
-// import GraphTab from '../../components/GraphTab.vue'
 import Breadcrumbs from '../../components/Breadcrumbs'
-import Bookmark from '../../components/Bookmark'
 import breadcrumbs from '../../data/breadcrumbs.js'
+import Bookmark from '../../components/Bookmark'
 
 export default {
     components: {
@@ -125,13 +169,21 @@ export default {
             category: '',
             showGraph: false,
             changeTabOnSelection: false,
-            descriptionOnHover: false,
+            hover: false
         }
     },
     computed: {
-        // Returns true if the pathway is already in the
-        //  'My Pathways' page
-        // Get id of the pathway, ie 'Chinese Language'
+        // split up the classTabs into sections
+        sections() {
+            let sections = [], size = 2;
+            let items = [...this.classTabs];
+
+            while (items.length > 0)
+                sections.push(items.splice(0, size));
+                
+            return sections;
+        },
+        // Get id of the pathway, ie 'chinese_language'
         pathwayID() {
             // Should always be valid, see router/index.js
             let pathwayID = this.$route.query.pathway;
@@ -211,21 +263,33 @@ export default {
             return all.substring(0,all.length-4) //get rid of final " or "
         }
     },
+    mounted() {
+        this.bookmarkSelected = this.bookmarked;
+    },
     methods : {
         debug() {
-            // let output = Object.entries(this.$store.state.pathways).map(v => { return {
-            //     name: v[0],
-            //     courses: v[1].courses,
-            //     bookmarked: v[1].bookmarked
-            // }});
-            // console.log(output)
-            // console.log(this.$store.getters.pathwayBookmarked(this.pathwayID))
-            console.log(this)
-            console.log(this.courses)
+            // console.log(this.multiRatio());
+            // this.multiResize( this.multiRatio() );
+            console.log(pathways)
         },
-        onCheckboxClicked(){
-            if(this.changeTabOnSelection)
-                this.tab += 1;
+        onCheckboxClicked(data) {
+            // course name of checkbox will be passed through as the data variable
+            if (this.changeTabOnSelection) {
+                this.tab += 1
+            }
+
+            let children = this.$refs[data.ref]
+            // if the course has been selected, go into all of the other coursetables of the same ref
+            //  and make sure that they are also checked. Otherwise, deselect them.
+            children.forEach((child) => {
+                child.$children
+                    .filter(
+                        (c) =>
+                            c.$options._componentTag === 'CourseTableCourse' &&
+                            c.course.name === data.name
+                    )
+                    .map((c) => c.setSelected(data.selected))
+            })
         },
         deselectCourses() {
             let pathway = this.$store.state.pathways[this.pathwayID];
@@ -238,23 +302,51 @@ export default {
             for(const i in this.classTabs) {
                 this.$refs[i][0].deselectAll();
             }
-            /* <!-- ! this is sus -->
-            * this WILL break with the current implementation of graph view
-            *  because this.$refs[tab] gives me an array of all of the courseTable components
-            *   on the DOM. Right now, there is only one, but with the current implementation
-            *    of graph view, there will be more courseTable components which will make the
-            *     array that this.$refs[tab] gives have multiple couresTable elements
-            *      this should be revamped in the future to change how I deselect courses
-            *
-            * this should be changed in the future
-            */
         },
         toggleGraph() {
-            // console.log(this.courses);
             this.showGraph = !this.showGraph;
+            this.resize( this.ratio() );
+        },
+        resize( params ) {
+            let left = params[0];
+            let right = params[1];
 
-        }
-    }
+            // converting ratios to percents out of 100%
+            //  could probably change this in the future for the ratio()
+            //   function to handle this
+            let resized = [ left/(right + left), right/(right + left )];
+
+            // setting the flex-basis property of the divs to be the 
+            //  percents we calculated above
+            this.$refs.tab.forEach( (tab, index) => {
+                tab.style.flexBasis = `${resized[index]*100}%`;
+                console.log(tab)
+            })
+        },
+        ratio() {
+            // creates an array of all of the lengths of classes
+            let lengthsArr;
+            if ( this.pathwayID == "Economics" ) {
+                lengthsArr = this.sections.map( section => {
+                    return section
+                        .map( category => Object.keys( this.courses[category[1]]).length )
+                        .reduce( ( a, b ) => a + b );
+                })
+            } else {
+                lengthsArr = this.classTabs.map(
+                    (category) => Object.keys(this.courses[category[1]]).length
+                )
+            }
+            
+            // we could just return this but that would make the
+            //  displays of the tabs not uniform accross different pages
+            // finds the sum of all of the array above
+            let sum = lengthsArr.reduce( ( a, b ) => a + b )
+            // rounds the numbers to be either 1 or 2
+            let result = lengthsArr.map( l => ( l/sum < 0.35 ? 1 : 2 )  )
+            return result;
+        },
+    },
 }
 </script>
 
@@ -267,10 +359,13 @@ export default {
     justify-content: normal;
     flex-direction: row;
 }
-#graphView>.tab {
+#graphView > .tab {
     flex: 1 1 160px;
     margin: 0 2%;
     /* border: 1px red solid; */
+}
+#graphTabs > .container {
+    gap: 10px;
 }
 .tab {
     display: flex;
@@ -283,14 +378,20 @@ export default {
     margin: 0 auto;
 }
 .courseTitle {
+    width: fit-content;
     margin: 0 auto;
     font-weight: bolder;
 }
-.graphTab {
-    /* flex: 1 1 20vw; */
-    border: 1px solid cyan;
-    /* display: flex; */
-    /* max-width: 20vw; */
+#graphTabs {
+    display: flex;
+    flex: auto;
+    gap: 1%;
+    /* flex-wrap: wrap; */
+}
+@media only screen and (max-width: 850px) {
+    #graphTabs {
+        flex-wrap: wrap;
+    }
 }
 
 .graph-fab-container {
@@ -309,7 +410,12 @@ export default {
 .header h1{
     display: inline-block;
 }
-
+.bookmark-holder {
+    display: inline-flex;
+    top: 0;
+    cursor: pointer;
+    z-index: 9;
+}
 .fab-container {
     position: fixed;
     right: 10px;
@@ -327,10 +433,10 @@ export default {
     text-align: center;
 }
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
     .fab-container {
         right: 50px;
         bottom: 50px;
     }
-}
+} */
 </style>

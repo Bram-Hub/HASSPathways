@@ -6,7 +6,7 @@
             <router-view />
         </v-main>
 
-        <Footer />
+        <Footer id="footer" />
     </v-app>
 </template>
 
@@ -56,6 +56,12 @@ export default {
     font-family: 'Muli', sans-serif;
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .main-content {

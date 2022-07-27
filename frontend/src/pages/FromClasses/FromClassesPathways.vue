@@ -58,7 +58,7 @@ export default {
         get_pathways() {
             let myPathways = [];
             for(const key in pathways) {
-                let thisPathway = {name: "", courses: new Set()};
+                let thisPathway = {name: "", courses: new Set()}; 
                 const singlePathway = pathways[key];
                 thisPathway.name = key;
                 for(const prio in singlePathway) {

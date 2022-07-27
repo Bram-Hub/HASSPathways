@@ -12,7 +12,7 @@
             <v-divider class="my-4" />
 
             <div class="pathway-categories fade-in">
-                <PathwayCategory
+                <PathwayCategory 
                     v-for="item in pathwayCategories"
                     :key="item.name"
                     :title="item.name"
