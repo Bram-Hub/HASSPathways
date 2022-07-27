@@ -4,10 +4,10 @@ from bs4 import BeautifulSoup
 import re
 
 PASSED = {"A", "A-",
-        "B+", "B", "B-",
-        "C+", "C", "C-",
-        "D+", "D",
-        "P", "IP", "S", "Z", "NE**"}
+          "B+", "B", "B-",
+          "C+", "C", "C-",
+          "D+", "D",
+          "P", "IP", "S", "Z", "NE**"}
 
 FAILED_CODES = {"F", "I", "W", "AU", "U", "FA", "NC", "WI"}
 
