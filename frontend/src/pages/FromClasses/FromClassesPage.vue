@@ -56,7 +56,7 @@
                                 <br>
                                 In order to upload your transcript:
                                 <br>
-                                1. Log onto SIS.
+                                1. Log onto <a href="https://sis.rpi.edu" target="_blank">https://sis.rpi.edu</a>.
                                 <br>
                                 2. Go to the "Student Menu".
                                 <br>
@@ -70,7 +70,17 @@
                                 <br>
                                 7. Drag and drop the html document into the box below or press "UPLOAD TRANSCRIPT".
                             </v-card-text>
-                            <v-divider />
+                            <!-- https://codepen.io/dimitri-lopez/pen/gOeGRGK -->
+                           <v-divider />
+                           <div id="drop-area" style="text-align: center;">
+                               <form class="my-form" >
+                                   <p>Drag and drop your unofficial transcript here.</p>
+                                   <input type="file" id="fileElem" accept="*\.pdf" onchange="handleFiles(this.files)" style="display: none;">
+                                   <label id="upload-button" for="fileElem">Upload Transcript</label>
+                               </form>
+                               <progress id="progress-bar" max=100 value=0></progress>
+                               <div id="gallery" />
+                           </div>
 
                             <v-divider />
                             <v-card-actions>
@@ -83,7 +93,6 @@
                                 >
                                     Cancel
                                 </v-btn>
-                                <input type="file" ref="file" style="display: none">
                                 <v-btn
                                     color="primary"
                                     class="font-weight-bold"
@@ -271,6 +280,24 @@ export default {
 }
 </script>
 <style>
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 480px;
+  margin: 20px auto;
+  padding: 20px;
+}
+#drop-area.highlight {
+  border-color: #2E7D32;
+}
+#upload-button {
+    display: inline-block;
+    padding: 10px;
+    background: green;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 @media only screen and (max-width: 600px) {
     /* Taller rows = easier to click on mobile (only for small screens) */
     .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
