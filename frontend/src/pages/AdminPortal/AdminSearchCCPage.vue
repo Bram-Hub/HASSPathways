@@ -104,6 +104,13 @@ export default {
         cursor: pointer;
         }
     .search-field {
-        width: 400px;
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+        .search-field{
+            width: 400px;
+        }
+    
     }
 </style>

@@ -8,6 +8,7 @@
 
             <v-card outlined tile>
                 <v-card-title>
+                    <div id="text-field" width="700px">
                     <v-text-field
                         v-model="searchValue"
                         append-icon="mdi-magnify"
@@ -17,6 +18,7 @@
                         dense outlined
                         style="border-radius: 0"
                     />
+                    </div>
                     <v-spacer />
 
                     <!-- Clear confirmation modal -->
@@ -206,8 +208,15 @@ export default {
         width: 100%;
         margin-top: 10px;
     }
+    
+    #text-field{
+        width: 500px
+    }
 }
 
+#text-field{
+    width: 800px;
+}
 .table-row { cursor: pointer; }
 .table-row_selected { background-color: rgba(229, 57, 53, 0.15); }
 

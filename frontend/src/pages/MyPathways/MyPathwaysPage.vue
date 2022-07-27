@@ -12,7 +12,7 @@
                     You can add pathways here.
                 </router-link>
             </p>
-            <v-btn @click="bookmarkedOnly = !bookmarkedOnly">
+            <v-btn id="mobile-btn" @click="bookmarkedOnly = !bookmarkedOnly">
                 Toggle bookmarked pathways
             </v-btn>
 
@@ -102,3 +102,18 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+
+#mobile-btn {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 600px) {
+    #mobile-btn {
+        width: 300px;
+    }
+}
+
+</style>
