@@ -20,6 +20,83 @@
                     <v-spacer />
 
                     <!-- Clear confirmation modal -->
+
+
+                    <v-dialog
+                        v-model="import_dialog"
+                        width="700"
+                        light
+                        overlay-opacity="0.8"
+                    >
+                        <template #activator="{ on, attrs }">
+                            <v-btn
+                                dark
+                                color="blue" outlined tile
+                                class="mr-2 font-weight-bold mobile-btn"
+                                v-bind="attrs"
+                                v-on="on"
+                            >
+                                Import Classes
+                                <v-icon right>
+                                    mdi-upload
+                                </v-icon>
+                            </v-btn>
+                        </template>
+                        <v-card>
+                            <v-card-text class="pt-4 font-weight-medium">
+                                <h3 class="mb-1">
+                                    Uploading Your Unofficial Web Transcript
+                                </h3>
+                                This will take your unofficial transcript
+                                available on SIS and import all the HASS classes
+                                on it. This will allow you to see what pathways
+                                are compatible for the classes you have already
+                                taken.
+                                <br>
+                                <br>
+                                In order to upload your transcript:
+                                <br>
+                                1. Log onto SIS.
+                                <br>
+                                2. Go to the "Student Menu".
+                                <br>
+                                3. Under "Curriculum Information" click "View Transcript".
+                                <br>
+                                4. Select "All Levels" for the level and "Unoficial Web Transcript" for the type and then click submit.
+                                <br>
+                                5. Press Ctrl+s or right click a blank spot on the page and select "Save as...".
+                                <br>
+                                6. Save the html document.
+                                <br>
+                                7. Drag and drop the html document into the box below or press "UPLOAD TRANSCRIPT".
+                            </v-card-text>
+                            <v-divider />
+
+                            <v-divider />
+                            <v-card-actions>
+                                <v-spacer />
+                                <v-btn
+                                    color="secondary"
+                                    class="font-weight-bold"
+                                    text
+                                    @click="import_dialog = false"
+                                >
+                                    Cancel
+                                </v-btn>
+                                <input type="file" ref="file" style="display: none">
+                                <v-btn
+                                    color="primary"
+                                    class="font-weight-bold"
+                                    text
+                                    @click="deselectAll(); import_dialog = false"
+                                >
+                                    Upload Transcript
+                                </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-dialog>
+
+
                     <v-dialog
                         v-model="dialog"
                         width="500"
@@ -168,7 +245,8 @@ export default {
             courses: courseList,
             courseHeaders: TABLE_HEADERS,
             selected: courseList.filter(course => this.$store.state.classes[course.name]),
-            dialog: false
+            dialog: false,
+            import_dialog: false
         }
     },
     methods: {
