@@ -46,7 +46,7 @@
                     </v-icon>
                     Learn about Pathways
                 </v-btn>
-                <v-btn
+                <!--v-btn
                     pathway-btn
                     large
                     :to="{ name: 'admin-portal' }"
@@ -55,7 +55,7 @@
                         mdi-cog
                     </v-icon>
                     Admin and secure portal
-                </v-btn>
+                </v-btn-->
             </v-row>
         </v-container>
     </div>
