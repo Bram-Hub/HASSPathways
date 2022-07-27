@@ -5,7 +5,6 @@
             <v-autocomplete
                 v-model="selectedPathway"
                 clearable
-                rounded
                 solo
                 :items="pathways"
                 label="Pathways"
