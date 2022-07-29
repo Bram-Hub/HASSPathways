@@ -11,6 +11,7 @@
                     :class="[!myModifiers.includes(modifier) ? 'modifier--inactive' : '' , 'modifier', 'modifier--text']"
                     :color="modifiers[modifier].color || 'dd4e47'"
                     v-bind="attrs"
+                    small
                     v-on="on"
                 >
                     {{ modifiers[modifier].name }}
@@ -61,8 +62,23 @@ export default {
                     mods.push(prop);
                 }
             }
+        
+            if(this.item.prerequisites != "None" && this.item.prerequisites.length != 0 ) {
+                mods.push('pre_requisite')
+            }
             
             return mods;
+        }
+    },
+    mounted() {
+        // this.debug();
+    },
+    methods: {
+        debug() {
+            // console.log( this.item );
+            if ( this.item.prerequisites != "None" ) {
+                console.log(this.item)
+            }
         }
     }
 }
@@ -71,6 +87,7 @@ export default {
 <style scoped lang="scss">
 // Base styles applied to all modifiers
 .modifier {
+    margin-top: 7px;
     margin-right: 3px;
     cursor: help;
     user-select: none;
