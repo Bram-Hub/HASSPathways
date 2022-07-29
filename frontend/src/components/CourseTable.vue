@@ -1,5 +1,5 @@
 <template>
-    <v-container style="min-height: 50vh">
+    <v-container :class="{ minHeight : !graph}">
         <!-- Table header with search and open/close all buttons
           -- A scale transform is applied to make it smaller -->
         <v-card
@@ -17,15 +17,16 @@
                 style="width: 400px; max-width: 100%"
             />
         </v-card>
-        <div :class="{graphContainer: graphView}">
+        <div :class="{graphContainer: graph}">
             <CourseTableCourse
                 v-for="item in filteredCourses"
                 :key="item.name"
                 :course="item"
                 :pathway-id="pathwayId"
-                :show-desc="showDesc"
-                :description-on-hover="descriptionOnHover"
-                :graph-view="graphView"
+                :desc="desc"
+                :hover="hover"
+                :graph="graph"
+                @checkbox-clicked="update"
             />
         </div>
 
@@ -43,6 +44,10 @@ export default {
     name: 'CourseTable',
     components: { CourseTableCourse },
     props: {
+        category: {
+            type: String,
+            required: true
+        },
         courses: {
             type: Object,
             required: true
@@ -52,22 +57,22 @@ export default {
             required: false,
             default: null
         },
-        showDesc: {
+        desc: {
             type: Boolean,
             required: false,
             default: true,
         },
-        descriptionOnHover: {
+        hover: {
             type: Boolean,
             required: false,
-            default: true,
+            default: false,
         },
         searchBar: {
             type: Boolean,
             required: false,
             default: true,
         },
-        graphView: {
+        graph: {
             type: Boolean,
             required: false,
         }
@@ -75,6 +80,11 @@ export default {
     data() {
         return { search: '' }
     },
+    // watch: {
+    //     descriptionOnHover( newValue ) {
+    //         console.log(`old value: ${this.descriptionOnHover} new value: ${newValue}`);
+    //     }
+    // },
     computed: {
         filteredCourses() {
             let tempCourses = JSON.parse(JSON.stringify(this.courses));
@@ -106,7 +116,7 @@ export default {
                         if(a.subj < b.subj) return -1
                         else                return 1
                     } else if (a.ID < b.ID) return -1
-                     else return 1
+                    else return 1
                 }
             )
             return tempCourses
@@ -117,16 +127,42 @@ export default {
             this.$children.forEach(child => {
                 if (child.setSelected) child.setSelected(0);
             });
+        },
+        update( data ) {   
+            data.ref = this.category;
+            // data: { name: course name, selected: true/false, category: "One Of"/"Remaining"/... }
+            this.$emit('checkbox-clicked', data);
         }
     }
 }
 </script>
 
 <style scoped>
+
+.minHeight {
+    min-height: 50vh;
+}
+.graphContent {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.graph-content CourseTableCourse {
+    margin: 0;
+}
 .graphContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px 20px;
+    display: flex;
+    flex: 50%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+.graphContainer * {
+    width: 300px;
+    margin: 5px 5px;
+    flex-grow: 1;
 }
 .table-header-search {
     transform-origin: bottom left;
