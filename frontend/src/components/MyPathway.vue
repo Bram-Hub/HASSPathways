@@ -45,7 +45,7 @@
                     <v-col>
                         <div class="bookmark">
                             <Bookmark
-                                myPathway="true"
+                                :myPathway=true
                                 :pathway-id="title"
                                 :courses="courses"
                                 @update="$emit('update')"
