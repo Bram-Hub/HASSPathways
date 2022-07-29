@@ -63,7 +63,7 @@ export default {
                 }
             }
         
-            if(this.item.prerequisites != "None") {
+            if(this.item.prerequisites != "None" && this.item.prerequisites.length != 0 ) {
                 mods.push('pre_requisite')
             }
             

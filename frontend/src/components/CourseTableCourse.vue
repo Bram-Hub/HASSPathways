@@ -8,7 +8,9 @@
         >
             This course has pre-requisite(s).
             <br>
-            {{ course.prerequisites }}
+            <span v-for='(prereq, index) in course.prerequisites' :key="prereq">
+                {{prereq}} <span v-if="index < course.prerequisites.length-1">,&nbsp;</span>
+            </span>
         </v-alert>
         <v-tooltip v-show="hover" bottom>
             <template #activator="{ on, attrs }">
@@ -174,6 +176,7 @@ export default {
             let selection = window.getSelection();
             if (selection.isCollapsed) {
                 this.selected = 1 - this.selected;
+                console.log(this.course.prerequisites)
 
                 // Save selection
                 const c = { pathwayID: this.pathwayId, course: this.course.name };
@@ -181,7 +184,7 @@ export default {
                     this.$store.commit('addCourse', c);
                     this.$emit('checkbox-clicked', { name: this.course.name, selected: true });
                     // now check to see if there are pre-requisites present
-                    if ( this.course.prerequisites != "None" ) {
+                    if ( this.course.prerequisites.length != 0) {
                         // console.log("pre-requisite")
                         this.alert = true;
                         // this.$emit("showAlert", this.course.prerequisites );
@@ -190,7 +193,7 @@ export default {
                     this.$store.commit('delCourse', c);
                     this.$emit('checkbox-clicked', { name: this.course.name, selected: false });
                     this.alert = false;
-                    if ( this.course.prerequisites != "None" ) {
+                    if ( this.course.prerequisites.length != 0) {
                         // console.log("pre-requisite")
                         this.alert = false;
                         // this.$emit("hideAlert", this.course.prerequisites );
