@@ -8,7 +8,6 @@
                 v-model="isLight"
                 @click="darkMode"
                 size="small"
-                color="yellow"
                 :prepend-icon="correctIcon"
                 style="padding-top:21px;"
             >
@@ -18,6 +17,7 @@
         <span>Switch to Light Mode</span>
     </v-tooltip>
 </template>
+
 
 <script>
 export default {
@@ -34,9 +34,11 @@ export default {
     },
     methods: {
         darkMode() {
+            //prepend-icon="mdi-moon-waxing-crescent"
             this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
             this.$store.commit('setDarkMode', !this.isLight);
         }
+
     }
 }
 </script>
