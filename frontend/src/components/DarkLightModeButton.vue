@@ -4,12 +4,14 @@
             <v-switch
                 inset
                 small fab elevation="0"
+                v-on="off"
+                @click="darkMode"
                 size="small"
                 prepend-icon="mdi-moon-waxing-crescent"
                 style="padding-top:21px;"
-                v-on="off"
-                @click="darkMode"
-            />
+            >
+        
+            </v-switch>
         </template>
         <span>Switch to Light Mode</span>
     </v-tooltip> 
@@ -22,9 +24,10 @@
                 color="yellow darken-2"
                 value="yellow darken-2"
                 size="small"
-                style="padding-top:21px;"
                 @click="darkMode"
-            />
+                style="padding-top:21px;"
+            >
+            </v-switch>
         </template>
         <span>Switch to Dark Mode</span>
     </v-tooltip>

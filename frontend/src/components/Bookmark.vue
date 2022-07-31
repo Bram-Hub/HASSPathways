@@ -1,5 +1,5 @@
 <template>
-    <span class="bookmark-holder">
+    <span v-if="!myPathway" class="bookmark-holder">
         <v-tooltip v-if="bookmarkSelected" bottom>
             <template #activator="{on, attrs}">
                 <v-icon 
@@ -29,6 +29,39 @@
             <span>Add pathway to "My Pathways"</span>  
         </v-tooltip>
     </span>
+    <span v-else class="bookmark-holder">
+        <v-tooltip v-if="bookmarkSelected" bottom>
+            <template #activator="{on, attrs}">
+                <v-icon 
+                    class="selected" 
+                    v-bind="attrs" 
+                    large
+                    dense
+                    v-on="on" 
+                    @click="deselectBookmark()" 
+                >
+                    mdi-bookmark
+                </v-icon>
+            </template>
+            <span>Remove pathway from "My Pathways"</span>
+        </v-tooltip>
+        <v-tooltip v-else bottom>
+            <template #activator="{on, attrs}">
+                <v-icon 
+                    class="unselected" 
+                    v-bind="attrs" 
+                    large
+                    dense
+                    v-on="on"  
+                    @click="selectBookmark()" 
+                >
+                    mdi-bookmark-outline
+                </v-icon>
+            </template>
+            <span>Add pathway to "My Pathways"</span>  
+        </v-tooltip>
+    </span>
+
 </template>
 
 <script>
@@ -44,6 +77,10 @@ export default {
             type: Array,
             required: false,
             default: null
+        },
+        myPathway: {
+            type: Boolean,
+            default: false,
         }
     },
     data() {
