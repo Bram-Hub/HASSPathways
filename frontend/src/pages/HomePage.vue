@@ -28,10 +28,10 @@
                     pathway-btn
                     large
                     color="primary"
-                    :to="{ name: 'search-classes' }"
+                    :to="{ name: 'choose-classes' }"
                 >
                     <v-icon left dark>
-                        mdi-magnify
+                        mdi-send
                     </v-icon>
                     Find pathways from classes
                 </v-btn>
@@ -45,6 +45,17 @@
                         mdi-help-circle-outline
                     </v-icon>
                     Learn about Pathways
+                </v-btn>
+                <v-btn
+                    pathway-btn
+                    large
+                    color="primary"
+                    :to="{ name: 'search-classes' }"
+                >
+                    <v-icon left dark>
+                        mdi-magnify
+                    </v-icon>
+                    Advanced course search
                 </v-btn>
                 <v-btn
                     pathway-btn

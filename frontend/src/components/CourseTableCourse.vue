@@ -9,7 +9,7 @@
         <v-list-item one-line>
             <v-list-item-content class="pb-0">
                 <div style="cursor: pointer">
-                    <h1 class="text-h5 class-card__title">
+                    <h1 v-if="pathwayId != null" class="text-h5 class-card__title">
                         <v-checkbox
                             :input-value="selected"
                             :false-value="0"
@@ -88,26 +88,30 @@ export default {
     },
     mounted() {
         // Load saved selection
-        let courses = this.$store.state.pathways[this.pathwayId] || { courses: [] };
-        courses = courses.courses;
-        this.selected = courses.includes(this.course.name) ? 1 : 0;
+        if(this.pathwayId) {
+            let courses = this.$store.state.pathways[this.pathwayId] || { courses: [] };
+            courses = courses.courses;
+            this.selected = courses.includes(this.course.name) ? 1 : 0;
+        }
     },
     methods: {
         func(el) {
             console.log(el);
         },
         toggleCheckbox() {
-            let selection = window.getSelection();
-            if (selection.isCollapsed) {
-                this.selected = 1 - this.selected;
+            if(this.pathwayId) {
+                let selection = window.getSelection();
+                if (selection.isCollapsed) {
+                    this.selected = 1 - this.selected;
 
-                // Save selection
-                const c = { pathwayID: this.pathwayId, course: this.course.name };
-                if (this.selected){
-                    this.$store.commit('addCourse', c);
-                    this.$emit('checkbox-clicked')
-                } else {
-                    this.$store.commit('delCourse', c);
+                    // Save selection
+                    const c = { pathwayID: this.pathwayId, course: this.course.name };
+                    if (this.selected){
+                        this.$store.commit('addCourse', c);
+                        this.$emit('checkbox-clicked')
+                    } else {
+                        this.$store.commit('delCourse', c);
+                    }
                 }
             }
         },
