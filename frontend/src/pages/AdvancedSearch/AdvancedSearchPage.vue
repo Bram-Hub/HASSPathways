@@ -147,9 +147,10 @@
                         <CourseTableCourse
                             :key="item.name"
                             :course="temp(item)"
+                            :desc="true"
                             :show-desc="true"
-                            :description-on-hover="false"
-                            :graph-view="false"
+                            :hover="false"
+                            :graph="false"
                         />
                         <!-- {{ item.description }} -->
                     </td>

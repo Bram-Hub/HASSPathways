@@ -46,7 +46,7 @@
                     </v-icon>
                     Learn about Pathways
                 </v-btn>
-                <!--v-btn
+                <v-btn
                     pathway-btn
                     large
                     color="primary"
@@ -57,7 +57,7 @@
                     </v-icon>
                     Advanced course search
                 </v-btn>
-                <v-btn
+                <!--v-btn
                     pathway-btn
                     large
                     :to="{ name: 'admin-portal' }"
