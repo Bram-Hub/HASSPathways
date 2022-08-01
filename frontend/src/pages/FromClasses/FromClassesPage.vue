@@ -158,9 +158,9 @@
                     <!-- Next button -->
                     <v-btn 
                         dark
-                        color="#2E7D32" tile
+                        color="green" tile
                         to="/from-classes"
-                        class="mr-2 mobile-btn"
+                        class="mr-2 font-weight-bold mobile-btn"
                     >
                         Find Pathways <v-icon right>
                             mdi-arrow-right-circle
@@ -288,13 +288,15 @@ export default {
   padding: 20px;
 }
 #drop-area.highlight {
-  border-color: #2E7D32;
+  border-color: #4CAF50;
 }
 #upload-button {
     display: inline-block;
     padding: 10px;
-    background: green;
+    background: #4CAF50;
+    color: white;
     cursor: pointer;
+    font-weight: medium;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
