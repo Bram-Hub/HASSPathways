@@ -132,7 +132,7 @@ def get_pathway_data(pathway_ids: List[str], catalog_id, year) -> Dict:
 
     ids = "".join([f"&ids[]={path}" for path in pathway_ids])
     url = f"{BASE_URL}content{DEFAULT_QUERY_PARAMS}&method=getItems&options[full]=1&catalog={catalog_id}&type=programs{ids}"
-    
+
     pathways_xml = html.fromstring(requests.get(url).text.encode("utf8"))
 
     pathways = pathways_xml.xpath("//programs/program[not(@child-of)]");
@@ -145,7 +145,7 @@ def get_pathway_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         cores = pathway.xpath("./cores/core")
         cores += pathway.xpath("./cores/core/children/core")
         one_of_index = 0
-        
+
         for core in cores:
             anchor_name = core.xpath("./anchors/a")[0].get('name').lower()
 
@@ -166,6 +166,13 @@ def get_pathway_data(pathway_ids: List[str], catalog_id, year) -> Dict:
                 courses = parse_courses(core, name, year)
                 data[name]["Remaining"] = courses
                 data[name]["remaining_header"] = core.xpath("./title/text()")[0].strip()
+
+        # get rid of duplicates (if it shows up in required, we don't want it to be optional too)
+        if "Required" in data[name]:
+            for req in data[name]["Required"]:
+                for type in data[name]:
+                    if (type == "Remaining" or type[0:6] == "One Of") and req in data[name][type]:
+                        del data[name][type][req]
     return data
 
 def scrape_pathways():
