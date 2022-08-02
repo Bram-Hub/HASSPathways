@@ -18,6 +18,16 @@
                         style="border-radius: 0"
                     />
                     <v-spacer />
+                    <v-btn
+                        dark
+                        color="green" tile outlined
+                        class="mr-2 mobile-btn"
+                        @click="debugging()"
+                    >
+                        Debugging <v-icon right>
+                            mdi-arrow-right-circle
+                        </v-icon>
+                    </v-btn>
 
                     <!-- Clear confirmation modal -->
                     <v-dialog
@@ -90,10 +100,9 @@
                 <v-data-table
                     v-model="selected"
                     :headers="courseHeaders"
-                    :items="courses"
+                    :items="filteredCourses"
                     :single-select="false"
                     :disable-pagination="true"
-                    :search="searchValue"
                     :fixed-header="true"
 
                     sort-by="id"
@@ -125,6 +134,16 @@
                             </td>
                             <td>{{ item.identifier }}</td>
                             <td>{{ item.name }}</td>
+                            <td
+                                v-for="modifier in chip_names"
+                                :key="modifier"
+                            >
+                                <SearchTableModifiers
+                                    class="mt-4 class-card__subtitle__modifiers float-top"
+                                    :course="item"
+                                    :modifier="modifier"
+                                />
+                            </td>
                         </tr>
                     </template>
                 </v-data-table>
@@ -135,6 +154,7 @@
 
 <script>
 import Breadcrumbs from '../../components/Breadcrumbs'
+import SearchTableModifiers from '../../components/SearchTableModifiers'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import { courses } from '../../data/data.js'
 
@@ -147,18 +167,45 @@ const TABLE_HEADERS = [
     {
         text: 'Name',
         value: 'name'
-    }
+    },
+    {
+        text: 'CI',
+        value: 'ci'
+    },
+    {
+        text: 'HI',
+        value: 'hi'
+    },
+    {
+        text: 'Fall',
+        value: 'fall'
+    },
+    {
+        text: 'Spring',
+        value: 'spring'
+    },
+    {
+        text: 'Summer',
+        value: 'summer'
+    },
 ];
 
 export default {
     components: {
-        Breadcrumbs
+        Breadcrumbs,
+        SearchTableModifiers
     },
     data() {
         const courseList = Object.values(courses).map(course => {
             return {
+                communication_intensive: "hey",
                 name: course.name,
                 identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
+                CI: course.properties.CI,
+                HI: course.properties.HI,
+                Fall: course.offered.fall,
+                Spring: course.offered.spring,
+                Summer: course.offered.summer
             };
         });
 
@@ -168,10 +215,31 @@ export default {
             courses: courseList,
             courseHeaders: TABLE_HEADERS,
             selected: courseList.filter(course => this.$store.state.classes[course.name]),
-            dialog: false
+            dialog: false,
+            chip_names: ["CI", "HI", "Fall", "Spring", "Summer"],
+            my_class: "/"
+
         }
     },
+    computed: {
+        filteredCourses() {
+            // this.courses = this.courses[0];
+            console.log(courses)
+
+            // return courses.filter(course => )
+            return this.courses
+        }
+
+    },
     methods: {
+        debugging() {
+            console.log("    DEBUGGING\n")
+            console.log(this.courses)
+            // console.log(courseList)
+            // console.log(selected)
+            // console.log(searchValue)
+            console.log("\nEND DEBUGGING")
+        },
         // On row click, toggle selected state
         rowClick: function (item, select, isSelected) {
             // Is selected is previous selection state
