@@ -18,17 +18,6 @@
                         style="border-radius: 0"
                     />
                     <v-spacer />
-                    <v-btn
-                        dark
-                        color="green" tile outlined
-                        class="mr-2 mobile-btn"
-                        @click="debugging()"
-                    >
-                        Debugging <v-icon right>
-                            mdi-arrow-right-circle
-                        </v-icon>
-                    </v-btn>
-
                     <!-- Clear confirmation modal -->
                     <v-dialog
                         v-model="dialog"
@@ -105,7 +94,7 @@
                     :disable-pagination="true"
                     :fixed-header="true"
 
-                    sort-by="id"
+                    sort-by="identifier"
                     item-key="name"
                     show-select
                     class="elevation-1"
@@ -198,14 +187,22 @@ export default {
     data() {
         const courseList = Object.values(courses).map(course => {
             return {
-                communication_intensive: "hey",
                 name: course.name,
                 identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
                 CI: course.properties.CI,
                 HI: course.properties.HI,
                 Fall: course.offered.fall,
                 Spring: course.offered.spring,
-                Summer: course.offered.summer
+                Summer: course.offered.summer,
+                search_string: course.subj + '-' + course.ID // course subj-id
+                    + course['cross listed'].map(el => ' / ' + el).join("") // cross listed subj-id
+                    + " " + course.name // course name
+                    + " " + course.ID[0] + "000" // what level is the course
+                    + (course.offered.fall ? " Fall" : "")
+                    + (course.offered.spring ? " Spring" : "")
+                    + (course.offered.summer ? " Summer" : "")
+                    + (course.properties.CI ? " COMMUINT" : "")
+                    + (course.properties.HI ? " HASSINQ" : "")
             };
         });
 
@@ -223,23 +220,33 @@ export default {
     },
     computed: {
         filteredCourses() {
-            // this.courses = this.courses[0];
-            console.log(courses)
 
-            // return courses.filter(course => )
-            return this.courses
+            // Collapse extra exlamation marks
+            let str_array = this.searchValue.split("!")
+            for(let i = 2; i < str_array.length; i++){
+                str_array[1] += str_array[i]
+            }
+            let searchText = str_array.join("!")
+            let words = searchText.split("!")
+            if(words.length == 1) words.push("")
+            console.log("words: " + words + " | "+ words.length)
+            let search_words = words[0].split(" ")
+            let negated_words = words[1].split(" ")
+            this.add_look_term(search_words, "(?=.*")  //wrap words in a lookahead
+            this.add_look_term(negated_words, "(?!.*") //wrap words in a negative lookahead
+
+            const re = new RegExp(negated_words.join("") + search_words.join(""), 'i') // i is to ignore case sensitive search
+            // console.log(courses)
+            // console.log("filteredCourses")
+            // console.log(this.courses[6].search_string)
+            // console.log(re.test(this.courses[0].search_string))
+            // console.log(re.exec(this.courses[0].search_string))
+
+            return this.courses.filter(course => re.test(course.search_string))
         }
 
     },
     methods: {
-        debugging() {
-            console.log("    DEBUGGING\n")
-            console.log(this.courses)
-            // console.log(courseList)
-            // console.log(selected)
-            // console.log(searchValue)
-            console.log("\nEND DEBUGGING")
-        },
         // On row click, toggle selected state
         rowClick: function (item, select, isSelected) {
             // Is selected is previous selection state
@@ -256,6 +263,21 @@ export default {
         deselectAll() {
             this.selected = [];
             this.$store.commit('clearClasses');
+        },
+
+        //Surrounds words in a term like "(?=.*word)" which is a positive lookahead
+        add_look_term(words, term){
+            for (let i = 0; i < words.length; i++) {
+                // Remove zero length strings
+                if(words[i].length == 0) {
+                    words.splice(i, 1)
+                    i--;
+                    continue;
+                }
+                if(words[i].toLowerCase().trim() == 'hi') words[i] = "HASSINQ"
+                if(words[i].toLowerCase().trim() == 'ci') words[i] = "COMMUINT"
+                words[i] = term + words[i] + ")"
+            }
         }
     }
 }
