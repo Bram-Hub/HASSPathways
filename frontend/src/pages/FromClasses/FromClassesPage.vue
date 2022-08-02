@@ -6,6 +6,7 @@
             <h1>HASS Pathways From Classes</h1>
             <p>Search for the classes you have taken and then continue to the next page to display the computed pathways for you!</p>
 
+            <p>Try searching for all non-digital art classes offered in the fall at the 2,000 level by searching "arts fall 2000 ! digital" </p>
             <v-card outlined tile>
                 <v-card-title>
                     <v-text-field
