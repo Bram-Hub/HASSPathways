@@ -113,7 +113,7 @@
         "Remaining": {
             "Design and Innovation  Studio C": "STSO4610",
             "Design and Innovation Studio B": "STSO4605",
-            "Design and Innovation Studio C": null
+            "Design and Innovation Studio C": "ENGR4610"
         },
         "Required": {
             "Design and Innovation Studio I": "IHSS1610",
@@ -957,7 +957,6 @@
     "Studio Arts": {
         "Remaining": {
             "Advanced Drawing": "ARTS4200",
-            "Art History": "ARTS1050",
             "Basic Drawing": "ARTS1200",
             "Digital Filmmaking": "ARTS1030",
             "Digital Imaging": "ARTS1020",
@@ -1040,7 +1039,6 @@
             "LANGXXXX": "LANGXXXX",
             "LITRXXXX": "LITRXXXX",
             "PHILXXXX": "PHILXXXX",
-            "STSHXXXX": "STSHXXXX",
             "WRITXXXX": "WRITXXXX"
         },
         "description": "This pathway is intended for transfer students that enter with junior status and who have completed significant coursework within the arts and humanities to be applied toward a pathway.  Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
