@@ -39,6 +39,6 @@ export const modifiers = {
 // Note: icon modifiers are ALWAYS sorted before textModifiers, regardless
 // of the ordering below. If a key is missing from modifierOrder the modifier
 // will not be rendered
-// export const modifierOrder = ['fall', 'spring', 'summer', 'CI', 'HI'];
-// export const iconModifiers = modifierOrder.filter(modifier => !modifiers[modifier].name);
-// export const textModifiers = modifierOrder.filter(modifier =>  modifiers[modifier].name);
+export const modifierOrder = ['Fall', 'Spring', 'Summer', 'CI', 'HI'];
+export const iconModifiers = modifierOrder.filter(modifier => !modifiers[modifier].name);
+export const textModifiers = modifierOrder.filter(modifier =>  modifiers[modifier].name);

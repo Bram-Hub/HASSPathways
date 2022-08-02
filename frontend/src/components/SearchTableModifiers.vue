@@ -1,9 +1,14 @@
 <template>
-    <div style='justify: center;'>
-        <v-tooltip top>
+    <div>
+        <v-tooltip
+            v-for="modifier in textModifiers"
+            :class="[!myModifiers.includes(modifier) ? 'modifier--inactive' : '' , 'modifier', 'modifier--text']"
+            :key="modifier"
+            top
+        >
             <template #activator="{ on, attrs }">
                 <v-chip
-                    :color="myColor"
+                    :color="course[modifier] ? modifiers[modifier]['color'] : 'dd4e47'"
                     v-bind="attrs"
                     v-on="on"
                     @click="debugging()"
@@ -11,7 +16,7 @@
                     {{ modifier }}
                 </v-chip>
             </template>
-            <span> {{myTooltip}} </span>
+            <span> {{modifiers[modifier].tooltip}} </span>
         </v-tooltip>
     </div>
 </template>
@@ -24,43 +29,49 @@
  * The entire course object is passed for possible additional future formatting
  */
 
-import { modifiers } from '../data/search-modifiers.js'
+import { modifiers, iconModifiers, textModifiers } from '../data/search-modifiers.js'
 
 export default {
     name: 'SearchTableModifiers',
     props : {
-        modifier: {
-            type: String,
-            required: true
-        },
         course: {
             type: Object,
             required: true
         }
     },
-    data: () => {
-        return { 
-            modifiers
-        };
-    },
     computed: {
-        
         // This function should generate
         // an array of all modifiers
         myColor() {
             return this.course[this.modifier] ? this.modifiers[this.modifier]["color"] : 'dd4e47'
         },
         myTooltip() {
-            return this.modifiers[this.modifier].tooltip
+            return this.modifiers["Fall"].tooltip
+            // return this.modifiers[this.modifier].tooltip
+        },
+        myModifiers() {
+            let mods = [];
+            for(const offer in this.course.offered) {
+                if(this.course.offered[offer]) {
+                    mods.push(offer);
+                }
+            }
+            for(const prop in this.course.properties) {
+                if(this.course.properties[prop]) {
+                    mods.push(prop);
+                }
+            }
+
+            return mods;
         }
     },
-     methods: {
-         debugging(){
-             console.log("debugging")
-             console.log(this.modifiers)
-             
-         }
-     }
+    data: () => {
+        return { 
+            modifiers,
+            iconModifiers,
+            textModifiers
+        };
+    }
 }
 </script>
 

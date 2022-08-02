@@ -123,14 +123,10 @@
                             </td>
                             <td>{{ item.identifier }}</td>
                             <td>{{ item.name }}</td>
-                            <td
-                                v-for="modifier in chip_names"
-                                :key="modifier"
-                            >
+                            <td>
                                 <SearchTableModifiers
                                     class="mt-4 class-card__subtitle__modifiers float-top"
                                     :course="item"
-                                    :modifier="modifier"
                                 />
                             </td>
                         </tr>
@@ -158,25 +154,9 @@ const TABLE_HEADERS = [
         value: 'name'
     },
     {
-        text: 'CI',
-        value: 'ci'
-    },
-    {
-        text: 'HI',
-        value: 'hi'
-    },
-    {
-        text: 'Fall',
-        value: 'fall'
-    },
-    {
-        text: 'Spring',
-        value: 'spring'
-    },
-    {
-        text: 'Summer',
-        value: 'summer'
-    },
+        text: 'Properties',
+        value: ''
+    }
 ];
 
 export default {
