@@ -13,7 +13,7 @@
 </template>
 
 <script>
-//import { pathways } from '../data/data.js'
+import { years } from '../data/data.js'
 
 export default {
     name: 'YearSelection',
@@ -23,11 +23,8 @@ export default {
         }
     },
     computed: {
-        // allyears() {
-        //     return pathways.keys()
-        // }
         allyears() {
-            return ["2021-2022","2020-2021","2019-2020","2018-2019","2017-2018"]
+            return years;
         }
     },
     methods: {
