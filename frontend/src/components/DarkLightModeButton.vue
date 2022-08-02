@@ -8,6 +8,7 @@
                 v-model="isLight"
                 @click="darkMode"
                 size="small"
+                color="yellow darken-2"
                 :prepend-icon="correctIcon"
                 style="padding-top:21px;"
             >
