@@ -2,18 +2,16 @@
     <v-tooltip bottom>
         <template #activator="{off}">
             <v-switch
+                v-model="isLight"
                 inset
                 small fab elevation="0"
-                v-on="off"
-                v-model="isLight"
-                @click="darkMode"
                 size="small"
                 color="yellow darken-2"
                 :prepend-icon="correctIcon"
                 style="padding-top:21px;"
-            >
-
-            </v-switch>
+                v-on="off"
+                @click="darkMode"
+            />
         </template>
         <span>Switch to Light Mode</span>
     </v-tooltip>

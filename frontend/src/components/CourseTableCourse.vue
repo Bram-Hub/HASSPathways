@@ -1,14 +1,14 @@
 <template>
     <div>
-        <v-alert 
+        <v-alert
             :value="alert"
-            type="warning" 
+            type="warning"
             transition="scale-transition"
             @click="toggleCheckbox()"
         >
-            This course has pre-requisite(s): 
-            <span v-for='(prereq, index) in course.prerequisites' :key="prereq">
-                {{prereq}} <span v-if="index < course.prerequisites.length-1">,&nbsp;</span>
+            This course has pre-requisite(s):
+            <span v-for="(prereq, index) in course.prerequisites" :key="prereq">
+                {{ prereq }} <span v-if="index < course.prerequisites.length-1">,&nbsp;</span>
             </span>
         </v-alert>
         <v-tooltip v-show="hover" bottom>
@@ -221,8 +221,8 @@ export default {
     position: absolute;
     z-index: 100;
     cursor: pointer;
-    margin-left: 40%; 
-    padding: 5px; 
+    margin-left: 40%;
+    padding: 5px;
     padding-right: 10px;
     margin-top: 10px;
     display: inline;
@@ -303,6 +303,6 @@ export default {
 
 .courseCard {
     flex: 0 !important;
-    
+
 }
 </style>

@@ -56,6 +56,7 @@ export default {
     font-family: 'Muli', sans-serif;
     overflow-x: hidden;
     overflow-y: hidden;
+    padding-bottom: 50px;
 }
 
 .main-content {

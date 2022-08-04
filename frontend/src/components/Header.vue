@@ -16,7 +16,7 @@
             </v-layout>
         </v-container>
     </v-app-bar>
-</template>       
+</template>
 
 <script>
 import DarkLightModeButton from './DarkLightModeButton.vue'
@@ -25,9 +25,10 @@ import YearSelection from '../components/YearSelection.vue'
 
 export default {
     name: 'Header',
-    components: { DarkLightModeButton, 
-    HeaderNav,
-    YearSelection }
+    components: { DarkLightModeButton,
+        HeaderNav,
+        YearSelection
+    }
 }
 </script>
 

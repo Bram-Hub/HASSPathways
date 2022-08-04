@@ -45,7 +45,7 @@
                     <v-col>
                         <div class="bookmark">
                             <Bookmark
-                                :myPathway=true
+                                my-pathway="true"
                                 :pathway-id="title"
                                 :courses="courses"
                                 @update="$emit('update')"
@@ -64,18 +64,18 @@
                     <p class="pa-0 mb-2">
                         <v-tooltip v-if="hasPreReq(course.name)" bottom>
                             <template #activator="{on, attrs}">
-                                <v-icon 
-                                    v-bind="attrs" 
+                                <v-icon
+                                    v-bind="attrs"
                                     dense
-                                    class="float-right" 
+                                    class="float-right"
                                     v-on="on"
                                 >
                                     mdi-alert
                                 </v-icon>
                             </template>
-                            <span><div>There are pre-requisite(s) for this course:<br/>
-                                <span v-for='(prereq, index) in course.prerequisites' :key="prereq">
-                                    {{prereq}} <span v-if="index < course.prerequisites.length-1">,&nbsp;</span>
+                            <span><div>There are pre-requisite(s) for this course:<br>
+                                <span v-for="(prereq, index) in course.prerequisites" :key="prereq">
+                                    {{ prereq }} <span v-if="index < course.prerequisites.length-1">,&nbsp;</span>
                                 </span>
                             </div></span>
                         </v-tooltip>
@@ -84,7 +84,7 @@
                         <small v-else style="opacity: 0.8">
                             No data available
                         </small>
-                        
+
 
                     </p>
                 </span>
@@ -220,7 +220,7 @@ export default {
         overflow-y: auto;
         background-color: rgba(0, 0, 0, 0.1); // TODO: padding for title, make theme dependent
         height: 100%;
-        
+
         .course-items-container {
             padding-top: 12px;
             margin-bottom: 12px;
