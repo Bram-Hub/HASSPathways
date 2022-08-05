@@ -34,7 +34,7 @@
                     <v-container v-if="pathwayID!='Economics'" style="display:flex">
                         <div v-for="(item, index) in classTabs" :key="index" ref="tab" :class="[ 'tab' ]">
                             <h2 class="courseTitle">
-                                {{ item[0] }}
+                                {{ item[0] == 'Remaining' && classTabs.length == 1 ? "Choose any 3 of the following" : item[0] }}
                             </h2>
                             <CourseTable
                                 :ref="item[0]"
@@ -54,7 +54,7 @@
                             <div class="tab">
                                 <div v-for="(item, index_) in section" :key="index_">
                                     <h2 class="courseTitle">
-                                        {{ item[0] }}
+                                        {{ item[0] == 'Remaining' && classTabs.length == 1 ? "Choose any 3 of the following" : item[0] }}
                                     </h2>
                                     <CourseTable
                                         :ref="item[0]"
@@ -128,7 +128,7 @@
                     v-for="(item, index) in classTabs"
                     :key="index"
                 >
-                    <small>{{ item[0] }}</small>
+                    <small>{{ item[0] == 'Remaining' && classTabs.length == 1 ? "Choose any 3 of the following" : item[0] }}</small>
                 </v-tab>
             </v-tabs>
 
@@ -180,7 +180,7 @@ export default {
 
             while (items.length > 0)
                 sections.push(items.splice(0, size));
-                
+            
             return sections;
         },
         // Get id of the pathway, ie 'chinese_language'
@@ -238,6 +238,12 @@ export default {
         classTabs() {
             // Enable only non-empty tabs
             let prios = Object.keys(this.priorities);
+            /* Swap remaining and required if applicable */
+            if(prios.length >= 2 && prios[0] == 'Remaining' && prios[1] == 'Required') {
+                let tmp = prios[1];
+                prios[1] = prios[0];
+                prios[0] = tmp;
+            }
             for(const i in prios) {
                 prios[i] = [prios[i], prios[i]];
                 if(prios[i][0].substring(0, 6) == "One Of") {
