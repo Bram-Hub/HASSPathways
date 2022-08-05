@@ -5,14 +5,12 @@
                 class="mr-2 button"
                 inset
                 small fab elevation="0"
-                v-on="on"
-                @click="darkMode"
                 size="small"
                 prepend-icon="mdi-moon-waxing-crescent"
                 style="padding-top:21px;"
-            >
-        
-            </v-switch>
+                v-on="on"
+                @click="darkMode"
+            />
         </template>
         <span>Switch to Light Mode</span>
     </v-tooltip> 
@@ -22,15 +20,14 @@
                 class="mr-2 button"
                 small fab elevation="0"
                 inset
-                v-on="on"
-                prepend-icon="mdi-white-balance-sunny" 
-                color="yellow darken-2"
+                prepend-icon="mdi-white-balance-sunny"
+                color="yellow darken-2" 
                 value="yellow darken-2"
                 size="small"
-                @click="darkMode"
                 style="padding-top:21px;"
-            >
-            </v-switch>
+                v-on="on"
+                @click="darkMode"
+            />
         </template>
         <span>Switch to Dark Mode</span>
     </v-tooltip>

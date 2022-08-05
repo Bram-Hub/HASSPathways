@@ -1,7 +1,9 @@
-import coursesJSON  from './json/courses.json'
-import pathwaysJSON from './json/pathways.json'
 import pathwayCategoriesJSON from './json/pathway_categories.json'
 import yearsJSON from './json/years.json'
+import store from '../store/store.js'
+
+import coursesJSON from './json/2021-2022/courses.json'
+import pathwaysJSON from './json/2021-2022/pathways.json'
 
 // Neatify JSON data:
 // Sort pathways in pathway categories
