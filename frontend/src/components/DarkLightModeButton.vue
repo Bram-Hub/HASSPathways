@@ -1,47 +1,44 @@
 <template>
-    <v-tooltip v-if="$vuetify.theme.dark" bottom>
-        <template #activator="{on}">
+    <v-tooltip bottom>
+        <template #activator="{off}">
             <v-switch
-                class="mr-2 button"
                 inset
                 small fab elevation="0"
-                size="small"
-                prepend-icon="mdi-moon-waxing-crescent"
-                style="padding-top:21px;"
-                v-on="on"
+                v-on="off"
+                v-model="isLight"
                 @click="darkMode"
-            />
+                size="small"
+                color="yellow darken-2"
+                :prepend-icon="correctIcon"
+                style="padding-top:21px;"
+            >
+            </v-switch>
         </template>
         <span>Switch to Light Mode</span>
-    </v-tooltip> 
-    <v-tooltip v-else bottom>
-        <template #activator="{on}">
-            <v-switch
-                class="mr-2 button"
-                small fab elevation="0"
-                inset
-                prepend-icon="mdi-white-balance-sunny"
-                color="yellow darken-2" 
-                value="yellow darken-2"
-                size="small"
-                style="padding-top:21px;"
-                v-on="on"
-                @click="darkMode"
-            />
-        </template>
-        <span>Switch to Dark Mode</span>
     </v-tooltip>
 </template>
+
 
 <script>
 export default {
     name: 'DarkLightModeButton',
-
+    data() {
+        return {
+            isLight: !this.$store.state.darkMode
+        }
+    },
+    computed: {
+        correctIcon() {
+            return this.isLight ? "mdi-white-balance-sunny" : "mdi-moon-waxing-crescent"
+        }
+    },
     methods: {
         darkMode() {
+            //prepend-icon="mdi-moon-waxing-crescent"
             this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-            this.$store.commit('setDarkMode', this.$vuetify.theme.dark);
+            this.$store.commit('setDarkMode', !this.isLight);
         }
+
     }
 }
 </script>

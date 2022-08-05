@@ -2,11 +2,10 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <YearSelection />
             <h1>Matching Pathways</h1>
             <p>
                 Here are the pathways that match the selected courses!
-                You can view the pathway further by clicking the 3 dots then edit pathway,
+                You can view the pathway further by clicking the pencil icon,
                 or <router-link :to="{ name: 'search-classes' }">
                     go back to picking courses.
                 </router-link>
@@ -43,13 +42,11 @@ import Breadcrumbs from '../../components/Breadcrumbs'
 import MyPathway from '../../components/MyPathway'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import { pathways } from '../../data/data.js'
-import YearSelection from '../../components/YearSelection.vue'
 
 export default {
     components: {
         Breadcrumbs,
-        MyPathway,
-        YearSelection
+        MyPathway
     },
     data() {
         return {

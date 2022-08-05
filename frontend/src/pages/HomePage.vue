@@ -2,7 +2,6 @@
     <div style="width: 75%; margin: 0 auto;">
         <v-container fluid>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <YearSelection />
             <h1 style="text-align: center;">
                 Welcome to HASS Pathways!
             </h1>
@@ -47,7 +46,7 @@
                     </v-icon>
                     Learn about Pathways
                 </v-btn>
-                <v-btn
+                <!--v-btn
                     pathway-btn
                     large
                     :to="{ name: 'admin-portal' }"
@@ -56,7 +55,7 @@
                         mdi-cog
                     </v-icon>
                     Admin and secure portal
-                </v-btn>
+                </v-btn-->
             </v-row>
         </v-container>
     </div>
@@ -65,11 +64,10 @@
 <script>
 import Breadcrumbs from '../components/Breadcrumbs'
 import breadcrumbs from '../data/breadcrumbs.js'
-import YearSelection from '../components/YearSelection.vue'
 
 export default {
     components: {
-        Breadcrumbs, YearSelection
+        Breadcrumbs
     },
     data() {
         return {
