@@ -136,7 +136,6 @@
 <script>
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
-import { courses } from '../../data/data.js'
 
 const TABLE_HEADERS = [
     {
@@ -155,20 +154,39 @@ export default {
         Breadcrumbs
     },
     data() {
-        const courseList = Object.values(courses).map(course => {
-            return {
-                name: course.name,
-                identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
-            };
-        });
-
         return {
             breadcrumbs: breadcrumbs.from_classes_search,
             searchValue: '',
-            courses: courseList,
             courseHeaders: TABLE_HEADERS,
-            selected: courseList.filter(course => this.$store.state.classes[course.name]),
-            dialog: false
+            dialog: false,
+            selected: [],
+            coursesData: {}
+        }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/courses.json').then((val) => {
+            this.coursesData = Object.freeze(val);
+            let temp = this.courses.filter(course => course != null);
+            this.selected = temp.filter(course => this.$store.state.classes[course.name]);
+        });
+    },
+    computed: {
+        courses() {
+            return Object.values(this.coursesData).map((course, index) => {
+                if(course.name) {
+                    return {
+                        name: course.name,
+                        identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
+                    };
+                }
+                else {
+                    return {
+                        name: "Loading Data",
+                        identifier: "Loading Data"
+                    };
+                }
+            });
         }
     },
     methods: {

@@ -61,7 +61,6 @@
             <span>Add pathway to "My Pathways"</span>  
         </v-tooltip>
     </span>
-
 </template>
 
 <script>

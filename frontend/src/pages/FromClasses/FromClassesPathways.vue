@@ -41,7 +41,6 @@
 import Breadcrumbs from '../../components/Breadcrumbs'
 import MyPathway from '../../components/MyPathway'
 import breadcrumbs from '../../data/breadcrumbs.js'
-import { pathways } from '../../data/data.js'
 
 export default {
     components: {
@@ -51,15 +50,16 @@ export default {
     data() {
         return {
             breadcrumbs: breadcrumbs.from_classes_pathway,
-            searchValue: ''
+            searchValue: '',
+            pathwaysData: {}
         }
     },
     computed: {
         get_pathways() {
             let myPathways = [];
-            for(const key in pathways) {
+            for(const key in this.pathwaysData) {
                 let thisPathway = {name: "", courses: new Set()};
-                const singlePathway = pathways[key];
+                const singlePathway = this.pathwaysData[key];
                 thisPathway.name = key;
                 for(const prio in singlePathway) {
                     //Checks if it has classes within it
@@ -81,6 +81,10 @@ export default {
             myPathways.sort((a, b) => a.courses.length < b.courses.length)
             return myPathways;
         }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/pathways.json').then((val) => this.pathwaysData = Object.freeze(val));
     }
 }
 </script>

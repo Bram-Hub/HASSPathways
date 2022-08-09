@@ -7,8 +7,8 @@
             @click="toggleCheckbox()"
         >
             This course has pre-requisite(s): 
-            <span v-for='(prereq, index) in course.prerequisites' :key="prereq">
-                {{prereq}} <span v-if="index < course.prerequisites.length-1">,&nbsp;</span>
+            <span v-for="(prereq, index) in course.prerequisites" :key="prereq">
+                {{ prereq }} <span v-if="index < course.prerequisites.length-1">,&nbsp;</span>
             </span>
         </v-alert>
         <v-tooltip v-show="hover" bottom>
@@ -40,7 +40,7 @@
                                 <h1 class="text-h5 class-card__title">
                                     {{ course.name }}
                                 </h1>
-                                <small v-if="course.hasData" class="class-card__subtitle">
+                                <small v-if="course.ID != null" class="class-card__subtitle">
                                     {{ course.subj }}-{{ course.ID }}
                                     <CourseTableModifiers
                                         class="mt-4 class-card__subtitle__modifiers"
@@ -52,13 +52,13 @@
                         </v-list-item-content>
                     </v-list-item>
                     <v-card-text
-                        v-if="course.hasData && desc"
+                        v-if="course.ID != null && desc"
                         class="class-card__desc"
                     >
                         {{ course.description }}
                     </v-card-text>
                     <v-card-text
-                        v-if="!course.hasData"
+                        v-if="course.ID == null"
                         class="class-card__desc"
                     >
                         Data not found within RPI catalog, see SIS for more info.
@@ -92,7 +92,7 @@
                         <h1 class="text-h5 class-card__title">
                             {{ course.name }}
                         </h1>
-                        <small v-if="course.hasData" class="class-card__subtitle">
+                        <small v-if="course.ID != null" class="class-card__subtitle">
                             {{ course.subj }}-{{ course.ID }}
                             <CourseTableModifiers
                                 class="mt-4 class-card__subtitle__modifiers"
@@ -104,13 +104,13 @@
                 </v-list-item-content>
             </v-list-item>
             <v-card-text
-                v-if="course.hasData && desc"
+                v-if="course.ID != null && desc"
                 class="class-card__desc"
             >
                 {{ course.description }}
             </v-card-text>
             <v-card-text
-                v-if="!course.hasData"
+                v-if="course.ID == null"
                 class="class-card__desc"
             >
                 Data not found within RPI catalog, see SIS for more info.
@@ -122,7 +122,7 @@
 <script>
 import CourseTableModifiers from './CourseTableModifiers'
 
-const requiredProps = ['hasData', 'name'];
+const requiredProps = ['name'];
 
 export default {
     name: 'CourseTableCourse',
@@ -183,7 +183,7 @@ export default {
                     this.$store.commit('addCourse', c);
                     this.$emit('checkbox-clicked', { name: this.course.name, selected: true });
                     // now check to see if there are pre-requisites present
-                    if ( this.course.prerequisites.length != 0) {
+                    if (this.course.prerequisites && this.course.prerequisites.length != 0) {
                         // console.log("pre-requisite")
                         this.alert = true;
                         // this.$emit("showAlert", this.course.prerequisites );
@@ -192,7 +192,7 @@ export default {
                     this.$store.commit('delCourse', c);
                     this.$emit('checkbox-clicked', { name: this.course.name, selected: false });
                     this.alert = false;
-                    if ( this.course.prerequisites.length != 0) {
+                    if (this.course.prerequisites && this.course.prerequisites.length != 0) {
                         // console.log("pre-requisite")
                         this.alert = false;
                         // this.$emit("hideAlert", this.course.prerequisites );

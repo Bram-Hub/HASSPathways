@@ -29,7 +29,8 @@ export default {
     },
     methods: {
         updateYear() {
-            this.$store.commit('changeYear',this.selection)
+            this.$store.commit('changeYear', this.selection);
+            location.reload();
         }
     }
 }

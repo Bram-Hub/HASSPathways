@@ -13,8 +13,11 @@ import AdminCoursePage from '../pages/AdminPortal/AdminCoursePage.vue'
 import AdminPathwayPage from '../pages/AdminPortal/AdminPathwayPage.vue'
 import AdminSearchCCPage from '../pages/AdminPortal/AdminSearchCCPage.vue'
 import Four0FourPage from '../pages/Four0FourPage.vue'
+import store from '../store/store.js'
 
-import { pathways } from '../data/data.js'
+const year = store.state.year;
+let pathways = {};
+import('../data/json/' + year + '/pathways.json').then((val) => pathways = Object.freeze(val));
 
 Vue.use(Router);
 
@@ -33,10 +36,7 @@ export default new Router({
         {
             path: '/pathway',
             name: 'pathway',
-            component: PathwayPage,
-            beforeEnter: (to, from, next) => {
-                next(!pathways[to.query.pathway] ? '/404' : undefined);
-            }
+            component: PathwayPage
         },
         {
             path: '/my-pathways',
