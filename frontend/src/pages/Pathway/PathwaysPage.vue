@@ -4,7 +4,7 @@
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
             <h1>HASS Pathways</h1>
             <p>
-                Select a pathway below to get started, or <router-link to="/search-classes">
+                Select a pathway below to get started, or <router-link to="/choose-classes">
                     choose a pathway from the classes you've taken
                 </router-link>
             </p>
