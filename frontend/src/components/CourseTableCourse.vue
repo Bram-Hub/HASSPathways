@@ -6,8 +6,7 @@
             transition="scale-transition"
             @click="toggleCheckbox()"
         >
-            This course has pre-requisite(s).
-            <br>
+            This course has pre-requisite(s): 
             <span v-for='(prereq, index) in course.prerequisites' :key="prereq">
                 {{prereq}} <span v-if="index < course.prerequisites.length-1">,&nbsp;</span>
             </span>
@@ -224,12 +223,15 @@ export default {
 <style scoped lang="scss">
 
 .v-alert {
-    // width: 98.6%;
-    width:fit-content;
-    align-self: center;
     position: absolute;
     z-index: 100;
     cursor: pointer;
+    margin-left: 40%; 
+    padding: 5px; 
+    padding-right: 10px;
+    margin-top: 10px;
+    display: inline;
+    max-width: 50%;
 }
 .maxHeight {
     height: 100%;

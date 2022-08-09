@@ -210,7 +210,6 @@ export default {
             let searchText = str_array.join("!")
             let words = searchText.split("!")
             if(words.length == 1) words.push("")
-            console.log("words: " + words + " | "+ words.length)
             let search_words = words[0].split(" ")
             let negated_words = words[1].split(" ")
             this.add_look_term(search_words, "(?=.*")  //wrap words in a lookahead
@@ -225,7 +224,6 @@ export default {
 
             return this.courses.filter(course => re.test(course.search_string))
         }
-
     },
     methods: {
         // On row click, toggle selected state
