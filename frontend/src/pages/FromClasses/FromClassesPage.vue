@@ -71,17 +71,8 @@
                                 7. Drag and drop the html document into the box below or press "UPLOAD TRANSCRIPT".
                             </v-card-text>
                             <!-- https://codepen.io/dimitri-lopez/pen/gOeGRGK -->
-                           <v-divider />
-                           <div id="drop-area" style="text-align: center;">
-                               <form class="my-form" >
-                                   <p>Drag and drop your unofficial transcript here.</p>
-                                   <input type="file" id="fileElem" accept="*\.pdf" onchange="handleFiles(this.files)" style="display: none;">
-                                   <label id="upload-button" for="fileElem">Upload Transcript</label>
-                               </form>
-                               <progress id="progress-bar" max=100 value=0></progress>
-                               <div id="gallery" />
-                           </div>
-
+                            <v-divider />
+                            <UploadTranscript />
                             <v-divider />
                             <v-card-actions>
                                 <v-spacer />
@@ -221,6 +212,7 @@
 
 <script>
 import Breadcrumbs from '../../components/Breadcrumbs'
+import UploadTranscript from '../../components/UploadTranscript'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import { courses } from '../../data/data.js'
 
@@ -238,7 +230,7 @@ const TABLE_HEADERS = [
 
 export default {
     components: {
-        Breadcrumbs
+        Breadcrumbs, UploadTranscript
     },
     data() {
         const courseList = Object.values(courses).map(course => {
@@ -261,6 +253,7 @@ export default {
     methods: {
         // On row click, toggle selected state
         rowClick: function (item, select, isSelected) {
+            console.log("found it!")
             // Is selected is previous selection state
             // So if isSelected is false, then that means the box is checked
             select(!isSelected);
@@ -280,26 +273,6 @@ export default {
 }
 </script>
 <style>
-#drop-area {
-  border: 2px dashed #ccc;
-  border-radius: 20px;
-  width: 480px;
-  margin: 20px auto;
-  padding: 20px;
-}
-#drop-area.highlight {
-  border-color: #4CAF50;
-}
-#upload-button {
-    display: inline-block;
-    padding: 10px;
-    background: #4CAF50;
-    color: white;
-    cursor: pointer;
-    font-weight: medium;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
 @media only screen and (max-width: 600px) {
     /* Taller rows = easier to click on mobile (only for small screens) */
     .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
