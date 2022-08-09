@@ -172,7 +172,6 @@ export default {
             dialog: false,
             selected: [],
             coursesData: {},
-            dialog: false,
             chip_names: ["CI", "HI", "Fall", "Spring", "Summer"]
         }
     },
@@ -186,29 +185,29 @@ export default {
     },
     computed: {
         courses() {
-            Object.values(this.coursesData).map(course => {
-                return {
-                    name: course.name,
-                    identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
-                    CI: course.properties.CI,
-                    HI: course.properties.HI,
-                    Fall: course.offered.fall,
-                    Spring: course.offered.spring,
-                    Summer: course.offered.summer,
-                    search_string: course.subj + '-' + course.ID // course subj-id
-                        + course['cross listed'].map(el => ' / ' + el).join("") // cross listed subj-id
-                        + " " + course.name // course name
-                        + " " + course.ID[0] + "000" // what level is the course
-                        + (course.offered.fall ? " Fall" : "")
-                        + (course.offered.spring ? " Spring" : "")
-                        + (course.offered.summer ? " Summer" : "")
-                        + (course.properties.CI ? " COMMUINT" : "")
-                        + (course.properties.HI ? " HASSINQ" : "")
-                };
+            return Object.values(this.coursesData).map(course => {
+                if(course.ID && course['cross listed'] && course.properties && course.offered) {
+                    return {
+                        name: course.name,
+                        identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
+                        CI: course.properties.CI,
+                        HI: course.properties.HI,
+                        Fall: course.offered.fall,
+                        Spring: course.offered.spring,
+                        Summer: course.offered.summer,
+                        search_string: course.subj + '-' + course.ID // course subj-id
+                            + course['cross listed'].map(el => ' / ' + el).join("") // cross listed subj-id
+                            + " " + course.name // course name
+                            + " " + course.ID[0] + "000" // what level is the course
+                            + (course.offered.fall ? " Fall" : "")
+                            + (course.offered.spring ? " Spring" : "")
+                            + (course.offered.summer ? " Summer" : "")
+                            + (course.properties.CI ? " COMMUINT" : "")
+                            + (course.properties.HI ? " HASSINQ" : "")
+                    };
+                }
             });
-        }
-    },
-    computed: {
+        },
         filteredCourses() {
 
             // Collapse extra exlamation marks
@@ -225,8 +224,7 @@ export default {
             this.add_look_term(negated_words, "(?!.*") //wrap words in a negative lookahead
 
             const re = new RegExp(negated_words.join("") + search_words.join(""), 'i') // i is to ignore case sensitive search
-
-            return this.courses.filter(course => re.test(course.search_string))
+            return this.courses.filter(course => course ? re.test(course.search_string) : false)
         }
     },
     methods: {
