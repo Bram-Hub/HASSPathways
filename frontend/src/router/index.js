@@ -8,6 +8,7 @@ import MyPathwaysPage from '../pages/MyPathways/MyPathwaysPage.vue'
 import FromClassesPage from '../pages/FromClasses/FromClassesPage.vue'
 import FromClassesPathways from '../pages/FromClasses/FromClassesPathways.vue'
 import AboutPage from '../pages/About/AboutPage.vue'
+import AdvancedSearchPage from '../pages/AdvancedSearch/AdvancedSearchPage.vue'
 import AdminHomePage from '../pages/AdminPortal/AdminHomePage.vue'
 import AdminCoursePage from '../pages/AdminPortal/AdminCoursePage.vue'
 import AdminPathwayPage from '../pages/AdminPortal/AdminPathwayPage.vue'
@@ -44,8 +45,8 @@ export default new Router({
             component: MyPathwaysPage
         },
         {
-            path: '/search-classes',
-            name: 'search-classes',
+            path: '/choose-classes',
+            name: 'choose-classes',
             component: FromClassesPage
         },
         {
@@ -57,6 +58,11 @@ export default new Router({
             path: '/about',
             name: 'about',
             component: AboutPage
+        },
+        {
+            path: '/search-classes',
+            name: 'search-classes',
+            component: AdvancedSearchPage
         },
         // {
         //     path: '/admin-portal',

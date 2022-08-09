@@ -79,6 +79,7 @@
                 <v-list-item-content class="pb-0">
                     <div style="cursor: pointer" :class="{courseCard: graph}">
                         <v-checkbox
+                            v-if="pathwayId != null"
                             :input-value="selected"
                             :false-value="0"
                             :true-value="1"
@@ -162,9 +163,11 @@ export default {
     },
     mounted() {
         // Load saved selection
-        let courses = this.$store.state.pathways[this.pathwayId] || { courses: [] };
-        courses = courses.courses;
-        this.selected = courses.includes(this.course.name) ? 1 : 0;
+        if(this.pathwayId) {
+            let courses = this.$store.state.pathways[this.pathwayId] || { courses: [] };
+            courses = courses.courses;
+            this.selected = courses.includes(this.course.name) ? 1 : 0;
+        }
     },
     methods: {
         debug() {
@@ -172,30 +175,32 @@ export default {
             // this.hover = !this.hover;
         },
         toggleCheckbox() {
-            let selection = window.getSelection();
-            if (selection.isCollapsed) {
-                this.selected = 1 - this.selected;
-                console.log(this.course.prerequisites)
+            if(this.pathwayId) {
+                let selection = window.getSelection();
+                if (selection.isCollapsed) {
+                    this.selected = 1 - this.selected;
+                    console.log(this.course.prerequisites)
 
-                // Save selection
-                const c = { pathwayID: this.pathwayId, course: this.course.name };
-                if (this.selected) {
-                    this.$store.commit('addCourse', c);
-                    this.$emit('checkbox-clicked', { name: this.course.name, selected: true });
-                    // now check to see if there are pre-requisites present
-                    if ( this.course.prerequisites.length != 0) {
-                        // console.log("pre-requisite")
-                        this.alert = true;
-                        // this.$emit("showAlert", this.course.prerequisites );
-                    }
-                } else {
-                    this.$store.commit('delCourse', c);
-                    this.$emit('checkbox-clicked', { name: this.course.name, selected: false });
-                    this.alert = false;
-                    if ( this.course.prerequisites.length != 0) {
-                        // console.log("pre-requisite")
+                    // Save selection
+                    const c = { pathwayID: this.pathwayId, course: this.course.name };
+                    if (this.selected) {
+                        this.$store.commit('addCourse', c);
+                        this.$emit('checkbox-clicked', { name: this.course.name, selected: true });
+                        // now check to see if there are pre-requisites present
+                        if ( this.course.prerequisites.length != 0) {
+                            // console.log("pre-requisite")
+                            this.alert = true;
+                            // this.$emit("showAlert", this.course.prerequisites );
+                        }
+                    } else {
+                        this.$store.commit('delCourse', c);
+                        this.$emit('checkbox-clicked', { name: this.course.name, selected: false });
                         this.alert = false;
-                        // this.$emit("hideAlert", this.course.prerequisites );
+                        if ( this.course.prerequisites.length != 0) {
+                            // console.log("pre-requisite")
+                            this.alert = false;
+                            // this.$emit("hideAlert", this.course.prerequisites );
+                        }
                     }
                 }
             }
