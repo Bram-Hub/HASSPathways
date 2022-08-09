@@ -125,7 +125,7 @@ export default {
     },
     methods: {
         hasPreReq( courseName ) {
-            return allCourses[courseName].prerequisites.length != 0;
+             return ( allCourses[courseName] === undefined ? false : allCourses[courseName].prerequisites.length != 0 );
         },
         formatCourseCategory(classes) {
             if (!classes || !classes.length)
