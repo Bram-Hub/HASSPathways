@@ -137,7 +137,7 @@ const store = new Vuex.Store({
         }
     }
 });
-
+ 
 Vue.config.productionTip = false;
 
 new Vue({
