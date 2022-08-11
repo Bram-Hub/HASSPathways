@@ -72,7 +72,9 @@
                             </v-card-text>
                             <!-- https://codepen.io/dimitri-lopez/pen/gOeGRGK -->
                             <v-divider />
-                            <UploadTranscript />
+                            <UploadTranscript
+                                @imported_classes="imported_classes"
+                            />
                             <v-divider />
                             <v-card-actions>
                                 <v-spacer />
@@ -88,9 +90,9 @@
                                     color="primary"
                                     class="font-weight-bold"
                                     text
-                                    @click="deselectAll(); import_dialog = false"
+                                    @click="import_dialog = false"
                                 >
-                                    Upload Transcript
+                                    Upload Classes
                                 </v-btn>
                             </v-card-actions>
                         </v-card>
@@ -251,9 +253,21 @@ export default {
         }
     },
     methods: {
+        imported_classes(){
+            console.log("attempting to update selected classes")
+            // console.log(courses)
+            const courseList = Object.values(courses).map(course => {
+                return {
+                    name: course.name,
+                    identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
+                };
+            })
+            this.selected = courseList.filter(course => this.$store.state.classes[course.name])
+        },
         // On row click, toggle selected state
         rowClick: function (item, select, isSelected) {
             console.log("found it!")
+            console.log(this.$store)
             // Is selected is previous selection state
             // So if isSelected is false, then that means the box is checked
             select(!isSelected);
