@@ -25,9 +25,11 @@ import YearSelection from '../components/YearSelection.vue'
 
 export default {
     name: 'Header',
-    components: { DarkLightModeButton, 
-    HeaderNav,
-    YearSelection }
+    components: {
+        DarkLightModeButton, 
+        HeaderNav,
+        YearSelection
+    }
 }
 </script>
 

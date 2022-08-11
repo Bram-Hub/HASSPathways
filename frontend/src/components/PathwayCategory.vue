@@ -32,14 +32,13 @@
                         </a>
                     </li>
                 </template>
-                <span>{{ pathwaysData[pathway].description }}</span>
+                <span v-if="pathwaysData[pathway]">{{ pathwaysData[pathway].description }}</span>
             </v-tooltip>
         </ul>
     </v-card>
 </template>
 
 <script>
-import { pathways as pathwaysData } from '../data/data.js'
 
 export default {
     name: 'PathwayCategory',
@@ -59,10 +58,13 @@ export default {
         pathways: {
             type: Array, // Array of pathway ids
             default: () => [],
-            validator: val => val.every(x => Object.keys(pathwaysData).includes(x))
         }
     },
-    data() { return { pathwaysData }; }
+    data() { return { pathwaysData: {} }; },
+    created() {
+        const year = this.$store.state.year;
+        import('../data/json/' + year + '/pathways.json').then((val) => this.pathwaysData = Object.freeze(val));
+    }
 }
 </script>
 

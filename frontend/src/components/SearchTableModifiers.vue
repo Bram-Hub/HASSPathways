@@ -2,8 +2,8 @@
     <div>
         <v-tooltip
             v-for="modifier in textModifiers"
-            :class="[!myModifiers.includes(modifier) ? 'modifier--inactive' : '' , 'modifier', 'modifier--text']"
             :key="modifier"
+            :class="[!myModifiers.includes(modifier) ? 'modifier--inactive' : '' , 'modifier', 'modifier--text']"
             top
         >
             <template #activator="{ on, attrs }">
@@ -16,7 +16,7 @@
                     {{ modifier }}
                 </v-chip>
             </template>
-            <span> {{modifiers[modifier].tooltip}} </span>
+            <span> {{ modifiers[modifier].tooltip }} </span>
         </v-tooltip>
     </div>
 </template>
@@ -38,6 +38,13 @@ export default {
             type: Object,
             required: true
         }
+    },
+    data: () => {
+        return { 
+            modifiers,
+            iconModifiers,
+            textModifiers
+        };
     },
     computed: {
         // This function should generate
@@ -64,13 +71,6 @@ export default {
 
             return mods;
         }
-    },
-    data: () => {
-        return { 
-            modifiers,
-            iconModifiers,
-            textModifiers
-        };
     }
 }
 </script>

@@ -73,18 +73,26 @@ def get_catalog_description(fields, course_name):
 
     return ""
 
-def obtain_CI(name):
-    csv_file = open('CI_classes.csv', 'r')
-    reader = csv.reader(csv_file)
+def courses_from_string(inp):
+    depts = []
 
-    for row in reader:
-        course_name = row[3]
-        if name.strip().lower() == course_name.strip().lower():
-            return True
+    f = open('depts.json', 'r')
+    f = json.load(f)
 
-    return False
+    for dept in f:
+        depts.append(dept)
 
-def get_course_data(course_ids: List[str]) -> Dict:
+    crses = set()
+    for dept in depts:
+        fnd = inp.find(dept)
+        if fnd != -1:
+            if fnd+8 < len(inp):
+                if inp[fnd+8].isdigit():
+                    if inp[fnd+5] != '6':
+                        crses.add(inp[fnd:fnd+4] + '-' + inp[fnd+5:fnd+9])
+    return list(crses)
+
+def get_course_data(course_ids: List[str], catalog_id) -> Dict:
     data = {}
     # Break the courses into chunks of CHUNK_SIZE to make the api happy
     course_chunks = [
@@ -120,29 +128,33 @@ def get_course_data(course_ids: List[str]) -> Dict:
             even = False
             odd = False
             offered_text = ""
-            prereqs = "None"
+            cross_listed = []
+            prereqs = []
 
+            base = int(fields[0].get('type')[-3:])
             for field in fields:
-                if field.get("type") == 'acalog-field-519':
-                    field_text = field.xpath("./data/text()")
-                    if len(field_text) > 0:
-                        # print(field_text)
-                        field_text = field_text[0].strip().lower()
-                        if "fall" in field_text:
+                field_text = field.xpath("./descendant-or-self::*/text()")
+                if len(field_text) > 0:
+                    field_text = field_text[0].strip()
+
+                    if field.get('type')[-3:] == str(base - 8):
+                        if len(field_text) > 0:
+                            cross_listed = courses_from_string(field_text.upper())
+                    elif field.get('type')[-3:] == str(base - 11):
+                        if "fall" in field_text.lower():
                             fall = True
-                        if "spring" in field_text:
+                        if "spring" in field_text.lower():
                             spring = True
-                        if "summer" in field_text:
+                        if "summer" in field_text.lower():
                             summer = True
-                        if "even" in field_text:
+                        if "even" in field_text.lower():
                             even = True
-                        if "odd" in field_text:
+                        if "odd" in field_text.lower():
                             odd = True
                         offered_text = field_text
-                elif field.get("type") == 'acalog-field-517':
-                    field_text = field.xpath("./data/p/text()")
-                    if len(field_text) > 0:
-                        prereqs = field_text[0].strip()
+                    elif field.get('type')[-3:] == str(base - 13):
+                        if len(field_text) > 0:
+                            prereqs = courses_from_string(field_text.upper())
 
             data[course_name] = {
                 "subj": subj,
@@ -158,32 +170,27 @@ def get_course_data(course_ids: List[str]) -> Dict:
                     "text": offered_text
                 },
                 "properties": {
-                    "CI": obtain_CI(course_name),
+                    "CI": False,
                     "HI": True if subj == "IHSS" else False,
                     "major_restricted": False
                 },
+                "cross listed": cross_listed,
                 "prerequisites": prereqs
             }
 
     return data
 
-if __name__ == "__main__":
-    if sys.argv[-1] == "help" or sys.argv[-1] == "--help":
-        print(f"USAGE: python3 {sys.argv[0]} [ALL_YEARS]")
-        sys.exit(1)
-
+def scrape_courses():
+    print("Starting courses scraping")
     catalogs = get_catalogs()
 
-    if sys.argv[-1] != "ALL_YEARS":
-        print("Parsing single year")
-        catalogs = catalogs[:1]
-    else:
-        print("Parsing all years")
-
+    catalogs = catalogs[:4]
+    courses_per_year = {}
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         course_ids = get_course_ids(catalog_id)
-        data = get_course_data(course_ids)
+        data = get_course_data(course_ids, catalog_id)
+        
+        courses_per_year[year] = data
 
-        f = open('courses.json', 'w')
-        json.dump(data, f, sort_keys=True, indent=2, ensure_ascii=False)
-        f.close()
+    print("Finished courses scraping")
+    return courses_per_year

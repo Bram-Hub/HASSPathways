@@ -142,7 +142,6 @@
 import Breadcrumbs from '../../components/Breadcrumbs'
 import SearchTableModifiers from '../../components/SearchTableModifiers'
 import breadcrumbs from '../../data/breadcrumbs.js'
-import { courses } from '../../data/data.js'
 
 const TABLE_HEADERS = [
     {
@@ -166,40 +165,41 @@ export default {
         SearchTableModifiers
     },
     data() {
-        const courseList = Object.values(courses).map(course => {
-            return {
-                name: course.name,
-                identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
-                CI: course.properties.CI,
-                HI: course.properties.HI,
-                Fall: course.offered.fall,
-                Spring: course.offered.spring,
-                Summer: course.offered.summer,
-                search_string: course.subj + '-' + course.ID // course subj-id
-                    + course['cross listed'].map(el => ' / ' + el).join("") // cross listed subj-id
-                    + " " + course.name // course name
-                    + " " + course.ID[0] + "000" // what level is the course
-                    + (course.offered.fall ? " Fall" : "")
-                    + (course.offered.spring ? " Spring" : "")
-                    + (course.offered.summer ? " Summer" : "")
-                    + (course.properties.CI ? " COMMUINT" : "")
-                    + (course.properties.HI ? " HASSINQ" : "")
-            };
-        });
-
         return {
             breadcrumbs: breadcrumbs.from_classes_search,
             searchValue: '',
-            courses: courseList,
             courseHeaders: TABLE_HEADERS,
-            selected: courseList.filter(course => this.$store.state.classes[course.name]),
             dialog: false,
-            chip_names: ["CI", "HI", "Fall", "Spring", "Summer"],
-            my_class: "/"
-
+            selected: [],
+            coursesData: {},
+            chip_names: ["CI", "HI", "Fall", "Spring", "Summer"]
         }
     },
     computed: {
+        courses() {
+            return Object.values(this.coursesData).map(course => {
+                if(course.ID && course['cross listed'] && course.properties && course.offered) {
+                    return {
+                        name: course.name,
+                        identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
+                        CI: course.properties.CI,
+                        HI: course.properties.HI,
+                        Fall: course.offered.fall,
+                        Spring: course.offered.spring,
+                        Summer: course.offered.summer,
+                        search_string: course.subj + '-' + course.ID // course subj-id
+                            + course['cross listed'].map(el => ' / ' + el).join("") // cross listed subj-id
+                            + " " + course.name // course name
+                            + " " + course.ID[0] + "000" // what level is the course
+                            + (course.offered.fall ? " Fall" : "")
+                            + (course.offered.spring ? " Spring" : "")
+                            + (course.offered.summer ? " Summer" : "")
+                            + (course.properties.CI ? " COMMUINT" : "")
+                            + (course.properties.HI ? " HASSINQ" : "")
+                    };
+                }
+            });
+        },
         filteredCourses() {
 
             // Collapse extra exlamation marks
@@ -216,14 +216,16 @@ export default {
             this.add_look_term(negated_words, "(?!.*") //wrap words in a negative lookahead
 
             const re = new RegExp(negated_words.join("") + search_words.join(""), 'i') // i is to ignore case sensitive search
-            // console.log(courses)
-            // console.log("filteredCourses")
-            // console.log(this.courses[6].search_string)
-            // console.log(re.test(this.courses[0].search_string))
-            // console.log(re.exec(this.courses[0].search_string))
-
-            return this.courses.filter(course => re.test(course.search_string))
+            return this.courses.filter(course => course ? re.test(course.search_string) : false)
         }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/courses.json').then((val) => {
+            this.coursesData = Object.freeze(val);
+            let temp = this.courses.filter(course => course != null);
+            this.selected = temp.filter(course => this.$store.state.classes[course.name]);
+        });
     },
     methods: {
         // On row click, toggle selected state

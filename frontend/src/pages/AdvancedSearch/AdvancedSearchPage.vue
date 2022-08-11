@@ -107,34 +107,42 @@
                 </template>
                 <template #item.CI="{ item }">
                     <div style="display: flex; justify-content: center">
-                        <v-checkbox
-                            v-model="item.properties.CI"
-                            disabled
-                        />
+                        <div v-if="item.properties">
+                            <v-checkbox
+                                v-model="item.properties.CI"
+                                disabled
+                            />
+                        </div>
                     </div>
                 </template>
                 <template #item.fall="{ item }">
                     <div style="display: flex; justify-content: center">
-                        <v-checkbox
-                            v-model="item.offered.fall"
-                            disabled
-                        />
+                        <div v-if="item.offered">
+                            <v-checkbox
+                                v-model="item.offered.fall"
+                                disabled
+                            />
+                        </div>
                     </div>
                 </template>
                 <template #item.spring="{ item }">
                     <div style="display: flex; justify-content: center">
-                        <v-checkbox
-                            v-model="item.offered.spring"
-                            disabled
-                        />
+                        <div v-if="item.offered">
+                            <v-checkbox
+                                v-model="item.offered.spring"
+                                disabled
+                            />
+                        </div>
                     </div>
                 </template>
                 <template #item.summer="{ item }">
                     <div style="display: flex; justify-content: center">
-                        <v-checkbox
-                            v-model="item.offered.summer"
-                            disabled
-                        />
+                        <div v-if="item.offered">
+                            <v-checkbox
+                                v-model="item.offered.summer"
+                                disabled
+                            />
+                        </div>
                     </div>
                 </template>
                 <template #item.code="{ item }">
@@ -165,7 +173,6 @@
 import Breadcrumbs from '../../components/Breadcrumbs'
 import CourseTableCourse from '../../components/CourseTableCourse'
 import breadcrumbs from '../../data/breadcrumbs.js'
-import { courses, pathways } from '../../data/data.js'
 
 export default {
     components: {
@@ -223,16 +230,20 @@ export default {
             searchCI: false,
             search4000: false,
             searchPathway: [],
-            pathways: Object.keys(pathways),
-            sortBy: false
+            pathways: [],
+            sortBy: false,
+            pathwaysData: {},
+            coursesData: {}
         }
     },
     computed: {
         filteredCourses() {
             let output = [];
-            for(const course_name in courses) {
-                const course = courses[course_name];
-                // Check name
+            for(const course_name in this.coursesData) {
+                const course = this.coursesData[course_name];
+                if(!course.name) {
+                    continue;
+                }
                 if(this.searchName != '' && !course_name.toLowerCase()
                     .includes(this.searchName.toLowerCase())) {
                     continue;
@@ -298,9 +309,9 @@ export default {
                     let inPathway = false;
                     for(const i in this.searchPathway) {
                         const pathway = this.searchPathway[i];
-                        if(pathways[pathway]) {
-                            for(const prio in pathways[pathway]) {
-                                const crs = pathways[pathway][prio];
+                        if(this.pathwaysData[pathway]) {
+                            for(const prio in this.pathwaysData[pathway]) {
+                                const crs = this.pathwaysData[pathway][prio];
                                 if(crs instanceof Object && !(crs instanceof Array)) {
                                     for(const crs_name in crs) {
                                         if(crs_name == course.name) {
@@ -322,6 +333,16 @@ export default {
         configureSort() {
             return this.sortBy ? 'ID' : 'name';
         }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/pathways.json').then((val) =>{ this.pathwaysData = Object.freeze(val);
+            this.pathways = Object.keys(this.pathwaysData);
+        });
+        import('../../data/json/' + year + '/courses.json').then((val) => {
+            this.coursesData = Object.freeze(val);
+            this.hasData = true;
+        });
     },
     methods: {
         fetchCode(course) {

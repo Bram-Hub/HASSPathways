@@ -75,6 +75,10 @@ export default {
         graph: {
             type: Boolean,
             required: false,
+        },
+        hasData: {
+            type: Boolean,
+            required: true
         }
     },
     data() {
@@ -89,6 +93,20 @@ export default {
         filteredCourses() {
             let tempCourses = JSON.parse(JSON.stringify(this.courses));
 
+            //Weird hack that is needed
+            //Basically since this is a computed method it will auto run
+            //whenever the "data" is changed but since this.courses
+            //doesn't change since it is a reference to the courses from
+            //the parent component we need to change a data piece that
+            //is used in this function. I created the hasData prop to do 
+            //this. We need to then use the hasData to do "something"
+            //in order for it to be rerendered, I used an arbitrary if
+            //statement that will have no effect in order to compile with 
+            // no warnings.
+            if(this.hasData) {
+                tempCourses = JSON.parse(JSON.stringify(tempCourses));
+            }
+
             if(this.search && this.search != ''){
                 tempCourses = Object.fromEntries(Object.entries(tempCourses)
                     .filter(([key]) => key
@@ -97,7 +115,7 @@ export default {
             }
             for(const course in tempCourses) {
                 if(tempCourses[course] == null) {
-                    tempCourses[course]= {};
+                    tempCourses[course] = {};
                     tempCourses[course]["name"] = course;
                     tempCourses[course]["hasData"] = false;
                 }

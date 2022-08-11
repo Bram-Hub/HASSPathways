@@ -45,7 +45,7 @@
                     <v-col>
                         <div class="bookmark">
                             <Bookmark
-                                :myPathway=true
+                                :my-pathway="true"
                                 :pathway-id="title"
                                 :courses="courses"
                                 @update="$emit('update')"
@@ -73,9 +73,9 @@
                                     mdi-alert
                                 </v-icon>
                             </template>
-                            <span><div>There are pre-requisite(s) for this course:<br/>
-                                <span v-for='(prereq, index) in course.prerequisites' :key="prereq">
-                                    {{prereq}} <span v-if="index < course.prerequisites.length-1">,&nbsp;</span>
+                            <span><div>There are pre-requisite(s) for this course:<br>
+                                <span v-for="(prereq, index) in course.prerequisites" :key="prereq">
+                                    {{ prereq }} <span v-if="index < course.prerequisites.length-1">,&nbsp;</span>
                                 </span>
                             </div></span>
                         </v-tooltip>
@@ -95,7 +95,7 @@
 
 <script>
 import getColorFromCategry from '../helpers/category-colors.js';
-import { pathwayCategories, courses as allCourses } from '../data/data.js'
+import { pathwayCategories } from '../data/data.js'
 import Bookmark from './Bookmark'
 
 
@@ -121,19 +121,27 @@ export default {
             type: Boolean
         }
     },
-    mounted() {
+    data() {
+        return {
+            coursesData: {}
+        }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../data/json/' + year + '/courses.json').then((val) => this.coursesData = Object.freeze(val));
     },
     methods: {
         hasPreReq( courseName ) {
-             return ( allCourses[courseName] === undefined ? false : allCourses[courseName].prerequisites.length != 0 );
+            if(!this.coursesData[courseName]) return false;
+            return this.coursesData[courseName].prerequisites.length != 0;
         },
         formatCourseCategory(classes) {
             if (!classes || !classes.length)
                 return []; // Shouldn't happen!
             let out = [];
             for(const clazz in classes) {
-                if(allCourses[classes[clazz]]) {
-                    let myClass = allCourses[classes[clazz]];
+                if(this.coursesData[classes[clazz]]) {
+                    let myClass = this.coursesData[classes[clazz]];
                     myClass.hasData = true;
                     out.push(myClass);
                 }
