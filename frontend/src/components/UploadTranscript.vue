@@ -18,11 +18,8 @@
                 Upload Transcript
             </v-btn>
         </div>
-        <span
-            class ="mr-2"
-            style="margin: 25px"
-        >
-            Imported Classes: {{imported_classes}}
+        <span>
+            Imported Classes: {{imported_classes_str}}
         </span>
     </div>
 </template>
@@ -36,15 +33,11 @@ export default {
     data() {
         return {
             transcript_file: null,
-            taken_courses: []
+            taken_courses: [],
+            imported_classes_str: ""
 
         };
     },
-     computed: {
-         imported_classes(){
-             return this.taken_courses.join(", ")
-         }
-     },
     methods: {
         uploadFile() {
             this.transcript_file = this.$refs.file.files[0]
@@ -58,6 +51,7 @@ export default {
                 // console.log("courses: " + taken_courses)
                 taken_courses.forEach(course => instance.$store.commit('addClass', course))
                 instance.$emit("imported_classes")
+                instance.imported_classes_str = taken_courses.join(", ")
             }
         }
     }
