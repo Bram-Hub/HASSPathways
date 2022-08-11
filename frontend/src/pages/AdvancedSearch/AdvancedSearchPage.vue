@@ -233,8 +233,7 @@ export default {
             pathways: [],
             sortBy: false,
             pathwaysData: {},
-            coursesData: {},
-            refresh: false
+            coursesData: {}
         }
     },
     computed: {
@@ -242,11 +241,6 @@ export default {
             let output = [];
             for(const course_name in this.coursesData) {
                 const course = this.coursesData[course_name];
-                // Check name
-                if(this.refresh){
-                    let i = 0;
-                    i++;
-                }
                 if(!course.name) {
                     continue;
                 }
@@ -348,7 +342,6 @@ export default {
         import('../../data/json/' + year + '/courses.json').then((val) => {
             this.coursesData = Object.freeze(val);
             this.hasData = true;
-            this.refresh = true;
         });
     },
     methods: {
