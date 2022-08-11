@@ -237,16 +237,6 @@ export default {
             refresh: false
         }
     },
-    created() {
-        const year = this.$store.state.year;
-        import('../../data/json/' + year + '/pathways.json').then((val) => this.pathwaysData = Object.freeze(val));
-            this.pathways = Object.keys(this.pathwaysData);
-        import('../../data/json/' + year + '/courses.json').then((val) => {
-            this.coursesData = Object.freeze(val);
-            this.hasData = true;
-            this.refresh = true;
-        });
-    },
     computed: {
         filteredCourses() {
             let output = [];
@@ -349,6 +339,17 @@ export default {
         configureSort() {
             return this.sortBy ? 'ID' : 'name';
         }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/pathways.json').then((val) =>{ this.pathwaysData = Object.freeze(val);
+            this.pathways = Object.keys(this.pathwaysData);
+        });
+        import('../../data/json/' + year + '/courses.json').then((val) => {
+            this.coursesData = Object.freeze(val);
+            this.hasData = true;
+            this.refresh = true;
+        });
     },
     methods: {
         fetchCode(course) {

@@ -175,14 +175,6 @@ export default {
             chip_names: ["CI", "HI", "Fall", "Spring", "Summer"]
         }
     },
-    created() {
-        const year = this.$store.state.year;
-        import('../../data/json/' + year + '/courses.json').then((val) => {
-            this.coursesData = Object.freeze(val);
-            let temp = this.courses.filter(course => course != null);
-            this.selected = temp.filter(course => this.$store.state.classes[course.name]);
-        });
-    },
     computed: {
         courses() {
             return Object.values(this.coursesData).map(course => {
@@ -226,6 +218,14 @@ export default {
             const re = new RegExp(negated_words.join("") + search_words.join(""), 'i') // i is to ignore case sensitive search
             return this.courses.filter(course => course ? re.test(course.search_string) : false)
         }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/courses.json').then((val) => {
+            this.coursesData = Object.freeze(val);
+            let temp = this.courses.filter(course => course != null);
+            this.selected = temp.filter(course => this.$store.state.classes[course.name]);
+        });
     },
     methods: {
         // On row click, toggle selected state
