@@ -1,158 +1,54 @@
 <template>
-  <v-app id="app">
-    <!-- HEADER -->
-    <v-app-bar
-      class="app-bar"
-      app
-      fixed
-      flat
-      color="#c65353"
-      extension-height="100px"
-    >
-      <v-container fluid>
-        <v-layout row>
-          <!-- TITLE -->
-          <v-flex md1 sm11 xs11>
-            <router-link to="">
-              <v-img
-                class="pl-6 pr-8 ml-4"
-                height="60"
-                width="40"
-                :src="require('./assets/logo.png')"
-                @click="clearProgress()"
-              />
-            </router-link>
-          </v-flex>
+    <v-app id="app">
+        <Header @updateYear="updateYear()" />
 
-          <!-- BUTTONS -->
-          <v-col id="topRightButtons" class="text-right">
-            <v-btn
-              id="button"
-              class="hidden-sm-and-down text-capitalize"
-              rounded
-              elevation="4"
-              depressed
-              active-class="v-btn--active toolbar-btn-active blue-grey lighten-3"
-              :to="{ name: 'activity' }"
-            >
-              My Pathways
-            </v-btn>
-            <v-btn
-              id="button"
-              class="hidden-sm-and-down mr-2 text-capitalize"
-              active-class="v-btn--active toolbar-btn-active blue-grey lighten-3"
-              rounded
-              elevation="4"
-              depressed
-              :to="{ name: 'home' }"
-              @click="clearProgress()"
-            >
-              Add Pathways
-            </v-btn>
-          </v-col>
-        </v-layout>
-      </v-container>
-    </v-app-bar>
+        <v-main class="main-content">
+            <router-view />
+        </v-main>
 
-    <!-- ROUTER VIEW -->
-    <v-content>
-      <router-view />
-    </v-content>
-
-    <!-- FOOTER
-    <v-footer app>
-
-      <v-layout column>
-        <div>
-
-          We love feedback! Come visit our 
-          <a href="https://github.com/nishi7409/HASSPathways/issues" target="_blank" style="text-decoration: none">
-
-            <span style="color: #c65353">
-              Github Repository
-              <i style="color: #c65353" class="fab fa-github"></i>
-            </span>
-
-          </a>
-
-        </div>
-      </v-layout>
-      
-      <v-spacer></v-spacer>
-
-      <div>HASS Pathways &copy; {{ new Date().getFullYear() }}</div>
-
-    </v-footer> -->
-  </v-app>
+        <Footer />
+    </v-app>
 </template>
 
 <script>
+
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import { DARK_MODE, DEFAULT_DARK_MODE } from './data/vuex.js'
+
 export default {
-  name: 'App',
-  data: () => ({
-    deleteClicked: false,
-    searchInput: '',
-    extension: '',
-  }),
-  watch: {
-    extension(newExtension) {
-      localStorage.setItem('extension', newExtension)
+    name: 'App',
+    components: {
+        Header,
+        Footer
     },
-  },
-  mounted() {
-    console.log(this.$vuetify.breakpoint)
-    if (localStorage.getItem('extension') == 'true') {
-      this.extension = true
+    data: () => ({
+        deleteClicked: false,
+        searchInput: '',
+        extension: ''
+    }),
+    mounted() {
+        // Load dark mode directly from localStorage for faster response time
+        // Note: localStorage saves as a string
+        let darkMode = localStorage.getItem(DARK_MODE);
+        this.$vuetify.theme.dark = darkMode === null ? DEFAULT_DARK_MODE : darkMode === 'true';
     }
-  },
-  methods: {
-    handleInput() {
-      this.$root.$emit('changedFilter', this.searchInput)
-    },
-    clearProgress() {
-      this.$root.$emit('resetProgress')
-      this.$store.editingCourses = false
-      location.reload()
-    },
-  },
 }
 </script>
 
+<style lang="scss">
+@import '@/styles/_globals.scss';
+</style>
+
 <style>
-#button {
-  float: right;
-}
-
-#topRightButtons .v-btn::before {
-  background-color: transparent;
-}
-
-#header {
-  height: 70px;
-  background-color: #fa8072;
-  color: white;
-  font-family: 'Muli', sans-serif;
-  font-size: 20px;
-}
-
-.v-btn--active .v-btn__content {
-  color: black;
-}
-
-#title {
-  color: white;
-  text-decoration: none;
-}
-
 #app {
-  font-family: 'Muli', sans-serif;
+    font-family: 'Muli', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-#list {
-  height: 200px;
-}
-
-.combo-box {
-  z-index: 200;
+.main-content {
+    min-height: 100vh;
 }
 </style>
