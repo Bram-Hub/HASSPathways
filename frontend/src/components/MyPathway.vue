@@ -118,7 +118,12 @@ export default {
             required: true
         },
         preRequisite: {
-            type: Boolean
+            type: Boolean,
+            // required: true
+        },
+        hasData: {
+            type: Boolean,
+            required: true
         }
     },
     data() {
