@@ -14,11 +14,6 @@ import AdminCoursePage from '../pages/AdminPortal/AdminCoursePage.vue'
 import AdminPathwayPage from '../pages/AdminPortal/AdminPathwayPage.vue'
 import AdminSearchCCPage from '../pages/AdminPortal/AdminSearchCCPage.vue'
 import Four0FourPage from '../pages/Four0FourPage.vue'
-import store from '../store/store.js'
-
-const year = store.state.year;
-let pathways = {};
-import('../data/json/' + year + '/pathways.json').then((val) => pathways = Object.freeze(val));
 
 Vue.use(Router);
 

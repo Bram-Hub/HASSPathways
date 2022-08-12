@@ -131,17 +131,6 @@ export default {
             pathwaysData: {}
         }
     },
-    created() {
-        const year = this.$store.state.year;
-        import('../../data/json/' + year + '/pathways.json').then((val) => {
-            this.pathwaysData = Object.freeze(val);
-            this.pathways = [];
-            for(const key in this.pathwaysData) {
-                this.pathways.push(this.pathwaysData[key].name);
-            }
-        });
-        import('../../data/json/' + year + '/courses.json').then((val) => this.coursesData = Object.freeze(val));
-    },
     computed: {
         autocompletePathways() {
             let output = [];
@@ -152,6 +141,17 @@ export default {
             }
             return output;
         }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/pathways.json').then((val) => {
+            this.pathwaysData = Object.freeze(val);
+            this.pathways = [];
+            for(const key in this.pathwaysData) {
+                this.pathways.push(this.pathwaysData[key].name);
+            }
+        });
+        import('../../data/json/' + year + '/courses.json').then((val) => this.coursesData = Object.freeze(val));
     },
     methods: {  
         toClass(clazz) {

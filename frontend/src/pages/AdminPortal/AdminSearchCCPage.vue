@@ -50,7 +50,6 @@
 <script>
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
-import { courses } from '../../data/data.js'
 
 export default {
     components: {
@@ -64,10 +63,6 @@ export default {
             chosenCourse: null,
             coursesData: {}
         }
-    },
-    created() {
-        const year = this.$store.state.year;
-        import('../../data/json/' + year + '/courses.json').then((val) => this.coursesData = Object.freeze(val));
     },
     computed: {
         filteredCourses() {
@@ -88,6 +83,10 @@ export default {
             }
             return Object.fromEntries(tempCourses);
         }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/courses.json').then((val) => this.coursesData = Object.freeze(val));
     },
     methods: {
         chooseCourse(course) {
