@@ -7,7 +7,7 @@
                 clearable
                 rounded
                 solo
-                :items="pathways"
+                :items="autocompletePathways"
                 label="Pathways"
                 @change="filterCourses()"
             />
@@ -133,12 +133,24 @@ export default {
     },
     created() {
         const year = this.$store.state.year;
-        import('../../data/json/' + year + '/pathways.json').then((val) => this.pathwaysData = Object.freeze(val));
+        import('../../data/json/' + year + '/pathways.json').then((val) => {
+            this.pathwaysData = Object.freeze(val);
+            this.pathways = [];
+            for(const key in this.pathwaysData) {
+                this.pathways.push(this.pathwaysData[key].name);
+            }
+        });
         import('../../data/json/' + year + '/courses.json').then((val) => this.coursesData = Object.freeze(val));
-
-        this.pathways = [];
-        for(const key in this.pathwaysData) {
-            this.pathways.push(this.pathwaysData[key].name);
+    },
+    computed: {
+        autocompletePathways() {
+            let output = [];
+            for(const path in this.pathways) {
+                if(this.pathways[path] != undefined) {
+                    output.push(this.pathways[path]);
+                }
+            }
+            return output;
         }
     },
     methods: {  
