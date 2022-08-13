@@ -209,14 +209,19 @@ export default {
                 str_array[1] += str_array[i]
             }
             let searchText = str_array.join("!")
-            let words = searchText.split("!")
+            let words = searchText.split(/ *! */)
             if(words.length == 1) words.push("")
-            let search_words = words[0].split(" ")
-            let negated_words = words[1].split(" ")
+            let search_words = words[0].split(/ +/)
+            let negated_words = words[1].split(/ +/)
+            // console.log("search_words: " + search_words)
+            // console.log("negated_words: " + negated_words)
             this.add_look_term(search_words, "(?=.*")  //wrap words in a lookahead
             this.add_look_term(negated_words, "(?!.*") //wrap words in a negative lookahead
+            // console.log("search: " + negated_words.join("") + search_words.join(""))
+            // console.log("-----------------")
 
-            const re = new RegExp(negated_words.join("") + search_words.join(""), 'i') // i is to ignore case sensitive search
+
+            const re = new RegExp(search_words.join("") + negated_words.join(""), 'i') // i is to ignore case sensitive search
             return this.courses.filter(course => course ? re.test(course.search_string) : false)
         }
     },
