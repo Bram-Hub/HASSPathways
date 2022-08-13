@@ -86,7 +86,6 @@ async def get_details(course, year):
     return None
 
 async def fill(folder_path):
-    print("Starting to fill non-catalog courses")
     f1 = open(folder_path + '/pathways.json', 'r')
     f2 = open(folder_path + '/courses.json', 'r')
 
@@ -112,4 +111,3 @@ async def fill(folder_path):
     f2 = open(folder_path + '/courses.json', 'w')
     json.dump(courses, f2, sort_keys=True, indent=2, ensure_ascii=False)
     f2.close()
-    print("Finished to fill non-catalog courses")
