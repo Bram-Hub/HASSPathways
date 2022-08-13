@@ -2,6 +2,7 @@ import courses_scraper
 import pathway_scraper
 import fill_empty
 import sis_scraper
+import category_assembler
 import asyncio
 import os
 import json
@@ -43,3 +44,5 @@ if __name__ == "__main__":
 
     f = open('../../frontend/src/data/json/' + 'years.json', 'w');
     json.dump(years, f, sort_keys=True, indent=2, ensure_ascii=True)
+
+    category_assembler.assemble('../../frontend/src/data/json/')
