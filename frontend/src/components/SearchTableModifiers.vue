@@ -1,23 +1,22 @@
 <template>
     <div>
-        <!-- Text based modifiers, require a .name property -->
         <v-tooltip
             v-for="modifier in textModifiers"
             :key="modifier"
+            :class="[!myModifiers.includes(modifier) ? 'modifier--inactive' : '' , 'modifier', 'modifier--text']"
             top
         >
             <template #activator="{ on, attrs }">
                 <v-chip
-                    :class="[!myModifiers.includes(modifier) ? 'modifier--inactive' : '' , 'modifier', 'modifier--text']"
-                    :color="modifiers[modifier].color || 'dd4e47'"
+                    :color="course[modifier] ? modifiers[modifier]['color'] : 'dd4e47'"
                     v-bind="attrs"
-                    small
                     v-on="on"
+                    @click="debugging()"
                 >
-                    {{ modifiers[modifier].name }}
+                    {{ modifier }}
                 </v-chip>
             </template>
-            <span>{{ modifiers[modifier].tooltip }}</span>
+            <span> {{ modifiers[modifier].tooltip }} </span>
         </v-tooltip>
     </div>
 </template>
@@ -30,12 +29,12 @@
  * The entire course object is passed for possible additional future formatting
  */
 
-import { modifiers, iconModifiers, textModifiers } from '../data/course-modifiers.js'
+import { modifiers, iconModifiers, textModifiers } from '../data/search-modifiers.js'
 
 export default {
-    name: 'CourseTableModifiers',
-    props: {
-        item: {
+    name: 'SearchTableModifiers',
+    props : {
+        course: {
             type: Object,
             required: true
         }
@@ -50,35 +49,27 @@ export default {
     computed: {
         // This function should generate
         // an array of all modifiers
+        myColor() {
+            return this.course[this.modifier] ? this.modifiers[this.modifier]["color"] : 'dd4e47'
+        },
+        myTooltip() {
+            return this.modifiers["Fall"].tooltip
+            // return this.modifiers[this.modifier].tooltip
+        },
         myModifiers() {
             let mods = [];
-            for(const offer in this.item.offered) {
-                if(this.item.offered[offer]) {
+            for(const offer in this.course.offered) {
+                if(this.course.offered[offer]) {
                     mods.push(offer);
                 }
             }
-            for(const prop in this.item.properties) {
-                if(this.item.properties[prop]) {
+            for(const prop in this.course.properties) {
+                if(this.course.properties[prop]) {
                     mods.push(prop);
                 }
             }
-        
-            if(this.item.prerequisites != "None" && this.item.prerequisites.length != 0 ) {
-                mods.push('pre_requisite')
-            }
-            
+
             return mods;
-        }
-    },
-    mounted() {
-        // this.debug();
-    },
-    methods: {
-        debug() {
-            // console.log( this.item );
-            if ( this.item.prerequisites != "None" ) {
-                console.log(this.item)
-            }
         }
     }
 }
@@ -87,7 +78,6 @@ export default {
 <style scoped lang="scss">
 // Base styles applied to all modifiers
 .modifier {
-    margin-top: 7px;
     margin-right: 3px;
     cursor: help;
     user-select: none;

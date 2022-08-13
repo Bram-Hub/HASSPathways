@@ -45,6 +45,7 @@
                     <v-col>
                         <div class="bookmark">
                             <Bookmark
+                                :my-pathway="true"
                                 :pathway-id="title"
                                 :courses="courses"
                                 @update="$emit('update')"
@@ -61,16 +62,30 @@
                     :key="i"
                 >
                     <p class="pa-0 mb-2">
+                        <v-tooltip v-if="hasPreReq(course.name)" bottom>
+                            <template #activator="{on, attrs}">
+                                <v-icon 
+                                    v-bind="attrs" 
+                                    dense
+                                    class="float-right" 
+                                    v-on="on"
+                                >
+                                    mdi-alert
+                                </v-icon>
+                            </template>
+                            <span><div>There are pre-requisite(s) for this course:<br>
+                                <span v-for="(prereq, index) in course.prerequisites" :key="prereq">
+                                    {{ prereq }} <span v-if="index < course.prerequisites.length-1">,&nbsp;</span>
+                                </span>
+                            </div></span>
+                        </v-tooltip>
                         {{ course.name }}<br>
-                        <small v-if="course.hasData" style="opacity: 0.8">
-                            {{ course.subj }}-{{ course.ID }}
-                            <label v-for="el in course['cross listed']" :key="el">
-                                / {{ el }}
-                            </label>
-                        </small>
-                        <small v-if="!course.hasData" style="opacity: 0.8">
+                        <small v-if="course.hasData" style="opacity: 0.8">{{ course.subj }}-{{ course.ID }}</small>
+                        <small v-else style="opacity: 0.8">
                             No data available
                         </small>
+                        
+
                     </p>
                 </span>
             </div>
@@ -79,9 +94,10 @@
 </template>
 
 <script>
-import getColorFromCategry from '../helpers/category-colors.js'
+import getColorFromCategry from '../helpers/category-colors.js';
+import { pathwayCategories } from '../data/data.js'
 import Bookmark from './Bookmark'
-import { pathwayCategories, courses as allCourses } from '../data/data.js'
+
 
 export default {
     name: 'MyPathway',
@@ -100,16 +116,37 @@ export default {
         pathwayCategory: {
             type: String,
             required: true
+        },
+        preRequisite: {
+            type: Boolean,
+            // required: true
+        },
+        hasData: {
+            type: Boolean,
+            required: true
         }
     },
+    data() {
+        return {
+            coursesData: {}
+        }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../data/json/' + year + '/courses.json').then((val) => this.coursesData = Object.freeze(val));
+    },
     methods: {
+        hasPreReq( courseName ) {
+            if(!this.coursesData[courseName]) return false;
+            return this.coursesData[courseName].prerequisites.length != 0;
+        },
         formatCourseCategory(classes) {
             if (!classes || !classes.length)
                 return []; // Shouldn't happen!
             let out = [];
             for(const clazz in classes) {
-                if(allCourses[classes[clazz]]) {
-                    let myClass = allCourses[classes[clazz]];
+                if(this.coursesData[classes[clazz]]) {
+                    let myClass = this.coursesData[classes[clazz]];
                     myClass.hasData = true;
                     out.push(myClass);
                 }
@@ -120,7 +157,6 @@ export default {
                     })
                 }
             }
-            
             return out;
         },
         colorHash(pathway) {
@@ -168,8 +204,6 @@ export default {
 
         .header {
             align-self: end;
-            .bookmark {
-            }
         }
 
         .title-text {
@@ -199,7 +233,7 @@ export default {
         overflow-y: auto;
         background-color: rgba(0, 0, 0, 0.1); // TODO: padding for title, make theme dependent
         height: 100%;
-
+        
         .course-items-container {
             padding-top: 12px;
             margin-bottom: 12px;

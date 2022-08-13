@@ -15,16 +15,18 @@
                 />
             </div>
             <div v-for="course in filteredCourses" :key="course.name">
-                <v-btn
-                    :id="course.name"
-                    :to="`/admin-portal/course?class=${course.name}`"
-                >
-                    Edit
-                </v-btn>
-                <label class="label" :for="course.name"> {{ course.name + ", " + course.subj + "-" + course.ID + course['cross listed'].map(el => ' / ' + el).join("") }} </label>
-                <v-btn color="red" @click="chooseCourse(course.name)">
-                    Remove
-                </v-btn>
+                <div v-if="course.name && course.subj && course['cross listed']">
+                    <v-btn
+                        :id="course.name"
+                        :to="`/admin-portal/course?class=${course.name}`"
+                    >
+                        Edit
+                    </v-btn>
+                    <label class="label" :for="course.name"> {{ course.name + ", " + course.subj + "-" + course.ID + course['cross listed'].map(el => ' / ' + el).join("") }} </label>
+                    <v-btn color="red" @click="chooseCourse(course.name)">
+                        Remove
+                    </v-btn>
+                </div>
             </div>
         </v-container>
         <v-dialog v-model="dialog" width="500">
@@ -48,7 +50,6 @@
 <script>
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
-import { courses } from '../../data/data.js'
 
 export default {
     components: {
@@ -60,14 +61,16 @@ export default {
             searchValue: '',
             dialog: false,
             chosenCourse: null,
+            coursesData: {}
         }
     },
     computed: {
         filteredCourses() {
-            let tempCourses = Object.entries(courses);
+            let tempCourses = Object.entries(this.coursesData);
 
             if(this.searchValue != '' && this.searchValue) {
                 tempCourses = tempCourses.filter((item) => {
+                    if(!item[1].name) return false;
                     let combinedID = item[1].prefix + '-' + item[1].ID;
 
                     return item[1].name
@@ -80,6 +83,10 @@ export default {
             }
             return Object.fromEntries(tempCourses);
         }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/courses.json').then((val) => this.coursesData = Object.freeze(val));
     },
     methods: {
         chooseCourse(course) {

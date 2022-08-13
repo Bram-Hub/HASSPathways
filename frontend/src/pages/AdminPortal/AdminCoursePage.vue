@@ -18,7 +18,7 @@
                         <v-text-field
                             v-model="subj"
                             outlined dense
-                            label="Department Code"
+                            label="Subject Code"
                             class="text-input"
                             placeholder="COGS"
                         />
@@ -95,7 +95,7 @@
                 />
                 <v-select
                     v-model="myPathways"
-                    :items="pathways"
+                    :items="vselectPathways"
                     multiple
                     label="Pathways"
                     outlined
@@ -122,7 +122,6 @@
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import axios from 'axios'
-import { courses, pathways } from '../../data/data.js'
 
 export default {
     components: {
@@ -132,7 +131,7 @@ export default {
         return {
             breadcrumbs: breadcrumbs.admin_course_page,
             name: "",
-            dept: "",
+            subj: "",
             ID: 0,
             CI: false,
             HI: false,
@@ -147,6 +146,8 @@ export default {
             minors: [],
             myPathways: [],
             pathways: [],
+            pathwaysData: {},
+            coursesData: {},
 
             rules: {
                 courseCode: value => ('' + value).length === 4
@@ -169,50 +170,66 @@ export default {
                     href: '/admin-portal/course'
                 });
             }
+        },
+        vselectPathways() {
+            let output = [];
+            for(const path in this.pathways) {
+                if(this.pathways[path]) {
+                    output.push(this.pathways[path]);
+                }
+            }
+            return output;
         }
     },
     created() {
-        const course = this.getCourse();
-        if(course) {
-            this.name = course.name;
-            this.subj =  course.subj;
-            this.ID = course.ID;
-            this.CI = course.properties.CI;
-            this.HI = course.properties.HI;
-            this.description = course.description;
-            this.fall = course.offered.fall;
-            this.summer = course.offered.summer;
-            this.spring = course.offered.spring;
-            this.off_text = course.offered.text;
-            this.major_rest = course.properties.major_restricted;
-            this.even = course.offered.even;
-            this.odd = course.offered.odd;
-        }
-        let myPathways = new Set();
-        for(const key in pathways) {
-            const singlePathway = pathways[key];
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/courses.json').then((val) => this.coursesData = Object.freeze(val));
+        import('../../data/json/' + year + '/pathways.json').then((val) => {
+            this.pathwaysData = Object.freeze(val);
+            const course = this.getCourse();
             if(course) {
-                for(const prio in singlePathway) {
-                    if(singlePathway[prio] instanceof Object && !(singlePathway[prio] instanceof Array)) {
-                        const array = singlePathway[prio];
-                        if(Object.keys(array).includes(course.name)) {
-                            myPathways.add(singlePathway.name);
+                this.name = course.name;
+                this.subj =  course.subj;
+                this.ID = course.ID;
+                this.CI = course.properties.CI;
+                this.HI = course.properties.HI;
+                this.description = course.description;
+                this.fall = course.offered.fall;
+                this.summer = course.offered.summer;
+                this.spring = course.offered.spring;
+                this.off_text = course.offered.text;
+                this.major_rest = course.properties.major_restricted;
+                this.even = course.offered.even;
+                this.odd = course.offered.odd;
+            }
+            let myPathways = new Set();
+            for(const key in this.pathwaysData) {
+                const singlePathway = this.pathwaysData[key];
+                if(course) {
+                    for(const prio in singlePathway) {
+                        if(singlePathway[prio] instanceof Object && !(singlePathway[prio] instanceof Array)) {
+                            const array = singlePathway[prio];
+                            if(Object.keys(array).includes(course.name)) {
+                                myPathways.add(singlePathway.name);
+                            }
+                            this.pathways.push(singlePathway.name);
                         }
-                        this.pathways.push(singlePathway.name);
                     }
                 }
+                this.pathways.push(singlePathway.name);
             }
-            this.pathways.push(singlePathway.name);
-        }
-        this.myPathways = Array.from(myPathways);
+            this.myPathways = Array.from(myPathways);
+        });
     },
     methods: {
         getCourse() {
             if(!this.$route.query.class) {
                 return null;
             }
-            
-            return courses[this.$route.query.class];
+            if(!this.coursesData[this.$route.query.class]) {
+                return null;
+            }
+            return this.coursesData[this.$route.query.class];
         },
         submit() {
             let newCourse = this.getCourse();
