@@ -2,8 +2,12 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <v-btn v-if="debugging" @click="debug()">debug</v-btn>
-            <v-btn v-if="debugging" @click="debug2()">debug 2</v-btn>
+            <v-btn v-if="debugging" @click="debug()">
+                debug
+            </v-btn>
+            <v-btn v-if="debugging" @click="debug2()">
+                debug 2
+            </v-btn>
 
 
             <h1>My HASS Pathways</h1>
@@ -58,9 +62,6 @@ export default {
             debugging: false,
         };
     },
-    created() {
-        this.hasData = true;
-    },
     computed: {
         pathwaysToShow() {
             if (this.hasData) { /* this if statement is purposely empty */ }
@@ -85,6 +86,9 @@ export default {
             return show;
         }
     },
+    created() {
+        this.hasData = true;
+    },
     async mounted() {
         this.get_pathways().forEach(pathway => {
             if (pathway.courses.length == 0 && !pathway.bookmarked ) {
@@ -100,7 +104,7 @@ export default {
             this.hasData = !this.hasData;
         },
         debug() {
-                // add a test course
+            // add a test course
             console.log(this.pathways)
             console.log(this.bookmarked)
             let c = { "pathwayID": "Artificial Intelligence", "course": "Introduction to Cognitive Science" };

@@ -1,5 +1,6 @@
 import courses_scraper
 import pathway_scraper
+import fill_empty
 import sis_scraper
 import asyncio
 import os
@@ -35,5 +36,10 @@ if __name__ == "__main__":
         f = open(path + '/pathways.json', 'w')
         json.dump(all_pathways[year], f, sort_keys=True, indent=2, ensure_ascii=True)
         f.close()
+
+    for year in years:
+        path = '../../frontend/src/data/json/' + str(year)
+        asyncio.run(fill_empty.fill(path))
+
     f = open('../../frontend/src/data/json/' + 'years.json', 'w');
     json.dump(years, f, sort_keys=True, indent=2, ensure_ascii=True)

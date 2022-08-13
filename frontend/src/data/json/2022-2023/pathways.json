@@ -9,7 +9,6 @@
     },
     "Remaining": {
       "Histories of Western Music": "ARTS2500",
-      "New Media Theory": "ARTS4130",
       "The Multimedia Century": "ARTS2540"
     },
     "description": "This pathway allows students to study a range of art history and media art histories and theories. This immersive study will give students a comprehensive view of how these histories have shaped our current day media and given rise to a variety of art making tools in our digital and computational era.",
@@ -91,7 +90,6 @@
       "Cognitive Engineering": "COGS4620",
       "Color Theory": "COMM4960",
       "Fundamentals of 2D Design": "ARTS2220",
-      "Human Factors in Design": "PSYC2220",
       "Introduction to Cognitive Science": "COGS2120",
       "Introduction to Graphic Design": "COMM2660",
       "Music and Sound I": "ARTS2380",
@@ -129,13 +127,14 @@
       "Principles of Economics": "IHSS1200"
     },
     "One Of1": {
+      "Economic Data Analysis and Applications": "ECON2100",
       "Intermediate Macroeconomic Theory": "ECON2020",
       "Intermediate Microeconomic Theory": "ECON2010"
     },
     "Remaining": {
       "Advanced Data Analytics & Policy Evaluation": "ECON4590",
       "Applied Game Theory": "ECON4220",
-      "Applied Microeconomics": "ECON4010",
+      "Applied Microeconomics and Public Policy": "ECON4010",
       "Behavioral Economics": "ECON4270",
       "Behavioral Financial Economics": "ECON4340",
       "Cost-Benefit Analysis": "ECON4210",
@@ -145,6 +144,7 @@
       "Econometrics": "ECON4570",
       "Economic Models of Decision-Making": "ECON4320",
       "Economics of Biotech and Medical Innovations": "ECON4290",
+      "Economics of Discrimination": "ECON4380",
       "Economics of Financial Institutions and Markets": "ECON4330",
       "Economics of Government Regulation and Firm Strategy": "ECON4150",
       "Economics of Growth & Innovation": "ECON4430",
@@ -155,6 +155,7 @@
       "Experimental Economics": "ECON4360",
       "Health Economics and Policy": "ECON4170",
       "International Economics and Globalization": "ECON4190",
+      "International Trade and Environment": "ECON4370",
       "Law and Economics": "ECON4310",
       "Mathematical Methods in Economics": "ECON4120",
       "Microeconomics of Decision-Making": "ECON4350",
@@ -227,6 +228,7 @@
       "Principles of Economics": "IHSS1200"
     },
     "Remaining": {
+      "Cost-Benefit Analysis": "ECON4210",
       "Economics of Government Regulation and Firm Strategy": "ECON4150",
       "Environmental Economics": "ECON4230",
       "Health Economics and Policy": "ECON4170",
@@ -245,6 +247,7 @@
       "Principles of Economics": "IHSS1200"
     },
     "Remaining": {
+      "Cost-Benefit Analysis": "ECON4210",
       "Econometric Methods for Big Data": "ECON4280",
       "Econometrics": "ECON4570",
       "Experimental Economics": "ECON4360"
@@ -307,8 +310,8 @@
       "Designing Climate Justice": "IHSS1960",
       "Documentary in the 21st Century: Identity Production": "IHSS1040",
       "Law, Values, and Public Policy: Perspectives on Science and Technology": "IHSS1350",
-      "Music and Nature": "IHSS1720",
       "Music and Protest": "IHSS1960",
+      "Music, Sound, & the Environment": "ARTS2570",
       "Nature/Society": "IHSS1110",
       "Principles of Economics": "IHSS1200",
       "Sustainability Debates": "IHSS1240"
@@ -332,7 +335,7 @@
     "Remaining": {
       "Art, Community, and Technology": "ARTS4250",
       "Bioethics": "STSO4250",
-      "Designing Climate Justice": "IHSS1960",
+      "Designing Climate Justice": "IHSS196X",
       "Eco Chic: Living Art": "ARTS4240",
       "Engineering Ethics": "STSO4210",
       "Environmental Philosophy": "STSO4340",
@@ -341,6 +344,7 @@
       "Law, Values, and Public Policy: Perspectives on Science and Technology": "IHSS1350",
       "Medicine, Culture, and Society": "STSO4400",
       "Minds and Machines": "IHSS1140",
+      "Psychedelic Cultures": "IHSS196X",
       "Science and Scientific Misconduct": "IHSS1160",
       "Science, Technology, and Society": "STSO1110",
       "The Genome and You": "IHSS1150"
@@ -388,14 +392,14 @@
     "Remaining": {
       "Advertising and Culture": "COMM4580",
       "American Politics in Crisis": "STSO4590",
-      "Creative Writing:  The Short Story": "WRIT2330",
-      "Creative Writing: Creative Non-Fiction": "WRIT2320",
+      "Creative Nonfiction Writing": "WRIT2320",
+      "Creative Writing:  Short Story": "WRIT2330",
       "Critical Thinking": "PSYC2100",
       "Documentary Film": "COMM2440",
       "Drugs in History": "STSO4430",
       "Hactivism": "ARTS4560",
       "Philosophy of Science": "PHIL4130",
-      "Reality TV and Post-Factual Media": "COMM4530",
+      "Post-Factual Media": "COMM4530",
       "Rethinking Documentary: Video Production": "ARTS4040",
       "Science Fictions": "ARTS4640",
       "Science and Fiction": "LITR4150"
@@ -420,7 +424,7 @@
   },
   "Gender, Race, Sexuality, Ethnicity, and Social Change": {
     "One Of0": {
-      "Language and Culture": "IHSS1492",
+      "Language and Power": "IHSS1492",
       "Media and Society": "IHSS1560",
       "Race and Film in U.S. Culture and History": "IHSS1300",
       "Religion in a Global World": "IHSS1666",
@@ -430,12 +434,11 @@
       "Worlds on Display": "IHSS19XX"
     },
     "Remaining": {
-      "Cultural Anthropology": "STSO2510",
       "Documentary Film": "COMM2440",
       "Gender, Science, and Technology": "STSO4560",
       "Popular Music and Society": "ARTS2550",
       "Queer Ecologies": "ARTS4140",
-      "Religion in the Media": "COMM4550",
+      "Religion, Politics, & Media": "COMM4550",
       "Sociology": "STSO2520",
       "Women Writers": "LITR4770"
     },
@@ -474,6 +477,7 @@
       "History of Medicine": "STSO4420",
       "History of Mental Health": "STSO4440",
       "History of Science and Technology": "STSO4530",
+      "Psychedelic Cultures": "IHSS196X",
       "Revolutions in Perspective": "IHSS1960",
       "Science, Technology, and Society": "STSO1110",
       "The American Dream": "IHSS1776",
@@ -578,7 +582,7 @@
       "Chinese V": "LANG4470",
       "Cross-linguistic Perspectives": "COGS4560",
       "Language Studies": "LANG4940",
-      "Language and Culture": "IHSS1492",
+      "Language and Power": "IHSS1492",
       "Language-Endowed Intelligent Agents": "COGS4880",
       "The Linguistics of Computational Linguistics": "COGS4340",
       "Topics in Language": "LANG4960"
@@ -595,8 +599,8 @@
   },
   "Literature and Creative Writing": {
     "Remaining": {
-      "Creative Writing:  The Short Story": "WRIT2330",
-      "Creative Writing: Creative Non-Fiction": "WRIT2320",
+      "Creative Nonfiction Writing": "WRIT2320",
+      "Creative Writing:  Short Story": "WRIT2330",
       "Fiction: From Film to the Internet": "IHSS1550",
       "Film Theory": "LITR4410",
       "Interactive Narrative": "COMM4780",
@@ -669,8 +673,8 @@
       "Documentary Film": "COMM2440",
       "Media and Society": "IHSS1560",
       "Perspectives on Photography": "COMM2410",
-      "Reality TV and Post-Factual Media": "COMM4530",
-      "Religion in the Media": "COMM4550",
+      "Post-Factual Media": "COMM4530",
+      "Religion, Politics, & Media": "COMM4550",
       "Remixing in Digital Culture": "IHSS19XX",
       "Rethinking Documentary: Video Production": "ARTS4040",
       "Superheroes in the Classroom": "COMM2616",
@@ -692,6 +696,7 @@
       "Advanced Topics in Linguistics": "COGS4780",
       "Are Humans Rational?": "IHSS1235",
       "Cognition and the Brain": "COGS4600",
+      "Cognitive Engineering": "COGS4620",
       "Cognitive Psychology": "PSYC4370",
       "Cross-linguistic Perspectives": "COGS4560",
       "Game AI": "COGS4420",
@@ -720,7 +725,6 @@
   },
   "Music Composition and Production": {
     "One Of0": {
-      "Exploring Music @Rensselaer": "IHSS1010",
       "Fundamentals of Music and Sound": "ARTS1380",
       "Histories of Jazz and Improvised Music": "ARTS2510",
       "Histories of Western Music": "ARTS2500",
@@ -734,7 +738,6 @@
       "Music and Sound I": "ARTS2380",
       "Music and Sound II": "ARTS4380",
       "Music and Technology I": "ARTS2020",
-      "Music and Technology II": "ARTS4160",
       "Sound Recording and Production I": "ARTS2700",
       "Sound Recording and Production II": "ARTS4700"
     },
@@ -747,7 +750,6 @@
   },
   "Music Performance": {
     "One Of0": {
-      "Exploring Music @Rensselaer": "IHSS1010",
       "Fundamentals of Music and Sound": "ARTS1380",
       "Histories of Jazz and Improvised Music": "ARTS2510",
       "Histories of Western Music": "ARTS2500",
@@ -773,7 +775,6 @@
   },
   "Music and Culture": {
     "One Of0": {
-      "Exploring Music @Rensselaer": "IHSS1010",
       "Histories of Jazz and Improvised Music": "ARTS2510",
       "Popular Music and Society": "ARTS2550",
       "Remixing in Digital Culture": "IHSS19XX",
@@ -830,9 +831,34 @@
     "name": "Philosophy",
     "remaining_header": "Choose remaining credits from the following with at least 4 credits at the 4000-level:"
   },
+  "Pre-Health Pathway": {
+    "One Of0": {
+      "Communication Theory and Practice": "COMM2520",
+      "Critical Television": "COMM2750",
+      "Documentary Film": "COMM2440",
+      "Introduction to Graphic Design": "COMM2660",
+      "Perspectives on Photography": "COMM2410",
+      "Proposing and Persuading": "WRIT4550",
+      "Research Writing": "WRIT4410",
+      "Speech Communication": "WRIT2340",
+      "Strategic Writing": "WRIT2110",
+      "Superheroes in the Classroom": "COMM2616",
+      "Typography": "COMM2570",
+      "Visual Design: Theory and Application": "COMM4460",
+      "Writing and Response": "WRIT4380",
+      "Writing in Context": "WRIT1110"
+    },
+    "Required": {
+      "Introduction to Psychological Science": "PSYC1200",
+      "Sociology": "STSO2520"
+    },
+    "description": "",
+    "name": "Pre-Health Pathway"
+  },
   "Public Health": {
     "One Of0": {
       "Introduction to Psychological Science": "PSYC1200",
+      "Psychedelic Cultures": "IHSS196X",
       "Science, Technology, and Society": "STSO1110",
       "The Genome and You": "IHSS1150"
     },
@@ -851,7 +877,7 @@
     "Required": {
       "Sociology": "STSO2520"
     },
-    "description": "The pathway in Public Health is designed for students interested in health-related careers who wish to develop skills and knowledge about global public health challenges. It also offers important courses for students on a pre-medical track.",
+    "description": "The pathway in Public Health is designed for students interested in health-related careers who wish to develop skills and knowledge about global public health challenges. It also offers important courses for students on a pre-health/pre-medtrack beyond the pre-health/pre-med pathway.",
     "minor": [
       "Public Health"
     ],
@@ -859,12 +885,11 @@
     "remaining_header": "Choose remaining credits from the following:"
   },
   "Science, Technology, and Society": {
-    "One Of0": {
+    "Remaining": {
       "American History": "STSO2500",
       "American Politics in Crisis": "STSO4590",
       "Bioethics": "STSO4250",
       "Consumer Culture": "STSO4720",
-      "Cultural Anthropology": "STSO2510",
       "Design and Innovation  Studio C": "STSO4610",
       "Design and Innovation Senior Project": "STSO4970",
       "Design and Innovation Studio A": "STSO4600",
@@ -873,7 +898,7 @@
       "Engineering Ethics": "STSO4210",
       "Environment and Society": "STSO2300",
       "Environmental Justice": "STSO4330",
-      "Environmental Media & Data": "STSO4330",
+      "Environmental Media & Data": "STSO4320",
       "Environmental Philosophy": "STSO4340",
       "Food, Farms, and Famine": "STSO4260",
       "Gender, Science, and Technology": "STSO4560",
@@ -885,7 +910,8 @@
       "IT and Society": "IHSS1220",
       "Medicine, Culture, and Society": "STSO4400",
       "Politics of Design": "STSO4350",
-      "Professional Development  2 \u00e2\u0080\u0093Technical Issues and Solutions": "STSO4100",
+      "Professional Development  2 \u2013Technical Issues and Solutions": "STSO4100",
+      "Psychedelic Cultures": "IHSS196X",
       "Readings in Science and Technology Studies": "STSO4940",
       "Research Design": "STSO4980",
       "STS and Sustainability Senior Project": "STSO4990",
@@ -893,14 +919,15 @@
       "Self-Organization in Science and Society": "STSO4580",
       "Sociology": "STSO2520",
       "Sustainability Education": "STSO4280",
-      "Sustainability and STS Sustainability Careers": "STSO4300",
+      "Sustainability and STS Careers": "STSO4300",
       "Topics in Science and Technology Studies": "STSO4960"
     },
     "description": "The pathway in Science, Technology, and Society (STS) is designed for students broadly interested in the social and political dimensions of science, technology, engineering, and medicine. Students use political and social science methods to investigate scientific and technological developments.",
     "minor": [
       "Science, Technology, and Society"
     ],
-    "name": "Science, Technology, and Society"
+    "name": "Science, Technology, and Society",
+    "remaining_header": "Choose 12 credits from the following:"
   },
   "Strategic Communication": {
     "Remaining": {
@@ -909,7 +936,7 @@
       "Critical Television": "COMM2750",
       "Documentary Film": "COMM2440",
       "Introduction to Graphic Design": "COMM2660",
-      "Language and Culture": "IHSS1492",
+      "Language and Power": "IHSS1492",
       "Media and Society": "IHSS1560",
       "Perspectives on Photography": "COMM2410",
       "Proposing and Persuading": "WRIT4550",
@@ -968,10 +995,11 @@
       "History of American Technology": "STSO4510",
       "Nature/Society": "IHSS1110",
       "Politics of Design": "STSO4350",
+      "Psychedelic Cultures": "IHSS196X",
       "Science, Technology, and Society": "STSO1110",
       "Sustainability Debates": "IHSS1240",
       "Sustainability Education": "STSO4280",
-      "Sustainability and STS Sustainability Careers": "STSO4300"
+      "Sustainability and STS Careers": "STSO4300"
     },
     "Required": {
       "Environment and Society": "STSO2300"
@@ -1042,27 +1070,19 @@
       "Animal Cognition and Interaction with Humans": "PSYC4220",
       "Behavioral Neuroscience": "PSYC4360",
       "Cognition and the Brain": "PSYC4600",
-      "Cognitive Engineering": "PSYC4620",
       "Cognitive Modeling": "PSYC4510",
       "Cognitive Psychology": "PSYC4370",
       "Critical Thinking": "PSYC2100",
       "Drugs, Society, and Behavior": "PSYC4500",
-      "Forensic Psychology": "PSYC4750",
       "Hormones, Brain, and Behavior": "PSYC4700",
-      "Human Factors Seminar": "PSYC4160",
-      "Human Factors in Design": "PSYC2220",
       "Industrial and Organizational Psychology": "PSYC4200",
       "Introduction to Cognitive Neuroscience": "PSYC4330",
-      "Introduction to Sports Psychology": "PSYC2800",
       "Learning": "PSYC4450",
       "Mathematical Methods in Psychological Science": "PSYC4350",
-      "Motivation and Performance": "PSYC4110",
-      "Personality": "PSYC4400",
+      "Motivation and Performance": "PSYC2730",
       "Positive Psychology": "PSYC4730",
       "Professional Development II: Leadership Theories": "PSYC4170",
-      "Psychology and The Law": "PSYC4740",
       "Psychology of Mindfulness": "PSYC4430",
-      "Psychopharmacology and Behavioral Toxicology": "PSYC4770",
       "Readings in Psychology": "PSYC4940",
       "Research Methods and Statistics I": "PSYC2310",
       "Research Methods and Statistics II": "PSYC4310",
@@ -1103,7 +1123,6 @@
       "Eco Chic: Living Art": "ARTS4240",
       "Hactivism": "ARTS4560",
       "Intermediate Video": "ARTS2010",
-      "New Media Theory": "ARTS4130",
       "Queer Ecologies": "ARTS4140",
       "Rethinking Documentary: Video Production": "ARTS4040",
       "Science Fictions": "ARTS4640",
@@ -1122,7 +1141,7 @@
     "One Of0": {
       "Basic Drawing": "ARTS1200",
       "Minds and Machines": "IHSS1140",
-      "Music and Nature": "IHSS1720",
+      "Music, Sound, & the Environment": "ARTS2570",
       "Nature/Society": "IHSS1110",
       "Songwriting Workshop": "IHSS1700",
       "The Art of Listening": "IHSS1180",
@@ -1130,8 +1149,8 @@
       "Well-being: Cultivating Curiosity": "IHSS1175"
     },
     "Remaining": {
-      "Creative Writing:  The Short Story": "WRIT2330",
-      "Creative Writing: Creative Non-Fiction": "WRIT2320",
+      "Creative Nonfiction Writing": "WRIT2320",
+      "Creative Writing:  Short Story": "WRIT2330",
       "Drugs, Society, and Behavior": "PSYC4500",
       "Ethics": "PHIL4240",
       "Hormones, Brain, and Behavior": "PSYC4700",

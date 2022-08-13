@@ -140,7 +140,10 @@ def get_pathway_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         name = pathway.xpath("./title/text()")[0].strip()
         data[name] = {}
         data[name]["name"] = name
-        desc = pathway.xpath("./content/p/text()")[0].strip()
+        print(name)
+        desc = ""
+        if len(pathway.xpath("./content/p/text()")) >= 1:
+            desc = pathway.xpath("./content/p/text()")[0].strip()
         data[name]["description"] = desc.encode("ascii", "ignore").strip().decode()
         cores = pathway.xpath("./cores/core")
         cores += pathway.xpath("./cores/core/children/core")

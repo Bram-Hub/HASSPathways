@@ -48,7 +48,7 @@
   "3D Digital Modeling": {
     "ID": "2230",
     "cross listed": [],
-    "description": "A foundational course in concepts and techniques in digital 3D, for animation, games, and digital art. This course focuses on methods and aesthetics in creating digital 3D objects, spaces, and characters, including modeling, texturing, and lighting, as preparation for further courses in the 3D Animation curriculum.",
+    "description": "A foundational course in concepts and techniques in digital 3D, for animation, games, and digital art. This course focuses on methods and aesthetics in creating digital 3D objects, spaces, and characters, including modeling, texturing, and lighting, as preparation for further courses in the 3D Animation curriculum. Â",
     "name": "3D Digital Modeling",
     "offered": {
       "even": false,
@@ -203,7 +203,7 @@
   "Advanced Topics in Linguistics": {
     "ID": "4780",
     "cross listed": [],
-    "description": "This course will serve as a seminar for advanced students of linguistics. The material to be covered will be selected collaboratively by the instructor and each cohort of students. Students, who ideally will have taken at least two linguistics-oriented courses previously, will be guided in pursuing topics that they have found particularly compelling in previous courses.",
+    "description": "This course will serve as a seminar for advanced students of linguistics. The material to be covered will be selected collaboratively by the instructor and each cohort of students. Students, who ideally will have taken at least two linguistics-oriented courses previously, will be guided in pursuing topics that they have found particularly compelling in previous courses.Â",
     "name": "Advanced Topics in Linguistics",
     "offered": {
       "even": false,
@@ -247,7 +247,7 @@
   "American History": {
     "ID": "2500",
     "cross listed": [],
-    "description": "This course surveys the history of the United States from the colonial era through the present. The course introduces major themes and tensions in United States politics, society, and culture with a focus on environmental factors. Topics will include encounters between American Indians and colonial peoples, independence, the formation of the American government, slavery, immigration, citizenship, rights, social movements, colonialism, war, and the changing identity of the United States in the world.",
+    "description": "This course surveys the history of the United States from the colonial era through the present. The course introduces major themes and tensions in United States politics, society, and culture with a focus on environmental factors. Topics will include encounters between American Indians and colonial peoples, independence, Â the formation of the American government, slavery, immigration, citizenship, rights, social movements, colonialism, war, and the changing identity of the United States in the world.",
     "name": "American History",
     "offered": {
       "even": false,
@@ -268,7 +268,7 @@
   "American Politics in Crisis": {
     "ID": "4590",
     "cross listed": [],
-    "description": "This class studies the workings of major institutions and practices in American life during a period in which key parts of our society seem dysfunctional, having lost their integrity, ability to solve problems, and willingness to imagine any positive future. How did this happen? Why does it continue? What might be done about it? Through a careful reading of texts in political analysis and social criticism, students explore some significant issues in modern society.",
+    "description": "This class studies the workings of major institutions and practices in American life during a period in which key parts of our society seem dysfunctional, having lost their integrity, ability to solve problems, and willingness to imagine any positive future. How did this happen? Why does it continue? What might be done about it? Through a careful reading of texts in political analysis and social criticism, students explore some significant issues in modern society.Â Â",
     "name": "American Politics in Crisis",
     "offered": {
       "even": false,
@@ -289,7 +289,7 @@
   "Animation Production": {
     "ID": "4460",
     "cross listed": [],
-    "description": "Animation Production is designed to give an animation industry experience by completing the entire process of creating an animated short. Learning long-term time management and finding the key time cost/benefits will be essential to success. The course schedule is setup to replicate the industry model of frequent updates and feedback – dailies.",
+    "description": "Animation Production is designed to give an animation industry experience by completing the entire process of creating an animated short. Learning long-term time management and finding the key time cost/benefits will be essential to success. The course schedule is setup to replicate the industry model of frequent updates and feedback â dailies.Â Â",
     "name": "Animation Production",
     "offered": {
       "even": false,
@@ -323,8 +323,8 @@
       "text": "Fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -422,7 +422,7 @@
   "Art, Community, and Technology": {
     "ID": "4080",
     "cross listed": [],
-    "description": "Through direct experience in the community, this course explores the complex roles and relationships of art, education, and technology. Students will develop a plan to work with a media arts center, community organization, or school; final teams will produce real-world arts and education projects that ultimately will be realized as significant additions to their professional portfolio. The projects can include a range from traditional arts practice to creative writing, creative IT models, to community art and activism.",
+    "description": "Through direct experience in the community,Â this course explores the complex roles and relationships of art, education, and technology. Students will develop a plan to work with a media arts center, community organization, or school; final teams will produce real-world arts and education projects that ultimately will be realized as significant additions to their professional portfolio. The projects can include a range from traditional arts practice to creative writing, creative IT models, to community art and activism.",
     "name": "Art, Community, and Technology",
     "offered": {
       "even": false,
@@ -443,7 +443,7 @@
   "B.S. EARTS Thesis": {
     "ID": "4990",
     "cross listed": [],
-    "description": "The purpose of this course is to demonstrate the student's capacity for independent work integrating concepts and media from the full range of their studio, history, and theory studies. It is a project-based class, culminating in a written thesis paper and a public presentation of work determined by the student. This course may be taken multiple times, but is a requirement in the student's final two semesters.",
+    "description": "The purpose of this course is to demonstrate the student's capacity for independent work integrating concepts and media from the full range of their studio, history, and theory studies. It is a project-based class, culminating in a written thesis paper and a public presentationÂ of work determined by the student. This course may be taken multiple times, but is a requirement in the student's final two semesters.Â",
     "name": "B.S. EARTS Thesis",
     "offered": {
       "even": false,
@@ -485,7 +485,7 @@
   "Behavioral Economics": {
     "ID": "4270",
     "cross listed": [],
-    "description": "Integrates theory from psychology, neuroscience, and other social sciences into traditional economic models of human behavior. By relaxing the standard assumptions of perfect rationality and selfishness, more realistic modeling features such as loss aversion, present-bias, social norms, and habit formation improve economic analyses. These techniques are used to analyze individuals' health behaviors, health insurance markets, and healthcare policy.",
+    "description": "Integrates theory from psychology, neuroscience, and other social sciences into traditional economic models of human behavior. By relaxing the standard assumptions of perfect rationality and selfishness, more realistic modeling features such as loss aversion, present-bias, social norms, and habit formation improve economic analyses. These techniques are used to analyze individuals' health behaviors, health insurance markets, and healthcare policy. Â",
     "name": "Behavioral Economics",
     "offered": {
       "even": false,
@@ -496,8 +496,8 @@
       "text": "Fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -520,9 +520,9 @@
       "text": "Fall and spring terms annually."
     },
     "prerequisites": [
+      "IHSS-1200",
       "ECON-1200",
-      "PSYC-2310",
-      "IHSS-1200"
+      "PSYC-2310"
     ],
     "properties": {
       "CI": false,
@@ -559,7 +559,7 @@
   "Bioethics": {
     "ID": "4250",
     "cross listed": [],
-    "description": "This course explores historical perspectives on bioethics through concrete cases and practical problems faced in the design and execution of some of the highest profile biomedical research and most consequential clinical decisions of the twentieth century. Topics include vaccine development; human radiation experiments; new genetic and reproductive technologies; right-to-die, death-with-dignity, and physician-assisted suicide; human experimentation, including prisoners, the sick, and the disabled; neuroethics; animal research; and emergent topics such as stem cell research, prenatal diagnostics, and genetic testing. This is a communication-intensive course.",
+    "description": "This course explores historical perspectivesÂ on bioethics through concrete cases and practical problems faced in the design and execution of some of the highest profile biomedical research and most consequential clinical decisions of the twentieth century. Topics include vaccine development; human radiation experiments; new genetic and reproductive technologies; right-to-die, death-with-dignity, and physician-assisted suicide; human experimentation, including prisoners, the sick, and the disabled; neuroethics; animal research; and emergent topics such as stem cell research, prenatal diagnostics, and genetic testing. This is a communication-intensive course.",
     "name": "Bioethics",
     "offered": {
       "even": true,
@@ -666,7 +666,7 @@
   "China and the United States": {
     "ID": "4540",
     "cross listed": [],
-    "description": "This class studies the history, politics, and economics of China in its relationship to the United States. Beginning with readings on modern Chinese history, the founding of the People's Republic of China, Communist Party, Cultural Revolution, new opening of connections between the U.S. and China, economic reforms of the past three decades, and current relationships between two countries, students will discuss a range of contemporary issues of concern to both the American and Chinese people.",
+    "description": "This class studies the history, politics, and economics of China in its relationship to the United States. Beginning with readings on modern Chinese history, the founding of the People's Republic of China, Communist Party, Cultural Revolution, new opening of connections between the U.S. and China, economic reforms of the past three decades, and current relationships between two countries, students will discuss a range of contemporary issues of concern to both the American and Chinese people.Â Â Â",
     "name": "China and the United States",
     "offered": {
       "even": true,
@@ -687,7 +687,7 @@
   "Chinese I": {
     "ID": "1410",
     "cross listed": [],
-    "description": "This course assumes no previous knowledge of the subject. The course is designed to provide students with fundamental skills in listening, speaking, reading, and writing Mandarin Chinese. Oral and aural skills will be emphasized. Background on Chinese culture will be introduced as an element of the course. For entry level, non-native speakers only.",
+    "description": "This course assumes no previous knowledge of the subject. The course is designed to provide students with fundamental skills in listening, speaking, reading, and writing Mandarin Chinese. Oral and aural skills will be emphasized. Background on Chinese culture will be introduced as an element of the course. For entry level, non-native speakers only.Â",
     "name": "Chinese I",
     "offered": {
       "even": false,
@@ -708,7 +708,7 @@
   "Chinese II": {
     "ID": "2410",
     "cross listed": [],
-    "description": "This is a continuation of Chinese I, a course for the standard modern Chinese language (Mandarin). Students learn more Chinese characters and words, reach a total of nearly 500 characters and 650 words, and use more complicated grammatical structures, including some compliment phrases and topic-comment sentences. In sum, students will learn more in all four aspects—listening, speaking, reading, and writing—presented in Chinese I.",
+    "description": "This is a continuation of Chinese I, a course for the standard modern Chinese language (Mandarin). Students learn more Chinese characters and words, reach a total of nearly 500 characters and 650 words, and use more complicated grammatical structures, including some compliment phrases and topic-comment sentences. In sum, students will learn more in all four aspectsâlistening, speaking, reading, and writingâpresented in Chinese I.",
     "name": "Chinese II",
     "offered": {
       "even": false,
@@ -731,7 +731,7 @@
   "Chinese III": {
     "ID": "4420",
     "cross listed": [],
-    "description": "This is a continuation of Chinese II, a course for the standard modern Chinese language (Mandarin). Students learn more Chinese characters and words, reach a total of about 650 characters, 1000 words, and use more complicated grammatical structures, e.g., reduplication of adjectives and verbs, resultative and potential compliments. In sum, students learn more in all four aspects—listening, speaking, reading and writing—presented in Chinese II. This is a communication-intensive course.",
+    "description": "This is a continuation of Chinese II, a course for the standard modern Chinese language (Mandarin). Students learn more Chinese characters and words, reach a total of about 650 characters, 1000 words, and use more complicated grammatical structures, e.g., reduplication of adjectives and verbs, resultative and potential compliments. In sum, students learn more in all four aspectsâlistening, speaking, reading and writingâpresented in Chinese II. This is a communication-intensive course.",
     "name": "Chinese III",
     "offered": {
       "even": false,
@@ -754,7 +754,7 @@
   "Chinese IV": {
     "ID": "4430",
     "cross listed": [],
-    "description": "This is a continuation of Chinese III, a course for standard modern Chinese language (Mandarin). Students learn additional Chinese characters and words, reach a total of about 800 characters, 1350 words, and complicated grammatical structures, e.g., expression of approximation, comparison of structural and aspect particles, etc. In sum, students learn more in all four aspects—listening, speaking, reading, and writing—presented in Chinese III.",
+    "description": "This is a continuation of Chinese III, a course for standard modern Chinese language (Mandarin). Students learn additional Chinese characters and words, reach a total of about 800 characters, 1350 words, and complicated grammatical structures, e.g., expression of approximation, comparison of structural and aspect particles, etc. In sum, students learn more in all four aspectsâlistening, speaking, reading, and writingâpresented in Chinese III.",
     "name": "Chinese IV",
     "offered": {
       "even": false,
@@ -777,7 +777,7 @@
   "Chinese V": {
     "ID": "4470",
     "cross listed": [],
-    "description": "Chinese V is a continuation of Chinese IV, a course for standard modern Chinese language (Mandarin). Students learn additional Chinese characters and words, reach a total of about 950 characters, 1700 words, and complicated grammatical structures, e.g., idiomatic expressions, expressions of comparison, concession, and subjection, etc. In sum, students learn more in all four aspects – listening, speaking, reading and writing – presented in Chinese IV.",
+    "description": "Chinese V is a continuation of Chinese IV, a course for standard modern Chinese language (Mandarin). Students learn additional Chinese characters and words, reach a total of about 950 characters, 1700 words, and complicated grammatical structures, e.g., idiomatic expressions, expressions of comparison, concession, and subjection, etc. In sum, students learn more in all four aspects â listening, speaking, reading and writing â presented in Chinese IV.",
     "name": "Chinese V",
     "offered": {
       "even": false,
@@ -939,7 +939,7 @@
   "Composition Seminar": {
     "ID": "4390",
     "cross listed": [],
-    "description": "This course is a mixed media skills-based and creative project seminar that merges the skills acquired in Music and Sound 1 and 2 and Music and Technology 1 and 2. Students will survey methods of creating advanced music/sound compositions that employ acoustic and/or electronic sound production techniques and approaches to transmitting these ideas to interpreters through scores. Through a series of sonic experiments and composition projects, students investigate sound as a medium for artistic expression, focusing on fundamental concepts of unity, contrast, and form as methods of organizing musical works and performances, both fixed and improvised. Analysis and exercises will culminate in a final composition that will be performed, in concert/installation, by a professional, hired ensemble at the end of the semester.",
+    "description": "This course is a mixed media skills-based and creative project seminar that merges the skills acquired in Music and Sound 1 and 2 and Music and Technology 1 and 2. Students will survey methods of creating advanced music/sound compositions that employ acoustic and/or electronic sound production techniques and approaches to transmitting these ideas to interpreters through scores. Through a series of sonic experiments and composition projects, students investigate sound as a medium for artistic expression, focusing on fundamental concepts of unity, contrast, and form as methods of organizing musical works and performances, both fixed and improvised. Analysis and exercises will culminate in a final composition that will be performed, in concert/installation, by a professional, hired ensemble at the end of the semester. Â",
     "name": "Composition Seminar",
     "offered": {
       "even": false,
@@ -1008,7 +1008,7 @@
   "Contemporary Improvisation Ensemble": {
     "ID": "2080",
     "cross listed": [],
-    "description": "This ensemble explores a variety of contemporary non-idiomatic group improvisational practices. Non-idiomatic improvisation is spontaneous music that does not attempt to replicate or realize a particular historical style (such as swing or bebop jazz), but rather emphasizes the unique creative input of the performers to create original music. Among the techniques explored will be conduction, musical games, graphic and text scores, and cell-structure improvisation. Students will also be coached in techniques to expand and develop musical ideas individually and as a framework for group improvisation. No prior experience with improvisation is required, and participants from any musical background, including electronic and computer music, are encouraged to join. Repertoire and practices will be tailored to the make-up of the group.",
+    "description": "This ensemble explores a variety of contemporary non-idiomatic group improvisational practices. Non-idiomatic improvisation is spontaneous music that does not attempt to replicate or realize a particular historical style (such as swing or bebop jazz), but rather emphasizes the unique creative input of the performers to create original music. Among the techniques explored will be conduction, musical games, graphic and text scores, and cell-structure improvisation. Students will also be coached in techniques to expand and develop musical ideas individually and as a framework for group improvisation. No prior experience with improvisation is required, and participants from any musical background, including electronic and computer music, are encouraged to join. Repertoire and practices will be tailored to the make-up of the group. Â",
     "name": "Contemporary Improvisation Ensemble",
     "offered": {
       "even": false,
@@ -1029,7 +1029,7 @@
   "Contemporary Political Thought": {
     "ID": "4570",
     "cross listed": [],
-    "description": "This class studies central questions and theories in contemporary political thought. At a time in which conventional understandings of the structures, dynamics, and outcomes of political life no longer offer reliable guidance for one's thinking, the course will examine a number of alternative modes of understanding and argument.",
+    "description": "This class studies central questions and theories in contemporary political thought. At a time in which conventional understandings of the structures, dynamics, and outcomes of political life no longer offer reliable guidance for one's thinking, the course will examine a number of alternative modes of understanding and argument.Â Â",
     "name": "Contemporary Political Thought",
     "offered": {
       "even": false,
@@ -1040,8 +1040,8 @@
       "text": "Spring term odd-numbered years."
     },
     "prerequisites": [
-      "STSH-2500",
-      "STSS-2300"
+      "STSS-2300",
+      "STSH-2500"
     ],
     "properties": {
       "CI": false,
@@ -1076,7 +1076,7 @@
   "Creative Data Design": {
     "ID": "4870",
     "cross listed": [],
-    "description": "Data design offers a way to reveal, analyze, and engage with data, from scientific visualization to information design to artistic sonification. At the same time, the translation from abstract data to image and sound carries risks of manipulation and subjective interpretation. This course introduces contemporary practices in the perceptualizing of data using digital tools for creative exploration and critical analysis. It explores the evolution of visualization and the notion of truth through visual representation.",
+    "description": "Data design offers a way to reveal, analyze, and engage with data, from scientific visualization to information design to artistic sonification. At the same time, the translation from abstract data to image and sound carries risks of manipulation and subjective interpretation. This course introduces contemporary practices in the perceptualizing of data using digital tools for creative exploration and critical analysis. It explores the evolution of visualization and the notion of truth through visual representation.Â Â",
     "name": "Creative Data Design",
     "offered": {
       "even": true,
@@ -1120,7 +1120,7 @@
   "Creative Seminar II": {
     "ID": "4350",
     "cross listed": [],
-    "description": "This course is for senior EMAC and EART majors. The goal of the Creative Seminar II is to develop and formulate ideas from Creative Seminar I into a unique project for the artist/communicator that will demonstrate his/her independent ideas, research, writing, and design skills. Students will develop a written thesis, creative project (e.g., art, graphic design, interaction design, music, performance), prepare and present their project in a public exhibition, and design the publicity for the show.",
+    "description": "This course is for senior EMAC and EART majors. The goal of the Creative Seminar II is to develop and formulate ideas fromÂ Creative Seminar I into a unique project for the artist/communicator that will demonstrate his/her independent ideas, research, writing, and design skills. Students will develop a written thesis, creative project (e.g., art, graphic design, interaction design, music, performance), prepare and present their project in a public exhibition, and design the publicity for the show.Â",
     "name": "Creative Seminar II",
     "offered": {
       "even": false,
@@ -1143,7 +1143,7 @@
   "Creative Writing:  The Short Story": {
     "ID": "2330",
     "cross listed": [],
-    "description": "A workshop course in reading and writing varied forms of short narrative and non-narrative prose fiction; students must have a good command of written English and grammar. This course will focus on reading and analyzing exemplary short fiction and writing and revising original work. Students learn to develop plot, character, setting, point of view, style, and theme, and use description effectively to invent and shape narrative strategies. Peer reading and writing groups offer opportunities for shared response and critique. This is a communication-intensive course.",
+    "description": "A workshop course in reading and writing varied forms of short narrative and non-narrative prose fiction; students must have a good command of written English and grammar. This course will focus on reading and analyzing exemplary short fiction and writing and revising original work. Students learn to develop plot, character, setting, point of view, style, and theme, and use description effectively to invent and shape narrative strategies. Peer reading and writing groups offer opportunities for shared response and critique. This is a communication-intensive course. Â",
     "name": "Creative Writing:  The Short Story",
     "offered": {
       "even": false,
@@ -1164,7 +1164,7 @@
   "Creative Writing: Creative Non-Fiction": {
     "ID": "2320",
     "cross listed": [],
-    "description": "This is a workshop course in which novice and more experienced student writers produce creative nonfiction-prose that aims to be both factually accurate and compelling literature; students must have a good command of written English and grammar. Focus may vary by semester among memoir, lyric and personal essays, plotted narrative, oral history, and nature writing. For models, students study classic and contemporary accomplished writers who connect the self to the larger world. Class work centers on drafting and revising essays with regular peer workshops. This is a communication-intensive course.",
+    "description": "This is a workshop course in which novice and more experienced student writers produce creative nonfiction-prose that aims to be both factually accurate and compelling literature; students must have a good command of written English and grammar. Focus may vary by semester among memoir, lyric and personal essays, plotted narrative, oral history, and nature writing. For models, students study classic and contemporary accomplished writers who connect the self to the larger world. Class work centers on drafting and revising essays with regular peer workshops. This is a communication-intensive course. Â",
     "name": "Creative Writing: Creative Non-Fiction",
     "offered": {
       "even": false,
@@ -1229,7 +1229,7 @@
   "Cross-linguistic Perspectives": {
     "ID": "4560",
     "cross listed": [],
-    "description": "This course will explore the different strategies used by different languages to fulfill the same needs of human communication. A sampling of topics: quickly learning the basics of a new language using linguistic principles; cross-linguistic knowledge elicitation and engineering; principles of generative grammar; space, time, agency, and other linguistic phenomena viewed cross-linguistically.",
+    "description": "This course will explore the different strategies used by different languages to fulfill the same needs of human communication. A sampling of topics: quickly learning the basics of a new language using linguistic principles; cross-linguistic knowledge elicitation and engineering;Â principles of generative grammar; space, time, agency, and other linguistic phenomena viewed cross-linguistically.",
     "name": "Cross-linguistic Perspectives",
     "offered": {
       "even": false,
@@ -1254,7 +1254,7 @@
     "cross listed": [
       "COMM-2510"
     ],
-    "description": "An introduction to human societies and cultures in comparative perspective, from tribal to complex societies. Topics include language and communication, technological adaptation, gender and sexuality, the global flows of people and commodities, and the rituals and beliefs through which people make meaning of the world.",
+    "description": "An introduction to human societies and cultures in comparative perspective, from tribal to complex societies. Topics include language and communication, technological adaptation, gender and sexuality, the global flows of people and commodities, and the rituals and beliefs through which people make meaning of the world. Â",
     "name": "Cultural Anthropology",
     "offered": {
       "even": false,
@@ -1296,7 +1296,7 @@
   "Data Science": {
     "ID": "4350",
     "cross listed": [],
-    "description": "Data science is advancing the inductive conduct of science and is driven by the greater volumes, complexity, and heterogeneity of data being made available over the Internet. It combines aspects of data management, library science, computer science, and physical science. It is changing the way all of these disciplines do both their individual and collaborative work. Key methodologies in application areas based on real research experience are taught.",
+    "description": "Data science is advancing the inductive conduct of science and is driven by the greater volumes, complexity, and heterogeneity of data being made available over the Internet. It combines aspects of data management, library science, computer science, and physical science. It is changing the way all of these disciplines do both their individual and collaborative work. Key methodologies in application areas based on real research experience are taught. Â",
     "name": "Data Science",
     "offered": {
       "even": false,
@@ -1317,7 +1317,7 @@
   "Data and Society": {
     "ID": "4360",
     "cross listed": [],
-    "description": "Data and Society provides a broad overview of how society is leveraging and responding to the social, organizational, policy, and technical opportunities and challenges of a data-driven world. Course themes focus on various aspects of the data ecosystem, data and innovation, and data and the broader community. Assignments build writing, presentation, and critical thinking, and assessment skills, all of which are important for professional success. This is a communication-intensive course.",
+    "description": "Data and Society provides a broad overview of how society is leveraging and responding to the social, organizational, policy, and technical opportunities and challenges of a data-driven world. Course themes focus on various aspects of the data ecosystem, data and innovation, and data and the broader community. Assignments build writing, presentation, and critical thinking, and assessment skills, all of which are important for professional success.Â This is a communication-intensive course.",
     "name": "Data and Society",
     "offered": {
       "even": false,
@@ -1340,7 +1340,7 @@
   "Deep Listening": {
     "ID": "2180",
     "cross listed": [],
-    "description": "Deep Listening is a practice developed by pioneering composer and humanitarian Pauline Oliveros to enhance and expand listening abilities and to encourage creativity. Students will develop a heightened awareness to sound and their sonic environment through experiential exercises, creative projects, collaborations, readings, lectures, and discussion. Musicians and non-musicians of all abilities and backgrounds are welcome!",
+    "description": "Deep Listening is a practice developed by pioneering composer and humanitarian Pauline Oliveros to enhance and expand listening abilities and to encourage creativity. Students will develop a heightened awareness to sound and their sonic environment through experiential exercises, creative projects, collaborations, readings, lectures, and discussion. Musicians and non-musicians of all abilities and backgrounds are welcome! Â",
     "name": "Deep Listening",
     "offered": {
       "even": false,
@@ -1407,7 +1407,7 @@
     "cross listed": [
       "STSH-4600"
     ],
-    "description": "DIS Studio A is an intensive studio/seminar hybrid that will advance students understanding, through practice, of iterative design process that is heavily informed by Science and Technology Studies and the social sciences and humanities more broadly. The specific methodologies, concepts, and content-foci will vary according to the expertise and experience of the faculty member teaching the course and could include a focus on sustainability, disability, feminism, critical race theory, or other approaches.",
+    "description": "DIS Studio A is an intensive studio/seminar hybrid that will advance students understanding, through practice, of iterative design process that is heavily informed by Science and Technology Studies and the social sciences and humanities more broadly. The specific methodologies, concepts, and content-foci will vary according to the expertise and experience of the faculty member teaching the course and could include a focus on sustainability, disability, feminism, critical race theory, or other approaches.Â Â Â",
     "name": "Design and Innovation Studio A",
     "offered": {
       "even": false,
@@ -1428,7 +1428,7 @@
   "Design and Innovation Studio B": {
     "ID": "4610",
     "cross listed": [],
-    "description": "Studio B focuses on an enriched sense of program and user needs definition through methodologies of the humanities and social sciences. Studio projects, presentations, and readings explore the relation of race, class, and gender to technology, and the potential of design to address societal problems. The course has often focused on incorporating information technology in educational tools for low-income primary school students.",
+    "description": "Studio BÂ focuses on an enriched sense of program and user needs definition through methodologies of the humanities and social sciences. Studio projects, presentations, and readings explore the relation of race, class, and gender to technology, and the potential of design to address societal problems. The course has often focused on incorporating information technology in educational tools for low-income primary school students.",
     "name": "Design and Innovation Studio B",
     "offered": {
       "even": false,
@@ -1461,7 +1461,7 @@
     },
     "prerequisites": [],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": true,
       "major_restricted": false
     },
@@ -1525,8 +1525,8 @@
       "text": "Upon availability of instructor."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -1712,7 +1712,7 @@
   "Econometric Methods for Big Data": {
     "ID": "4280",
     "cross listed": [],
-    "description": "Examine advanced econometric and statistical methods for the analysis of high-dimensional data, otherwise known as \"Big Data.\" In this setting, detailed information for each unit of observation informs machine learning techniques such as classification and regression trees; random forests; penalized regressions; and boosted estimation. These prediction methods are then utilized to improve causal modeling, with applications in the study of healthcare demand and supply modeling, and behavior of consumers and businesses.",
+    "description": "Examine advanced econometric and statistical methods for the analysis of high-dimensional data, otherwise known as \"Big Data.\" In this setting, detailed information for each unit of observation informs machine learning techniques such as classification and regression trees; random forests; penalized regressions; and boosted estimation. These prediction methods are then utilized to improve causal modeling, with applications in the study of healthcare demand and supply modeling, and behavior of consumers and businesses. Â",
     "name": "Econometric Methods for Big Data",
     "offered": {
       "even": false,
@@ -1723,9 +1723,9 @@
       "text": "Fall and spring terms annually."
     },
     "prerequisites": [
+      "IHSS-1200",
       "ECON-1200",
-      "PSYC-2310",
-      "IHSS-1200"
+      "PSYC-2310"
     ],
     "properties": {
       "CI": false,
@@ -1737,7 +1737,7 @@
   "Econometrics": {
     "ID": "4570",
     "cross listed": [],
-    "description": "This course is an introduction to econometric data analysis. The statistical methods covered enable analysis of relationships between variables in data, with special attention to identification of true casual effects. Topics covered include linear and simple nonlinear regression models, internal and external validity, methods for panel data and binary dependent variables, instrumental variable methods, use of experimental and quasi-experimental data, and basic time series methods. The course included hands-on data analysis and report writing.",
+    "description": "This course is an introduction to econometric data analysis. The statistical methods covered enable analysis of relationships between variables in data, with special attention to identification of true casual effects. Topics covered include linear and simple nonlinear regression models, internal and external validity, methods for panel data and binary dependent variables, instrumental variable methods, use of experimental and quasi-experimental data, and basic time series methods. The course included hands-on data analysis and report writing.Â",
     "name": "Econometrics",
     "offered": {
       "even": false,
@@ -1760,7 +1760,7 @@
   "Economic Models of Decision-Making": {
     "ID": "4320",
     "cross listed": [],
-    "description": "An exploration of models of decision-making under alternative assumptions, expanding on \"rational\" models of introductory economics. The course will discuss the assumptions of these standard models and their shortcomings. The shortcomings will be addressed through the exploration of limited attention and considerations of fairness, uncertainty, and strategic interaction. Applications in areas such as consumer and household finance, marketing, and public policy will be emphasized throughout.",
+    "description": "An exploration of models of decision-making under alternative assumptions, expanding on \"rational\" models of introductory economics. The course will discuss the assumptions of these standard models and their shortcomings. The shortcomings will be addressed through the exploration of limited attention and considerations of fairness, uncertainty, and strategic interaction. Applications in areas such as consumer and household finance, marketing, and public policy will be emphasized throughout. Â",
     "name": "Economic Models of Decision-Making",
     "offered": {
       "even": false,
@@ -1771,8 +1771,8 @@
       "text": "Fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -1795,8 +1795,8 @@
       "text": "Spring term annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -1808,7 +1808,7 @@
   "Economics of Financial Institutions and Markets": {
     "ID": "4330",
     "cross listed": [],
-    "description": "This course will examine a wide range of financial markets and institutions and the micro-and macroeconomic forces that relate to them. Topics include the use of derivative securities such as future, options, and swap agreements, and their roles in distributing financial risk. The course will be driven by textbook readings, supplemented by current news stories, articles from the financial press, and research articles.",
+    "description": "This course will examine a wide range of financial markets and institutions and the micro-and macroeconomic forces that relate to them. Topics include the use of derivative securities such as future, options, and swap agreements, and their roles in distributing financial risk. The course will be driven by textbook readings, supplemented by current news stories, articles from the financial press, and research articles.Â Â Â",
     "name": "Economics of Financial Institutions and Markets",
     "offered": {
       "even": false,
@@ -1819,8 +1819,8 @@
       "text": "Fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -1832,7 +1832,7 @@
   "Economics of Government Regulation and Firm Strategy": {
     "ID": "4150",
     "cross listed": [],
-    "description": "Examine regulations related to the environment, intellectual property rights, healthcare, and antitrust. Examine the interaction between regulatory policies and how businesses respond to them with respect to innovation, production, and pricing. Some of the industries and markets examined to highlight the regulatory policy issues include automobiles, information technology, telecommunications and media, healthcare services, pharmaceuticals, medical devices, retail sector, high-speed rail, and taxi and ridesharing.",
+    "description": "Examine regulations related to the environment, intellectual property rights, healthcare, and antitrust. Examine the interaction between regulatory policies and how businesses respond to them with respect to innovation, production, and pricing. Some of the industries and markets examined to highlight the regulatory policy issues include automobiles, information technology, telecommunications and media, healthcare services, pharmaceuticals, medical devices, retail sector, high-speed rail, and taxi and ridesharing. Â",
     "name": "Economics of Government Regulation and Firm Strategy",
     "offered": {
       "even": false,
@@ -1843,8 +1843,8 @@
       "text": "Upon availability of instructor."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -1856,7 +1856,7 @@
   "Economics of Innovation and New Technologies": {
     "ID": "4110",
     "cross listed": [],
-    "description": "Technological innovation is responsible for most economic growth and is crucial to deal with major societal concerns. This course examines the economics of innovation and new technologies. It shows how technologies are created and put to use, from basic science through invention and development to diffusion and practical use. Additional topics include R&D determinants, sources of innovation, product improvement, cost reduction, incentivizing and stimulating innovation, patents, evolution of innovation and technology, innovative competition in industry, and the national innovation environment. This is a communication-intensive course.",
+    "description": "Technological innovation is responsible for most economic growth and is crucial to deal with major societal concerns. This course examines the economics of innovation and new technologies. It shows how technologies are created and put to use, from basic science through invention and development to diffusion and practical use. Additional topics include R&D determinants, sources of innovation, product improvement, cost reduction, incentivizing and stimulating innovation, patents, evolution of innovation and technology, innovative competition in industry, and the national innovation environment. This is a communication-intensive course. Â",
     "name": "Economics of Innovation and New Technologies",
     "offered": {
       "even": false,
@@ -1867,8 +1867,8 @@
       "text": "Fall term annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -1891,8 +1891,8 @@
       "text": "Upon availability of instructor."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -1938,8 +1938,8 @@
       "text": "Fall term annually."
     },
     "prerequisites": [
-      "STSH-S 11",
-      "STSS-2300"
+      "STSS-2300",
+      "STSH-S 11"
     ],
     "properties": {
       "CI": true,
@@ -1962,8 +1962,8 @@
       "text": "Upon availability  of instructor."
     },
     "prerequisites": [
-      "STSH-1110",
-      "STSS-1110"
+      "STSS-1110",
+      "STSH-1110"
     ],
     "properties": {
       "CI": false,
@@ -1977,7 +1977,7 @@
     "cross listed": [
       "ARTS-2600"
     ],
-    "description": "A technology-based performance ensemble, as well as a practice-based studio course, focused on the composition, design, and programming of new musical works and instruments. Students create and perform electronic music using laptops, microprocessors, digital networks and a range of new interfaces for musical expression. ARTS 4600/6600 combines studio and ensemble. The ensemble only section (ARTS 2600) may be taken multiple times as a 1-credit performance ensemble in partial satisfaction of the Music major or minor ensemble requirements, or once as a 4-credit seminar at either the 4000 or 6000 level.",
+    "description": "A technology-based performance ensemble, as well as a practice-based studio course, focused on the composition, design, and programming of new musical works and instruments. Students create and perform electronic music using laptops, microprocessors, digital networks and a range of new interfaces for musical expression. ARTS 4600/6600 combines studio and ensemble. The ensemble only section (ARTS 2600) may be taken multiple times as a 1-credit performance ensemble in partial satisfaction of the Music major or minor ensemble requirements, or once as a 4-credit seminar at either the 4000 or 6000 level.Â Â",
     "name": "Ensemble Nonlinear",
     "offered": {
       "even": false,
@@ -1998,7 +1998,7 @@
   "Environment and Society": {
     "ID": "2300",
     "cross listed": [],
-    "description": "Society and the natural environment are crucially linked in a number of ways. Environmental problems such as pollution and natural resource depletion are not only problems for society, affecting the way people live their lives; they are also problems of society—the result of patterns of social organization and social practices. In this course, students will explore these society/environment interactions at various levels, from the local to the global, using the concepts and insights of environmental sociology. Environmental sociologists aim to understand the social origins of environmental problems and propose workable solutions to them. By showing how social interaction, institutions, and beliefs shape human behavior, environmental sociology provides a useful complement to the natural sciences in the analysis of the environmental problems faced today.",
+    "description": "Society and the natural environment are crucially linked in a number of ways. Environmental problems such as pollution and natural resource depletion are not only problems for society, affecting the wayÂ people liveÂ their lives; they are also problems of societyâthe result of patterns of social organization and social practices. In this course,Â students will explore these society/environment interactions at various levels, from the local to the global, using the concepts and insights of environmental sociology. Environmental sociologists aim to understand the social origins of environmental problems and propose workable solutions to them. By showing how social interaction, institutions, and beliefs shape human behavior, environmental sociology provides a useful complement to the natural sciences in the analysis of the environmental problems faced today.",
     "name": "Environment and Society",
     "offered": {
       "even": false,
@@ -2009,8 +2009,8 @@
       "text": "Spring term annually."
     },
     "prerequisites": [
-      "STSH-1110",
-      "STSS-1110"
+      "STSS-1110",
+      "STSH-1110"
     ],
     "properties": {
       "CI": false,
@@ -2033,8 +2033,8 @@
       "text": "Upon availability of instructor."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -2057,8 +2057,8 @@
       "text": "Spring term annually."
     },
     "prerequisites": [
-      "IHSS-1350",
-      "STSS-2700"
+      "STSS-2700",
+      "IHSS-1350"
     ],
     "properties": {
       "CI": false,
@@ -2155,6 +2155,27 @@
     },
     "subj": "PHIL"
   },
+  "Ethics of AI": {
+    "ID": "4960",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Ethics of AI",
+    "offered": {
+      "even": false,
+      "fall": false,
+      "odd": false,
+      "spring": true,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "PHIL"
+  },
   "Experiential Learning Project": {
     "ID": "4800",
     "cross listed": [],
@@ -2179,7 +2200,7 @@
   "Experimental Economics": {
     "ID": "4360",
     "cross listed": [],
-    "description": "This course explores human motivation and behavior across different settings and experimental paradigms. The course familiarizes students with previous work in selected topics in behavioral and experimental economics such as charitable giving, individual decision making and preferences, health, scarcity, and worker motivation. It also prepares students to design, implement and analyze their own economics experiments.",
+    "description": "This course explores human motivation and behavior across different settings and experimental paradigms. The course familiarizes students with previous work in selected topics in behavioral and experimental economics such as charitable giving, individual decision making and preferences, health, scarcity, and worker motivation. It also prepares students to design, implement and analyze their own economics experiments.Â Â",
     "name": "Experimental Economics",
     "offered": {
       "even": false,
@@ -2228,7 +2249,7 @@
   "Experimental Telepresence": {
     "ID": "4420",
     "cross listed": [],
-    "description": "Experimental Telepresence investigates the INTERNET as an experimental venue for audio and video performance through improvisation and composition. Students will learn protocols for telepresence connections, connect with other institutions using a variety of media in local and co-located performances. The seminar multimedia ensemble Tintinnabulate will be used as a resource of projects.",
+    "description": "Experimental Telepresence investigates the INTERNET as an experimental venue for audio and video performance through improvisation and composition. Students will learn protocols for telepresence connections, connect with other institutions using a variety of media in local and co-located performances.Â The seminar multimedia ensemble Tintinnabulate will be used as a resource of projects.",
     "name": "Experimental Telepresence",
     "offered": {
       "even": false,
@@ -2249,7 +2270,7 @@
   "Exploring Movement and Sound": {
     "ID": "4620",
     "cross listed": [],
-    "description": "The exploration of movement often reveals sensitivities concerning the body, identity, gesture, culture, sensory awareness, perception, space, orientation, kinesthesia, time, relationships to people and objects, as well as cultural notions of embodiment and the senses. This course employs practice-based work, creative experimentation, and traditional forms of research (reading, viewing media, writing, discussions) as the primary methods to illuminate the issues concerning enactive (movement) knowledge. This is a Deep Listening-related course.",
+    "description": "The exploration of movement often reveals sensitivities concerning the body, identity, gesture, culture, sensory awareness, perception, space, orientation, kinesthesia, time, relationships to people and objects, as well as cultural notions of embodiment and the senses.Â This course employs practice-based work, creative experimentation, and traditional forms of research (reading, viewing media, writing, discussions) as the primary methods to illuminate the issues concerning enactive (movement) knowledge. This is a Deep Listening-related course.",
     "name": "Exploring Movement and Sound",
     "offered": {
       "even": false,
@@ -2270,7 +2291,7 @@
   "Exploring Music @Rensselaer": {
     "ID": "1010",
     "cross listed": [],
-    "description": "This course, which is the prerequisite for further courses in music theory and in computer music, is an introduction to the materials of music. Using a variety of examples from classical, popular, and non-western music, the class will introduce concepts of melody, harmony, rhythm, and musical form. Students will use their laptop computers for aural skills practice, notation, and basic recording exercises. Although no musical experience is required for this course, sight singing is one of the important skills to be developed.",
+    "description": "This course, which is the prerequisite for further courses in music theory and in computer music, is an introduction to the materials of music.Â Using a variety of examples from classical, popular, and non-western music, the class will introduce concepts of melody, harmony, rhythm, and musical form. Students will use their laptop computers for aural skills practice, notation, and basic recording exercises. Although no musical experience is required for this course, sight singing is one of the important skills to be developed.",
     "name": "Exploring Music @Rensselaer",
     "offered": {
       "even": false,
@@ -2505,7 +2526,7 @@
   "Game Development II": {
     "ID": "4540",
     "cross listed": [],
-    "description": "This course follows Game Development I. Students work in interdisciplinary teams to create one large-scale 3D game, working from concept to public release. Projects may include games, educational games, serious games and simulations, and interactive artworks, and will focus on creative design, technical execution, and use of game design principles. The course builds on skills and knowledge in previous courses in the GSAS core, including game design, game mechanics, game programming, art, and narrative.",
+    "description": "This course follows Game Development I. Students work in interdisciplinary teams to create one large-scale 3D game, working from concept to public release. Projects may include games, educational games, serious games and simulations, and interactive artworks, and will focus on creative design, technical execution, and use of game design principles. The course builds on skills and knowledge in previous courses in the GSAS core, including game design, game mechanics, game programming, art, and narrative. Â",
     "name": "Game Development II",
     "offered": {
       "even": false,
@@ -2528,7 +2549,7 @@
   "Game Narrative Design": {
     "ID": "4260",
     "cross listed": [],
-    "description": "Game Narrative Design moves the focus more squarely onto the design elements of game writing – most especially integration with gameplay design structure – and away from line-by-line writing.​",
+    "description": "Game Narrative Design moves the focus more squarely onto the design elements of game writing â most especially integration with gameplay design structure â and away from line-by-line writing.â",
     "name": "Game Narrative Design",
     "offered": {
       "even": false,
@@ -2539,8 +2560,8 @@
       "text": "Spring term annually."
     },
     "prerequisites": [
-      "GSAS-2520",
-      "COMM-4240"
+      "COMM-4240",
+      "GSAS-2520"
     ],
     "properties": {
       "CI": false,
@@ -2552,7 +2573,7 @@
   "Gender, Science, and Technology": {
     "ID": "4560",
     "cross listed": [],
-    "description": "“Sex” is the biological distinction between being male and female. “Gender” is the social construction of masculinity and femininity. The purpose of this course is to explore if, and if so, how, science and technology reciprocally contribute to and are shaped by gender ideals and images. Gender is used as a tool for critical thinking about such topics as studies of sex differences, women in science and engineering, the environment, and war and peace.",
+    "description": "âSexâ is the biological distinction between being male and female. âGenderâ is the social construction of masculinity and femininity. The purpose of this course is to explore if, and if so, how, science and technology reciprocally contribute to and are shaped by gender ideals and images. Gender is used as a tool for critical thinking about such topics as studies of sex differences, women in science and engineering, the environment, and war and peace.",
     "name": "Gender, Science, and Technology",
     "offered": {
       "even": false,
@@ -2563,8 +2584,8 @@
       "text": "Upon availability of instructor."
     },
     "prerequisites": [
-      "STSH-1110",
-      "STSS-1110"
+      "STSS-1110",
+      "STSH-1110"
     ],
     "properties": {
       "CI": false,
@@ -2597,7 +2618,7 @@
   "Global Health Challenges": {
     "ID": "1420",
     "cross listed": [],
-    "description": "This course will examine and offer possible solutions to current and emerging global health issues. Our emphasis will be on social and health problems in low income and middle-income countries in contrast to the health care needs in high-income countries. We will look at selective chronic and acute illnesses, ethnomedical practices, medical ethics, and environmental racism when dealing with low-income and developing countries.",
+    "description": "This course will examine and offer possible solutions to current and emerging global health issues. Our emphasis will be on social and health problems in low income and middle-income countries in contrast to the health care needs in high-income countries. We will look at selective chronic and acute illnesses, ethnomedical practices, medical ethics, and environmental racism when dealing with low-income and developingÂ countries.Â Â",
     "name": "Global Health Challenges",
     "offered": {
       "even": false,
@@ -2685,7 +2706,7 @@
   "Hactivism": {
     "ID": "4560",
     "cross listed": [],
-    "description": "This course explores the history, methods, and goals of hackers with special attention paid to their role in social movements. It broadly interprets the term \"hacktivism\" to include computer hacking, media hacking and \"reality hacking\" in the service of social change. Students will gain an understanding of how and why hackers have emerged as a major social force.",
+    "description": "This course explores the history, methods, and goals of hackers with special attention paid to their role in social movements. It broadly interprets the term \"hacktivism\" to include computer hacking, media hacking and \"reality hacking\" in the service of social change. Students will gain an understanding of how and why hackers have emerged as a major social force.Â",
     "name": "Hactivism",
     "offered": {
       "even": false,
@@ -2706,7 +2727,7 @@
   "Health Economics and Policy": {
     "ID": "4170",
     "cross listed": [],
-    "description": "Examine various facets of the healthcare industry. Application of microeconomic theory and tools will be used to: analyze healthcare demand and supply; examine the impact of public policies; study market segments such as health insurance and pharmaceuticals; explore economic choices of healthcare professionals; identify potential socioeconomic and demographic determinants of health status and healthcare; and gain insights into issues related to the ongoing healthcare policy reform.",
+    "description": "Examine various facets of the healthcare industry. Application of microeconomic theory and tools will be used to: analyze healthcare demand and supply; examine the impact of public policies; study market segments such as health insurance and pharmaceuticals; explore economic choices of healthcare professionals; identify potential socioeconomic and demographic determinants of health status and healthcare; and gain insights into issues related to the ongoing healthcare policy reform. Â",
     "name": "Health Economics and Policy",
     "offered": {
       "even": false,
@@ -2717,8 +2738,8 @@
       "text": "Fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -2730,7 +2751,7 @@
   "Health in Contemporary Africa": {
     "ID": "1430",
     "cross listed": [],
-    "description": "This course will introduce students to Africa via demographic and epidemiologic transitions. We will focus on maternal and child health, HIV/AIDS, female genital cutting, culture-bound illnesses, and neglected diseases.",
+    "description": "This course will introduce students to Africa via demographic and epidemiologic transitions. We will focus on maternal and child health, HIV/AIDS, female genital cutting, culture-bound illnesses, and neglected diseases. Â",
     "name": "Health in Contemporary Africa",
     "offered": {
       "even": false,
@@ -2751,7 +2772,7 @@
   "History and Culture of Games": {
     "ID": "1600",
     "cross listed": [],
-    "description": "This course surveys 5000 years of game history, from ancient Sumer/Sumerian to the latest next-generation consoles and MMOGs. In parallel with this historical tour, several major theories will be examined about the nature of play and the nature of games. Along the way, it will also look at how games and play influence the cultures they are found in, and how culture in turn influences how people structure their leisure time will also be considered. This is a communication-intensive course.",
+    "description": "This course surveys 5000 years of game history, from ancient Sumer/Sumerian to the latest next-generation consoles and MMOGs.Â In parallel with this historical tour, several major theories will be examined about the nature of play and the nature of games.Â Along the way, it will also look at how games and play influence the cultures they are found in, and how culture in turn influences how people structure their leisure time will also be considered. This is a communication-intensive course.",
     "name": "History and Culture of Games",
     "offered": {
       "even": false,
@@ -2793,7 +2814,7 @@
   "History of Animation": {
     "ID": "1170",
     "cross listed": [],
-    "description": "This course is an exploration of the history of animation. We will begin with a look at precursors to the medium, its formation, and development, trace its development through both mainstream and experimental animation, to the current state of the medium across film, interactive media and other forms. The course will be based around screenings, readings, discussions and response and research papers.",
+    "description": "This course is an exploration of the history of animation. We will begin with a look at precursors to the medium, its formation, and development, trace its development through both mainstream and experimental animation, to the current state of the medium across film, interactive media and other forms. The course will be based around screenings, readings, discussions and response and research papers. Â",
     "name": "History of Animation",
     "offered": {
       "even": false,
@@ -2811,10 +2832,31 @@
     },
     "subj": "IHSS"
   },
+  "History of Design": {
+    "ID": "1969",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "History of Design",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "properties": {
+      "CI": true,
+      "HI": true,
+      "major_restricted": false
+    },
+    "subj": "IHSS"
+  },
   "History of Jazz and Improvised Music": {
     "ID": "1080",
     "cross listed": [],
-    "description": "The question of \"what is jazz\" remains a lively and contentious discussion to this day. This course charts the emergence, evolution, and influence of jazz music, as well as the many controversial musical, social, and philosophical questions it continues to provoke. The work of influential figures in American and European improvised music will be examined in detail, and the continuing development of jazz-inspired contemporary practices will be explored. Through listening, analysis, discussion, writing, and creative projects, students will develop a greater appreciation and understanding of improvised music in a great variety of contexts, and the crucial role American jazz played in revitalizing improvisational practice throughout the 20th and 21st Centuries. By the end of the course, students will be able to identify major figures in jazz and improvised music, identify different styles and eras, and have a basic vocabulary for discussing music both analytically and in personal responses.",
+    "description": "The question of \"what is jazz\" remains a lively and contentious discussion to this day. This course charts the emergence, evolution, and influence of jazz music, as well as the many controversial musical, social, and philosophical questions it continues to provoke. The work of influential figures in American and European improvised music will be examined in detail, and the continuing development of jazz-inspired contemporary practices will be explored. Through listening, analysis, discussion, writing, and creative projects,Â students will develop a greater appreciation and understanding of improvised music in a great variety ofÂ contexts, and the crucial role American jazz played in revitalizing improvisational practice throughout the 20th and 21st Centuries. By the end of the course, students will be able to identify major figures in jazz and improvised music, identify different styles and eras, and have a basic vocabulary for discussing music both analytically and in personal responses.",
     "name": "History of Jazz and Improvised Music",
     "offered": {
       "even": false,
@@ -2846,8 +2888,8 @@
       "text": "Fall term annually."
     },
     "prerequisites": [
-      "STSS-2520",
-      "IHSS-1410"
+      "IHSS-1410",
+      "STSS-2520"
     ],
     "properties": {
       "CI": true,
@@ -2870,9 +2912,9 @@
       "text": "Spring term annually."
     },
     "prerequisites": [
-      "STSH-S 11",
+      "IHSS-1410",
       "STSS-2520",
-      "IHSS-1410"
+      "STSH-S 11"
     ],
     "properties": {
       "CI": false,
@@ -2895,9 +2937,9 @@
       "text": "Spring term annually."
     },
     "prerequisites": [
+      "IHSS-1420",
       "STSH-S 11",
-      "STSS-2330",
-      "IHSS-1420"
+      "STSS-2330"
     ],
     "properties": {
       "CI": false,
@@ -2911,7 +2953,7 @@
     "cross listed": [
       "COGS-4700"
     ],
-    "description": "This course will examine hormone and brain/behavior relationships across the lifespan. Hormones are molecules that are secreted by glands (the majority of which are located outside the brain) and have distal effects on their targets, such as the brain, throughout development. A focus will be on hormones' effects, mechanisms, and brain regions of interest for behavior and cognitive processes, such as perception, learning/memory, social cognition, motivation, and emotion.",
+    "description": "This course will examine hormone and brain/behavior relationships across the lifespan.Â Hormones are molecules that are secreted by glands (the majority of which are located outside the brain) and have distal effects on their targets, such as the brain, throughout development.Â A focus will be on hormones' effects, mechanisms, and brain regions of interest for behavior and cognitive processes, such as perception, learning/memory, social cognition, motivation, and emotion.",
     "name": "Hormones, Brain, and Behavior",
     "offered": {
       "even": false,
@@ -2978,7 +3020,7 @@
   "Human Rights in History": {
     "ID": "1500",
     "cross listed": [],
-    "description": "This course explores the historical development of modern international human rights through the lens of American foreign policy. Through lecture and discussion of the assigned readings, this course will guide students in critical analysis of the narratives and national myths surrounding human rights in the history of the United States and the world. Major themes include the origins of human rights, human rights abuses, the human rights regime, human rights institutions, and problems of enforcement.",
+    "description": "This course explores the historical development of modern international human rights through the lens of American foreign policy. Â Through lecture and discussion of the assigned readings, this course will guide students in critical analysis of the narratives and national myths surrounding human rights in the history of the United States and the world. Â Major themes include the origins of human rights, human rights abuses, the human rights regime, human rights institutions, and problems of enforcement. Â",
     "name": "Human Rights in History",
     "offered": {
       "even": false,
@@ -3024,7 +3066,7 @@
     "cross listed": [
       "IHSS-1220"
     ],
-    "description": "Will IT increase prosperity? For whom? What role should governments play in IT development? Do corporations have new responsibilities in the Information Era? What about IT professionals? This course explores the issues, the arguments and working solutions. The first section examines macro indicators and trends. The second section examines the microeconomics and politics of specific arenas—the software industry, the automated work place, telemedicine, television. The last section explores opportunities for improving society, using IT. This is a communication-intensive course.",
+    "description": "Will IT increase prosperity? For whom? What role should governments play in IT development? Do corporations have new responsibilities in the Information Era? What about IT professionals? This course explores the issues, the arguments and working solutions. The first section examines macro indicators and trends. The second section examines the microeconomics and politics of specific arenasâthe software industry, the automated work place, telemedicine, television. The last section explores opportunities for improving society, using IT. This is a communication-intensive course.",
     "name": "IT and Society",
     "offered": {
       "even": false,
@@ -3068,7 +3110,7 @@
   "Inflatable Sculpture": {
     "ID": "4230",
     "cross listed": [],
-    "description": "This class studies, creates, and publicly presents inflatable sculptures. The history of inflatables are examined, with special attention paid to how they have been used in political movements that imagine utopian social futures, and how those applications contrast with commercial uses (such as advertising) that have become commonplace in public spaces today. Throughout the class will explore, design, and build inflated structures that may include video and sound elements.",
+    "description": "This class studies, creates, and publicly presentsÂ inflatable sculptures. The history of inflatables are examined, with special attention paid to how they have been used in political movements that imagine utopian social futures, and how those applications contrast with commercial uses (such as advertising) that have become commonplace in public spaces today. Throughout the class will explore, design, and build inflated structures that may include video and sound elements.Â",
     "name": "Inflatable Sculpture",
     "offered": {
       "even": false,
@@ -3221,7 +3263,7 @@
   "Interactive Narrative": {
     "ID": "4780",
     "cross listed": [],
-    "description": "This course introduces students to narrative theory and interactive narratives in a variety of genres such as oral story-telling, literature, poetry, film, artists' books, historical narrative, hypertext fiction, Net Art, social media narratives, and computer games. Students will have the opportunity to design and develop an original interactive narrative.",
+    "description": "This course introduces students to narrative theory andÂ interactive narratives in a variety of genres such as oral story-telling, literature, poetry, film, artists' books, historical narrative, hypertext fiction, Net Art, social media narratives, and computer games. Students will have the opportunity to design and develop an original interactive narrative.",
     "name": "Interactive Narrative",
     "offered": {
       "even": false,
@@ -3242,7 +3284,7 @@
   "Interdisciplinary Research Seminar": {
     "ID": "4880",
     "cross listed": [],
-    "description": "This is a course introducing music majors to advanced research topics of the Rensselaer music faculty. Each semester a member of the music faculty will focus the seminar on a research topic or paradigm related to their own body of artistic and technological research. Sample topics might include Spatial music and sound, New Instrument Design, Network Music, Music Information Retrieval, Ethnomusicology, Sonification Art and Science, Music and Logic, Spectralism and Beyond, Music Herstory (feminist music composition), Experimental music and sound history. Through hands-on creative research, students will explore questions of both musical and technological significance while engaging that same topic through their own hands-on creative practice.",
+    "description": "This is a course introducing music majors to advanced research topics of the Rensselaer music faculty.Â Each semester a member of the music faculty will focus the seminar on a research topic or paradigm related to their own body of artistic and technological research. Sample topics might include Spatial music and sound, New Instrument Design, Network Music, Music Information Retrieval, Ethnomusicology, Sonification Art and Science, Music and Logic, Spectralism and Beyond, Music Herstory (feminist music composition), Experimental music and sound history. Through hands-on creative research, students will explore questions of both musical and technological significance while engaging that same topic through their own hands-on creative practice.",
     "name": "Interdisciplinary Research Seminar",
     "offered": {
       "even": false,
@@ -3311,7 +3353,7 @@
   "Intermediate Drawing": {
     "ID": "2200",
     "cross listed": [],
-    "description": "Intermediate Drawing focuses on the exploration of the possibilities of visual translation using a variety of media and techniques. Over the term, each successive project will provide the student the opportunity to develop and control a particular set of media, technique, and perspective, which reveals a unique and personal approach to image making. Participation in critiques, discussions, and lectures will enable the student to become fluent with the vocabulary and language of drawing, and focus their preferred methods and developed skill-sets into appropriate and actionable processes.",
+    "description": "Intermediate Drawing focuses on the exploration of the possibilities of visual translation using a variety of media and techniques. Over the term, each successive project will provide the student the opportunity to develop and control a particular set of media, technique, and perspective, which reveals a unique and personal approach to image making. Participation in critiques, discussions, and lectures will enable the student to become fluent with the vocabulary and language of drawing, and focus their preferred methods and developed skill-sets into appropriate and actionable processes.Â Â",
     "name": "Intermediate Drawing",
     "offered": {
       "even": false,
@@ -3380,7 +3422,7 @@
   "Intermediate Microeconomic Theory": {
     "ID": "2010",
     "cross listed": [],
-    "description": "This course combines demand, derived from consumer preferences, and supply, based on firms' production functions, to establish market prices for goods and services. Calculus-based techniques are used to minimize costs and maximize utility and profits across differing industry structures. Product pricing strategies are examined. The course also provides an introduction to topics such as the pricing of stocks and bonds, game theory, positive and negative externalities, asymmetric information, and behavioral economics. Applies the microeconomic theory of the firm to price, cost, and output decisions of business enterprises under different market structures. Regression analysis of demand and cost, linear programming of production and simulation analysis of risk, and capital budgeting are also presented.",
+    "description": "This course combines demand, derived from consumer preferences, and supply, based on firms' production functions, to establish market prices for goods and services. Calculus-based techniques are used to minimize costs and maximize utility and profits across differing industry structures. Product pricing strategies are examined. The course also provides an introduction to topics such asÂ the pricing of stocks and bonds, game theory, positive and negative externalities, asymmetric information, and behavioral economics. Applies the microeconomic theory of the firm to price, cost, and output decisions of business enterprises under different market structures. Regression analysis of demand and cost, linear programming of production and simulation analysis of risk, and capital budgeting are also presented.",
     "name": "Intermediate Microeconomic Theory",
     "offered": {
       "even": false,
@@ -3437,8 +3479,8 @@
       "text": "Upon availability of instructor."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -3494,7 +3536,7 @@
     "cross listed": [
       "COGS-4330"
     ],
-    "description": "This survey course is intended as an introduction to Cognitive Neuroscience. The topics covered will focus on exploring the neural underpinnings for cognitive processes, such as sensation, language, attention, motor control, executive functions, social communication, emotions, consciousness, and learning/memory. Basic aspects of nervous system function and neuroanatomy, brain development/evolution, structural and functional imaging techniques, and other research methods used in Cognitive Neuroscience will be discussed.",
+    "description": "This survey course is intended as an introduction to Cognitive Neuroscience. The topics covered will focus on exploring the neural underpinnings for cognitive processes, such as sensation, language, attention, motor control, executive functions, social communication, emotions, consciousness, and learning/memory. Basic aspects of nervous system function and neuroanatomy, brain development/evolution, structural and functional imaging techniques, and other research methods used in Cognitive Neuroscience will be discussed. Â",
     "name": "Introduction to Cognitive Neuroscience",
     "offered": {
       "even": false,
@@ -3562,7 +3604,7 @@
   "Introduction to Game Programming": {
     "ID": "2540",
     "cross listed": [],
-    "description": "This hands-on class introduces many fundamental concepts in game development. Students will learn to program multiple video games. Topics include render loops, rigid body dynamics, interfaces, event and messaging systems, and co-routines.",
+    "description": "This hands-on class introduces many fundamental concepts in game development. Students will learn to program multiple videoÂ games. Topics include render loops, rigid body dynamics, interfaces, event and messaging systems, and co-routines. Â",
     "name": "Introduction to Game Programming",
     "offered": {
       "even": false,
@@ -3604,7 +3646,7 @@
   "Introduction to Graphic Design": {
     "ID": "2660",
     "cross listed": [],
-    "description": "This course introduces students to the practice of graphic design with a variety of hands-on projects. Studies include the principles and theories of 2D design and the integration of form, color, type, image, and content. Students will develop a heightened visual awareness and an understanding of how design influences meaning. The course emphasizes strategic and critical thinking in the solving of graphic design problems for the purposes of professional communication across a range of media platforms.",
+    "description": "This course introduces students to the practice of graphic design with a variety of hands-on projects. Studies include the principles and theories of 2D design and the integration of form, color, type, image, and content. Students will develop a heightened visual awareness and an understanding of how design influences meaning. The course emphasizes strategic and critical thinking in the solving of graphic design problems for the purposes of professional communication across a range of media platforms.Â",
     "name": "Introduction to Graphic Design",
     "offered": {
       "even": false,
@@ -3667,7 +3709,7 @@
   "Introduction to Linguistics": {
     "ID": "2340",
     "cross listed": [],
-    "description": "This course offers a survey of scientific and applied approaches to the study of human language, highlighting the endlessly surprising nature of this sophisticated mode of communication. A sampling of the topics to be covered: phonology, morphology, syntax, semantics, lexicography, psycholinguistics, and historical linguistics. Lecture course.",
+    "description": "This course offers a survey of scientific and applied approaches to the study of human language, highlighting the endlessly surprising nature of this sophisticated mode of communication. A sampling of the topics to be covered: phonology, morphology, syntax, semantics, lexicography, psycholinguistics, and historical linguistics. Lecture course. Â",
     "name": "Introduction to Linguistics",
     "offered": {
       "even": false,
@@ -3751,7 +3793,7 @@
   "Introduction to Philosophy of Religion": {
     "ID": "2830",
     "cross listed": [],
-    "description": "Central to philosophy is a careful examination of human reasons for holding their beliefs. Given the complexity/ineffability of religious experience, philosophy of religion's examination of reasons is especially difficult. This course will analyze and evaluate Western monotheism both generally and as it relates to the traditional questions of faith and reason, the problem of evil, fate, and free will and the existence of miracles. Time permitting, non-Western as well as Western religions will be considered.",
+    "description": "Central to philosophy is a careful examination of human reasons for holding their beliefs.Â Given the complexity/ineffability of religious experience, philosophy of religion's examination of reasons is especially difficult.Â This course will analyze and evaluate Western monotheism both generally and as it relates to the traditional questions of faith and reason, the problem of evil, fate, and free will and the existence of miracles.Â Time permitting, non-Western as well as Western religions will be considered.",
     "name": "Introduction to Philosophy of Religion",
     "offered": {
       "even": false,
@@ -3818,7 +3860,7 @@
   "Investigating Society": {
     "ID": "2100",
     "cross listed": [],
-    "description": "In this course students receive practical hands-on experience in conducting ethical and theoretically-informed research in the fields of STS and sustainability studies. Throughout the semester students practice a variety of social science research methods through a series of exercises.",
+    "description": "In this course students receive practical hands-on experience in conducting ethical and theoretically-informed research in the fields of STS and sustainability studies. Throughout the semester students practice a variety of social science research methods through a series of exercises.Â Â",
     "name": "Investigating Society",
     "offered": {
       "even": false,
@@ -3829,8 +3871,8 @@
       "text": "Fall term annually."
     },
     "prerequisites": [
-      "STSH-1110",
       "STSS-1110",
+      "STSH-1110",
       "IHSS-1110"
     ],
     "properties": {
@@ -3843,7 +3885,7 @@
   "Irish Literature": {
     "ID": "4230",
     "cross listed": [],
-    "description": "A survey of major works by Irish authors writing in English, with a particular focus on the fiction and drama of the twentieth century. Authors will include: Oscar Wilde, Samuel Beckett, James Joyce, and W.B. Yeats.",
+    "description": "A survey of major works by Irish authors writing in English, with a particular focus on the fiction and drama of the twentieth century. Authors will include: Oscar Wilde, Samuel Beckett, James Joyce, and W.B. Yeats.Â",
     "name": "Irish Literature",
     "offered": {
       "even": true,
@@ -3906,7 +3948,7 @@
   "Language in Real Time": {
     "ID": "2120",
     "cross listed": [],
-    "description": "This course offers an introduction to theories and methods used to study language in its real time contexts. It begins by exploring the structure of sounds and words. The course moves on to investigate how language variation at those structural levels bleeds into social life – including the cultural and socio-historical production of identities, ideologies, and inequalities. The \"exercise\" component of this course provides a hands-on opportunity for engaging with the topics explored in course readings and lectures. Completing exercises will offer practice in, for example, using the International Phonetic Alphabet, transcribing and analyzing natural speech, and using various theoretical offerings to examine how social perspectives and attitudes impact both the use and interpretation of linguistic forms.",
+    "description": "This course offers an introduction to theories and methods used to study language in its real time contexts. It begins by exploring the structure of sounds and words. The course moves on to investigate how language variation at those structural levels bleeds into social life â including the cultural and socio-historical production of identities, ideologies, and inequalities. The \"exercise\" component of this course provides a hands-on opportunity for engaging with the topics explored in course readings and lectures. Completing exercises will offer practice in, for example, using the International Phonetic Alphabet, transcribing and analyzing natural speech, and using various theoretical offerings to examine how social perspectives and attitudes impact both the use and interpretation of linguistic forms.Â",
     "name": "Language in Real Time",
     "offered": {
       "even": false,
@@ -3948,7 +3990,7 @@
   "Law and Economics": {
     "ID": "4310",
     "cross listed": [],
-    "description": "Market-based economies depend upon legal systems that establish and protect property rights. In this and many other instances the law is designed to encourage and support economic activity; in others it is designed to restrain certain types of otherwise rational economic behavior. This course will apply fundamental economic concepts, such as supply and demand, competition, monopoly, externalities, and Pareto efficiency to a range of legal topics, including contracts, torts, criminal, and intellectual property law to explain the economic motivation and consequences of the legal framework. For those students considering law school, this course offers an exposure to many of the legal concepts found in the first year law school curriculum.",
+    "description": "Market-based economies depend upon legal systems that establish and protect property rights. In this and many other instances the law is designed to encourage and support economic activity; in others it is designed to restrain certain types of otherwise rational economic behavior. This course will apply fundamental economic concepts, such as supply and demand, competition, monopoly, externalities, and Pareto efficiency to a range of legal topics, including contracts, torts, criminal, and intellectual property law to explain the economic motivation and consequences of the legal framework. For those students considering law school, this course offers an exposure to many of the legal concepts found in the first year law school curriculum. Â",
     "name": "Law and Economics",
     "offered": {
       "even": false,
@@ -3959,8 +4001,8 @@
       "text": "Spring term annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -3972,7 +4014,7 @@
   "Law and Society": {
     "ID": "2700",
     "cross listed": [],
-    "description": "There ought to be a law. . .\" Law shapes people's lives in countless ways; it is everywhere. Law permits, prohibits, enables, legitimizes, protects, and prosecutes. Law is more than the written word, the \"black letter law.\" People make the law—judges, attorneys, police officers, legislators, defendants, and plaintiffs. This course will explore the law's social, political, cultural, and historical aspects. Using an interdisciplinary approach, the course will examine how social theorists conceptualize and explain the relationship between law and society. Students will be exposed to the theoretical frameworks that are used to examine how the law shapes society, and society shapes the law, and develop an understanding of the social processes that affect the legal system. The course will advance students' capacity to think critically and communicate effectively about themes, concepts, and arguments surrounding the law and learn what law is; where it comes from; who creates it; and what roles it plays in shaping society.",
+    "description": "There ought to be a law. . .\"Â Law shapes people's lives in countless ways; it is everywhere. Law permits, prohibits, enables, legitimizes, protects, and prosecutes. Law is more than the written word, the \"black letter law.\" People make the lawâjudges, attorneys, police officers, legislators, defendants, and plaintiffs. This course will explore the law's social, political, cultural, and historical aspects. Using an interdisciplinary approach, the course will examine how social theorists conceptualize and explain the relationship between law and society. Students will be exposed to the theoretical frameworks that are used to examine how the law shapes society, and society shapes the law, and develop an understanding of the social processes that affect the legal system. The course will advance students' capacity to think critically and communicate effectively about themes, concepts, and arguments surrounding the law and learn what law is; where it comes from; who creates it; and what roles it plays in shaping society.Â",
     "name": "Law and Society",
     "offered": {
       "even": false,
@@ -4037,7 +4079,7 @@
   "Learning and Advanced Game AI": {
     "ID": "4430",
     "cross listed": [],
-    "description": "Digital gaming is one of the most rapidly developing fields. The effort required for developing games is not trivial. To make a game fun to play, the design of the game levels and/or the AI-driven opponents need to be intelligent and adaptive to the players' strategies and skills. In this course, students will learn and explore using machine learning techniques to automate the design process of digital games. The course will cover basic and advanced topics in Artificial Intelligence and Learning, such as Decision Trees, Neural Networks, Genetic Algorithms, and Reinforcement Learning. Students will gain hands-on experience in applying these techniques in computer games. The course will also introduce psychological theories and studies about people's decision-making and emotional processes and how they are related to the players' experience in games. This course will take the form of a combination of lectures, presentations by students, class discussions, and independent study.",
+    "description": "Digital gaming is one of the most rapidly developing fields. The effort required for developing games is not trivial. To make a game fun to play, the design of the game levels and/or the AI-driven opponents need to be intelligent and adaptive to the players' strategies and skills. In this course, students will learn and explore using machine learning techniques to automate the design process of digital games. The course will cover basic and advanced topics in Artificial Intelligence and Learning, such as Decision Trees, Neural Networks, Genetic Algorithms, and Reinforcement Learning. Students will gain hands-on experience in applying these techniques in computer games. The course will also introduce psychological theories and studies about people's decision-making and emotional processes and how they are related to the players' experience in games. This course will take the form of a combination of lectures, presentations by students, class discussions, and independent study. Â",
     "name": "Learning and Advanced Game AI",
     "offered": {
       "even": false,
@@ -4104,7 +4146,7 @@
   "Literature and Media": {
     "ID": "2120",
     "cross listed": [],
-    "description": "A study of classic and contemporary novels, short stories, and essays exploring the cultural contexts and social impacts of film, television, robotics, information, biotechnologies, and new media, including the World Wide Web, Reality Web, and social media. Class discussions, reading quizzes, written essays, and oral presentations based on the readings.",
+    "description": "A study of classic and contemporary novels, short stories, and essays exploring the cultural contexts and social impacts of film, television, robotics, information, biotechnologies, and new media, including the World Wide Web, Reality Web, and social media. Class discussions, reading quizzes, written essays, and oral presentations based on the readings. Â",
     "name": "Literature and Media",
     "offered": {
       "even": false,
@@ -4171,7 +4213,7 @@
   "Mathematical Methods in Psychological Science": {
     "ID": "4350",
     "cross listed": [],
-    "description": "This course will provide students with a systematic overview of practical and important mathematical tools and skills used in modern psychological sciences. Students completing the course will gain experience using mathematical tools drawn from diverse fields including calculus, linear algebra, probability theory, nonlinear optimization, and other closely related disciplines. Rather than providing complete coverage of each field or focusing on formal proofs, the goal will be to provide students with the essential elements necessary to understand and use these tools to solve current and outstanding problems in the field today. This class will be hands-on, using examples drawn from across the cognitive sciences. Students will also gain experience implementing mathematical models in the R programming language.",
+    "description": "This course will provide students with a systematic overview of practical and important mathematical tools and skills used in modern psychological sciences. Students completing the course will gain experience using mathematical tools drawn from diverse fields including calculus, linear algebra, probability theory,Â nonlinear optimization, and other closely related disciplines. Rather than providing complete coverage of each field or focusing on formal proofs, the goal will be to provide students with the essential elements necessary to understand and use these tools to solve current and outstanding problems in the field today. This class will be hands-on, using examples drawn from across the cognitive sciences. Students will also gain experience implementing mathematical models in the R programming language.",
     "name": "Mathematical Methods in Psychological Science",
     "offered": {
       "even": false,
@@ -4195,7 +4237,7 @@
   "Media Watch": {
     "ID": "4150",
     "cross listed": [],
-    "description": "This seminar is an investigation of the successes and failures of the news media, set within historical and contemporary contexts. The title \"media watch\" is intended to evoke a watch-dog approach found in independent media sources and organizations like human rights watch. Assignments involve analyzing how issues are portrayed in the media, and students choose their topics according to their interests. The course can therefore enhance capstone, thesis, or dissertation work.",
+    "description": "This seminar is an investigation of the successes and failures of the news media, set within historical and contemporary contexts.Â The title \"media watch\" is intended to evoke a watch-dog approach found in independent media sources and organizations like human rights watch.Â Assignments involve analyzing how issues are portrayed in the media, and students choose their topics according to their interests. The course can therefore enhance capstone, thesis, or dissertation work.",
     "name": "Media Watch",
     "offered": {
       "even": false,
@@ -4239,7 +4281,7 @@
     "cross listed": [
       "STSH-4400"
     ],
-    "description": "This course is a sociological and anthropological exploration of health and illness. By the end of the course, students will have an overall picture of health fields, problems faced by patients and caregivers, medicine and health in non-Western societies, and the social shaping of disease and therapeutic choices.",
+    "description": "This course is a sociological and anthropological exploration of health and illness. By the end of the course, students will have an overall picture of health fields, problems faced by patients and caregivers, medicine and health in non-Western societies, and the social shaping of disease and therapeutic choices. Â",
     "name": "Medicine, Culture, and Society",
     "offered": {
       "even": false,
@@ -4308,7 +4350,7 @@
     "cross listed": [
       "PHIL-1120"
     ],
-    "description": "This course is an introduction to the philosophy of mind and cognitive science. Students meet in small sections to have class discussions and debates about questions like: What are minds? Are minds physical or non-physical? Do humans have free will? Does reliance on technology turn humans into cyborgs? How close are humans to building an intelligent robot or machine? Do we want this to be a goal? Students will learn how make a philosophical argument, and how to express them in writing or through an oral presentation. This course is communication intensive.",
+    "description": "This course is an introduction to the philosophy of mind and cognitive science. Students meet in small sections to have class discussions and debates about questions like: What are minds? Are minds physical or non-physical? DoÂ humans have free will? Does reliance on technology turn humans into cyborgs? How close are humans to building an intelligent robot or machine? Do we want this to be a goal? Students will learn how make a philosophical argument, and how to express them in writing or through an oral presentation. This course is communication intensive.",
     "name": "Minds and Machines",
     "offered": {
       "even": false,
@@ -4361,8 +4403,8 @@
       "text": "Fall and spring terms annually."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -4420,7 +4462,7 @@
   "Multimedia Performance Systems": {
     "ID": "4030",
     "cross listed": [],
-    "description": "Multimedia Performance Systems explores the composition and programming of real-time performance systems. The course will examine the basics of MIDI, sound synthesis, digital signal processing, and image/video manipulation. Final projects will consist of a real-time performance system or interactive installation.",
+    "description": "Multimedia Performance Systems explores the composition and programming of real-time performance systems. The course will examine the basics of MIDI, sound synthesis, digital signal processing, and image/video manipulation.Â Final projects will consist of a real-time performance system or interactive installation.Â",
     "name": "Multimedia Performance Systems",
     "offered": {
       "even": false,
@@ -4443,7 +4485,7 @@
   "Music and Nature": {
     "ID": "1720",
     "cross listed": [],
-    "description": "Music and Nature explores the intersections between music and nature from a variety of perspectives. Music will be approached as artistic expression as well as a form of knowledge that can heighten our sensitivity and awareness of the environment and natural processes. Music and Nature incorporates reading and writing assignments, individual and group creative projects.",
+    "description": "Music and Nature explores the intersections between music and nature from a variety of perspectives. Music will be approached as artistic expression as well as a form of knowledge that can heighten our sensitivity and awareness of the environment and natural processes. Music and Nature incorporates reading and writing assignments, individual and group creative projects.Â Â",
     "name": "Music and Nature",
     "offered": {
       "even": false,
@@ -4464,7 +4506,7 @@
   "Music and Sound I": {
     "ID": "2380",
     "cross listed": [],
-    "description": "This is the first course in a two-course sequence in music theory and aural skills. The course covers the fundamentals of diatonic harmony and two-part species counterpoint. Aural skills include interval, scale and chord identification, rhythmic and tonal solfege, and dictation. Learning activities include weekly assignments in analysis, composition, performance, improvisation, and self-paced use of software in the acquisition of aural skills.",
+    "description": "ThisÂ is the first course in a two-course sequence in music theory and aural skills. The course covers the fundamentals of diatonic harmony and two-part species counterpoint. Aural skills include interval, scale and chord identification, rhythmic and tonal solfege, and dictation. Learning activities include weekly assignments in analysis, composition, performance, improvisation, and self-paced use of software in the acquisition of aural skills.",
     "name": "Music and Sound I",
     "offered": {
       "even": false,
@@ -4565,8 +4607,8 @@
       "text": "Upon availability of instructor."
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -4622,7 +4664,7 @@
   "Open Economy Macroeconomics": {
     "ID": "4200",
     "cross listed": [],
-    "description": "This course is an introduction to open economy macroeconomics and international finance. The core objective of the course is to teach students macroeconomic models and enable them to analyze international economic phenomena. Topics covered include theories of intertemporal trade, sources of global imbalances and their adjustment mechanisms, the determination of exchange rates, the effect of fiscal and monetary policies under different exchange rate regimes, balance of payment crisis, consequences of financial globalization. This is a communication-intensive course.",
+    "description": "This course is an introduction to open economy macroeconomics and international finance. The core objective of the course is to teach students macroeconomic models and enable them to analyze international economic phenomena. Topics covered include theories of intertemporal trade, sources of global imbalances and their adjustment mechanisms, the determination of exchange rates, the effect of fiscal and monetary policies under different exchange rate regimes, balance of payment crisis, consequences of financial globalization. This is a communication-intensive course. Â",
     "name": "Open Economy Macroeconomics",
     "offered": {
       "even": false,
@@ -4691,7 +4733,7 @@
   "Perspectives on Photography": {
     "ID": "2410",
     "cross listed": [],
-    "description": "This course helps students understand the meaning and emotional complexity of visual images in their culture. Students examine photographic imagery through three perspectives. The first—formal—addresses the design components of the image, such as vantage point and contrast. The second—psychodynamic—concerns the emotional dynamics of viewing. The third—social political— explores photographs as instruments for preserving or challenging cultural values. No technical knowledge of photography is needed.",
+    "description": "This course helps students understand the meaning and emotional complexity of visual images in their culture. Students examine photographic imagery through three perspectives. The firstâformalâaddresses the design components of the image, such as vantage point and contrast. The secondâpsychodynamicâconcerns the emotional dynamics of viewing. The thirdâsocial politicalâ explores photographs as instruments for preserving or challenging cultural values. No technical knowledge of photography is needed.",
     "name": "Perspectives on Photography",
     "offered": {
       "even": false,
@@ -4840,7 +4882,7 @@
   "Positive Psychology": {
     "ID": "4730",
     "cross listed": [],
-    "description": "Positive Psychology is the scientific study of human happiness, well-being, and strength of character. This course takes an empirical approach to helping individuals use the science of flourishing to enhance their lives. Resiliency, the ability to adapt to stress and adversity, will be emphasized. Students will learn about coping techniques of resiliency to effectively navigate through life situations.",
+    "description": "Positive Psychology is the scientific study of human happiness, well-being, and strength of character. This course takes an empirical approach to helping individuals use the science of flourishing to enhance their lives. Resiliency, the ability to adapt to stress and adversity, will be emphasized. Students will learn about coping techniques of resiliency to effectively navigate through life situations.Â Â",
     "name": "Positive Psychology",
     "offered": {
       "even": false,
@@ -4861,7 +4903,7 @@
   "Principles of Economics": {
     "ID": "1200",
     "cross listed": [],
-    "description": "This course is designed to introduce a wide variety of concepts and applications in the broad subject of economics, economics being the study of people's choices. Traditionally, these choices have been framed as how to best employ scarce resources to produce goods and services and distribute them for consumption. To describe these choices the cause will introduce the concepts of opportunity cost, demand and supply theory, and market structures. It will consider the role of government in making resource allocation choices. Students will also study important macroeconomic data such as gross domestic product, economic growth rates, inflation, and unemployment. Additionally, studied will be the role of money and banking in the economy and short-run events such as recessions and expansions. Overall, the course will provide the student with an encompassing view of how economic principles and concepts relate to the broader economy and society.",
+    "description": "This course is designed to introduce a wide variety of concepts and applications in the broad subject of economics, economics being the study of people's choices. Traditionally, these choices have been framed as how to best employ scarce resources to produce goods and services and distribute them for consumption. To describe these choicesÂ the causeÂ will introduce the concepts of opportunity cost, demand and supply theory, and market structures.Â It will consider the role of government in making resource allocation choices.Â Students will also study important macroeconomic data such as gross domestic product, economic growth rates, inflation, and unemployment. Additionally, studied will be the role of money and banking in the economy and short-run events such as recessions and expansions. Overall, the course will provide the student with an encompassing view of how economic principles and concepts relate to the broader economy and society. Â",
     "name": "Principles of Economics",
     "offered": {
       "even": false,
@@ -4882,7 +4924,7 @@
   "Private Music Lessons": {
     "ID": "2750",
     "cross listed": [],
-    "description": "Private applied music lessons provide weekly instruction in instrumental and vocal performance. The goal of this class is to develop the student's musical ability relative to capacity and interest. A supplementary lesson fee is charged.",
+    "description": "Private applied music lessons provide weekly instruction in instrumental and vocal performance. The goal of this class is to develop the student's musical ability relative to capacity and interest. A supplementary lesson fee is charged.Â Â",
     "name": "Private Music Lessons",
     "offered": {
       "even": false,
@@ -4900,11 +4942,11 @@
     },
     "subj": "ARTS"
   },
-  "Professional Development  2 –Technical Issues and Solutions": {
+  "Professional Development  2 âTechnical Issues and Solutions": {
     "ID": "4100",
     "cross listed": [],
     "description": "This course focuses on increasing students' knowledge concerning the impact of non-technical issues on the viability of technical (engineering) designs and solutions. The non-technical issues to be considered include the cognitive and physical strengths and limitations of people in the chain spanning from product/equipment designers/manufacturers to end users, as well as economic, environmental, cultural, political, ethical, health and safety, and societal influences. During the course, students will read and discuss articles and case studies in which the technical solution pursued did not have the desired effect, or led to disaster. Possible explanations include a failure to take into account the environmental, economic, socio-cultural, and/or political issues associated with the technology's ultimate usage.",
-    "name": "Professional Development  2 –Technical Issues and Solutions",
+    "name": "Professional Development  2 âTechnical Issues and Solutions",
     "offered": {
       "even": false,
       "fall": true,
@@ -4945,7 +4987,7 @@
   "Programming for Cognitive Science and Artificial Intelligence": {
     "ID": "4410",
     "cross listed": [],
-    "description": "Research in Cognitive Science and Artificial Intelligence (AI) is driven by data. Researchers in these fields collect, manipulate, model and analyze data generated by real-world processes. Since the amount of data available has grown exponentially, the ability to automate these tasks through computer programs is essential. Specifically, probabilistic and statistical computing are needed to learn from the data. The objectives of this course are for the student to perform exploratory data analysis and to acquire the basics of statistical and machine learning in order to model real-world datasets.",
+    "description": "Research in Cognitive Science and Artificial Intelligence (AI) is driven by data. Researchers in these fields collect, manipulate, model and analyze data generated by real-world processes. Â Since the amount of data available has grown exponentially, the ability to automate these tasks through computer programs is essential. Specifically, probabilistic and statistical computing are needed to learn from the data. The objectives of this course are for the student to perform exploratory data analysis and to acquire the basics of statistical and machine learning in order to model real-world datasets. Â",
     "name": "Programming for Cognitive Science and Artificial Intelligence",
     "offered": {
       "even": false,
@@ -5036,7 +5078,7 @@
   "Psychology of Mindfulness": {
     "ID": "4430",
     "cross listed": [],
-    "description": "Mindfulness involves giving particular attention to our moment-to-moment experiences in a way that emphasizes observing, rather than judging or evaluating. There is empirical evidence of the many health benefits of mindfulness meditation, including the potential to produce fundamental changes in brain structure and epigenetic change. In this class, participants will discuss the historical and psychological foundations of mindfulness and empirical findings supporting its positive effects. Students will participate in structured exercises. This course is a very hands-on approach to mindfulness. Students will be required to practice mindfulness and meditation and develop their mindful skills.",
+    "description": "Mindfulness involves giving particular attention to our moment-to-moment experiences in a way that emphasizes observing, rather than judging or evaluating. There is empirical evidence of the many health benefits of mindfulness meditation, including the potential to produce fundamental changes in brain structure and epigenetic change. In this class, participants will discuss the historical and psychological foundations of mindfulness and empirical findings supporting its positive effects. Students will participate in structured exercises. This course is a very hands-on approach to mindfulness. Students will be required to practice mindfulness and meditation and develop their mindful skills.Â Â",
     "name": "Psychology of Mindfulness",
     "offered": {
       "even": false,
@@ -5105,7 +5147,7 @@
     "cross listed": [
       "STSH-4800"
     ],
-    "description": "This course offers an insight into public policy from the vantage point of the public or private sector: airport planning, architecture, banking, biological research, clinical psychology, computer science, consumer protection, corporate management, engineering, environmental planning, geology, local government, materials and mechanical engineering, noise pollution abatement, personnel management review, premedical, public finance and taxation, public health management, public relations, social work, state legislature, stock market, transportation planning, and urban planning.",
+    "description": "This course offers an insight into public policy from the vantage point of the public or private sector:Â airport planning, architecture, banking, biological research, clinical psychology, computer science, consumer protection, corporate management, engineering, environmental planning, geology, local government, materials and mechanical engineering, noise pollution abatement, personnel management review, premedical, public finance and taxation, public health management, public relations, social work, state legislature, stock market, transportation planning, and urban planning.",
     "name": "Public Service and Social Justice",
     "offered": {
       "even": false,
@@ -5147,7 +5189,7 @@
   "Radical Graphics/Screenprinting": {
     "ID": "2090",
     "cross listed": [],
-    "description": "Radical Graphics/Screenprinting seeks to expand on the definition of print graphics from one that traditionally creates multiple images on paper to a practice that includes art-making activities as varied as mud-stenciling, t-shirt printing, \"fine art\" prints, animation, sculpture, and political protest graphics. Students will focus on the concept of the art \"matrix\": a template for image-making that can work across media. Students will create matrices that can be applied across multiple art-making platforms.",
+    "description": "Radical Graphics/Screenprinting seeks to expand on the definition of print graphics from one that traditionally creates multiple images on paper to a practice that includes art-making activities as varied as mud-stenciling, t-shirt printing, \"fine art\" prints, animation, sculpture, and political protest graphics. Students will focus on the concept of the art \"matrix\": a template for image-making that can work across media. Students will create matrices that can be applied across multiple art-making platforms.Â Â",
     "name": "Radical Graphics/Screenprinting",
     "offered": {
       "even": false,
@@ -5296,7 +5338,7 @@
   "Religion in a Global World": {
     "ID": "1666",
     "cross listed": [],
-    "description": "This course explores the role of religion in different cultures and in the everyday lives of people around the world. It will introduce students to key concepts, themes, and debates in social science. The role of religion and rituals will be examined through classic texts in anthropology, sociology, political science, and in ethnographic cases relating to different types of societies, from traditional to modern American cultures. It will begin with some basic theoretical issues before discussing contemporary issues such as the relations between nation and religion, violence and religion, climate change and religion, and \"magical thinking\" in technology and science.",
+    "description": "This course explores the role of religion in different cultures and in the everyday lives of people around the world. It will introduce students to key concepts, themes, and debates in social science. The role of religion and rituals will be examined through classic texts in anthropology, sociology, political science, and in ethnographic cases relating to different types of societies, from traditional to modern American cultures.Â It will begin with some basic theoretical issues before discussing contemporary issues such as the relations between nation and religion, violence and religion, climate change and religion, and \"magical thinking\" in technology and science.Â Â",
     "name": "Religion in a Global World",
     "offered": {
       "even": false,
@@ -5382,7 +5424,7 @@
   "Research Design": {
     "ID": "4980",
     "cross listed": [],
-    "description": "This is the first part of a two-semester senior project sequence for majors in Sustainability Studies (SUST) and Science, Technology, and Society (STS). The course focuses on qualitative research design and research proposal development.",
+    "description": "This is the first part of a two-semester senior project sequence for majors in Sustainability Studies (SUST) and Science, Technology, and Society (STS). The course focuses on qualitative research design and research proposal development. Â",
     "name": "Research Design",
     "offered": {
       "even": false,
@@ -5403,7 +5445,7 @@
   "Research Methods and Statistics I": {
     "ID": "2310",
     "cross listed": [],
-    "description": "This course, the first in a two-course sequence, provides an introduction to basic methods of behavioral and social science research, including experimental, quasi-experimental, and non-experimental research designs, psychometric considerations (e.g., reliability, validity, control, importance, levels of measurement), approaches to data collection and analysis, and communication of results. Students will demonstrate their understanding of the topics covered by writing a detailed research proposal formatted according to American Psychological Association (APA) guidelines. Students will also gain experience in using a selection of parametric (e.g., correlation, simple and multiple regression, ANOVA) and non-parametric (e.g., Chi-square, Mann-Whitney U, Wilcoxon T, Kruskal-Wallis, Friedman's ANOVA) statistical procedures. Data analysis will be carried out using R, an open-source programming language for statistical calculation and graphics, and R-Studio, an open-source integrated development environment for R.",
+    "description": "This course, the first in a two-course sequence, provides an introduction to basic methods of behavioral and social science research, including experimental, quasi-experimental, and non-experimental research designs, psychometric considerations (e.g., reliability, validity, control, importance, levels of measurement), approaches to data collection and analysis, and communication of results. Students will demonstrate their understanding of the topics covered by writing a detailed research proposal formatted according to American Psychological Association (APA) guidelines.Â Students will also gain experience in using a selection of parametric (e.g., correlation, simple and multiple regression, ANOVA) and non-parametric (e.g., Chi-square, Mann-Whitney U, Wilcoxon T, Kruskal-Wallis, Friedman's ANOVA) statistical procedures. Data analysis will be carried out using R, an open-source programming language for statistical calculation and graphics, and R-Studio, an open-source integrated development environment for R.Â Â",
     "name": "Research Methods and Statistics I",
     "offered": {
       "even": false,
@@ -5427,7 +5469,7 @@
   "Research Methods and Statistics II": {
     "ID": "4310",
     "cross listed": [],
-    "description": "This course is the second in a two-semester sequence on research methods and statistics in the behavioral sciences. Students will learn how to analyze data using multiple regression, analysis of variance, factor analysis, principal component analysis, and multi-level linear modeling. Students will also gain proficiency with the R programming language and software environment for statistical computing. Each student will carry out a research project and prepare a formal report that comports with the guidelines from the American Psychological Association. This is a communication-intensive course.",
+    "description": "This course is the second in a two-semester sequence on research methods and statistics in the behavioral sciences. Students will learn how to analyze data using multiple regression, analysis of variance, factor analysis, principal component analysis, and multi-level linear modeling. Students will also gain proficiency with the R programming language and software environment for statistical computing. Each student will carry out a research project and prepare a formal report that comports with the guidelines from the American Psychological Association. This is a communication-intensive course. Â",
     "name": "Research Methods and Statistics II",
     "offered": {
       "even": false,
@@ -5450,7 +5492,7 @@
   "Research Writing": {
     "ID": "4410",
     "cross listed": [],
-    "description": "In this class, students will write on topics from their major discipline and investigate the kinds of texts that professionals in their field produce. They will identify and explore research questions, use discipline-specific library databases, and write research reports. In addition, they will develop effective note-taking and research skills and learn strategies for effective prose style. This is a communication-intensive course.",
+    "description": "In this class,Â students will write on topics fromÂ their major discipline and investigate the kinds of texts that professionals inÂ their field produce. They willÂ identify and explore research questions, use discipline-specific library databases, and write research reports. In addition,Â they will develop effective note-taking and research skills and learn strategies for effective prose style. This is a communication-intensive course.",
     "name": "Research Writing",
     "offered": {
       "even": false,
@@ -5473,7 +5515,7 @@
     "cross listed": [
       "STSH-4320"
     ],
-    "description": "What does resilience really mean and why does it matter? In this course, students will unpack the multiple meanings that make up \"resilience\" and learn about its relevance to human society. Upon entering the Anthropocene, climate change will ensure that sporadic, disruptive change will be the norm. Disruptions will come on numerous levels and at a variety of scales. Is resilience about strengthening defenses so that \"resilient\" landscapes, infrastructure and organizations can bounce back, or is it more? Students will be asked to contribute to a collective understanding of how systems thinking and resilience thinking can help strengthen the ability to adapt and transform when humans are faced with social and ecological change. Can resilience planning help with the difficult conversations that are needed to balance the socio-economic and ecological trade-offs that the Anthropocene demands?",
+    "description": "What does resilience really mean and why does it matter? In this course, students will unpack the multiple meanings that make up \"resilience\" and learn about its relevance to human society. Upon entering the Anthropocene, climate change will ensure that sporadic, disruptive change will be the norm.Â Disruptions will come on numerous levels and at a variety of scales. Is resilience about strengthening defenses so that \"resilient\" landscapes, infrastructure and organizations can bounce back, or is it more? Students will be asked to contribute to a collective understanding of how systems thinking and resilience thinking can help strengthen the ability to adapt and transform when humans are faced with social and ecological change. Can resilience planning help with the difficult conversations that are needed to balance the socio-economic and ecological trade-offs that the Anthropocene demands?Â",
     "name": "Resilience Planning",
     "offered": {
       "even": false,
@@ -5496,7 +5538,7 @@
   "Rethinking Documentary: Video Production": {
     "ID": "4040",
     "cross listed": [],
-    "description": "This is a production course investigating non-traditional approaches to documentary or non-fiction film/video. Taking a broad look at what defines \"documentary\" media, this course will incorporate criticism with production. Students will produce a range of video works questioning conventional documentary styles, using radical and interventionist techniques. Students will study traditional documentary works including ethnographic films, cinema verité, propaganda films, \"home movies,\" reality TV, tabloid news, autobiographic and activist videos.",
+    "description": "This is a production course investigating non-traditional approaches to documentary or non-fiction film/video. Taking a broad look at what defines \"documentary\" media, this course will incorporate criticism with production. Students will produce a range of video works questioning conventional documentary styles, using radical and interventionist techniques. Students will study traditional documentary works including ethnographic films, cinema veritÃ©, propaganda films, \"home movies,\" reality TV, tabloid news, autobiographic and activist videos.",
     "name": "Rethinking Documentary: Video Production",
     "offered": {
       "even": true,
@@ -5569,7 +5611,7 @@
     "cross listed": [
       "STSH-2010"
     ],
-    "description": "This class studies relationships between science fiction films and serious works of modern social criticism. Through a careful reading of texts, analytical viewing of films, and comparison of the two experiences, the course will explore some of the most significant issues in modern society.",
+    "description": "This class studies relationships between science fiction films and serious works of modern social criticism. Through a careful reading of texts, analytical viewing of films, and comparison of the two experiences, the course will explore some of the most significant issues in modern society.Â Â",
     "name": "Science Fiction Cinema and Social Criticism",
     "offered": {
       "even": true,
@@ -5590,7 +5632,7 @@
   "Science Fictions": {
     "ID": "4640",
     "cross listed": [],
-    "description": "Science Fictions is an advanced narrative video production and theory course. The class looks at thematic areas of science fiction, utopia and dystopia, paranormal, and speculative fiction. 'Speculative fiction' is a genre that looks at the real world and extends what is known about it, building on the 'real.' The class has two threads: to study narrative structure and create a series of sci-fi videos; to discuss and analyze mainstream and avant-garde science fiction films and themes from the early 1900s to the present.",
+    "description": "Science Fictions is an advanced narrative video production and theory course. The class looks at thematic areas of science fiction, utopia and dystopia, paranormal, and speculative fiction. 'Speculative fiction' is a genre that looks at the real world and extends what is known about it, building on the 'real.' The class has two threads: to study narrative structure and create a series of sci-fi videos; to discuss and analyze mainstream and avant-garde science fictionÂ films and themes from the early 1900s to theÂ present.",
     "name": "Science Fictions",
     "offered": {
       "even": false,
@@ -5634,7 +5676,7 @@
   "Science and Scientific Misconduct": {
     "ID": "1160",
     "cross listed": [],
-    "description": "This course will provide a comprehensive introduction to the field of ethics of scientific research. Why do seemingly good people do bad things? What is science? What is \"bad\" science? What constitutes scientific misconduct? We will explore the answers to these questions through fields such as Sociology, History, Philosophy, Psychology etc. Using evidence from contemporary and historical scientific experiments we will try to understand why researchers might commit scientific misconduct such as fabrication of results, plagiarism, and falsification of data. A brief overview some philosophical theories of ethics and several professional/scientific codes of ethics will be covered.",
+    "description": "This course will provide a comprehensive introduction to the field of ethics of scientific research. Â Why do seemingly good people do bad things? Â What is science? Â What is \"bad\" science? What constitutes scientific misconduct? Â We will explore the answers to these questions through fields such as Sociology, History, Philosophy, Psychology etc. Â Using evidence from contemporary and historical scientific experiments we will try to understand why researchers might commit scientific misconduct such as fabrication of results, plagiarism, and falsification of data. Â A brief overview some philosophical theories of ethics and several professional/scientific codes of ethics will be covered.",
     "name": "Science and Scientific Misconduct",
     "offered": {
       "even": false,
@@ -5789,7 +5831,7 @@
   "Senior Thesis": {
     "ID": "4990",
     "cross listed": [],
-    "description": "A two-semester spring-fall or fall-spring course dealing with an advanced level independent research project supervised by a faculty member and requiring the presentation of a thesis. First term registration is limited to second semester juniors and first semester seniors. The grade for the first semester will be listed as \"In progress.\"",
+    "description": "A two-semester spring-fall or fall-spring course dealing with an advanced level independent research project supervised by a faculty member and requiring the presentation of a thesis. First term registration is limited to second semester juniors and first semester seniors. The grade for the first semester will be listed as \"In progress.\" Â",
     "name": "Senior Thesis",
     "offered": {
       "even": false,
@@ -5835,7 +5877,7 @@
     "cross listed": [
       "COGS-4440"
     ],
-    "description": "\"Sensibilities\"—a special ART_X@Rensselaer (Art Across the Curriculum) seminar—draws from the tremendous resource of EMPAC to inspire students to cultivate writing skills through the cross-disciplinary theme of the senses/perception. During the semester students will have opportunities to observe unique art/science presentations and performances in an intimate setting at EMPAC, providing rich experiences for discussions and writing. Classes include reading science and art texts, as well as writing workshops to develop authorial voice and experimentation.",
+    "description": "\"Sensibilities\"âa special ART_X@Rensselaer (Art Across the Curriculum) seminarâdraws from the tremendous resource of EMPAC to inspire students to cultivate writing skills through the cross-disciplinary theme of the senses/perception. During the semester students will have opportunities to observe unique art/science presentations and performances in an intimate setting at EMPAC, providing rich experiences for discussions and writing. Classes include reading science and art texts, as well as writing workshops to develop authorial voice and experimentation. Â",
     "name": "Sensibilities",
     "offered": {
       "even": true,
@@ -5861,7 +5903,7 @@
     "cross listed": [
       "STSH-4520"
     ],
-    "description": "Study of global and national population characteristics, distribution, and trends. The course focuses on mortality, fertility, and migration along with the social issues or problems that are related to them.",
+    "description": "Study of global and national population characteristics, distribution, and trends. The course focuses on mortality, fertility, and migration along with the social issues or problems that are related to them.Â",
     "name": "Social Demography: Society by the Numbers",
     "offered": {
       "even": false,
@@ -6077,7 +6119,7 @@
   "Strategic Writing": {
     "ID": "2110",
     "cross listed": [],
-    "description": "This course is designed to assist students in becoming more self-possessed and versatile writers. The course offers instruction in linguistic, rhetorical, and sociocultural concepts through its overarching focus on language: how it works, where it falls short, and how to harness it for specific purposes. Critical thinking and composing are conceptualized as processes, which includes the creation, development, organization, and revision of ideas and arguments. Students will complete a series of writing assignments in order to participate in contemporary debates occurring in both public and academic contexts. This is a communication-intensive course.",
+    "description": "This course is designed to assist students in becoming more self-possessed and versatile writers. The course offers instruction in linguistic, rhetorical, and sociocultural concepts through its overarching focus on language: how it works, where it falls short, and how to harness it for specific purposes. Critical thinking and composing are conceptualized as processes, which includes the creation, development, organization, and revision of ideas and arguments. Students will complete a series of writing assignments in order to participate in contemporary debates occurring in both public and academic contexts. This is a communication-intensive course. Â",
     "name": "Strategic Writing",
     "offered": {
       "even": false,
@@ -6100,7 +6142,7 @@
     "cross listed": [
       "COGS-4610"
     ],
-    "description": "This seminar course is a detailed examination of the mind-brain relationship, through study of the stress response. Stress is simply defined as any challenge to an individual's homeostasis, or balance. This course will explore the neurobiological underpinnings of the stress response, with particular focus on how stressors can alter perception, affective and cognitive processing in the individual, which can in turn feedback to alter the general health of the individual (body and mind/brain).",
+    "description": "This seminar course is a detailed examination of the mind-brain relationship, through study of the stress response. Stress is simply defined as any challenge to an individual's homeostasis, or balance. This course will explore the neurobiological underpinnings of the stress response, with particular focus on how stressors can alter perception, affective and cognitive processing in the individual, which can in turn feedback to alter the general health of the individual (body and mind/brain).Â Â",
     "name": "Stress and the Brain",
     "offered": {
       "even": false,
@@ -6123,7 +6165,7 @@
   "Structure of Industry:  Competition, Innovation, Entrepreneurship, Policy": {
     "ID": "4140",
     "cross listed": [],
-    "description": "Acquaints students with the structural characteristics and philosophical foundations of enterprise and industry. Several important industries are considered from the viewpoint of market structure, conduct, and performance. Such concepts as the corporation, entrepreneurial outcomes, technological innovation, private property, and public policy toward business are examined to orient the student to contemporary industrial activity.",
+    "description": "Acquaints students with the structural characteristics and philosophical foundations of enterprise and industry. Several important industries are considered from the viewpoint of market structure, conduct, and performance. Such concepts as the corporation, entrepreneurial outcomes, technological innovation, private property, andÂ public policy toward business are examined to orient the student to contemporaryÂ industrial activity.",
     "name": "Structure of Industry:  Competition, Innovation, Entrepreneurship, Policy",
     "offered": {
       "even": false,
@@ -6146,7 +6188,7 @@
   "Studies in the Arts": {
     "ID": "4940",
     "cross listed": [],
-    "description": "Individual and collaborative projects and assignments at the 4000 level adapted to the needs of individual students.",
+    "description": "Individual and collaborative projects and assignments at the 4000 level adapted to the needs of individual students.Â",
     "name": "Studies in the Arts",
     "offered": {
       "even": false,
@@ -6167,7 +6209,7 @@
   "Sustainability Careers": {
     "ID": "4300",
     "cross listed": [],
-    "description": "Advancing environmental sustainability will depend on many kinds of expertise. In this course, students will explore the evolving terrain of green jobs and diverse sustainability-oriented career pathways that leverage the expertise they have developed through their undergraduate studies. The course provides students the opportunity to conduct research that examines where sustainability-oriented work is being done and how people with varied expertise are making a contribution.",
+    "description": "Advancing environmental sustainability will depend on many kinds of expertise. In this course, students will explore the evolving terrain of green jobs and diverse sustainability-oriented career pathways that leverage the expertise they have developed through their undergraduate studies. The course provides students the opportunity to conduct research that examines where sustainability-oriented work is being done and how people with varied expertise are making a contribution. Â",
     "name": "Sustainability Careers",
     "offered": {
       "even": false,
@@ -6232,7 +6274,7 @@
   "Sustainability Problems": {
     "ID": "4270",
     "cross listed": [],
-    "description": "In this course, students will map the matrix of problems that make sustainability difficult – problems with the U.S. political, legal, and educational system, with media, culture, and individual behavior. Students will also identify sustainability pathways in transportation, urban design, education, alternative energy, etc. Throughout, students will analyze and try to produce effective environmental communication.",
+    "description": "In this course, students will map the matrix of problems that make sustainability difficult â problems with the U.S. political, legal, and educational system, with media, culture, and individual behavior. Students will also identify sustainability pathways in transportation, urban design, education, alternative energy, etc. Throughout, students will analyze and try to produce effective environmental communication.",
     "name": "Sustainability Problems",
     "offered": {
       "even": false,
@@ -6253,7 +6295,7 @@
   "Sustainability by Design": {
     "ID": "4290",
     "cross listed": [],
-    "description": "Sustainability by Design will center around student-led project-based research, with a focus on getting to know one's own specific potential, leveraging student connections to communities, and making a difference in larger systems that can often seem intractable. Students will learn how to think and act within whole systems and design solutions that identify and push on leverage points in these systems. This process will bring analysis and design together in a multitude of ways, and the course can be thought of as a hybrid seminar/studio course, where students will learn about many design principles and practices and apply these lessons in practice, forming feedback loops between theory and action. At their best, students will transform systems from a degenerative state, to a sustainable one, and beyond to achieve regenerative systems.",
+    "description": "Sustainability by Design will center around student-led project-based research, with a focus on getting to know one's own specific potential, leveraging student connections to communities, and making a difference in larger systems that can often seem intractable. Students will learn how to think and act within whole systems and design solutions that identify and push on leverage points in these systems. This process will bring analysis and design together in a multitude of ways, and the course can be thought of as a hybrid seminar/studio course, where students will learn about many design principles and practices and apply these lessons in practice, forming feedback loops between theory and action. At their best, students will transform systems from a degenerative state, to a sustainable one, and beyond to achieve regenerative systems.Â Â",
     "name": "Sustainability by Design",
     "offered": {
       "even": false,
@@ -6276,7 +6318,7 @@
   "The Art of Listening": {
     "ID": "1180",
     "cross listed": [],
-    "description": "Listening to each other, ourselves, and our surroundings can be a transformative experience that enhances well-being. In this course, a heightened awareness to sound will be developed through experiential exercises, creative projects, collaborations, readings, lectures, and discussion. The course introduces \"Deep Listening,\" a practice developed by pioneer composer and humanitarian Pauline Oliveros to enhance and expand listening abilities and to encourage creative work.",
+    "description": "Listening to each other, ourselves, and our surroundings can be a transformative experience that enhances well-being. In this course, a heightened awareness to sound will be developed through experiential exercises, creative projects, collaborations, readings, lectures, and discussion. The course introduces \"Deep Listening,\" a practice developed by pioneer composer and humanitarian Pauline Oliveros to enhance and expand listening abilities and to encourage creative work.Â Â",
     "name": "The Art of Listening",
     "offered": {
       "even": false,
@@ -6297,7 +6339,7 @@
   "The Genome and You": {
     "ID": "1150",
     "cross listed": [],
-    "description": "The ability to sequence complete genomes has had a revolutionary impact on medicine, agriculture, our environment and the very idea of what it means to be \"human\". Genomic medicine will impact virtually everyone in the United States in the coming decades. As informed citizens, it is important that we have a working understanding of genomics and its implications for individuals and for society at large. These conversations are critical to ensure the ethical and accessible use of genomics and to allow us to make informed decisions on both personal and public-policy levels. This course will explore the science, ethics, and history of genetic research and genomics, using case studies to illustrate and personalize the issues at hand.",
+    "description": "The ability to sequence complete genomes has had a revolutionary impact on medicine, agriculture, our environment and the very idea of what it means to be \"human\". Genomic medicine will impact virtually everyone in the United States in the coming decades. As informed citizens, it is important that we have a working understanding of genomics and its implications for individuals and for society at large. These conversations are critical to ensure the ethical and accessible use of genomics and to allow us to make informed decisions on both personal and public-policy levels. This course will explore the science,Â ethics, and history of genetic research and genomics, using case studies to illustrate and personalize the issues at hand.",
     "name": "The Genome and You",
     "offered": {
       "even": false,
@@ -6318,7 +6360,7 @@
   "The Linguistics of Computational Linguistics": {
     "ID": "4340",
     "cross listed": [],
-    "description": "This course will explore how linguistics, the scientific study of the properties of human language and languages, can be applied to the development of intelligent agents that can fluently and meaningfully communicate with people in natural language. It will focus on linguistic phenomena that have so far been particularly resistant to effective machine processing, such as lexical ambiguity resolution, reference resolution, ellipsis, indirect speech acts, implicature, and non-literal language (e.g., metaphor and irony).",
+    "description": "This course will explore how linguistics, the scientific study of the properties of human language and languages, can be applied to the development of intelligent agents that can fluently and meaningfully communicate with people in natural language. It will focus on linguistic phenomena that have so far been particularly resistant to effective machine processing, such as lexical ambiguity resolution, reference resolution, ellipsis, indirect speech acts, implicature, and non-literal language (e.g., metaphor and irony).Â",
     "name": "The Linguistics of Computational Linguistics",
     "offered": {
       "even": false,
@@ -6404,7 +6446,7 @@
   "Topics in Deep Listening": {
     "ID": "4180",
     "cross listed": [],
-    "description": "This course continues the practice and study of Deep Listening beyond the foundational course \"Deep Listening.\" Topics include a wide range of investigations, research, and creativity in Deep Listening.",
+    "description": "This course continues the practice and study of Deep Listening beyond the foundational course \"Deep Listening.\" Topics include a wide range of investigations, research, and creativity in Deep Listening.Â Â",
     "name": "Topics in Deep Listening",
     "offered": {
       "even": false,
@@ -6436,8 +6478,8 @@
       "text": ""
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -6598,7 +6640,7 @@
   "Topics in the Arts": {
     "ID": "4960",
     "cross listed": [],
-    "description": "Experimental courses offered for one or two semesters.",
+    "description": "Experimental courses offered for one orÂ two semesters.Â",
     "name": "Topics in the Arts",
     "offered": {
       "even": false,
@@ -6619,7 +6661,7 @@
   "Topics in the History and Analysis of Music": {
     "ID": "4500",
     "cross listed": [],
-    "description": "This course illuminates specific musical works in depth, drawn from a range of periods and cultures, by analyzing them in their historical, cultural, and critical context. The emphasis is on music since 1900, while including coverage of older works, and on the creative choices made by composers working within particular genres and repertoires. Ability to read Western music notation is required.",
+    "description": "This course illuminates specific musical works in depth, drawn from a range of periods and cultures, by analyzing them in their historical, cultural, and critical context. The emphasis is on music since 1900, while including coverage of older works, and on the creative choices made by composers working within particular genres and repertoires. Ability to read Western music notation is required.Â Â",
     "name": "Topics in the History and Analysis of Music",
     "offered": {
       "even": false,
@@ -6684,7 +6726,7 @@
   "Visual Culture": {
     "ID": "4540",
     "cross listed": [],
-    "description": "Humans inhabit a culture of visual images. Images bombard them on television, the Internet, and in films; they surround everyone as architecture and fashion; they provide essential resource data in science, engineering, and business. This course will help students better understand how images communicate information, arouse emotions, and shape values. Students will primarily do readings in cultural history/theory with some viewing of films.",
+    "description": "HumansÂ inhabit a culture of visual images.Â Images bombardÂ them on television, the Internet, and in films; they surroundÂ everyone as architecture and fashion; they provide essential resource data in science, engineering, and business. This course will help students better understand how images communicate information, arouseÂ emotions, and shapeÂ values. Students will primarily do readings in cultural history/theory with some viewing of films.Â",
     "name": "Visual Culture",
     "offered": {
       "even": false,
@@ -6747,7 +6789,7 @@
   "War and Society": {
     "ID": "1510",
     "cross listed": [],
-    "description": "This course examines how culture and society shape war, and inversely, how war shapes culture and society. It views war through the lens of social sciences with case studies ranging from the role of war in non-western societies to the ways in which war has affected American culture. Some of the issues covered in the course include the study of different types of war, the relations between war and the nation-state, between weapons technology and culture, the notions of pacification and nation-building, and the role of rituals in the military institution.",
+    "description": "This course examines how culture and society shape war, and inversely, how war shapes culture and society. It views war through the lens of social sciences with case studies ranging from the role of war in non-western societies to the ways in which war has affected American culture. Some of the issues covered in the course include the study of different types of war, the relations between war and the nation-state, between weapons technology and culture, the notions of pacification and nation-building, and the role of rituals in the military institution. Â",
     "name": "War and Society",
     "offered": {
       "even": false,
@@ -6768,7 +6810,7 @@
   "War and Technology: Past, Present, and Future": {
     "ID": "1570",
     "cross listed": [],
-    "description": "This course investigates the relationship between warfare and technology in historical and present-day settings. It will also cover how military technology might evolve in the future. In addition to considering the ways in which technology has changed the practices of warfare, the course will examine the ethical, political, social and economic problems and developments that have arisen from the intersection of military and technological change.",
+    "description": "This course investigates the relationship between warfare and technology in historical and present-day settings. It will also cover how military technology might evolve in the future. In addition to considering the ways in which technology has changed the practices of warfare, the course will examine the ethical, political, social and economic problems and developments that have arisen from the intersection of military and technological change. Â",
     "name": "War and Technology: Past, Present, and Future",
     "offered": {
       "even": false,
@@ -6789,7 +6831,7 @@
   "Web Science Systems Development": {
     "ID": "4500",
     "cross listed": [],
-    "description": "Building on the technology covered in Web Systems Development, students will be exposed to current technologies, frameworks, and practices in the area of Web development. Types of topics included will be HTML5/CSS3, API's for data, Ruby on Rails, node.js, MongoDB, PHP, and RDF. Methodology to be explored will be application design, software versioning, and team development. Lab intensive, this course is intended to complete a foundation for the advanced courses in Data Science and Advanced Web Science.",
+    "description": "BuildingÂ on the technology covered in Web Systems Development, students will be exposed to current technologies, frameworks, and practices in the area of Web development. Types of topics included will be HTML5/CSS3, API's for data, Ruby on Rails, node.js, MongoDB, PHP, and RDF. Methodology to be explored will be application design, software versioning, and team development. Lab intensive, this course is intended to complete a foundation for the advanced courses in Data Science and Advanced Web Science.Â Â",
     "name": "Web Science Systems Development",
     "offered": {
       "even": false,
@@ -6835,7 +6877,7 @@
   "Well-being: Cultivating Curiosity": {
     "ID": "1175",
     "cross listed": [],
-    "description": "How do people maintain a sense of well-being in their lives? Each person's path to well-being in body and mind is unique—arising from an awareness of our needs, goals and what each finds fulfilling. The theme of curiosity will be used to explore what makes people tick, what makes them feel balanced, stressed, or calm. This interdisciplinary course uses practice-based learning, in-class writing, lectures, creative play, and reading.",
+    "description": "How do people maintain a sense of well-being in their lives? Each person's path to well-being in body and mind is uniqueâarising from an awareness of our needs, goals and what each finds fulfilling. The theme of curiosity will be used to explore what makes people tick, what makes them feel balanced, stressed, or calm. This interdisciplinary course uses practice-based learning, in-class writing, lectures, creative play, and reading.",
     "name": "Well-being: Cultivating Curiosity",
     "offered": {
       "even": false,
@@ -6877,7 +6919,7 @@
   "Women Writers": {
     "ID": "4770",
     "cross listed": [],
-    "description": "Women Writers examines creative works of literature produced by women of different times, such as novels, poetry, performance art, and graphic novels. These diverse works explore such topics as personal identity, love and sexuality, trauma and memory, and cultural difference, which are complicated by different historical attitudes towards gender, race, class, and religion. Discussion and viewing of films and visual art, as well as critical readings, will deepen the course's focus on literature.",
+    "description": "Women Writers examines creative works of literature produced by women of different times, such as novels, poetry, performance art, and graphic novels. These diverse works explore such topics as personal identity, love and sexuality, trauma and memory, and cultural difference, which are complicated by different historical attitudes towards gender, race, class, and religion. Discussion and viewing of films and visual art, as well as critical readings, will deepen the course's focus on literature.Â Â Â",
     "name": "Women Writers",
     "offered": {
       "even": false,
@@ -6919,7 +6961,7 @@
   "Writing and Directing for Video": {
     "ID": "4630",
     "cross listed": [],
-    "description": "The course introduces students to the art of writing and directing short videos, with an emphasis on generating ideas, and realizing them in a well-developed final project. Major theories and principles are studied through a comparative analysis of scripts and films. Students learn to work with actors, write their own scripts, and direct videos. Two final projects – a script and a video – will integrate all of the elements covered in class. Lecture/Practicum.",
+    "description": "The course introduces students to the art of writing and directing short videos, with an emphasis on generating ideas, and realizing them in a well-developed final project. Major theories and principles are studied through a comparative analysis of scripts and films. Students learn to work with actors, write their own scripts, and direct videos. Two final projects â a script and a video â will integrate all of the elements covered in class. Lecture/Practicum.",
     "name": "Writing and Directing for Video",
     "offered": {
       "even": false,
@@ -6942,7 +6984,7 @@
   "Writing and Response": {
     "ID": "4380",
     "cross listed": [],
-    "description": "This course explores effective strategies for talking with others about oral presentations and written texts. Practice in consulting is grounded in theory and research in composition studies, reader-response, and tutoring. Students also study their own writing and reading processes through reflection and discussion. Those who complete the course with a grade of A- or A may apply to work as writing consultants in the Center for Global Communication + Design.",
+    "description": "This course explores effective strategies for talking with others about oral presentations and written texts. Practice in consulting is grounded in theory and research in composition studies, reader-response, and tutoring. Students also study their own writing and reading processes through reflection and discussion. Those who complete the course with a grade of A- or A may apply to work as writing consultants in the Center for GlobalÂ Communication + Design.",
     "name": "Writing and Response",
     "offered": {
       "even": false,
@@ -6974,8 +7016,8 @@
       "text": "Spring term annually."
     },
     "prerequisites": [
-      "GSAS-2520",
-      "WRIT-2330"
+      "WRIT-2330",
+      "GSAS-2520"
     ],
     "properties": {
       "CI": true,
@@ -7010,7 +7052,7 @@
   "Writing for Promotion and Marketing": {
     "ID": "4170",
     "cross listed": [],
-    "description": "This course engages students in persuasive and information writing designed to promote skills, products, services, or concepts. Writers craft such texts and materials as application essays, news releases, advertising copy, newsletters, oral presentations, marketing plans, and Web sites and other e-materials. Coursework will emphasize the fundamentals of good writing based on audience and context analysis and on a basic understanding of branding and marketing communication options. This is a communication-intensive course.",
+    "description": "This course engages students in persuasive and information writing designed to promote skills, products, services, or concepts. Writers craft such texts and materials as application essays, news releases, advertising copy, newsletters, oral presentations, marketing plans, and Web sites and other e-materials. Coursework will emphasize the fundamentals of good writing based on audience and context analysis and on a basic understanding of branding and marketing communication options.Â This is a communication-intensive course.Â",
     "name": "Writing for Promotion and Marketing",
     "offered": {
       "even": false,
@@ -7034,7 +7076,7 @@
   "Writing for the Screen": {
     "ID": "2110",
     "cross listed": [],
-    "description": "In this course students consider how different \"screens,\" from mobile apps to motion pictures, require different approaches to communication. Students learn to critically read, write, and create various genres of visual media, including educational, entertainment, experimental, informational, and commercial content for film, television, Internet, and mobile media. The course invites students to solve challenging communication problems, explore how media shape worldviews and identities, and reflect on how compelling stories bring about new ways of \"seeing.\"",
+    "description": "In this course students consider how different \"screens,\" from mobile apps to motion pictures, require different approaches to communication. Students learn to critically read, write, and create various genres of visual media, including educational, entertainment, experimental, informational, and commercial content for film, television, Internet, and mobile media. The course invites students to solve challenging communication problems, explore how media shape worldviews and identities, and reflect on how compelling stories bring about new ways of \"seeing.\" Â",
     "name": "Writing for the Screen",
     "offered": {
       "even": false,
@@ -7055,7 +7097,7 @@
   "Writing in Context": {
     "ID": "1110",
     "cross listed": [],
-    "description": "This course will help you experience the power of language and learn how to develop that power as you become more aware of your communicative choices. You will write for several genres, both formal and informal, creating each piece for a specific audience and purpose. You will learn to communicate effectively—orally, visually, and in writing—in a wide range of situations that will be crucial to success in your academic and professional careers.",
+    "description": "Â This course will help you experience the power of language and learn how to develop that power as you become more aware of your communicative choices. You will write for several genres, both formal and informal, creating each piece for a specific audience and purpose. You will learn to communicate effectivelyâorally, visually, and in writingâin a wide range of situations that will be crucial to success in your academic and professional careers.Â Â Â",
     "name": "Writing in Context",
     "offered": {
       "even": false,
@@ -7076,7 +7118,7 @@
   "X-Informatics": {
     "ID": "4400",
     "cross listed": [],
-    "description": "Informatics covers a broad range of disciplines addressing challenges in the explosion of data and information resources. X-informatics provides commonality for implementations in specific disciplines, e.g. X=astro, geo. Informatics' theoretical bases are information and computer science, cognitive science, social science, library science, aggregating these studies and adding the practice of information processing, and the engineering of information systems. This course grounds the material that students will learn in discipline areas by coursework and project assignments.",
+    "description": "Informatics covers a broad range of disciplines addressing challenges in the explosion of data and information resources. X-informatics provides commonality for implementations in specific disciplines, e.g. X=astro, geo. Informatics' theoretical bases are information and computer science, cognitive science, social science, library science, aggregating these studies and adding the practice of information processing, and the engineering of information systems. This course grounds the material that students will learn in discipline areas by coursework and project assignments.Â",
     "name": "X-Informatics",
     "offered": {
       "even": false,
