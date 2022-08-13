@@ -14,7 +14,7 @@
         
         <ul class="pathways-container">
             <v-tooltip
-                v-for="pathway in pathways"
+                v-for="pathway in filteredPathways"
                 :key="pathway"
 
                 bottom
@@ -61,6 +61,17 @@ export default {
         }
     },
     data() { return { pathwaysData: {} }; },
+    computed: {
+        filteredPathways() {
+            let output = [];
+            for(const pathway in this.pathways) {
+                if(this.pathwaysData[this.pathways[pathway]]) {
+                    output.push(this.pathways[pathway])
+                }
+            }
+            return output;
+        }
+    },
     created() {
         const year = this.$store.state.year;
         import('../data/json/' + year + '/pathways.json').then((val) => this.pathwaysData = Object.freeze(val));
