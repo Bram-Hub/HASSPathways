@@ -78,7 +78,7 @@ export default {
   border-radius: 20px;
   width: 480px;
   margin: 20px auto;
-  padding: 20px;
+    /* padding: 20px; */
 }
 #drop-area.highlight {
   border-color: #4CAF50;

@@ -4,6 +4,7 @@ let JSSoup = require('jssoup').default;
 function format_course_name(name){
   let new_name = name.toLowerCase()
   new_name = new_name.replace(" +", " ")
+  new_name = new_name.replace(",", "")
   new_name = new_name.replace("&amp;", "&")
 
   return new_name
@@ -79,9 +80,10 @@ function get_json_names(toparse){
     let subjid = properties["subj"].toUpperCase() + "-" + properties["ID"]
     courses.set(subjid, json_course_name)
     courses.set(json_course_name, subjid)
-    for(let cross_listed_subjid in properties["cross listed"]){
-      courses.set(cross_listed_subjid, json_course_name)
-    }
+
+    properties["cross listed"].forEach((xlisted_subjid) => {
+      courses.set(xlisted_subjid, json_course_name)
+    })
   }
 
   let names = []
