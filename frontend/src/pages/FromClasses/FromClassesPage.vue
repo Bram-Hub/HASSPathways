@@ -92,15 +92,13 @@
                     :headers="courseHeaders"
                     :items="filteredCourses"
                     :single-select="false"
-                    :disable-pagination="true"
                     :fixed-header="true"
 
                     sort-by="identifier"
                     item-key="name"
                     show-select
-                    class="elevation-1"
-                    hide-default-footer
-                    height="400px"
+                    class="elevation-1 pb-6"
+                    height="550px"
                     max-height="90%"
                     mobile-breakpoint="10"
                 >
@@ -124,7 +122,7 @@
                             </td>
                             <td>{{ item.identifier }}</td>
                             <td>{{ item.name }}</td>
-                            <td>
+                            <td style="text-align: right;">
                                 <SearchTableModifiers
                                     class="mt-4 class-card__subtitle__modifiers float-top"
                                     :course="item"
@@ -147,14 +145,17 @@ const TABLE_HEADERS = [
     {
         text: 'Course Code',
         value: 'identifier',
+        align: 'start',
         width: '130px'
     },
     {
         text: 'Name',
+        align: 'start',
         value: 'name'
     },
     {
         text: 'Properties',
+        align: 'right',
         value: ''
     }
 ];
