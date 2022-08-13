@@ -39,6 +39,8 @@ const store = new Vuex.Store({
         pathways: {},
         //List of classes taken, stores them in the format of DEPT-LEVEL
         classes: {},
+        // List of classes imported from their transcript
+        transcriptClasses: {},
         // List of pathways that have been bookmarked
         bookmarkedPathways: {},
         // The calendar year to display the information about
@@ -119,6 +121,18 @@ const store = new Vuex.Store({
             } else {
                 state.pathways[pathwayID] = {courses: [], bookmarked: false}
             }
+        },
+        importTranscriptClasses(state, imported_classes) {
+            state.transcriptClasses = {}
+            imported_classes.forEach((clazz) => {
+                state.transcriptClasses[clazz] = clazz
+            })
+        },
+        addTranscriptClasses(state) {
+            Object.values(state.transcriptClasses).forEach((clazz) => {
+                if(!state.classes[clazz])
+                    state.classes[clazz] = clazz
+            })
         }
 
     },

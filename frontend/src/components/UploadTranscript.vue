@@ -1,7 +1,17 @@
+
 <template>
     <div>
-        <div id="drop-area" style="text-align: center;">
-            <p>Drag and drop your unofficial transcript here.</p>
+        <div
+            id="drop-area"
+            ref="active"
+            style="text-align: center;"
+            @drop.prevent="onDrop"
+        >
+            <p
+                style="display: none;"
+            >
+                Drag and drop your unofficial transcript here.
+            </p>
             <input
                 id="fileInput"
                 ref="file"
@@ -18,25 +28,29 @@
                 Upload Transcript
             </v-btn>
         </div>
-        <span>
-            Imported Classes: {{imported_classes_str}}
-        </span>
+        <p class="pa-3">
+            <b>Imported Classes:</b> {{ imported_classes_str }}
+        </p>
     </div>
 </template>
 
 <script>
 // import UploadService from "../services/UploadFilesService";
-import JSSoup from 'jssoup';
+// import JSSoup from 'jssoup';
 import {parse_transcript} from "../../../backend/scrapers/transcript_scraper.js"
 export default {
     name: 'UploadTranscript',
     data() {
         return {
             transcript_file: null,
-            taken_courses: [],
-            imported_classes_str: ""
-
+            taken_courses: []
         };
+    },
+    computed: {
+        imported_classes_str() {
+            return Object.values(this.$store.state.transcriptClasses).join(", ")
+        }
+
     },
     methods: {
         uploadFile() {
@@ -49,9 +63,8 @@ export default {
                 var html = reader.result
                 taken_courses = parse_transcript(html)
                 // console.log("courses: " + taken_courses)
-                taken_courses.forEach(course => instance.$store.commit('addClass', course))
-                instance.$emit("imported_classes")
-                instance.imported_classes_str = taken_courses.join(", ")
+                instance.$store.commit("importTranscriptClasses", taken_courses)
+                // instance.imported_classes_str = taken_courses.join(", ")
             }
         }
     }
@@ -61,7 +74,7 @@ export default {
 
 <style scoped>
 #drop-area {
-  border: 2px dashed #ccc;
+    /* border: 2px dashed #ccc; useful if a drag and drop box is wanted, I couldn't be bothered to figure it out */
   border-radius: 20px;
   width: 480px;
   margin: 20px auto;

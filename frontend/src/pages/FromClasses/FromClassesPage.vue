@@ -18,12 +18,9 @@
                         style="border-radius: 0"
                     />
                     <v-spacer />
-
                     <!-- Clear confirmation modal -->
-
-
                     <v-dialog
-                        v-model="import_dialog"
+                        v-model="transcript_dialog"
                         width="700"
                         light
                         overlay-opacity="0.8"
@@ -54,6 +51,12 @@
                                 taken.
                                 <br>
                                 <br>
+                                If your classes already appear under the
+                                <b>Imported Classes</b> section below, simply
+                                press "SELECT IMPORTED CLASSES" to select them.
+                                No need to reupload your transcript!
+                                <br>
+                                <br>
                                 In order to upload your transcript:
                                 <br>
                                 1. Log onto <a href="https://sis.rpi.edu" target="_blank">https://sis.rpi.edu</a>.
@@ -68,13 +71,10 @@
                                 <br>
                                 6. Save the html document.
                                 <br>
-                                7. Drag and drop the html document into the box below or press "UPLOAD TRANSCRIPT".
+                                7. Press "UPLOAD TRANSCRIPT" and select your transcript file.
                             </v-card-text>
-                            <!-- https://codepen.io/dimitri-lopez/pen/gOeGRGK -->
                             <v-divider />
-                            <UploadTranscript
-                                @imported_classes="imported_classes"
-                            />
+                            <UploadTranscript />
                             <v-divider />
                             <v-card-actions>
                                 <v-spacer />
@@ -82,7 +82,7 @@
                                     color="secondary"
                                     class="font-weight-bold"
                                     text
-                                    @click="import_dialog = false"
+                                    @click="transcript_dialog = false"
                                 >
                                     Cancel
                                 </v-btn>
@@ -90,9 +90,9 @@
                                     color="primary"
                                     class="font-weight-bold"
                                     text
-                                    @click="import_dialog = false"
+                                    @click="transcript_dialog = false; selectTranscriptClasses()"
                                 >
-                                    Upload Classes
+                                    Select Imported Classes
                                 </v-btn>
                             </v-card-actions>
                         </v-card>
@@ -246,28 +246,20 @@ export default {
             breadcrumbs: breadcrumbs.from_classes_search,
             searchValue: '',
             courses: courseList,
+            courseList,
             courseHeaders: TABLE_HEADERS,
             selected: courseList.filter(course => this.$store.state.classes[course.name]),
             dialog: false,
-            import_dialog: false
+            transcript_dialog: false
         }
     },
     methods: {
-        imported_classes(){
-            console.log("attempting to update selected classes")
-            // console.log(courses)
-            const courseList = Object.values(courses).map(course => {
-                return {
-                    name: course.name,
-                    identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
-                };
-            })
-            this.selected = courseList.filter(course => this.$store.state.classes[course.name])
+        selectTranscriptClasses(){
+            this.$store.commit("addTranscriptClasses")
+            this.selected = this.courseList.filter(course => this.$store.state.classes[course.name])
         },
         // On row click, toggle selected state
         rowClick: function (item, select, isSelected) {
-            console.log("found it!")
-            console.log(this.$store)
             // Is selected is previous selection state
             // So if isSelected is false, then that means the box is checked
             select(!isSelected);
