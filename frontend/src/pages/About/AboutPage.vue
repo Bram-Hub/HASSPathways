@@ -4,7 +4,8 @@
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
             <h1>What are HASS integrative pathways?</h1>
             <p>Every undergraduate student at RPI must fulfill the pathway requirement. The pathway is a way to both guide students towards choosing courses and also enrich their HASS core. The pathways can vary from interdisciplinary to focused within one subject area. Each pathway consists of a 12-credit concentration of courses. </p>
-            <p>See <a style="text-decoration: none" href="http://catalog.rpi.edu/">RPI Catalog</a> for the official details about pathways.</p>
+            <p>See <a style="text-decoration: none" href="http://catalog.rpi.edu/">RPI Catalog</a> and <a style="text-decoration: none" href="https://hass.rpi.edu/advising/hass-integrative-pathways/">HASS website</a> for the official details about pathways.</p>
+
             <h2><i>Frequently Asked Questions</i></h2>
             <div class="buttons">
                 <v-btn @click="all">
