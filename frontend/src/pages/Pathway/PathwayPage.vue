@@ -281,7 +281,12 @@ export default {
     },
     created() {
         const year = this.$store.state.year;
-        import('../../data/json/' + year + '/pathways.json').then((val) => this.pathwaysData = Object.freeze(val));
+        import('../../data/json/' + year + '/pathways.json').then((val) => {this.pathwaysData = Object.freeze(val);
+            let pathwayID = this.$route.query.pathway;
+            if(!Object.keys(this.pathwaysData).includes(pathwayID)) {
+                this.$router.push('/404');
+            }
+        });
         import('../../data/json/' + year + '/courses.json').then((val) => {
             this.coursesData = Object.freeze(val);
             this.hasData = true;
