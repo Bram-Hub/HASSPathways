@@ -140,7 +140,6 @@ def get_pathway_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         name = pathway.xpath("./title/text()")[0].strip()
         data[name] = {}
         data[name]["name"] = name
-        print(name)
         desc = ""
         if len(pathway.xpath("./content/p/text()")) >= 1:
             desc = pathway.xpath("./content/p/text()")[0].strip()
@@ -162,7 +161,7 @@ def get_pathway_data(pathway_ids: List[str], catalog_id, year) -> Dict:
                 one_of_index += 1
             elif "minor" in anchor_name:
                 minors = list(filter(lambda x: x != "", \
-                 [minor.replace("Minor", "").replace("minor", "").strip() \
+                 [minor.replace("Minor", "").replace("minor", "").encode("ascii", "ignore").strip().decode() \
                  for minor in core.xpath("./content/descendant::*/text()")]))
                 data[name]["minor"] = minors
             else:

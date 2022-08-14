@@ -38,10 +38,12 @@ if __name__ == "__main__":
         json.dump(all_pathways[year], f, sort_keys=True, indent=2, ensure_ascii=True)
         f.close()
 
+    print("Starting to fill non-catalog courses")
     for year in years:
         path = '../../frontend/src/data/json/' + str(year)
         asyncio.run(fill_empty.fill(path))
-
+    print("Finished to fill non-catalog courses")
+    
     f = open('../../frontend/src/data/json/' + 'years.json', 'w');
     json.dump(years, f, sort_keys=True, indent=2, ensure_ascii=True)
 

@@ -92,15 +92,13 @@
                     :headers="courseHeaders"
                     :items="filteredCourses"
                     :single-select="false"
-                    :disable-pagination="true"
                     :fixed-header="true"
 
                     sort-by="identifier"
                     item-key="name"
                     show-select
-                    class="elevation-1"
-                    hide-default-footer
-                    height="400px"
+                    class="elevation-1 pb-6"
+                    height="550px"
                     max-height="90%"
                     mobile-breakpoint="10"
                 >
@@ -124,7 +122,7 @@
                             </td>
                             <td>{{ item.identifier }}</td>
                             <td>{{ item.name }}</td>
-                            <td>
+                            <td style="text-align: right;">
                                 <SearchTableModifiers
                                     class="mt-4 class-card__subtitle__modifiers float-top"
                                     :course="item"
@@ -147,14 +145,17 @@ const TABLE_HEADERS = [
     {
         text: 'Course Code',
         value: 'identifier',
+        align: 'start',
         width: '130px'
     },
     {
         text: 'Name',
+        align: 'start',
         value: 'name'
     },
     {
         text: 'Properties',
+        align: 'right',
         value: ''
     }
 ];
@@ -208,14 +209,19 @@ export default {
                 str_array[1] += str_array[i]
             }
             let searchText = str_array.join("!")
-            let words = searchText.split("!")
+            let words = searchText.split(/ *! */)
             if(words.length == 1) words.push("")
-            let search_words = words[0].split(" ")
-            let negated_words = words[1].split(" ")
+            let search_words = words[0].split(/ +/)
+            let negated_words = words[1].split(/ +/)
+            // console.log("search_words: " + search_words)
+            // console.log("negated_words: " + negated_words)
             this.add_look_term(search_words, "(?=.*")  //wrap words in a lookahead
             this.add_look_term(negated_words, "(?!.*") //wrap words in a negative lookahead
+            // console.log("search: " + negated_words.join("") + search_words.join(""))
+            // console.log("-----------------")
 
-            const re = new RegExp(negated_words.join("") + search_words.join(""), 'i') // i is to ignore case sensitive search
+
+            const re = new RegExp(search_words.join("") + negated_words.join(""), 'i') // i is to ignore case sensitive search
             return this.courses.filter(course => course ? re.test(course.search_string) : false)
         }
     },
