@@ -123,6 +123,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
             course_name = course.xpath("./content/name/text()")[0].strip()
             fields = course.xpath("./content/field")
             fall = False
+            UIA = False
             spring = False
             summer = False
             even = False
@@ -151,6 +152,8 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
                             even = True
                         if "odd" in field_text.lower():
                             odd = True
+                        if "availability of instructor" in field_text.lower():
+                            UIA = True
                         offered_text = field_text
                     elif field.get('type')[-3:] == str(base - 13):
                         if len(field_text) > 0:
@@ -166,6 +169,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
                     "spring": spring,
                     "summer": summer,
                     "odd": odd,
+                    "uia": UIA,
                     "even": even,
                     "text": offered_text
                 },

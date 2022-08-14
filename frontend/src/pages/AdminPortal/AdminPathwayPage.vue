@@ -70,6 +70,14 @@
                         />
                     </div>
                 </template> 
+                <template #item.uia=" {item} ">
+                    <div style="display: flex; justify-content: center">
+                        <v-checkbox
+                            v-model="item.offered.uia"
+                            :ripple="false"
+                        />
+                    </div>
+                </template>
                 <template #item.CI="{ item }">
                     <div style="display: flex; justify-content: center">
                         <v-checkbox

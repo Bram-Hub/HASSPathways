@@ -10,7 +10,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1020"
@@ -33,7 +34,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-2230"
@@ -56,7 +58,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -77,7 +80,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-2230"
@@ -100,7 +104,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -121,7 +126,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -144,7 +150,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability."
+      "text": "Upon availability.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-4070"
@@ -167,7 +174,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -188,7 +196,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1200"
@@ -211,7 +220,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "COGS-2340"
@@ -234,7 +244,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term even-numbered years."
+      "text": "Spring term even-numbered years.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -255,7 +266,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -276,7 +288,8 @@
       "odd": true,
       "spring": false,
       "summer": false,
-      "text": "Fall term odd-numbered years"
+      "text": "Fall term odd-numbered years",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -297,7 +310,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-4060"
@@ -320,7 +334,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200",
@@ -344,7 +359,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -365,7 +381,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -386,7 +403,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "ARTS-1020"
@@ -409,7 +427,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -430,7 +449,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -451,7 +471,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -472,7 +493,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -493,7 +515,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200",
@@ -517,12 +540,13 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200",
-      "ECON-1200",
-      "PSYC-2310"
+      "PSYC-2310",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -544,7 +568,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -567,7 +592,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term even-numbered years."
+      "text": "Spring term even-numbered years.",
+      "uia": false
     },
     "prerequisites": [
       "STSS-1110"
@@ -590,7 +616,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -611,7 +638,8 @@
       "odd": false,
       "spring": true,
       "summer": true,
-      "text": "Fall, spring, and summer terms annually."
+      "text": "Fall, spring, and summer terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -632,7 +660,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -653,7 +682,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -674,7 +704,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term even-numbered years."
+      "text": "Spring term even-numbered years.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -695,7 +726,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -716,7 +748,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "LANG-1410"
@@ -739,7 +772,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "LANG-2410"
@@ -762,7 +796,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "LANG-4420"
@@ -785,7 +820,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "LANG-4430"
@@ -810,7 +846,8 @@
       "odd": false,
       "spring": false,
       "summer": true,
-      "text": "Summer term annually."
+      "text": "Summer term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-4330"
@@ -835,7 +872,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PHIL-2120"
@@ -858,7 +896,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -881,11 +920,12 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": false,
@@ -905,7 +945,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -926,7 +967,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -947,7 +989,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-4380"
@@ -970,7 +1013,8 @@
       "odd": true,
       "spring": true,
       "summer": false,
-      "text": "Spring term odd-numbered years."
+      "text": "Spring term odd-numbered years.",
+      "uia": false
     },
     "prerequisites": [
       "PHIL-2140"
@@ -995,7 +1039,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1016,7 +1061,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1037,11 +1083,12 @@
       "odd": true,
       "spring": true,
       "summer": false,
-      "text": "Spring term odd-numbered years."
+      "text": "Spring term odd-numbered years.",
+      "uia": false
     },
     "prerequisites": [
-      "STSS-2300",
-      "STSH-2500"
+      "STSH-2500",
+      "STSS-2300"
     ],
     "properties": {
       "CI": false,
@@ -1061,7 +1108,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "ECON-2010"
@@ -1084,7 +1132,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term even-numbered years."
+      "text": "Spring term even-numbered years.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1020"
@@ -1107,7 +1156,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1128,7 +1178,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "COMM-4340"
@@ -1151,7 +1202,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1172,7 +1224,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1193,7 +1246,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1216,7 +1270,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1237,7 +1292,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "COGS-2340"
@@ -1262,7 +1318,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -1283,7 +1340,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1304,7 +1362,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1325,7 +1384,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ITWS-4350"
@@ -1348,7 +1408,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1369,7 +1430,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1392,7 +1454,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1415,7 +1478,8 @@
       "odd": false,
       "spring": false,
       "summer": true,
-      "text": "Summer term annually."
+      "text": "Summer term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1436,7 +1500,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1457,7 +1522,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1478,7 +1544,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1610"
@@ -1501,7 +1568,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1522,7 +1590,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "IHSS-1200",
@@ -1546,7 +1615,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1567,7 +1637,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1588,7 +1659,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1609,7 +1681,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1630,7 +1703,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1653,7 +1727,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1674,7 +1749,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -1697,7 +1773,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1200"
@@ -1720,12 +1797,13 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200",
-      "ECON-1200",
-      "PSYC-2310"
+      "PSYC-2310",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -1745,7 +1823,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "ECON-2010"
@@ -1768,7 +1847,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200",
@@ -1792,7 +1872,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200",
@@ -1816,7 +1897,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200",
@@ -1840,7 +1922,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "IHSS-1200",
@@ -1864,7 +1947,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200",
@@ -1888,7 +1972,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "IHSS-1200",
@@ -1912,7 +1997,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -1935,11 +2021,12 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
-      "STSS-2300",
-      "STSH-S 11"
+      "STSH-S 11",
+      "STSS-2300"
     ],
     "properties": {
       "CI": true,
@@ -1959,11 +2046,12 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability  of instructor."
+      "text": "Upon availability  of instructor.",
+      "uia": false
     },
     "prerequisites": [
-      "STSS-1110",
-      "STSH-1110"
+      "STSH-1110",
+      "STSS-1110"
     ],
     "properties": {
       "CI": false,
@@ -1985,7 +2073,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2006,11 +2095,12 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
-      "STSS-1110",
-      "STSH-1110"
+      "STSH-1110",
+      "STSS-1110"
     ],
     "properties": {
       "CI": false,
@@ -2030,7 +2120,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "IHSS-1200",
@@ -2054,11 +2145,12 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
-      "STSS-2700",
-      "IHSS-1350"
+      "IHSS-1350",
+      "STSS-2700"
     ],
     "properties": {
       "CI": false,
@@ -2080,7 +2172,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -2101,7 +2194,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2122,7 +2216,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "ECON-2010"
@@ -2145,7 +2240,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall or spring term annually."
+      "text": "Fall or spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2187,7 +2283,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon sufficient demand."
+      "text": "Upon sufficient demand.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2208,7 +2305,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ECON-2010"
@@ -2233,7 +2331,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "GSAS-1040",
@@ -2257,7 +2356,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2278,7 +2378,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2299,7 +2400,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2320,7 +2422,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2341,7 +2444,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -2362,7 +2466,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-4740"
@@ -2385,7 +2490,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2406,7 +2512,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2427,7 +2534,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2448,7 +2556,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2469,7 +2578,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2490,7 +2600,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2511,7 +2622,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-4060"
@@ -2534,7 +2646,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "GSAS-4520"
@@ -2557,7 +2670,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "COMM-4240",
@@ -2581,11 +2695,12 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
-      "STSS-1110",
-      "STSH-1110"
+      "STSH-1110",
+      "STSS-1110"
     ],
     "properties": {
       "CI": false,
@@ -2605,7 +2720,8 @@
       "odd": false,
       "spring": true,
       "summer": true,
-      "text": "Fall, spring, and summer terms annually."
+      "text": "Fall, spring, and summer terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2626,7 +2742,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2647,7 +2764,8 @@
       "odd": true,
       "spring": true,
       "summer": false,
-      "text": "Spring term odd-numbered years."
+      "text": "Spring term odd-numbered years.",
+      "uia": false
     },
     "prerequisites": [
       "STSS-2300"
@@ -2670,7 +2788,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1020"
@@ -2693,7 +2812,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2714,7 +2834,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -2735,7 +2856,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200",
@@ -2759,7 +2881,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2780,7 +2903,8 @@
       "odd": false,
       "spring": true,
       "summer": true,
-      "text": "Fall, spring, and summer terms annually."
+      "text": "Fall, spring, and summer terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2801,7 +2925,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2822,7 +2947,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term, annually"
+      "text": "Spring term, annually",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2864,7 +2990,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2885,11 +3012,12 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
-      "IHSS-1410",
-      "STSS-2520"
+      "STSS-2520",
+      "IHSS-1410"
     ],
     "properties": {
       "CI": true,
@@ -2909,12 +3037,13 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
-      "IHSS-1410",
       "STSS-2520",
-      "STSH-S 11"
+      "STSH-S 11",
+      "IHSS-1410"
     ],
     "properties": {
       "CI": false,
@@ -2934,12 +3063,13 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
-      "IHSS-1420",
       "STSH-S 11",
-      "STSS-2330"
+      "STSS-2330",
+      "IHSS-1420"
     ],
     "properties": {
       "CI": false,
@@ -2961,7 +3091,8 @@
       "odd": true,
       "spring": false,
       "summer": false,
-      "text": "Fall term odd-numbered years."
+      "text": "Fall term odd-numbered years.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -2982,7 +3113,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon sufficient demand."
+      "text": "Upon sufficient demand.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-2220"
@@ -3005,7 +3137,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -3028,7 +3161,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3049,7 +3183,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -3074,7 +3209,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3095,7 +3231,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -3118,7 +3255,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -3139,7 +3277,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "COMM-2660"
@@ -3162,7 +3301,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3183,7 +3323,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "ITWS-2210"
@@ -3206,7 +3347,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3227,7 +3369,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring term annually."
+      "text": "Fall and spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-2010"
@@ -3250,7 +3393,8 @@
       "odd": false,
       "spring": false,
       "summer": true,
-      "text": "Summer term annually."
+      "text": "Summer term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3271,7 +3415,8 @@
       "odd": true,
       "spring": true,
       "summer": false,
-      "text": "Spring term odd-numbered years."
+      "text": "Spring term odd-numbered years.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3292,7 +3437,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-4380"
@@ -3315,7 +3461,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ITWS-1100"
@@ -3338,7 +3485,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1020"
@@ -3361,7 +3509,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1200"
@@ -3384,7 +3533,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term even-numbered years."
+      "text": "Spring term even-numbered years.",
+      "uia": false
     },
     "prerequisites": [
       "PHIL-2140"
@@ -3407,7 +3557,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200"
@@ -3430,7 +3581,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200"
@@ -3453,7 +3605,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term even-numbered years."
+      "text": "Fall term even-numbered years.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1030"
@@ -3476,7 +3629,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "IHSS-1200",
@@ -3500,7 +3654,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -3521,7 +3676,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3544,11 +3700,12 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": false,
@@ -3570,7 +3727,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3591,7 +3749,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall or spring term annually."
+      "text": "Fall or spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3612,7 +3771,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall or spring term annually."
+      "text": "Fall or spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3633,7 +3793,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3654,7 +3815,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3675,7 +3837,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3696,7 +3859,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3717,7 +3881,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Offered upon availability of instructor; typically, once a year."
+      "text": "Offered upon availability of instructor; typically, once a year.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -3738,7 +3903,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3759,7 +3925,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3780,7 +3947,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3801,7 +3969,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -3822,7 +3991,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -3847,7 +4017,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3868,7 +4039,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "STSS-1110",
@@ -3893,7 +4065,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term even-numbered years."
+      "text": "Spring term even-numbered years.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3914,7 +4087,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3935,7 +4109,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term even-numbered years."
+      "text": "Fall term even-numbered years.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3956,7 +4131,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -3977,7 +4153,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -3998,7 +4175,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200",
@@ -4022,7 +4200,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4043,7 +4222,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -4064,7 +4244,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -4087,7 +4268,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "COGS-4420"
@@ -4110,7 +4292,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1200"
@@ -4133,7 +4316,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4154,7 +4338,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -4175,7 +4360,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "ITWS-2110"
@@ -4198,7 +4384,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ECON-2010"
@@ -4221,11 +4408,12 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": false,
@@ -4245,7 +4433,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -4266,7 +4455,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4289,7 +4479,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "STSS-2520"
@@ -4312,7 +4503,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4333,7 +4525,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ECON-2010"
@@ -4358,7 +4551,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4379,7 +4573,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4400,7 +4595,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200",
@@ -4426,7 +4622,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4447,7 +4644,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -4470,7 +4668,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-2020"
@@ -4493,7 +4692,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4514,7 +4714,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1380"
@@ -4537,7 +4738,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-2380"
@@ -4560,7 +4762,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4581,7 +4784,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-2020"
@@ -4604,7 +4808,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "IHSS-1200",
@@ -4628,7 +4833,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4649,7 +4855,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-2500"
@@ -4672,7 +4879,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "ECON-2020"
@@ -4695,7 +4903,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1200"
@@ -4718,7 +4927,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "PSYC-1200"
@@ -4741,7 +4951,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4762,7 +4973,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4783,7 +4995,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "PHIL-2140"
@@ -4806,7 +5019,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall or spring term annually."
+      "text": "Fall or spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4827,7 +5041,8 @@
       "odd": true,
       "spring": true,
       "summer": false,
-      "text": "Spring term odd-numbered years."
+      "text": "Spring term odd-numbered years.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4848,7 +5063,8 @@
       "odd": true,
       "spring": true,
       "summer": false,
-      "text": "Spring term odd-numbered years."
+      "text": "Spring term odd-numbered years.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4869,7 +5085,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4890,7 +5107,8 @@
       "odd": false,
       "spring": true,
       "summer": true,
-      "text": "Fall, spring, and summer terms annually."
+      "text": "Fall, spring, and summer terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4911,7 +5129,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4932,7 +5151,8 @@
       "odd": false,
       "spring": true,
       "summer": true,
-      "text": "Fall, spring, and summer terms annually."
+      "text": "Fall, spring, and summer terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4953,7 +5173,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4974,7 +5195,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -4995,7 +5217,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5016,7 +5239,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "COMM-2520",
@@ -5040,7 +5264,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -5063,7 +5288,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -5086,7 +5312,8 @@
       "odd": false,
       "spring": false,
       "summer": true,
-      "text": "Fall and summer terms annually."
+      "text": "Fall and summer terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5107,7 +5334,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -5130,7 +5358,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "ECON-2010"
@@ -5155,7 +5384,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5176,7 +5406,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -5197,7 +5428,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5218,7 +5450,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5239,7 +5472,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5260,7 +5494,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -5283,7 +5518,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5304,7 +5540,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5325,7 +5562,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5346,7 +5584,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5367,7 +5606,8 @@
       "odd": true,
       "spring": true,
       "summer": false,
-      "text": "Spring term odd-numbered years."
+      "text": "Spring term odd-numbered years.",
+      "uia": false
     },
     "prerequisites": [
       "COMM-2520"
@@ -5390,7 +5630,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5411,7 +5652,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5432,7 +5674,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5453,11 +5696,12 @@
       "odd": false,
       "spring": true,
       "summer": true,
-      "text": "Fall, spring, and summer terms annually."
+      "text": "Fall, spring, and summer terms annually.",
+      "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": true,
@@ -5477,7 +5721,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-2310"
@@ -5500,7 +5745,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5523,7 +5769,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "STSS-2300"
@@ -5546,7 +5793,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term even-numbered years."
+      "text": "Fall term even-numbered years.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1030"
@@ -5569,7 +5817,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-2340"
@@ -5594,7 +5843,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "STSS-4980"
@@ -5619,7 +5869,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term even-numbered years."
+      "text": "Fall term even-numbered years.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5640,7 +5891,8 @@
       "odd": true,
       "spring": false,
       "summer": false,
-      "text": "Fall term odd-numbered years."
+      "text": "Fall term odd-numbered years.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1030"
@@ -5663,7 +5915,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5684,7 +5937,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5707,7 +5961,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5728,7 +5983,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "PHIL-1110"
@@ -5751,7 +6007,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5772,7 +6029,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-2210"
@@ -5795,7 +6053,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term even-numbered years."
+      "text": "Spring term even-numbered years.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5816,7 +6075,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "ECON-4570"
@@ -5839,7 +6099,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5860,7 +6121,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -5885,11 +6147,12 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term even-numbered years"
+      "text": "Fall term even-numbered years",
+      "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "IHSS-1150"
+      "IHSS-1150",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": true,
@@ -5911,7 +6174,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5932,7 +6196,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -5955,7 +6220,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5976,7 +6242,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -5997,7 +6264,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6018,7 +6286,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6039,7 +6308,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-2700"
@@ -6062,7 +6332,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6083,7 +6354,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6104,7 +6376,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -6127,7 +6400,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6150,7 +6424,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -6173,7 +6448,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [
       "ECON-2010"
@@ -6196,7 +6472,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6217,7 +6494,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "STSS-2300"
@@ -6240,7 +6518,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6261,7 +6540,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6282,7 +6562,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -6303,7 +6584,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "STSS-2300"
@@ -6326,7 +6608,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6347,7 +6630,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6368,7 +6652,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [
       "COGS-2340"
@@ -6391,7 +6676,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6412,7 +6698,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6433,7 +6720,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6454,7 +6742,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -6475,7 +6764,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [
       "IHSS-1200",
@@ -6499,7 +6789,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6520,7 +6811,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6541,7 +6833,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6562,7 +6855,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [
       "PSYC-1200"
@@ -6585,7 +6879,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6606,7 +6901,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6627,7 +6923,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6648,7 +6945,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": ""
+      "text": "",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6669,7 +6967,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-4380"
@@ -6692,7 +6991,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6713,7 +7013,8 @@
       "odd": false,
       "spring": true,
       "summer": true,
-      "text": "Fall, spring, and summer terms annually."
+      "text": "Fall, spring, and summer terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6734,7 +7035,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6755,7 +7057,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability of instructor."
+      "text": "Upon availability of instructor.",
+      "uia": true
     },
     "prerequisites": [],
     "properties": {
@@ -6776,7 +7079,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6797,7 +7101,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6818,7 +7123,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6839,7 +7145,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ITWS-2110"
@@ -6862,7 +7169,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "ITWS-1100"
@@ -6885,7 +7193,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6906,7 +7215,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6927,7 +7237,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6948,7 +7259,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term even-numbered years."
+      "text": "Spring term even-numbered years.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -6969,7 +7281,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Upon availability."
+      "text": "Upon availability.",
+      "uia": false
     },
     "prerequisites": [
       "ARTS-1030"
@@ -6992,7 +7305,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -7013,11 +7327,12 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
-      "WRIT-2330",
-      "GSAS-2520"
+      "GSAS-2520",
+      "WRIT-2330"
     ],
     "properties": {
       "CI": true,
@@ -7037,7 +7352,8 @@
       "odd": false,
       "spring": false,
       "summer": false,
-      "text": "Fall term annually."
+      "text": "Fall term annually.",
+      "uia": false
     },
     "prerequisites": [
       "COMM-4240"
@@ -7060,7 +7376,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [
       "COMM-2520",
@@ -7084,7 +7401,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -7105,7 +7423,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Fall and spring terms annually."
+      "text": "Fall and spring terms annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
@@ -7126,7 +7445,8 @@
       "odd": false,
       "spring": true,
       "summer": false,
-      "text": "Spring term annually."
+      "text": "Spring term annually.",
+      "uia": false
     },
     "prerequisites": [],
     "properties": {
