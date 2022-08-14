@@ -1008,8 +1008,8 @@
       "uia": true
     },
     "prerequisites": [
-      "PSYC-2120",
-      "PHIL-2120"
+      "PHIL-2120",
+      "PSYC-2120"
     ],
     "properties": {
       "CI": false,

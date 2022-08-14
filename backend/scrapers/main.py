@@ -46,5 +46,5 @@ if __name__ == "__main__":
     
     f = open('../../frontend/src/data/json/' + 'years.json', 'w');
     json.dump(years, f, sort_keys=True, indent=2, ensure_ascii=True)
-
+    f.close()
     category_assembler.assemble('../../frontend/src/data/json/')

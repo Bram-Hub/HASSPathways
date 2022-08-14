@@ -167,7 +167,7 @@ def get_pathway_data(pathway_ids: List[str], catalog_id, year) -> Dict:
             else:
                 courses = parse_courses(core, name, year)
                 data[name]["Remaining"] = courses
-                data[name]["remaining_header"] = core.xpath("./title/text()")[0].strip()
+                data[name]["remaining_header"] = core.xpath("./title/text()")[0].strip().encode("ascii", "ignore").strip().decode()
 
         # get rid of duplicates (if it shows up in required, we don't want it to be optional too)
         if "Required" in data[name]:

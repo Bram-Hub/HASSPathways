@@ -598,7 +598,7 @@
       "Linguistics"
     ],
     "name": "Linguistics",
-    "remaining_header": "Choose remaining credits from the following\u200b\u200b\u200b\u200b, with at least 4 credits at the 4000-level:"
+    "remaining_header": "Choose remaining credits from the following, with at least 4 credits at the 4000-level:"
   },
   "Literature and Creative Writing": {
     "Remaining": {
@@ -671,7 +671,7 @@
       "Philosophy of Logic, Computation, and Mind"
     ],
     "name": "Logical Thinking",
-    "remaining_header": "Choose remaining credits from the following\u200b\u200b\u200b\u200b, with at least 4 credits at the 4000 level:"
+    "remaining_header": "Choose remaining credits from the following, with at least 4 credits at the 4000 level:"
   },
   "Media and Culture": {
     "Remaining": {
@@ -1166,6 +1166,6 @@
       "Well-being"
     ],
     "name": "Well-being: Body and Mind",
-    "remaining_header": "Choose remaining credits from the following\u200b\u200b\u200b\u200b, with at least 4 credits at the 4000 level:"
+    "remaining_header": "Choose remaining credits from the following, with at least 4 credits at the 4000 level:"
   }
 }

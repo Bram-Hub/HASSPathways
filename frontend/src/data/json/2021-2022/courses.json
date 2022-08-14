@@ -341,8 +341,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1030"
+      "ARTS-1030",
+      "IHSS-1030"
     ],
     "properties": {
       "CI": false,
@@ -434,8 +434,8 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
     ],
     "properties": {
       "CI": false,
@@ -483,8 +483,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": false,
@@ -691,8 +691,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": true,
@@ -716,8 +716,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": false,
@@ -791,9 +791,9 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1160",
+      "STSO- 251",
       "PHIL-1110",
-      "STSO- 251"
+      "IHSS-1160"
     ],
     "properties": {
       "CI": true,
@@ -1126,8 +1126,8 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
     ],
     "properties": {
       "CI": false,
@@ -1309,8 +1309,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": false,
@@ -1854,8 +1854,8 @@
       "uia": true
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": false,
@@ -2082,9 +2082,9 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
       "PSYC-2310",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": false,
@@ -2132,8 +2132,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": false,
@@ -2157,8 +2157,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": false,
@@ -2182,8 +2182,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": false,
@@ -2207,8 +2207,8 @@
       "uia": true
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": false,
@@ -2256,8 +2256,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": true,
@@ -2281,8 +2281,8 @@
       "uia": true
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": true,
@@ -2376,8 +2376,8 @@
       "uia": false
     },
     "prerequisites": [
-      "STSO-1110",
-      "IHSS-1110"
+      "IHSS-1110",
+      "STSO-1110"
     ],
     "properties": {
       "CI": true,
@@ -2401,8 +2401,8 @@
       "uia": true
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": true,
@@ -2567,8 +2567,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": true,
@@ -3004,8 +3004,8 @@
       "uia": false
     },
     "prerequisites": [
-      "COMM-4240",
-      "GSAS-2520"
+      "GSAS-2520",
+      "COMM-4240"
     ],
     "properties": {
       "CI": false,
@@ -3169,8 +3169,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": true,
@@ -3304,8 +3304,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1410",
-      "STSO- 111"
+      "STSO- 111",
+      "IHSS-1410"
     ],
     "properties": {
       "CI": true,
@@ -3329,8 +3329,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1410",
-      "STSO- 111"
+      "STSO- 111",
+      "IHSS-1410"
     ],
     "properties": {
       "CI": false,
@@ -3891,8 +3891,8 @@
       "uia": true
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": true,
@@ -3918,8 +3918,8 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
     ],
     "properties": {
       "CI": false,
@@ -4387,8 +4387,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": false,
@@ -4644,8 +4644,8 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
     ],
     "properties": {
       "CI": false,
@@ -4829,8 +4829,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": false,
@@ -5018,8 +5018,8 @@
       "uia": true
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": true,
@@ -5905,8 +5905,8 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
     ],
     "properties": {
       "CI": true,
@@ -5976,8 +5976,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1030"
+      "ARTS-1030",
+      "IHSS-1030"
     ],
     "properties": {
       "CI": false,
@@ -6960,8 +6960,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "properties": {
       "CI": false,
