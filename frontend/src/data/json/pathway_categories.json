@@ -1,7 +1,7 @@
 [
   {
     "image": "ARTS.jpg",
-    "name": "ARTS",
+    "name": "Art",
     "pathways": [
       "Arts History, Theory, and Criticism",
       "Electronic Arts",
@@ -16,7 +16,7 @@
   },
   {
     "image": "COGS.jpg",
-    "name": "COGS",
+    "name": "Cognitive Science",
     "pathways": [
       "Artificial Intelligence",
       "Behavioral and Cognitive Neuroscience",
@@ -29,7 +29,7 @@
   },
   {
     "image": "COMM.jpg",
-    "name": "COMM",
+    "name": "Communication and Media",
     "pathways": [
       "Graphic Design",
       "Interactive Media/Data Design",
@@ -38,7 +38,7 @@
   },
   {
     "image": "ECON.jpg",
-    "name": "ECON",
+    "name": "Economics",
     "pathways": [
       "Economics",
       "Economics of Banking and Finance",
@@ -52,7 +52,7 @@
   },
   {
     "image": "INTE.jpg",
-    "name": "INTE",
+    "name": "Interdisciplinary",
     "pathways": [
       "Creative Design and Innovation",
       "Environmental Futures",
@@ -69,7 +69,7 @@
   },
   {
     "image": "LANG.jpg",
-    "name": "LANG",
+    "name": "Language and Literature",
     "pathways": [
       "Chinese Language",
       "Foreign Language",
@@ -80,7 +80,7 @@
   },
   {
     "image": "MAJR.jpg",
-    "name": "MAJR",
+    "name": "Major Restricted",
     "pathways": [
       "Design, Innovation, and Society",
       "Game Studies",
@@ -89,7 +89,7 @@
   },
   {
     "image": "STSO.jpg",
-    "name": "STSO",
+    "name": "Science and Technology Studies",
     "pathways": [
       "Ethics, Integrity, and Social Responsibility",
       "History",

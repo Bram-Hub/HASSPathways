@@ -48,11 +48,22 @@ def assemble(path):
             pairings[p] = tmp
             cats.add(tmp)
 
+    subj_to_name = {
+        "COMM": "Communication and Media",
+        "COGS": "Cognitive Science",
+        "ECON": "Economics",
+        "ARTS": "Art",
+        "INTE": "Interdisciplinary",
+        "STSO": "Science and Technology Studies",
+        "MAJR": "Major Restricted",
+        "LANG": "Language and Literature"
+    }
+
     pathway_cats = {}
     for cat in cats:
         pathway_cats[cat] = {
             'image': cat + '.jpg',
-            'name': cat,
+            'name': subj_to_name[cat],
             'pathways': []
         }
 
