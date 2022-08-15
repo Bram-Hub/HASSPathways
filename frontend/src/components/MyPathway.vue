@@ -64,10 +64,10 @@
                     <p class="pa-0 mb-2">
                         <v-tooltip v-if="hasPreReq(course.name)" bottom>
                             <template #activator="{on, attrs}">
-                                <v-icon 
-                                    v-bind="attrs" 
+                                <v-icon
+                                    v-bind="attrs"
                                     dense
-                                    class="float-right" 
+                                    class="float-right"
                                     v-on="on"
                                 >
                                     mdi-alert
@@ -84,7 +84,7 @@
                         <small v-else style="opacity: 0.8">
                             No data available
                         </small>
-                        
+
 
                     </p>
                 </span>
@@ -233,7 +233,7 @@ export default {
         overflow-y: auto;
         background-color: rgba(0, 0, 0, 0.1); // TODO: padding for title, make theme dependent
         height: 100%;
-        
+
         .course-items-container {
             padding-top: 12px;
             margin-bottom: 12px;

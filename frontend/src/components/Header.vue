@@ -19,7 +19,7 @@
             </v-layout>
         </v-container>
     </v-app-bar>
-</template>       
+</template>
 
 <script>
 import DarkLightModeButton from './DarkLightModeButton.vue'
