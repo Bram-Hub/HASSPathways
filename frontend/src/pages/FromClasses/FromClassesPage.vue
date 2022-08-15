@@ -320,15 +320,8 @@ export default {
         selectTranscriptClasses(){
             this.$store.commit("addTranscriptClasses")
 
-            // TODO The rest of this code is just ripped from created(). I
-            // couldn't figure out for the life of me of how to get to computed()
-            // to update this.selected.
-            const year = this.$store.state.year;
-            import('../../data/json/' + year + '/courses.json').then((val) => {
-                this.coursesData = Object.freeze(val);
-                let temp = this.courses.filter(course => course != null);
-                this.selected = temp.filter(course => this.$store.state.classes[course.name]);
-            });
+            let temp = this.courses.filter(course => course != null);
+            this.selected = temp.filter(course => this.$store.state.classes[course.name]);
         },
         // On row click, toggle selected state
         rowClick: function (item, select, isSelected) {
