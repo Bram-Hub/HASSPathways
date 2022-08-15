@@ -16,7 +16,7 @@ async def get_details(course, year):
 
     async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(limit=5)) as session:
         async with session.post(
-                "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?",
+                "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse",
                 data = f"term_in={fall}&subj_in={course[1][:4]}&crse_in={course[1][-4:]}&schd_in=L"
         ) as request:
             html = await request.text()

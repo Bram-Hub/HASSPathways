@@ -74,7 +74,7 @@
   "3D Digital Modeling": {
     "ID": "2230",
     "cross listed": [],
-    "description": "A foundational course in concepts and techniques in digital 3D, for animation, games, and digital art. This course focuses on methods and aesthetics in creating digital 3D objects, spaces, and characters, including modeling, texturing, and lighting, as preparation for further courses in the 3D Animation curriculum. Â",
+    "description": "A foundational course in concepts and techniques in digital 3D, for animation, games, and digital art. This course focuses on methods and aesthetics in creating digital 3D objects, spaces, and characters, including modeling, texturing, and lighting, as preparation for further courses in the 3D Animation curriculum.",
     "name": "3D Digital Modeling",
     "offered": {
       "even": false,
@@ -96,7 +96,7 @@
   "3D Technical Direction": {
     "ID": "4280",
     "cross listed": [],
-    "description": "In 3D Animation, the technical director (or \"TD\") covers roles including character rigging, lighting setup, custom tools, and other parts of the pipeline that involve the technical work needed to support artistic creativity.Â In this course we will focus on rigging, covering basic and intermediate rigging techniques for characters in Maya including bipeds, facial rigs, motion capture and game engine pipelines and basic scripting in MEL and Python.Â We will emphasize an animator-friendly approach to rig design, utilizing both the technical capabilities of Maya and good UI and UX principles to produce rigs that are both powerful and easy to use. Â",
+    "description": "In 3D Animation, the technical director (or \"TD\") covers roles including character rigging, lighting setup, custom tools, and other parts of the pipeline that involve the technical work needed to support artistic creativity. In this course we will focus on rigging, covering basic and intermediate rigging techniques for characters in Maya including bipeds, facial rigs, motion capture and game engine pipelines and basic scripting in MEL and Python. We will emphasize an animator-friendly approach to rig design, utilizing both the technical capabilities of Maya and good UI and UX principles to produce rigs that are both powerful and easy to use.",
     "name": "3D Technical Direction",
     "offered": {
       "even": false,
@@ -329,7 +329,7 @@
   "Advanced Video Media Studio": {
     "ID": "4050",
     "cross listed": [],
-    "description": "The course is designed to help students continue to develop as media-makers/filmmakers. Students will work on short video projects that are shot in the studio and in the field. Studio experimentations, including projection work, multi-camera production, generating ideas, and realizing a well-developed final project. Students write their own scripts, learn new technical skills and direct videos.Â",
+    "description": "The course is designed to help students continue to develop as media-makers/filmmakers. Students will work on short video projects that are shot in the studio and in the field. Studio experimentations, including projection work, multi-camera production, generating ideas, and realizing a well-developed final project. Students write their own scripts, learn new technical skills and direct videos.",
     "name": "Advanced Video Media Studio",
     "offered": {
       "even": false,
@@ -341,8 +341,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-1030",
-      "IHSS-1030"
+      "IHSS-1030",
+      "ARTS-1030"
     ],
     "properties": {
       "CI": false,
@@ -434,8 +434,8 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": false,
@@ -447,7 +447,7 @@
   "Animation Production": {
     "ID": "4460",
     "cross listed": [],
-    "description": "Animation Production is designed to give an animation industry experience by completing the entire process of creating an animated short. Learning long-term time management and finding the key time cost/benefits will be essential to success. The course schedule is setup to replicate the industry model of frequent updates and feedback â dailies.Â Â",
+    "description": "Animation Production is designed to give an animation industry experience by completing the entire process of creating an animated short. Learning long-term time management and finding the key time cost/benefits will be essential to success. The course schedule is setup to replicate the industry model of frequent updates and feedback – dailies.",
     "name": "Animation Production",
     "offered": {
       "even": false,
@@ -483,8 +483,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -542,7 +542,7 @@
   "Art History": {
     "ID": "1050",
     "cross listed": [],
-    "description": "A survey of visual arts from Paleolithic Era to today. Materials are presented in a form accessible to students without previous knowledge of Art History.Â",
+    "description": "A survey of visual arts from Paleolithic Era to today. Materials are presented in a form accessible to students without previous knowledge of Art History.",
     "name": "Art History",
     "offered": {
       "even": false,
@@ -610,7 +610,7 @@
   "Art, Community, and Technology": {
     "ID": "4250",
     "cross listed": [],
-    "description": "Through direct experience in the community,Â this course explores the complex roles and relationships of art, education, and technology. Students will develop a plan to work with a media arts center, community organization, or school; final teams will produce real-world arts and education projects that ultimately will be realized as significant additions to their professional portfolio. The projects can include a range from traditional arts practice to creative writing, creative IT models, to community art and activism.",
+    "description": "Through direct experience in the community, this course explores the complex roles and relationships of art, education, and technology. Students will develop a plan to work with a media arts center, community organization, or school; final teams will produce real-world arts and education projects that ultimately will be realized as significant additions to their professional portfolio. The projects can include a range from traditional arts practice to creative writing, creative IT models, to community art and activism.",
     "name": "Art, Community, and Technology",
     "offered": {
       "even": false,
@@ -622,8 +622,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-1020",
-      "IHSS-1030"
+      "IHSS-1030",
+      "ARTS-1020"
     ],
     "properties": {
       "CI": false,
@@ -635,7 +635,7 @@
   "B.S. EARTS Thesis": {
     "ID": "4990",
     "cross listed": [],
-    "description": "The purpose of this course is to demonstrate the student's capacity for independent work integrating concepts and media from the full range of their studio, history, and theory studies. It is a project-based class, culminating in a written thesis paper and a public presentationÂ of work determined by the student. This course may be taken multiple times, but is a requirement in the student's final two semesters.Â",
+    "description": "The purpose of this course is to demonstrate the student's capacity for independent work integrating concepts and media from the full range of their studio, history, and theory studies. It is a project-based class, culminating in a written thesis paper and a public presentation of work determined by the student. This course may be taken multiple times, but is a requirement in the student's final two semesters.",
     "name": "B.S. EARTS Thesis",
     "offered": {
       "even": false,
@@ -691,8 +691,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -716,8 +716,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -791,9 +791,9 @@
       "uia": false
     },
     "prerequisites": [
+      "IHSS-1160",
       "STSO- 251",
-      "PHIL-1110",
-      "IHSS-1160"
+      "PHIL-1110"
     ],
     "properties": {
       "CI": true,
@@ -805,7 +805,7 @@
   "Biopunk: Arts Lab Practice": {
     "ID": "4120",
     "cross listed": [],
-    "description": "Biopunk: Arts Lab Practice is a studio, lab and lecture class introducing students to bioart, and microbial life and resilient ecological practices. We use punk, queer and biological laboratory techniques to creatively produce science, design and art works. Students will be required to complete readings, experiment, and create their own visions of a speculative biofuture. Emphasis will be on the history and contemporary investigations of the microbiome and how to culturally explore these scenarios of how we live amongst multiple diverse communities and species.Â Â",
+    "description": "Biopunk: Arts Lab Practice is a studio, lab and lecture class introducing students to bioart, and microbial life and resilient ecological practices. We use punk, queer and biological laboratory techniques to creatively produce science, design and art works. Students will be required to complete readings, experiment, and create their own visions of a speculative biofuture. Emphasis will be on the history and contemporary investigations of the microbiome and how to culturally explore these scenarios of how we live amongst multiple diverse communities and species.",
     "name": "Biopunk: Arts Lab Practice",
     "offered": {
       "even": false,
@@ -817,8 +817,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-1020",
-      "IHSS-1030"
+      "IHSS-1030",
+      "ARTS-1020"
     ],
     "properties": {
       "CI": false,
@@ -1126,8 +1126,8 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": false,
@@ -1183,7 +1183,7 @@
   "Composition Seminar": {
     "ID": "4390",
     "cross listed": [],
-    "description": "This seminar builds on skills acquired in the Music and Sound sequence. Through a series of exercises, students investigate sound as a medium for artistic expression while addressing the basics of orchestration, notation, and the development of musical and sonic ideas. Acoustic, electronic, and non-traditional contemporary approaches to composition will be explored, including performance, intermedia, and sound installation. The course culminates in a final composition project to be performed in an end of semester concert. Â",
+    "description": "This seminar builds on skills acquired in the Music and Sound sequence. Through a series of exercises, students investigate sound as a medium for artistic expression while addressing the basics of orchestration, notation, and the development of musical and sonic ideas. Acoustic, electronic, and non-traditional contemporary approaches to composition will be explored, including performance, intermedia, and sound installation. The course culminates in a final composition project to be performed in an end of semester concert.",
     "name": "Composition Seminar",
     "offered": {
       "even": false,
@@ -1275,7 +1275,7 @@
   "Contemporary Improvisation Ensemble": {
     "ID": "2080",
     "cross listed": [],
-    "description": "This ensemble explores a variety of contemporary non-idiomatic group improvisational practices. Non-idiomatic improvisation is spontaneous music that does not attempt to replicate or realize a particular historical style (such as swing or bebop jazz), but rather emphasizes the unique creative input of the performers to create original music. Among the techniques explored will be conduction, musical games, graphic and text scores, and cell-structure improvisation. Students will also be coached in techniques to expand and develop musical ideas individually and as a framework for group improvisation. No prior experience with improvisation is required, and participants from any musical background, including electronic and computer music, are encouraged to join. Repertoire and practices will be tailored to the make-up of the group. Â",
+    "description": "This ensemble explores a variety of contemporary non-idiomatic group improvisational practices. Non-idiomatic improvisation is spontaneous music that does not attempt to replicate or realize a particular historical style (such as swing or bebop jazz), but rather emphasizes the unique creative input of the performers to create original music. Among the techniques explored will be conduction, musical games, graphic and text scores, and cell-structure improvisation. Students will also be coached in techniques to expand and develop musical ideas individually and as a framework for group improvisation. No prior experience with improvisation is required, and participants from any musical background, including electronic and computer music, are encouraged to join. Repertoire and practices will be tailored to the make-up of the group.",
     "name": "Contemporary Improvisation Ensemble",
     "offered": {
       "even": false,
@@ -1309,8 +1309,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -1322,7 +1322,7 @@
   "Creative Data Design": {
     "ID": "4870",
     "cross listed": [],
-    "description": "Data design offers a way to reveal, analyze, and engage with data, from scientific visualization to information design to artistic sonification. At the same time, the translation from abstract data to image and sound carries risks of manipulation and subjective interpretation. This course introduces contemporary practices in the perceptualizing of data using digital tools for creative exploration and critical analysis. It explores the evolution of visualization and the notion of truth through visual representation.Â Â",
+    "description": "Data design offers a way to reveal, analyze, and engage with data, from scientific visualization to information design to artistic sonification. At the same time, the translation from abstract data to image and sound carries risks of manipulation and subjective interpretation. This course introduces contemporary practices in the perceptualizing of data using digital tools for creative exploration and critical analysis. It explores the evolution of visualization and the notion of truth through visual representation.",
     "name": "Creative Data Design",
     "offered": {
       "even": true,
@@ -1346,7 +1346,7 @@
   "Creative Seminar I": {
     "ID": "4840",
     "cross listed": [],
-    "description": "This course is for senior EMAC and EART majors and is the core creative forum for the development and presentation of the senior thesis.Â The course is the first part of a two-semester study provided in two seminar courses. The focus of the course is to develop a proposal for for a written thesis and a creative project that students will execute in the second seminar and exhibit in an exhibition.",
+    "description": "This course is for senior EMAC and EART majors and is the core creative forum for the development and presentation of the senior thesis. The course is the first part of a two-semester study provided in two seminar courses. The focus of the course is to develop a proposal for for a written thesis and a creative project that students will execute in the second seminar and exhibit in an exhibition.",
     "name": "Creative Seminar I",
     "offered": {
       "even": false,
@@ -1368,7 +1368,7 @@
   "Creative Seminar II": {
     "ID": "4850",
     "cross listed": [],
-    "description": "This course is for senior EMAC and EART majors.Â The goal of the Creative Seminar II is to develop and formulate ideas from Creative Seminar I into a unique project for the artists/communicator that will demonstrate his/her independent ideas, research, writing, and design skills. Students will develop a written thesis, creative project (e.g., art, graphic design, interaction design, music, performance), prepare and present their project in a public exhibition, and design the publicity for the show.",
+    "description": "This course is for senior EMAC and EART majors. The goal of the Creative Seminar II is to develop and formulate ideas from Creative Seminar I into a unique project for the artists/communicator that will demonstrate his/her independent ideas, research, writing, and design skills. Students will develop a written thesis, creative project (e.g., art, graphic design, interaction design, music, performance), prepare and present their project in a public exhibition, and design the publicity for the show.",
     "name": "Creative Seminar II",
     "offered": {
       "even": false,
@@ -1640,7 +1640,7 @@
   "Deep Listening": {
     "ID": "2180",
     "cross listed": [],
-    "description": "Deep Listening is a practice developed by pioneering composer and humanitarian Pauline Oliveros to enhance and expand listening abilities and to encourage creativity. Students will develop a heightened awareness to sound and their sonic environment through experiential exercises, creative projects, collaborations, readings, lectures, and discussion. Musicians and non-musicians of all abilities and backgrounds are welcome! Â",
+    "description": "Deep Listening is a practice developed by pioneering composer and humanitarian Pauline Oliveros to enhance and expand listening abilities and to encourage creativity. Students will develop a heightened awareness to sound and their sonic environment through experiential exercises, creative projects, collaborations, readings, lectures, and discussion. Musicians and non-musicians of all abilities and backgrounds are welcome!",
     "name": "Deep Listening",
     "offered": {
       "even": false,
@@ -1854,8 +1854,8 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -2057,8 +2057,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-1020",
-      "IHSS-1030"
+      "IHSS-1030",
+      "ARTS-1020"
     ],
     "properties": {
       "CI": false,
@@ -2082,9 +2082,9 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-2310",
+      "IHSS-1200",
       "ECON-1200",
-      "IHSS-1200"
+      "PSYC-2310"
     ],
     "properties": {
       "CI": false,
@@ -2132,8 +2132,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -2157,8 +2157,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -2182,8 +2182,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -2207,8 +2207,8 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -2256,8 +2256,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -2281,8 +2281,8 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -2342,7 +2342,7 @@
     "cross listed": [
       "ARTS-2600"
     ],
-    "description": "A technology-based performance ensemble, as well as a practice-based studio course, focused on the composition, design, and programming of new musical works and instruments. Students create and perform electronic music using laptops, microprocessors, digital networks and a range of new interfaces for musical expression. ARTS 4600/6600 combines studio and ensemble. The ensemble only section (ARTS 2600) may be taken multiple times as a 1-credit performance ensemble in partial satisfaction of the Music major or minor ensemble requirements, or once as a 4-credit seminar at either the 4000 or 6000 level.Â Â",
+    "description": "A technology-based performance ensemble, as well as a practice-based studio course, focused on the composition, design, and programming of new musical works and instruments. Students create and perform electronic music using laptops, microprocessors, digital networks and a range of new interfaces for musical expression. ARTS 4600/6600 combines studio and ensemble. The ensemble only section (ARTS 2600) may be taken multiple times as a 1-credit performance ensemble in partial satisfaction of the Music major or minor ensemble requirements, or once as a 4-credit seminar at either the 4000 or 6000 level.",
     "name": "Ensemble Nonlinear",
     "offered": {
       "even": false,
@@ -2401,8 +2401,8 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -2567,8 +2567,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -2604,7 +2604,7 @@
   "Experimental Telepresence": {
     "ID": "4420",
     "cross listed": [],
-    "description": "Experimental Telepresence investigates the INTERNET as an experimental venue for audio and video performance through improvisation and composition. Students will learn protocols for telepresence connections, connect with other institutions using a variety of media in local and co-located performances.Â The seminar multimedia ensemble Tintinnabulate will be used as a resource of projects.",
+    "description": "Experimental Telepresence investigates the INTERNET as an experimental venue for audio and video performance through improvisation and composition. Students will learn protocols for telepresence connections, connect with other institutions using a variety of media in local and co-located performances. The seminar multimedia ensemble Tintinnabulate will be used as a resource of projects.",
     "name": "Experimental Telepresence",
     "offered": {
       "even": false,
@@ -2626,7 +2626,7 @@
   "Exploring Movement and Sound": {
     "ID": "4620",
     "cross listed": [],
-    "description": "The exploration of movement often reveals sensitivities concerning the body, identity, gesture, culture, sensory awareness, perception, space, orientation, kinesthesia, time, relationships to people and objects, as well as cultural notions of embodiment and the senses.Â This course employs practice-based work, creative experimentation, and traditional forms of research (reading, viewing media, writing, discussions) as the primary methods to illuminate the issues concerning enactive (movement) knowledge. This is a Deep Listening-related course.",
+    "description": "The exploration of movement often reveals sensitivities concerning the body, identity, gesture, culture, sensory awareness, perception, space, orientation, kinesthesia, time, relationships to people and objects, as well as cultural notions of embodiment and the senses. This course employs practice-based work, creative experimentation, and traditional forms of research (reading, viewing media, writing, discussions) as the primary methods to illuminate the issues concerning enactive (movement) knowledge. This is a Deep Listening-related course.",
     "name": "Exploring Movement and Sound",
     "offered": {
       "even": false,
@@ -2806,7 +2806,7 @@
   "Fundamentals of Music and Sound": {
     "ID": "1380",
     "cross listed": [],
-    "description": "This course is a hands-on introduction to the primary building blocks of music and musicianship in a 21st Century context. No formal musical background is expected. The course will explore acoustics and psychoacoustics, rhythm, pitch, harmony, melody, timbre, improvisation, composition, and music notation through performance, listening, written exercises, and creative projects.Â",
+    "description": "This course is a hands-on introduction to the primary building blocks of music and musicianship in a 21st Century context. No formal musical background is expected. The course will explore acoustics and psychoacoustics, rhythm, pitch, harmony, melody, timbre, improvisation, composition, and music notation through performance, listening, written exercises, and creative projects.",
     "name": "Fundamentals of Music and Sound",
     "offered": {
       "even": false,
@@ -3135,7 +3135,7 @@
   "Hactivism": {
     "ID": "4560",
     "cross listed": [],
-    "description": "This course explores the history, methods, and goals of hackers with special attention paid to their role in social movements. It broadly interprets the term \"hacktivism\" to include computer hacking, media hacking and \"reality hacking\" in the service of social change. Students will gain an understanding of how and why hackers have emerged as a major social force.Â",
+    "description": "This course explores the history, methods, and goals of hackers with special attention paid to their role in social movements. It broadly interprets the term \"hacktivism\" to include computer hacking, media hacking and \"reality hacking\" in the service of social change. Students will gain an understanding of how and why hackers have emerged as a major social force.",
     "name": "Hactivism",
     "offered": {
       "even": false,
@@ -3169,8 +3169,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -3182,7 +3182,7 @@
   "Histories of Jazz and Improvised Music": {
     "ID": "2510",
     "cross listed": [],
-    "description": "Since its emergence over a century ago, the energy, vitality, and challenging nature of jazz have had a significant impact on music throughout the world. The question of \"what is jazz\" remains a lively and contentious discussion to this day. This course charts the emergence, evolution, and expanded influence of jazz and jazz-inspired music, as well as the many controversial musical, social, and philosophical questions it continues to provoke. Through listening, analysis, discussion, writing, and creative projects, students will develop a greater appreciation and understanding of improvised music in a great variety of contexts, and the crucial role American jazz played in revitalizing improvisational practice throughout the 20th and 21st Centuries. No musical background is required. Â",
+    "description": "Since its emergence over a century ago, the energy, vitality, and challenging nature of jazz have had a significant impact on music throughout the world. The question of \"what is jazz\" remains a lively and contentious discussion to this day. This course charts the emergence, evolution, and expanded influence of jazz and jazz-inspired music, as well as the many controversial musical, social, and philosophical questions it continues to provoke. Through listening, analysis, discussion, writing, and creative projects, students will develop a greater appreciation and understanding of improvised music in a great variety of contexts, and the crucial role American jazz played in revitalizing improvisational practice throughout the 20th and 21st Centuries. No musical background is required.",
     "name": "Histories of Jazz and Improvised Music",
     "offered": {
       "even": false,
@@ -3204,7 +3204,7 @@
   "Histories of Western Music": {
     "ID": "2500",
     "cross listed": [],
-    "description": "This course surveys multiple approaches to theÂ Western art music traditions from a contemporary global, multicultural context. The inter-relationships between music, society and cultural forces is emphasized. Students learn to recognize and describe the basic components of music, like texture, tonality, rhythm, dynamics, and melody Lectures are supplemented by listening assignments and in-class demonstrations. Â",
+    "description": "This course surveys multiple approaches to the Western art music traditions from a contemporary global, multicultural context. The inter-relationships between music, society and cultural forces is emphasized. Students learn to recognize and describe the basic components of music, like texture, tonality, rhythm, dynamics, and melody Lectures are supplemented by listening assignments and in-class demonstrations.",
     "name": "Histories of Western Music",
     "offered": {
       "even": false,
@@ -3486,7 +3486,7 @@
   "Inflatable Sculpture": {
     "ID": "4230",
     "cross listed": [],
-    "description": "This class studies, creates, and publicly presentsÂ inflatable sculptures. The history of inflatables are examined, with special attention paid to how they have been used in political movements that imagine utopian social futures, and how those applications contrast with commercial uses (such as advertising) that have become commonplace in public spaces today. Throughout the class will explore, design, and build inflated structures that may include video and sound elements.Â",
+    "description": "This class studies, creates, and publicly presents inflatable sculptures. The history of inflatables are examined, with special attention paid to how they have been used in political movements that imagine utopian social futures, and how those applications contrast with commercial uses (such as advertising) that have become commonplace in public spaces today. Throughout the class will explore, design, and build inflated structures that may include video and sound elements.",
     "name": "Inflatable Sculpture",
     "offered": {
       "even": false,
@@ -3668,7 +3668,7 @@
   "Interdisciplinary Research Seminar": {
     "ID": "4880",
     "cross listed": [],
-    "description": "This is a course introducing music majors to advanced research topics of the Rensselaer music faculty.Â Each semester a member of the music faculty will focus the seminar on a research topic or paradigm related to their own body of artistic and technological research. Sample topics might include Spatial music and sound, New Instrument Design, Network Music, Music Information Retrieval, Ethnomusicology, Sonification Art and Science, Music and Logic, Spectralism and Beyond, Music Herstory (feminist music composition), Experimental music and sound history. Through hands-on creative research, students will explore questions of both musical and technological significance while engaging that same topic through their own hands-on creative practice.",
+    "description": "This is a course introducing music majors to advanced research topics of the Rensselaer music faculty. Each semester a member of the music faculty will focus the seminar on a research topic or paradigm related to their own body of artistic and technological research. Sample topics might include Spatial music and sound, New Instrument Design, Network Music, Music Information Retrieval, Ethnomusicology, Sonification Art and Science, Music and Logic, Spectralism and Beyond, Music Herstory (feminist music composition), Experimental music and sound history. Through hands-on creative research, students will explore questions of both musical and technological significance while engaging that same topic through their own hands-on creative practice.",
     "name": "Interdisciplinary Research Seminar",
     "offered": {
       "even": false,
@@ -3738,7 +3738,7 @@
   "Intermediate Drawing": {
     "ID": "2200",
     "cross listed": [],
-    "description": "Intermediate Drawing focuses on the exploration of the possibilities of visual translation using a variety of media and techniques. Over the term, each successive project will provide the student the opportunity to develop and control a particular set of media, technique, and perspective, which reveals a unique and personal approach to image making. Participation in critiques, discussions, and lectures will enable the student to become fluent with the vocabulary and language of drawing, and focus their preferred methods and developed skill-sets into appropriate and actionable processes.Â Â",
+    "description": "Intermediate Drawing focuses on the exploration of the possibilities of visual translation using a variety of media and techniques. Over the term, each successive project will provide the student the opportunity to develop and control a particular set of media, technique, and perspective, which reveals a unique and personal approach to image making. Participation in critiques, discussions, and lectures will enable the student to become fluent with the vocabulary and language of drawing, and focus their preferred methods and developed skill-sets into appropriate and actionable processes.",
     "name": "Intermediate Drawing",
     "offered": {
       "even": false,
@@ -3891,8 +3891,8 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -3918,8 +3918,8 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": false,
@@ -4387,8 +4387,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -4644,8 +4644,8 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": false,
@@ -4657,7 +4657,7 @@
   "Media Watch": {
     "ID": "4150",
     "cross listed": [],
-    "description": "This seminar is an investigation of the successes and failures of the news media, set within historical and contemporary contexts.Â The title \"media watch\" is intended to evoke a watch-dog approach found in independent media sources and organizations like human rights watch.Â Assignments involve analyzing how issues are portrayed in the media, and students choose their topics according to their interests. The course can therefore enhance capstone, thesis, or dissertation work.",
+    "description": "This seminar is an investigation of the successes and failures of the news media, set within historical and contemporary contexts. The title \"media watch\" is intended to evoke a watch-dog approach found in independent media sources and organizations like human rights watch. Assignments involve analyzing how issues are portrayed in the media, and students choose their topics according to their interests. The course can therefore enhance capstone, thesis, or dissertation work.",
     "name": "Media Watch",
     "offered": {
       "even": false,
@@ -4829,8 +4829,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -4866,7 +4866,7 @@
   "Multimedia Performance Systems": {
     "ID": "4030",
     "cross listed": [],
-    "description": "Multimedia Performance Systems explores the composition and programming of real-time performance systems. The course will examine the basics of MIDI, sound synthesis, digital signal processing, and image/video manipulation.Â Final projects will consist of a real-time performance system or interactive installation.Â",
+    "description": "Multimedia Performance Systems explores the composition and programming of real-time performance systems. The course will examine the basics of MIDI, sound synthesis, digital signal processing, and image/video manipulation. Final projects will consist of a real-time performance system or interactive installation.",
     "name": "Multimedia Performance Systems",
     "offered": {
       "even": false,
@@ -4912,7 +4912,7 @@
   "Music and Sound I": {
     "ID": "2380",
     "cross listed": [],
-    "description": "The first in a two-course sequence combining music theory, musicianship, and engaged listening practices applicable to a broad range of traditional and contemporary musical styles, with an emphasis on creative practice. This course covers the fundamentals of tonal harmony including scales, chord symbols and figured bass notation, diatonic chord progressions, and counterpoint. Musicianship includes aural identification of intervals, scales, and chords, rhythm and exercises in sight-singing, dictation, and improvisation. Engaged listening practices include responsive listening, reading, and written exercises as well as in-class discussion. Weekly assignments include composition, analysis, and performance. Â",
+    "description": "The first in a two-course sequence combining music theory, musicianship, and engaged listening practices applicable to a broad range of traditional and contemporary musical styles, with an emphasis on creative practice. This course covers the fundamentals of tonal harmony including scales, chord symbols and figured bass notation, diatonic chord progressions, and counterpoint. Musicianship includes aural identification of intervals, scales, and chords, rhythm and exercises in sight-singing, dictation, and improvisation. Engaged listening practices include responsive listening, reading, and written exercises as well as in-class discussion. Weekly assignments include composition, analysis, and performance.",
     "name": "Music and Sound I",
     "offered": {
       "even": false,
@@ -4936,7 +4936,7 @@
   "Music and Sound II": {
     "ID": "4380",
     "cross listed": [],
-    "description": "The second in a two-course sequence combining music theory, aural skills, and engaged listening practices applicable to a broad range of musical styles, with an emphasis on creative practice. This course covers chromatic, extended, and contemporary tonal harmony and its interrelationship with form. Musicianship exercises include advanced chord identification, rhythm exercises, dictation, and improvisation. Engaged listening practices include responsive listening, reading, and written exercises as well as in-class discussion. Weekly assignments include composition, analysis, and performance. Â",
+    "description": "The second in a two-course sequence combining music theory, aural skills, and engaged listening practices applicable to a broad range of musical styles, with an emphasis on creative practice. This course covers chromatic, extended, and contemporary tonal harmony and its interrelationship with form. Musicianship exercises include advanced chord identification, rhythm exercises, dictation, and improvisation. Engaged listening practices include responsive listening, reading, and written exercises as well as in-class discussion. Weekly assignments include composition, analysis, and performance.",
     "name": "Music and Sound II",
     "offered": {
       "even": false,
@@ -4960,7 +4960,7 @@
   "Music and Technology I": {
     "ID": "2020",
     "cross listed": [],
-    "description": "Music technology-based research and composition taught in the context of modern computerized production methods. Technical topics include basic principles of music programming languages, digital sound synthesis and sampling, and the use of computer systems for musical control of electronic instruments. Musical topics include a study of important musical works and compositional techniques of the 21st century. Student projects involve hands-on work on a variety of computer programming languages, instruments, and software. This course is a prerequisite for further creative work with Rensselaer's computer music facilities. Â",
+    "description": "Music technology-based research and composition taught in the context of modern computerized production methods. Technical topics include basic principles of music programming languages, digital sound synthesis and sampling, and the use of computer systems for musical control of electronic instruments. Musical topics include a study of important musical works and compositional techniques of the 21st century. Student projects involve hands-on work on a variety of computer programming languages, instruments, and software. This course is a prerequisite for further creative work with Rensselaer's computer music facilities.",
     "name": "Music and Technology I",
     "offered": {
       "even": false,
@@ -4982,7 +4982,7 @@
   "Music and Technology II": {
     "ID": "4160",
     "cross listed": [],
-    "description": "This course assumes knowledge and experience in computer music programming, applications, and performance. It is directed to undergraduate students as an upper-level seminar guiding their progress through the composition of a significant musical work or the design and development of a significant research project. The class is divided between a group seminar, focusing on aesthetic, theoretical, and technical issues, and a workshop/lab in musical systems design, performance, computer music applications, and composition. Â",
+    "description": "This course assumes knowledge and experience in computer music programming, applications, and performance. It is directed to undergraduate students as an upper-level seminar guiding their progress through the composition of a significant musical work or the design and development of a significant research project. The class is divided between a group seminar, focusing on aesthetic, theoretical, and technical issues, and a workshop/lab in musical systems design, performance, computer music applications, and composition.",
     "name": "Music and Technology II",
     "offered": {
       "even": false,
@@ -5018,8 +5018,8 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": true,
@@ -5053,7 +5053,7 @@
   "New Media Theory": {
     "ID": "4130",
     "cross listed": [],
-    "description": "This course asks what is really new about New Media, and looks at creative practices, theoretical discourses, and social contexts to find answers. The course concentrates on cutting edge cultural expression using information and communication technologies. The objective to equip students with multiple perspectives - aesthetic, communications, historical - with which to analyze, critique, and develop original concepts about the uses of new media in art and culture.Â",
+    "description": "This course asks what is really new about New Media, and looks at creative practices, theoretical discourses, and social contexts to find answers. The course concentrates on cutting edge cultural expression using information and communication technologies. The objective to equip students with multiple perspectives - aesthetic, communications, historical - with which to analyze, critique, and develop original concepts about the uses of new media in art and culture.",
     "name": "New Media Theory",
     "offered": {
       "even": false,
@@ -5295,8 +5295,8 @@
       "uia": false
     },
     "prerequisites": [
-      "STSO- 201",
-      "STSS-2210"
+      "STSS-2210",
+      "STSO- 201"
     ],
     "properties": {
       "CI": false,
@@ -5308,7 +5308,7 @@
   "Popular Music and Society": {
     "ID": "2550",
     "cross listed": [],
-    "description": "This topics-based course examines popular music in society, considering the ways it may express identities, motivate political movements, and function within various economic, mediated, and technological environments. This course explores popular music representing diverse genres (country, hip hop, EDM, Top 40) as it relates to social life, the intersections of race, gender, class, and sexuality, and media and technology. Â",
+    "description": "This topics-based course examines popular music in society, considering the ways it may express identities, motivate political movements, and function within various economic, mediated, and technological environments. This course explores popular music representing diverse genres (country, hip hop, EDM, Top 40) as it relates to social life, the intersections of race, gender, class, and sexuality, and media and technology.",
     "name": "Popular Music and Society",
     "offered": {
       "even": false,
@@ -5374,7 +5374,7 @@
   "Private Music Lessons": {
     "ID": "2750",
     "cross listed": [],
-    "description": "Private applied music lessons provide weekly instruction in instrumental and vocal performance. The goal of this class is to develop the student's musical ability relative to capacity and interest. A supplementary lesson fee is charged.Â Â",
+    "description": "Private applied music lessons provide weekly instruction in instrumental and vocal performance. The goal of this class is to develop the student's musical ability relative to capacity and interest. A supplementary lesson fee is charged.",
     "name": "Private Music Lessons",
     "offered": {
       "even": false,
@@ -5647,7 +5647,7 @@
   "Radical Graphics/Screenprinting": {
     "ID": "2090",
     "cross listed": [],
-    "description": "Radical Graphics/Screenprinting seeks to expand on the definition of print graphics from one that traditionally creates multiple images on paper to a practice that includes art-making activities as varied as mud-stenciling, t-shirt printing, \"fine art\" prints, animation, sculpture, and political protest graphics. Students will focus on the concept of the art \"matrix\": a template for image-making that can work across media. Students will create matrices that can be applied across multiple art-making platforms.Â Â",
+    "description": "Radical Graphics/Screenprinting seeks to expand on the definition of print graphics from one that traditionally creates multiple images on paper to a practice that includes art-making activities as varied as mud-stenciling, t-shirt printing, \"fine art\" prints, animation, sculpture, and political protest graphics. Students will focus on the concept of the art \"matrix\": a template for image-making that can work across media. Students will create matrices that can be applied across multiple art-making platforms.",
     "name": "Radical Graphics/Screenprinting",
     "offered": {
       "even": false,
@@ -5905,8 +5905,8 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "properties": {
       "CI": true,
@@ -5964,7 +5964,7 @@
   "Rethinking Documentary: Video Production": {
     "ID": "4040",
     "cross listed": [],
-    "description": "This is a production course investigating non-traditional approaches to documentary or non-fiction film/video. Taking a broad look at what defines \"documentary\" media, this course will incorporate criticism with production. Students will produce a range of video works questioning conventional documentary styles, using radical and interventionist techniques. Students will study traditional documentary works including ethnographic films, cinema veritÃ©, propaganda films, \"home movies,\" reality TV, tabloid news, autobiographic and activist videos.",
+    "description": "This is a production course investigating non-traditional approaches to documentary or non-fiction film/video. Taking a broad look at what defines \"documentary\" media, this course will incorporate criticism with production. Students will produce a range of video works questioning conventional documentary styles, using radical and interventionist techniques. Students will study traditional documentary works including ethnographic films, cinema verité, propaganda films, \"home movies,\" reality TV, tabloid news, autobiographic and activist videos.",
     "name": "Rethinking Documentary: Video Production",
     "offered": {
       "even": false,
@@ -5976,8 +5976,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-1030",
-      "IHSS-1030"
+      "IHSS-1030",
+      "ARTS-1030"
     ],
     "properties": {
       "CI": false,
@@ -6034,7 +6034,7 @@
   "Science Fictions": {
     "ID": "4640",
     "cross listed": [],
-    "description": "Science Fictions is an advanced narrative video production and theory course. The class looks at thematic areas of science fiction, utopia and dystopia, paranormal, and speculative fiction. 'Speculative fiction' is a genre that looks at the real world and extends what is known about it, building on the 'real.' The class has two threads: to study narrative structure and create a series of sci-fi videos; to discuss and analyze mainstream and avant-garde science fictionÂ films and themes from the early 1900s to theÂ present.",
+    "description": "Science Fictions is an advanced narrative video production and theory course. The class looks at thematic areas of science fiction, utopia and dystopia, paranormal, and speculative fiction. 'Speculative fiction' is a genre that looks at the real world and extends what is known about it, building on the 'real.' The class has two threads: to study narrative structure and create a series of sci-fi videos; to discuss and analyze mainstream and avant-garde science fiction films and themes from the early 1900s to the present.",
     "name": "Science Fictions",
     "offered": {
       "even": false,
@@ -6046,8 +6046,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-1020",
-      "IHSS-1030"
+      "IHSS-1030",
+      "ARTS-1020"
     ],
     "properties": {
       "CI": true,
@@ -6279,8 +6279,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1150",
-      "PSYC-1200"
+      "PSYC-1200",
+      "IHSS-1150"
     ],
     "properties": {
       "CI": true,
@@ -6634,7 +6634,7 @@
   "Studies in the Arts": {
     "ID": "4940",
     "cross listed": [],
-    "description": "Individual and collaborative projects and assignments at the 4000 level adapted to the needs of individual students.Â",
+    "description": "Individual and collaborative projects and assignments at the 4000 level adapted to the needs of individual students.",
     "name": "Studies in the Arts",
     "offered": {
       "even": false,
@@ -6860,7 +6860,7 @@
   "The Multimedia Century": {
     "ID": "2540",
     "cross listed": [],
-    "description": "This course will survey the history and theory of the diverse artistic practices of the twentieth century in relation to the development of the mass media and new technologies. Topics will include the Bauhaus, Surrealism, Pop Art, and Postmodernism and will span a spectrum of media from the more traditional, such as painting and photography, to electronic and new media, such as video and digital arts.Â",
+    "description": "This course will survey the history and theory of the diverse artistic practices of the twentieth century in relation to the development of the mass media and new technologies. Topics will include the Bauhaus, Surrealism, Pop Art, and Postmodernism and will span a spectrum of media from the more traditional, such as painting and photography, to electronic and new media, such as video and digital arts.",
     "name": "The Multimedia Century",
     "offered": {
       "even": false,
@@ -6926,7 +6926,7 @@
   "Topics in Deep Listening": {
     "ID": "4180",
     "cross listed": [],
-    "description": "This course continues the practice and study of Deep Listening beyond the foundational course \"Deep Listening.\" Topics include a wide range of investigations, research, and creativity in Deep Listening.Â Â",
+    "description": "This course continues the practice and study of Deep Listening beyond the foundational course \"Deep Listening.\" Topics include a wide range of investigations, research, and creativity in Deep Listening.",
     "name": "Topics in Deep Listening",
     "offered": {
       "even": false,
@@ -6960,8 +6960,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "properties": {
       "CI": false,
@@ -7151,7 +7151,7 @@
   "Topics in the Arts": {
     "ID": "4960",
     "cross listed": [],
-    "description": "Experimental courses offered for one orÂ two semesters.Â",
+    "description": "Experimental courses offered for one or two semesters.",
     "name": "Topics in the Arts",
     "offered": {
       "even": false,
@@ -7463,7 +7463,7 @@
   "Writing and Directing for Video": {
     "ID": "4630",
     "cross listed": [],
-    "description": "The course introduces students to the art of writing and directing short videos, with an emphasis on generating ideas, and realizing them in a well-developed final project. Major theories and principles are studied through a comparative analysis of scripts and films. Students learn to work with actors, write their own scripts, and direct videos. Two final projects â a script and a video â will integrate all of the elements covered in class. Lecture/Practicum.",
+    "description": "The course introduces students to the art of writing and directing short videos, with an emphasis on generating ideas, and realizing them in a well-developed final project. Major theories and principles are studied through a comparative analysis of scripts and films. Students learn to work with actors, write their own scripts, and direct videos. Two final projects – a script and a video – will integrate all of the elements covered in class. Lecture/Practicum.",
     "name": "Writing and Directing for Video",
     "offered": {
       "even": false,
