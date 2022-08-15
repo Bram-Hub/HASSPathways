@@ -21,6 +21,86 @@
                     <v-spacer />
                     <!-- Clear confirmation modal -->
                     <v-dialog
+                        v-model="transcript_dialog"
+                        width="700"
+                        light
+                        overlay-opacity="0.8"
+                    >
+                        <template #activator="{ on, attrs }">
+                            <v-btn
+                                dark
+                                color="blue" outlined tile
+                                class="mr-2 font-weight-bold mobile-btn"
+                                v-bind="attrs"
+                                v-on="on"
+                            >
+                                Import Classes
+                                <v-icon right>
+                                    mdi-upload
+                                </v-icon>
+                            </v-btn>
+                        </template>
+                        <v-card>
+                            <v-card-text class="pt-4 font-weight-medium">
+                                <h3 class="mb-1">
+                                    Uploading Your Unofficial Web Transcript
+                                </h3>
+                                This will take your unofficial transcript
+                                available on SIS and import all the HASS classes
+                                on it. This will allow you to see what pathways
+                                are compatible for the classes you have already
+                                taken.
+                                <br>
+                                <br>
+                                If your classes already appear under the
+                                <b>Imported Classes</b> section below, simply
+                                press "SELECT IMPORTED CLASSES" to select them.
+                                No need to reupload your transcript!
+                                <br>
+                                <br>
+                                In order to upload your transcript:
+                                <br>
+                                1. Log onto <a href="https://sis.rpi.edu" target="_blank">https://sis.rpi.edu</a>.
+                                <br>
+                                2. Go to the "Student Menu".
+                                <br>
+                                3. Under "Curriculum Information" click "View Transcript".
+                                <br>
+                                4. Select "All Levels" for the level and "Unoficial Web Transcript" for the type and then click submit.
+                                <br>
+                                5. Press Ctrl+s or right click a blank spot on the page and select "Save as...".
+                                <br>
+                                6. Save the html document.
+                                <br>
+                                7. Press "UPLOAD TRANSCRIPT" and select your transcript file.
+                            </v-card-text>
+                            <v-divider />
+                            <UploadTranscript />
+                            <v-divider />
+                            <v-card-actions>
+                                <v-spacer />
+                                <v-btn
+                                    color="secondary"
+                                    class="font-weight-bold"
+                                    text
+                                    @click="transcript_dialog = false"
+                                >
+                                    Cancel
+                                </v-btn>
+                                <v-btn
+                                    color="primary"
+                                    class="font-weight-bold"
+                                    text
+                                    @click="transcript_dialog = false; selectTranscriptClasses()"
+                                >
+                                    Select Imported Classes
+                                </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-dialog>
+
+
+                    <v-dialog
                         v-model="dialog"
                         width="500"
                         light
@@ -72,9 +152,9 @@
                     <!-- Next button -->
                     <v-btn 
                         dark
-                        color="#2E7D32" tile
+                        color="green" tile
                         to="/from-classes"
-                        class="mr-2 mobile-btn"
+                        class="mr-2 font-weight-bold mobile-btn"
                     >
                         Find Pathways <v-icon right>
                             mdi-arrow-right-circle
@@ -138,6 +218,7 @@
 
 <script>
 import Breadcrumbs from '../../components/Breadcrumbs'
+import UploadTranscript from '../../components/UploadTranscript'
 import SearchTableModifiers from '../../components/SearchTableModifiers'
 import breadcrumbs from '../../data/breadcrumbs.js'
 
@@ -163,6 +244,7 @@ const TABLE_HEADERS = [
 export default {
     components: {
         Breadcrumbs,
+        UploadTranscript,
         SearchTableModifiers
     },
     data() {
@@ -171,6 +253,7 @@ export default {
             searchValue: '',
             courseHeaders: TABLE_HEADERS,
             dialog: false,
+            transcript_dialog: false,
             selected: [],
             coursesData: {},
             chip_names: ["CI", "HI", "Fall", "Spring", "Summer"]
@@ -234,6 +317,12 @@ export default {
         });
     },
     methods: {
+        selectTranscriptClasses(){
+            this.$store.commit("addTranscriptClasses")
+
+            let temp = this.courses.filter(course => course != null);
+            this.selected = temp.filter(course => this.$store.state.classes[course.name]);
+        },
         // On row click, toggle selected state
         rowClick: function (item, select, isSelected) {
             // Is selected is previous selection state
