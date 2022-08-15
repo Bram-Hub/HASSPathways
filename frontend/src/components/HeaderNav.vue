@@ -33,7 +33,7 @@ export default {
 }
 
 .button {
-    opacity: 1;
+    opacity: 0.8;
     margin-right: 0.5em;
 }
 

@@ -19,7 +19,7 @@
             </v-layout>
         </v-container>
     </v-app-bar>
-</template>       
+</template>
 
 <script>
 import DarkLightModeButton from './DarkLightModeButton.vue'
@@ -29,7 +29,7 @@ import YearSelection from '../components/YearSelection.vue'
 export default {
     name: 'Header',
     components: {
-        DarkLightModeButton, 
+        DarkLightModeButton,
         HeaderNav,
         YearSelection
     }
@@ -39,6 +39,12 @@ export default {
 <style scoped>
 .navbar {
     border-bottom: 3px solid var(--v-primary-base) !important;
+}
+
+/deep/ .v-input__control {
+    display: flex;
+    flex-direction: inherit !important;
+    flex-wrap: inherit !important;
 }
 
 /* Remove navbar padding */

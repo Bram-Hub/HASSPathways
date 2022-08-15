@@ -8,7 +8,6 @@
                 size="small"
                 color="yellow darken-2"
                 :prepend-icon="correctIcon"
-                style="padding-top:21px;"
                 v-on="off"
                 @click="darkMode"
             />
