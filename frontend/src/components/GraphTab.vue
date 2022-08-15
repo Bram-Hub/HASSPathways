@@ -1,12 +1,12 @@
 <template>
     <div id="course">
-        <hr/>
+        <hr>
         <h4>
-            {{course[0].name}}
+            {{ course[0].name }}
         </h4>
-        <hr/>
+        <hr>
         <div id="courseDesc">
-            {{course[0].description}}
+            {{ course[0].description }}
         </div>
     </div>
 </template>

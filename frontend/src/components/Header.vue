@@ -1,5 +1,8 @@
 <template>
-    <v-app-bar app flat dense class="navbar">
+    <v-app-bar
+        app flat dense class="navbar"
+        style="z-index: 999"
+    >
         <router-link to="/">
             <v-img
                 class="pl-6 pr-8 ml-4"
@@ -25,7 +28,8 @@ import YearSelection from '../components/YearSelection.vue'
 
 export default {
     name: 'Header',
-    components: { DarkLightModeButton,
+    components: {
+        DarkLightModeButton, 
         HeaderNav,
         YearSelection
     }

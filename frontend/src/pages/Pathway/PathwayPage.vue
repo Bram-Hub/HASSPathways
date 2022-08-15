@@ -42,6 +42,7 @@
                                 :pathway-id="pathwayID"
                                 :desc="false"
                                 :search-bar="false"
+                                :has-data="hasData"
                                 :graph="true"
                                 :hover="hover"
                                 :category="item[0]"
@@ -62,6 +63,7 @@
                                         :pathway-id="pathwayID"
                                         :desc="false"
                                         :search-bar="false"
+                                        :has-data="hasData"
                                         :graph="true"
                                         :hover="hover"
                                         :category="item[0]"
@@ -142,6 +144,7 @@
                         :ref="index"
                         :courses="courses[item[1]]"
                         :pathway-id="pathwayID"
+                        :has-data="hasData"
                         :show-desc="true"
                         :category="item[0]"
                         @checkbox-clicked="onCheckboxClicked"
@@ -153,7 +156,7 @@
 </template>
 
 <script>
-import { pathwayCategories, pathways, courses } from '../../data/data.js'
+import { pathwayCategories } from '../../data/data.js'
 import CourseTable from '../../components/CourseTable'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
@@ -169,7 +172,10 @@ export default {
             category: '',
             showGraph: false,
             changeTabOnSelection: false,
-            hover: false
+            hover: false,
+            pathwaysData: {},
+            coursesData: {},
+            hasData: false
         }
     },
     computed: {
@@ -191,7 +197,10 @@ export default {
         },
         // Get actual pathway object
         pathway() {
-            return pathways[this.pathwayID];
+            if(!this.pathwaysData[this.pathwayID]) {
+                return {};
+            }
+            return this.pathwaysData[this.pathwayID];
         },
         // Name of category to display, ie 'Major Restricted'
         categoryName() {
@@ -220,10 +229,16 @@ export default {
             for(const prio in curr) {
                 // Search through each course in the pathway
                 for(const course_name in curr[prio]) {
-                    const course = courses[course_name];
-                    curr[prio][course_name] = course ? course : null;
+                    if(this.coursesData[course_name]) {
+                        const course = this.coursesData[course_name];
+                        curr[prio][course_name] = course ? course : null;
+                    }
+                    else {
+                        curr[prio][course_name] = null;
+                    }
                 }
             }
+
             return curr;
         },
         // Get breadcrumb data
@@ -247,6 +262,7 @@ export default {
             return prios;
         },
         fourThousand() {
+            if(!this.pathway.remaining_header) return false;
             return this.pathway.remaining_header.indexOf("4000") !== -1
         },
         minor() {
@@ -263,6 +279,19 @@ export default {
             return all.substring(0,all.length-4) //get rid of final " or "
         }
     },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/pathways.json').then((val) => {this.pathwaysData = Object.freeze(val);
+            let pathwayID = this.$route.query.pathway;
+            if(!Object.keys(this.pathwaysData).includes(pathwayID)) {
+                this.$router.push('/404');
+            }
+        });
+        import('../../data/json/' + year + '/courses.json').then((val) => {
+            this.coursesData = Object.freeze(val);
+            this.hasData = true;
+        });
+    },
     mounted() {
         this.bookmarkSelected = this.bookmarked;
     },
@@ -270,7 +299,7 @@ export default {
         debug() {
             // console.log(this.multiRatio());
             // this.multiResize( this.multiRatio() );
-            console.log(pathways)
+            console.log(this.pathwaysData)
         },
         onCheckboxClicked(data) {
             // course name of checkbox will be passed through as the data variable
