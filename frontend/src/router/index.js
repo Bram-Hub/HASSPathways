@@ -8,13 +8,12 @@ import MyPathwaysPage from '../pages/MyPathways/MyPathwaysPage.vue'
 import FromClassesPage from '../pages/FromClasses/FromClassesPage.vue'
 import FromClassesPathways from '../pages/FromClasses/FromClassesPathways.vue'
 import AboutPage from '../pages/About/AboutPage.vue'
+import AdvancedSearchPage from '../pages/AdvancedSearch/AdvancedSearchPage.vue'
 import AdminHomePage from '../pages/AdminPortal/AdminHomePage.vue'
 import AdminCoursePage from '../pages/AdminPortal/AdminCoursePage.vue'
 import AdminPathwayPage from '../pages/AdminPortal/AdminPathwayPage.vue'
 import AdminSearchCCPage from '../pages/AdminPortal/AdminSearchCCPage.vue'
 import Four0FourPage from '../pages/Four0FourPage.vue'
-
-import { pathways } from '../data/data.js'
 
 Vue.use(Router);
 
@@ -33,10 +32,7 @@ export default new Router({
         {
             path: '/pathway',
             name: 'pathway',
-            component: PathwayPage,
-            beforeEnter: (to, from, next) => {
-                next(!pathways[to.query.pathway] ? '/404' : undefined);
-            }
+            component: PathwayPage
         },
         {
             path: '/my-pathways',
@@ -44,8 +40,8 @@ export default new Router({
             component: MyPathwaysPage
         },
         {
-            path: '/search-classes',
-            name: 'search-classes',
+            path: '/choose-classes',
+            name: 'choose-classes',
             component: FromClassesPage
         },
         {
@@ -59,25 +55,30 @@ export default new Router({
             component: AboutPage
         },
         {
-            path: '/admin-portal',
-            name: 'admin-portal',
-            component: AdminHomePage
+            path: '/search-classes',
+            name: 'search-classes',
+            component: AdvancedSearchPage
         },
-        {
-            path: '/admin-portal/course',
-            name: 'admin-course',
-            component: AdminCoursePage
-        },
-        {
-            path: '/admin-portal/pathway',
-            name: 'admin-pathway',
-            component: AdminPathwayPage
-        },
-        {
-            path: '/admin-portal/search-course-code',
-            name: 'admin-search-course-code',
-            component: AdminSearchCCPage
-        },
+        // {
+        //     path: '/admin-portal',
+        //     name: 'admin-portal',
+        //     component: AdminHomePage
+        // },
+        // {
+        //     path: '/admin-portal/course',
+        //     name: 'admin-course',
+        //     component: AdminCoursePage
+        // },
+        // {
+        //     path: '/admin-portal/pathway',
+        //     name: 'admin-pathway',
+        //     component: AdminPathwayPage
+        // },
+        // {
+        //     path: '/admin-portal/search-course-code',
+        //     name: 'admin-search-course-code',
+        //     component: AdminSearchCCPage
+        // },
         {
             path: '*',
             name: '',

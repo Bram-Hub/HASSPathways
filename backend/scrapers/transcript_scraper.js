@@ -60,7 +60,7 @@ function parse_classes(html, sem_type){
   return taken_courses
 }
 
-function get_json_names(toparse){
+function get_json_names(toparse, year){
     // SIS displays the names of classes in all CAPS. There are also errors between
     // SIS and the course catalog. There are silly things in the catalog like more
     // than one space between words (open the file and use the following regex to see
@@ -68,7 +68,8 @@ function get_json_names(toparse){
     // within the courses.json file. There are some things that aren't cross listed
     // propely within the catalog. Intermediate Logic is one of these.
 
-  let courses_json = require("../../frontend/src/data/json/courses.json")
+  ""
+  let courses_json = require("../../frontend/src/data/json/" + year + "/courses.json")
 
     // Store the names and the
   let json_name_lookup = new Map() // stores the lower case version as the key and the name in the json file as the value
@@ -102,7 +103,7 @@ function get_json_names(toparse){
   return names
 }
 
-export function parse_transcript(contents){
+export function parse_transcript(contents, year){
   let rpi_transcript = contents.split("INSTITUTION CREDIT")[1]
   let taken_courses = new Set()
 
@@ -116,7 +117,7 @@ export function parse_transcript(contents){
   } else {
     taken_courses = set_union(taken_courses, parse_classes(prev_classes, "PREVIOUS"))
   }
-  taken_courses = get_json_names(taken_courses)
+  taken_courses = get_json_names(taken_courses, year)
   return taken_courses
 
 }

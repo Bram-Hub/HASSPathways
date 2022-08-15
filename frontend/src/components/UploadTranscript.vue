@@ -61,7 +61,7 @@ export default {
             var taken_courses = this.taken_courses
             reader.onload = function(){
                 var html = reader.result
-                taken_courses = parse_transcript(html)
+                taken_courses = parse_transcript(html, instance.$store.state.year)
                 // console.log("courses: " + taken_courses)
                 instance.$store.commit("importTranscriptClasses", taken_courses)
                 // instance.imported_classes_str = taken_courses.join(", ")

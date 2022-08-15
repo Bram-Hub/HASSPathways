@@ -6,6 +6,7 @@
             <h1>HASS Pathways From Classes</h1>
             <p>Search for the classes you have taken and then continue to the next page to display the computed pathways for you!</p>
 
+            <p>Try searching for all non-digital art classes offered in the fall at the 2,000 level by searching "arts fall 2000 ! digital".</p>
             <v-card outlined tile>
                 <v-card-title>
                     <v-text-field
@@ -169,18 +170,15 @@
                 <v-data-table
                     v-model="selected"
                     :headers="courseHeaders"
-                    :items="courses"
+                    :items="filteredCourses"
                     :single-select="false"
-                    :disable-pagination="true"
-                    :search="searchValue"
                     :fixed-header="true"
 
-                    sort-by="id"
+                    sort-by="identifier"
                     item-key="name"
                     show-select
-                    class="elevation-1"
-                    hide-default-footer
-                    height="400px"
+                    class="elevation-1 pb-6"
+                    height="550px"
                     max-height="90%"
                     mobile-breakpoint="10"
                 >
@@ -204,6 +202,12 @@
                             </td>
                             <td>{{ item.identifier }}</td>
                             <td>{{ item.name }}</td>
+                            <td style="text-align: right;">
+                                <SearchTableModifiers
+                                    class="mt-4 class-card__subtitle__modifiers float-top"
+                                    :course="item"
+                                />
+                            </td>
                         </tr>
                     </template>
                 </v-data-table>
@@ -215,48 +219,116 @@
 <script>
 import Breadcrumbs from '../../components/Breadcrumbs'
 import UploadTranscript from '../../components/UploadTranscript'
+import SearchTableModifiers from '../../components/SearchTableModifiers'
 import breadcrumbs from '../../data/breadcrumbs.js'
-import { courses } from '../../data/data.js'
 
 const TABLE_HEADERS = [
     {
         text: 'Course Code',
         value: 'identifier',
+        align: 'start',
         width: '130px'
     },
     {
         text: 'Name',
+        align: 'start',
         value: 'name'
+    },
+    {
+        text: 'Properties',
+        align: 'right',
+        value: ''
     }
 ];
 
 export default {
     components: {
-        Breadcrumbs, UploadTranscript
+        Breadcrumbs,
+        UploadTranscript,
+        SearchTableModifiers
     },
     data() {
-        const courseList = Object.values(courses).map(course => {
-            return {
-                name: course.name,
-                identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
-            };
-        });
-
         return {
             breadcrumbs: breadcrumbs.from_classes_search,
             searchValue: '',
-            courses: courseList,
-            courseList,
             courseHeaders: TABLE_HEADERS,
-            selected: courseList.filter(course => this.$store.state.classes[course.name]),
             dialog: false,
-            transcript_dialog: false
+            transcript_dialog: false,
+            selected: [],
+            coursesData: {},
+            chip_names: ["CI", "HI", "Fall", "Spring", "Summer"]
         }
+    },
+    computed: {
+        courses() {
+            return Object.values(this.coursesData).map(course => {
+                if(course.ID && course['cross listed'] && course.properties && course.offered) {
+                    return {
+                        name: course.name,
+                        identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
+                        CI: course.properties.CI,
+                        HI: course.properties.HI,
+                        Fall: course.offered.fall,
+                        Spring: course.offered.spring,
+                        Summer: course.offered.summer,
+                        search_string: course.subj + '-' + course.ID // course subj-id
+                            + course['cross listed'].map(el => ' / ' + el).join("") // cross listed subj-id
+                            + " " + course.name // course name
+                            + " " + course.ID[0] + "000" // what level is the course
+                            + (course.offered.fall ? " Fall" : "")
+                            + (course.offered.spring ? " Spring" : "")
+                            + (course.offered.summer ? " Summer" : "")
+                            + (course.properties.CI ? " COMMUINT" : "")
+                            + (course.properties.HI ? " HASSINQ" : "")
+                    };
+                }
+            });
+        },
+        filteredCourses() {
+
+            // Collapse extra exlamation marks
+            let str_array = this.searchValue.split("!")
+            for(let i = 2; i < str_array.length; i++){
+                str_array[1] += str_array[i]
+            }
+            let searchText = str_array.join("!")
+            let words = searchText.split(/ *! */)
+            if(words.length == 1) words.push("")
+            let search_words = words[0].split(/ +/)
+            let negated_words = words[1].split(/ +/)
+            // console.log("search_words: " + search_words)
+            // console.log("negated_words: " + negated_words)
+            this.add_look_term(search_words, "(?=.*")  //wrap words in a lookahead
+            this.add_look_term(negated_words, "(?!.*") //wrap words in a negative lookahead
+            // console.log("search: " + negated_words.join("") + search_words.join(""))
+            // console.log("-----------------")
+
+
+            const re = new RegExp(search_words.join("") + negated_words.join(""), 'i') // i is to ignore case sensitive search
+            return this.courses.filter(course => course ? re.test(course.search_string) : false)
+        }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/courses.json').then((val) => {
+            this.coursesData = Object.freeze(val);
+            let temp = this.courses.filter(course => course != null);
+            this.selected = temp.filter(course => this.$store.state.classes[course.name]);
+        });
     },
     methods: {
         selectTranscriptClasses(){
             this.$store.commit("addTranscriptClasses")
-            this.selected = this.courseList.filter(course => this.$store.state.classes[course.name])
+
+            // TODO The rest of this code is just ripped from created(). I
+            // couldn't figure out for the life of me of how to get to computed()
+            // to update this.selected.
+            const year = this.$store.state.year;
+            import('../../data/json/' + year + '/courses.json').then((val) => {
+                this.coursesData = Object.freeze(val);
+                let temp = this.courses.filter(course => course != null);
+                this.selected = temp.filter(course => this.$store.state.classes[course.name]);
+            });
         },
         // On row click, toggle selected state
         rowClick: function (item, select, isSelected) {
@@ -274,6 +346,21 @@ export default {
         deselectAll() {
             this.selected = [];
             this.$store.commit('clearClasses');
+        },
+
+        //Surrounds words in a term like "(?=.*word)" which is a positive lookahead
+        add_look_term(words, term){
+            for (let i = 0; i < words.length; i++) {
+                // Remove zero length strings
+                if(words[i].length == 0) {
+                    words.splice(i, 1)
+                    i--;
+                    continue;
+                }
+                if(words[i].toLowerCase().trim() == 'hi') words[i] = "HASSINQ"
+                if(words[i].toLowerCase().trim() == 'ci') words[i] = "COMMUINT"
+                words[i] = term + words[i] + ")"
+            }
         }
     }
 }

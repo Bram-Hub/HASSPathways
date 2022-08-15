@@ -7,7 +7,7 @@
                 clearable
                 rounded
                 solo
-                :items="pathways"
+                :items="autocompletePathways"
                 label="Pathways"
                 @change="filterCourses()"
             />
@@ -101,7 +101,6 @@
 <script>
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
-import { courses, pathways } from '../../data/data.js'
 
 export default {
     components: {
@@ -127,14 +126,32 @@ export default {
                 { text: 'Hass Inquiry', value: 'HI', align: 'center'},
                 { text: 'Delete From Pathway', value: 'delete', align: 'center'},
             ],
-            filteredCourses: []
+            filteredCourses: [],
+            coursesData: {},
+            pathwaysData: {}
+        }
+    },
+    computed: {
+        autocompletePathways() {
+            let output = [];
+            for(const path in this.pathways) {
+                if(this.pathways[path] != undefined) {
+                    output.push(this.pathways[path]);
+                }
+            }
+            return output;
         }
     },
     created() {
-        this.pathways = [];
-        for(const key in pathways) {
-            this.pathways.push(pathways[key].name);
-        }
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/pathways.json').then((val) => {
+            this.pathwaysData = Object.freeze(val);
+            this.pathways = [];
+            for(const key in this.pathwaysData) {
+                this.pathways.push(this.pathwaysData[key].name);
+            }
+        });
+        import('../../data/json/' + year + '/courses.json').then((val) => this.coursesData = Object.freeze(val));
     },
     methods: {  
         toClass(clazz) {
@@ -148,14 +165,14 @@ export default {
                 return [];
             }
             let pathwayID = this.selectedPathway;
-            let pathway = pathways[pathwayID];
+            let pathway = this.pathwaysData[pathwayID];
             if(pathway != null) {
                 let classes = new Set();
                 for(const prio in pathway) {
                     if(pathway[prio] instanceof Object && !(pathway[prio] instanceof Array)) {
                         for(const course in pathway[prio]) {
-                            if(courses[course]) {
-                                let clazz = courses[course];
+                            if(this.coursesData[course]) {
+                                let clazz = this.coursesData[course];
                                 clazz = JSON.parse(JSON.stringify(clazz));
                                 classes.add(clazz);
                             }
@@ -174,7 +191,7 @@ export default {
             for(const clazz in classes) {
                 const key = classes[clazz].name;
                 const curr = JSON.parse(JSON.stringify(classes[clazz]));
-                const course = courses[key];
+                const course = this.coursesData[key];
                 if(JSON.stringify(curr) != JSON.stringify(course)) {
                     console.log(curr);
                 }
