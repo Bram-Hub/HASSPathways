@@ -50,49 +50,132 @@
                     label="Offered Text"
                     class="text-input"
                 />
-
-                <v-checkbox 
-                    v-model="CI"
-                    label="Communication Intensive"
-                    class="mt-1 mb-1"
-                    dense :hide-details="true"
-                />
-                <v-checkbox 
-                    v-model="HI"
-                    label="HASS Inquiry"
-                    class="my-1 mb-4"
-                    dense :hide-details="true"
-                />
-                <v-checkbox 
-                    v-model="fall"
-                    label="Offered in Fall"
-                    class="my-1"
-                    dense :hide-details="true"
-                />
-                <v-checkbox 
-                    v-model="summer"
-                    label="Offered in Summer"
-                    class="my-1"
-                    dense :hide-details="true"
-                />
-                <v-checkbox 
-                    v-model="spring"
-                    label="Offered in Spring"
-                    class="mt-1 mb-8"
-                    dense :hide-details="true"
-                />
-                <v-checkbox 
-                    v-model="even"
-                    label="Offered even years"
-                    class="mt-1 mb-8"
-                    dense :hide-details="true"
-                />
-                <v-checkbox 
-                    v-model="odd"
-                    label="Offered odd years"
-                    class="mt-1 mb-8"
-                    dense :hide-details="true"
-                />
+                <v-row>
+                    <v-col>
+                        <v-checkbox 
+                            v-model="CI"
+                            label="Communication Intensive"
+                            class="mt-1 mb-1"
+                            dense :hide-details="true"
+                        />
+                        <v-checkbox 
+                            v-model="fall"
+                            label="Offered in Fall"
+                            class="my-1"
+                            dense :hide-details="true"
+                        />
+                        <v-checkbox 
+                            v-model="summer"
+                            label="Offered in Summer"
+                            class="my-1"
+                            dense :hide-details="true"
+                        />
+                        <v-checkbox 
+                            v-model="spring"
+                            label="Offered in Spring"
+                            class="mt-1 mb-8"
+                            dense :hide-details="true"
+                        />
+                    </v-col>
+                    <v-col>
+                        <v-checkbox 
+                            v-model="HI"
+                            label="HASS Inquiry"
+                            class="my-1 mb-4"
+                            dense :hide-details="true"
+                        />
+                        <v-checkbox 
+                            v-model="even"
+                            label="Offered even years"
+                            class="mt-1 mb-8"
+                            dense :hide-details="true"
+                        />
+                        <v-checkbox 
+                            v-model="odd"
+                            label="Offered odd years"
+                            class="mt-1 mb-8"
+                            dense :hide-details="true"
+                        />
+                    </v-col>
+                </v-row>
+                <v-row no-gutters>
+                    <v-col cols="8">
+                        <v-text-field
+                            v-model="myCrosslisted"
+                            dense
+                            label="New Crosslisted"
+                            maxlength="9"
+                            class="text-input"
+                            placeholder="COGS-1234"
+                        />
+                    </v-col>
+                    <v-col cols="4">
+                        <v-btn
+                            color="green"
+                            tile
+                            outlined
+                            class="ml-2"
+                            @click="addCrosslisted()"
+                        >
+                            <v-icon>
+                                mdi-plus-box
+                            </v-icon>
+                        </v-btn>
+                    </v-col>
+                </v-row>
+                <v-row no-gutters>
+                    <v-chip-group column>
+                        <v-chip
+                            v-for="cross in crosslisted"
+                            :key="cross"
+                            class="ma-1"
+                            close
+                            text
+                            @click:close="removeCrosslisted(cross)"
+                        >
+                            {{ cross }}
+                        </v-chip>
+                    </v-chip-group>
+                </v-row>
+                <v-row no-gutters>
+                    <v-col cols="8">
+                        <v-text-field
+                            v-model="myPrerequisite"
+                            dense
+                            label="New Prerequisite"
+                            maxlength="9"
+                            class="text-input"
+                            placeholder="COGS-1234"
+                        />
+                    </v-col>
+                    <v-col cols="4">
+                        <v-btn
+                            color="green"
+                            tile
+                            outlined
+                            class="ml-2"
+                            @click="addPrereq()"
+                        >
+                            <v-icon>
+                                mdi-plus-box
+                            </v-icon>
+                        </v-btn>
+                    </v-col>
+                </v-row>
+                <v-row no-gutters>
+                    <v-chip-group column>
+                        <v-chip
+                            v-for="prereq in prerequisites"
+                            :key="prereq"
+                            class="ma-1"
+                            close
+                            text
+                            @click:close="removePrereq(prereq)"
+                        >
+                            {{ prereq }}
+                        </v-chip>
+                    </v-chip-group>
+                </v-row>
                 <v-select
                     v-model="myPathways"
                     :items="vselectPathways"
@@ -146,6 +229,10 @@ export default {
             minors: [],
             myPathways: [],
             pathways: [],
+            myPrerequisite: '',
+            myCrosslisted: '',
+            prerequisites: [],
+            crosslisted: [],
             pathwaysData: {},
             coursesData: {},
 
@@ -201,6 +288,8 @@ export default {
                 this.major_rest = course.properties.major_restricted;
                 this.even = course.offered.even;
                 this.odd = course.offered.odd;
+                this.prerequisites = course.prerequisites;
+                this.crosslisted = course['cross listed'];
             }
             let myPathways = new Set();
             for(const key in this.pathwaysData) {
@@ -231,6 +320,26 @@ export default {
             }
             return this.coursesData[this.$route.query.class];
         },
+        addPrereq() {
+            this.prerequisites.push(this.myPrerequisite);
+            this.myPrerequisite = '';
+        },
+        addCrosslisted() {
+            this.crosslisted.push(this.myCrosslisted);
+            this.myCrosslisted = '';
+        },
+        removePrereq(input) {
+            let index = this.prerequisites.indexOf(input);
+            if(index != -1) {
+                this.prerequisites.splice(index, 1);
+            }
+        },
+        removeCrosslisted(input) {
+            let index = this.crosslisted.indexOf(input);
+            if(index != -1) {
+                this.crosslisted.splice(index, 1);
+            }
+        },
         submit() {
             let newCourse = this.getCourse();
             if(!newCourse) {
@@ -251,8 +360,10 @@ export default {
                         HI: 0,
                         major_restricted: 0
                     },
-                    subj: "",
+                    subj: ""
                 };
+                newCourse["cross listed"] = [];
+                newCourse["prerequisites"] = [];
             }
             newCourse.name = this.name;
             newCourse.subj = this.subj;
@@ -267,6 +378,8 @@ export default {
             newCourse.offered.odd = this.odd;
             newCourse.offered.text = this.off_text;
             newCourse.properties.major_restricted = this.major_rest;
+            newCourse["cross listed"] = this.crosslisted;
+            newCourse["prerequisites"] = this.prerequisites;
 
             const endpoint = 'http://127.0.0.1:5000/edit'
             axios.post(endpoint, {
