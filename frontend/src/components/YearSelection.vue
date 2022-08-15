@@ -22,6 +22,13 @@ export default {
             selection: this.$store.state.year
         }
     },
+    created() {
+        let choice = this.$store.state.year;
+        if (choice === "") {
+            this.$store.commit('changeYear', years[0]);
+        }
+        this.selection = this.$store.state.year;
+    },
     computed: {
         allyears() {
             return years;
