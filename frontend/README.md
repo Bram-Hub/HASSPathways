@@ -23,14 +23,14 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ``src`` contains the frontend code<br />
   |<br />
   ----``assets`` contains image assets needed for frontend<br />
-  |      |<br />
-  |      ----``pathway-groups`` contains images for each pathway group<br />
+  |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br />
+  |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----``pathway-groups`` contains images for each pathway group<br />
   |<br />
   ----``components`` contains all Vue components<br />
   |<br />
   ----``data`` contains files used to manipulate and store data.<br />
-  |      |<br />
-  |      ----``json`` contains all json files that contain the data for the site<br />
+  |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br />
+  |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----``json`` contains all json files that contain the data for the site<br />
   |<br />
   ----``helpers`` contains helper javascript files used within frontend<br />
   |<br />
