@@ -41,7 +41,6 @@ https://docs.google.com/spreadsheets/d/1w6BNcxYCE54pvCJJWHiEoE9CiMjRrVNKeUArV97q
 
 
 #### Backend Setup
-<s>
 - Clone the Repository to your computer
 - Navigate to \backend
 - Install Python3.7 or above (either directly or through a distribution like Anaconda)
@@ -53,7 +52,6 @@ https://docs.google.com/spreadsheets/d/1w6BNcxYCE54pvCJJWHiEoE9CiMjRrVNKeUArV97q
 -- NOTE: In order to run the backend properly, you must edit the endpoints which are being called by Axios in the Front End. Feel free to use ours, as it is already hosted on AWS, however, do note that you will not be able to access our hosted database without a proper key. Alternatively, you will need to edit the backend python code to connect to your own database.
 
 -- To access our hosted AWS resources, please contact a Contributor. The code reflected here is what we are hosting currently, just without our Security Keys.
-</s>
 
 #### Branches/Pull Requests (old)
 Outdated as of 8/14.
