@@ -96,13 +96,13 @@ export default {
 .darken {
     width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: 0.6;
+    background-color: DarkSlateGray;
+    opacity: 0.4;
     transition: opacity 0.2s;
 }
 
 .card:hover .darken {
-    opacity: 0.35;
+    opacity: 0.1;
     transition: opacity 0.2s;
 }
 
