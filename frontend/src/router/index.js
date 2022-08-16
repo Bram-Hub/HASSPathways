@@ -86,4 +86,7 @@ export default new Router({
         },
     ],
     mode: 'history',
+    scrollBehavior() {
+        return { y: 0, x: 0 };
+    }
 })
