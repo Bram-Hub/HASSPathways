@@ -32,6 +32,7 @@
                 :title="item.name"
                 :courses="item.courses"
                 :pathway-category="item.name"
+                :can-delete="false"
             />
         </v-container>
     </div>
