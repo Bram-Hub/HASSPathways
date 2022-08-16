@@ -26,7 +26,7 @@
                             <span>Edit pathway</span>
                         </v-tooltip>
                     </v-col>
-                    <v-col>
+                    <v-col v-if="canDelete">
                         <v-tooltip bottom>
                             <template #activator="{on, attrs}">
                                 <v-icon
@@ -121,9 +121,14 @@ export default {
             type: Boolean,
             // required: true
         },
-        hasData: {
+        canDelete: {
             type: Boolean,
             required: true
+        },
+        //Only required if canDelete is true
+        hasData: {
+            type: Boolean,
+            required: false
         }
     },
     data() {

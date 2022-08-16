@@ -33,6 +33,7 @@
                 :pathway-category="item.name"
                 :pre-requisite="item.preRequisite"
                 :has-data="hasData"
+                :can-delete="true"
                 @update="update()"
             />
         </v-container>
