@@ -41,13 +41,18 @@ https://docs.google.com/spreadsheets/d/1w6BNcxYCE54pvCJJWHiEoE9CiMjRrVNKeUArV97q
 
 
 #### Backend Setup
-Outdated as of 8/14. 
 <s>
-- https://github.com/Bram-Hub/CSV-Uploader
-- `python3 manage.py makemigrations`
-- `python3 manage.py migrate`
-- `python3 manage.py createsuperuser` and enter the information (email field can be left empty)
-- `python3 manage.py runserver`
+- Clone the Repository to your computer
+- Navigate to \backend
+- Install Python3.7 or above (either directly or through a distribution like Anaconda)
+- Install pip - (`curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py`, then run the script with `python3 get-pip.py`)
+- Run `pip install -r requirements.txt`
+- Run `python3 admin.py`
+- Visit the specified Developer Server's address using any browser. This shouldn't show anything, but a connection should be established. Try connecting to `/guard`. If you see `{"auth": "0"}` the server is working properly.
+
+-- NOTE: In order to run the backend properly, you must edit the endpoints which are being called by Axios in the Front End. Feel free to use ours, as it is already hosted on AWS, however, do note that you will not be able to access our hosted database without a proper key. Alternatively, you will need to edit the backend python code to connect to your own database.
+
+-- To access our hosted AWS resources, please contact a Contributor. The code reflected here is what we are hosting currently, just without our Security Keys.
 </s>
 
 #### Branches/Pull Requests (old)
