@@ -13,7 +13,7 @@
 </template>
 
 <script>
-//import { pathways } from '../data/data.js'
+import { years } from '../data/data.js'
 
 export default {
     name: 'YearSelection',
@@ -22,26 +22,30 @@ export default {
             selection: this.$store.state.year
         }
     },
+    created() {
+        let choice = this.$store.state.year;
+        if (choice === "") {
+            this.$store.commit('changeYear', years[0]);
+        }
+        this.selection = this.$store.state.year;
+    },
     computed: {
-        // allyears() {
-        //     return pathways.keys()
-        // }
         allyears() {
-            return ["2021-2022","2020-2021","2019-2020","2018-2019","2017-2018"]
+            return years;
         }
     },
     methods: {
         updateYear() {
-            this.$store.commit('changeYear',this.selection)
+            this.$store.commit('changeYear', this.selection);
+            location.reload();
         }
     }
 }
 </script>
 
+
 <style>
 .yeardropdown {
-    padding-top: 20px;
-    padding-right: 10px;
     max-width: 200px;
     float: right;
 }

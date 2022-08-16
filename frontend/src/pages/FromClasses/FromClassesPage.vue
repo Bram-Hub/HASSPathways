@@ -6,6 +6,7 @@
             <h1>HASS Pathways From Classes</h1>
             <p>Search for the classes you have taken and then continue to the next page to display the computed pathways for you!</p>
 
+            <p>Try searching for all non-digital art classes offered in the fall at the 2,000 level by searching "arts fall 2000 ! digital".</p>
             <v-card outlined tile>
                 <v-card-title>
                     <v-text-field
@@ -18,8 +19,87 @@
                         style="border-radius: 0"
                     />
                     <v-spacer />
-
                     <!-- Clear confirmation modal -->
+                    <v-dialog
+                        v-model="transcript_dialog"
+                        width="700"
+                        light
+                        overlay-opacity="0.8"
+                    >
+                        <template #activator="{ on, attrs }">
+                            <v-btn
+                                dark
+                                color="blue" outlined tile
+                                class="mr-2 font-weight-bold mobile-btn"
+                                v-bind="attrs"
+                                v-on="on"
+                            >
+                                Import Classes
+                                <v-icon right>
+                                    mdi-upload
+                                </v-icon>
+                            </v-btn>
+                        </template>
+                        <v-card>
+                            <v-card-text class="pt-4 font-weight-medium">
+                                <h3 class="mb-1">
+                                    Uploading Your Unofficial Web Transcript
+                                </h3>
+                                This will take your unofficial transcript
+                                available on SIS and import all the HASS classes
+                                on it. This will allow you to see what pathways
+                                are compatible for the classes you have already
+                                taken.
+                                <br>
+                                <br>
+                                If your classes already appear under the
+                                <b>Imported Classes</b> section below, simply
+                                press "SELECT IMPORTED CLASSES" to select them.
+                                No need to reupload your transcript!
+                                <br>
+                                <br>
+                                In order to upload your transcript:
+                                <br>
+                                1. Log onto <a href="https://sis.rpi.edu" target="_blank">https://sis.rpi.edu</a>.
+                                <br>
+                                2. Go to the "Student Menu".
+                                <br>
+                                3. Under "Curriculum Information" click "View Transcript".
+                                <br>
+                                4. Select "All Levels" for the level and "Unoficial Web Transcript" for the type and then click submit.
+                                <br>
+                                5. Press Ctrl+s or right click a blank spot on the page and select "Save as...".
+                                <br>
+                                6. Save the html document.
+                                <br>
+                                7. Press "UPLOAD TRANSCRIPT" and select your transcript file.
+                            </v-card-text>
+                            <v-divider />
+                            <UploadTranscript />
+                            <v-divider />
+                            <v-card-actions>
+                                <v-spacer />
+                                <v-btn
+                                    color="secondary"
+                                    class="font-weight-bold"
+                                    text
+                                    @click="transcript_dialog = false"
+                                >
+                                    Cancel
+                                </v-btn>
+                                <v-btn
+                                    color="primary"
+                                    class="font-weight-bold"
+                                    text
+                                    @click="transcript_dialog = false; selectTranscriptClasses()"
+                                >
+                                    Select Imported Classes
+                                </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-dialog>
+
+
                     <v-dialog
                         v-model="dialog"
                         width="500"
@@ -72,9 +152,9 @@
                     <!-- Next button -->
                     <v-btn 
                         dark
-                        color="#2E7D32" tile
+                        color="green" tile
                         to="/from-classes"
-                        class="mr-2 mobile-btn"
+                        class="mr-2 font-weight-bold mobile-btn"
                     >
                         Find Pathways <v-icon right>
                             mdi-arrow-right-circle
@@ -90,18 +170,15 @@
                 <v-data-table
                     v-model="selected"
                     :headers="courseHeaders"
-                    :items="courses"
+                    :items="filteredCourses"
                     :single-select="false"
-                    :disable-pagination="true"
-                    :search="searchValue"
                     :fixed-header="true"
 
-                    sort-by="id"
+                    sort-by="identifier"
                     item-key="name"
                     show-select
-                    class="elevation-1"
-                    hide-default-footer
-                    height="400px"
+                    class="elevation-1 pb-6"
+                    height="550px"
                     max-height="90%"
                     mobile-breakpoint="10"
                 >
@@ -125,6 +202,12 @@
                             </td>
                             <td>{{ item.identifier }}</td>
                             <td>{{ item.name }}</td>
+                            <td style="text-align: right;">
+                                <SearchTableModifiers
+                                    class="mt-4 class-card__subtitle__modifiers float-top"
+                                    :course="item"
+                                />
+                            </td>
                         </tr>
                     </template>
                 </v-data-table>
@@ -135,43 +218,111 @@
 
 <script>
 import Breadcrumbs from '../../components/Breadcrumbs'
+import UploadTranscript from '../../components/UploadTranscript'
+import SearchTableModifiers from '../../components/SearchTableModifiers'
 import breadcrumbs from '../../data/breadcrumbs.js'
-import { courses } from '../../data/data.js'
 
 const TABLE_HEADERS = [
     {
         text: 'Course Code',
         value: 'identifier',
+        align: 'start',
         width: '130px'
     },
     {
         text: 'Name',
+        align: 'start',
         value: 'name'
+    },
+    {
+        text: 'Properties',
+        align: 'right',
+        value: ''
     }
 ];
 
 export default {
     components: {
-        Breadcrumbs
+        Breadcrumbs,
+        UploadTranscript,
+        SearchTableModifiers
     },
     data() {
-        const courseList = Object.values(courses).map(course => {
-            return {
-                name: course.name,
-                identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
-            };
-        });
-
         return {
             breadcrumbs: breadcrumbs.from_classes_search,
             searchValue: '',
-            courses: courseList,
             courseHeaders: TABLE_HEADERS,
-            selected: courseList.filter(course => this.$store.state.classes[course.name]),
-            dialog: false
+            dialog: false,
+            transcript_dialog: false,
+            selected: [],
+            coursesData: {},
+            chip_names: ["CI", "HI", "Fall", "Spring", "Summer"]
         }
     },
+    computed: {
+        courses() {
+            return Object.values(this.coursesData).map(course => {
+                if(course.ID && course['cross listed'] && course.properties && course.offered) {
+                    return {
+                        name: course.name,
+                        identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
+                        CI: course.properties.CI,
+                        HI: course.properties.HI,
+                        Fall: course.offered.fall,
+                        Spring: course.offered.spring,
+                        Summer: course.offered.summer,
+                        search_string: course.subj + '-' + course.ID // course subj-id
+                            + course['cross listed'].map(el => ' / ' + el).join("") // cross listed subj-id
+                            + " " + course.name // course name
+                            + " " + course.ID[0] + "000" // what level is the course
+                            + (course.offered.fall ? " Fall" : "")
+                            + (course.offered.spring ? " Spring" : "")
+                            + (course.offered.summer ? " Summer" : "")
+                            + (course.properties.CI ? " COMMUINT" : "")
+                            + (course.properties.HI ? " HASSINQ" : "")
+                    };
+                }
+            });
+        },
+        filteredCourses() {
+
+            // Collapse extra exlamation marks
+            let str_array = this.searchValue.split("!")
+            for(let i = 2; i < str_array.length; i++){
+                str_array[1] += str_array[i]
+            }
+            let searchText = str_array.join("!")
+            let words = searchText.split(/ *! */)
+            if(words.length == 1) words.push("")
+            let search_words = words[0].split(/ +/)
+            let negated_words = words[1].split(/ +/)
+            // console.log("search_words: " + search_words)
+            // console.log("negated_words: " + negated_words)
+            this.add_look_term(search_words, "(?=.*")  //wrap words in a lookahead
+            this.add_look_term(negated_words, "(?!.*") //wrap words in a negative lookahead
+            // console.log("search: " + negated_words.join("") + search_words.join(""))
+            // console.log("-----------------")
+
+
+            const re = new RegExp(search_words.join("") + negated_words.join(""), 'i') // i is to ignore case sensitive search
+            return this.courses.filter(course => course ? re.test(course.search_string) : false)
+        }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/courses.json').then((val) => {
+            this.coursesData = Object.freeze(val);
+            let temp = this.courses.filter(course => course != null);
+            this.selected = temp.filter(course => this.$store.state.classes[course.name]);
+        });
+    },
     methods: {
+        selectTranscriptClasses(){
+            this.$store.commit("addTranscriptClasses")
+
+            let temp = this.courses.filter(course => course != null);
+            this.selected = temp.filter(course => this.$store.state.classes[course.name]);
+        },
         // On row click, toggle selected state
         rowClick: function (item, select, isSelected) {
             // Is selected is previous selection state
@@ -188,6 +339,21 @@ export default {
         deselectAll() {
             this.selected = [];
             this.$store.commit('clearClasses');
+        },
+
+        //Surrounds words in a term like "(?=.*word)" which is a positive lookahead
+        add_look_term(words, term){
+            for (let i = 0; i < words.length; i++) {
+                // Remove zero length strings
+                if(words[i].length == 0) {
+                    words.splice(i, 1)
+                    i--;
+                    continue;
+                }
+                if(words[i].toLowerCase().trim() == 'hi') words[i] = "HASSINQ"
+                if(words[i].toLowerCase().trim() == 'ci') words[i] = "COMMUINT"
+                words[i] = term + words[i] + ")"
+            }
         }
     }
 }

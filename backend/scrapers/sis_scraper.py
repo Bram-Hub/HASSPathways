@@ -81,18 +81,16 @@ async def get_all_ci_courses(term, subjects):
                 data=f"term_in={term}&call_proc_in=&sel_subj=dummy&sel_levl=dummy&sel_schd=dummy&sel_coll=dummy&sel_divs=dummy&sel_dept=dummy&sel_attr=dummy&sel_subj={subj}&sel_crse_strt=&sel_crse_end=&sel_title=&sel_levl=%25&sel_schd=%25&sel_coll=%25&sel_divs=%25&sel_dept=%25&sel_from_cred=&sel_to_cred=&sel_attr=%25",
             ) as request:
                 html = await request.text()
-                print(f"Fetched {subj} from {term}.")
                 ci_courses += get_ci_courses(html)
     return ci_courses
 
-def overwrite_courses_json(ci_courses):
-    json_path = "../../frontend/src/data/json/courses.json"
+def overwrite_courses_json(ci_courses, file):
     set_ci_courses = set()
     for i in ci_courses:
         ci_id = f"{i[:4]} {i[5:9]}"
         set_ci_courses.add(ci_id)
 
-    f = open(json_path)
+    f = open(file)
     courses = json.load(f)
     f.close()
     for i in courses.keys():
@@ -100,13 +98,15 @@ def overwrite_courses_json(ci_courses):
         courses_id = f"{value['subj']} {value['ID']}"
         if courses_id in set_ci_courses:
             courses[i]["properties"]["CI"] = True
-    with open(json_path, "w") as f:
+    with open(file, "w") as f:
         json.dump(courses, f, ensure_ascii=False, indent=2)
 
 
 
-async def scrape_ci_sis(year = None, semester_type = None):
+async def scrape_CI(year = None, semester_type = None, file = None):
     term = ""
+    if file is None:
+        raise Exception("invalid input arguments")
     if year is not None and semester_type is None:   raise Exception("invalid input arguments")
     elif year is None and semester_type is not None: raise Exception("invalid input arguments")
     elif year is None and semester_type is None:
@@ -123,16 +123,4 @@ async def scrape_ci_sis(year = None, semester_type = None):
     subjects = await get_term_subjects(term)
 
     ci_courses = await get_all_ci_courses(term, subjects)
-
-    overwrite_courses_json(ci_courses)
-
-
-    # Uncomment below if a csv file for CI classes needs to be created
-    # df = []
-    # for course in ci_courses:
-    #     df.append([course[:4], course[5:9], course[12:]])
-    # df = pd.DataFrame(df, columns = ["SUBJECT", "ID", "NAME"])
-    # df.to_csv("ci_courses.csv", index = False)
-
-if __name__ == '__main__':
-    asyncio.run(scrape_ci_sis())
+    overwrite_courses_json(ci_courses, file)

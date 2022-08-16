@@ -1,5 +1,8 @@
 <template>
-    <v-app-bar app flat dense class="navbar">
+    <v-app-bar
+        app flat dense class="navbar"
+        style="z-index: 999"
+    >
         <router-link to="/">
             <v-img
                 class="pl-6 pr-8 ml-4"
@@ -16,7 +19,7 @@
             </v-layout>
         </v-container>
     </v-app-bar>
-</template>       
+</template>
 
 <script>
 import DarkLightModeButton from './DarkLightModeButton.vue'
@@ -25,15 +28,23 @@ import YearSelection from '../components/YearSelection.vue'
 
 export default {
     name: 'Header',
-    components: { DarkLightModeButton, 
-    HeaderNav,
-    YearSelection }
+    components: {
+        DarkLightModeButton,
+        HeaderNav,
+        YearSelection
+    }
 }
 </script>
 
 <style scoped>
 .navbar {
     border-bottom: 3px solid var(--v-primary-base) !important;
+}
+
+/deep/ .v-input__control {
+    display: flex;
+    flex-direction: inherit !important;
+    flex-wrap: inherit !important;
 }
 
 /* Remove navbar padding */
