@@ -29,7 +29,7 @@
                         x-large
                         block
                         color="primary"
-                        :to="{ name: 'search-classes' }"
+                        :to="{ name: 'choose-classes' }"
                     >
                         <v-icon left dark>
                             mdi-send
