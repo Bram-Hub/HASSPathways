@@ -79,7 +79,13 @@ export default {
                 }
             }
 
-            myPathways.sort((a, b) => a.courses.length < b.courses.length)
+            myPathways.sort(function(a, b){
+                // return a.courses.length - b.courses.length
+                if(a.courses.length == b.courses.length){
+                    return a.name < b.name ? -1 : 1
+                } else
+                    return a.courses.length < b.courses.length ? 1 : -1
+            })
             return myPathways;
         }
     },
