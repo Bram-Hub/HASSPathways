@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container v-if="pathway.name">
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
         <!-- <v-btn @click="debug()">click me</v-btn> -->
         <div class="header">
@@ -152,6 +152,15 @@
                 </v-tab-item>
             </v-tabs-items>
         </v-container>
+    </v-container>
+    <v-container v-else>
+        <div class="header">
+            <h1>Data Loading </h1>
+            <v-progress-circular
+                indeterminate
+                color="primary"
+            />
+        </div>
     </v-container>
 </template>
 
