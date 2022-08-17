@@ -6,9 +6,11 @@
                 :headers="headers"
                 :items="filteredCourses"
                 :sort-by="configureSort"
+                item-class="myRow"
                 item-key="name"
                 show-expand
                 single-expand
+                @click:row="(item, slot) => slot.expand(!slot.isExpanded)"
             >
                 <template slot="no-data">
                     No classes meet the criteria.
@@ -363,5 +365,8 @@ export default {
 <style>
     .searchName {
         padding: 20px;
+    }
+    .v-data-table > .v-data-table__wrapper > table > tbody > tr > td {
+        cursor: pointer;
     }
 </style>
