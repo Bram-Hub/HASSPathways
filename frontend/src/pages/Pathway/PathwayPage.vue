@@ -34,7 +34,7 @@
                     <v-container v-if="pathwayID!='Economics'" style="display:flex">
                         <div v-for="(item, index) in classTabs" :key="index" ref="tab" :class="[ 'tab' ]">
                             <h2 class="courseTitle">
-                                {{ item[0] }}
+                                {{ item[0] == 'Remaining' && classTabs.length == 1 ? "Choose any 3 of the following" : item[0] }}
                             </h2>
                             <CourseTable
                                 :ref="item[0]"
@@ -55,7 +55,7 @@
                             <div class="tab">
                                 <div v-for="(item, index_) in section" :key="index_">
                                     <h2 class="courseTitle">
-                                        {{ item[0] }}
+                                        {{ item[0] == 'Remaining' && classTabs.length == 1 ? "Choose any 3 of the following" : item[0] }}
                                     </h2>
                                     <CourseTable
                                         :ref="item[0]"
@@ -130,7 +130,7 @@
                     v-for="(item, index) in classTabs"
                     :key="index"
                 >
-                    <small>{{ item[0] }}</small>
+                    <small>{{ item[0] == 'Remaining' && classTabs.length == 1 ? "Choose any 3 of the following" : item[0] }}</small>
                 </v-tab>
             </v-tabs>
 
@@ -195,7 +195,7 @@ export default {
 
             while (items.length > 0)
                 sections.push(items.splice(0, size));
-                
+            
             return sections;
         },
         // Get id of the pathway, ie 'chinese_language'
@@ -262,6 +262,7 @@ export default {
         classTabs() {
             // Enable only non-empty tabs
             let prios = Object.keys(this.priorities);
+            prios = this.sortPrios(prios);
             for(const i in prios) {
                 prios[i] = [prios[i], prios[i]];
                 if(prios[i][0].substring(0, 6) == "One Of") {
@@ -384,6 +385,22 @@ export default {
             let result = lengthsArr.map( l => ( l/sum < 0.35 ? 1 : 2 )  )
             return result;
         },
+        sortPrios(curr) {
+            const out = [];
+            for(const i in curr) {
+                const prio = curr[i];
+                if(prio.substring(0, 3) == 'One') {
+                    out.push(prio);
+                }
+            }
+            if(curr.includes("Required")) {
+                out.push("Required");
+            }
+            if(curr.includes("Remaining")) {
+                out.push("Remaining");
+            }
+            return out;
+        }
     },
 }
 </script>
