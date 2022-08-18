@@ -238,12 +238,7 @@ export default {
         classTabs() {
             // Enable only non-empty tabs
             let prios = Object.keys(this.priorities);
-            /* Swap remaining and required if applicable */
-            if(prios.length >= 2 && prios[0] == 'Remaining' && prios[1] == 'Required') {
-                let tmp = prios[1];
-                prios[1] = prios[0];
-                prios[0] = tmp;
-            }
+            prios = this.sortPrios(prios);
             for(const i in prios) {
                 prios[i] = [prios[i], prios[i]];
                 if(prios[i][0].substring(0, 6) == "One Of") {
@@ -352,6 +347,22 @@ export default {
             let result = lengthsArr.map( l => ( l/sum < 0.35 ? 1 : 2 )  )
             return result;
         },
+        sortPrios(curr) {
+            const out = [];
+            for(const i in curr) {
+                const prio = curr[i];
+                if(prio.substring(0, 3) == 'One') {
+                    out.push(prio);
+                }
+            }
+            if(curr.includes("Required")) {
+                out.push("Required");
+            }
+            if(curr.includes("Remaining")) {
+                out.push("Remaining");
+            }
+            return out;
+        }
     },
 }
 </script>
