@@ -1,5 +1,8 @@
 <template>
-    <v-app-bar app flat dense class="navbar">
+    <v-app-bar
+        app flat dense class="navbar"
+        style="z-index: 999"
+    >
         <router-link to="/">
             <v-img
                 class="pl-6 pr-8 ml-4"
@@ -8,9 +11,9 @@
                 :src="this.$vuetify.theme.dark ? require('../assets/dark-mode-logo.png') : require('../assets/light-mode-logo.png')"
             />
         </router-link>
-
         <v-container fluid>
             <v-layout row align-center justify-end>
+                <YearSelection />
                 <DarkLightModeButton />
                 <HeaderNav />
             </v-layout>
@@ -21,16 +24,27 @@
 <script>
 import DarkLightModeButton from './DarkLightModeButton.vue'
 import HeaderNav from './HeaderNav.vue'
+import YearSelection from '../components/YearSelection.vue'
 
 export default {
     name: 'Header',
-    components: { DarkLightModeButton, HeaderNav }
+    components: {
+        DarkLightModeButton,
+        HeaderNav,
+        YearSelection
+    }
 }
 </script>
 
 <style scoped>
 .navbar {
     border-bottom: 3px solid var(--v-primary-base) !important;
+}
+
+/deep/ .v-input__control {
+    display: flex;
+    flex-direction: inherit !important;
+    flex-wrap: inherit !important;
 }
 
 /* Remove navbar padding */

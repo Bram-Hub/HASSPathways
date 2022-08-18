@@ -14,7 +14,7 @@
         
         <ul class="pathways-container">
             <v-tooltip
-                v-for="pathway in pathways"
+                v-for="pathway in filteredPathways"
                 :key="pathway"
 
                 bottom
@@ -32,14 +32,13 @@
                         </a>
                     </li>
                 </template>
-                <span>{{ pathwaysData[pathway].description }}</span>
+                <span v-if="pathwaysData[pathway]">{{ pathwaysData[pathway].description }}</span>
             </v-tooltip>
         </ul>
     </v-card>
 </template>
 
 <script>
-import { pathways as pathwaysData } from '../data/data.js'
 
 export default {
     name: 'PathwayCategory',
@@ -59,10 +58,24 @@ export default {
         pathways: {
             type: Array, // Array of pathway ids
             default: () => [],
-            validator: val => val.every(x => Object.keys(pathwaysData).includes(x))
         }
     },
-    data() { return { pathwaysData }; }
+    data() { return { pathwaysData: {} }; },
+    computed: {
+        filteredPathways() {
+            let output = [];
+            for(const pathway in this.pathways) {
+                if(this.pathwaysData[this.pathways[pathway]]) {
+                    output.push(this.pathways[pathway])
+                }
+            }
+            return output;
+        }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../data/json/' + year + '/pathways.json').then((val) => this.pathwaysData = Object.freeze(val));
+    }
 }
 </script>
 
@@ -83,13 +96,13 @@ export default {
 .darken {
     width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: 0.6;
+    background-color: DarkSlateGray;
+    opacity: 0.4;
     transition: opacity 0.2s;
 }
 
 .card:hover .darken {
-    opacity: 0.35;
+    opacity: 0.1;
     transition: opacity 0.2s;
 }
 

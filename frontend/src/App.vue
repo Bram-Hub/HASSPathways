@@ -1,6 +1,6 @@
 <template>
     <v-app id="app">
-        <Header />
+        <Header @updateYear="updateYear()" />
 
         <v-main class="main-content">
             <router-view />
@@ -33,17 +33,7 @@ export default {
         // Note: localStorage saves as a string
         let darkMode = localStorage.getItem(DARK_MODE);
         this.$vuetify.theme.dark = darkMode === null ? DEFAULT_DARK_MODE : darkMode === 'true';
-    },
-    methods: {
-        handleInput() {
-            this.$root.$emit('changedFilter', this.searchInput)
-        },
-        clearProgress() {
-            this.$root.$emit('resetProgress')
-            this.$store.editingCourses = false
-            location.reload()
-        },
-    },
+    }
 }
 </script>
 
@@ -56,6 +46,7 @@ export default {
     font-family: 'Muli', sans-serif;
     overflow-x: hidden;
     overflow-y: hidden;
+    padding-bottom: 50px;
 }
 
 .main-content {

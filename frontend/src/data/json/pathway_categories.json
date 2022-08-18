@@ -1,96 +1,102 @@
 [
-    {
-        "image": "art.jpg",
-        "name": "Art",
-        "pathways": [
-            "Electronic Arts",
-            "Studio Arts",
-            "Art History, Theory, and Criticism",
-            "Music and Culture",
-            "Music Composition and Production",
-            "Music Performance",
-            "Video, Performance, and Social Practice"
-        ]
-    },
-    {
-        "image": "cogsci.jpg",
-        "name": "Cognitive Science",
-        "pathways": [
-            "Philosophy",
-            "Artificial Intelligence",
-            "Linguistics",
-            "Behavioral and Cognitive Neuroscience",
-            "Mind, Brain, and Intelligence",
-            "Logical Thinking"
-        ]
-    },
-    {
-        "image": "communication-and-media.jpg",
-        "name": "Communication and Media",
-        "pathways": [
-            "Graphic Design",
-            "Media and Culture",
-            "Literature and Creative Writing",
-            "Strategic Communication",
-            "Chinese Language",
-            "Language",
-            "Interactive Media/Data Design"
-        ]
-    },
-    {
-        "image": "economics.jpg",
-        "name": "Economics",
-        "pathways": [
-            "Economics of Technology and Innovation",
-            "Economics of Banking and Finance",
-            "Economics of Decision-Making",
-            "Economics",
-            "Economics of Healthcare Markets",
-            "Economics of Policy and Regulations",
-            "Economics of Quantitative Modeling"
-        ]
-    },
-    {
-        "image": "interdisciplinary.jpg",
-        "name": "Interdisciplinary",
-        "pathways": [
-            "Gender, Race, Sexuality, Ethnicity, and Social Change",
-            "Extent and Limits of Rationality",
-            "Fact and Fiction",
-            "Creative Design and Innovation",
-            "Ethics, Integrity, and Social Responsibility",
-            "Public Health",
-            "Understanding Human Behavior",
-            "Well-being: Body and Mind"
-        ]
-    },
-    {
-        "image": "sts.jpg",
-        "name": "Science and Technology Studies",
-        "pathways": [
-            "History",
-            "Sustainability",
-            "Science, Technology, and Society",
-            "Environmental Futures",
-            "Thinking with Science",
-            "Living in a World of Data"
-        ]
-    }, 
-    {
-        "image": "restricted.jpg",
-        "name": "Transfer",
-        "pathways": [
-            "Transfer Student Arts and Humanities",
-            "Transfer Student Social Science"
-        ]
-    },
-    {
-        "image": "restricted.jpg",
-        "name": "Major Restricted",
-        "pathways": [
-            "Design, Innovation, and Society",
-            "Game Studies",
-            "Information Technology and Web Sciences"
-        ]
-    }
+  {
+    "image": "ARTS.jpg",
+    "name": "Art",
+    "pathways": [
+      "Arts History, Theory, and Criticism",
+      "Electronic Arts",
+      "Music Composition and Production",
+      "Music Performance",
+      "Music and Culture",
+      "Studio Arts",
+      "Video, Performance, and Social Impact",
+      "Art History, Theory, and Criticism",
+      "Video, Performance, and Social Practice"
+    ]
+  },
+  {
+    "image": "COGS.jpg",
+    "name": "Cognitive Science",
+    "pathways": [
+      "Artificial Intelligence",
+      "Behavioral and Cognitive Neuroscience",
+      "Logical Thinking",
+      "Mind, Brain, and Intelligence",
+      "Philosophy",
+      "Understanding Human Behavior",
+      "Well-being: Body and Mind"
+    ]
+  },
+  {
+    "image": "COMM.jpg",
+    "name": "Communication and Media",
+    "pathways": [
+      "Graphic Design",
+      "Interactive Media/Data Design",
+      "Media and Culture"
+    ]
+  },
+  {
+    "image": "ECON.jpg",
+    "name": "Economics",
+    "pathways": [
+      "Economics",
+      "Economics of Banking and Finance",
+      "Economics of Biotech and Medical Markets",
+      "Economics of Policy and Regulations",
+      "Economics of Quantitative Modeling",
+      "Economics of Technology and Innovation",
+      "Economics of Decision-Making",
+      "Economics of Healthcare Markets"
+    ]
+  },
+  {
+    "image": "INTE.jpg",
+    "name": "Interdisciplinary",
+    "pathways": [
+      "Creative Design and Innovation",
+      "Environmental Futures",
+      "Extent and Limits of Rationality",
+      "Fact and Fiction",
+      "Gender, Race, Sexuality, Ethnicity, and Social Change",
+      "Living in a World of Data",
+      "Strategic Communication",
+      "Thinking with Science",
+      "Transfer Student Arts and Humanities",
+      "Transfer Student Social Science",
+      "Pre-Health Pathway"
+    ]
+  },
+  {
+    "image": "LANG.jpg",
+    "name": "Language and Literature",
+    "pathways": [
+      "Chinese Language",
+      "Foreign Language",
+      "Linguistics",
+      "Literature and Creative Writing",
+      "Language"
+    ]
+  },
+  {
+    "image": "MAJR.jpg",
+    "name": "Major Restricted",
+    "pathways": [
+      "Design, Innovation, and Society",
+      "Game Studies",
+      "Information Technology and Web Sciences"
+    ]
+  },
+  {
+    "image": "STSO.jpg",
+    "name": "Science and Technology Studies",
+    "pathways": [
+      "Ethics, Integrity, and Social Responsibility",
+      "History",
+      "Law and Policy",
+      "Public Health",
+      "Science, Technology, and Society",
+      "Sustainability"
+    ]
+  }
 ]

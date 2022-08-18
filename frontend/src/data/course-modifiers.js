@@ -22,6 +22,13 @@ export const modifiers = {
         color: colors.green.darken3,
         search: ['spring']
     },
+    'uia': {
+        name: 'UIA',
+        tooltip: 'Upon availability of instructor',
+        icon: null,
+        color: colors.brown.darken1,
+        search: ['uia']
+    },
     'CI': {
         name: 'CI',
         tooltip: 'Communication intensive',
@@ -45,12 +52,18 @@ export const modifiers = {
         tooltip: 'Major restricted',
         color: colors.red.darken3,
         search: ['major', 'restrict']
+    },
+    'pre_requisite': {
+        name: 'PR',
+        tooltip: 'Pre-requisite(s) ',
+        color: colors.teal.lighten1,
+        search: ['prerequisite', 'pre-requisite', 'pre', 'requisite']
     }
 };
 
 // Note: icon modifiers are ALWAYS sorted before textModifiers, regardless
 // of the ordering below. If a key is missing from modifierOrder the modifier
 // will not be rendered
-export const modifierOrder = ['fall', 'spring', 'summer', 'CI', 'DI', 'HI', 'major_restrictive'];
+export const modifierOrder = ['fall', 'spring', 'summer', 'uia', 'CI', 'DI', 'HI', 'major_restrictive', 'pre_requisite'];
 export const iconModifiers = modifierOrder.filter(modifier => !modifiers[modifier].name);
 export const textModifiers = modifierOrder.filter(modifier =>  modifiers[modifier].name);

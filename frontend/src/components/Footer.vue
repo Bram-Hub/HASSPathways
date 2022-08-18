@@ -4,7 +4,7 @@
             <div>
                 We love feedback! Come visit our 
                 <a
-                    href="https://github.com/Bram-Hub/HASSPathways"
+                    href="https://github.com/anderm18/HASSPathways"
                     target="_blank"
                     class="text-decoration-none"
                 >
@@ -38,7 +38,9 @@ export default {
 
 <style scoped>
 .footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    width: 100%;
+    z-index: 999;
 }
 </style>

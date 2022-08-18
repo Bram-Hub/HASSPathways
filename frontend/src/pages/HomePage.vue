@@ -28,10 +28,10 @@
                     pathway-btn
                     large
                     color="primary"
-                    :to="{ name: 'search-classes' }"
+                    :to="{ name: 'choose-classes' }"
                 >
                     <v-icon left dark>
-                        mdi-magnify
+                        mdi-send
                     </v-icon>
                     Find pathways from classes
                 </v-btn>
@@ -49,13 +49,24 @@
                 <v-btn
                     pathway-btn
                     large
+                    color="primary"
+                    :to="{ name: 'search-classes' }"
+                >
+                    <v-icon left dark>
+                        mdi-magnify
+                    </v-icon>
+                    Advanced course search
+                </v-btn>
+                <!--v-btn
+                    pathway-btn
+                    large
                     :to="{ name: 'admin-portal' }"
                 >
                     <v-icon left dark>
                         mdi-cog
                     </v-icon>
                     Admin and secure portal
-                </v-btn>
+                </v-btn-->
             </v-row>
         </v-container>
     </div>
@@ -79,7 +90,10 @@ export default {
 
 <style scoped>
 .pathway-btn {
-    /* min-width: 330px !important; */
-    overflow-x: hidden !important;
+    width: 40%;
+    min-width: 330px !important;
+    max-width: 92vw !important;
+    overflow-x: hidden;
+    margin-bottom: 5px;
  }
 </style>
