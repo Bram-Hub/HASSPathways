@@ -108,6 +108,12 @@
                 class="class-card__desc"
             >
                 {{ course.description }}
+                <div v-if="course.professors.length != 0">
+                    Taught by:
+                    <li v-for="(prof, index) in course.professors" :key="prof" style="list-style: none; display: inline;">
+                        {{ prof }}{{ index &lt; selected.length - 1 ? ", " : "" }}
+                    </li>
+                </div>
             </v-card-text>
             <v-card-text
                 v-if="course.ID == null"
