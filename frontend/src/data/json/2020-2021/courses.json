@@ -16,6 +16,9 @@
     "prerequisites": [
       "ARTS-1020"
     ],
+    "professors": [
+      "Nathan Scott Meltz"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -38,6 +41,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -62,6 +66,9 @@
     "prerequisites": [
       "ARTS-2230"
     ],
+    "professors": [
+      "Silvia Ruzanka"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -84,6 +91,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Benjamin H. Barnard"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -108,6 +118,7 @@
     "prerequisites": [
       "ARTS-2230"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -132,6 +143,9 @@
     "prerequisites": [
       "ARTS-2230"
     ],
+    "professors": [
+      "John A. Baumann"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -154,6 +168,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Jennifer Cardinal"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -177,6 +194,9 @@
     },
     "prerequisites": [
       "PSYC-1200"
+    ],
+    "professors": [
+      "Larry D Reid"
     ],
     "properties": {
       "CI": false,
@@ -203,6 +223,9 @@
       "PSYC-2310",
       "ECON-4580"
     ],
+    "professors": [
+      "Rui Fan"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -227,6 +250,7 @@
     "prerequisites": [
       "ARTS-4070"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -249,6 +273,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kathleen Ruiz"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -272,6 +299,9 @@
     },
     "prerequisites": [
       "ARTS-1200"
+    ],
+    "professors": [
+      "Kenneth A. Ragsdale"
     ],
     "properties": {
       "CI": false,
@@ -297,8 +327,9 @@
     "prerequisites": [
       "COGS-2340"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -322,6 +353,7 @@
       "ARTS-1030",
       "IHSS-1030"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -344,6 +376,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "June Deery"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -366,6 +401,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kate Elizabeth Sohasky"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -388,6 +426,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -412,6 +451,7 @@
     "prerequisites": [
       "ARTS-4060"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -436,6 +476,9 @@
     "prerequisites": [
       "PSYC-2310",
       "ECON-4570"
+    ],
+    "professors": [
+      "Rui Fan"
     ],
     "properties": {
       "CI": false,
@@ -462,6 +505,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [
+      "Jianjing Lin"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -486,6 +532,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -508,6 +555,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -530,6 +578,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Jefferson Wille Kielwagen"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -554,6 +605,7 @@
     "prerequisites": [
       "ARTS-1020"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -576,6 +628,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Robert F. Nideffer"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -598,9 +653,10 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1020"
+      "ARTS-1020",
+      "IHSS-1030"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -623,6 +679,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -645,6 +702,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kenneth A. Ragsdale"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -670,6 +730,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [
+      "Ian S. Chadd"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -692,9 +755,12 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
       "PSYC-2310",
+      "ECON-1200",
       "IHSS-1200"
+    ],
+    "professors": [
+      "Billur Aksoy"
     ],
     "properties": {
       "CI": false,
@@ -722,6 +788,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Alicia Ann Walf"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -744,6 +813,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Elizabeth Press"
+    ],
     "properties": {
       "CI": false,
       "HI": true,
@@ -766,10 +838,13 @@
       "uia": false
     },
     "prerequisites": [
+      "PHIL-1110",
       "STSS-2510",
       "IHSS-1160",
-      "PHIL-1110",
       "STSH-2500"
+    ],
+    "professors": [
+      "Susan Lynn Smith"
     ],
     "properties": {
       "CI": true,
@@ -793,9 +868,10 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1020"
+      "ARTS-1020",
+      "IHSS-1030"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -820,6 +896,9 @@
     "prerequisites": [
       "COMM-2660"
     ],
+    "professors": [
+      "Sara L. Tack"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -842,6 +921,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kevin R. Stewart"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -864,8 +946,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -886,8 +969,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -908,6 +992,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -930,6 +1015,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -952,6 +1038,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Yalun Zhou",
+      "Jianling Yue"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -975,6 +1065,9 @@
     },
     "prerequisites": [
       "LANG-1410"
+    ],
+    "professors": [
+      "Jianling Yue"
     ],
     "properties": {
       "CI": false,
@@ -1000,6 +1093,9 @@
     "prerequisites": [
       "LANG-2410"
     ],
+    "professors": [
+      "Yalun Zhou"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1024,6 +1120,9 @@
     "prerequisites": [
       "LANG-4420"
     ],
+    "professors": [
+      "Jianling Yue"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1047,6 +1146,9 @@
     },
     "prerequisites": [
       "LANG-4430"
+    ],
+    "professors": [
+      "Jianling Yue"
     ],
     "properties": {
       "CI": false,
@@ -1074,6 +1176,9 @@
     "prerequisites": [
       "PSYC-4330"
     ],
+    "professors": [
+      "Alicia Ann Walf"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1100,6 +1205,7 @@
     "prerequisites": [
       "PHIL-2120"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1124,6 +1230,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Michael J. Schoelles"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1146,8 +1255,11 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
+    ],
+    "professors": [
+      "Christopher Robert Sims"
     ],
     "properties": {
       "CI": false,
@@ -1171,6 +1283,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1193,6 +1306,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1215,6 +1329,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Weina Ran"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1239,6 +1356,7 @@
     "prerequisites": [
       "ARTS-4380"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1262,6 +1380,9 @@
     },
     "prerequisites": [
       "PHIL-2140"
+    ],
+    "professors": [
+      "Bram Van Heuveln"
     ],
     "properties": {
       "CI": false,
@@ -1287,6 +1408,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1309,6 +1431,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1331,9 +1454,10 @@
       "uia": false
     },
     "prerequisites": [
-      "STSS-2300",
-      "STSH-2500"
+      "STSH-2500",
+      "STSS-2300"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1358,6 +1482,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1382,6 +1507,7 @@
     "prerequisites": [
       "ARTS-1020"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1404,6 +1530,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Silvia Ruzanka"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1428,6 +1557,9 @@
     "prerequisites": [
       "COMM-4340"
     ],
+    "professors": [
+      "Silvia Ruzanka"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1450,6 +1582,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Skye Anicca"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1472,6 +1607,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Skye Anicca"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1494,8 +1632,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -1518,6 +1657,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "John R Milanese",
+      "Bram Van Heuveln"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1541,6 +1684,9 @@
     },
     "prerequisites": [
       "COGS-2340"
+    ],
+    "professors": [
+      "Marjorie McShane"
     ],
     "properties": {
       "CI": true,
@@ -1566,6 +1712,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1588,6 +1735,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Linda Kramarchyk"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1610,6 +1760,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Thilanka Munasinghe"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1634,6 +1787,7 @@
     "prerequisites": [
       "ITWS-4350"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1656,6 +1810,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Samuel Bernt Johnson"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1678,6 +1835,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Stephanie D Loveless"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1700,6 +1860,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Brandon James Costelloe-Kuehn"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1724,6 +1887,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Raquel Velho"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1748,6 +1914,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Brandon James Costelloe-Kuehn"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1770,6 +1939,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Jarah W. Moesch"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1792,8 +1964,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Raquel Velho"
+    ],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -1815,6 +1990,9 @@
     },
     "prerequisites": [
       "IHSS-1610"
+    ],
+    "professors": [
+      "James Wilson Malazita"
     ],
     "properties": {
       "CI": true,
@@ -1838,6 +2016,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Langdon Winner"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1863,6 +2044,7 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1885,6 +2067,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Elizabeth Press"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1907,6 +2092,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Nathan Scott Meltz"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1929,6 +2117,14 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Atsushi Akera",
+      "Langdon Winner",
+      "James Wilson Malazita",
+      "Nancy D. Campbell",
+      "Abby J. Kinchy",
+      "Raquel Velho"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1951,6 +2147,20 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Wayne D. Gray",
+      "Christopher Robert Sims",
+      "Marjorie McShane",
+      "James A. Hendler",
+      "Peter A Fox",
+      "Tomasz Strzalkowski",
+      "Brett R. Fajen",
+      "Selmer Bringsjord",
+      "Michael J Kalsher",
+      "Sergei Nirenburg",
+      "Ron Sun",
+      "Mei Si"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1973,6 +2183,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Tamar Gordon"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1995,6 +2208,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Branda Miller"
+    ],
     "properties": {
       "CI": false,
       "HI": true,
@@ -2022,6 +2238,9 @@
       "STSH-1110",
       "STSS-1110"
     ],
+    "professors": [
+      "Nancy D. Campbell"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2046,6 +2265,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Larry D Reid"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2068,9 +2290,10 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1020"
+      "ARTS-1020",
+      "IHSS-1030"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2093,9 +2316,12 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
       "PSYC-2310",
+      "ECON-1200",
       "IHSS-1200"
+    ],
+    "professors": [
+      "Jason Ung Huh"
     ],
     "properties": {
       "CI": false,
@@ -2120,6 +2346,9 @@
     },
     "prerequisites": [
       "PSYC-2310"
+    ],
+    "professors": [
+      "Huaming Peng"
     ],
     "properties": {
       "CI": false,
@@ -2146,6 +2375,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [
+      "Ian S. Chadd"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2170,6 +2402,9 @@
     "prerequisites": [
       "ECON-1200",
       "IHSS-1200"
+    ],
+    "professors": [
+      "Vivek Ghosal"
     ],
     "properties": {
       "CI": false,
@@ -2196,6 +2431,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [
+      "Robert W. Jones"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2221,6 +2459,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [
+      "Vivek Ghosal"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2244,6 +2485,9 @@
     },
     "prerequisites": [
       "ECON-2020"
+    ],
+    "professors": [
+      "Michael A. Klein"
     ],
     "properties": {
       "CI": false,
@@ -2270,6 +2514,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [
+      "Kenneth L. Simons"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2295,8 +2542,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2317,6 +2565,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2341,11 +2590,12 @@
       "uia": false
     },
     "prerequisites": [
-      "STSS-2300",
-      "STSH-S 11"
+      "STSH-S 11",
+      "STSS-2300"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2369,6 +2619,7 @@
       "STSH-1110",
       "STSS-1110"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2393,6 +2644,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Robert Kyle Hamilton"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2417,6 +2671,9 @@
     "prerequisites": [
       "STSH-1110",
       "STSS-1110"
+    ],
+    "professors": [
+      "Eric Drumheller Schaffer"
     ],
     "properties": {
       "CI": true,
@@ -2443,6 +2700,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [
+      "Sarah Marsden Greene"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2468,6 +2728,7 @@
       "STSS-2700",
       "IHSS-1350"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2492,6 +2753,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2514,6 +2776,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2538,6 +2801,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2560,6 +2824,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "John R Milanese"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2582,6 +2849,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -2604,9 +2872,12 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
       "PSYC-2310",
+      "ECON-1200",
       "IHSS-1200"
+    ],
+    "professors": [
+      "Billur Aksoy"
     ],
     "properties": {
       "CI": true,
@@ -2632,6 +2903,9 @@
     "prerequisites": [
       "GSAS-4540"
     ],
+    "professors": [
+      "Kathleen Ruiz"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2654,6 +2928,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2676,6 +2951,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kathleen A. Galloway"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2698,8 +2976,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -2720,8 +2999,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -2742,8 +3022,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2764,6 +3045,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [
+      "Abby J. Kinchy"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2788,8 +3072,9 @@
     "prerequisites": [
       "PSYC-4740"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2810,6 +3095,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Miles A Kimball"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2832,6 +3120,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Nathan Scott Meltz"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2854,6 +3145,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Christopher James Fisher-Lochhead"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2878,6 +3172,9 @@
     "prerequisites": [
       "GSAS-4510"
     ],
+    "professors": [
+      "Silvia Ruzanka"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2900,6 +3197,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2923,6 +3221,9 @@
     },
     "prerequisites": [
       "GSAS-2540"
+    ],
+    "professors": [
+      "Michael F Lynch"
     ],
     "properties": {
       "CI": false,
@@ -2948,6 +3249,7 @@
     "prerequisites": [
       "ARTS-2230"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2970,6 +3272,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Eric Louis Ameres"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2993,6 +3298,9 @@
     },
     "prerequisites": [
       "GSAS-2510"
+    ],
+    "professors": [
+      "Eric Louis Ameres"
     ],
     "properties": {
       "CI": false,
@@ -3018,6 +3326,9 @@
     "prerequisites": [
       "GSAS-4520"
     ],
+    "professors": [
+      "Sylvain Payen"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3040,8 +3351,11 @@
       "uia": false
     },
     "prerequisites": [
-      "COMM-4240",
-      "GSAS-2520"
+      "GSAS-2520",
+      "COMM-4240"
+    ],
+    "professors": [
+      "Nicholas J. Mizer"
     ],
     "properties": {
       "CI": false,
@@ -3068,6 +3382,7 @@
       "STSH-2500",
       "STSS-2100"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3090,6 +3405,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -3114,8 +3430,9 @@
     "prerequisites": [
       "STSS-2300"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3137,6 +3454,9 @@
     },
     "prerequisites": [
       "ARTS-1020"
+    ],
+    "professors": [
+      "Nathan Scott Meltz"
     ],
     "properties": {
       "CI": false,
@@ -3160,6 +3480,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Daniel Peter Thero"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -3182,6 +3505,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [
+      "Igor Vamos"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3207,6 +3533,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [
+      "Jason Ung Huh"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -3229,6 +3558,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -3251,8 +3581,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Michael L. Century"
+    ],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3273,6 +3606,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Nicholas J. Mizer"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -3295,6 +3631,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Atsushi Akera"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -3317,6 +3656,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Silvia Ruzanka"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -3339,6 +3681,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -3361,6 +3704,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Matthew William Goodheart"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -3383,8 +3729,11 @@
       "uia": false
     },
     "prerequisites": [
-      "STSS-2520",
-      "IHSS-1410"
+      "IHSS-1410",
+      "STSS-2520"
+    ],
+    "professors": [
+      "Kate Elizabeth Sohasky"
     ],
     "properties": {
       "CI": true,
@@ -3408,10 +3757,11 @@
       "uia": false
     },
     "prerequisites": [
-      "STSS-2520",
       "IHSS-1410",
+      "STSS-2520",
       "STSH-S 11"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3434,12 +3784,15 @@
       "uia": false
     },
     "prerequisites": [
+      "IHSS-1420",
       "STSS-2520",
-      "STSH-S 11",
-      "IHSS-1420"
+      "STSH-S 11"
+    ],
+    "professors": [
+      "Christopher James Tozzi"
     ],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3462,6 +3815,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3486,6 +3840,7 @@
     "prerequisites": [
       "PSYC-2220"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3510,6 +3865,7 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3532,6 +3888,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kate Elizabeth Sohasky"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -3556,6 +3915,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Christopher James Tozzi"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -3580,6 +3942,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Holly A Traver"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3602,6 +3967,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3626,6 +3992,9 @@
     "prerequisites": [
       "COMM-2660"
     ],
+    "professors": [
+      "Miles A Kimball"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3648,6 +4017,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Brian Robert Callahan"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3672,6 +4044,9 @@
     "prerequisites": [
       "ITWS-2210"
     ],
+    "professors": [
+      "Linda Kramarchyk"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -3694,6 +4069,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3718,6 +4094,7 @@
     "prerequisites": [
       "ARTS-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3740,6 +4117,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Patricia Search"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3762,6 +4142,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3786,8 +4167,11 @@
     "prerequisites": [
       "ARTS-4380"
     ],
+    "professors": [
+      "Stephanie D Loveless"
+    ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -3809,6 +4193,9 @@
     },
     "prerequisites": [
       "ITWS-1100"
+    ],
+    "professors": [
+      "Patricia Search"
     ],
     "properties": {
       "CI": false,
@@ -3834,6 +4221,9 @@
     "prerequisites": [
       "ARTS-1020"
     ],
+    "professors": [
+      "Nathan Scott Meltz"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3858,6 +4248,9 @@
     "prerequisites": [
       "ARTS-1200"
     ],
+    "professors": [
+      "Kenneth A. Ragsdale"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3879,6 +4272,7 @@
       "text": ""
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3902,6 +4296,9 @@
     },
     "prerequisites": [
       "PHIL-2140"
+    ],
+    "professors": [
+      "Selmer Bringsjord"
     ],
     "properties": {
       "CI": false,
@@ -3927,6 +4324,9 @@
     "prerequisites": [
       "IHSS-1200"
     ],
+    "professors": [
+      "Mina Mahmoudi"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3951,6 +4351,9 @@
     "prerequisites": [
       "IHSS-1200"
     ],
+    "professors": [
+      "Robert W. Jones"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3974,6 +4377,9 @@
     },
     "prerequisites": [
       "ARTS-1030"
+    ],
+    "professors": [
+      "Elizabeth Press"
     ],
     "properties": {
       "CI": false,
@@ -4000,6 +4406,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [
+      "Mina Mahmoudi"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4022,6 +4431,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4044,6 +4454,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4068,8 +4479,11 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
+    ],
+    "professors": [
+      "Alicia Ann Walf"
     ],
     "properties": {
       "CI": false,
@@ -4093,6 +4507,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Benjamin P. Weissman"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4115,6 +4532,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "James Wilson Malazita",
+      "Sylvain Payen"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4137,6 +4558,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Eric Louis Ameres"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4159,6 +4583,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Nicholas J. Mizer"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4181,6 +4608,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Leah A. Rico"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4203,6 +4633,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Miles A Kimball"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4225,6 +4658,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Linda Kramarchyk"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4247,6 +4683,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [
+      "Benjamin P. Weissman"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4269,6 +4708,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "James P Zappen"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4291,6 +4733,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Bram Van Heuveln"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4313,6 +4758,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Daniel Peter Thero"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4335,6 +4783,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4357,6 +4806,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Michael J Kalsher"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4381,6 +4833,7 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4403,6 +4856,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4425,9 +4879,12 @@
       "uia": false
     },
     "prerequisites": [
-      "STSH-1110",
       "IHSS-1110",
+      "STSH-1110",
       "STSS-1110"
+    ],
+    "professors": [
+      "Abby J. Kinchy"
     ],
     "properties": {
       "CI": true,
@@ -4451,6 +4908,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "June Deery"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4473,6 +4933,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Yalun Zhou"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4495,8 +4958,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -4517,8 +4981,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -4539,6 +5004,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [
+      "Sergei Nirenburg"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4564,6 +5032,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [
+      "Robert W. Jones"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4586,6 +5057,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4608,6 +5080,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -4632,6 +5105,7 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4655,6 +5129,9 @@
     },
     "prerequisites": [
       "COGS-4420"
+    ],
+    "professors": [
+      "Mei Si"
     ],
     "properties": {
       "CI": false,
@@ -4680,6 +5157,7 @@
     "prerequisites": [
       "ARTS-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4702,6 +5180,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4724,6 +5203,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4747,6 +5227,9 @@
     },
     "prerequisites": [
       "ITWS-2110"
+    ],
+    "professors": [
+      "Matthew John Grill"
     ],
     "properties": {
       "CI": false,
@@ -4772,6 +5255,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4794,8 +5278,11 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
+    ],
+    "professors": [
+      "Christopher Robert Sims"
     ],
     "properties": {
       "CI": false,
@@ -4819,6 +5306,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4841,8 +5329,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Christopher C. Jeansonne"
+    ],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -4867,6 +5358,7 @@
     "prerequisites": [
       "STSS-2510"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4889,6 +5381,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Daniel Peter Thero"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4913,6 +5408,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4937,6 +5433,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "John R Milanese",
+      "Bram Van Heuveln"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -4959,6 +5459,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Ellen Esrock"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4984,6 +5487,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [
+      "Sarah Marsden Greene"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5007,6 +5513,9 @@
     },
     "prerequisites": [
       "PSYC-1200"
+    ],
+    "professors": [
+      "Ralph G Noble"
     ],
     "properties": {
       "CI": false,
@@ -5032,6 +5541,7 @@
     "prerequisites": [
       "ARTS-2020"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5054,6 +5564,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kathleen A. Galloway"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -5077,6 +5590,9 @@
     },
     "prerequisites": [
       "ARTS-1380"
+    ],
+    "professors": [
+      "Christopher James Fisher-Lochhead"
     ],
     "properties": {
       "CI": false,
@@ -5102,6 +5618,9 @@
     "prerequisites": [
       "ARTS-2380"
     ],
+    "professors": [
+      "Matthew William Goodheart"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5124,6 +5643,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Robert Kyle Hamilton"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5147,6 +5669,9 @@
     },
     "prerequisites": [
       "ARTS-2020"
+    ],
+    "professors": [
+      "Robert Kyle Hamilton"
     ],
     "properties": {
       "CI": false,
@@ -5173,8 +5698,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5195,6 +5721,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Jennifer Cardinal"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -5219,8 +5748,9 @@
     "prerequisites": [
       "ARTS-2500"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5243,8 +5773,9 @@
     "prerequisites": [
       "ECON-2020"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5266,6 +5797,9 @@
     },
     "prerequisites": [
       "ARTS-1200"
+    ],
+    "professors": [
+      "Monica A. Hughes"
     ],
     "properties": {
       "CI": false,
@@ -5291,8 +5825,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5313,6 +5848,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Ellen Esrock"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5335,6 +5873,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5359,6 +5898,7 @@
     "prerequisites": [
       "PHIL-2140"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5381,6 +5921,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Daniel Peter Thero"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5403,6 +5946,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "John R Milanese"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -5425,6 +5971,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Daniel Peter Thero"
+    ],
     "properties": {
       "CI": false,
       "HI": true,
@@ -5447,8 +5996,11 @@
       "uia": false
     },
     "prerequisites": [
-      "STSH-2010",
-      "STSS-2010"
+      "STSS-2010",
+      "STSH-2010"
+    ],
+    "professors": [
+      "Langdon Winner"
     ],
     "properties": {
       "CI": false,
@@ -5472,8 +6024,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -5494,6 +6047,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Holly A Traver"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5516,6 +6072,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Sarah Marsden Greene"
+    ],
     "properties": {
       "CI": false,
       "HI": true,
@@ -5538,6 +6097,18 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Charles W. Olencki",
+      "Jamecyn F. Morey",
+      "Akina Yura",
+      "Matthew P. Steckler",
+      "Elissa Marie Harrigan",
+      "Jingwen Tu",
+      "Karlinda D. Caldicott",
+      "Paul J. Quigley",
+      "Graeme S. Francis",
+      "Thomas J. Gerbino"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5560,6 +6131,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Azita Hirsa",
+      "Allison Beth Hoffman"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5582,6 +6157,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5604,6 +6180,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Michael J. Schoelles"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5626,11 +6205,12 @@
       "uia": false
     },
     "prerequisites": [
-      "WRIT-1110",
-      "COMM-2520"
+      "COMM-2520",
+      "WRIT-1110"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5653,8 +6233,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5675,6 +6256,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Holly A Traver"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -5699,6 +6283,7 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5723,6 +6308,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5750,6 +6336,9 @@
       "STSH-2500",
       "STSS-2100"
     ],
+    "professors": [
+      "Langdon Winner"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5772,6 +6361,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5794,6 +6384,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [
+      "Maryanne Staniszewski"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -5816,6 +6409,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5838,6 +6432,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Bram Van Heuveln"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5860,6 +6457,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5884,6 +6482,7 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5906,6 +6505,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5928,6 +6528,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5950,8 +6551,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5972,6 +6574,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Patrick Y Royer"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -5996,6 +6601,7 @@
     "prerequisites": [
       "COMM-2520"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6018,6 +6624,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6040,6 +6647,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6062,6 +6670,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Jennifer Cardinal"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6084,8 +6695,11 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
+    ],
+    "professors": [
+      "Michael J Kalsher"
     ],
     "properties": {
       "CI": true,
@@ -6111,6 +6725,9 @@
     "prerequisites": [
       "PSYC-2310"
     ],
+    "professors": [
+      "Brett R. Fajen"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6133,8 +6750,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -6159,6 +6777,7 @@
     "prerequisites": [
       "STSS-2300"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6184,6 +6803,9 @@
       "ARTS-1030",
       "IHSS-1030"
     ],
+    "professors": [
+      "Branda Miller"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6208,6 +6830,7 @@
     "prerequisites": [
       "ARTS-2340"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6234,6 +6857,9 @@
     "prerequisites": [
       "STSS-4980"
     ],
+    "professors": [
+      "Jennifer Cardinal"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6258,6 +6884,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6280,8 +6907,11 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1020"
+      "ARTS-1020",
+      "IHSS-1030"
+    ],
+    "professors": [
+      "Kathryn High"
     ],
     "properties": {
       "CI": true,
@@ -6305,6 +6935,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "June Deery"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6327,6 +6960,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Susan Lynn Smith"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -6351,6 +6987,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Eric Drumheller Schaffer"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6375,6 +7014,7 @@
     "prerequisites": [
       "PHIL-1110"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6397,6 +7037,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Jefferson Wille Kielwagen"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6421,6 +7064,7 @@
     "prerequisites": [
       "ARTS-2210"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6443,6 +7087,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6467,6 +7112,9 @@
     "prerequisites": [
       "ECON-4570"
     ],
+    "professors": [
+      "Kenneth L. Simons"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6489,6 +7137,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6512,6 +7161,9 @@
     },
     "prerequisites": [
       "PSYC-1200"
+    ],
+    "professors": [
+      "Brett R. Fajen"
     ],
     "properties": {
       "CI": false,
@@ -6540,6 +7192,9 @@
       "IHSS-1150",
       "PSYC-1200"
     ],
+    "professors": [
+      "Alicia Ann Walf"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6566,6 +7221,7 @@
     "prerequisites": [
       "STSS-2520"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6590,6 +7246,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Holly A Traver"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6612,6 +7271,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Miciah Z. Yehudah"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6634,6 +7296,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Peter A Fox"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6656,6 +7321,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Ross A. Rice"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -6678,6 +7346,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Ross A. Rice"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6702,6 +7373,9 @@
     "prerequisites": [
       "ARTS-2700"
     ],
+    "professors": [
+      "Ross A. Rice"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6724,6 +7398,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6746,6 +7421,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Terry W. Gipson"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6770,6 +7448,7 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6792,6 +7471,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Skye Anicca"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6818,6 +7500,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Alicia Ann Walf"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6842,6 +7527,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6864,6 +7550,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6886,6 +7573,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6908,6 +7596,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6932,6 +7621,9 @@
     "prerequisites": [
       "STSS-2300"
     ],
+    "professors": [
+      "Eric Drumheller Schaffer"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6954,6 +7646,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Jennifer Cardinal"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -6978,8 +7673,9 @@
     "prerequisites": [
       "STSS-2300"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7000,8 +7696,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7023,6 +7720,9 @@
     },
     "prerequisites": [
       "STSS-2300"
+    ],
+    "professors": [
+      "Brandon James Costelloe-Kuehn"
     ],
     "properties": {
       "CI": false,
@@ -7046,6 +7746,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -7068,6 +7769,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Stephanie D Loveless"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -7090,6 +7794,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Susan Lynn Smith"
+    ],
     "properties": {
       "CI": false,
       "HI": true,
@@ -7114,6 +7821,9 @@
     "prerequisites": [
       "COGS-2340"
     ],
+    "professors": [
+      "Marjorie McShane"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7136,6 +7846,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kathleen A. Galloway"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7158,6 +7871,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Tomasz Strzalkowski"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7180,6 +7896,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Yalun Zhou"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7202,8 +7921,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7227,6 +7947,9 @@
       "ECON-1200",
       "IHSS-1200"
     ],
+    "professors": [
+      "Rui Fan"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7249,6 +7972,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "TBA"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7271,6 +7997,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Susan Lynn Smith"
+    ],
     "properties": {
       "CI": false,
       "HI": true,
@@ -7293,6 +8022,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Yalun Zhou"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7315,6 +8047,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7337,6 +8070,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7361,6 +8095,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Yingrui Yang"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7383,6 +8120,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Brandon James Costelloe-Kuehn"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7405,6 +8145,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7427,6 +8168,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7449,6 +8191,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Monica A. Hughes"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7473,6 +8218,7 @@
     "prerequisites": [
       "ARTS-4380"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7495,6 +8241,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Sara L. Tack"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7517,6 +8266,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Alicia Ann Walf",
+      "Holly A Traver",
+      "Marjorie McShane"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7539,6 +8293,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7561,6 +8316,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Patricia Search"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7583,6 +8341,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7605,6 +8364,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Patrick Y Royer"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -7627,6 +8389,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -7650,6 +8413,9 @@
     },
     "prerequisites": [
       "ITWS-2110"
+    ],
+    "professors": [
+      "Brian Robert Callahan"
     ],
     "properties": {
       "CI": false,
@@ -7675,6 +8441,9 @@
     "prerequisites": [
       "ITWS-1100"
     ],
+    "professors": [
+      "Brian Robert Callahan"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7697,6 +8466,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Alicia Ann Walf"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -7719,6 +8491,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Ellen Esrock"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7741,6 +8516,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kathleen A. Galloway"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7765,6 +8543,7 @@
     "prerequisites": [
       "ARTS-1030"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7787,6 +8566,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kate A. Bradley"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7809,8 +8591,11 @@
       "uia": false
     },
     "prerequisites": [
-      "WRIT-2330",
-      "GSAS-2520"
+      "GSAS-2520",
+      "WRIT-2330"
+    ],
+    "professors": [
+      "Maurice W Suckling"
     ],
     "properties": {
       "CI": true,
@@ -7836,6 +8621,9 @@
     "prerequisites": [
       "COMM-4240"
     ],
+    "professors": [
+      "Maurice W Suckling"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7858,8 +8646,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7880,6 +8669,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Weina Ran"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7902,6 +8694,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Thilanka Munasinghe"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
