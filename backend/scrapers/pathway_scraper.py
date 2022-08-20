@@ -77,7 +77,7 @@ def handle_electives(cont, courses, depts, year):
         ID = all_courses[course]["ID"]
         subjC = all_courses[course]["subj"]
         if ID[0] == level and subjC == subj:
-            courses[course] = subjC+ID
+            courses[course.encode("ascii", "ignore").strip().decode().strip()] = subjC+ID
     f.close()
 
 def parse_courses(core, name, year):
@@ -99,7 +99,7 @@ def parse_courses(core, name, year):
                 app = True
         if app:
             t = (t.strip())
-            t = t.encode("ascii", "ignore").strip().decode()
+            t = t.encode("ascii", "ignore").strip().decode().strip()
             content.append(t)
     if not(len(content) == 0):
         for cont in content:

@@ -13,72 +13,80 @@ import asyncio
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 
-async def get_details(ID, subj, year, session):
-    fall = str(year[0:4]) + '09'
-    spring = str(year[-4:]) + '01'
-    summer = str(year[-4:]) + '05'
-    full_soup = None
+async def get_details(ID, subj, curr_year, session):
+    years = []
+    for i in range(-2, 1):
+        new_year = str(int(curr_year[0:4])+i) + str(int(curr_year[-4:])+i)
+        years.append(new_year)
 
     dets = [False, set()]
 
-    async with session.post(
-            "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse",
-            data = f"term_in={fall}&subj_in={subj}&crse_in={ID}&schd_in=L"
-    ) as request:
-        html = await request.text()
+    for year in years:
+        fall = str(year[0:4]) + '09'
+        spring = str(year[-4:]) + '01'
+        summer = str(year[-4:]) + '05'
+        full_soup = None
 
-    soup = BeautifulSoup(html, 'html.parser')
-    if soup.find(text=re.compile("No classes were found")) == None:
-        fall = True
-        full_soup = soup
-    else:
-        fall = False
+        async with session.post(
+                "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse",
+                data = f"term_in={fall}&subj_in={subj}&crse_in={ID}&schd_in=L"
+        ) as request:
+            html = await request.text()
 
-    async with session.post(
-            "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse",
-            data = f"term_in={spring}&subj_in={subj}&crse_in={ID}&schd_in=L"
-    ) as request:
-        html = await request.text()
+        soup = BeautifulSoup(html, 'html.parser')
+        if soup.find(text=re.compile("No classes were found")) == None:
+            fall = True
+            full_soup = soup
+        else:
+            fall = False
 
-    soup = BeautifulSoup(html, 'html.parser')
-    if soup.find(text=re.compile("No classes were found")) == None:
-        spring = True
-        full_soup = soup
-    else:
-        spring = False
+        async with session.post(
+                "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse",
+                data = f"term_in={spring}&subj_in={subj}&crse_in={ID}&schd_in=L"
+        ) as request:
+            html = await request.text()
 
-    async with session.post(
-            "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse",
-            data = f"term_in={summer}&subj_in={subj}&crse_in={ID}&schd_in=L"
-    ) as request:
-        html = await request.text()
+        soup = BeautifulSoup(html, 'html.parser')
+        if soup.find(text=re.compile("No classes were found")) == None:
+            spring = True
+            full_soup = soup
+        else:
+            spring = False
 
-    soup = BeautifulSoup(html, 'html.parser')
-    if soup.find(text=re.compile("No classes were found")) == None:
-        summer = True
-        full_soup = soup
-    else:
-        summer = False
+        async with session.post(
+                "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse",
+                data = f"term_in={summer}&subj_in={subj}&crse_in={ID}&schd_in=L"
+        ) as request:
+            html = await request.text()
 
-    if full_soup == None:
-        return dets
+        soup = BeautifulSoup(html, 'html.parser')
+        if soup.find(text=re.compile("No classes were found")) == None:
+            summer = True
+            full_soup = soup
+        else:
+            summer = False
 
-    times = full_soup.findAll("table", {
-        "class": "datadisplaytable",
-        "summary": "This table lists the scheduled meeting times and assigned instructors for this class..",
-    })
+        if full_soup == None:
+            return dets
 
-    for time in times:
-        split_up = [x.text for x in time.findAll("td")]
-        instructor = split_up[6].split('(')[0]
-        dets[1].add(re.sub(' +', ' ', instructor).strip())
+        times = full_soup.findAll("table", {
+            "class": "datadisplaytable",
+            "summary": "This table lists the scheduled meeting times and assigned instructors for this class..",
+        })
 
-    search = r"""<span class="fieldlabeltext">Attributes: </span>(.*?)\n<br/>"""
-    attribute = re.search(search, str(full_soup))
-    tmp = attribute.group(1).strip() if attribute != None else ""
-    if 'Communication Intensive' in tmp:
-        dets[0] = True
-        
+        for time in times:
+            split_up = [x.text for x in time.findAll("td")]
+            instructor = split_up[6].split('(')[0]
+            instructor = re.sub(' +', ' ', instructor).strip()
+            if instructor != "TBA":
+                dets[1].add(instructor)
+
+        search = r"""<span class="fieldlabeltext">Attributes: </span>(.*?)\n<br/>"""
+        attribute = re.search(search, str(full_soup))
+        tmp = attribute.group(1).strip() if attribute != None else ""
+        if 'Communication Intensive' in tmp:
+            dets[0] = True
+            
     return dets
 
 async def scrape_CI(years, folder_path):
