@@ -1,0 +1,9 @@
+.vs/
+.idea/
+workspace.xml
+launch.json
+package-lock.json
+package.json
+frontend/package-lock.json
+backend/scrapers/__pycache__/
+*.pyc
