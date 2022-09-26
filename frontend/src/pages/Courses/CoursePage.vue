@@ -5,6 +5,24 @@
             <h1>{{ course.subj }}-{{ course.ID }}: {{ course.name }}</h1>
         </div>
         <p>{{ course.description }}</p>
+        <h3>Available: {{ course.offered.text }}</h3>
+        <br>
+        <h3>Prerequisites:</h3>
+        <template v-if="course.prerequisites.length !== 0">
+            <ul>
+                <li v-for="prereq in course.prerequisites" :key="prereq.id">
+                    {{ prereq }}
+                </li>
+            </ul>
+        </template>
+        <template v-else>
+            <p>None</p>
+        </template>
+        <CourseTableModifiers
+            class="mt-4 class-card__subtitle__modifiers"
+            :class="{ graphChange: graph }"
+            :item="course"
+        />
         <v-divider class="my-4" />
     </v-container>
 </template>
@@ -13,10 +31,12 @@
 import { courseCategories } from '../../data/data.js'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
+import CourseTableModifiers from '../../components/CourseTableModifiers'
 
 export default {
     components: {
-        Breadcrumbs
+        Breadcrumbs,
+        CourseTableModifiers
     },
     data() {
         return {
