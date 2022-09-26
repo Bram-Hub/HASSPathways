@@ -1,34 +1,16 @@
 <template>
-    <div style="width: 75%; margin: 0 auto;">
-        <v-container fluid>
-            <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <h1>
-                Template Course Page
-            </h1>
-            <p> 
-                I'm really just trying to get a feel for this format right now. 
-            </p>
-            <v-divider class="my-4" />
-            <div class="btn-container">
-                <div class="homepage-btn">
-                    <v-btn
-                        x-large
-                        block
-                        color="primary"
-                        :to="{ name: 'pathways' }"
-                    >
-                        <v-icon left dark>
-                            mdi-compass
-                        </v-icon>
-                        Explore pathways
-                    </v-btn>
-                </div>
-            </div>
-        </v-container>
-    </div>
+    <v-container v-if="course.name">
+        <Breadcrumbs :breadcrumbs="breadcrumbs" />
+        <div class="header">
+            <h1>{{ course.subj }}-{{ course.ID }}: {{ course.name }}</h1>
+        </div>
+        <p>{{ course.description }}</p>
+        <v-divider class="my-4" />
+    </v-container>
 </template>
 
 <script>
+import { courseCategories } from '../../data/data.js'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 
@@ -38,26 +20,43 @@ export default {
     },
     data() {
         return {
-            year: '2022-2023',
+            coursesData: {}
         }
     },
     computed: {
+        // Get ID of course
         courseID() {
-            // let courseID = this.$route.query.course;
-            return 'art_history';
+            let courseID = this.$route.query.course;
+            return courseID;
         },
+        // Get course object
         course() {
-            if(!this.years[this.year][this.courseID]) {
+            if(!this.coursesData[this.courseID]) {
                 return {};
             }
-            return this.years[this.year][this.courseID];
+            return this.coursesData[this.courseID];
+        },
+        categoryName() {
+            for (let category in courseCategories)
+                if (category.courses.includes(this.courseID))
+                    return category.name;
+            return '';
         },
         breadcrumbs() {
             return breadcrumbs.course_template.map(x => x || {
-                text: 'Art History', 
+                text: this.course.name, 
                 href: 'course?course=' + encodeURIComponent(this.courseID)
             })
         }
+    },
+    created() {
+        const year = this.$store.state.year;
+        import('../../data/json/' + year + '/courses.json').then((val) => {this.coursesData = Object.freeze(val);
+            let courseID = this.$route.query.course;
+            if (!Object.keys(this.coursesData).includes(courseID)) {
+                this.$router.push('/404');
+            }
+        });
     }
 }
 </script>
