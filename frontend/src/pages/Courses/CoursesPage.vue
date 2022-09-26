@@ -15,7 +15,7 @@
                 <CourseCategory
                     v-for="item in courseCategories"
                     :key="item.name"
-                    :title="itemn.name"
+                    :title="item.name"
                     :image="item.image"
                     :text="item.text"
                     :courses="item.courses"

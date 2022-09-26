@@ -32,7 +32,7 @@
                         </a>
                     </li>
                 </template>
-                <span v-if="coursesData[course]">{{ coursesData.description }}</span>
+                <span v-if="coursesData[course]">{{ coursesData[course].description }}</span>
             </v-tooltip>
         </ul>
     </v-card>
@@ -49,7 +49,7 @@ export default {
         },
         text: {
             type: String,
-            required: true
+            default: '' 
         },
         image: {
             type: String,
