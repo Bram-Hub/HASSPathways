@@ -1,33 +1,41 @@
 <template>
     <v-container :class="{ minHeight : !graph}">
         <!-- Table header with search and open/close all buttons
-          -- A scale transform is applied to make it smaller -->
-        <v-card
-            v-if="searchBar"
-            class="table-header-search elevation-0 ( pt-2 pb-2 pr-4 ) d-flex"
-        > 
-            <v-text-field
-                v-model="search"
-                append-icon="mdi-magnify"
-                label="Search"
-                outlined
-                dense
-                hide-details
-                class="ma-0"
-                style="width: 400px; max-width: 100%"
-            />
+    -- A scale transform is applied to make it smaller -->
+        <v-row no-gutters>
+            <v-col>
+                <v-checkbox v-model="searchFall"
+                            label="Fall" />
+            </v-col>
+            <v-col>
+                <v-checkbox v-model="searchSpring"
+                            label="Spring" />
+            </v-col>
+            <v-col>
+                <v-checkbox v-model="searchSummer"
+                            label="Summer" />
+            </v-col>
+        </v-row>
+        <v-card v-if="searchBar"
+                class="table-header-search elevation-0 ( pt-2 pb-2 pr-4 ) d-flex">
+            <v-text-field v-model="search"
+                          append-icon="mdi-magnify"
+                          label="Search"
+                          outlined
+                          dense
+                          hide-details
+                          class="ma-0"
+                          style="width: 400px; max-width: 100%" />
         </v-card>
         <div :class="{graphContainer: graph}">
-            <CourseTableCourse
-                v-for="item in filteredCourses"
-                :key="item.name"
-                :course="item"
-                :pathway-id="pathwayId"
-                :desc="desc"
-                :hover="hover"
-                :graph="graph"
-                @checkbox-clicked="update"
-            />
+            <CourseTableCourse v-for="item in filteredCourses"
+                               :key="item.name"
+                               :course="item"
+                               :pathway-id="pathwayId"
+                               :desc="desc"
+                               :hover="hover"
+                               :graph="graph"
+                               @checkbox-clicked="update" />
         </div>
 
 
