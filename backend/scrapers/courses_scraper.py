@@ -69,7 +69,7 @@ def get_catalog_description(fields, course_name):
                 if clean_description.startswith("Prerequisite"):
                     return ""
                 elif len(clean_description) > 10:
-                    return clean_description
+                    return clean_description.encode("ascii", "ignore").strip().decode().strip()
 
     return ""
 
