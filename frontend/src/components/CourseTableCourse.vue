@@ -108,6 +108,8 @@
                 class="class-card__desc"
             >
                 {{ course.description }}
+                <br>
+                <a :href="`/course?course=${encodeURIComponent(course.name)}`" class="text-decoration-none"> Course Link </a>
             </v-card-text>
             <v-card-text
                 v-if="course.ID == null"
