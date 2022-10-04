@@ -16,6 +16,14 @@
                 class="ma-0"
                 style="width: 400px; max-width: 100%"
             />
+            <div id = "app"> 
+                <v-select 
+                    dense
+                    :items="items" 
+                    label = "Advanced Sort" 
+                    style =  "height: 10px ;max-height 20px ;" >
+                </v-select> 
+            </div>
         </v-card>
         <div :class="{graphContainer: graph}">
             <CourseTableCourse
