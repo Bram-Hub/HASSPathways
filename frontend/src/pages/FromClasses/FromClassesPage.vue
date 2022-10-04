@@ -201,7 +201,7 @@
                                 />
                             </td>
                             <td>{{ item.identifier }}</td>
-                            <td>{{ item.name }}</td>
+                            <td><a :href="`/course?course=${encodeURIComponent(item.name)}`" class="text-decoration-none"> {{ item.name }} </a></td>
                             <td style="text-align: right;">
                                 <SearchTableModifiers
                                     class="mt-4 class-card__subtitle__modifiers float-top"
