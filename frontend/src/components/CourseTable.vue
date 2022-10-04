@@ -18,10 +18,11 @@
             />
             <div id = "app"> 
                 <v-select 
+                    v-model="advanced_search"
                     dense
                     :items="items" 
                     label = "Advanced Sort" 
-                    style =  "height: 10px ;max-height 20px ;" >
+                    style =  "height: 15px ;max-height 20px ;" >
                 </v-select> 
             </div>
         </v-card>
