@@ -114,8 +114,7 @@
                         {{ prof }}{{ index &lt; course.professors.length - 1 ? ", " : "" }}
                     </li>
                 </div>
-                <br>
-                <a :href="`/course?course=${encodeURIComponent(course.name)}`" class="text-decoration-none"> Course Link </a>
+                <a :href="`/course?course=${encodeURIComponent(course.name)}`"> Course Link </a>
             </v-card-text>
             <v-card-text
                 v-if="course.ID == null"
