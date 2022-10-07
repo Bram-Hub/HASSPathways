@@ -15,9 +15,6 @@
     },
     "prerequisites": [],
     "current_providing": false,
-    "rateProfessor_links": [],
-    "days": [],
-    "times": [],
     "professors": [],
     "properties": {
       "CI": false,
@@ -43,9 +40,6 @@
     "prerequisites": [],
     "current_providing": false,
     "professors": [],
-    "rateProfessor_links": [],
-    "dates": [],
-    "times": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -70,19 +64,20 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Silvia Ruzanka"
-    ],
-    "rateProfessor_links": [
-      "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2656631"
-    ],
-    "class_per_week": "2",
-    "days": [
-      "T",
-      "F"
-    ],
-    "times": [
-      "12:00p - 1:50p",
-      "12:00p - 1:50p"
+      {"name": "Silvia Ruzanka",
+      "CRNs": [
+        "57619"
+      ]
+      "rateProfessor_links":"https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2656631",
+      "days": [
+        "T",
+        "F"
+      ],
+      "times": [
+        "12:00p - 1:50p",
+        "12:00p - 1:50p"
+      ]
+    }
     ],
     "properties": {
       "CI": false,
@@ -106,9 +101,23 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
-      "Kolel Christopher Pryor",
-      "Benjamin H. Barnard"
+      {
+      "name":"Benjamin H. Barnard",
+      "rateProfessor_links": "NA",
+      "CRNs":[
+        "58344"
+      ],
+      "days":[
+        "T",
+        "F"
+      ],
+      "times":[
+        "8:00a - 9:50a",
+        "8:00a - 9:50a"
+      ] 
+      }
     ],
     "properties": {
       "CI": false,
@@ -135,6 +144,7 @@
       "ARTS-2230"
     ],
     "professors": [],
+    "current_providing": false,
     "properties": {
       "CI": false,
       "HI": false,
@@ -157,9 +167,8 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": false,
     "professors": [
-      "Silvia Ruzanka",
-      "John A. Baumann"
     ],
     "properties": {
       "CI": false,
@@ -183,9 +192,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "professors": [
-      "Jennifer Cardinal"
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": true,
       "HI": true,
@@ -208,8 +216,23 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing":true,
     "professors": [
-      "Larry D Reid"
+      {
+      "name":"Larry D Reid",
+      "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=142838",
+      "CRNs":[
+        "58701"
+      ],
+      "days":[
+        "T",
+        "W"
+      ],
+      "times":[
+        "6:00p - 7:50p",
+        "6:00p - 7:50p"
+      ] 
+      }
     ],
     "properties": {
       "CI": false,
