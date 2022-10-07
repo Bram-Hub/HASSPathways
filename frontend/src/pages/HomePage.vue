@@ -72,7 +72,7 @@
                         :to="{ name: 'courses' }"
                     >
                         <v-icon left dark>
-                            mdi-compass
+                            mdi-book-open-variant
                         </v-icon>
                         Explore courses
                     </v-btn>
