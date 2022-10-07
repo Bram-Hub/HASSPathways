@@ -16,13 +16,19 @@
                 class="ma-0"
                 style="width: 400px; max-width: 100%"
             />
-            <div id = "app"> 
+            <div id :class="SORT"> 
+                <!-- search bar -->
                 <v-select 
-                    v-model="advanced_search"
+                    v-model="advanced_search" 
                     dense
-                    :items="items" 
-                    label = "Advanced Sort" 
-                    style =  "height: 15px ;max-height 20px ;" >
+                    :items="sort_dropbox" 
+                    multiple
+                    outlined
+                    label = "Sort" 
+                    clearable
+                    chips
+                    fixed
+                    >
                 </v-select> 
             </div>
         </v-card>
@@ -91,7 +97,15 @@ export default {
         }
     },
     data() {
-        return { search: '' }
+        return {    search: '' ,
+                    sortFall: false,
+                    sortSpring: false,
+                    sortSummer: false,
+                    sortCI: false,
+                    sortHI: false,
+                    sortPrereq: false,
+                    sort_dropbox: ['Fall', 'Spring', 'Sumeer', 'CI', 'HI', 'No Prerequistes'],
+        }
     },
     // watch: {
     //     descriptionOnHover( newValue ) {
@@ -147,7 +161,8 @@ export default {
                 }
             )
             return tempCourses
-        }
+        },
+
     },
     methods: {
         deselectAll() {
