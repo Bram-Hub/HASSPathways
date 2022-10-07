@@ -4,7 +4,7 @@
             {{ title }}
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-            <ul class="course-container">
+            <ul class="courses-container">
                 <v-tooltip
                     v-for="course in filteredCourses"
                     :key="course"
@@ -75,38 +75,8 @@ export default {
 
 <style scoped lang="scss">
 
-.card {
-    width: 100%;
-    max-width: calc(100vw - 24px);
-	display: inline-block;
-	vertical-align: top;
-}
-
-.darken {
-    width: 100%;
-	height: 100%;
-    background-color: DarkSlateGray;
-    opacity: 0.4;
-	transition: opacity 0.2s;
-}
-
-.card:hover .darken {
-    opacity: 0.1;
-    transition: opacity 0.2s;
-}
-
-.card-title {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-}
-
 .courses-container {
-    overflow-y: auto;
-    margin: 10px 0;
-    list-style-type: square;
+	column-count: 3;
 }
 
 .course {
