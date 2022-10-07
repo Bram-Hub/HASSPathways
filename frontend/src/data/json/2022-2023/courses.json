@@ -14,9 +14,11 @@
       "uia": false
     },
     "prerequisites": [],
-    "professors": [
-      "Nathan Scott Meltz"
-    ],
+    "current_providing": false,
+    "rateProfessor_links": [],
+    "days": [],
+    "times": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -39,7 +41,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": false,
     "professors": [],
+    "rateProfessor_links": [],
+    "dates": [],
+    "times": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -62,8 +68,21 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Silvia Ruzanka"
+    ],
+    "rateProfessor_links": [
+      "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2656631"
+    ],
+    "class_per_week": "2",
+    "days": [
+      "T",
+      "F"
+    ],
+    "times": [
+      "12:00p - 1:50p",
+      "12:00p - 1:50p"
     ],
     "properties": {
       "CI": false,
