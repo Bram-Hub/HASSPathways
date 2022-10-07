@@ -16,7 +16,7 @@
                 class="ma-0"
                 style="width: 400px; max-width: 100%"
             />
-            <div id :class="SORT"> 
+            <div id class="SORT"> 
                 <!-- search bar -->
                 <v-select 
                     v-model="advanced_search" 
@@ -24,13 +24,24 @@
                     :items="sort_dropbox" 
                     multiple
                     outlined
+                    chips
                     label = "Sort" 
                     clearable
-                    chips
-                    fixed
-                    style="width: 200px; max-width: 100%"
+                    style="width: 275px; max-width: 100%; "
                     >
+                    <template v-slot:selection="{ item, index }">
+                        <v-chip v-if="index === 0">
+                            <span>{{ item }}</span>
+                        </v-chip>
+                        <span
+                            v-if="index == 1"
+                            class="grey--text text-caption"
+                        >
+                            (+{{ advanced_search.length - 1 }} others)
+                        </span>
+                    </template>
                 </v-select> 
+
             </div>
         </v-card>
         <div :class="{graphContainer: graph}">
@@ -98,14 +109,15 @@ export default {
         }
     },
     data() {
-        return {    search: '' ,
+        return {    advanced_search: "",
+                    search: '' ,
                     sortFall: false,
                     sortSpring: false,
                     sortSummer: false,
                     sortCI: false,
                     sortHI: false,
                     sortPrereq: false,
-                    sort_dropbox: ['Fall', 'Spring', 'Sumeer', 'CI', 'HI', 'No Prerequistes'],
+                    sort_dropbox: ['Fall', 'Spring', 'Summer', 'CI', 'HI', 'No Prerequistes'],
         }
     },
     // watch: {
@@ -116,7 +128,7 @@ export default {
     computed: {
         filteredCourses() {
             let tempCourses = JSON.parse(JSON.stringify(this.courses));
-
+            console.log(tempCourses);
             //Weird hack that is needed
             //Basically since this is a computed method it will auto run
             //whenever the "data" is changed but since this.courses
@@ -165,6 +177,7 @@ export default {
         },
 
     },
+
     methods: {
         deselectAll() {
             this.$children.forEach(child => {
@@ -213,5 +226,9 @@ export default {
 
 .no-search-results {
     margin: 20px 5px;
+}
+
+.SORT {
+    padding-bottom: 1 px;
 }
 </style>
