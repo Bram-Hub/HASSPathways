@@ -1,41 +1,34 @@
 <template>
-    <v-card class="card" elecation="1">
-        <v-img
-            height="76px"
-            class="card-img"
-        >
-            <!-- :src="require('../assets/course-groups/' + image)" -->
-            <div class="darken" />
+    <v-expansion-panel>
+        <v-expansion-panel-header>
+            {{ title }}
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+            <ul class="course-container">
+                <v-tooltip
+                    v-for="course in filteredCourses"
+                    :key="course"
 
-            <v-card-title class="font-weight-bold text-truncate card-title">
-                {{ title }}
-            </v-card-title>
-        </v-img>
-
-        <ul class="course-container">
-            <v-tooltip
-                v-for="course in filteredCourses"
-                :key="course"
-
-                bottom
-                eager
-                color="black"
-                offset-overflow
-                max-width="400px"
-                open-delay="700"
-                transition="none"
-            >
-                <template #activator="{ on, attrs }">
-                    <li class="course" v-bind="attrs" v-on="on">
-                        <a :href="`/course?course=${encodeURIComponent(course)}`" class="text-decoration-none">
-                            <b>{{ course }}</b>
-                        </a>
-                    </li>
-                </template>
-                <span v-if="coursesData[course]">{{ coursesData[course].description }}</span>
-            </v-tooltip>
-        </ul>
-    </v-card>
+                    bottom
+                    eager
+                    color="black"
+                    offset-overflow
+                    max-width="400px"
+                    open-delay="700"
+                    transition="none"
+                >
+                    <template #activator="{ on, attrs }">
+                        <li class="course" v-bind="attrs" v-on="on">
+                            <a :href="`/course?course=${encodeURIComponent(course)}`" class="text-decoration-none">
+                                <b>{{ course }}</b>
+                            </a>
+                        </li>
+                    </template>
+                    <span v-if="coursesData[course]">{{ coursesData[course].description }}</span>
+                </v-tooltip>
+            </ul>
+        </v-expansion-panel-content>
+    </v-expansion-panel>
 </template>
 
 <script>
