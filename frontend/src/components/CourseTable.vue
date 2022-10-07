@@ -109,15 +109,9 @@ export default {
         }
     },
     data() {
-        return {    advanced_search: "",
+        return {    advanced_search: [],
                     search: '' ,
-                    sortFall: false,
-                    sortSpring: false,
-                    sortSummer: false,
-                    sortCI: false,
-                    sortHI: false,
-                    sortPrereq: false,
-                    sort_dropbox: ['Fall', 'Spring', 'Summer', 'CI', 'HI', 'No Prerequistes'],
+                    sort_dropbox: ['Fall', 'Spring', 'Summer', 'CI', 'No Prerequistes'],
         }
     },
     // watch: {
@@ -129,6 +123,7 @@ export default {
         filteredCourses() {
             let tempCourses = JSON.parse(JSON.stringify(this.courses));
             console.log(tempCourses);
+            let output = [];
             //Weird hack that is needed
             //Basically since this is a computed method it will auto run
             //whenever the "data" is changed but since this.courses
@@ -158,6 +153,27 @@ export default {
                 else {
                     tempCourses[course]["hasData"] = true;
                 }
+                //Check fall
+                if (this.advanced_search.includes("Fall") && !tempCourses[course].offered.fall) {
+                    continue;
+                }
+                //Check spring
+                if (this.advanced_search.includes("Spring") && !tempCourses[course].offered.spring) {
+                    continue;
+                }
+                //Check summer
+                if (this.advanced_search.includes("Summer") && !tempCourses[course].offered.summer) {
+                    continue;
+                }
+                //check prereq
+                if (this.advanced_search.includes("No Prerequistes") && tempCourses[course].prerequisites.length != 0) {
+                    continue;
+                }
+                //Check CI
+                if (this.advanced_search.includes("CI") && !tempCourses[course].properties.CI) {
+                    continue;
+                }
+                output.push(tempCourses[course]);
             }
 
             tempCourses = Object.values(tempCourses).sort(
@@ -173,7 +189,7 @@ export default {
                     else return 1
                 }
             )
-            return tempCourses
+            return output;
         },
 
     },
