@@ -9,7 +9,7 @@
 
             <v-divider class="my-4" />
 
-            <div class="course-categories fade-in">
+            <div class="fade-in">
                 <v-expansion-panels>
                     <CourseCategory
                         v-for="item in courseCategories"
@@ -83,10 +83,4 @@ export default {
   100% { opacity: 1; }
 }
 
-.course-categories {
-  max-width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  grid-gap: 10px;
-}
 </style>
