@@ -28,6 +28,7 @@
                     clearable
                     chips
                     fixed
+                    style="width: 200px; max-width: 100%"
                     >
                 </v-select> 
             </div>
