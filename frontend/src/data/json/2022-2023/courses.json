@@ -468,6 +468,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -493,6 +494,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -518,6 +520,7 @@
     "prerequisites": [
       "ARTS-4060"
     ],
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -543,9 +546,8 @@
     "prerequisites": [
       "ECON-1200"
     ],
-    "professors": [
-      "Jianjing Lin"
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -568,7 +570,24 @@
       "uia": false
     },
     "prerequisites": [],
-    "professors": [],
+    "current_providing": true,
+    "professors": [
+      {
+        "name":"Michael A. Klein",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2532699",
+        "CRNs":[
+          "59737"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "10:00a - 11:50a",
+          "10:00a - 11:50a"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
