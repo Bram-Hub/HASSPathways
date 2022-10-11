@@ -172,7 +172,7 @@ export default {
                 if (this.advanced_search.includes("Summer") && !tempCourses[course].offered.summer) {
                     continue;
                 }
-                 if (this.advanced_search.includes("HI") && !tempCourses[course].offered.HI) {
+                 if (this.advanced_search.includes("HI") && !tempCourses[course].properties.HI) {
                     continue;
                  }
                 //check prereq
