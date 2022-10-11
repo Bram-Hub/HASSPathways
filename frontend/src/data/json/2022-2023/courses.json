@@ -595,7 +595,7 @@
     },
     "subj": "ECON"
   },
-  "Are Humans Rational?": {
+  "Are Humans Rational": {
     "ID": "1235",
     "cross listed": [],
     "description": "The Aristotelian dictum that we are rational animals is under severe attack these days. In fact, the previous sentence may seriously understate the situation: the dictum is perhaps outright rejected by many, if not most. From psychologists of reasoning and decision-making to behavioral economists to the \"new atheists\" (all groups whose message we will consider in this class), the onslaught is firmly underway, and fierce.",
@@ -610,6 +610,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -633,8 +634,23 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
-      "Jefferson Wille Kielwagen"
+      {
+      "name": "Jefferson Wille Kielwagen",
+      "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2106922",
+      "CRNs":[
+        "58068"
+      ],
+      "days":[
+        "T",
+        "F"
+      ],
+      "times":[
+        "2:00p - 3:50p",
+        "2:00p - 3:50p"
+      ]
+      }
     ],
     "properties": {
       "CI": true,
@@ -658,6 +674,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
