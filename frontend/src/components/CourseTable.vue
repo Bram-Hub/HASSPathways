@@ -111,7 +111,7 @@ export default {
     data() {
         return {    advanced_search: [],
                     search: '' ,
-                    sort_dropbox: ['Fall', 'Spring', 'Summer', 'CI', 'No Prerequistes'],
+                    sort_dropbox: ['Fall', 'Spring', 'Summer', 'CI','HI', 'No Prerequistes'],
         }
     },
     // watch: {
@@ -172,6 +172,9 @@ export default {
                 if (this.advanced_search.includes("Summer") && !tempCourses[course].offered.summer) {
                     continue;
                 }
+                 if (this.advanced_search.includes("HI") && !tempCourses[course].offered.HI) {
+                    continue;
+                 }
                 //check prereq
                 if (this.advanced_search.includes("No Prerequistes") && tempCourses[course].prerequisites.length != 0) {
                     continue;
@@ -183,7 +186,7 @@ export default {
                 output.push(tempCourses[course]);
             }
 
-            tempCourses = Object.values(tempCourses).sort(
+            output = Object.values(output).sort(
                 function(a, b){
                     if(a.subj === undefined) return  1
                     if(b.subj === undefined) return -1
