@@ -65,10 +65,10 @@
     "current_providing": true,
     "professors": [
       {"name": "Silvia Ruzanka",
+      "rateProfessor_links":"https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2656631",
       "CRNs": [
         "57619"
-      ]
-      "rateProfessor_links":"https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2656631",
+      ],
       "days": [
         "T",
         "F"
@@ -256,9 +256,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "professors": [
-      "Rui Fan"
-    ],
+    "current_providing":false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -281,6 +280,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing":false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -304,9 +304,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "professors": [
-      "Kathleen Ruiz"
-    ],
+    "current_providing":false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -329,9 +328,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "professors": [
-      "Kenneth A. Ragsdale"
-    ],
+    "current_providing":false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -356,6 +354,7 @@
     "prerequisites": [
       "COGS-2340"
     ],
+    "current_providing":false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -381,6 +380,7 @@
     "prerequisites": [
       "IHSS-1030"
     ],
+    "current_providing":false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -404,9 +404,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "professors": [
-      "June Deery"
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -429,7 +428,24 @@
       "uia": false
     },
     "prerequisites": [],
-    "professors": [],
+    "current_providing": true,
+    "professors": [
+      {
+        "name":"Christopher James Tozzi",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "59397"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "10:00a - 11:50a",
+          "10:00a - 11:50a"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
