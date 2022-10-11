@@ -144,6 +144,9 @@ export default {
                         .toUpperCase()
                         .includes(this.search.toUpperCase())));
             }
+
+            console.log(tempCourses);
+
             for(const course in tempCourses) {
                 if(tempCourses[course] == null) {
                     tempCourses[course] = {};
@@ -152,6 +155,10 @@ export default {
                 }
                 else {
                     tempCourses[course]["hasData"] = true;
+                }
+                //Check if there is data for the course
+                if (this.advanced_search.length > 0 && !tempCourses[course].hasData) {
+                    continue
                 }
                 //Check fall
                 if (this.advanced_search.includes("Fall") && !tempCourses[course].offered.fall) {
