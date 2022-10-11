@@ -27,7 +27,7 @@
                     chips
                     label = "Sort" 
                     clearable
-                    style="width: 275px; max-width: 100%; "
+                    style="width: 275px; max-width: 100%; z-index: 100"
                     >
                     <template v-slot:selection="{ item, index }">
                         <v-chip v-if="index === 0">
