@@ -66,9 +66,7 @@
     "professors": [
       {"name": "Silvia Ruzanka",
       "rateProfessor_links":"https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2656631",
-      "CRNs": [
-        "57619"
-      ],
+      "CRN": "57619",
       "days": [
         "T",
         "F"
@@ -106,9 +104,7 @@
       {
       "name":"Benjamin H. Barnard",
       "rateProfessor_links": "NA",
-      "CRNs":[
-        "58344"
-      ],
+      "CRN":"58344",
       "days":[
         "T",
         "F"
@@ -221,9 +217,7 @@
       {
       "name":"Larry D Reid",
       "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=142838",
-      "CRNs":[
-        "58701"
-      ],
+      "CRN":"58701",
       "days":[
         "T",
         "W"
@@ -429,13 +423,12 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [
+    "professors": 
+    [
       {
         "name":"Christopher James Tozzi",
         "rateProfessor_links": "NA",
-        "CRNs":[
-          "59397"
-        ],
+        "CRN":"59397",
         "days":[
           "T",
           "F"
@@ -575,9 +568,7 @@
       {
         "name":"Michael A. Klein",
         "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2532699",
-        "CRNs":[
-          "59737"
-        ],
+        "CRN": "59737",
         "days":[
           "T",
           "F"
@@ -639,9 +630,7 @@
       {
         "name": "Jefferson Wille Kielwagen",
         "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2106922",
-        "CRNs":[
-          "58068"
-        ],
+        "CRN": "58068",
         "days":[
           "T",
           "F"
@@ -704,9 +693,7 @@
       {
         "name": ["Benjamin Chia-Ming Chang (P)", "Claire M. Thomas"],
         "rateProfessor_links": "NA",
-        "CRNs":[
-          "58360"
-        ],
+        "CRN": "58360",
         "days":[
           "M",
           "R"
@@ -1666,7 +1653,7 @@
     },
     "subj": "PSYC"
   },
-  "Cross-linguistic Perspectives": {
+  "Neutral Languages/Cross-linguistic Perspectives": {
     "ID": "4560",
     "cross listed": [],
     "description": "This course will explore the different strategies used by different languages to fulfill the same needs of human communication. A sampling of topics: quickly learning the basics of a new language using linguistic principles; cross-linguistic knowledge elicitation and engineering; principles of generative grammar; space, time, agency, and other linguistic phenomena viewed cross-linguistically.",
@@ -1685,7 +1672,19 @@
     ],
     "current_providing": true,
     "professors": [
-      "Marjorie McShane"
+    {
+    "name": "Marjorie McShane",
+    "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2413121",
+    "CRN": "59745",
+    "days": [
+      "M",
+      "R"
+    ],
+    "Time":[
+      "2:00p - 3:50p",
+      "2:00p - 3:50p"
+    ]
+    }
     ],
     "properties": {
       "CI": true,
@@ -1711,8 +1710,20 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Rui Fan"
-    ],
+      {
+      "name": "Rui Fan",
+      "rateProfessor_links": "NA",
+      "CRN": "59502",
+      "days": [
+        "M",
+        "R"
+      ],
+      "Time":[
+        "10:00a - 11:50a",
+        "10:00a - 11:50a"
+      ]
+      }
+      ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1737,8 +1748,32 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Thilanka Munasinghe",
-      "Linda Kramarchyk"
+      {
+      "name": "Thilanka Munasinghe",
+      "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2616923",
+      "CRN": "58347",
+      "days":[
+        "T",
+        "F"
+      ],
+      "times":[
+        "10:00a - 11:50a",
+        "10:00p - 11:50a"
+      ]
+      },
+      {
+        "name": "Thilanka Munasinghe",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2616923",
+        "CRN":"58618",
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "2:00p - 3:50p",
+          "2:00p - 3:50p"
+        ]
+        }
     ],
     "properties": {
       "CI": false,
@@ -1764,7 +1799,17 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Thilanka Munasinghe"
+      {
+      "name": "Thilanka Munasinghe",
+      "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2616923",
+      "CRNs":"57560",
+      "days":[
+        "R"
+      ],
+      "times":[
+        "11:00a - 1:50p"
+      ]
+      }
     ],
     "properties": {
       "CI": false,
