@@ -4513,6 +4513,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Richard M. Plotka",
       "Linda Kramarchyk"
@@ -4539,6 +4540,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Marjorie McShane",
       "Benjamin P. Weissman"
@@ -4565,6 +4567,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Skye Anicca",
       "James P Zappen"
@@ -4591,6 +4594,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Bram Van Heuveln"
     ],
@@ -4616,6 +4620,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Daniel Peter Thero"
     ],
@@ -4641,6 +4646,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -4664,6 +4670,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Alicia Ann Walf",
       "Jason Sean Jacobskind",
@@ -4691,6 +4698,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -4714,6 +4722,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -4737,6 +4746,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "June Deery"
     ],
@@ -4762,6 +4772,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Yalun Zhou",
       "Jianling Yue"
@@ -4788,6 +4799,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -4811,6 +4823,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Sergei Nirenburg"
     ],
@@ -4836,6 +4849,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -4861,6 +4875,7 @@
     "prerequisites": [
       "ECON-1200"
     ],
+    "current_providing": true,
     "professors": [
       "Robert W. Jones"
     ],
@@ -4886,6 +4901,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -4909,6 +4925,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -4932,6 +4949,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Mei Si"
     ],
@@ -4957,6 +4975,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -4980,6 +4999,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5003,6 +5023,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5026,6 +5047,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5049,6 +5071,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5072,6 +5095,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Matthew John Grill"
     ],
@@ -5097,6 +5121,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5122,6 +5147,7 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "current_providing": true,
     "professors": [
       "Christopher Robert Sims"
     ],
@@ -5147,6 +5173,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5170,6 +5197,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Rosemary Christine Armao",
       "Christopher C. Jeansonne"
@@ -5198,6 +5226,7 @@
     "prerequisites": [
       "STSO-2510"
     ],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5221,6 +5250,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Daniel Peter Thero"
     ],
@@ -5248,6 +5278,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5273,6 +5304,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "John R Milanese",
       "Bram Van Heuveln"
@@ -5299,6 +5331,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Cristina Claudia Caruso James",
       "Ellen Esrock"
@@ -5325,6 +5358,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Sarah Marsden Greene"
     ],
@@ -5350,6 +5384,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Holly A Traver"
     ],
@@ -5377,6 +5412,7 @@
     "prerequisites": [
       "ARTS-1380"
     ],
+    "current_providing": true,
     "professors": [
       "Christopher James Fisher-Lochhead"
     ],
@@ -5402,6 +5438,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Christopher James Fisher-Lochhead",
       "Matthew William Goodheart"
@@ -5428,6 +5465,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Robert Kyle Hamilton",
       "Matthew William Goodheart",
@@ -5457,6 +5495,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5480,6 +5519,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5503,6 +5543,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5526,6 +5567,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Jennifer Cardinal",
       "Lee Claiborne Nelson"
@@ -5554,6 +5596,7 @@
     "prerequisites": [
       "ECON-2020"
     ],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5577,6 +5620,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Monica A. Hughes"
     ],
@@ -5602,6 +5646,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Ellen Esrock"
     ],
@@ -5627,6 +5672,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5650,6 +5696,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5673,6 +5720,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Daniel Peter Thero",
       "Gunnar O'neill Babcock"
@@ -5699,6 +5747,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "John R Milanese"
     ],
@@ -5724,6 +5773,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Daniel Peter Thero"
     ],
@@ -5751,6 +5801,7 @@
     "prerequisites": [
       "STSO-2010"
     ],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5774,6 +5825,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5797,6 +5849,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Holly A Traver"
     ],
@@ -5822,6 +5875,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5845,6 +5899,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Sarah Marsden Greene"
     ],
@@ -5870,6 +5925,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Chrysi Nanou",
       "Paul J. Quigley",
@@ -5909,6 +5965,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5932,6 +5989,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5955,6 +6013,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -5978,6 +6037,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Michael J. Schoelles"
     ],
@@ -6005,6 +6065,7 @@
     "prerequisites": [
       "WRIT-1110"
     ],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6028,6 +6089,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Holly A Traver"
     ],
@@ -6053,6 +6115,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6076,6 +6139,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6099,6 +6163,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Maryanne Staniszewski"
     ],
@@ -6124,6 +6189,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6147,6 +6213,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Bram Van Heuveln"
     ],
@@ -6172,6 +6239,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6195,6 +6263,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Alicia Ann Walf"
     ],
@@ -6220,6 +6289,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6243,6 +6313,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Patrick Y Royer"
     ],
@@ -6268,6 +6339,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6291,6 +6363,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6314,6 +6387,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6337,6 +6411,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6360,6 +6435,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Jason Sean Jacobskind",
       "Michael J Kalsher"
@@ -6386,6 +6462,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Brett R. Fajen"
     ],
@@ -6411,6 +6488,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6434,6 +6512,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Branda Miller"
     ],
@@ -6458,6 +6537,7 @@
       "text": ""
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6481,6 +6561,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6504,6 +6585,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Kathryn High"
     ],
@@ -6529,6 +6611,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "June Deery"
     ],
@@ -6554,6 +6637,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Susan Lynn Smith"
     ],
@@ -6579,6 +6663,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6602,6 +6687,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6625,6 +6711,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Jefferson Wille Kielwagen"
     ],
@@ -6650,6 +6737,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6673,6 +6761,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6696,6 +6785,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6721,6 +6811,7 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "current_providing": true,
     "professors": [
       "Jason Sean Jacobskind",
       "Brett R. Fajen"
@@ -6751,6 +6842,7 @@
     "prerequisites": [
       "IHSS-1150"
     ],
+    "current_providing": true,
     "professors": [
       "Alicia Ann Walf"
     ],
@@ -6776,6 +6868,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6799,6 +6892,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6822,6 +6916,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Holly A Traver"
     ],
@@ -6847,6 +6942,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6870,6 +6966,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Peter A Fox"
     ],
@@ -6895,6 +6992,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Ross A. Rice"
     ],
@@ -6920,6 +7018,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Ross A. Rice"
     ],
@@ -6947,6 +7046,7 @@
     "prerequisites": [
       "ARTS-2700"
     ],
+    "current_providing": true,
     "professors": [
       "Ross A. Rice"
     ],
@@ -6972,6 +7072,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -6995,6 +7096,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Terry W. Gipson",
       "Alexander Scott Hiland"
@@ -7021,6 +7123,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7044,6 +7147,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Samuel Estabrooks",
       "Skye Anicca"
@@ -7074,6 +7178,7 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "current_providing": true,
     "professors": [
       "Alicia Ann Walf"
     ],
@@ -7099,6 +7204,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7122,6 +7228,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7145,6 +7252,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7168,6 +7276,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7191,6 +7300,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7214,6 +7324,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Jennifer Cardinal",
       "Lee Claiborne Nelson"
@@ -7240,6 +7351,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7263,6 +7375,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7286,6 +7399,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7309,6 +7423,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Stephanie D Loveless"
     ],
@@ -7334,6 +7449,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7357,6 +7473,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Susan Lynn Smith"
     ],
@@ -7384,6 +7501,7 @@
     "prerequisites": [
       "COGS-2340"
     ],
+    "current_providing": true,
     "professors": [
       "Marjorie McShane"
     ],
@@ -7409,6 +7527,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Kathleen A. Galloway",
       "Maryanne Staniszewski"
@@ -7435,6 +7554,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Tomasz Strzalkowski",
       "Bram Van Heuveln"
@@ -7461,6 +7581,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Yalun Zhou"
     ],
@@ -7486,6 +7607,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7509,6 +7631,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Rui Fan",
       "Conor Lennon",
@@ -7536,6 +7659,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Kathleen A. Galloway",
       "Kathleen Ruiz"
@@ -7562,6 +7686,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Susan Lynn Smith"
     ],
@@ -7587,6 +7712,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Yalun Zhou"
     ],
@@ -7612,6 +7738,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7635,6 +7762,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7658,6 +7786,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Holly A Traver",
       "Yingrui Yang"
@@ -7684,6 +7813,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7707,6 +7837,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7730,6 +7861,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Kathleen A. Galloway",
       "Kenneth A. Ragsdale",
@@ -7757,6 +7889,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7780,6 +7913,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Sara L. Tack"
     ],
@@ -7805,6 +7939,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Ralph G Noble",
       "Marjorie McShane",
@@ -7834,6 +7969,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7857,6 +7993,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Patricia Search"
     ],
@@ -7882,6 +8019,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7905,6 +8043,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Patrick Y Royer"
     ],
@@ -7930,6 +8069,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -7953,6 +8093,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Brian Robert Callahan"
     ],
@@ -7978,6 +8119,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Brian Robert Callahan"
     ],
@@ -8003,6 +8145,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Alicia Ann Walf",
       "Holly A Traver"
@@ -8029,6 +8172,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Ellen Esrock"
     ],
@@ -8054,6 +8198,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Kathleen A. Galloway"
     ],
@@ -8079,6 +8224,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -8102,6 +8248,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Kate A. Bradley"
     ],
@@ -8127,6 +8274,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -8152,6 +8300,7 @@
     "prerequisites": [
       "GSAS-4240"
     ],
+    "current_providing": true,
     "professors": [],
     "properties": {
       "CI": false,
@@ -8175,6 +8324,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Weina Ran",
       "Mark Foster"
@@ -8201,6 +8351,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "current_providing": true,
     "professors": [
       "Thilanka Munasinghe"
     ],
