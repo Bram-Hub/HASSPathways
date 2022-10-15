@@ -739,7 +739,7 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -763,7 +763,7 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -789,7 +789,25 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Kenneth A. Ragsdale"
+      {
+        "name": ["Kenneth A. Ragsdale", "Jennifer Mae Kemp"],
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "55270", "55458","59891"
+        ],
+        "days":[
+          "M",
+          "T",
+          "R",
+          "F"
+        ],
+        "times":[
+          "12:00p - 1:50p",
+          "2:00p - 3:50p",
+          "2:00p - 3:50p",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -817,7 +835,21 @@
     ],
     "current_providing": true,
     "professors": [
-      "Ian S. Chadd"
+      {
+        "name": "Ian S. Chadd",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "58664", "59735"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": true,
@@ -826,6 +858,7 @@
     },
     "subj": "ECON"
   },
+
   "Behavioral Financial Economics": {
     "ID": "4340",
     "cross listed": [],
@@ -843,10 +876,8 @@
     "prerequisites": [
       "ECON-1200"
     ],
-    "current_providing": true,
-    "professors": [
-      "Billur Aksoy"
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -854,6 +885,7 @@
     },
     "subj": "ECON"
   },
+
   "Behavioral Neuroscience": {
     "ID": "4360",
     "cross listed": [
@@ -873,7 +905,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Alicia Ann Walf"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -899,7 +945,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Elizabeth Press"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": true,
@@ -928,7 +988,23 @@
       "STSO-2510"
     ],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -952,7 +1028,23 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -977,7 +1069,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Sara L. Tack"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": true,
@@ -1003,7 +1109,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Kevin R. Stewart"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -1028,7 +1148,23 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1052,7 +1188,23 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1077,8 +1229,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Yalun Zhou",
-      "Jianling Yue"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -1104,8 +1269,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Yalun Zhou",
-      "Jianling Yue"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -1131,8 +1309,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Yalun Zhou",
-      "Jianling Yue"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": true,
@@ -1158,8 +1349,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Yalun Zhou",
-      "Jianling Yue"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -1185,8 +1389,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Yalun Zhou",
-      "Jianling Yue"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -1214,7 +1431,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Alicia Ann Walf"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -1244,7 +1475,23 @@
       "PSYC-2120"
     ],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1269,7 +1516,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Michael J. Schoelles"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -1297,7 +1558,21 @@
     ],
     "current_providing": true,
     "professors": [
-      "Christopher Robert Sims"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -1322,7 +1597,23 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1347,8 +1638,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Weina Ran",
-      "Alexander Scott Hiland"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": true,
@@ -1373,7 +1677,23 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1398,7 +1718,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Bram Van Heuveln"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -1423,7 +1757,23 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1447,7 +1797,23 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1471,7 +1837,23 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1495,7 +1877,23 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1520,8 +1918,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Thomas Ingram",
-      "Skye Anicca"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": true,
@@ -1547,9 +1958,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Silvia Ruzanka",
-      "Nathan Scott Meltz",
-      "Kathryn High"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -1577,8 +2000,21 @@
     ],
     "current_providing": true,
     "professors": [
-      "Silvia Ruzanka",
-      "Stephanie D Loveless"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -1604,7 +2040,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Skye Anicca"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": true,
@@ -1629,7 +2079,23 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1656,8 +2122,21 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "John R Milanese",
-      "Bram Van Heuveln"
+      {
+        "name": "A",
+        "rateProfessor_links": "NA",
+        "CRNs":[
+          "a", "a"
+        ],
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "8:00a - 9:50a",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
