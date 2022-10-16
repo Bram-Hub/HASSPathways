@@ -610,6 +610,7 @@
     },
     "subj": "IHSS"
   },
+  
   "Art History": {
     "ID": "1050",
     "cross listed": [],
@@ -648,6 +649,7 @@
     },
     "subj": "ARTS"
   },
+
   "Art and Code and Interactivity": {
     "ID": "4090",
     "cross listed": [],
@@ -673,6 +675,7 @@
     },
     "subj": "ARTS"
   },
+
   "Art for Interactive Media": {
     "ID": "1040",
     "cross listed": [],
@@ -691,7 +694,7 @@
     "current_providing": true,
     "professors": [
       {
-        "name": ["Benjamin Chia-Ming Chang (P)", "Claire M. Thomas"],
+        "name": ["Benjamin Chia-Ming Chang", "Claire M. Thomas"],
         "rateProfessor_links": "NA",
         "CRN": "58360",
         "days":[
@@ -711,6 +714,7 @@
     },
     "subj": "GSAS"
   },
+
   "Art, Community, and Technology": {
     "ID": "4250",
     "cross listed": [],
@@ -735,6 +739,7 @@
     },
     "subj": "ARTS"
   },
+
   "B.S. EARTS Thesis": {
     "ID": "4990",
     "cross listed": [],
@@ -759,6 +764,7 @@
     },
     "subj": "ARTS"
   },
+
   "Basic Drawing": {
     "ID": "1200",
     "cross listed": [],
@@ -803,6 +809,7 @@
     },
     "subj": "ARTS"
   },
+
   "Behavioral Economics": {
     "ID": "4270",
     "cross listed": [],
@@ -893,18 +900,18 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Jason Sean Jacobskind",
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "55924", "59733"
         ],
         "days":[
           "T",
           "F"
         ],
         "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
+          "12:00p - 1:50p",
+          "12:00p - 1:50p"
         ]
       }
     ],
@@ -915,6 +922,7 @@
     },
     "subj": "PSYC"
   },
+
   "Behind the TV Screen": {
     "ID": "1030",
     "cross listed": [],
@@ -934,7 +942,7 @@
     "professors": [
       {
         "name": "Elizabeth Press",
-        "rateProfessor_links": "NA",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2678095",
         "CRNs": "59348",
         "days": "W",
         "times": ["12:00p - 3:50p"]
@@ -1114,7 +1122,8 @@
     "professors": [
       {
         "name": ["Silvia Ruzanka", "Daniel Peter Thero"],
-        "rateProfessor_links": "NA",
+        "rateProfessor_links": ["https://www.ratemyprofessors.com/professor?tid=2656631",
+      "NA"],
         "CRNs":[
           "56268", "59822"
         ],
@@ -1192,7 +1201,8 @@
     "professors": [
       {
         "name": [ "Jianling Yue ", "Yalun Zhou"],
-        "rateProfessor_links": "NA",
+        "rateProfessor_links": ["https://www.ratemyprofessors.com/professor?tid=1963000",
+        "https://www.ratemyprofessors.com/professor?tid=2139962"],
         "CRNs":[
           "57255", "57368", "57864","58070"
         ],
@@ -1237,7 +1247,7 @@
     "professors": [
       {
         "name": "Yalun Zhou ",
-        "rateProfessor_links": "NA",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2139962",
         "CRNs":[
           "57970"
         ],
@@ -1278,7 +1288,7 @@
     "professors": [
       {
         "name": "Jianling Yue",
-        "rateProfessor_links": "NA",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=1963000",
         "CRNs":[
           "58658"
         ],
@@ -1319,7 +1329,7 @@
     "professors": [
       {
         "name": "Jianling Yue",
-        "rateProfessor_links": "NA",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=1963000",
         "CRNs":[
           "57969"
         ],
@@ -1469,7 +1479,7 @@
     "professors": [
       {
         "name": "Christopher Robert Sims",
-        "rateProfessor_links": "NA",
+        "rateProfessor_links": "Matthew William Goodheart",
         "CRNs":[
           "55924", "59733"
         ],
@@ -1559,7 +1569,7 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "Matthew William Goodheart ",
+        "name": "Matthew William Goodheart",
         "rateProfessor_links": "NA",
         "CRNs":[
           "59382"
@@ -1726,7 +1736,7 @@
     "professors": [
       {
         "name": "Thomas Ingram",
-        "rateProfessor_links": "NA",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=617097",
         "CRNs":[
           "59880"
         ],
@@ -1933,6 +1943,7 @@
     },
     "subj": "COGS"
   },
+  
   "Data Analysis in Economics and Finance": {
     "ID": "4580",
     "cross listed": [],
