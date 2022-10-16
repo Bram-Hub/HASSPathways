@@ -946,19 +946,11 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Elizabeth Press",
         "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
+        "CRNs": "59348",
+        "days": "W",
+        "times": ["12:00p - 3:50p"]
       }
     ],
     "properties": {
@@ -968,6 +960,7 @@
     },
     "subj": "IHSS"
   },
+
   "Bioethics": {
     "ID": "4250",
     "cross listed": [
@@ -990,18 +983,15 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Susan Lynn Smith",
         "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
+        "CRNs": "59400",
         "days":[
           "T",
           "F"
         ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
+        "times": [
+          "12:00p - 1:50p"
         ]
       }
     ],
@@ -1012,6 +1002,7 @@
     },
     "subj": "STSO"
   },
+
   "Biopunk: Arts Lab Practice": {
     "ID": "4120",
     "cross listed": [],
@@ -1030,18 +1021,18 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Kathryn High",
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "59508", "59509"
         ],
         "days":[
-          "T",
-          "F"
+          "M",
+          "R"
         ],
         "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
+          "10:00a - 11:50a",
+          "10:00a - 11:50a"
         ]
       }
     ],
@@ -1052,6 +1043,7 @@
     },
     "subj": "ARTS"
   },
+
   "Brand Identity Design": {
     "ID": "4730",
     "cross listed": [],
@@ -1067,24 +1059,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1092,6 +1068,7 @@
     },
     "subj": "COMM"
   },
+
   "Business Issues for Engineers and Scientists": {
     "ID": "4300",
     "cross listed": [],
@@ -1110,18 +1087,16 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Kevin R. Stewart",
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "55517"
         ],
         "days":[
-          "T",
           "F"
         ],
         "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
+          "9:00a - 11:50a"
         ]
       }
     ],
@@ -1132,6 +1107,7 @@
     },
     "subj": "ITWS"
   },
+
   "Capstone Experience in Philosophy": {
     "ID": "4990",
     "cross listed": [],
@@ -1150,18 +1126,16 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": ["Silvia Ruzanka", "Daniel Peter Thero"],
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "56268", "59822"
         ],
         "days":[
-          "T",
-          "F"
+
         ],
         "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
+          
         ]
       }
     ],
@@ -1172,6 +1146,7 @@
     },
     "subj": "PHIL"
   },
+
   "Chamber Music Ensemble": {
     "ID": "2350",
     "cross listed": [],
@@ -1190,18 +1165,16 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Robert Michael Whalen",
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "59365"
         ],
         "days":[
-          "T",
-          "F"
+          "W"
         ],
         "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
+          "3:00p - 5:50p"
         ]
       }
     ],
@@ -1212,6 +1185,7 @@
     },
     "subj": "ARTS"
   },
+
   "Chinese I": {
     "ID": "1410",
     "cross listed": [],
@@ -1230,17 +1204,21 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": [ "Jianling Yue ", "Yalun Zhou"],
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "57255", "57368", "57864","58070"
         ],
         "days":[
+          "M",
+          "R",
           "T",
           "F"
         ],
         "times":[
-          "8:00a - 9:50a",
+          "12:00p - 1:50p",
+          "12:00p - 1:50p",
+          "2:00p - 3:50p",
           "2:00p - 3:50p"
         ]
       }
@@ -1252,6 +1230,7 @@
     },
     "subj": "LANG"
   },
+
   "Chinese II": {
     "ID": "2410",
     "cross listed": [],
@@ -1270,18 +1249,18 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Yalun Zhou ",
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "57970"
         ],
         "days":[
           "T",
           "F"
         ],
         "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
+          "10:00a - 11:50a",
+          "10:00a - 11:50a"
         ]
       }
     ],
@@ -1292,6 +1271,7 @@
     },
     "subj": "LANG"
   },
+
   "Chinese III": {
     "ID": "4420",
     "cross listed": [],
@@ -1310,17 +1290,17 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Jianling Yue",
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "58658"
         ],
         "days":[
-          "T",
-          "F"
+          "M",
+          "R"
         ],
         "times":[
-          "8:00a - 9:50a",
+          "2:00p - 3:50p",
           "2:00p - 3:50p"
         ]
       }
@@ -1332,6 +1312,7 @@
     },
     "subj": "LANG"
   },
+
   "Chinese IV": {
     "ID": "4430",
     "cross listed": [],
@@ -1350,18 +1331,18 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Jianling Yue",
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "57969"
         ],
         "days":[
           "T",
           "F"
         ],
         "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
+          "12:00p - 1:50p",
+          "12:00p - 1:50p"
         ]
       }
     ],
@@ -1372,6 +1353,7 @@
     },
     "subj": "LANG"
   },
+
   "Chinese V": {
     "ID": "4470",
     "cross listed": [],
@@ -1387,24 +1369,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1412,6 +1378,7 @@
     },
     "subj": "LANG"
   },
+
   "Cognition and the Brain": {
     "ID": "4600",
     "cross listed": [
@@ -1429,24 +1396,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1454,6 +1405,7 @@
     },
     "subj": "PSYC"
   },
+
   "Cognitive Engineering": {
     "ID": "4620",
     "cross listed": [
@@ -1474,24 +1426,8 @@
       "PHIL-2120",
       "PSYC-2120"
     ],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1499,6 +1435,7 @@
     },
     "subj": "COGS"
   },
+
   "Cognitive Modeling": {
     "ID": "4510",
     "cross listed": [],
@@ -1514,24 +1451,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1539,6 +1460,7 @@
     },
     "subj": "PSYC"
   },
+
   "Cognitive Psychology": {
     "ID": "4370",
     "cross listed": [],
@@ -1559,18 +1481,18 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Christopher Robert Sims",
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "55924", "59733"
         ],
         "days":[
           "T",
           "F"
         ],
         "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
+          "12:00p - 1:50p",
+          "12:00p - 1:50p"
         ]
       }
     ],
@@ -1581,6 +1503,7 @@
     },
     "subj": "PSYC"
   },
+
   "Communication Studies": {
     "ID": "4940",
     "cross listed": [],
@@ -1596,24 +1519,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1621,6 +1528,7 @@
     },
     "subj": "COMM"
   },
+
   "Communication Theory and Practice": {
     "ID": "2520",
     "cross listed": [],
@@ -1636,24 +1544,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1661,6 +1553,7 @@
     },
     "subj": "COMM"
   },
+
   "Composition Seminar": {
     "ID": "4390",
     "cross listed": [],
@@ -1679,17 +1572,17 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Matthew William Goodheart ",
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "59382"
         ],
         "days":[
-          "T",
-          "F"
+          "M",
+          "R"
         ],
         "times":[
-          "8:00a - 9:50a",
+          "2:00p - 3:50p",
           "2:00p - 3:50p"
         ]
       }
@@ -1701,6 +1594,7 @@
     },
     "subj": "ARTS"
   },
+
   "Computability and Logic": {
     "ID": "4420",
     "cross listed": [],
@@ -1716,24 +1610,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1741,6 +1619,7 @@
     },
     "subj": "PHIL"
   },
+
   "Computer Graphics for Games": {
     "ID": "4530",
     "cross listed": [],
@@ -1756,24 +1635,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1781,6 +1644,7 @@
     },
     "subj": "GSAS"
   },
+
   "Consumer Culture": {
     "ID": "4720",
     "cross listed": [],
@@ -1796,24 +1660,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1821,6 +1669,7 @@
     },
     "subj": "STSO"
   },
+
   "Contemporary Improvisation Ensemble": {
     "ID": "2080",
     "cross listed": [],
@@ -1836,24 +1685,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1861,6 +1694,7 @@
     },
     "subj": "ARTS"
   },
+
   "Cost-Benefit Analysis": {
     "ID": "4210",
     "cross listed": [],
@@ -1876,24 +1710,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1901,6 +1719,7 @@
     },
     "subj": "ECON"
   },
+
   "Creative Nonfiction Writing": {
     "ID": "2320",
     "cross listed": [],
@@ -1919,18 +1738,18 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Thomas Ingram",
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "59880"
         ],
         "days":[
-          "T",
-          "F"
+          "M",
+          "W"
         ],
         "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
+          "6:00p - 7:50p",
+          "6:00p - 7:50p"
         ]
       }
     ],
@@ -1941,6 +1760,7 @@
     },
     "subj": "WRIT"
   },
+
   "Creative Seminar I": {
     "ID": "4840",
     "cross listed": [],
@@ -1959,10 +1779,10 @@
     "current_providing": true,
     "professors": [
       {
-        "name": "A",
+        "name": "Nathan Scott Meltz ",
         "rateProfessor_links": "NA",
         "CRNs":[
-          "a", "a"
+          "59127"
         ],
         "days":[
           "T",
@@ -1970,7 +1790,7 @@
         ],
         "times":[
           "8:00a - 9:50a",
-          "2:00p - 3:50p"
+          "8:00a - 9:50a"
         ]
       }
     ],
@@ -1981,6 +1801,7 @@
     },
     "subj": "ARTS"
   },
+
   "Creative Seminar II": {
     "ID": "4850",
     "cross listed": [],
@@ -1998,24 +1819,8 @@
     "prerequisites": [
       "ARTS-4840"
     ],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2023,6 +1828,7 @@
     },
     "subj": "ARTS"
   },
+
   "Creative Writing:  Short Story": {
     "ID": "2330",
     "cross listed": [],
@@ -2038,24 +1844,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2063,6 +1853,7 @@
     },
     "subj": "WRIT"
   },
+
   "Critical Television": {
     "ID": "2750",
     "cross listed": [],
@@ -2078,24 +1869,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2103,6 +1878,7 @@
     },
     "subj": "COMM"
   },
+
   "Critical Thinking": {
     "ID": "2100",
     "cross listed": [
@@ -2120,24 +1896,8 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
-    "professors": [
-      {
-        "name": "A",
-        "rateProfessor_links": "NA",
-        "CRNs":[
-          "a", "a"
-        ],
-        "days":[
-          "T",
-          "F"
-        ],
-        "times":[
-          "8:00a - 9:50a",
-          "2:00p - 3:50p"
-        ]
-      }
-    ],
+    "current_providing": false,
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2145,6 +1905,7 @@
     },
     "subj": "PSYC"
   },
+
   "Cross-linguistic Perspectives": {
     "ID": "4560",
     "cross listed": [],
