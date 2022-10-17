@@ -104,7 +104,7 @@
       {
       "name":"Benjamin H. Barnard",
       "rateProfessor_links": "NA",
-      "CRN":"58344",
+      "CRN": "58344",
       "days":[
         "T",
         "F"
@@ -217,7 +217,7 @@
       {
       "name":"Larry D Reid",
       "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=142838",
-      "CRN":"58701",
+      "CRN": "58701",
       "days":[
         "T",
         "W"
@@ -428,7 +428,7 @@
       {
         "name":"Christopher James Tozzi",
         "rateProfessor_links": "NA",
-        "CRN":"59397",
+        "CRN": "59397",
         "days":[
           "T",
           "F"
@@ -694,7 +694,7 @@
     "current_providing": true,
     "professors": [
       {
-        "name": ["Benjamin Chia-Ming Chang", "Claire M. Thomas"],
+        "name": ["Benjamin Chia-Ming Chang"],
         "rateProfessor_links": "NA",
         "CRN": "58360",
         "days":[
@@ -783,20 +783,40 @@
     "current_providing": true,
     "professors": [
       {
-        "name": ["Kenneth A. Ragsdale", "Jennifer Mae Kemp"],
+        "name": "Kenneth A. Ragsdale",
         "rateProfessor_links": "NA",
-        "CRNs":[
-          "55270", "55458","59891"
-        ],
+        "CRN": "55270",
         "days":[
           "M",
-          "T",
-          "R",
-          "F"
+          "R"
         ],
         "times":[
           "12:00p - 1:50p",
+          "12:00p - 1:50p"
+        ]
+      },
+      {
+        "name": "Jennifer Mae Kemp",
+        "rateProfessor_links": "NA",
+        "CRN": "55458",
+        "days":[
+          "M",
+          "R"
+        ],
+        "times":[
           "2:00p - 3:50p",
+          "2:00p - 3:50p"
+        ]
+      },
+      {
+        "name": "Jennifer Mae Kemp",
+        "rateProfessor_links": "NA",
+        "CRN": "59891",
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
           "2:00p - 3:50p",
           "2:00p - 3:50p"
         ]
@@ -832,16 +852,14 @@
       {
         "name": "Ian S. Chadd",
         "rateProfessor_links": "NA",
-        "CRNs":[
-          "58664", "59735"
-        ],
+        "CRN": "58664",
         "days":[
           "T",
           "F"
         ],
         "times":[
           "8:00a - 9:50a",
-          "2:00p - 3:50p"
+          "8:00a - 9:50a"
         ]
       }
     ],
@@ -902,16 +920,53 @@
       {
         "name": "Jason Sean Jacobskind",
         "rateProfessor_links": "NA",
-        "CRNs":[
-          "55924", "59733"
-        ],
+        "CRN": "55924",
         "days":[
           "T",
           "F"
         ],
         "times":[
-          "12:00p - 1:50p",
-          "12:00p - 1:50p"
+          "4:00p - 5:50p",
+          "4:00p - 5:50p"
+        ]
+      },
+      {
+        "name": "Jason Sean Jacobskind",
+        "rateProfessor_links": "NA",
+        "CRN":"59733",
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "4:00p - 5:50p",
+          "4:00p - 5:50p"
+        ]
+      },
+      {
+        "name": "Jason Sean Jacobskind",
+        "rateProfessor_links": "NA",
+        "CRN":"59757",
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "4:00p - 5:50p",
+          "4:00p - 5:50p"
+        ]
+      },
+      {
+        "name": "Jason Sean Jacobskind",
+        "rateProfessor_links": "NA",
+        "CRN":"597583",
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "4:00p - 5:50p",
+          "4:00p - 5:50p"
         ]
       }
     ],
@@ -943,7 +998,7 @@
       {
         "name": "Elizabeth Press",
         "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2678095",
-        "CRNs": "59348",
+        "CRN": "59348",
         "days": "W",
         "times": ["12:00p - 3:50p"]
       }
@@ -980,7 +1035,7 @@
       {
         "name": "Susan Lynn Smith",
         "rateProfessor_links": "NA",
-        "CRNs": "59400",
+        "CRN": "59400",
         "days":[
           "T",
           "F"
@@ -1018,9 +1073,7 @@
       {
         "name": "Kathryn High",
         "rateProfessor_links": "NA",
-        "CRNs":[
-          "59508", "59509"
-        ],
+        "CRN": "59508",
         "days":[
           "M",
           "R"
@@ -1084,9 +1137,7 @@
       {
         "name": "Kevin R. Stewart",
         "rateProfessor_links": "NA",
-        "CRNs":[
-          "55517"
-        ],
+        "CRN": "55517",
         "days":[
           "F"
         ],
@@ -1121,12 +1172,21 @@
     "current_providing": true,
     "professors": [
       {
-        "name": ["Silvia Ruzanka", "Daniel Peter Thero"],
+        "name": "Daniel Peter Thero",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2656631",
+        "CRN":"56268",
+        "days":[
+
+        ],
+        "times":[
+          
+        ]
+      }
+      {
+        "name": "Daniel Peter Thero",
         "rateProfessor_links": ["https://www.ratemyprofessors.com/professor?tid=2656631",
       "NA"],
-        "CRNs":[
-          "56268", "59822"
-        ],
+        "CRN":"56268",
         "days":[
 
         ],
@@ -1163,9 +1223,7 @@
       {
         "name": "Robert Michael Whalen",
         "rateProfessor_links": "NA",
-        "CRNs":[
-          "59365"
-        ],
+        "CRN": "59365",
         "days":[
           "W"
         ],
@@ -1200,21 +1258,53 @@
     "current_providing": true,
     "professors": [
       {
-        "name": [ "Jianling Yue ", "Yalun Zhou"],
-        "rateProfessor_links": ["https://www.ratemyprofessors.com/professor?tid=1963000",
-        "https://www.ratemyprofessors.com/professor?tid=2139962"],
-        "CRNs":[
-          "57255", "57368", "57864","58070"
-        ],
+        "name": "Jianling Yue",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=1963000",
+        "CRN": "57255",
         "days":[
           "M",
-          "R",
+          "R"
+        ],
+        "times":[
+          "12:00p - 1:50p",
+          "12:00p - 1:50p"
+        ]
+      },
+      {
+        "name": "Jianling Yue",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=1963000",
+        "CRN": "57368",
+        "days":[
+          "M",
+          "R"
+        ],
+        "times":[
+          "12:00p - 1:50p",
+          "12:00p - 1:50p"
+        ]
+      },
+      {
+        "name": "Yalun Zhou",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2139962",
+        "CRN": "57864",
+        "days":[
           "T",
           "F"
         ],
         "times":[
-          "12:00p - 1:50p",
-          "12:00p - 1:50p",
+          "2:00p - 3:50p",
+          "2:00p - 3:50p"
+        ]
+      }
+      {
+        "name": "Yalun Zhou",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2139962",
+        "CRN": "58070",
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
           "2:00p - 3:50p",
           "2:00p - 3:50p"
         ]
@@ -1248,9 +1338,7 @@
       {
         "name": "Yalun Zhou ",
         "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2139962",
-        "CRNs":[
-          "57970"
-        ],
+        "CRN": "57970",
         "days":[
           "T",
           "F"
@@ -1289,9 +1377,7 @@
       {
         "name": "Jianling Yue",
         "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=1963000",
-        "CRNs":[
-          "58658"
-        ],
+        "CRN": "58658",
         "days":[
           "M",
           "R"
@@ -1330,9 +1416,7 @@
       {
         "name": "Jianling Yue",
         "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=1963000",
-        "CRNs":[
-          "57969"
-        ],
+        "CRN": "57969",
         "days":[
           "T",
           "F"
@@ -1479,10 +1563,21 @@
     "professors": [
       {
         "name": "Christopher Robert Sims",
-        "rateProfessor_links": "Matthew William Goodheart",
-        "CRNs":[
-          "55924", "59733"
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2619779",
+        "CRN": "55924",
+        "days":[
+          "T",
+          "F"
         ],
+        "times":[
+          "12:00p - 1:50p",
+          "12:00p - 1:50p"
+        ]
+      },
+      {
+        "name": "Christopher Robert Sims",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2619779",
+        "CRN": "59733",
         "days":[
           "T",
           "F"
@@ -1571,9 +1666,7 @@
       {
         "name": "Matthew William Goodheart",
         "rateProfessor_links": "NA",
-        "CRNs":[
-          "59382"
-        ],
+        "CRN": "59382",
         "days":[
           "M",
           "R"
@@ -1737,9 +1830,7 @@
       {
         "name": "Thomas Ingram",
         "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=617097",
-        "CRNs":[
-          "59880"
-        ],
+        "CRN": "59880",
         "days":[
           "M",
           "W"
@@ -1778,9 +1869,7 @@
       {
         "name": "Nathan Scott Meltz ",
         "rateProfessor_links": "NA",
-        "CRNs":[
-          "59127"
-        ],
+        "CRN": "59127",
         "days":[
           "T",
           "F"
@@ -2015,7 +2104,7 @@
       {
         "name": "Thilanka Munasinghe",
         "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2616923",
-        "CRN":"58618",
+        "CRN": "58618",
         "days":[
           "T",
           "F"
@@ -2053,7 +2142,7 @@
       {
       "name": "Thilanka Munasinghe",
       "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2616923",
-      "CRNs":"57560",
+      "CRN": "57560",
       "days":[
         "R"
       ],
@@ -2112,7 +2201,17 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Samuel Bernt Johnson"
+      {
+        "name": "",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2413121",
+        "CRN": "59216",
+        "days": [
+          "W"
+        ],
+        "Time":[
+          "4:00p - 6:50p"
+        ]
+        }
     ],
     "properties": {
       "CI": false,
@@ -2136,7 +2235,7 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
+    "current_providing": false,
     "professors": [
       "Stephanie D Loveless"
     ],
@@ -2147,7 +2246,7 @@
     },
     "subj": "ARTS"
   },
-  "Design and Innovation  Studio C": {
+  "Design and Innovation Studio C": {
     "ID": "4610",
     "cross listed": [],
     "description": "DIS Studio C focuses on the co-production of products, organizations, and problem-solving strategies. Students will explore how to facilitate communication across multiple disciplinary and audience modalities, including stakeholders, designers, and users. Projects and course discussions will train students to translate social scientific and engineering problem-solving judgments and to evaluate how complex problems come to be defined. This course is required for DIS students who are dual-majoring with the School of Engineering.",
@@ -2162,7 +2261,7 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -2186,7 +2285,7 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -2210,7 +2309,7 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -2235,7 +2334,21 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "Brian Tolle",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2616923",
+        "CRN":"59674",
+        "days":[
+          "M",
+          "R"
+        ],
+        "times":[
+          "9:00a - 11:50a",
+          "9:00a - 11:50a"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2260,7 +2373,33 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Raquel Velho"
+      {
+        "name": "Raqual Velho",
+        "rateProfessor_links": "NA",
+        "CRN":"56149",
+        "days":[
+          "M",
+          "R"
+        ],
+        "times":[
+          "2:00p - 4:50p",
+          "2:00p - 4:50p"
+        ]
+      },
+      {
+        "name": "Raqual Velho",
+        "rateProfessor_links": "NA",
+        "CRN":"59246",
+        "days":[
+          "M",
+          "R"
+        ],
+        "times":[
+          "2:00p - 4:50p",
+          "2:00p - 4:50p"
+        ]
+      }
+
     ],
     "properties": {
       "CI": true,
@@ -2284,7 +2423,7 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -2293,11 +2432,11 @@
     },
     "subj": "STSO"
   },
-  "Design and Innovation Studio III": {
+  "Design and Innovation Studio 3": {
     "ID": "2020",
     "cross listed": [],
     "description": "This design studio introduces students to the first semester-long design project. We introduce students to more formal engineering design methods. This includes problem formulation, structured ideation, rapid prototyping, evaluation, functional modeling, and iteration. Studio III will also continue to draw on social science methods of ethnographic observation, background research, stakeholder analysis, and also a critical deconstruction of engineering design methods in a way that builds agility in ways more appropriate for those in DIS. Development of individual skills in design development, presentation, and portfolio building are also emphasized.",
-    "name": "Design and Innovation Studio III",
+    "name": "Design and Innovation Studio 3",
     "offered": {
       "even": false,
       "fall": true,
@@ -2309,7 +2448,21 @@
     },
     "prerequisites": [],
     "current_providing": true,
-    "professors": [],
+    "professors": [
+      {
+        "name": "Brian Clyne",
+        "rateProfessor_links": "NA",
+        "CRN":"59783",
+        "days":[
+          "T",
+          "F"
+        ],
+        "times":[
+          "9:00a - 11:50a",
+          "9:00a - 11:50a"
+        ]
+      }
+    ],
     "properties": {
       "CI": false,
       "HI": false,
