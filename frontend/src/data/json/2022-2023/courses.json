@@ -2485,7 +2485,7 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -2511,7 +2511,7 @@
       "uia": false
     },
     "prerequisites": [],
-    "current_providing": true,
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -2535,7 +2535,7 @@
       "uia": true
     },
     "prerequisites": [],
-    "current_providing": true,
+    "current_providing": false,
     "professors": [],
     "properties": {
       "CI": false,
@@ -2561,8 +2561,42 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Igor Vamos",
-      "Elizabeth Press"
+      {
+        "name": "Elizabeth Press",
+        "rateProfessor_links": "https://www.ratemyprofessors.com/professor?tid=2678095",
+        "CRN": "58620",
+        "days": [
+          "M",
+          "R"
+        ],
+        "Time":[
+          "12:00p - 1:50p"
+        ]
+      },
+      {
+        "name": "Eleanor R. Goldsmith",
+        "rateProfessor_links": "NA",
+        "CRN": "59050",
+        "days": [
+          "M",
+          "R"
+        ],
+        "Time":[
+          "6:00p - 7:50p"
+        ]
+      },
+      {
+        "name": "Eleanor R. Goldsmith",
+        "rateProfessor_links": "NA",
+        "CRN": "59051",
+        "days": [
+          "M",
+          "R"
+        ],
+        "Time":[
+          "6:00p - 7:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
@@ -2588,8 +2622,32 @@
     "prerequisites": [],
     "current_providing": true,
     "professors": [
-      "Nathan Scott Meltz",
-      "Kathleen Ruiz"
+      {
+        "name": "Nathan Scott Meltz",
+        "rateProfessor_links": "NA",
+        "CRN": "55271",
+        "days": [
+          "T",
+          "F"
+        ],
+        "Time":[
+          "2:00p - 3:50p",
+          "2:00p - 3:50p"
+        ]
+      },
+      {
+        "name": "Nathan Scott Meltz",
+        "rateProfessor_links": "NA",
+        "CRN": "55272",
+        "days": [
+          "T",
+          "F"
+        ],
+        "Time":[
+          "2:00p - 3:50p",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
