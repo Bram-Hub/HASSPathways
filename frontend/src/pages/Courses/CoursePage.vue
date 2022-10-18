@@ -5,6 +5,7 @@
             <h1>{{ course.subj }}-{{ course.ID }}: {{ course.name }}</h1>
         </div>
         <p>{{ course.description }}</p>
+        <h3>Professor:</h3>
         <h3>Available: {{ course.offered.text }}</h3>
         <br>
         <h3>Prerequisites:</h3>
