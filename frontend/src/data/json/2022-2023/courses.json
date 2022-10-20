@@ -13,7 +13,11 @@
       "text": "spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1200",
+      "ARTS-1020",
+      "ARTS-1040"
+    ],
     "professors": [
       "Nathan Scott Meltz"
     ],
@@ -48,7 +52,9 @@
       "text": "Fall term, even-numbered years",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "COMM-2660"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -72,7 +78,9 @@
       "text": "Fall term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-2230"
+    ],
     "professors": [
       "Silvia Ruzanka"
     ],
@@ -109,9 +117,9 @@
     },
     "prerequisites": [],
     "professors": [
-      "Kolel Christopher Pryor",
       "Benjamin Chia-Ming Chang",
-      "Benjamin H. Barnard"
+      "Benjamin H. Barnard",
+      "Kolel Christopher Pryor"
     ],
     "properties": {
       "CI": false,
@@ -170,10 +178,12 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-2230"
+    ],
     "professors": [
-      "John A. Baumann",
-      "Silvia Ruzanka"
+      "Silvia Ruzanka",
+      "John A. Baumann"
     ],
     "properties": {
       "CI": false,
@@ -241,7 +251,9 @@
       "text": "Fall and spring terms annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200"
+    ],
     "professors": [
       "Larry D Reid"
     ],
@@ -276,7 +288,9 @@
       "text": "spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-4570"
+    ],
     "professors": [
       "Rui Fan"
     ],
@@ -311,7 +325,9 @@
       "text": "Upon availability.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-4070"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -370,7 +386,9 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1200"
+    ],
     "professors": [
       "Kenneth A. Ragsdale"
     ],
@@ -471,8 +489,8 @@
         "class": "Class",
         "days": "TF",
         "instructor": "June Deery",
-        "location": "Russell Sage Laboratory 4711",
-        "time": "12:00 pm - 1:50 pm",
+        "location": "TBA",
+        "time": "2:00 pm - 3:50 pm",
         "type": "Lecture"
       }
     },
@@ -542,7 +560,13 @@
       "text": "spring term, even-numbered years",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "COGS-2120",
+      "COGS-4330",
+      "PSYC-4370",
+      "COGS-2340",
+      "PSYC-1200"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -629,7 +653,9 @@
       "text": "Fall term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-2010"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -720,7 +746,9 @@
       "text": "Upon availability of instructor.",
       "uia": true
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1020"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -746,8 +774,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Robert F. Nideffer",
-      "Kolel Christopher Pryor"
+      "Kolel Christopher Pryor",
+      "Robert F. Nideffer"
     ],
     "properties": {
       "CI": false,
@@ -788,7 +816,19 @@
       "text": "spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1200",
+      "IHSS-1170",
+      "ARTS-2380",
+      "IHSS-1030",
+      "IHSS-1180",
+      "IHSS-1040",
+      "ARTS-1020",
+      "ARTS-2020",
+      "ARTS-1030",
+      "ARTS-2220",
+      "ARTS-1040"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -838,8 +878,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Kenneth A. Ragsdale",
-      "Jennifer Mae Kemp"
+      "Jennifer Mae Kemp",
+      "Kenneth A. Ragsdale"
     ],
     "properties": {
       "CI": false,
@@ -964,7 +1004,10 @@
       "text": "Summer term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200",
+      "COGS-2120"
+    ],
     "professors": [
       "Alicia Ann Walf"
     ],
@@ -1045,7 +1088,12 @@
       "uia": false
     },
     "prerequisites": [
-      "STSO-2510"
+      "IHSS-1160",
+      "STSO-2520",
+      "STSO-2500",
+      "PHIL-4240",
+      "PHIL-1110",
+      "IHSS-1150"
     ],
     "professors": [],
     "properties": {
@@ -1070,7 +1118,20 @@
       "text": "Fall term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1200",
+      "IHSS-1170",
+      "ARTS-2380",
+      "IHSS-1030",
+      "IHSS-1180",
+      "IHSS-1040",
+      "ARTS-1020",
+      "ARTS-2020",
+      "ARTS-4140",
+      "ARTS-1030",
+      "ARTS-2220",
+      "ARTS-1040"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -1094,7 +1155,10 @@
       "text": "Spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "COMM-2660",
+      "COMM-2570"
+    ],
     "professors": [
       "Sara L. Tack"
     ],
@@ -1214,8 +1278,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Yalun Zhou",
-      "Jianling Yue"
+      "Jianling Yue",
+      "Yalun Zhou"
     ],
     "properties": {
       "CI": false,
@@ -1228,7 +1292,7 @@
         "days": "MR",
         "instructor": "Jianling Yue",
         "location": "Russell Sage Laboratory 2701",
-        "time": "10:00 am - 11:50 am",
+        "time": "12:00 pm - 1:50 pm",
         "type": "Lecture"
       },
       "2": {
@@ -1236,23 +1300,23 @@
         "days": "MR",
         "instructor": "Jianling Yue",
         "location": "Russell Sage Laboratory 2701",
-        "time": "10:00 am - 11:50 am",
+        "time": "12:00 pm - 1:50 pm",
         "type": "Lecture"
       },
       "3": {
         "class": "Class",
         "days": "TF",
         "instructor": "Yalun Zhou",
-        "location": "Russell Sage Laboratory 3705",
-        "time": "2:00 pm - 3:50 pm",
+        "location": "Online ",
+        "time": "2:30 pm - 4:20 pm",
         "type": "Lecture"
       },
       "4": {
         "class": "Class",
         "days": "TF",
         "instructor": "Yalun Zhou",
-        "location": "Russell Sage Laboratory 3705",
-        "time": "2:00 pm - 3:50 pm",
+        "location": "Online ",
+        "time": "2:30 pm - 4:20 pm",
         "type": "Lecture"
       }
     },
@@ -1272,7 +1336,9 @@
       "text": "Fall and spring terms annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "LANG-1410"
+    ],
     "professors": [
       "Jianling Yue"
     ],
@@ -1307,7 +1373,9 @@
       "text": "Fall and spring terms annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "LANG-2410"
+    ],
     "professors": [
       "Yalun Zhou",
       "Jianling Yue"
@@ -1321,7 +1389,7 @@
       "1": {
         "class": "Class",
         "days": "TF",
-        "instructor": "Jianling Yue",
+        "instructor": "Yalun Zhou",
         "location": "Russell Sage Laboratory 4711",
         "time": "10:00 am - 11:50 am",
         "type": "Lecture"
@@ -1343,10 +1411,12 @@
       "text": "Fall term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "LANG-4420"
+    ],
     "professors": [
-      "Yalun Zhou",
-      "Jianling Yue"
+      "Jianling Yue",
+      "Yalun Zhou"
     ],
     "properties": {
       "CI": false,
@@ -1379,10 +1449,12 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "LANG-4430"
+    ],
     "professors": [
-      "Yalun Zhou",
-      "Jianling Yue"
+      "Jianling Yue",
+      "Yalun Zhou"
     ],
     "properties": {
       "CI": false,
@@ -1393,9 +1465,9 @@
       "1": {
         "class": "Class",
         "days": "TF",
-        "instructor": "Yalun Zhou",
+        "instructor": "Jianling Yue",
         "location": "Carnegie Building 201",
-        "time": "10:00 am - 11:50 am",
+        "time": "12:00 pm - 1:50 pm",
         "type": "Lecture"
       }
     },
@@ -1417,7 +1489,13 @@
       "text": "Summer term, odd-numbered years.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "COGS-4330",
+      "PSYC-4370",
+      "COGS-4360",
+      "PSYC-4330",
+      "PSYC-4360"
+    ],
     "professors": [
       "Alicia Ann Walf"
     ],
@@ -1455,8 +1533,8 @@
       "uia": true
     },
     "prerequisites": [
-      "PHIL-2120",
-      "PSYC-2120"
+      "PSYC-4370",
+      "PSYC-4310"
     ],
     "professors": [],
     "properties": {
@@ -1481,7 +1559,10 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200",
+      "PSYC-4370"
+    ],
     "professors": [
       "Michael J. Schoelles"
     ],
@@ -1587,7 +1668,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Weina Ran"
+      "Weina Ran",
+      "Alexander Scott Hiland"
     ],
     "properties": {
       "CI": true,
@@ -1626,6 +1708,14 @@
         "location": "Russell Sage Laboratory 4112",
         "time": "12:00 pm - 1:50 pm",
         "type": "Lecture"
+      },
+      "5": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Alexander Scott Hiland",
+        "location": "TBA",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
       }
     },
     "subj": "COMM"
@@ -1644,7 +1734,9 @@
       "text": "Fall or spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-4380"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -1668,7 +1760,9 @@
       "text": "Spring term odd-numbered years.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PHIL-2140"
+    ],
     "professors": [
       "Bram Van Heuveln"
     ],
@@ -1775,7 +1869,10 @@
       "text": "fall and spring terms annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-1200",
+      "IHSS-1200"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -1801,6 +1898,7 @@
     },
     "prerequisites": [],
     "professors": [
+      "Thomas Ingram",
       "Skye Anicca"
     ],
     "properties": {
@@ -1814,15 +1912,15 @@
         "days": "TF",
         "instructor": "Skye Anicca",
         "location": "Russell Sage Laboratory 4203",
-        "time": "2:00 pm - 3:50 pm",
+        "time": "12:00 pm - 1:50 pm",
         "type": "Lecture"
       },
       "2": {
         "class": "Class",
-        "days": "TF",
-        "instructor": "Skye Anicca",
-        "location": "Russell Sage Laboratory 4203",
-        "time": "2:00 pm - 3:50 pm",
+        "days": "MR",
+        "instructor": "Thomas Ingram",
+        "location": "TBA",
+        "time": "6:00 pm - 7:50 pm",
         "type": "Lecture"
       }
     },
@@ -1844,9 +1942,9 @@
     },
     "prerequisites": [],
     "professors": [
-      "Nathan Scott Meltz",
       "Kathryn High",
-      "Silvia Ruzanka"
+      "Silvia Ruzanka",
+      "Nathan Scott Meltz"
     ],
     "properties": {
       "CI": false,
@@ -1931,16 +2029,16 @@
         "class": "Class",
         "days": "TF",
         "instructor": "Skye Anicca",
-        "location": "Russell Sage Laboratory 3705",
-        "time": "12:00 pm - 1:50 pm",
+        "location": "TBA",
+        "time": "8:00 am - 9:50 am",
         "type": "Lecture"
       },
       "2": {
         "class": "Class",
         "days": "TF",
         "instructor": "Skye Anicca",
-        "location": "Russell Sage Laboratory 3705",
-        "time": "12:00 pm - 1:50 pm",
+        "location": "TBA",
+        "time": "8:00 am - 9:50 am",
         "type": "Lecture"
       }
     },
@@ -1988,8 +2086,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Bram Van Heuveln",
-      "John R Milanese"
+      "John R Milanese",
+      "Bram Van Heuveln"
     ],
     "properties": {
       "CI": false,
@@ -2067,7 +2165,9 @@
       "text": "Fall term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-4570"
+    ],
     "professors": [
       "Rui Fan"
     ],
@@ -2104,8 +2204,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Linda Kramarchyk",
-      "Thilanka Munasinghe"
+      "Thilanka Munasinghe",
+      "Linda Kramarchyk"
     ],
     "properties": {
       "CI": false,
@@ -2441,7 +2541,9 @@
       "text": "Spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "IHSS-1610"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -2539,7 +2641,10 @@
       "text": "Upon availability of instructor.",
       "uia": true
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-1200",
+      "IHSS-1200"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -2700,18 +2805,18 @@
     },
     "prerequisites": [],
     "professors": [
-      "Wayne D. Gray",
       "Christopher Robert Sims",
-      "Michael J Kalsher",
-      "Selmer Bringsjord",
-      "Ron Sun",
-      "Marjorie McShane",
-      "Sergei Nirenburg",
-      "James A. Hendler",
-      "Brett R. Fajen",
       "Tomasz Strzalkowski",
+      "Michael J Kalsher",
+      "Wayne D. Gray",
+      "Sergei Nirenburg",
+      "Marjorie McShane",
+      "Selmer Bringsjord",
+      "Mei Si",
       "Peter A Fox",
-      "Mei Si"
+      "Ron Sun",
+      "Brett R. Fajen",
+      "James A. Hendler"
     ],
     "properties": {
       "CI": false,
@@ -2926,7 +3031,9 @@
       "text": "Fall and spring terms annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200"
+    ],
     "professors": [
       "Larry D Reid"
     ],
@@ -3024,10 +3131,12 @@
       "text": "Fall and spring terms annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-2310"
+    ],
     "professors": [
-      "Rui Fan",
-      "Huaming Peng"
+      "Huaming Peng",
+      "Rui Fan"
     ],
     "properties": {
       "CI": false,
@@ -3176,7 +3285,10 @@
       "text": "Fall and spring terms annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-1200",
+      "IHSS-1200"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -3237,7 +3349,10 @@
       "text": "Upon availability of instructor.",
       "uia": true
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-1200",
+      "IHSS-1200"
+    ],
     "professors": [
       "Vivek Ghosal"
     ],
@@ -3272,7 +3387,9 @@
       "text": "spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-2010"
+    ],
     "professors": [
       "Michael A. Klein"
     ],
@@ -3344,7 +3461,10 @@
       "text": "Upon availability of instructor.",
       "uia": true
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-1200",
+      "IHSS-1200"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -3392,7 +3512,12 @@
       "text": "Upon availability  of instructor.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "STSO-2520",
+      "STSO-2500",
+      "STSO-2210",
+      "STSO-1110"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -3453,7 +3578,12 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "IHSS-1320",
+      "IHSS-1110",
+      "IHSS-1240",
+      "STSO-1110"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -3477,7 +3607,11 @@
       "text": "Upon availability of instructor.",
       "uia": true
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-1200",
+      "IHSS-1200",
+      "ECON-2010"
+    ],
     "professors": [
       "Sarah Marsden Greene"
     ],
@@ -3512,7 +3646,12 @@
       "text": "spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "STSO-1110",
+      "STSO-2300",
+      "IHSS-1240",
+      "IHSS-1110"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -3536,7 +3675,10 @@
       "text": "spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "STSO-2300",
+      "STSO-2210"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -3584,7 +3726,9 @@
       "text": "Upon availability of instructor.",
       "uia": true
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-2010"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -3704,7 +3848,9 @@
       "text": "Fall and spring terms annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "GSAS-4540"
+    ],
     "professors": [
       "Kathleen Ruiz"
     ],
@@ -3829,7 +3975,12 @@
       "text": "Fall semester, even-numbered years",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "STSO-2300",
+      "STSO-2210",
+      "STSO-2500",
+      "STSO-2520"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -4028,10 +4179,12 @@
       "text": "Fall term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "GSAS-2540"
+    ],
     "professors": [
-      "Mei Si",
-      "Michael F Lynch"
+      "Michael F Lynch",
+      "Mei Si"
     ],
     "properties": {
       "CI": false,
@@ -4125,7 +4278,10 @@
       "text": "Fall term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "GSAS-2540",
+      "GSAS-2510"
+    ],
     "professors": [
       "Eric Louis Ameres"
     ],
@@ -4160,7 +4316,9 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "GSAS-4520"
+    ],
     "professors": [
       "Sylvain Payen"
     ],
@@ -4266,7 +4424,13 @@
       "text": "Fall term, odd-numbered years",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "STSO-2520",
+      "STSO-2210",
+      "STSO-2500",
+      "STSO-2100",
+      "STSO-2300"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -4290,7 +4454,9 @@
       "text": "Spring term odd-numbered years.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "STSO-2300"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -4314,7 +4480,10 @@
       "text": "Fall term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1200",
+      "ARTS-1020"
+    ],
     "professors": [
       "Nathan Scott Meltz"
     ],
@@ -4662,7 +4831,13 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "STSO-2520",
+      "IHSS-1420",
+      "STSO-2500",
+      "STSO-1110",
+      "IHSS-1430"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -4688,7 +4863,9 @@
       "text": "Summer term, even-numbered years",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -4763,7 +4940,9 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200"
+    ],
     "professors": [
       "Holly A Traver"
     ],
@@ -4830,7 +5009,9 @@
       "text": "Fall term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "COMM-2660"
+    ],
     "professors": [
       "Miles A Kimball"
     ],
@@ -4905,8 +5086,8 @@
     ],
     "professors": [
       "Linda Kramarchyk",
-      "Kevin R. Stewart",
-      "Matthew John Grill"
+      "Matthew John Grill",
+      "Kevin R. Stewart"
     ],
     "properties": {
       "CI": true,
@@ -4971,7 +5152,10 @@
       "text": "Fall and spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-2010",
+      "ARTS-2020"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -5054,11 +5238,14 @@
       "text": "Fall and spring terms annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-2380",
+      "ARTS-2020"
+    ],
     "professors": [
       "Stephanie D Loveless",
-      "Matthew William Goodheart",
-      "Kathleen A. Galloway"
+      "Kathleen A. Galloway",
+      "Matthew William Goodheart"
     ],
     "properties": {
       "CI": true,
@@ -5126,10 +5313,12 @@
       "text": "Fall and spring terms annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1020"
+    ],
     "professors": [
-      "Nathan Scott Meltz",
-      "Kathleen Ruiz"
+      "Kathleen Ruiz",
+      "Nathan Scott Meltz"
     ],
     "properties": {
       "CI": false,
@@ -5221,10 +5410,12 @@
       "text": "Spring term even-numbered years.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PHIL-2140"
+    ],
     "professors": [
-      "Bram Van Heuveln",
-      "Selmer Bringsjord"
+      "Selmer Bringsjord",
+      "Bram Van Heuveln"
     ],
     "properties": {
       "CI": false,
@@ -5261,8 +5452,8 @@
       "IHSS-1200"
     ],
     "professors": [
-      "Huaming Peng",
-      "Mina Mahmoudi"
+      "Mina Mahmoudi",
+      "Huaming Peng"
     ],
     "properties": {
       "CI": false,
@@ -5315,8 +5506,8 @@
       "IHSS-1200"
     ],
     "professors": [
-      "Robert W. Jones",
-      "Conor Lennon"
+      "Conor Lennon",
+      "Robert W. Jones"
     ],
     "properties": {
       "CI": false,
@@ -5357,7 +5548,9 @@
       "text": "Fall term even-numbered years.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1030"
+    ],
     "professors": [
       "Elizabeth Press"
     ],
@@ -5392,7 +5585,10 @@
       "text": "Upon availability of instructor.",
       "uia": true
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-1200",
+      "IHSS-1200"
+    ],
     "professors": [
       "Michael A. Klein",
       "Mina Mahmoudi"
@@ -5464,7 +5660,10 @@
       "text": "Fall term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200",
+      "COGS-2120"
+    ],
     "professors": [
       "Alicia Ann Walf"
     ],
@@ -5509,8 +5708,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Bram Van Heuveln",
-      "Benjamin P. Weissman"
+      "Benjamin P. Weissman",
+      "Bram Van Heuveln"
     ],
     "properties": {
       "CI": false,
@@ -5693,8 +5892,8 @@
     "prerequisites": [],
     "professors": [
       "Sara L. Tack",
-      "Leah A. Rico",
-      "Benjamin David Gleeksman"
+      "Benjamin David Gleeksman",
+      "Leah A. Rico"
     ],
     "properties": {
       "CI": true,
@@ -5772,8 +5971,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Linda Kramarchyk",
-      "Richard M. Plotka"
+      "Richard M. Plotka",
+      "Linda Kramarchyk"
     ],
     "properties": {
       "CI": false,
@@ -5808,7 +6007,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Benjamin P. Weissman"
+      "Benjamin P. Weissman",
+      "Marjorie McShane"
     ],
     "properties": {
       "CI": false,
@@ -5835,17 +6035,17 @@
       "3": {
         "class": "Class",
         "days": "MR",
-        "instructor": "Benjamin P. Weissman",
-        "location": "Russell Sage Laboratory 4101",
-        "time": "10:10 am - 12:00 pm",
+        "instructor": "Marjorie McShane",
+        "location": "TBA",
+        "time": "2:00 pm - 3:50 pm",
         "type": "Lecture"
       },
       "4": {
         "class": "Class",
-        "days": "MR",
+        "days": "TF",
         "instructor": "Benjamin P. Weissman",
-        "location": "Russell Sage Laboratory 4101",
-        "time": "10:10 am - 12:00 pm",
+        "location": "TBA",
+        "time": "10:00 am - 11:50 am",
         "type": "Lecture"
       }
     },
@@ -5867,7 +6067,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "James P Zappen"
+      "James P Zappen",
+      "Carolin Alice Hofmann"
     ],
     "properties": {
       "CI": true,
@@ -5878,17 +6079,17 @@
       "1": {
         "class": "Class",
         "days": "MR",
-        "instructor": "James P Zappen",
+        "instructor": "Carolin Alice Hofmann",
         "location": "Russell Sage Laboratory 4203",
-        "time": "10:00 am - 11:50 am",
+        "time": "4:00 pm - 5:50 pm",
         "type": "Lecture"
       },
       "2": {
         "class": "Class",
         "days": "MR",
-        "instructor": "James P Zappen",
-        "location": "Russell Sage Laboratory 4203",
-        "time": "10:00 am - 11:50 am",
+        "instructor": "Carolin Alice Hofmann",
+        "location": "TBA",
+        "time": "2:00 pm - 3:50 pm",
         "type": "Lecture"
       },
       "3": {
@@ -6029,9 +6230,9 @@
     },
     "prerequisites": [],
     "professors": [
+      "Jason Sean Jacobskind",
       "Michael J Kalsher",
-      "Alicia Ann Walf",
-      "Jason Sean Jacobskind"
+      "Alicia Ann Walf"
     ],
     "properties": {
       "CI": false,
@@ -6335,7 +6536,9 @@
       "text": "Fall term, odd-numbered years",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -6359,7 +6562,9 @@
       "text": "Fall term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "COGS-4420"
+    ],
     "professors": [
       "Mei Si"
     ],
@@ -6394,7 +6599,13 @@
       "text": "spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "GSAS-1040",
+      "GSAS-2540",
+      "GSAS-2510",
+      "GSAS-2520",
+      "GSAS-1600"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -6418,7 +6629,9 @@
       "text": "spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1200"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -6514,7 +6727,9 @@
       "text": "Fall and spring terms annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ITWS-2110"
+    ],
     "professors": [
       "Matthew John Grill"
     ],
@@ -6549,7 +6764,9 @@
       "text": "Fall term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-2010"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -6678,7 +6895,8 @@
       "uia": false
     },
     "prerequisites": [
-      "STSO-2510"
+      "STSO-2520",
+      "STSO-2500"
     ],
     "professors": [],
     "properties": {
@@ -6776,8 +6994,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Bram Van Heuveln",
-      "John R Milanese"
+      "John R Milanese",
+      "Bram Van Heuveln"
     ],
     "properties": {
       "CI": true,
@@ -6852,6 +7070,7 @@
     },
     "prerequisites": [],
     "professors": [
+      "Cristina Claudia Caruso James",
       "Ellen Esrock"
     ],
     "properties": {
@@ -6863,7 +7082,7 @@
       "1": {
         "class": "Class",
         "days": "TF",
-        "instructor": "Ellen Esrock",
+        "instructor": "Cristina Claudia Caruso James",
         "location": "West Hall 112",
         "time": "2:00 pm - 3:50 pm",
         "type": "Lecture"
@@ -6885,7 +7104,10 @@
       "text": "Fall and spring terms annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-1200",
+      "IHSS-1200"
+    ],
     "professors": [
       "Sarah Marsden Greene"
     ],
@@ -6920,7 +7142,9 @@
       "text": "Fall term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200"
+    ],
     "professors": [
       "Holly A Traver"
     ],
@@ -6992,7 +7216,9 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-2380"
+    ],
     "professors": [
       "Christopher James Fisher-Lochhead",
       "Matthew William Goodheart"
@@ -7030,9 +7256,9 @@
     },
     "prerequisites": [],
     "professors": [
-      "Cory Ryan Kasprzyk",
       "Robert Kyle Hamilton",
-      "Matthew William Goodheart"
+      "Matthew William Goodheart",
+      "Cory Ryan Kasprzyk"
     ],
     "properties": {
       "CI": false,
@@ -7073,7 +7299,9 @@
       "text": "Spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-2020"
+    ],
     "professors": [
       "Robert Kyle Hamilton"
     ],
@@ -7158,7 +7386,10 @@
       "text": "Upon availability of instructor.",
       "uia": true
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-1200",
+      "IHSS-1200"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -7184,8 +7415,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Lee Claiborne Nelson",
-      "Jennifer Cardinal"
+      "Jennifer Cardinal",
+      "Lee Claiborne Nelson"
     ],
     "properties": {
       "CI": true,
@@ -7244,7 +7475,9 @@
       "text": "Fall term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1200"
+    ],
     "professors": [
       "Monica A. Hughes"
     ],
@@ -7346,7 +7579,9 @@
       "text": "Upon availability of instructor.",
       "uia": true
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PHIL-2140"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -7372,8 +7607,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Gunnar O'neill Babcock",
-      "Daniel Peter Thero"
+      "Daniel Peter Thero",
+      "Gunnar O'neill Babcock"
     ],
     "properties": {
       "CI": false,
@@ -7493,7 +7728,11 @@
       "uia": false
     },
     "prerequisites": [
-      "STSO-2010"
+      "STSO-2210",
+      "STSO-2520",
+      "STSO-2500",
+      "STSO-2100",
+      "STSO-2300"
     ],
     "professors": [],
     "properties": {
@@ -7654,20 +7893,20 @@
     },
     "prerequisites": [],
     "professors": [
+      "Thomas J. Gerbino",
+      "Matthew P. Steckler",
+      "Christopher James Fisher-Lochhead",
+      "David Bebe",
+      "Jingwen Tu",
       "Graeme S. Francis",
+      "Elissa Marie Harrigan",
+      "Omar Williams",
+      "Chrysi Nanou",
+      "Charles W. Olencki",
       "Akina Yura",
       "Jamecyn F. Morey",
-      "Paul J. Quigley",
-      "Omar Williams",
-      "Jingwen Tu",
-      "Chrysi Nanou",
-      "Matthew P. Steckler",
-      "David Bebe",
-      "Charles W. Olencki",
-      "Thomas J. Gerbino",
       "Karlinda D. Caldicott",
-      "Elissa Marie Harrigan",
-      "Christopher James Fisher-Lochhead"
+      "Paul J. Quigley"
     ],
     "properties": {
       "CI": false,
@@ -8044,7 +8283,9 @@
       "text": "Upon availability of instructor.",
       "uia": true
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-2010"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -8210,7 +8451,9 @@
       "text": "",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200"
+    ],
     "professors": [
       "Alicia Ann Walf"
     ],
@@ -8271,8 +8514,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Patrick Y Royer",
-      "Joseph Daniel Markowski"
+      "Joseph Daniel Markowski",
+      "Patrick Y Royer"
     ],
     "properties": {
       "CI": true,
@@ -8313,7 +8556,9 @@
       "text": "Spring term, annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "COMM-2520"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -8411,8 +8656,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Michael J Kalsher",
-      "Jason Sean Jacobskind"
+      "Jason Sean Jacobskind",
+      "Michael J Kalsher"
     ],
     "properties": {
       "CI": true,
@@ -8453,7 +8698,9 @@
       "text": "Fall term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-2310"
+    ],
     "professors": [
       "Brett R. Fajen"
     ],
@@ -8520,7 +8767,11 @@
       "text": "Fall term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1030",
+      "IHSS-1040",
+      "IHSS-1030"
+    ],
     "professors": [
       "Branda Miller"
     ],
@@ -8577,7 +8828,9 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "STSO-4980"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -8601,7 +8854,21 @@
       "text": "spring term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1200",
+      "IHSS-1170",
+      "ARTS-2380",
+      "IHSS-1030",
+      "IHSS-1180",
+      "IHSS-1040",
+      "ARTS-1020",
+      "ARTS-2020",
+      "ARTS-4140",
+      "ARTS-1030",
+      "ARTS-4120",
+      "ARTS-2220",
+      "ARTS-1040"
+    ],
     "professors": [
       "Kathryn High"
     ],
@@ -8730,7 +8997,9 @@
       "text": "Upon availability of instructor.",
       "uia": true
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PHIL-1110"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -8797,7 +9066,9 @@
       "text": "Fall term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-2210"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -8873,8 +9144,8 @@
       "PSYC-1200"
     ],
     "professors": [
-      "Brett R. Fajen",
-      "Jason Sean Jacobskind"
+      "Jason Sean Jacobskind",
+      "Brett R. Fajen"
     ],
     "properties": {
       "CI": false,
@@ -9002,7 +9273,9 @@
       "text": "Fall term annually",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200"
+    ],
     "professors": [
       "Holly A Traver"
     ],
@@ -9245,6 +9518,7 @@
     },
     "prerequisites": [],
     "professors": [
+      "Alexander Scott Hiland",
       "Terry W. Gipson"
     ],
     "properties": {
@@ -9257,16 +9531,16 @@
         "class": "Class",
         "days": "TF",
         "instructor": "Terry W. Gipson",
-        "location": "Russell Sage Laboratory 2701",
-        "time": "2:00 pm - 3:50 pm",
+        "location": "TBA",
+        "time": "12:00 pm - 1:50 pm",
         "type": "Lecture"
       },
       "2": {
         "class": "Class",
-        "days": "MR",
-        "instructor": "Terry W. Gipson",
-        "location": "Academy Hall AUD",
-        "time": "1:30 pm - 3:35 pm",
+        "days": "TF",
+        "instructor": "Alexander Scott Hiland",
+        "location": "TBA",
+        "time": "2:00 pm - 3:50 pm",
         "type": "Lecture"
       }
     },
@@ -9286,7 +9560,9 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -9417,7 +9693,9 @@
       "text": "Upon availability of instructor.",
       "uia": true
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-2010"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -9539,8 +9817,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Lee Claiborne Nelson",
-      "Jennifer Cardinal"
+      "Jennifer Cardinal",
+      "Lee Claiborne Nelson"
     ],
     "properties": {
       "CI": true,
@@ -9589,7 +9867,9 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "STSO-2300"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -9846,8 +10126,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Bram Van Heuveln",
-      "Tomasz Strzalkowski"
+      "Tomasz Strzalkowski",
+      "Bram Van Heuveln"
     ],
     "properties": {
       "CI": false,
@@ -9939,11 +10219,14 @@
       "text": "",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ECON-1200",
+      "IHSS-1200"
+    ],
     "professors": [
-      "Rui Fan",
       "Sarah Marsden Greene",
-      "Conor Lennon"
+      "Conor Lennon",
+      "Rui Fan"
     ],
     "properties": {
       "CI": false,
@@ -10130,11 +10413,13 @@
       "text": "",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "PSYC-1200"
+    ],
     "professors": [
       "Holly A Traver",
-      "Yingrui Yang",
-      "Ralph G Noble"
+      "Ralph G Noble",
+      "Yingrui Yang"
     ],
     "properties": {
       "CI": false,
@@ -10225,9 +10510,9 @@
     },
     "prerequisites": [],
     "professors": [
-      "Kenneth A. Ragsdale",
+      "Kathleen A. Galloway",
       "Monica A. Hughes",
-      "Kathleen A. Galloway"
+      "Kenneth A. Ragsdale"
     ],
     "properties": {
       "CI": true,
@@ -10329,11 +10614,11 @@
     },
     "prerequisites": [],
     "professors": [
+      "Ralph G Noble",
       "Michael J Kalsher",
-      "Marjorie McShane",
-      "Holly A Traver",
       "Alicia Ann Walf",
-      "Ralph G Noble"
+      "Marjorie McShane",
+      "Holly A Traver"
     ],
     "properties": {
       "CI": true,
@@ -10448,7 +10733,11 @@
       "text": "Fall term, odd-numbered years",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "COMM-2660",
+      "ARTS-1020",
+      "COMM-2570"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -10531,7 +10820,9 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ITWS-2110"
+    ],
     "professors": [
       "Brian Robert Callahan"
     ],
@@ -10574,7 +10865,9 @@
       "text": "Fall term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ITWS-1100"
+    ],
     "professors": [
       "Brian Robert Callahan"
     ],
@@ -10663,7 +10956,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Ellen Esrock"
+      "Ellen Esrock",
+      "Skye Anicca"
     ],
     "properties": {
       "CI": true,
@@ -10674,9 +10968,9 @@
       "1": {
         "class": "Class",
         "days": "TF",
-        "instructor": "Ellen Esrock",
-        "location": "Voorhees Computing Center SO",
-        "time": "10:00 am - 11:50 am",
+        "instructor": "Skye Anicca",
+        "location": "TBA",
+        "time": "2:00 pm - 3:50 pm",
         "type": "Lecture"
       }
     },
@@ -10731,7 +11025,9 @@
       "text": "Upon availability.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "ARTS-1030"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -10798,7 +11094,10 @@
       "text": "Spring term annually.",
       "uia": false
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "WRIT-2330",
+      "GSAS-2520"
+    ],
     "professors": [],
     "properties": {
       "CI": false,
@@ -10850,7 +11149,9 @@
     },
     "prerequisites": [],
     "professors": [
-      "Weina Ran"
+      "Weina Ran",
+      "Lorelei Nageotte Wagner",
+      "Samuel Estabrooks"
     ],
     "properties": {
       "CI": true,
@@ -10860,18 +11161,26 @@
     "sections": {
       "1": {
         "class": "Class",
-        "days": "MR",
-        "instructor": "Weina Ran",
+        "days": "TF",
+        "instructor": "Lorelei Nageotte Wagner",
         "location": "Russell Sage Laboratory 4112",
-        "time": "2:00 pm - 3:50 pm",
+        "time": "8:00 am - 9:50 am",
         "type": "Lecture"
       },
       "2": {
         "class": "Class",
-        "days": "MR",
-        "instructor": "Weina Ran",
+        "days": "TF",
+        "instructor": "Samuel Estabrooks",
         "location": "Russell Sage Laboratory 4112",
         "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Samuel Estabrooks",
+        "location": "TBA",
+        "time": "4:00 pm - 5:50 pm",
         "type": "Lecture"
       }
     },

@@ -14,7 +14,9 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-1020"
+      "ARTS-1200",
+      "ARTS-1020",
+      "ARTS-1040"
     ],
     "professors": [
       "Nathan Scott Meltz"
@@ -115,9 +117,9 @@
     },
     "prerequisites": [],
     "professors": [
-      "Kolel Christopher Pryor",
+      "Rebekah Gamin Arcovitch",
       "Benjamin H. Barnard",
-      "Rebekah Gamin Arcovitch"
+      "Kolel Christopher Pryor"
     ],
     "properties": {
       "CI": false,
@@ -180,9 +182,9 @@
       "ARTS-2230"
     ],
     "professors": [
-      "Shawn A. Lawson",
       "John A. Baumann",
-      "Silvia Ruzanka"
+      "Silvia Ruzanka",
+      "Shawn A. Lawson"
     ],
     "properties": {
       "CI": false,
@@ -471,8 +473,9 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1030"
+      "ARTS-1030",
+      "IHSS-1040",
+      "IHSS-1030"
     ],
     "professors": [],
     "properties": {
@@ -584,6 +587,9 @@
     },
     "prerequisites": [
       "COGS-2120",
+      "COGS-4330",
+      "PSYC-4370",
+      "COGS-2340",
       "PSYC-1200"
     ],
     "professors": [],
@@ -610,7 +616,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-4060"
+      "ARTS-4060",
+      "ARTS-4070"
     ],
     "professors": [
       "Silvia Ruzanka"
@@ -861,8 +868,17 @@
       "uia": false
     },
     "prerequisites": [
+      "ARTS-1200",
+      "IHSS-1170",
+      "ARTS-2380",
       "IHSS-1030",
-      "ARTS-1020"
+      "IHSS-1180",
+      "IHSS-1040",
+      "ARTS-1020",
+      "ARTS-2020",
+      "ARTS-1030",
+      "ARTS-2220",
+      "ARTS-1040"
     ],
     "professors": [],
     "properties": {
@@ -1033,7 +1049,8 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200"
+      "PSYC-1200",
+      "PSYC-2120"
     ],
     "professors": [],
     "properties": {
@@ -1085,9 +1102,13 @@
       "uia": false
     },
     "prerequisites": [
-      "PHIL-1110",
+      "IHSS-1160",
+      "STSO-2520",
+      "STSO-2500",
+      "PHIL-4240",
       "STSO-2510",
-      "IHSS-1160"
+      "PHIL-1110",
+      "IHSS-1150"
     ],
     "professors": [],
     "properties": {
@@ -1113,8 +1134,18 @@
       "uia": false
     },
     "prerequisites": [
+      "ARTS-1200",
+      "IHSS-1170",
+      "ARTS-2380",
       "IHSS-1030",
-      "ARTS-1020"
+      "IHSS-1180",
+      "IHSS-1040",
+      "ARTS-1020",
+      "ARTS-2020",
+      "ARTS-4140",
+      "ARTS-1030",
+      "ARTS-2220",
+      "ARTS-1040"
     ],
     "professors": [],
     "properties": {
@@ -1140,7 +1171,9 @@
       "uia": false
     },
     "prerequisites": [
-      "COMM-2660"
+      "COMM-2680",
+      "COMM-2660",
+      "COMM-2570"
     ],
     "professors": [],
     "properties": {
@@ -1226,8 +1259,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Matthew J. Chamberlain",
-      "Chrysi Nanou"
+      "Chrysi Nanou",
+      "Matthew J. Chamberlain"
     ],
     "properties": {
       "CI": false,
@@ -1270,8 +1303,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Yalun Zhou",
-      "Jianling Yue"
+      "Jianling Yue",
+      "Yalun Zhou"
     ],
     "properties": {
       "CI": false,
@@ -1369,8 +1402,8 @@
       "LANG-2410"
     ],
     "professors": [
-      "Yalun Zhou",
-      "Jianling Yue"
+      "Jianling Yue",
+      "Yalun Zhou"
     ],
     "properties": {
       "CI": true,
@@ -1482,7 +1515,9 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-4330"
+      "PSYC-4370",
+      "PSYC-4330",
+      "PSYC-4360"
     ],
     "professors": [
       "Alicia Ann Walf"
@@ -1521,6 +1556,7 @@
       "uia": false
     },
     "prerequisites": [
+      "PSYC-4370",
       "PHIL-2120"
     ],
     "professors": [],
@@ -1547,7 +1583,9 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200"
+      "PSYC-1200",
+      "PSYC-4370",
+      "PSYC-2120"
     ],
     "professors": [
       "Michael J. Schoelles"
@@ -1584,8 +1622,8 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
     ],
     "professors": [
       "Christopher Robert Sims"
@@ -1878,9 +1916,9 @@
     },
     "prerequisites": [],
     "professors": [
-      "Branda Miller",
       "Kathryn High",
-      "Silvia Ruzanka"
+      "Silvia Ruzanka",
+      "Branda Miller"
     ],
     "properties": {
       "CI": false,
@@ -1916,8 +1954,8 @@
     "prerequisites": [],
     "professors": [
       "Stephanie D Loveless",
-      "Branda Miller",
-      "Silvia Ruzanka"
+      "Silvia Ruzanka",
+      "Branda Miller"
     ],
     "properties": {
       "CI": false,
@@ -1995,8 +2033,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Skye Anicca",
-      "Shira Dentz"
+      "Shira Dentz",
+      "Skye Anicca"
     ],
     "properties": {
       "CI": true,
@@ -2065,8 +2103,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Bram Van Heuveln",
-      "John R Milanese"
+      "John R Milanese",
+      "Bram Van Heuveln"
     ],
     "properties": {
       "CI": false,
@@ -2185,8 +2223,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Linda Kramarchyk",
-      "Thilanka Munasinghe"
+      "Thilanka Munasinghe",
+      "Linda Kramarchyk"
     ],
     "properties": {
       "CI": false,
@@ -2276,7 +2314,9 @@
   },
   "Database Applications and Systems (DBAS)": {
     "ID": "4250",
-    "cross listed": [],
+    "cross listed": [
+      "ITWS-4250"
+    ],
     "description": "This advanced course in database applications and database systems provides students with a strong foundation in modern database design, data modeling, data normalization, SQL, NoSQL, query optimization, database security, and how databases fit into larger software architectures. Substantial programming and design projects are required.",
     "name": "Database Applications and Systems (DBAS)",
     "offered": {
@@ -2658,9 +2698,9 @@
     },
     "prerequisites": [],
     "professors": [
-      "Nathan Scott Meltz",
       "Kathleen Ruiz",
-      "Silvia Ruzanka"
+      "Silvia Ruzanka",
+      "Nathan Scott Meltz"
     ],
     "properties": {
       "CI": false,
@@ -2743,18 +2783,18 @@
     },
     "prerequisites": [],
     "professors": [
-      "Wayne D. Gray",
       "Christopher Robert Sims",
-      "Michael J Kalsher",
-      "Selmer Bringsjord",
-      "Ron Sun",
-      "Marjorie McShane",
-      "Sergei Nirenburg",
-      "James A. Hendler",
-      "Brett R. Fajen",
       "Tomasz Strzalkowski",
+      "Michael J Kalsher",
+      "Wayne D. Gray",
+      "Sergei Nirenburg",
+      "Marjorie McShane",
+      "Selmer Bringsjord",
+      "Mei Si",
       "Peter A Fox",
-      "Mei Si"
+      "Ron Sun",
+      "Brett R. Fajen",
+      "James A. Hendler"
     ],
     "properties": {
       "CI": false,
@@ -2996,8 +3036,19 @@
       "uia": false
     },
     "prerequisites": [
+      "ARTS-1200",
+      "IHSS-1170",
+      "ARTS-2380",
       "IHSS-1030",
-      "ARTS-1020"
+      "IHSS-1180",
+      "IHSS-1040",
+      "ARTS-1020",
+      "ARTS-2020",
+      "ARTS-4140",
+      "ARTS-1030",
+      "ARTS-4120",
+      "ARTS-2220",
+      "ARTS-1040"
     ],
     "professors": [],
     "properties": {
@@ -3367,6 +3418,9 @@
       "uia": false
     },
     "prerequisites": [
+      "STSO-2520",
+      "STSO-2500",
+      "STSO-2210",
       "STSO-1110"
     ],
     "professors": [],
@@ -3430,7 +3484,9 @@
       "uia": false
     },
     "prerequisites": [
+      "IHSS-1320",
       "IHSS-1110",
+      "IHSS-1240",
       "STSO-1110"
     ],
     "professors": [],
@@ -3458,7 +3514,8 @@
     },
     "prerequisites": [
       "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-2010"
     ],
     "professors": [
       "Sarah Marsden Greene"
@@ -3504,7 +3561,9 @@
     },
     "prerequisites": [
       "STSO-1110",
-      "IHSS-1240"
+      "STSO-2300",
+      "IHSS-1240",
+      "IHSS-1110"
     ],
     "professors": [],
     "properties": {
@@ -3530,7 +3589,8 @@
       "uia": false
     },
     "prerequisites": [
-      "STSS-2300"
+      "STSS-2300",
+      "STSS-2210"
     ],
     "professors": [],
     "properties": {
@@ -3609,8 +3669,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Susan Lynn Smith",
-      "John R Milanese"
+      "John R Milanese",
+      "Susan Lynn Smith"
     ],
     "properties": {
       "CI": true,
@@ -3709,8 +3769,8 @@
       "GSAS-4540"
     ],
     "professors": [
-      "Kathleen Ruiz",
-      "Silvia Ruzanka"
+      "Silvia Ruzanka",
+      "Kathleen Ruiz"
     ],
     "properties": {
       "CI": false,
@@ -3894,7 +3954,11 @@
       "uia": false
     },
     "prerequisites": [
-      "STSO-2210"
+      "STSO-2210",
+      "STSO-2520",
+      "STSO-2500",
+      "STSO-2510",
+      "STSO-2300"
     ],
     "professors": [],
     "properties": {
@@ -4125,8 +4189,8 @@
       "GSAS-2540"
     ],
     "professors": [
-      "Mei Si",
-      "Michael F Lynch"
+      "Michael F Lynch",
+      "Mei Si"
     ],
     "properties": {
       "CI": false,
@@ -4218,6 +4282,7 @@
       "uia": false
     },
     "prerequisites": [
+      "GSAS-2540",
       "GSAS-2510"
     ],
     "professors": [
@@ -4267,8 +4332,8 @@
       "GSAS-4520"
     ],
     "professors": [
-      "Sylvain Payen",
-      "Rebekah Gamin Arcovitch"
+      "Rebekah Gamin Arcovitch",
+      "Sylvain Payen"
     ],
     "properties": {
       "CI": false,
@@ -4310,8 +4375,8 @@
       "uia": false
     },
     "prerequisites": [
-      "COMM-4240",
-      "GSAS-2520"
+      "GSAS-2520",
+      "COMM-4240"
     ],
     "professors": [],
     "properties": {
@@ -4363,7 +4428,12 @@
       "uia": false
     },
     "prerequisites": [
-      "STSO-2100"
+      "STSO-2520",
+      "STSO-2210",
+      "STSO-2500",
+      "STSO-2510",
+      "STSO-2100",
+      "STSO-2300"
     ],
     "professors": [],
     "properties": {
@@ -4415,6 +4485,7 @@
       "uia": false
     },
     "prerequisites": [
+      "ARTS-1200",
       "ARTS-1020"
     ],
     "professors": [
@@ -4610,8 +4681,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Nicholas J. Mizer",
-      "Michael F Lynch"
+      "Michael F Lynch",
+      "Nicholas J. Mizer"
     ],
     "properties": {
       "CI": true,
@@ -4704,7 +4775,11 @@
       "uia": false
     },
     "prerequisites": [
+      "STSO-2520",
+      "IHSS-1420",
+      "STSO-2500",
       "STSO-1110",
+      "IHSS-1430",
       "IHSS-1410"
     ],
     "professors": [],
@@ -4731,7 +4806,11 @@
       "uia": false
     },
     "prerequisites": [
+      "STSO-2520",
+      "IHSS-1420",
+      "STSO-2500",
       "STSO-1110",
+      "IHSS-1430",
       "IHSS-1410"
     ],
     "professors": [],
@@ -4758,7 +4837,10 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1420"
+      "IHSS-1430",
+      "IHSS-1420",
+      "STSO-2500",
+      "STSO-2520"
     ],
     "professors": [],
     "properties": {
@@ -5065,7 +5147,9 @@
   },
   "Information Technology and Web Science Capstone": {
     "ID": "4100",
-    "cross listed": [],
+    "cross listed": [
+      "ITWS-4100"
+    ],
     "description": "Students work on collaborative projects to design innovative ITWS solutions which address a specific problem or area of need in the student's field. Students work to identify a problem and research viable solutions. They go on to propose, design, and prototype their ITWS solution learning best practices for ITWS project management, communication, and user-center design. This course serves as the culminating experience for the undergraduate ITWS program. Restricted to ITWS majors. This is a communication-intensive course.",
     "name": "Information Technology and Web Science Capstone",
     "offered": {
@@ -5078,11 +5162,12 @@
       "uia": false
     },
     "prerequisites": [
-      "ITWS-2210"
+      "ITWS-2210",
+      "ITWS-4310"
     ],
     "professors": [
-      "Linda Kramarchyk",
       "Richard M. Plotka",
+      "Linda Kramarchyk",
       "Matthew John Grill"
     ],
     "properties": {
@@ -5149,7 +5234,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-2010"
+      "ARTS-2010",
+      "ARTS-2020"
     ],
     "professors": [],
     "properties": {
@@ -5234,7 +5320,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-2380"
+      "ARTS-2380",
+      "ARTS-2020"
     ],
     "professors": [],
     "properties": {
@@ -5298,8 +5385,8 @@
       "ARTS-1020"
     ],
     "professors": [
-      "Nathan Scott Meltz",
-      "Kathleen Ruiz"
+      "Kathleen Ruiz",
+      "Nathan Scott Meltz"
     ],
     "properties": {
       "CI": false,
@@ -5470,8 +5557,8 @@
       "IHSS-1200"
     ],
     "professors": [
-      "Robert W. Jones",
-      "Conor Lennon"
+      "Conor Lennon",
+      "Robert W. Jones"
     ],
     "properties": {
       "CI": false,
@@ -5579,8 +5666,8 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
     ],
     "professors": [
       "Alicia Ann Walf"
@@ -5764,9 +5851,9 @@
     },
     "prerequisites": [],
     "professors": [
+      "Michael F Lynch",
       "Ross M. Berger",
-      "Nicholas J. Mizer",
-      "Michael F Lynch"
+      "Nicholas J. Mizer"
     ],
     "properties": {
       "CI": true,
@@ -5817,9 +5904,9 @@
     },
     "prerequisites": [],
     "professors": [
-      "Sara L. Tack",
       "Leah A. Rico",
-      "Benjamin David Gleeksman"
+      "Benjamin David Gleeksman",
+      "Sara L. Tack"
     ],
     "properties": {
       "CI": true,
@@ -5897,8 +5984,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Linda Kramarchyk",
-      "Richard M. Plotka"
+      "Richard M. Plotka",
+      "Linda Kramarchyk"
     ],
     "properties": {
       "CI": false,
@@ -6153,10 +6240,10 @@
     },
     "prerequisites": [],
     "professors": [
-      "Michael J Kalsher",
-      "Alicia Ann Walf",
       "Jason Sean Jacobskind",
-      "Christopher L Hubbell"
+      "Christopher L Hubbell",
+      "Alicia Ann Walf",
+      "Michael J Kalsher"
     ],
     "properties": {
       "CI": false,
@@ -6259,7 +6346,9 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1110"
+      "IHSS-1320",
+      "IHSS-1110",
+      "IHSS-1240"
     ],
     "professors": [],
     "properties": {
@@ -6517,7 +6606,11 @@
       "uia": false
     },
     "prerequisites": [
-      "GSAS-1040"
+      "GSAS-1040",
+      "GSAS-2540",
+      "GSAS-2510",
+      "GSAS-2520",
+      "GSAS-1600"
     ],
     "professors": [],
     "properties": {
@@ -6715,8 +6808,9 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "PSYC-4310",
+      "COGS-2120"
     ],
     "professors": [
       "Christopher Robert Sims"
@@ -6828,6 +6922,8 @@
       "uia": false
     },
     "prerequisites": [
+      "STSO-2520",
+      "STSO-2500",
       "STSO-2510"
     ],
     "professors": [],
@@ -6897,7 +6993,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-2010"
+      "ECON-2010",
+      "ECON-2020"
     ],
     "professors": [],
     "properties": {
@@ -6926,8 +7023,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Bram Van Heuveln",
-      "John R Milanese"
+      "John R Milanese",
+      "Bram Van Heuveln"
     ],
     "properties": {
       "CI": true,
@@ -7103,7 +7200,9 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-2020"
+      "ARTS-4510",
+      "ARTS-2020",
+      "ARTS-4010"
     ],
     "professors": [],
     "properties": {
@@ -7241,8 +7340,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Cory Ryan Kasprzyk",
-      "Robert Kyle Hamilton"
+      "Robert Kyle Hamilton",
+      "Cory Ryan Kasprzyk"
     ],
     "properties": {
       "CI": false,
@@ -7349,8 +7448,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Lee Claiborne Nelson",
-      "Jennifer Cardinal"
+      "Jennifer Cardinal",
+      "Lee Claiborne Nelson"
     ],
     "properties": {
       "CI": true,
@@ -7384,7 +7483,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-2500"
+      "ARTS-2500",
+      "ARTS-2540"
     ],
     "professors": [
       "Michael L. Century"
@@ -7725,7 +7825,12 @@
       "uia": false
     },
     "prerequisites": [
+      "STSO-2520",
+      "STSO-2500",
+      "STSS-2510",
       "STSS-2210",
+      "STSO-2300",
+      "STSO-2100",
       "STSO-2010"
     ],
     "professors": [],
@@ -7855,17 +7960,17 @@
     },
     "prerequisites": [],
     "professors": [
+      "Thomas J. Gerbino",
+      "Matthew P. Steckler",
+      "Jingwen Tu",
       "Graeme S. Francis",
+      "Elissa Marie Harrigan",
+      "Omar Williams",
+      "Charles W. Olencki",
       "Akina Yura",
       "Jamecyn F. Morey",
-      "Omar Williams",
-      "Paul J. Quigley",
-      "Jingwen Tu",
-      "Matthew P. Steckler",
-      "Charles W. Olencki",
-      "Thomas J. Gerbino",
       "Karlinda D. Caldicott",
-      "Elissa Marie Harrigan"
+      "Paul J. Quigley"
     ],
     "properties": {
       "CI": false,
@@ -8134,8 +8239,9 @@
       "uia": false
     },
     "prerequisites": [
-      "WRIT-1110",
-      "COMM-2520"
+      "COMM-2520",
+      "WRIT-2110",
+      "WRIT-1110"
     ],
     "professors": [
       "Lillian Carolyn Spina-Caza"
@@ -8678,12 +8784,12 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
     ],
     "professors": [
-      "Michael J Kalsher",
-      "Jason Sean Jacobskind"
+      "Jason Sean Jacobskind",
+      "Michael J Kalsher"
     ],
     "properties": {
       "CI": true,
@@ -8797,8 +8903,9 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1030"
+      "ARTS-1030",
+      "IHSS-1040",
+      "IHSS-1030"
     ],
     "professors": [],
     "properties": {
@@ -8872,8 +8979,19 @@
       "uia": false
     },
     "prerequisites": [
+      "ARTS-1200",
+      "IHSS-1170",
+      "ARTS-2380",
       "IHSS-1030",
-      "ARTS-1020"
+      "IHSS-1180",
+      "IHSS-1040",
+      "ARTS-1020",
+      "ARTS-2020",
+      "ARTS-4140",
+      "ARTS-1030",
+      "ARTS-4120",
+      "ARTS-2220",
+      "ARTS-1040"
     ],
     "professors": [
       "Kathryn High"
@@ -9160,7 +9278,8 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200"
+      "PSYC-1200",
+      "PSYC-2120"
     ],
     "professors": [],
     "properties": {
@@ -9188,8 +9307,9 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "IHSS-1150"
+      "IHSS-1140",
+      "IHSS-1150",
+      "PSYC-1200"
     ],
     "professors": [],
     "properties": {
@@ -9242,8 +9362,8 @@
       "PSYC-1200"
     ],
     "professors": [
-      "Christopher A. VerWys",
-      "Holly A Traver"
+      "Holly A Traver",
+      "Christopher A. VerWys"
     ],
     "properties": {
       "CI": true,
@@ -9519,7 +9639,8 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200"
+      "PSYC-1200",
+      "PSYC-2800"
     ],
     "professors": [
       "Christopher L Hubbell"
@@ -9557,9 +9678,9 @@
     },
     "prerequisites": [],
     "professors": [
-      "Sarah Virginia Seeley",
+      "Samuel Estabrooks",
       "Skye Anicca",
-      "Samuel Estabrooks"
+      "Sarah Virginia Seeley"
     ],
     "properties": {
       "CI": true,
@@ -9790,8 +9911,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Lee Claiborne Nelson",
-      "Jennifer Cardinal"
+      "Jennifer Cardinal",
+      "Lee Claiborne Nelson"
     ],
     "properties": {
       "CI": true,
@@ -9867,6 +9988,7 @@
       "uia": false
     },
     "prerequisites": [
+      "STSO-2300",
       "STSO-1110"
     ],
     "professors": [],
@@ -10030,8 +10152,8 @@
       "COGS-2340"
     ],
     "professors": [
-      "Marjorie McShane",
-      "Sergei Nirenburg"
+      "Sergei Nirenburg",
+      "Marjorie McShane"
     ],
     "properties": {
       "CI": true,
@@ -10102,8 +10224,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Bram Van Heuveln",
-      "Tomasz Strzalkowski"
+      "Tomasz Strzalkowski",
+      "Bram Van Heuveln"
     ],
     "properties": {
       "CI": false,
@@ -10211,9 +10333,9 @@
       "IHSS-1200"
     ],
     "professors": [
-      "Rui Fan",
       "Michael A. Klein",
-      "Sarah Marsden Greene"
+      "Sarah Marsden Greene",
+      "Rui Fan"
     ],
     "properties": {
       "CI": false,
@@ -10454,10 +10576,10 @@
     },
     "prerequisites": [],
     "professors": [
-      "Monica A. Hughes",
-      "Elizabeth Press",
       "Kathryn High",
-      "Kathleen A. Galloway"
+      "Kathleen A. Galloway",
+      "Elizabeth Press",
+      "Monica A. Hughes"
     ],
     "properties": {
       "CI": true,
@@ -10567,11 +10689,11 @@
     },
     "prerequisites": [],
     "professors": [
+      "Ralph G Noble",
       "Michael J Kalsher",
-      "Marjorie McShane",
-      "Holly A Traver",
       "Alicia Ann Walf",
-      "Ralph G Noble"
+      "Marjorie McShane",
+      "Holly A Traver"
     ],
     "properties": {
       "CI": true,
@@ -10876,8 +10998,8 @@
     },
     "prerequisites": [],
     "professors": [
-      "Tomie Hahn",
-      "Alicia Ann Walf"
+      "Alicia Ann Walf",
+      "Tomie Hahn"
     ],
     "properties": {
       "CI": true,
