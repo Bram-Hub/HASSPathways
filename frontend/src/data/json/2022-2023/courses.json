@@ -2713,8 +2713,32 @@
     },
     "prerequisites": [],
     "professors": [
-      "Kathleen Ruiz",
-      "Nathan Scott Meltz"
+      {
+        "name": "Nathan Scott Meltz",
+        "rateProfessor_links": "NA",
+        "CRN": "55271",
+        "days": [
+          "T",
+          "F"
+        ],
+        "Time":[
+          "2:00p - 3:50p",
+          "2:00p - 3:50p"
+        ]
+      },
+      {
+        "name": "Nathan Scott Meltz",
+        "rateProfessor_links": "NA",
+        "CRN": "55272",
+        "days": [
+          "T",
+          "F"
+        ],
+        "Time":[
+          "2:00p - 3:50p",
+          "2:00p - 3:50p"
+        ]
+      }
     ],
     "properties": {
       "CI": false,
