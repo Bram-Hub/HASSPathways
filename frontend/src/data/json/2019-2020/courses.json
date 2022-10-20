@@ -24,6 +24,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Nathan Scott Meltz",
+        "location": "West Hall 214",
+        "time": "8:00 am - 9:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "3D Animation": {
@@ -51,6 +61,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Silvia Ruzanka",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "3D Digital Modeling": {
@@ -69,13 +89,31 @@
     },
     "prerequisites": [],
     "professors": [
-      "Rebekah Gamin Arcovitch",
-      "Benjamin Chia-Ming Chang"
+      "Benjamin Chia-Ming Chang",
+      "Rebekah Gamin Arcovitch"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Rebekah Gamin Arcovitch",
+        "location": "Russell Sage Laboratory 2411",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Rebekah Gamin Arcovitch",
+        "location": "Russell Sage Laboratory 2411",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -104,6 +142,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Shawn A. Lawson",
+        "location": "Russell Sage Laboratory 2411",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "A Century of Environmental Thought": {
@@ -127,6 +175,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Abnormal Psychology": {
@@ -155,6 +204,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TW",
+        "instructor": "Larry D Reid",
+        "location": "Low Center for Industrial Inn. 4040",
+        "time": "6:00 pm - 7:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Advanced Digital 3D Projects": {
@@ -180,6 +239,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Advanced Digital Imaging": {
@@ -204,6 +264,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TR",
+        "instructor": "Kathleen Ruiz",
+        "location": "West Hall 214",
+        "time": "6:00 pm - 7:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -232,6 +302,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Kenneth A. Ragsdale",
+        "location": "West Hall 411",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Advanced Topics in Linguistics": {
@@ -257,6 +337,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COGS"
   },
   "Advertising and Culture": {
@@ -280,6 +361,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COMM"
   },
   "American History": {
@@ -303,6 +385,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSH"
   },
   "American Politics in Crisis": {
@@ -326,6 +409,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Animation Production": {
@@ -353,6 +437,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Silvia Ruzanka",
+        "location": "Russell Sage Laboratory 2411",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Applied Game Theory": {
@@ -370,8 +464,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [],
     "properties": {
@@ -379,6 +473,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Are Humans Rational?": {
@@ -402,6 +497,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Art History": {
@@ -426,6 +522,16 @@
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Jefferson Wille Kielwagen",
+        "location": "Low Center for Industrial Inn. 4050",
+        "time": "10:30 am - 12:35 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -454,6 +560,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Shawn A. Lawson",
+        "location": "Russell Sage Laboratory 2411",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Art for Interactive Media": {
@@ -478,6 +594,24 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Robert F. Nideffer",
+        "location": "TBA",
+        "time": "1:30 pm - 3:35 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Robert F. Nideffer",
+        "location": "TBA",
+        "time": "1:30 pm - 3:35 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "GSAS"
   },
@@ -504,6 +638,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Branda Miller",
+        "location": "West Hall 112",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "B.S. EARTS Thesis": {
@@ -527,6 +671,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Basic Drawing": {
@@ -552,6 +697,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Kenneth A. Ragsdale",
+        "location": "West Hall 411",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Kenneth A. Ragsdale",
+        "location": "West Hall 411",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Behavioral Economics": {
@@ -569,8 +732,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [],
     "properties": {
@@ -578,6 +741,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Behavioral Financial Economics": {
@@ -595,9 +759,9 @@
       "uia": false
     },
     "prerequisites": [
+      "ECON-1200",
       "PSYC-2310",
-      "IHSS-1200",
-      "ECON-1200"
+      "IHSS-1200"
     ],
     "professors": [],
     "properties": {
@@ -605,6 +769,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Behavioral Neuroscience": {
@@ -632,6 +797,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Bioethics": {
@@ -652,13 +818,23 @@
       "STSS-1110"
     ],
     "professors": [
-      "Susan Lynn Smith",
-      "Cynthia Theresa Cook"
+      "Cynthia Theresa Cook",
+      "Susan Lynn Smith"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Susan Lynn Smith",
+        "location": "TBA",
+        "time": "10:30 am - 12:35 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "STSH"
   },
@@ -678,13 +854,23 @@
     },
     "prerequisites": [],
     "professors": [
-      "Carl Pavarini",
-      "Kevin R. Stewart"
+      "Kevin R. Stewart",
+      "Carl Pavarini"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "F",
+        "instructor": "Kevin R. Stewart",
+        "location": "Pittsburgh Building 4206",
+        "time": "9:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "ITWS"
   },
@@ -709,6 +895,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PHIL"
   },
   "Century of the Gene": {
@@ -732,6 +919,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Chamber Music Ensemble": {
@@ -750,15 +938,33 @@
     },
     "prerequisites": [],
     "professors": [
-      "Matthew J. Chamberlain",
       "Nicholas Jon De Maison",
+      "Michael L. Century",
       "Chrysi Nanou",
-      "Michael L. Century"
+      "Matthew J. Chamberlain"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Matthew J. Chamberlain",
+        "location": "West Hall 323",
+        "time": "3:00 pm - 5:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "W",
+        "instructor": "Chrysi Nanou",
+        "location": "West Hall 323",
+        "time": "3:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -783,6 +989,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Chinese I": {
@@ -807,6 +1014,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Jianling Yue",
+        "location": "Russell Sage Laboratory 5711",
+        "time": "8:00 am - 10:05 am",
+        "type": "Lecture"
+      }
     },
     "subj": "LANG"
   },
@@ -835,6 +1052,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Jianling Yue",
+        "location": "Russell Sage Laboratory 3704",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "LANG"
   },
   "Chinese III": {
@@ -860,6 +1087,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "LANG"
   },
   "Chinese IV": {
@@ -888,6 +1116,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Yalun Zhou",
+        "location": "Pittsburgh Building 5114",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "LANG"
   },
   "Chinese V": {
@@ -915,6 +1153,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Yalun Zhou",
+        "location": "Russell Sage Laboratory 3705",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "LANG"
   },
@@ -945,6 +1193,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Alicia Ann Walf",
+        "location": "TBA",
+        "time": "10:30 am - 12:35 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Cognitive Engineering": {
@@ -972,6 +1230,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Cognitive Modeling": {
@@ -999,6 +1258,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Michael J. Schoelles",
+        "location": "Low Center for Industrial Inn. 4034",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Cognitive Psychology": {
@@ -1016,8 +1285,8 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "professors": [
       "Holly A Traver",
@@ -1027,6 +1296,24 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Christopher Robert Sims",
+        "location": "Darrin Communications Center 337",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Christopher Robert Sims",
+        "location": "Darrin Communications Center 337",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "PSYC"
   },
@@ -1051,6 +1338,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COMM"
   },
   "Communication Theory and Practice": {
@@ -1076,6 +1364,40 @@
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Weina Ran",
+        "location": "Troy Building 2015",
+        "time": "4:00 pm - 6:05 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Maurice W Suckling",
+        "location": "Russell Sage Laboratory 2510",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Maurice W Suckling",
+        "location": "Russell Sage Laboratory 2510",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "4": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Maurice W Suckling",
+        "location": "Russell Sage Laboratory 2510",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "COMM"
   },
@@ -1106,6 +1428,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Matthew William Goodheart",
+        "location": "West Hall 323",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Computability and Logic": {
@@ -1131,6 +1463,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PHIL"
   },
   "Consumer Culture": {
@@ -1156,6 +1489,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Contemporary Improvisation Ensemble": {
@@ -1179,6 +1513,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Contemporary Political Thought": {
@@ -1196,8 +1531,8 @@
       "uia": false
     },
     "prerequisites": [
-      "STSH-2500",
-      "STSS-2300"
+      "STSS-2300",
+      "STSH-2500"
     ],
     "professors": [],
     "properties": {
@@ -1205,6 +1540,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Cost-Benefit Analysis": {
@@ -1230,6 +1566,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Creative Data Design": {
@@ -1255,6 +1592,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Creative Seminar I": {
@@ -1279,6 +1617,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Branda Miller",
+        "location": "West Hall 214",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "COMM"
   },
@@ -1305,6 +1653,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COMM"
   },
   "Creative Writing:  The Short Story": {
@@ -1323,13 +1672,23 @@
     },
     "prerequisites": [],
     "professors": [
-      "Shira Dentz",
-      "Skye Anicca"
+      "Skye Anicca",
+      "Shira Dentz"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Skye Anicca",
+        "location": "TBA",
+        "time": "4:00 pm - 6:05 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "WRIT"
   },
@@ -1356,6 +1715,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Shira Dentz",
+        "location": "Russell Sage Laboratory 4203",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Shira Dentz",
+        "location": "Russell Sage Laboratory 4203",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "WRIT"
   },
   "Creative Writing: Poetry": {
@@ -1380,6 +1757,24 @@
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Shira Dentz",
+        "location": "Russell Sage Laboratory 4203",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Shira Dentz",
+        "location": "Russell Sage Laboratory 4203",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "WRIT"
   },
@@ -1408,6 +1803,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Bram Van Heuveln",
+        "location": "Darrin Communications Center 232",
+        "time": "10:30 am - 12:35 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Cross-linguistic Perspectives": {
@@ -1433,6 +1838,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COGS"
   },
   "Cultural Anthropology": {
@@ -1458,6 +1864,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Data Analytics": {
@@ -1483,6 +1890,24 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Thilanka Munasinghe",
+        "location": "Amos Eaton Hall 215",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Thilanka Munasinghe",
+        "location": "Voorhees Computing Center SO",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "ITWS"
   },
@@ -1510,6 +1935,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "R",
+        "instructor": "Thilanka Munasinghe",
+        "location": "Lally Hall 104",
+        "time": "11:00 am - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ITWS"
   },
   "Data and Society": {
@@ -1535,6 +1970,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ITWS"
   },
   "Deep Listening": {
@@ -1558,6 +1994,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Design and Innovation  Studio C": {
@@ -1576,14 +2013,24 @@
     },
     "prerequisites": [],
     "professors": [
-      "Brandon James Costelloe-Kuehn",
+      "Jarah W. Moesch",
       "Dean Andrew Nieusma",
-      "Jarah W. Moesch"
+      "Brandon James Costelloe-Kuehn"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Jarah W. Moesch",
+        "location": "Russell Sage Laboratory 2211",
+        "time": "2:00 pm - 4:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "STSS"
   },
@@ -1612,6 +2059,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Kate Elizabeth Sohasky",
+        "location": "Russell Sage Laboratory 4510",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "STSS"
   },
   "Design and Innovation Studio A": {
@@ -1637,6 +2094,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Design and Innovation Studio B": {
@@ -1655,14 +2113,24 @@
     },
     "prerequisites": [],
     "professors": [
-      "John T. Rinker",
       "Jarah W. Moesch",
+      "John T. Rinker",
       "Ron B Eglash"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Jarah W. Moesch",
+        "location": "Russell Sage Laboratory 2211",
+        "time": "9:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "STSH"
   },
@@ -1690,6 +2158,16 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Raquel Velho",
+        "location": "Russell Sage Laboratory 2211",
+        "time": "2:00 pm - 4:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "IHSS"
   },
   "Design and Innovation Studio II": {
@@ -1710,13 +2188,23 @@
       "IHSS-1610"
     ],
     "professors": [
-      "James Wilson Malazita",
-      "Dean Andrew Nieusma"
+      "Dean Andrew Nieusma",
+      "James Wilson Malazita"
     ],
     "properties": {
       "CI": true,
       "HI": true,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "James Wilson Malazita",
+        "location": "Russell Sage Laboratory 2211",
+        "time": "9:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "IHSS"
   },
@@ -1743,6 +2231,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Langdon Winner",
+        "location": "Voorhees Computing Center NO",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "STSS"
   },
   "Development of Economic Thought": {
@@ -1760,8 +2258,8 @@
       "uia": true
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [],
     "properties": {
@@ -1769,6 +2267,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Digital Filmmaking": {
@@ -1787,13 +2286,47 @@
     },
     "prerequisites": [],
     "professors": [
-      "Elizabeth Press",
-      "Igor Vamos"
+      "Igor Vamos",
+      "Elizabeth Press"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Elizabeth Press",
+        "location": "West Hall 211",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Elizabeth Press",
+        "location": "West Hall 211",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Elizabeth Press",
+        "location": "West Hall 211",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "4": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Elizabeth Press",
+        "location": "West Hall 211",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -1813,13 +2346,55 @@
     },
     "prerequisites": [],
     "professors": [
-      "Silvia Ruzanka",
-      "Nathan Scott Meltz"
+      "Nathan Scott Meltz",
+      "Silvia Ruzanka"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Nathan Scott Meltz",
+        "location": "Russell Sage Laboratory 3704",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Nathan Scott Meltz",
+        "location": "Russell Sage Laboratory 3704",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Silvia Ruzanka",
+        "location": "Russell Sage Laboratory 3704",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "4": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Silvia Ruzanka",
+        "location": "Russell Sage Laboratory 3704",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "5": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Silvia Ruzanka",
+        "location": "West Hall AUD",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -1839,22 +2414,95 @@
     },
     "prerequisites": [],
     "professors": [
-      "Nancy D. Campbell",
-      "James Wilson Malazita",
-      "Raquel Velho",
       "Michael Mascarenhas",
-      "Abby J. Kinchy",
-      "Michael A Fortun",
+      "Nancy D. Campbell",
       "Langdon Winner",
       "Dean Andrew Nieusma",
+      "James Wilson Malazita",
+      "Raquel Velho",
+      "Edward J Woodhouse",
       "Atsushi Akera",
+      "Michael A Fortun",
       "Ron B Eglash",
-      "Edward J Woodhouse"
+      "Abby J. Kinchy"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Raquel Velho",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Langdon Winner",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "James Wilson Malazita",
+        "location": "TBA",
+        "time": "8:00 am - 8:01 am",
+        "type": "Lecture"
+      },
+      "4": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Atsushi Akera",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "5": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Nancy D. Campbell",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "6": {
+        "class": "Class",
+        "days": " ",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "7": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Abby J. Kinchy",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "8": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Michael Mascarenhas",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "9": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Abby J. Kinchy",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      }
     },
     "subj": "STSS"
   },
@@ -1875,22 +2523,120 @@
     "prerequisites": [],
     "professors": [
       "Wayne D. Gray",
-      "Selmer Bringsjord",
-      "James A. Hendler",
-      "Peter A Fox",
-      "Brett R. Fajen",
       "Christopher Robert Sims",
+      "Michael J Kalsher",
+      "Selmer Bringsjord",
       "Ron Sun",
-      "Sergei Nirenburg",
       "Marjorie McShane",
-      "Mei Si",
+      "Sergei Nirenburg",
+      "James A. Hendler",
+      "Brett R. Fajen",
       "Tomasz Strzalkowski",
-      "Michael J Kalsher"
+      "Peter A Fox",
+      "Mei Si"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Brett R. Fajen",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "10": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Ron Sun",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "11": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Christopher Robert Sims",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "12": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Tomasz Strzalkowski",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Wayne D. Gray",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Peter A Fox",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "4": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Selmer Bringsjord",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "5": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "James A. Hendler",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "6": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Michael J Kalsher",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "7": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Sergei Nirenburg",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "8": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Marjorie McShane",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "9": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Mei Si",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      }
     },
     "subj": "COGS"
   },
@@ -1917,6 +2663,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Tamar Gordon",
+        "location": "Ricketts Building 208",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "COMM"
   },
   "Drugs in History": {
@@ -1942,6 +2698,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Drugs, Society, and Behavior": {
@@ -1968,6 +2725,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Larry D Reid",
+        "location": "Darrin Communications Center 330",
+        "time": "6:00 pm - 7:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "PSYC"
   },
@@ -1996,6 +2763,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Kathryn High",
+        "location": "West Hall 211",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Econometric Methods for Big Data": {
@@ -2013,9 +2790,9 @@
       "uia": false
     },
     "prerequisites": [
+      "ECON-1200",
       "PSYC-2310",
-      "IHSS-1200",
-      "ECON-1200"
+      "IHSS-1200"
     ],
     "professors": [],
     "properties": {
@@ -2023,6 +2800,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Econometrics": {
@@ -2051,6 +2829,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Huaming Peng",
+        "location": "Russell Sage Laboratory 3101",
+        "time": "10:30 am - 12:35 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Huaming Peng",
+        "location": "Nason Hall 130",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "ECON"
   },
   "Economic Models of Decision-Making": {
@@ -2068,8 +2864,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [],
     "properties": {
@@ -2077,6 +2873,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Economics of Biotech and Medical Innovations": {
@@ -2094,8 +2891,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [],
     "properties": {
@@ -2103,6 +2900,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Economics of Financial Institutions and Markets": {
@@ -2120,8 +2918,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [],
     "properties": {
@@ -2129,6 +2927,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Economics of Government Regulation and Firm Strategy": {
@@ -2146,8 +2945,8 @@
       "uia": true
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [
       "Vivek Ghosal"
@@ -2156,6 +2955,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Vivek Ghosal",
+        "location": "Russell Sage Laboratory 3205",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ECON"
   },
@@ -2174,8 +2983,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [],
     "properties": {
@@ -2183,6 +2992,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Economy, Technology, and Sustainability": {
@@ -2200,8 +3010,8 @@
       "uia": true
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [
       "Faye Duchin"
@@ -2210,6 +3020,16 @@
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Faye Duchin",
+        "location": "Russell Sage Laboratory 2112",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ECON"
   },
@@ -2234,6 +3054,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Energy Politics": {
@@ -2262,6 +3083,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Engineering Ethics": {
@@ -2279,8 +3101,8 @@
       "uia": false
     },
     "prerequisites": [
-      "STSS-1110",
-      "STSH-1110"
+      "STSH-1110",
+      "STSS-1110"
     ],
     "professors": [],
     "properties": {
@@ -2288,6 +3110,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSH"
   },
   "Ensemble Nonlinear": {
@@ -2313,6 +3136,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Environment and Society": {
@@ -2330,8 +3154,8 @@
       "uia": false
     },
     "prerequisites": [
-      "STSS-1110",
-      "STSH-1110"
+      "STSH-1110",
+      "STSS-1110"
     ],
     "professors": [
       "Eric Drumheller Schaffer"
@@ -2340,6 +3164,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Eric Drumheller Schaffer",
+        "location": "Troy Building 2018",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "STSS"
   },
@@ -2358,8 +3192,8 @@
       "uia": true
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [],
     "properties": {
@@ -2367,6 +3201,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Environmental Law": {
@@ -2393,6 +3228,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSH"
   },
   "Environmental Philosophy": {
@@ -2420,6 +3256,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Daniel Peter Thero",
+        "location": "Carnegie Building 208",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "STSH"
   },
   "Environmental Politics and Policy": {
@@ -2444,6 +3290,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Steven Breyman",
+        "location": "Amos Eaton Hall 216",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "STSS"
   },
@@ -2470,6 +3326,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Ethics": {
@@ -2488,14 +3345,40 @@
     },
     "prerequisites": [],
     "professors": [
-      "Susan Lynn Smith",
       "William J Puka",
+      "Susan Lynn Smith",
       "John R Milanese"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Susan Lynn Smith",
+        "location": "Carnegie Building 206",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "William J Puka",
+        "location": "Carnegie Building 106",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "John R Milanese",
+        "location": "Carnegie Building 206",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "PHIL"
   },
@@ -2542,6 +3425,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Experimental Economics": {
@@ -2567,6 +3451,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Experimental Game Design": {
@@ -2590,13 +3475,31 @@
       "ARTS-1040"
     ],
     "professors": [
-      "Silvia Ruzanka",
-      "Kathleen Ruiz"
+      "Kathleen Ruiz",
+      "Silvia Ruzanka"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "W",
+        "instructor": "Kathleen Ruiz",
+        "location": "Russell Sage Laboratory 2411",
+        "time": "2:00 pm - 5:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "W",
+        "instructor": "Silvia Ruzanka",
+        "location": "Russell Sage Laboratory 2510",
+        "time": "1:00 pm - 4:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "GSAS"
   },
@@ -2621,6 +3524,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Exploring Movement and Sound": {
@@ -2644,6 +3548,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Exploring Music @Rensselaer": {
@@ -2663,14 +3568,32 @@
     "prerequisites": [],
     "professors": [
       "Nina Carmela Young",
-      "Diana Rae Alvarez",
       "Christopher James Fisher-Lochhead",
-      "Curtis Bahn"
+      "Curtis Bahn",
+      "Diana Rae Alvarez"
     ],
     "properties": {
       "CI": true,
       "HI": true,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Curtis Bahn",
+        "location": "West Hall 326",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Christopher James Fisher-Lochhead",
+        "location": "Russell Sage Laboratory 2715",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "IHSS"
   },
@@ -2697,6 +3620,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Ekaterina Valeri Haskins",
+        "location": "Russell Sage Laboratory 2704",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "LITR"
   },
   "Food, Farms, and Famine": {
@@ -2721,6 +3654,16 @@
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Abby J. Kinchy",
+        "location": "Russell Sage Laboratory 5711",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "STSS"
   },
@@ -2749,6 +3692,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Christopher A. VerWys",
+        "location": "Russell Sage Laboratory 4510",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Christopher A. VerWys",
+        "location": "Carnegie Building 112",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Foundations of HCI Usability": {
@@ -2773,6 +3734,24 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Miles A Kimball",
+        "location": "Russell Sage Laboratory 2707",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Miles A Kimball",
+        "location": "Russell Sage Laboratory 4112",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "COMM"
   },
@@ -2799,6 +3778,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Nathan Scott Meltz",
+        "location": "West Hall 214",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Fundamentals of Music and Sound": {
@@ -2822,6 +3811,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "GSAS Research Project": {
@@ -2845,6 +3835,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "GSAS"
   },
   "Game AI": {
@@ -2863,13 +3854,31 @@
     },
     "prerequisites": [],
     "professors": [
-      "Mei Si",
-      "Michael F Lynch"
+      "Michael F Lynch",
+      "Mei Si"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Michael F Lynch",
+        "location": "Russell Sage Laboratory 4112",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Michael F Lynch",
+        "location": "Russell Sage Laboratory 2510",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "COGS"
   },
@@ -2894,6 +3903,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "GSAS"
   },
   "Game Development I": {
@@ -2914,14 +3924,32 @@
       "ARTS-4060"
     ],
     "professors": [
-      "Rebekah Gamin Arcovitch",
+      "Marc Christian Destefano",
       "Eric Louis Ameres",
-      "Marc Christian Destefano"
+      "Rebekah Gamin Arcovitch"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "W",
+        "instructor": "Rebekah Gamin Arcovitch",
+        "location": "Troy Building 2012",
+        "time": "1:00 pm - 4:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Eric Louis Ameres",
+        "location": "Pittsburgh Building 4206",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "GSAS"
   },
@@ -2943,15 +3971,33 @@
       "GSAS-4520"
     ],
     "professors": [
-      "Sylvain Payen",
       "Robert F. Nideffer",
-      "Rebekah Gamin Arcovitch",
-      "Marc Christian Destefano"
+      "Marc Christian Destefano",
+      "Sylvain Payen",
+      "Rebekah Gamin Arcovitch"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "W",
+        "instructor": "Rebekah Gamin Arcovitch",
+        "location": "Troy Building 2012",
+        "time": "1:00 pm - 4:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "W",
+        "instructor": "Sylvain Payen",
+        "location": "Carnegie Building 113",
+        "time": "2:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "GSAS"
   },
@@ -2979,6 +4025,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "GSAS"
   },
   "Gender, Science, and Technology": {
@@ -2996,8 +4043,8 @@
       "uia": true
     },
     "prerequisites": [
-      "STSS-1110",
-      "STSH-1110"
+      "STSH-1110",
+      "STSS-1110"
     ],
     "professors": [
       "Eric Drumheller Schaffer"
@@ -3006,6 +4053,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Eric Drumheller Schaffer",
+        "location": "Jonsson-Rowland Science Center 2C25",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "STSS"
   },
@@ -3032,6 +4089,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Christopher L Hubbell",
+        "location": "West Hall AUD",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Christopher L Hubbell",
+        "location": "West Hall AUD",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Global Health Challenges": {
@@ -3055,6 +4130,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Globalization and Development": {
@@ -3080,6 +4156,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Graphic Storytelling": {
@@ -3107,6 +4184,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Nathan Scott Meltz",
+        "location": "West Hall 214",
+        "time": "8:00 am - 9:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Great Ideas in Philosophy": {
@@ -3130,6 +4217,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Hactivism": {
@@ -3155,6 +4243,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Igor Vamos",
+        "location": "West Hall 211",
+        "time": "6:00 pm - 9:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Health Economics and Policy": {
@@ -3172,8 +4270,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [],
     "properties": {
@@ -3181,6 +4279,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Health in Contemporary Africa": {
@@ -3204,6 +4303,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "History and Culture of Games": {
@@ -3229,6 +4329,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Michael F Lynch",
+        "location": "Russell Sage Laboratory 4711",
+        "time": "10:30 am - 12:35 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "GSAS"
   },
   "History of American Technology": {
@@ -3252,6 +4362,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSH"
   },
   "History of Animation": {
@@ -3275,6 +4386,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "History of Design": {
@@ -3320,6 +4432,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "History of Medicine": {
@@ -3337,8 +4450,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1410",
-      "STSS-2520"
+      "STSS-2520",
+      "IHSS-1410"
     ],
     "professors": [],
     "properties": {
@@ -3346,6 +4459,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSH"
   },
   "History of Mental Health": {
@@ -3363,9 +4477,9 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1410",
+      "STSH-S 11",
       "STSS-2520",
-      "STSH-S 11"
+      "IHSS-1410"
     ],
     "professors": [],
     "properties": {
@@ -3373,6 +4487,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSH"
   },
   "History of Science and Technology": {
@@ -3390,9 +4505,9 @@
       "uia": false
     },
     "prerequisites": [
-      "STSH-S 11",
+      "IHSS-1420",
       "STSS-2330",
-      "IHSS-1420"
+      "STSH-S 11"
     ],
     "professors": [],
     "properties": {
@@ -3400,6 +4515,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSH"
   },
   "Hormones, Brain, and Behavior": {
@@ -3425,6 +4541,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Human Factors Seminar": {
@@ -3450,6 +4567,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Human Factors in Design": {
@@ -3477,6 +4595,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Michael J Kalsher",
+        "location": "Russell Sage Laboratory 4510",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Human Rights in History": {
@@ -3500,6 +4628,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Human Sexuality": {
@@ -3525,6 +4654,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "IT and Society": {
@@ -3553,6 +4683,32 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Christopher James Tozzi",
+        "location": "Low Center for Industrial Inn. 4050",
+        "time": "2:00 pm - 2:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Christopher James Tozzi",
+        "location": "Low Center for Industrial Inn. 4050",
+        "time": "2:00 pm - 2:50 pm",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Christopher James Tozzi",
+        "location": "Low Center for Industrial Inn. 4050",
+        "time": "2:00 pm - 2:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ITWS"
   },
   "Industrial and Organizational Psychology": {
@@ -3580,6 +4736,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Holly A Traver",
+        "location": "Ricketts Building 211",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Holly A Traver",
+        "location": "Ricketts Building 211",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Inflatable Sculpture": {
@@ -3604,6 +4778,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Igor Vamos",
+        "location": "West Hall 211",
+        "time": "6:00 pm - 9:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -3632,6 +4816,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Miles A Kimball",
+        "location": "Russell Sage Laboratory 2707",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Miles A Kimball",
+        "location": "Russell Sage Laboratory 2707",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "COMM"
   },
   "Information System Security": {
@@ -3657,6 +4859,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Brian Robert Callahan",
+        "location": "Lally Hall 104",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ITWS"
   },
@@ -3685,6 +4897,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Richard M. Plotka",
+        "location": "Lally Hall 102",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ITWS"
   },
   "Intelligent Virtual Agents": {
@@ -3708,6 +4930,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COGS"
   },
   "Interactive Arts Programming": {
@@ -3733,6 +4956,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Interactive Data Visualization": {
@@ -3758,6 +4982,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTR",
+        "instructor": "Patricia Search",
+        "location": "Russell Sage Laboratory 4711",
+        "time": "4:00 pm - 6:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "COMM"
   },
   "Interactive Narrative": {
@@ -3781,6 +5015,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COMM"
   },
   "Interdisciplinary Research Seminar": {
@@ -3806,6 +5041,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Interface Design: Hypermedia Theory and Application": {
@@ -3831,6 +5067,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COMM"
   },
   "Intermediate Digital Imaging": {
@@ -3859,6 +5096,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Nathan Scott Meltz",
+        "location": "West Hall 214",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Intermediate Drawing": {
@@ -3884,6 +5131,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Intermediate Logic": {
@@ -3911,6 +5159,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Bram Van Heuveln",
+        "location": "Carnegie Building 208",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "PHIL"
   },
   "Intermediate Macroeconomic Theory": {
@@ -3931,14 +5189,40 @@
       "IHSS-1200"
     ],
     "professors": [
-      "Mina Mahmoudi",
       "Arturo Estrella",
-      "Huaming Peng"
+      "Huaming Peng",
+      "Mina Mahmoudi"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Mina Mahmoudi",
+        "location": "TBA",
+        "time": "1:30 pm - 3:35 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Arturo Estrella",
+        "location": "Russell Sage Laboratory 5101",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Huaming Peng",
+        "location": "Russell Sage Laboratory 2112",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ECON"
   },
@@ -3967,6 +5251,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Robert W. Jones",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      }
+    },
     "subj": "ECON"
   },
   "Intermediate Video": {
@@ -3992,6 +5286,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "International Economics and Globalization": {
@@ -4009,18 +5304,28 @@
       "uia": true
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [
-      "Faye Duchin",
       "Mina Mahmoudi",
+      "Faye Duchin",
       "Yury Yatsynovich"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Mina Mahmoudi",
+        "location": "TBA",
+        "time": "1:30 pm - 3:35 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ECON"
   },
@@ -4045,6 +5350,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Introduction to Afro-Cuban Percussion": {
@@ -4070,6 +5376,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Eddie Knowles",
+        "location": "West Hall 326",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Eddie Knowles",
+        "location": "West Hall 326",
+        "time": "7:00 pm - 8:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Introduction to Cognitive Neuroscience": {
@@ -4089,8 +5413,8 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "professors": [
       "Alicia Ann Walf"
@@ -4099,6 +5423,24 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Alicia Ann Walf",
+        "location": "Low Center for Industrial Inn. 3116",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Alicia Ann Walf",
+        "location": "Low Center for Industrial Inn. 3116",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "PSYC"
   },
@@ -4120,13 +5462,23 @@
     },
     "prerequisites": [],
     "professors": [
-      "Benjamin P. Weissman",
-      "Bram Van Heuveln"
+      "Bram Van Heuveln",
+      "Benjamin P. Weissman"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Benjamin P. Weissman",
+        "location": "TBA",
+        "time": "10:30 am - 12:35 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "PSYC"
   },
@@ -4146,15 +5498,41 @@
     },
     "prerequisites": [],
     "professors": [
-      "James Wilson Malazita",
-      "Brian Anthony Shurtleff",
       "Sylvain Payen",
-      "Marc Christian Destefano"
+      "James Wilson Malazita",
+      "Marc Christian Destefano",
+      "Brian Anthony Shurtleff"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Sylvain Payen",
+        "location": "Russell Sage Laboratory 2510",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Marc Christian Destefano",
+        "location": "Russell Sage Laboratory 2510",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Brian Anthony Shurtleff",
+        "location": "Russell Sage Laboratory 2510",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "GSAS"
   },
@@ -4175,13 +5553,39 @@
     "prerequisites": [],
     "professors": [
       "Eric Walsh",
-      "Eric Louis Ameres",
-      "Marc Christian Destefano"
+      "Marc Christian Destefano",
+      "Eric Louis Ameres"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Eric Louis Ameres",
+        "location": "Russell Sage Laboratory 2510",
+        "time": "1:30 pm - 3:35 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Eric Walsh",
+        "location": "Russell Sage Laboratory 2510",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Eric Walsh",
+        "location": "Russell Sage Laboratory 2510",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "GSAS"
   },
@@ -4201,14 +5605,40 @@
     },
     "prerequisites": [],
     "professors": [
-      "Maurice W Suckling",
       "Nicholas J. Mizer",
+      "Maurice W Suckling",
       "Michael F Lynch"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Nicholas J. Mizer",
+        "location": "West Hall 112",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Michael F Lynch",
+        "location": "Russell Sage Laboratory 4711",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Nicholas J. Mizer",
+        "location": "West Hall 112",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "GSAS"
   },
@@ -4228,14 +5658,40 @@
     },
     "prerequisites": [],
     "professors": [
-      "Jean Louise Tschanz-Egger",
+      "Sara L. Tack",
       "Audrey Grace Bennett",
-      "Sara L. Tack"
+      "Jean Louise Tschanz-Egger"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sara L. Tack",
+        "location": "Russell Sage Laboratory 2411",
+        "time": "8:00 am - 9:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sara L. Tack",
+        "location": "Russell Sage Laboratory 2411",
+        "time": "8:00 am - 9:50 am",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sara L. Tack",
+        "location": "Russell Sage Laboratory 2411",
+        "time": "8:00 am - 9:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "COMM"
   },
@@ -4262,6 +5718,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Miles A Kimball",
+        "location": "Troy Building 2018",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ITWS"
   },
   "Introduction to Information Technology and Web Science": {
@@ -4287,6 +5753,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Richard M. Plotka",
+        "location": "Lally Hall 102",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ITWS"
   },
   "Introduction to Linguistics": {
@@ -4310,6 +5786,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COGS"
   },
   "Introduction to Literature": {
@@ -4328,13 +5805,47 @@
     },
     "prerequisites": [],
     "professors": [
-      "Rebecca M. Hamilton",
-      "James P Zappen"
+      "James P Zappen",
+      "Rebecca M. Hamilton"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "James P Zappen",
+        "location": "Low Center for Industrial Inn. 4040",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "James P Zappen",
+        "location": "Russell Sage Laboratory 4203",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "James P Zappen",
+        "location": "Russell Sage Laboratory 3205",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "4": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "James P Zappen",
+        "location": "Russell Sage Laboratory 3205",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "LITR"
   },
@@ -4361,6 +5872,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Bram Van Heuveln",
+        "location": "Pittsburgh Building 5216",
+        "time": "TBA",
+        "type": "Lecture"
+      }
+    },
     "subj": "PHIL"
   },
   "Introduction to Philosophy": {
@@ -4386,6 +5907,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Daniel Peter Thero",
+        "location": "Academy Hall AUD",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Daniel Peter Thero",
+        "location": "Academy Hall AUD",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "PHIL"
   },
   "Introduction to Philosophy of Religion": {
@@ -4409,6 +5948,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PHIL"
   },
   "Introduction to Sports Psychology": {
@@ -4435,6 +5975,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Christopher L Hubbell",
+        "location": "Darrin Communications Center 318",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "PSYC"
   },
@@ -4463,6 +6013,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Sarah Marsden Greene",
+        "location": "Russell Sage Laboratory ",
+        "time": "8:00 am - 10:05 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "ECON"
   },
   "Investigating Society": {
@@ -4490,6 +6050,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Irish Literature": {
@@ -4515,6 +6076,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "June Deery",
+        "location": "Russell Sage Laboratory 4711",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "LITR"
   },
   "Language Studies": {
@@ -4538,6 +6109,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "LANG"
   },
   "Language and Culture": {
@@ -4561,6 +6133,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COMM"
   },
   "Language in Real Time": {
@@ -4584,6 +6157,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COMM"
   },
   "Language-Endowed Intelligent Agents": {
@@ -4607,6 +6181,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COGS"
   },
   "Law and Economics": {
@@ -4624,8 +6199,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [
       "Robert W. Jones"
@@ -4634,6 +6209,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Robert W. Jones",
+        "location": "Russell Sage Laboratory 2112",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "ECON"
   },
@@ -4658,6 +6243,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Law, Values, and Public Policy: Perspectives on Science and Technology": {
@@ -4681,6 +6267,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Learning": {
@@ -4708,6 +6295,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Christopher L Hubbell",
+        "location": "Low Center for Industrial Inn. 3051",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Learning and Advanced Game AI": {
@@ -4733,6 +6330,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COGS"
   },
   "Life Drawing and Anatomy for Artists": {
@@ -4753,13 +6351,31 @@
       "ARTS-1200"
     ],
     "professors": [
-      "Caren Canier",
-      "Monica A. Hughes"
+      "Monica A. Hughes",
+      "Caren Canier"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TR",
+        "instructor": "Monica A. Hughes",
+        "location": "West Hall 411",
+        "time": "6:00 pm - 7:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Caren Canier",
+        "location": "West Hall 411",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -4784,6 +6400,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "LITR"
   },
   "Literature and Media": {
@@ -4807,6 +6424,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "LITR"
   },
   "Managing IT Resources": {
@@ -4827,13 +6445,23 @@
       "ITWS-2110"
     ],
     "professors": [
-      "Matthew John Grill",
-      "Jeffrey G Miner"
+      "Jeffrey G Miner",
+      "Matthew John Grill"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Matthew John Grill",
+        "location": "Lally Hall 102",
+        "time": "8:00 am - 9:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "ITWS"
   },
@@ -4862,6 +6490,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Arturo Estrella",
+        "location": "Troy Building 2015",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ECON"
   },
   "Mathematical Methods in Psychological Science": {
@@ -4879,8 +6517,8 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "professors": [],
     "properties": {
@@ -4888,6 +6526,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Media Watch": {
@@ -4911,6 +6550,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Media and Society": {
@@ -4934,6 +6574,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Medicine, Culture, and Society": {
@@ -4961,6 +6602,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Metaphysics and Consciousness": {
@@ -4985,6 +6627,24 @@
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Daniel Peter Thero",
+        "location": "Russell Sage Laboratory 4112",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Daniel Peter Thero",
+        "location": "Russell Sage Laboratory 4112",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "PHIL"
   },
@@ -5011,6 +6671,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Minds and Machines": {
@@ -5031,13 +6692,47 @@
     },
     "prerequisites": [],
     "professors": [
-      "John R Milanese",
-      "Bram Van Heuveln"
+      "Bram Van Heuveln",
+      "John R Milanese"
     ],
     "properties": {
       "CI": true,
       "HI": true,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Bram Van Heuveln",
+        "location": "Russell Sage Laboratory 2704",
+        "time": "2:00 pm - 3:20 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Bram Van Heuveln",
+        "location": "Russell Sage Laboratory 2707",
+        "time": "4:00 pm - 5:20 pm",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "John R Milanese",
+        "location": "Russell Sage Laboratory 4711",
+        "time": "2:00 pm - 3:20 pm",
+        "type": "Lecture"
+      },
+      "4": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "John R Milanese",
+        "location": "Russell Sage Laboratory 4711",
+        "time": "4:00 pm - 5:20 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "IHSS"
   },
@@ -5064,6 +6759,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Ellen Esrock",
+        "location": "Russell Sage Laboratory 4112",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "LITR"
   },
   "Money and Banking": {
@@ -5081,8 +6786,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [
       "Sarah Marsden Greene"
@@ -5091,6 +6796,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sarah Marsden Greene",
+        "location": "West Hall AUD",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ECON"
   },
@@ -5117,6 +6832,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Motivation and Performance": {
@@ -5144,6 +6860,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Ralph G Noble",
+        "location": "Carnegie Building 106",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Ralph G Noble",
+        "location": "Carnegie Building 106",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Multimedia Performance Systems": {
@@ -5169,6 +6903,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Music and Nature": {
@@ -5192,6 +6927,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Music and Sound I": {
@@ -5217,6 +6953,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Music and Sound II": {
@@ -5242,6 +6979,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Music and Technology I": {
@@ -5267,6 +7005,24 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Robert Kyle Hamilton",
+        "location": "West Hall 118",
+        "time": "8:00 am - 10:05 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "John T. Rinker",
+        "location": "West Hall 118",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -5295,6 +7051,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Robert Kyle Hamilton",
+        "location": "West Hall 118",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Natural Resource Economics": {
@@ -5312,8 +7078,8 @@
       "uia": true
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [],
     "properties": {
@@ -5321,6 +7087,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Nature/Society": {
@@ -5348,6 +7115,24 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Jennifer Cardinal",
+        "location": "Nason Hall 130",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Brandon James Costelloe-Kuehn",
+        "location": "Nason Hall 130",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "IHSS"
   },
   "New Media Theory": {
@@ -5368,13 +7153,23 @@
       "ARTS-2500"
     ],
     "professors": [
-      "Silvia Ruzanka",
-      "Michael L. Century"
+      "Michael L. Century",
+      "Silvia Ruzanka"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Michael L. Century",
+        "location": "West Hall 113",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -5401,6 +7196,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Painting": {
@@ -5429,6 +7225,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Alisa Sikelianos-Carter",
+        "location": "West Hall 411",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Alisa Sikelianos-Carter",
+        "location": "West Hall 411",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Personality": {
@@ -5456,6 +7270,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Christopher A. VerWys",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Perspectives on Photography": {
@@ -5481,6 +7305,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Ellen Esrock",
+        "location": "Darrin Communications Center 239",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Ellen Esrock",
+        "location": "Darrin Communications Center 239",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "COMM"
   },
   "Philosophy Studies": {
@@ -5504,6 +7346,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PHIL"
   },
   "Philosophy of Artificial Intelligence": {
@@ -5529,6 +7372,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PHIL"
   },
   "Philosophy of Biology": {
@@ -5554,6 +7398,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Daniel Peter Thero",
+        "location": "Russell Sage Laboratory 4203",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "PHIL"
   },
   "Philosophy of Science": {
@@ -5577,6 +7431,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PHIL"
   },
   "Politics of Design": {
@@ -5602,6 +7457,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Langdon Winner",
+        "location": "Low Center for Industrial Inn. 4040",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "STSS"
   },
   "Popular Music and Society": {
@@ -5625,6 +7490,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Positive Psychology": {
@@ -5650,6 +7516,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Holly A Traver",
+        "location": "Darrin Communications Center 324",
+        "time": "10:30 am - 12:35 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Principles of Economics": {
@@ -5673,6 +7549,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Private Music Lessons": {
@@ -5696,6 +7573,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Professional Development  2 –Technical Issues and Solutions": {
@@ -5719,6 +7597,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Professional Development II: Leadership Theories": {
@@ -5744,6 +7623,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "W",
+        "instructor": "Allison Beth Hoffman",
+        "location": "Darrin Communications Center 337",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Programming for Cognitive Science and Artificial Intelligence": {
@@ -5768,6 +7657,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Michael J. Schoelles",
+        "location": "Darrin Communications Center 232",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "COGS"
   },
@@ -5797,6 +7696,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Lillian Carolyn Spina-Caza",
+        "location": "Darrin Communications Center 236",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "WRIT"
   },
   "Psychological Tests and Measurements": {
@@ -5822,6 +7731,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Psychology and The Law": {
@@ -5849,6 +7759,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Christopher A. VerWys",
+        "location": "Carnegie Building 113",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Psychology of Mindfulness": {
@@ -5872,6 +7792,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Psychopharmacology and Behavioral Toxicology": {
@@ -5897,6 +7818,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Public Finance": {
@@ -5923,6 +7845,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Kevin Yang Shih",
+        "location": "Low Center for Industrial Inn. 3116",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "ECON"
   },
@@ -5951,6 +7883,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Lawrence Eliot Howard",
+        "location": "Russell Sage Laboratory 3705",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "STSS"
   },
   "Race and Film in U.S. Culture and History": {
@@ -5974,6 +7916,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Radical Graphics/Screenprinting": {
@@ -5997,6 +7940,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Readings in Cognitive Science": {
@@ -6020,6 +7964,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COGS"
   },
   "Readings in Economics": {
@@ -6043,6 +7988,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ECON"
   },
   "Readings in Psychology": {
@@ -6068,6 +8014,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Readings in Science and Technology Studies": {
@@ -6091,6 +8038,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSH"
   },
   "Readings in Science and Technology Studies, Anthropology/Archaeology, History, Political Science, or Sociology": {
@@ -6114,6 +8062,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Reality TV and Post-Factual Media": {
@@ -6139,6 +8088,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "June Deery",
+        "location": "Russell Sage Laboratory 3705",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "COMM"
   },
   "Religion in a Global World": {
@@ -6162,6 +8121,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Religion in the Media": {
@@ -6189,6 +8149,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Tamar Gordon",
+        "location": "Low Center for Industrial Inn. 4040",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "COMM"
   },
   "Rensselaer Concert Choir": {
@@ -6215,6 +8185,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TR",
+        "instructor": "Andrew J. Burger",
+        "location": "West Hall 110",
+        "time": "6:00 pm - 7:30 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Rensselaer Orchestra": {
@@ -6233,13 +8213,23 @@
     },
     "prerequisites": [],
     "professors": [
-      "Matthew J. Chamberlain",
-      "Nicholas Jon De Maison"
+      "Nicholas Jon De Maison",
+      "Matthew J. Chamberlain"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Matthew J. Chamberlain",
+        "location": "West Hall 326",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -6266,6 +8256,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Abby J. Kinchy",
+        "location": "Voorhees Computing Center SO",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "STSS"
   },
   "Research Methods and Statistics I": {
@@ -6283,8 +8283,8 @@
       "uia": false
     },
     "prerequisites": [
-      "PSYC-1200",
-      "COGS-2120"
+      "COGS-2120",
+      "PSYC-1200"
     ],
     "professors": [
       "Michael J Kalsher"
@@ -6293,6 +8293,16 @@
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Michael J Kalsher",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      }
     },
     "subj": "PSYC"
   },
@@ -6319,6 +8329,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Research Writing": {
@@ -6342,6 +8353,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "WRIT"
   },
   "Resilience Planning": {
@@ -6369,6 +8381,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Rethinking Documentary: Video Production": {
@@ -6394,6 +8407,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Roots of Africa Music Ensemble": {
@@ -6422,6 +8436,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "W",
+        "instructor": "Brandon James Costelloe-Kuehn",
+        "location": "West Hall 326",
+        "time": "7:00 pm - 8:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "STS and Sustainability Senior Project": {
@@ -6449,6 +8473,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Science Fiction Cinema and Social Criticism": {
@@ -6474,6 +8499,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Science Fictions": {
@@ -6501,6 +8527,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Kathryn High",
+        "location": "West Hall 211",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Science and Fiction": {
@@ -6524,6 +8560,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "LITR"
   },
   "Science and Scientific Misconduct": {
@@ -6547,6 +8584,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Science, Technology, and Society": {
@@ -6574,6 +8612,40 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Eric Drumheller Schaffer",
+        "location": "Low Center for Industrial Inn. 3039",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Eric Drumheller Schaffer",
+        "location": "Russell Sage Laboratory 3101",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Eric Drumheller Schaffer",
+        "location": "Carnegie Building 106",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "4": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Eric Drumheller Schaffer",
+        "location": "Russell Sage Laboratory 5711",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "STSS"
   },
   "Scientific Revolutions": {
@@ -6599,6 +8671,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PHIL"
   },
   "Sculpture I": {
@@ -6623,6 +8696,24 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Jefferson Wille Kielwagen",
+        "location": "Russell Sage Laboratory 1211",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Jefferson Wille Kielwagen",
+        "location": "Russell Sage Laboratory 1211",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -6651,6 +8742,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Jefferson Wille Kielwagen",
+        "location": "Russell Sage Laboratory 1211",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Self-Organization in Science and Society": {
@@ -6674,6 +8775,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Seminar in Economics": {
@@ -6702,6 +8804,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "W",
+        "instructor": "Kenneth L. Simons",
+        "location": "Russell Sage Laboratory 4112",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ECON"
   },
   "Senior Thesis": {
@@ -6725,6 +8837,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ITWS"
   },
   "Sensation and Perception": {
@@ -6750,6 +8863,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Sensibilities": {
@@ -6769,8 +8883,8 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1150",
-      "PSYC-1200"
+      "PSYC-1200",
+      "IHSS-1150"
     ],
     "professors": [],
     "properties": {
@@ -6778,6 +8892,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PSYC"
   },
   "Social Demography: Society by the Numbers": {
@@ -6803,6 +8918,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Social Psychology": {
@@ -6830,6 +8946,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Christopher A. VerWys",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Sociology": {
@@ -6853,6 +8979,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Software Development": {
@@ -6878,6 +9005,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "F",
+        "instructor": "Ying Liu",
+        "location": "Jonsson-Rowland Science Center 2C25",
+        "time": "12:00 pm - 2:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ITWS"
   },
   "Songwriting Workshop": {
@@ -6901,6 +9038,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Sound Recording and Production I": {
@@ -6924,6 +9062,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Sound Recording and Production II": {
@@ -6949,6 +9088,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Special Projects": {
@@ -6972,6 +9112,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ITWS"
   },
   "Speech Communication": {
@@ -6997,6 +9138,24 @@
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Terry W. Gipson",
+        "location": "TBA",
+        "time": "4:00 pm - 6:05 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Terry W. Gipson",
+        "location": "TBA",
+        "time": "1:30 pm - 3:35 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "WRIT"
   },
@@ -7025,6 +9184,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "W",
+        "instructor": "Christopher L Hubbell",
+        "location": "Carnegie Building 201",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Strategic Writing": {
@@ -7043,13 +9212,47 @@
     },
     "prerequisites": [],
     "professors": [
-      "Sarah Virginia Seeley",
-      "David Stephen Gerstle"
+      "David Stephen Gerstle",
+      "Sarah Virginia Seeley"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sarah Virginia Seeley",
+        "location": "Russell Sage Laboratory 3205",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sarah Virginia Seeley",
+        "location": "Russell Sage Laboratory 3205",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sarah Virginia Seeley",
+        "location": "Nason Hall 130",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "4": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sarah Virginia Seeley",
+        "location": "Nason Hall 130",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "WRIT"
   },
@@ -7080,6 +9283,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Alicia Ann Walf",
+        "location": "Russell Sage Laboratory 4112",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Structure of Industry:  Competition, Innovation, Entrepreneurship, Policy": {
@@ -7107,6 +9320,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Kenneth L. Simons",
+        "location": "Russell Sage Laboratory 2707",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "ECON"
   },
   "Studies in the Arts": {
@@ -7131,6 +9354,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Kenneth A. Ragsdale",
+        "location": "TBA",
+        "time": "8:00 am - 8:01 am",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -7157,6 +9390,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSH"
   },
   "Sustainability Debates": {
@@ -7175,14 +9409,40 @@
     },
     "prerequisites": [],
     "professors": [
-      "Jennifer Cardinal",
+      "Eric Drumheller Schaffer",
       "Lawrence Eliot Howard",
-      "Eric Drumheller Schaffer"
+      "Jennifer Cardinal"
     ],
     "properties": {
       "CI": true,
       "HI": true,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Jennifer Cardinal",
+        "location": "Troy Building 2018",
+        "time": "2:00 pm - 2:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Jennifer Cardinal",
+        "location": "Troy Building 2018",
+        "time": "2:00 pm - 2:50 pm",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Jennifer Cardinal",
+        "location": "Troy Building 2018",
+        "time": "2:00 pm - 2:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "IHSS"
   },
@@ -7209,6 +9469,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Brandon James Costelloe-Kuehn",
+        "location": "Russell Sage Laboratory 2715",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "STSS"
   },
   "Sustainability Problems": {
@@ -7232,6 +9502,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Sustainability by Design": {
@@ -7257,6 +9528,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "The Art of Listening": {
@@ -7280,6 +9552,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "The Genome and You": {
@@ -7303,6 +9576,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "The Linguistics of Computational Linguistics": {
@@ -7328,6 +9602,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COGS"
   },
   "The Multimedia Century": {
@@ -7354,6 +9629,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Kathleen A. Galloway",
+        "location": "TBA",
+        "time": "8:00 am - 10:05 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "ARTS"
   },
   "Topics in Cognitive Science": {
@@ -7378,6 +9663,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "F",
+        "instructor": "Wayne D. Gray",
+        "location": "Russell Sage Laboratory 3705",
+        "time": "12:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "COGS"
   },
@@ -7404,6 +9699,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Yalun Zhou",
+        "location": "Troy Building 2015",
+        "time": "1:30 pm - 3:35 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "COMM"
   },
   "Topics in Deep Listening": {
@@ -7427,6 +9732,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Topics in Economics": {
@@ -7444,18 +9750,28 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1200",
-      "ECON-1200"
+      "ECON-1200",
+      "IHSS-1200"
     ],
     "professors": [
-      "Jason Ung Huh",
       "Vivek Ghosal",
-      "Michael A. Klein"
+      "Michael A. Klein",
+      "Jason Ung Huh"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Michael A. Klein",
+        "location": "Russell Sage Laboratory 4304",
+        "time": "9:00 am - 12:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ECON"
   },
@@ -7480,6 +9796,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Topics in Literature": {
@@ -7503,6 +9820,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "LITR"
   },
   "Topics in Philosophy": {
@@ -7526,6 +9844,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "PHIL"
   },
   "Topics in Psychology": {
@@ -7553,6 +9872,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MT",
+        "instructor": "Holly A Traver",
+        "location": "Russell Sage Laboratory 3101",
+        "time": "10:30 am - 12:35 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MTRF",
+        "instructor": "Holly A Traver",
+        "location": "Russell Sage Laboratory 3101",
+        "time": "10:30 am - 12:35 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "PSYC"
   },
   "Topics in Science and Technology Studies": {
@@ -7579,6 +9916,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Brandon James Costelloe-Kuehn",
+        "location": "Russell Sage Laboratory 2715",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "STSS"
   },
   "Topics in Science and Technology Studies, Anthropology/ Archaeology, History, Political Science, or Sociology": {
@@ -7602,6 +9949,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "STSS"
   },
   "Topics in Writing": {
@@ -7625,6 +9973,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "WRIT"
   },
   "Topics in the Arts": {
@@ -7648,6 +9997,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Topics in the History and Analysis of Music": {
@@ -7673,6 +10023,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Typography": {
@@ -7691,13 +10042,31 @@
     },
     "prerequisites": [],
     "professors": [
-      "Audrey Grace Bennett",
-      "Sara L. Tack"
+      "Sara L. Tack",
+      "Audrey Grace Bennett"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sara L. Tack",
+        "location": "Russell Sage Laboratory 2411",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sara L. Tack",
+        "location": "Russell Sage Laboratory 2411",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "COMM"
   },
@@ -7717,14 +10086,40 @@
     },
     "prerequisites": [],
     "professors": [
-      "Alicia Ann Walf",
       "Holly A Traver",
-      "Marjorie McShane"
+      "Marjorie McShane",
+      "Alicia Ann Walf"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Marjorie McShane",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Holly A Traver",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": " ",
+        "instructor": "Alicia Ann Walf",
+        "location": "TBA",
+        "time": "TBA",
+        "type": "Lecture"
+      }
     },
     "subj": "PSYC"
   },
@@ -7749,6 +10144,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "COMM"
   },
   "Visual Design: Theory and Application": {
@@ -7775,6 +10171,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sara L. Tack",
+        "location": "Russell Sage Laboratory 2112",
+        "time": "8:00 am - 9:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "COMM"
   },
   "Visual Poetics and Narrative": {
@@ -7800,6 +10206,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Patricia Search",
+        "location": "Russell Sage Laboratory 4711",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "COMM"
   },
   "War and Society": {
@@ -7823,6 +10239,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "War and Technology: Past, Present, and Future": {
@@ -7846,6 +10263,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Web Science Systems Development": {
@@ -7874,6 +10292,24 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Brian Robert Callahan",
+        "location": "Russell Sage Laboratory 5510",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Brian Robert Callahan",
+        "location": "Russell Sage Laboratory 5510",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
+    },
     "subj": "ITWS"
   },
   "Web Systems Development": {
@@ -7894,14 +10330,32 @@
       "ITWS-1100"
     ],
     "professors": [
+      "Brian Robert Callahan",
       "Thilanka Munasinghe",
-      "Peter A Fox",
-      "Brian Robert Callahan"
+      "Peter A Fox"
     ],
     "properties": {
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Brian Robert Callahan",
+        "location": "Lally Hall 102",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Brian Robert Callahan",
+        "location": "Voorhees Computing Center SO",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ITWS"
   },
@@ -7926,6 +10380,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Western Music Appreciation": {
@@ -7949,6 +10404,7 @@
       "HI": true,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "IHSS"
   },
   "Women Writers": {
@@ -7972,6 +10428,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "LITR"
   },
   "World Music": {
@@ -7996,6 +10453,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Tomie Hahn",
+        "location": "West Hall 326",
+        "time": "10:00 am - 11:50 am",
+        "type": "Lecture"
+      }
     },
     "subj": "ARTS"
   },
@@ -8022,6 +10489,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "ARTS"
   },
   "Writing and Response": {
@@ -8045,6 +10513,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "WRIT"
   },
   "Writing for Games I": {
@@ -8062,8 +10531,8 @@
       "uia": false
     },
     "prerequisites": [
-      "GSAS-2520",
-      "WRIT-2330"
+      "WRIT-2330",
+      "GSAS-2520"
     ],
     "professors": [
       "Maurice W Suckling"
@@ -8072,6 +10541,16 @@
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Maurice W Suckling",
+        "location": "West Hall 112",
+        "time": "2:00 pm - 3:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "COMM"
   },
@@ -8100,6 +10579,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Maurice W Suckling",
+        "location": "Russell Sage Laboratory 3205",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "COMM"
   },
   "Writing for Promotion and Marketing": {
@@ -8126,6 +10615,7 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {},
     "subj": "WRIT"
   },
   "Writing for the Screen": {
@@ -8151,6 +10641,16 @@
       "HI": false,
       "major_restricted": false
     },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Lillian Carolyn Spina-Caza",
+        "location": "Russell Sage Laboratory 2510",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
+    },
     "subj": "COMM"
   },
   "Writing in Context": {
@@ -8170,13 +10670,47 @@
     "prerequisites": [],
     "professors": [
       "Sarah Virginia Seeley",
-      "Barbara J Lewis",
-      "Weina Ran"
+      "Weina Ran",
+      "Barbara J Lewis"
     ],
     "properties": {
       "CI": true,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Weina Ran",
+        "location": "Russell Sage Laboratory 4711",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Weina Ran",
+        "location": "Russell Sage Laboratory 4711",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "3": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Barbara J Lewis",
+        "location": "Russell Sage Laboratory 2704",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      },
+      "4": {
+        "class": "Class",
+        "days": "TF",
+        "instructor": "Barbara J Lewis",
+        "location": "Russell Sage Laboratory 2704",
+        "time": "12:00 pm - 1:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "WRIT"
   },
@@ -8203,6 +10737,16 @@
       "CI": false,
       "HI": false,
       "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "T",
+        "instructor": "Thilanka Munasinghe",
+        "location": "Darrin Communications Center 337",
+        "time": "3:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
     },
     "subj": "ITWS"
   }
