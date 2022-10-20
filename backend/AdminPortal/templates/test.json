@@ -1,0 +1,56 @@
+[
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 4530,
+            "description": "What is science, what is technology, and how have these two fields of inquiry evolved over time? This course examines these questions by studying the history of various scientific fields and technologies. In addition to tracing the historical evolution of the topics studied, the course will consider how social, political, economic and cultural factors helped to shape \u2013 and were in turn shaped by \u2013 advances in science and technology. The course will also reflect upon the relationship between science and technology on the one hand, and \u201cprogress\u201d on the other.",
+            "fall": 0,
+            "major_restrictive": 0,
+            "name": "History Of Science And Technology",
+            "prefix": "STSH",
+            "spring": 1,
+            "summer": 0
+        },
+        "info": "13/02/2022 01:04:49",
+        "model": "database.course",
+        "pk": 5014
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 2340,
+            "description": "This course focuses on developing public speaking skills and critical listening abilities. Guided by rhetorical theory, theories of persuasion, and argumentation theory, students prepare several oral presentations, engage in extemporaneous speaking exercises, and criticize other performances.",
+            "fall": 1,
+            "major_restrictive": 0,
+            "name": "Speech Communication",
+            "prefix": "WRIT",
+            "spring": 1,
+            "summer": 0
+        },
+        "info": "13/02/2022 01:04:49",
+        "model": "database.course",
+        "pk": 5015
+    },
+    {
+        "fields": {
+            "CI": 0,
+            "DI": 0,
+            "HI": 0,
+            "ID": 4550,
+            "description": "Make things happen: start a business, raise funds, solicit work, support research, win a place on a conference program, take initiative, change the way things are done around here. This course will teach students how to write proposals that persuade. Students will learn to turn situations into occasions for proposing, write a variety of proposals, locate Request for Proposals, develop a work plan for feasible projects that come in on-time and on-budget, use networks to strengthen proposals, detail a budget, and edit for clarity and grace.",
+            "fall": 1,
+            "major_restrictive": 0,
+            "name": "Proposing And Persuading",
+            "prefix": "WRIT",
+            "spring": 0,
+            "summer": 0
+        },
+        "info": "13/02/2022 01:04:49",
+        "model": "database.course",
+        "pk": 5016
+    }
+]

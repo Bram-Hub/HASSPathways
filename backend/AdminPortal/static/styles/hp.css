@@ -1,0 +1,37 @@
+.mybox {
+  border: solid 0.5em #ffffff;
+}
+body{
+    background-color: #b35a57;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(216, 213, 208);
+    font-size: 20px;
+}
+h1{
+    text-align:center;
+    font-size:200%;
+}
+a{
+    font-size:150%;
+    color:rgb(0, 0, 0);
+}
+li {
+  /* object thingy */
+  color:rgb(0, 0, 0);
+}
+.courseSearch{
+  /* class */
+  font-size:150%;
+  size:150%
+}
+#searchbox{
+  /* id */
+  font-size:125%;
+
+}
+.deps{
+  columns: 3;
+}
+.deps button{
+  
+}
