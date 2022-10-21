@@ -19,42 +19,15 @@
             </v-expansion-panel-header>
             <v-expansion-panel-content>
                 <button>  SectionNum-CRN | StartDate-EndDate </button> <br>
-                <button>  SectionNum-CRN | StartDate-EndDate </button> <br>
-                <button>  SectionNum-CRN | StartDate-EndDate </button> <br>
-                <button>  SectionNum-CRN | StartDate-EndDate </button> <br>
+                SectionNum-CRN | StartDate-EndDate <br>
+                SectionNum-CRN | StartDate-EndDate <br>
+                SectionNum-CRN | StartDate-EndDate <br>
             </v-expansion-panel-content>
             </v-expansion-panel>
         </v-expansion-panels>
-        </template>
-        <h3>Instructor(s) name:</h3>
-        <h4>Rate my Professor link:</h4>
-        <template>
-        <v-expansion-panels>
-            <v-expansion-panel
-            v-for="(item,i) in 1"
-            :key="i"
-            >
-            <v-expansion-panel-header>
-                Sections
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-                SectionNum-CRN | StartDate-EndDate 
-            </v-expansion-panel-content>
-            </v-expansion-panel>
-        </v-expansion-panels>
-        </template>
-        <h3>Available: {{ course.offered.text }}</h3>
-        <br>
-        <h3>Prerequisites:</h3>
-        <template v-if="course.prerequisites.length !== 0">
-            <ul>
-                <li v-for="prereq in course.prerequisites" :key="prereq.id">
-                    {{ prereq }}
-                </li>
-            </ul>
         </template>
         <template v-else>
-            <p>None</p>
+            <h3>This class is not providing in the current semester</h3>
         </template>
         <CourseTableModifiers
             class="mt-4 class-card__subtitle__modifiers"
