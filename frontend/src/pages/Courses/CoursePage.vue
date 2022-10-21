@@ -1,3 +1,4 @@
+@ -1,101 +0,0 @@
 <template>
     <v-container v-if="course.name">
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
@@ -5,7 +6,43 @@
             <h1>{{ course.subj }}-{{ course.ID }}: {{ course.name }}</h1>
         </div>
         <p>{{ course.description }}</p>
-        <h3>Professor:</h3>
+        <h3>Instructor(s) name:</h3>
+        <h4>Rate my Professor link:</h4>
+        <template>
+        <v-expansion-panels>
+            <v-expansion-panel
+            v-for="(item,i) in 1"
+            :key="i"
+            >
+            <v-expansion-panel-header>
+                Sections
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+                <button>  SectionNum-CRN | StartDate-EndDate </button> <br>
+                SectionNum-CRN | StartDate-EndDate <br>
+                SectionNum-CRN | StartDate-EndDate <br>
+                SectionNum-CRN | StartDate-EndDate <br>
+            </v-expansion-panel-content>
+            </v-expansion-panel>
+        </v-expansion-panels>
+        </template>
+        <h3>Instructor(s) name:</h3>
+        <h4>Rate my Professor link:</h4>
+        <template>
+        <v-expansion-panels>
+            <v-expansion-panel
+            v-for="(item,i) in 1"
+            :key="i"
+            >
+            <v-expansion-panel-header>
+                Sections
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+                SectionNum-CRN | StartDate-EndDate 
+            </v-expansion-panel-content>
+            </v-expansion-panel>
+        </v-expansion-panels>
+        </template>
         <h3>Available: {{ course.offered.text }}</h3>
         <br>
         <h3>Prerequisites:</h3>
