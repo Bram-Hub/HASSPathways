@@ -161,7 +161,7 @@
                         </v-icon>
                     </v-btn>
                 </v-card-title>
-                <h5 style="color: x11gray;" class="ml-4">
+                <h5 style="color: white;" class="ml-4">
                     Current selections ({{ this.selected.length }}):
                     <li v-for="(course, index) in this.selected" :key="(course, index)" style="list-style: none; display: inline;">
                         {{ course.name }}{{ index &lt; selected.length - 1 ? ", " : "" }}
@@ -174,7 +174,8 @@
                     :single-select="false"
                     :fixed-header="true"
 
-                    sort-by="identifier"
+                    multi-sort
+                    sort-by="Subject"
                     item-key="name"
                     show-select
                     class="elevation-1 pb-6"
@@ -188,25 +189,20 @@
 
                     <!-- Override default row HTMl so we can add ripples + custom click stuff -->
                     <template #item="{ item, isSelected, select }">
-                        <tr
-                            v-ripple
+                        <tr v-ripple
                             :class="'table-row ' + (isSelected ? 'table-row_selected' : '')"
-                            @click="rowClick(item, select, isSelected)"
-                        >
+                            @click="rowClick(item, select, isSelected)">
                             <td>
-                                <v-simple-checkbox
-                                    v-ripple color="primary"
-                                    :value="isSelected"
-                                    @input="rowClick(item, select, isSelected)"
-                                />
+                                <v-simple-checkbox v-ripple color="primary"
+                                                   :value="isSelected"
+                                                   @input="rowClick(item, select, isSelected)" />
                             </td>
-                            <td>{{ item.identifier }}</td>
+                            <td>{{ item.Subject }}</td>
+                            <td>{{ item.ID }}</td>
                             <td>{{ item.name }}</td>
                             <td style="text-align: right;">
-                                <SearchTableModifiers
-                                    class="mt-4 class-card__subtitle__modifiers float-top"
-                                    :course="item"
-                                />
+                                <SearchTableModifiers class="mt-4 class-card__subtitle__modifiers float-top"
+                                                      :course="item" />
                             </td>
                         </tr>
                     </template>
@@ -224,19 +220,21 @@ import breadcrumbs from '../../data/breadcrumbs.js'
 
 const TABLE_HEADERS = [
     {
-        text: 'Course Code',
-        value: 'identifier',
-        align: 'start',
-        width: '130px'
+        text: 'Subject',
+        value: 'Subject',
+    },
+    {
+        text: 'ID',
+        value: 'ID'
     },
     {
         text: 'Name',
-        align: 'start',
         value: 'name'
     },
     {
         text: 'Properties',
-        align: 'right',
+        align: 'end',
+        sortable: false,
         value: ''
     }
 ];
@@ -265,7 +263,8 @@ export default {
                 if(course.ID && course['cross listed'] && course.properties && course.offered) {
                     return {
                         name: course.name,
-                        identifier: course.subj + '-' + course.ID + course['cross listed'].map(el => ' / ' + el).join(""),
+                        Subject: course.subj,
+                        ID: course.ID,
                         CI: course.properties.CI,
                         HI: course.properties.HI,
                         Fall: course.offered.fall,
@@ -305,6 +304,7 @@ export default {
 
 
             const re = new RegExp(search_words.join("") + negated_words.join(""), 'i') // i is to ignore case sensitive search
+            console.log(this.courses.filter(course => course ? re.test(course.search_string) : false));
             return this.courses.filter(course => course ? re.test(course.search_string) : false)
         }
     },
