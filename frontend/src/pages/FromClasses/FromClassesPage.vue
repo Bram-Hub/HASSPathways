@@ -174,7 +174,7 @@
                     :single-select="false"
                     :fixed-header="true"
 
-                    multisort
+                    multi-sort
                     sort-by="Subject"
                     item-key="name"
                     show-select
