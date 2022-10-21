@@ -17,6 +17,7 @@
   },
   "Artificial Intelligence": {
     "Remaining": {
+      "": "COGS4430",
       "AI and Society": "IHSS1972",
       "Are Humans Rational?": "IHSS1235",
       "Cognitive Modeling": "COGS4210",
@@ -25,7 +26,6 @@
       "Intelligent Virtual Agents": "COGS4640",
       "Intermediate Formal Logic & AI": "PHIL4961",
       "Language-Endowed Intelligent Agents": "COGS4880",
-      "Learning and Advanced Game AI": "COGS4960",
       "Minds and Machines": "IHSS1140",
       "Programming for Cognitive Science and Artificial Intelligence": "COGS4410"
     },
@@ -107,19 +107,14 @@
     "name": "Creative Design and Innovation",
     "remaining_header": "Choose remaining credits from the following:"
   },
-  "Design, Innovation, and Society": {
-    "Remaining": {
-      "Design and Innovation  Studio C": "STSO4610",
-      "Design and Innovation Studio B": "STSO4605",
-      "Design and Innovation Studio C": null
-    },
+  "Design, Innovation, and Society Pathway": {
     "Required": {
       "Design and Innovation Studio I": "IHSS1610",
-      "Design and Innovation Studio II": "STSO2610"
+      "Design and Innovation Studio II": "STSO2610",
+      "Design and Innovation Studio III": "STSO2020"
     },
     "description": "The pathway in Design, Innovation, and Society (DIS) provides creative, socially conscious students deep context for a broad education in design and innovation. Students take a sequence of studio-based courses that address real-world social and environmental challenges.",
-    "name": "Design, Innovation, and Society",
-    "remaining_header": "Choose remaining credits from the following:"
+    "name": "Design, Innovation, and Society Pathway"
   },
   "Economics": {
     "One Of0": {
@@ -1044,7 +1039,7 @@
       "LANGXXXX": "LANGXXXX",
       "LITRXXXX": "LITRXXXX",
       "PHILXXXX": "PHILXXXX",
-      "STSHXXXX": "STSHXXXX",
+      "STSOXXXX": "STSOXXXX",
       "WRITXXXX": "WRITXXXX"
     },
     "description": "Thispathwayis intended for transfer students that enter with junior status andwho have completed significant coursework within the arts and humanities to be applied toward a pathway. Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
@@ -1058,7 +1053,7 @@
       "GSASXXXX": "GSASXXXX",
       "IHSSXXXX": "IHSSXXXX",
       "PSYCXXXX": "PSYCXXXX",
-      "STSSXXXX": "STSSXXXX"
+      "STSOXXXX": "STSOXXXX"
     },
     "description": "This pathway is intended for transfer students that enter with junior status andwho have completed significant coursework within the social sciencesto be applied toward a pathway. Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
     "name": "Transfer Student Social Science",

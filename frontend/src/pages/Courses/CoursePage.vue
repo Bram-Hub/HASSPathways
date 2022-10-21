@@ -58,7 +58,6 @@
         </template>
         <CourseTableModifiers
             class="mt-4 class-card__subtitle__modifiers"
-            :class="{ graphChange: graph }"
             :item="course"
         />
         <v-divider class="my-4" />
