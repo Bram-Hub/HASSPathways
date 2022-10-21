@@ -25,10 +25,10 @@
                     multiple
                     outlined
                     chips
-                    label = "Sort" 
+                    label="Sort" 
                     clearable
                     style="width: 275px; max-width: 100%; z-index: 100"
-                    >
+                >
                     <template v-slot:selection="{ item, index }">
                         <v-chip v-if="index === 0">
                             <span>{{ item }}</span>
@@ -36,7 +36,7 @@
                         <span
                             v-if="index == 1"
                             class="grey--text text-caption"
-                        >
+                    >
                             (+{{ advanced_search.length - 1 }} others)
                         </span>
                     </template>

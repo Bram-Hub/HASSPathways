@@ -6,43 +6,8 @@
             <h1>{{ course.subj }}-{{ course.ID }}: {{ course.name }}</h1>
         </div>
         <p>{{ course.description }}</p>
-        <h3>Instructor(s) name:</h3>
-        <h4>Rate my Professor link:</h4>
-        <template>
-        <v-expansion-panels>
-            <v-expansion-panel
-            v-for="(item,i) in 1"
-            :key="i"
-            >
-            <v-expansion-panel-header>
-                Sections
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-                <button>  SectionNum-CRN | StartDate-EndDate </button> <br>
-                SectionNum-CRN | StartDate-EndDate <br>
-                SectionNum-CRN | StartDate-EndDate <br>
-                SectionNum-CRN | StartDate-EndDate <br>
-            </v-expansion-panel-content>
-            </v-expansion-panel>
-        </v-expansion-panels>
-        </template>
-        <h3>Instructor(s) name:</h3>
-        <h4>Rate my Professor link:</h4>
-        <template>
-        <v-expansion-panels>
-            <v-expansion-panel
-            v-for="(item,i) in 1"
-            :key="i"
-            >
-            <v-expansion-panel-header>
-                Sections
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-                SectionNum-CRN | StartDate-EndDate 
-            </v-expansion-panel-content>
-            </v-expansion-panel>
-        </v-expansion-panels>
-        </template>
+
+
         <h3>Available: {{ course.offered.text }}</h3>
         <br>
         <h3>Prerequisites:</h3>
@@ -55,6 +20,36 @@
         </template>
         <template v-else>
             <p>None</p>
+        </template>
+
+        <template v-if="course.professors.length !== 0">
+            <h3>Professors:</h3>
+            <ul>
+                <li v-for="pro in course.professors" :key="pro.id">
+                    {{ pro }}
+                </li>
+            </ul>
+            <h3> </h3>
+            <h3>Section(s):</h3>
+            <v-expansion-panels>
+                <v-expansion-panel
+                v-for="(item,i) in 1"
+                :key="i"
+                >
+                <v-expansion-panel-header>
+                    Sections
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                    <button>  SectionNum-CRN | StartDate-EndDate </button> <br>
+                    SectionNum-CRN | StartDate-EndDate <br>
+                    SectionNum-CRN | StartDate-EndDate <br>
+                    SectionNum-CRN | StartDate-EndDate <br>
+                </v-expansion-panel-content>
+                </v-expansion-panel>
+            </v-expansion-panels>
+        </template>
+        <template v-else>
+            <h3>This class is not providing in the current semester</h3>
         </template>
         <CourseTableModifiers
             class="mt-4 class-card__subtitle__modifiers"
