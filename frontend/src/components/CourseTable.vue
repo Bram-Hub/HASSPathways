@@ -16,6 +16,33 @@
                 class="ma-0"
                 style="width: 400px; max-width: 100%"
             />
+            <div id class="SORT"> 
+                <!-- search bar -->
+                <v-select 
+                    v-model="advanced_search" 
+                    dense
+                    :items="sort_dropbox" 
+                    multiple
+                    outlined
+                    chips
+                    label = "Sort" 
+                    clearable
+                    style="width: 275px; max-width: 100%; z-index: 100"
+                    >
+                    <template v-slot:selection="{ item, index }">
+                        <v-chip v-if="index === 0">
+                            <span>{{ item }}</span>
+                        </v-chip>
+                        <span
+                            v-if="index == 1"
+                            class="grey--text text-caption"
+                        >
+                            (+{{ advanced_search.length - 1 }} others)
+                        </span>
+                    </template>
+                </v-select> 
+
+            </div>
         </v-card>
         <div :class="{graphContainer: graph}">
             <CourseTableCourse
@@ -82,7 +109,10 @@ export default {
         }
     },
     data() {
-        return { search: '' }
+        return {    advanced_search: [],
+                    search: '' ,
+                    sort_dropbox: ['Fall', 'Spring', 'Summer', 'CI','HI', 'No Prerequistes'],
+        }
     },
     // watch: {
     //     descriptionOnHover( newValue ) {
@@ -92,7 +122,8 @@ export default {
     computed: {
         filteredCourses() {
             let tempCourses = JSON.parse(JSON.stringify(this.courses));
-
+            console.log(tempCourses);
+            let output = [];
             //Weird hack that is needed
             //Basically since this is a computed method it will auto run
             //whenever the "data" is changed but since this.courses
@@ -113,6 +144,9 @@ export default {
                         .toUpperCase()
                         .includes(this.search.toUpperCase())));
             }
+
+            console.log(tempCourses);
+
             for(const course in tempCourses) {
                 if(tempCourses[course] == null) {
                     tempCourses[course] = {};
@@ -122,9 +156,37 @@ export default {
                 else {
                     tempCourses[course]["hasData"] = true;
                 }
+                //Check if there is data for the course
+                if (this.advanced_search.length > 0 && !tempCourses[course].hasData) {
+                    continue
+                }
+                //Check fall
+                if (this.advanced_search.includes("Fall") && !tempCourses[course].offered.fall) {
+                    continue;
+                }
+                //Check spring
+                if (this.advanced_search.includes("Spring") && !tempCourses[course].offered.spring) {
+                    continue;
+                }
+                //Check summer
+                if (this.advanced_search.includes("Summer") && !tempCourses[course].offered.summer) {
+                    continue;
+                }
+                 if (this.advanced_search.includes("HI") && !tempCourses[course].properties.HI) {
+                    continue;
+                 }
+                //check prereq
+                if (this.advanced_search.includes("No Prerequistes") && tempCourses[course].prerequisites.length != 0) {
+                    continue;
+                }
+                //Check CI
+                if (this.advanced_search.includes("CI") && !tempCourses[course].properties.CI) {
+                    continue;
+                }
+                output.push(tempCourses[course]);
             }
 
-            tempCourses = Object.values(tempCourses).sort(
+            output = Object.values(output).sort(
                 function(a, b){
                     if(a.subj === undefined) return  1
                     if(b.subj === undefined) return -1
@@ -137,9 +199,11 @@ export default {
                     else return 1
                 }
             )
-            return tempCourses
-        }
+            return output;
+        },
+
     },
+
     methods: {
         deselectAll() {
             this.$children.forEach(child => {
@@ -188,5 +252,9 @@ export default {
 
 .no-search-results {
     margin: 20px 5px;
+}
+
+.SORT {
+    padding-bottom: 1 px;
 }
 </style>
