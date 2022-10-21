@@ -19,9 +19,9 @@
             </v-expansion-panel-header>
             <v-expansion-panel-content>
                 <button>  SectionNum-CRN | StartDate-EndDate </button> <br>
-                SectionNum-CRN | StartDate-EndDate <br>
-                SectionNum-CRN | StartDate-EndDate <br>
-                SectionNum-CRN | StartDate-EndDate <br>
+                <button>  SectionNum-CRN | StartDate-EndDate </button> <br>
+                <button>  SectionNum-CRN | StartDate-EndDate </button> <br>
+                <button>  SectionNum-CRN | StartDate-EndDate </button> <br>
             </v-expansion-panel-content>
             </v-expansion-panel>
         </v-expansion-panels>
