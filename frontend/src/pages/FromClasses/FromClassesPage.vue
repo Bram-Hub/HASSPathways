@@ -174,6 +174,7 @@
                     :single-select="false"
                     :fixed-header="true"
 
+                    multisort
                     sort-by="Subject"
                     item-key="name"
                     show-select
@@ -233,6 +234,7 @@ const TABLE_HEADERS = [
     {
         text: 'Properties',
         align: 'end',
+        sortable: false,
         value: ''
     }
 ];
