@@ -1,4 +1,3 @@
-@ -1,101 +0,0 @@
 <template>
     <v-container v-if="course.name">
         <Breadcrumbs :breadcrumbs="breadcrumbs" />
@@ -11,18 +10,13 @@
         <template v-if="course.professors.length !== 0">
             <h3>Professors:</h3>
             <ul>
-                <li v-for="pro in course.professors" :key="pro.id">
-                    {{ pro }}
-                    <template>
-                        <ul>
-                            <li v-for="sec in profSec[pro]" :key="sec.id">
-                                    {{ profSec[pro][sec]}}
-                            </li>
-                        </ul>
-                    </template>
+                <li v-for="prof in course.professors" :key="prof">
+                    {{ prof }}
+                        <h3 v-for="sec in profSec[prof]" :key="sec">
+                            {{ course.sections['' + sec] }}
+                        </h3>
                 </li>
             </ul>
-            <h3> </h3>
         </template>
         <template v-else>
             <h3>This class is not providing in the current semester</h3>
@@ -81,30 +75,30 @@ export default {
         // Correspond Professors and their own section(s)
         profSec(){
             let profSec = {};
-            for (let i = 0; i < this.course.professors.length(); ++i){
-                let sec = [];
+            for (let i = 0; i < this.course.professors.length; i++) {
                 let prof = this.course.professors[i];
-                for (let j = 0; j < this.course.sections.length(); ++j)
-                {
-                    if (this.course.sections[j].instructor === prof){
-                        sec.push(this.course.sections[j]);
+                let sec = [];
+                for (var section in this.course.sections) {
+                    if (this.course.sections[section]["instructor"] === prof){
+                        sec.push(section);
                     }
                 }
                 profSec[prof] = sec;
             }
             return profSec;
-        },
-
+        }
+    },
     created() {
         const year = this.$store.state.year;
-        import('../../data/json/' + year + '/courses.json').then((val) => {this.coursesData = Object.freeze(val);
+        import('../../data/json/' + year + '/courses.json').then((val) => {
+            this.coursesData = Object.freeze(val);
             let courseID = this.$route.query.course;
             if (!Object.keys(this.coursesData).includes(courseID)) {
                 this.$router.push('/404');
             }
         });
     }
-}
+    
 }
 </script>
 
