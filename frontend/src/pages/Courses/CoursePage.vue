@@ -8,22 +8,15 @@
         <p>{{ course.description }}</p>
         <h3>Instructor(s) name:</h3>
         <h4>Rate my Professor link:</h4>
-        
         <template v-if="course.professors.length !== 0">
             <h3>Professors:</h3>
             <ul>
                 <li v-for="pro in course.professors" :key="pro.id">
                     {{ pro }}
                     <template>
-                        <h5>Section information:</h5>
                         <ul>
-                            <li v-for="sec in course.sections" :key="sec.id">
-                                    <h5>Section ID: {{ sec.id }}</h5>
-                                    <h5>Section Type: {{ sec.type }}</h5>
-                                    <h5>Section Time: {{ sec.time }}</h5>
-                                    <h5>Section Location: {{ sec.location }}</h5>
-                                    <h5>Section Days: {{ sec.days }}</h5>
-                                    <h5>Section Instructor: {{ sec.instructor }}</h5>
+                            <li v-for="sec in profSec[pro]" :key="sec.id">
+                                    {{ profSec[pro][sec]}}
                             </li>
                         </ul>
                     </template>
@@ -86,8 +79,8 @@ export default {
         },
 
         // Correspond Professors and their own section(s)
-        profSec() {
-            let profSec = [];
+        profSec(){
+            let profSec = {};
             for (let i = 0; i < this.course.professors.length(); ++i){
                 let sec = [];
                 let prof = this.course.professors[i];
@@ -97,7 +90,7 @@ export default {
                         sec.push(this.course.sections[j]);
                     }
                 }
-                profSec.push({professor: prof, sections: sec});
+                profSec[prof] = sec;
             }
             return profSec;
         },
