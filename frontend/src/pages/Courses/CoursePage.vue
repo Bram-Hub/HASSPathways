@@ -4,6 +4,7 @@
         <div class="header">
             <h1>{{ course.subj }}-{{ course.ID }}: {{ course.name }}</h1>
         </div>
+        
         <p>{{ course.description }}</p>
         <h3>Instructor(s) name:</h3>
         <h4>Rate my Professor link:</h4>
@@ -13,8 +14,20 @@
                 <li v-for="prof in course.professors" :key="prof">
                     {{ prof }}
                         <h3 v-for="sec in profSec[prof]" :key="sec">
-                            {{ course.sections['' + sec] }}
+                            <template>
+                                <v-expansion-panels>
+                                <v-expansion-panel v-for="(item,i) in 1" :key="i">
+                                    <v-expansion-panel-header>Section information</v-expansion-panel-header>
+                                    <v-expansion-panel-content>
+                                        Days: {{course.sections['' + sec].days }} <br>
+                                        Time: {{course.sections['' + sec].time }} <br>
+                                        Location: {{course.sections['' + sec].location }} <br>
+                                        Type: {{course.sections['' + sec].type }} <br><br>                                    </v-expansion-panel-content>
+                                </v-expansion-panel>
+                                </v-expansion-panels>
+                            </template>
                         </h3>
+
                 </li>
             </ul>
         </template>
