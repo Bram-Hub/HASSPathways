@@ -12,30 +12,26 @@
             <ul>
                 <li v-for="prof in course.professors" :key="prof">
                     {{ prof }}
-                    <div class="text-center d-flex pb-4">
-                        <v-btn @click="all">
-                            all
+                    <div v-if="profSec[prof].length !== 0" class="text-center d-flex pb-4">
+                        <v-btn @click="all(prof)">
+                            open all
                         </v-btn>
-                        <div>{{ panel }}</div>
-                        <v-btn @click="none">
-                            none
+                        {{ panel }}
+                        <v-btn @click="none(prof)">
+                            close all
                         </v-btn>
                     </div>
-                    <h3 v-for="sec in profSec[prof]" :key="sec">
-                        <template>
-                            <v-expansion-panels v-model="panel" multiple>
-                            <v-expansion-panel v-for="(item,i) in 1" :key="i">
-                                <v-expansion-panel-header>Section information</v-expansion-panel-header>
-                                <v-expansion-panel-content>
-                                    Days: {{course.sections['' + sec].days }} <br>
-                                    Time: {{course.sections['' + sec].time }} <br>
-                                    Location: {{course.sections['' + sec].location }} <br>
-                                    Type: {{course.sections['' + sec].type }} <br><br>                                    </v-expansion-panel-content>
-                            </v-expansion-panel>
-                            </v-expansion-panels>
-                        </template>
-                    </h3>
-
+                    <v-expansion-panels v-model="panel[prof]" multiple>
+                        <v-expansion-panel v-for="sec in profSec[prof]" :key="sec">
+                            <v-expansion-panel-header>Section information</v-expansion-panel-header>
+                            <v-expansion-panel-content>
+                                Days: {{ course.sections['' + sec].days }} <br>
+                                Time: {{ course.sections['' + sec].time }} <br>
+                                Location: {{ course.sections['' + sec].location }} <br>
+                                Type: {{ course.sections['' + sec].type }} <br><br>
+                            </v-expansion-panel-content>
+                        </v-expansion-panel>
+                    </v-expansion-panels>
                 </li>
             </ul>
         </template>
@@ -64,7 +60,8 @@ export default {
     },
     data() {
         return {
-            coursesData: {}
+            coursesData: {},
+            panel: {} 
         }
     },
     computed: {
@@ -107,7 +104,10 @@ export default {
                 profSec[prof] = sec;
             }
             return profSec;
-        }
+        },
+        numSections() {
+            return this.course.sections.length;
+        },
     },
     created() {
         const year = this.$store.state.year;
@@ -118,8 +118,24 @@ export default {
                 this.$router.push('/404');
             }
         });
+    },
+    methods: {
+        all(prof) {
+            console.log(this.panel[prof])
+            if (this.panel[prof] !== undefined) {
+                this.panel[prof] = [...Array(this.profSec[prof].length).keys()].map((k,i) => i);
+            } else {
+                this.panel
+            }
+        },
+        none(prof) {
+            if (this.panel[prof] !== undefined) {
+                this.panel[prof] = []
+            } else { 
+                this 
+            }
+        },
     }
-    
 }
 </script>
 
