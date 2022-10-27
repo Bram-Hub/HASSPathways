@@ -138,6 +138,7 @@ export default {
                     tmpPanel.push(this.panel[i]);
             }
             this.panel = tmpPanel
+
         },
     }
 }
