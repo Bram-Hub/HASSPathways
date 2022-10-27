@@ -6,31 +6,36 @@
         </div>
         <p>{{ course.description }}</p>
         <h3>Instructor(s) name:</h3>
-        <h4>Rate my Professor link:</h4>
         <template v-if="course.professors.length !== 0">
-            <h3>Professors:</h3>
+            <h2>Professors:</h2>
             <ul>
                 <li v-for="(prof, index) in course.professors" :key="prof">
-                    {{ prof }}
-                    <div v-if="profSec[prof].length !== 0" class="text-center d-flex pb-4">
+                    <h4> {{prof}} </h4>
+                    Rate my Professor link:
+                    <div v-if="profSec[prof].length !== 0" class="open-close-btn">
                         <v-btn @click="all(index)">
-                            open all
+                            expand
                         </v-btn>
                         <v-btn @click="none(index)">
-                            close all
+                            close
                         </v-btn>
+
+                        <v-expansion-panels v-model="panel[index]" multiple>
+                            <v-expansion-panel v-for="sec in profSec[prof]" :key="sec">
+                                <v-expansion-panel-header>Section information</v-expansion-panel-header>
+                                <v-expansion-panel-content>
+                                    Days: {{ course.sections['' + sec].days }} <br>
+                                    Time: {{ course.sections['' + sec].time }} <br>
+                                    Location: {{ course.sections['' + sec].location }} <br>
+                                    Type: {{ course.sections['' + sec].type }} <br><br>
+                                </v-expansion-panel-content>
+                            </v-expansion-panel>
+                        </v-expansion-panels>
                     </div>
-                    <v-expansion-panels v-model="panel[index]" multiple>
-                        <v-expansion-panel v-for="sec in profSec[prof]" :key="sec">
-                            <v-expansion-panel-header>Section information</v-expansion-panel-header>
-                            <v-expansion-panel-content>
-                                Days: {{ course.sections['' + sec].days }} <br>
-                                Time: {{ course.sections['' + sec].time }} <br>
-                                Location: {{ course.sections['' + sec].location }} <br>
-                                Type: {{ course.sections['' + sec].type }} <br><br>
-                            </v-expansion-panel-content>
-                        </v-expansion-panel>
-                    </v-expansion-panels>
+                    <div v-else>
+                        No sections found for this professor
+                    </div>
+                    <br>
                 </li>
             </ul>
         </template>
@@ -160,4 +165,15 @@ export default {
      flex-wrap: wrap;
      justify-content: center;
  }
+
+ .open-close-btn
+    {
+        padding: 10px 0;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 </style>
