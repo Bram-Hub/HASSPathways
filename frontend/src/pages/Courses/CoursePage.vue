@@ -8,17 +8,18 @@
         <h3>Instructor(s) name:</h3>
         <h4>Rate my Professor link:</h4>
         <template v-if="course.professors.length !== 0">
-            <v-btn @click="all()">
-                open all
-            </v-btn>
-			{{ panel }}
-            <v-btn @click="none()">
-                close all
-            </v-btn>
             <h3>Professors:</h3>
             <ul>
                 <li v-for="(prof, index) in course.professors" :key="prof">
                     {{ prof }}
+                    <div v-if="profSec[prof].length !== 0" class="text-center d-flex pb-4">
+                        <v-btn @click="all(index)">
+                            open all
+                        </v-btn>
+                        <v-btn @click="none(index)">
+                            close all
+                        </v-btn>
+                    </div>
                     <v-expansion-panels v-model="panel[index]" multiple>
                         <v-expansion-panel v-for="sec in profSec[prof]" :key="sec">
                             <v-expansion-panel-header>Section information</v-expansion-panel-header>
@@ -118,15 +119,26 @@ export default {
         });
     },
     methods: {
-        all() {
-            let tempPanel = []
-            for (var prof in this.course.professors) {
-                tempPanel.push([...Array(this.profSec[this.course.professors[prof]].length).keys()].map((k,i) => i));
+        all(prof) {
+            let tmpPanel = []
+            for (let i = 0; i < this.course.professors.length; i++) {
+                if (i == prof)
+                    tmpPanel.push([...Array(this.profSec[this.course.professors[prof]].length).keys()].map((k,i) => i));
+                else
+                    tmpPanel.push(this.panel[i]);
             }
-            this.panel = tempPanel;
+            this.panel = tmpPanel
         },
-        none() {
-            this.panel = []
+        none(prof) {
+            let tmpPanel = []
+            for (let i = 0; i < this.course.professors.length; i++) {
+                if (i == prof)
+                    tmpPanel.push([]);
+                else
+                    tmpPanel.push(this.panel[i]);
+            }
+            this.panel = tmpPanel
+
         },
     }
 }
