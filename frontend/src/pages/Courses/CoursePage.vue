@@ -8,34 +8,28 @@
         <h3>Instructor(s) name:</h3>
         <h4>Rate my Professor link:</h4>
         <template v-if="course.professors.length !== 0">
+            <v-btn @click="all()">
+                open all
+            </v-btn>
+			{{ panel }}
+            <v-btn @click="none()">
+                close all
+            </v-btn>
             <h3>Professors:</h3>
             <ul>
-                <li v-for="prof in course.professors" :key="prof">
+                <li v-for="(prof, index) in course.professors" :key="prof">
                     {{ prof }}
-                    <div class="text-center d-flex pb-4">
-                        <v-btn @click="all">
-                            all
-                        </v-btn>
-                        <div>{{ panel }}</div>
-                        <v-btn @click="none">
-                            none
-                        </v-btn>
-                    </div>
-                    <h3 v-for="sec in profSec[prof]" :key="sec">
-                        <template>
-                            <v-expansion-panels v-model="panel" multiple>
-                            <v-expansion-panel v-for="(item,i) in 1" :key="i">
-                                <v-expansion-panel-header>Section information</v-expansion-panel-header>
-                                <v-expansion-panel-content>
-                                    Days: {{course.sections['' + sec].days }} <br>
-                                    Time: {{course.sections['' + sec].time }} <br>
-                                    Location: {{course.sections['' + sec].location }} <br>
-                                    Type: {{course.sections['' + sec].type }} <br><br>                                    </v-expansion-panel-content>
-                            </v-expansion-panel>
-                            </v-expansion-panels>
-                        </template>
-                    </h3>
-
+                    <v-expansion-panels v-model="panel[index]" multiple>
+                        <v-expansion-panel v-for="sec in profSec[prof]" :key="sec">
+                            <v-expansion-panel-header>Section information</v-expansion-panel-header>
+                            <v-expansion-panel-content>
+                                Days: {{ course.sections['' + sec].days }} <br>
+                                Time: {{ course.sections['' + sec].time }} <br>
+                                Location: {{ course.sections['' + sec].location }} <br>
+                                Type: {{ course.sections['' + sec].type }} <br><br>
+                            </v-expansion-panel-content>
+                        </v-expansion-panel>
+                    </v-expansion-panels>
                 </li>
             </ul>
         </template>
@@ -64,7 +58,8 @@ export default {
     },
     data() {
         return {
-            coursesData: {}
+            coursesData: {},
+            panel: [] 
         }
     },
     computed: {
@@ -107,7 +102,10 @@ export default {
                 profSec[prof] = sec;
             }
             return profSec;
-        }
+        },
+        numSections() {
+            return this.course.sections.length;
+        },
     },
     created() {
         const year = this.$store.state.year;
@@ -118,8 +116,19 @@ export default {
                 this.$router.push('/404');
             }
         });
+    },
+    methods: {
+        all() {
+            let tempPanel = []
+            for (var prof in this.course.professors) {
+                tempPanel.push([...Array(this.profSec[this.course.professors[prof]].length).keys()].map((k,i) => i));
+            }
+            this.panel = tempPanel;
+        },
+        none() {
+            this.panel = []
+        },
     }
-    
 }
 </script>
 
