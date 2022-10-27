@@ -10,18 +10,17 @@
         <template v-if="course.professors.length !== 0">
             <h3>Professors:</h3>
             <ul>
-                <li v-for="prof in course.professors" :key="prof">
+                <li v-for="(prof, index) in course.professors" :key="prof">
                     {{ prof }}
                     <div v-if="profSec[prof].length !== 0" class="text-center d-flex pb-4">
-                        <v-btn @click="all(prof)">
+                        <v-btn @click="all(index)">
                             open all
                         </v-btn>
-                        {{ panel }}
-                        <v-btn @click="none(prof)">
+                        <v-btn @click="none(index)">
                             close all
                         </v-btn>
                     </div>
-                    <v-expansion-panels v-model="panel[prof]" multiple>
+                    <v-expansion-panels v-model="panel[index]" multiple>
                         <v-expansion-panel v-for="sec in profSec[prof]" :key="sec">
                             <v-expansion-panel-header>Section information</v-expansion-panel-header>
                             <v-expansion-panel-content>
@@ -61,7 +60,7 @@ export default {
     data() {
         return {
             coursesData: {},
-            panel: {} 
+            panel: [] 
         }
     },
     computed: {
@@ -121,19 +120,24 @@ export default {
     },
     methods: {
         all(prof) {
-            console.log(this.panel[prof])
-            if (this.panel[prof] !== undefined) {
-                this.panel[prof] = [...Array(this.profSec[prof].length).keys()].map((k,i) => i);
-            } else {
-                this.panel
+            let tmpPanel = []
+            for (let i = 0; i < this.course.professors.length; i++) {
+                if (i == prof)
+                    tmpPanel.push([...Array(this.profSec[this.course.professors[prof]].length).keys()].map((k,i) => i));
+                else
+                    tmpPanel.push(this.panel[i]);
             }
+            this.panel = tmpPanel
         },
         none(prof) {
-            if (this.panel[prof] !== undefined) {
-                this.panel[prof] = []
-            } else { 
-                this 
+            let tmpPanel = []
+            for (let i = 0; i < this.course.professors.length; i++) {
+                if (i == prof)
+                    tmpPanel.push([]);
+                else
+                    tmpPanel.push(this.panel[i]);
             }
+            this.panel = tmpPanel
         },
     }
 }
