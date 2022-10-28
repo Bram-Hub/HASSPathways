@@ -5,7 +5,6 @@
             <h1>{{ course.subj }}-{{ course.ID }}: {{ course.name }}</h1>
         </div>
         <p>{{ course.description }}</p>
-        <h3>Instructor(s) name:</h3>
         <template v-if="course.professors.length !== 0">
             <h2>Professors:</h2>
             <ul>
