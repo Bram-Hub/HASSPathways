@@ -18,6 +18,7 @@ const ADVANCED_SEARCH = createBreadcrumb('Search Classes', '/search-classes');
 const ADMIN_HOME_PAGE = createBreadcrumb('Admin Portal', '/admin-portal');
 const ADMIN_PATHWAY_PAGE = createBreadcrumb('Pathways Page', '/admin-portal/pathway');
 const ADMIN_SEARCH_CC_PAGE = createBreadcrumb('Course Page', '/admin-portal/search-course-code');
+const COURSES = createBreadcrumb('Courses', '/courses');
 
 
 export default {
@@ -33,5 +34,7 @@ export default {
     admin_course_page: [HOME, ADMIN_HOME_PAGE, null],
     admin_pathway_page: [HOME, ADMIN_HOME_PAGE, ADMIN_PATHWAY_PAGE],
     admin_search_cc_page: [HOME, ADMIN_HOME_PAGE, ADMIN_SEARCH_CC_PAGE],
-    advanced_search: [HOME, ADVANCED_SEARCH]
+    advanced_search: [HOME, ADVANCED_SEARCH],
+    courses: [HOME, COURSES],
+    course_template: [HOME, COURSES, null],
 };

@@ -16,6 +16,9 @@
     "prerequisites": [
       "ARTS-1020"
     ],
+    "professors": [
+      "Nathan Scott Meltz"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -38,6 +41,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -62,6 +66,9 @@
     "prerequisites": [
       "ARTS-2230"
     ],
+    "professors": [
+      "Silvia Ruzanka"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -84,6 +91,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Rebekah Gamin Arcovitch",
+      "Benjamin H. Barnard"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -108,6 +119,7 @@
     "prerequisites": [
       "ARTS-2230"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -132,6 +144,7 @@
     "prerequisites": [
       "ARTS-2230"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -154,6 +167,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Jennifer Cardinal",
+      "Kate Elizabeth Sohasky"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -177,6 +194,10 @@
     },
     "prerequisites": [
       "PSYC-1200"
+    ],
+    "professors": [
+      "Keith J. Anderson",
+      "Larry D Reid"
     ],
     "properties": {
       "CI": false,
@@ -203,6 +224,7 @@
       "PSYC-2310",
       "ECON-4580"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -227,6 +249,7 @@
     "prerequisites": [
       "ARTS-4070"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -249,6 +272,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kathleen Ruiz"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -272,6 +298,9 @@
     },
     "prerequisites": [
       "ARTS-1200"
+    ],
+    "professors": [
+      "Kenneth A. Ragsdale"
     ],
     "properties": {
       "CI": false,
@@ -297,8 +326,9 @@
     "prerequisites": [
       "COGS-2340"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -319,9 +349,10 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-1030",
-      "IHSS-1030"
+      "IHSS-1030",
+      "ARTS-1030"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -344,8 +375,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -366,6 +398,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -388,6 +421,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -398,7 +432,7 @@
   "Animation Production": {
     "ID": "4460",
     "cross listed": [],
-    "description": "Animation Production is designed to give an animation industry experience by completing the entire process of creating an animated short. Learning long-term time management and finding the key time cost/benefits will be essential to success. The course schedule is setup to replicate the industry model of frequent updates and feedback – dailies.",
+    "description": "Animation Production is designed to give an animation industry experience by completing the entire process of creating an animated short. Learning long-term time management and finding the key time cost/benefits will be essential to success. The course schedule is setup to replicate the industry model of frequent updates and feedback  dailies.",
     "name": "Animation Production",
     "offered": {
       "even": false,
@@ -411,6 +445,9 @@
     },
     "prerequisites": [
       "ARTS-4060"
+    ],
+    "professors": [
+      "Silvia Ruzanka"
     ],
     "properties": {
       "CI": false,
@@ -437,6 +474,7 @@
       "PSYC-2310",
       "ECON-4570"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -459,9 +497,10 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -486,6 +525,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -508,6 +548,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -530,6 +571,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Jefferson Wille Kielwagen"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -554,6 +598,7 @@
     "prerequisites": [
       "ARTS-1020"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -576,6 +621,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Robert F. Nideffer"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -598,9 +646,10 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1020"
+      "ARTS-1020",
+      "IHSS-1030"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -623,6 +672,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -645,6 +695,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kenneth A. Ragsdale"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -667,11 +720,12 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -692,10 +746,11 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
       "PSYC-2310",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -722,6 +777,7 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -744,6 +800,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -766,10 +823,14 @@
       "uia": false
     },
     "prerequisites": [
-      "STSS-2510",
       "IHSS-1160",
-      "PHIL-1110",
-      "STSH-2500"
+      "STSS-2510",
+      "STSH-2500",
+      "PHIL-1110"
+    ],
+    "professors": [
+      "Susan Lynn Smith",
+      "Cynthia Theresa Cook"
     ],
     "properties": {
       "CI": true,
@@ -793,9 +854,10 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1020"
+      "ARTS-1020",
+      "IHSS-1030"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -820,8 +882,9 @@
     "prerequisites": [
       "COMM-2660"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -842,6 +905,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Carl Pavarini",
+      "Kevin R. Stewart"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -864,6 +931,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": true,
       "HI": false,
@@ -886,6 +954,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kate Elizabeth Sohasky"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -908,6 +979,12 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Matthew J. Chamberlain",
+      "Nicholas Jon De Maison",
+      "Chrysi Nanou",
+      "Michael L. Century"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -930,6 +1007,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -952,6 +1030,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Yalun Zhou",
+      "Jianling Yue"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -962,7 +1044,7 @@
   "Chinese II": {
     "ID": "2410",
     "cross listed": [],
-    "description": "This is a continuation of Chinese I, a course for the standard modern Chinese language (Mandarin). Students learn more Chinese characters and words, reach a total of nearly 500 characters and 650 words, and use more complicated grammatical structures, including some compliment phrases and topic-comment sentences. In sum, students will learn more in all four aspects—listening, speaking, reading, and writing—presented in Chinese I.",
+    "description": "This is a continuation of Chinese I, a course for the standard modern Chinese language (Mandarin). Students learn more Chinese characters and words, reach a total of nearly 500 characters and 650 words, and use more complicated grammatical structures, including some compliment phrases and topic-comment sentences. In sum, students will learn more in all four aspectslistening, speaking, reading, and writingpresented in Chinese I.",
     "name": "Chinese II",
     "offered": {
       "even": false,
@@ -976,6 +1058,9 @@
     "prerequisites": [
       "LANG-1410"
     ],
+    "professors": [
+      "Jianling Yue"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -986,7 +1071,7 @@
   "Chinese III": {
     "ID": "4420",
     "cross listed": [],
-    "description": "This is a continuation of Chinese II, a course for the standard modern Chinese language (Mandarin). Students learn more Chinese characters and words, reach a total of about 650 characters, 1000 words, and use more complicated grammatical structures, e.g., reduplication of adjectives and verbs, resultative and potential compliments. In sum, students learn more in all four aspects—listening, speaking, reading and writing—presented in Chinese II.",
+    "description": "This is a continuation of Chinese II, a course for the standard modern Chinese language (Mandarin). Students learn more Chinese characters and words, reach a total of about 650 characters, 1000 words, and use more complicated grammatical structures, e.g., reduplication of adjectives and verbs, resultative and potential compliments. In sum, students learn more in all four aspectslistening, speaking, reading and writingpresented in Chinese II.",
     "name": "Chinese III",
     "offered": {
       "even": false,
@@ -1000,8 +1085,9 @@
     "prerequisites": [
       "LANG-2410"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -1010,7 +1096,7 @@
   "Chinese IV": {
     "ID": "4430",
     "cross listed": [],
-    "description": "This is a continuation of Chinese III, a course for standard modern Chinese language (Mandarin). Students learn additional Chinese characters and words, reach a total of about 800 characters, 1350 words, and complicated grammatical structures, e.g., expression of approximation, comparison of structural and aspect particles, etc. In sum, students learn more in all four aspects—listening, speaking, reading, and writing—presented in Chinese III.",
+    "description": "This is a continuation of Chinese III, a course for standard modern Chinese language (Mandarin). Students learn additional Chinese characters and words, reach a total of about 800 characters, 1350 words, and complicated grammatical structures, e.g., expression of approximation, comparison of structural and aspect particles, etc. In sum, students learn more in all four aspectslistening, speaking, reading, and writingpresented in Chinese III.",
     "name": "Chinese IV",
     "offered": {
       "even": false,
@@ -1024,6 +1110,10 @@
     "prerequisites": [
       "LANG-4420"
     ],
+    "professors": [
+      "Yalun Zhou",
+      "Jianling Yue"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1034,7 +1124,7 @@
   "Chinese V": {
     "ID": "4470",
     "cross listed": [],
-    "description": "Chinese V is a continuation of Chinese IV, a course for standard modern Chinese language (Mandarin). Students learn additional Chinese characters and words, reach a total of about 950 characters, 1700 words, and complicated grammatical structures, e.g., idiomatic expressions, expressions of comparison, concession, and subjection, etc. In sum, students learn more in all four aspects – listening, speaking, reading and writing – presented in Chinese IV.",
+    "description": "Chinese V is a continuation of Chinese IV, a course for standard modern Chinese language (Mandarin). Students learn additional Chinese characters and words, reach a total of about 950 characters, 1700 words, and complicated grammatical structures, e.g., idiomatic expressions, expressions of comparison, concession, and subjection, etc. In sum, students learn more in all four aspects  listening, speaking, reading and writing  presented in Chinese IV.",
     "name": "Chinese V",
     "offered": {
       "even": false,
@@ -1047,6 +1137,10 @@
     },
     "prerequisites": [
       "LANG-4430"
+    ],
+    "professors": [
+      "Yalun Zhou",
+      "Jianling Yue"
     ],
     "properties": {
       "CI": false,
@@ -1074,6 +1168,9 @@
     "prerequisites": [
       "PSYC-4330"
     ],
+    "professors": [
+      "Alicia Ann Walf"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1100,6 +1197,7 @@
     "prerequisites": [
       "PHIL-2120"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1124,6 +1222,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Michael J. Schoelles"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1146,8 +1247,11 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
+    ],
+    "professors": [
+      "Christopher Robert Sims"
     ],
     "properties": {
       "CI": false,
@@ -1171,6 +1275,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1193,6 +1298,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1215,6 +1321,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Weina Ran"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1238,6 +1347,10 @@
     },
     "prerequisites": [
       "ARTS-4380"
+    ],
+    "professors": [
+      "Christopher James Fisher-Lochhead",
+      "Matthew William Goodheart"
     ],
     "properties": {
       "CI": false,
@@ -1263,6 +1376,9 @@
     "prerequisites": [
       "PHIL-2140"
     ],
+    "professors": [
+      "Bram Van Heuveln"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1287,6 +1403,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1309,6 +1426,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1331,9 +1449,10 @@
       "uia": false
     },
     "prerequisites": [
-      "STSS-2300",
-      "STSH-2500"
+      "STSH-2500",
+      "STSS-2300"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1358,6 +1477,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1382,6 +1502,7 @@
     "prerequisites": [
       "ARTS-1020"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1404,6 +1525,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1428,6 +1550,7 @@
     "prerequisites": [
       "COMM-4340"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1450,6 +1573,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Shira Dentz",
+      "Skye Anicca"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1472,6 +1599,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Shira Dentz",
+      "Skye Anicca"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1494,6 +1625,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Shira Dentz"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1518,6 +1652,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "John R Milanese",
+      "Bram Van Heuveln"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1541,6 +1679,9 @@
     },
     "prerequisites": [
       "COGS-2340"
+    ],
+    "professors": [
+      "Marjorie McShane"
     ],
     "properties": {
       "CI": true,
@@ -1566,6 +1707,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [
+      "Tamar Gordon"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1588,6 +1732,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Thilanka Munasinghe",
+      "Linda Kramarchyk"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1610,6 +1758,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Thilanka Munasinghe"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1634,6 +1785,7 @@
     "prerequisites": [
       "ITWS-4350"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1656,6 +1808,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1678,8 +1831,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -1700,6 +1854,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Brandon James Costelloe-Kuehn",
+      "Jarah W. Moesch"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1724,8 +1882,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -1748,6 +1907,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1770,6 +1930,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "John T. Rinker",
+      "Jarah W. Moesch"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1792,8 +1956,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Raquel Velho"
+    ],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -1815,6 +1982,9 @@
     },
     "prerequisites": [
       "IHSS-1610"
+    ],
+    "professors": [
+      "James Wilson Malazita"
     ],
     "properties": {
       "CI": true,
@@ -1838,6 +2008,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Langdon Winner"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -1860,9 +2033,10 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1885,6 +2059,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Elizabeth Press"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1907,6 +2084,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Silvia Ruzanka",
+      "Nathan Scott Meltz"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1929,6 +2110,14 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Nancy D. Campbell",
+      "James Wilson Malazita",
+      "Raquel Velho",
+      "Abby J. Kinchy",
+      "Langdon Winner",
+      "Atsushi Akera"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1951,6 +2140,20 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Wayne D. Gray",
+      "Selmer Bringsjord",
+      "James A. Hendler",
+      "Peter A Fox",
+      "Brett R. Fajen",
+      "Christopher Robert Sims",
+      "Ron Sun",
+      "Sergei Nirenburg",
+      "Marjorie McShane",
+      "Mei Si",
+      "Tomasz Strzalkowski",
+      "Michael J Kalsher"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1973,8 +2176,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -1995,6 +2199,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -2019,8 +2224,11 @@
       "uia": false
     },
     "prerequisites": [
-      "STSH-1110",
-      "STSS-1110"
+      "STSS-1110",
+      "STSH-1110"
+    ],
+    "professors": [
+      "Nancy D. Campbell"
     ],
     "properties": {
       "CI": true,
@@ -2046,6 +2254,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Larry D Reid"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2068,9 +2279,10 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1020"
+      "ARTS-1020",
+      "IHSS-1030"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2093,10 +2305,11 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
       "PSYC-2310",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2121,6 +2334,9 @@
     "prerequisites": [
       "PSYC-2310"
     ],
+    "professors": [
+      "Huaming Peng"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2143,9 +2359,10 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2168,9 +2385,10 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2193,8 +2411,11 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Robert W. Jones"
     ],
     "properties": {
       "CI": false,
@@ -2218,8 +2439,11 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Vivek Ghosal"
     ],
     "properties": {
       "CI": false,
@@ -2245,6 +2469,7 @@
     "prerequisites": [
       "ECON-2020"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2267,11 +2492,12 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2292,11 +2518,12 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2317,6 +2544,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2344,8 +2572,9 @@
       "STSS-2300",
       "STSH-S 11"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2366,9 +2595,10 @@
       "uia": false
     },
     "prerequisites": [
-      "STSH-1110",
-      "STSS-1110"
+      "STSS-1110",
+      "STSH-1110"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2393,6 +2623,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2403,7 +2634,7 @@
   "Environment and Society": {
     "ID": "2300",
     "cross listed": [],
-    "description": "Society and the natural environment are crucially linked in a number of ways. Environmental problems such as pollution and natural resource depletion are not only problems for society, affecting the way people live their lives; they are also problems of society—the result of patterns of social organization and social practices. In this course, students will explore these society/environment interactions at various levels, from the local to the global, using the concepts and insights of environmental sociology. Environmental sociologists aim to understand the social origins of environmental problems and propose workable solutions to them. By showing how social interaction, institutions, and beliefs shape human behavior, environmental sociology provides a useful complement to the natural sciences in the analysis of the environmental problems faced today.",
+    "description": "Society and the natural environment are crucially linked in a number of ways. Environmental problems such as pollution and natural resource depletion are not only problems for society, affecting the way people live their lives; they are also problems of societythe result of patterns of social organization and social practices. In this course, students will explore these society/environment interactions at various levels, from the local to the global, using the concepts and insights of environmental sociology. Environmental sociologists aim to understand the social origins of environmental problems and propose workable solutions to them. By showing how social interaction, institutions, and beliefs shape human behavior, environmental sociology provides a useful complement to the natural sciences in the analysis of the environmental problems faced today.",
     "name": "Environment and Society",
     "offered": {
       "even": false,
@@ -2415,8 +2646,11 @@
       "uia": false
     },
     "prerequisites": [
-      "STSH-1110",
-      "STSS-1110"
+      "STSS-1110",
+      "STSH-1110"
+    ],
+    "professors": [
+      "Eric Drumheller Schaffer"
     ],
     "properties": {
       "CI": true,
@@ -2440,8 +2674,11 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Sarah Marsden Greene"
     ],
     "properties": {
       "CI": true,
@@ -2465,9 +2702,10 @@
       "uia": false
     },
     "prerequisites": [
-      "STSS-2700",
-      "IHSS-1350"
+      "IHSS-1350",
+      "STSS-2700"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2492,6 +2730,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2514,6 +2753,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2538,6 +2778,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2560,6 +2801,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Susan Lynn Smith",
+      "William J Puka",
+      "John R Milanese"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2582,6 +2828,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -2604,12 +2851,13 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
       "PSYC-2310",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2631,6 +2879,10 @@
     },
     "prerequisites": [
       "GSAS-4540"
+    ],
+    "professors": [
+      "Silvia Ruzanka",
+      "Kathleen Ruiz"
     ],
     "properties": {
       "CI": false,
@@ -2654,6 +2906,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2676,8 +2929,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2698,6 +2952,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Diana Rae Alvarez",
+      "Christopher James Fisher-Lochhead",
+      "Curtis Bahn"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -2720,8 +2979,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -2742,8 +3002,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -2764,6 +3025,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [
+      "Abby J. Kinchy"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2788,6 +3052,9 @@
     "prerequisites": [
       "PSYC-4740"
     ],
+    "professors": [
+      "Christopher A. VerWys"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -2810,6 +3077,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Miles A Kimball"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2832,6 +3102,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Nathan Scott Meltz"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2854,6 +3127,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Matthew J. Chamberlain",
+      "Christopher James Fisher-Lochhead"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2878,6 +3155,7 @@
     "prerequisites": [
       "GSAS-4510"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2900,6 +3178,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2923,6 +3202,9 @@
     },
     "prerequisites": [
       "GSAS-2540"
+    ],
+    "professors": [
+      "Michael F Lynch"
     ],
     "properties": {
       "CI": false,
@@ -2948,6 +3230,7 @@
     "prerequisites": [
       "ARTS-2230"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2970,6 +3253,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -2993,6 +3277,11 @@
     },
     "prerequisites": [
       "GSAS-2510"
+    ],
+    "professors": [
+      "Rebekah Gamin Arcovitch",
+      "Eric Louis Ameres",
+      "Marc Christian Destefano"
     ],
     "properties": {
       "CI": false,
@@ -3018,6 +3307,11 @@
     "prerequisites": [
       "GSAS-4520"
     ],
+    "professors": [
+      "Sylvain Payen",
+      "Robert F. Nideffer",
+      "Rebekah Gamin Arcovitch"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3028,7 +3322,7 @@
   "Game Narrative Design": {
     "ID": "4260",
     "cross listed": [],
-    "description": "Game Narrative Design moves the focus more squarely onto the design elements of game writing – most especially integration with gameplay design structure – and away from line-by-line writing.​",
+    "description": "Game Narrative Design moves the focus more squarely onto the design elements of game writing  most especially integration with gameplay design structure  and away from line-by-line writing.",
     "name": "Game Narrative Design",
     "offered": {
       "even": false,
@@ -3043,6 +3337,7 @@
       "COMM-4240",
       "GSAS-2520"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3068,6 +3363,9 @@
       "STSH-2500",
       "STSS-2100"
     ],
+    "professors": [
+      "Eric Drumheller Schaffer"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3090,6 +3388,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -3114,8 +3413,9 @@
     "prerequisites": [
       "STSS-2300"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3137,6 +3437,9 @@
     },
     "prerequisites": [
       "ARTS-1020"
+    ],
+    "professors": [
+      "Nathan Scott Meltz"
     ],
     "properties": {
       "CI": false,
@@ -3160,8 +3463,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -3182,6 +3486,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3204,8 +3509,11 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Jason Ung Huh"
     ],
     "properties": {
       "CI": true,
@@ -3229,6 +3537,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -3251,8 +3560,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Michael L. Century"
+    ],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3273,6 +3585,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Nicholas J. Mizer",
+      "Michael F Lynch"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -3295,8 +3611,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3317,8 +3634,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -3339,6 +3657,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -3361,6 +3680,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Matthew William Goodheart",
+      "Michael L. Century"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -3383,11 +3706,12 @@
       "uia": false
     },
     "prerequisites": [
-      "STSS-2520",
-      "IHSS-1410"
+      "IHSS-1410",
+      "STSS-2520"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3408,10 +3732,11 @@
       "uia": false
     },
     "prerequisites": [
-      "STSS-2520",
       "IHSS-1410",
+      "STSS-2520",
       "STSH-S 11"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3438,8 +3763,9 @@
       "STSH-S 11",
       "IHSS-1420"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -3462,6 +3788,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3486,6 +3813,7 @@
     "prerequisites": [
       "PSYC-2220"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3510,6 +3838,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Michael J Kalsher"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3532,8 +3863,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -3544,7 +3876,7 @@
     "cross listed": [
       "IHSS-1220"
     ],
-    "description": "Will IT increase prosperity? For whom? What role should governments play in IT development? Do corporations have new responsibilities in the Information Era? What about IT professionals? This course explores the issues, the arguments and working solutions. The first section examines macro indicators and trends. The second section examines the microeconomics and politics of specific arenas—the software industry, the automated work place, telemedicine, television. The last section explores opportunities for improving society, using IT.",
+    "description": "Will IT increase prosperity? For whom? What role should governments play in IT development? Do corporations have new responsibilities in the Information Era? What about IT professionals? This course explores the issues, the arguments and working solutions. The first section examines macro indicators and trends. The second section examines the microeconomics and politics of specific arenasthe software industry, the automated work place, telemedicine, television. The last section explores opportunities for improving society, using IT.",
     "name": "IT and Society",
     "offered": {
       "even": false,
@@ -3556,6 +3888,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Christopher James Tozzi"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -3580,6 +3915,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Holly A Traver"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3602,6 +3940,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3626,6 +3965,9 @@
     "prerequisites": [
       "COMM-2660"
     ],
+    "professors": [
+      "Miles A Kimball"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3648,6 +3990,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Brian Robert Callahan"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3672,6 +4017,10 @@
     "prerequisites": [
       "ITWS-2210"
     ],
+    "professors": [
+      "Linda Kramarchyk",
+      "Richard M. Plotka"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -3694,6 +4043,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3718,6 +4068,7 @@
     "prerequisites": [
       "ARTS-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3740,6 +4091,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Patricia Search"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3762,6 +4116,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Patricia Search"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3785,6 +4142,9 @@
     },
     "prerequisites": [
       "ARTS-4380"
+    ],
+    "professors": [
+      "Christopher James Fisher-Lochhead"
     ],
     "properties": {
       "CI": false,
@@ -3810,6 +4170,7 @@
     "prerequisites": [
       "ITWS-1100"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3833,6 +4194,9 @@
     },
     "prerequisites": [
       "ARTS-1020"
+    ],
+    "professors": [
+      "Nathan Scott Meltz"
     ],
     "properties": {
       "CI": false,
@@ -3858,6 +4222,9 @@
     "prerequisites": [
       "ARTS-1200"
     ],
+    "professors": [
+      "Kenneth A. Ragsdale"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3879,6 +4246,7 @@
       "text": ""
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3903,6 +4271,7 @@
     "prerequisites": [
       "PHIL-2140"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3926,6 +4295,10 @@
     },
     "prerequisites": [
       "IHSS-1200"
+    ],
+    "professors": [
+      "Mina Mahmoudi",
+      "Huaming Peng"
     ],
     "properties": {
       "CI": false,
@@ -3951,6 +4324,9 @@
     "prerequisites": [
       "IHSS-1200"
     ],
+    "professors": [
+      "Robert W. Jones"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3975,6 +4351,9 @@
     "prerequisites": [
       "ARTS-1030"
     ],
+    "professors": [
+      "Julie Elaine Casper Roth"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -3997,8 +4376,12 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Mina Mahmoudi",
+      "Yury Yatsynovich"
     ],
     "properties": {
       "CI": true,
@@ -4022,6 +4405,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4044,6 +4428,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Eddie Knowles"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4068,8 +4455,11 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
+    ],
+    "professors": [
+      "Alicia Ann Walf"
     ],
     "properties": {
       "CI": false,
@@ -4093,8 +4483,12 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Benjamin P. Weissman",
+      "Bram Van Heuveln"
+    ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -4115,6 +4509,12 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "James Wilson Malazita",
+      "Brian Anthony Shurtleff",
+      "Sylvain Payen",
+      "Marc Christian Destefano"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4137,6 +4537,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Eric Walsh",
+      "Eric Louis Ameres"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4159,6 +4563,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Maurice W Suckling",
+      "Nicholas J. Mizer",
+      "Michael F Lynch"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4181,6 +4590,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Jean Louise Tschanz-Egger",
+      "Leah A. Rico",
+      "Sara L. Tack"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4203,6 +4617,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Miles A Kimball"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4225,6 +4642,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Linda Kramarchyk",
+      "Richard M. Plotka"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4247,6 +4668,10 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [
+      "Marjorie McShane",
+      "Benjamin P. Weissman"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4269,6 +4694,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Rebecca M. Hamilton",
+      "James P Zappen"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4291,6 +4720,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Bram Van Heuveln"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4313,6 +4745,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Daniel Peter Thero"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4335,6 +4770,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4357,6 +4793,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Michael J Kalsher",
+      "Christopher L Hubbell"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4381,6 +4821,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Christopher L Hubbell"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4403,6 +4846,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4425,12 +4869,13 @@
       "uia": false
     },
     "prerequisites": [
-      "STSH-1110",
       "IHSS-1110",
-      "STSS-1110"
+      "STSS-1110",
+      "STSH-1110"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -4451,6 +4896,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4473,6 +4919,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4495,6 +4942,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Tamar Gordon"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4505,7 +4955,7 @@
   "Language in Real Time": {
     "ID": "2120",
     "cross listed": [],
-    "description": "This course offers an introduction to theories and methods used to study language in its real time contexts. It begins by exploring the structure of sounds and words. The course moves on to investigate how language variation at those structural levels bleeds into social life – including the cultural and socio-historical production of identities, ideologies, and inequalities. The \"exercise\" component of this course provides a hands-on opportunity for engaging with the topics explored in course readings and lectures. Completing exercises will offer practice in, for example, using the International Phonetic Alphabet, transcribing and analyzing natural speech, and using various theoretical offerings to examine how social perspectives and attitudes impact both the use and interpretation of linguistic forms.",
+    "description": "This course offers an introduction to theories and methods used to study language in its real time contexts. It begins by exploring the structure of sounds and words. The course moves on to investigate how language variation at those structural levels bleeds into social life  including the cultural and socio-historical production of identities, ideologies, and inequalities. The \"exercise\" component of this course provides a hands-on opportunity for engaging with the topics explored in course readings and lectures. Completing exercises will offer practice in, for example, using the International Phonetic Alphabet, transcribing and analyzing natural speech, and using various theoretical offerings to examine how social perspectives and attitudes impact both the use and interpretation of linguistic forms.",
     "name": "Language in Real Time",
     "offered": {
       "even": false,
@@ -4517,6 +4967,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Sarah Virginia Seeley"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4539,6 +4992,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4561,8 +5015,11 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Robert W. Jones"
     ],
     "properties": {
       "CI": false,
@@ -4574,7 +5031,7 @@
   "Law and Society": {
     "ID": "2700",
     "cross listed": [],
-    "description": "There ought to be a law. . .\" Law shapes people's lives in countless ways; it is everywhere. Law permits, prohibits, enables, legitimizes, protects, and prosecutes. Law is more than the written word, the \"black letter law.\" People make the law—judges, attorneys, police officers, legislators, defendants, and plaintiffs. This course will explore the law's social, political, cultural, and historical aspects. Using an interdisciplinary approach, the course will examine how social theorists conceptualize and explain the relationship between law and society. Students will be exposed to the theoretical frameworks that are used to examine how the law shapes society, and society shapes the law, and develop an understanding of the social processes that affect the legal system. The course will advance students' capacity to think critically and communicate effectively about themes, concepts, and arguments surrounding the law and learn what law is; where it comes from; who creates it; and what roles it plays in shaping society.",
+    "description": "There ought to be a law. . .\" Law shapes people's lives in countless ways; it is everywhere. Law permits, prohibits, enables, legitimizes, protects, and prosecutes. Law is more than the written word, the \"black letter law.\" People make the lawjudges, attorneys, police officers, legislators, defendants, and plaintiffs. This course will explore the law's social, political, cultural, and historical aspects. Using an interdisciplinary approach, the course will examine how social theorists conceptualize and explain the relationship between law and society. Students will be exposed to the theoretical frameworks that are used to examine how the law shapes society, and society shapes the law, and develop an understanding of the social processes that affect the legal system. The course will advance students' capacity to think critically and communicate effectively about themes, concepts, and arguments surrounding the law and learn what law is; where it comes from; who creates it; and what roles it plays in shaping society.",
     "name": "Law and Society",
     "offered": {
       "even": false,
@@ -4586,6 +5043,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4608,6 +5066,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [
+      "Lawrence Eliot Howard"
+    ],
     "properties": {
       "CI": false,
       "HI": true,
@@ -4631,6 +5092,9 @@
     },
     "prerequisites": [
       "PSYC-1200"
+    ],
+    "professors": [
+      "Christopher L Hubbell"
     ],
     "properties": {
       "CI": false,
@@ -4656,6 +5120,7 @@
     "prerequisites": [
       "COGS-4420"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4680,6 +5145,10 @@
     "prerequisites": [
       "ARTS-1200"
     ],
+    "professors": [
+      "Caren Canier",
+      "Monica A. Hughes"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4702,6 +5171,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4724,6 +5194,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4747,6 +5218,10 @@
     },
     "prerequisites": [
       "ITWS-2110"
+    ],
+    "professors": [
+      "Matthew John Grill",
+      "Jeffrey G Miner"
     ],
     "properties": {
       "CI": false,
@@ -4772,6 +5247,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4794,9 +5270,10 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4819,6 +5296,7 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4841,8 +5319,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -4867,6 +5346,7 @@
     "prerequisites": [
       "STSS-2510"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4889,6 +5369,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Daniel Peter Thero"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -4913,6 +5396,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -4937,6 +5421,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "John R Milanese",
+      "Bram Van Heuveln"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -4959,8 +5447,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -4981,8 +5470,11 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Sarah Marsden Greene"
     ],
     "properties": {
       "CI": false,
@@ -5008,6 +5500,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Ralph G Noble"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5032,6 +5527,7 @@
     "prerequisites": [
       "ARTS-2020"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5054,8 +5550,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -5077,6 +5574,10 @@
     },
     "prerequisites": [
       "ARTS-1380"
+    ],
+    "professors": [
+      "Christopher James Fisher-Lochhead",
+      "Matthew William Goodheart"
     ],
     "properties": {
       "CI": false,
@@ -5102,6 +5603,10 @@
     "prerequisites": [
       "ARTS-2380"
     ],
+    "professors": [
+      "Christopher James Fisher-Lochhead",
+      "Matthew William Goodheart"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5124,6 +5629,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "John T. Rinker",
+      "Robert Kyle Hamilton"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5148,6 +5657,9 @@
     "prerequisites": [
       "ARTS-2020"
     ],
+    "professors": [
+      "Robert Kyle Hamilton"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5170,11 +5682,12 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5195,6 +5708,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Brandon James Costelloe-Kuehn",
+      "Atsushi Akera",
+      "Jennifer Cardinal"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -5218,6 +5736,10 @@
     },
     "prerequisites": [
       "ARTS-2500"
+    ],
+    "professors": [
+      "Silvia Ruzanka",
+      "Michael L. Century"
     ],
     "properties": {
       "CI": true,
@@ -5243,8 +5765,9 @@
     "prerequisites": [
       "ECON-2020"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5266,6 +5789,11 @@
     },
     "prerequisites": [
       "ARTS-1200"
+    ],
+    "professors": [
+      "Caren Canier",
+      "Alisa Sikelianos-Carter",
+      "Monica A. Hughes"
     ],
     "properties": {
       "CI": false,
@@ -5291,6 +5819,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Christopher A. VerWys"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -5301,7 +5832,7 @@
   "Perspectives on Photography": {
     "ID": "2410",
     "cross listed": [],
-    "description": "This course helps students understand the meaning and emotional complexity of visual images in their culture. Students examine photographic imagery through three perspectives. The first—formal—addresses the design components of the image, such as vantage point and contrast. The second—psychodynamic—concerns the emotional dynamics of viewing. The third—social political— explores photographs as instruments for preserving or challenging cultural values. No technical knowledge of photography is needed.",
+    "description": "This course helps students understand the meaning and emotional complexity of visual images in their culture. Students examine photographic imagery through three perspectives. The firstformaladdresses the design components of the image, such as vantage point and contrast. The secondpsychodynamicconcerns the emotional dynamics of viewing. The thirdsocial political explores photographs as instruments for preserving or challenging cultural values. No technical knowledge of photography is needed.",
     "name": "Perspectives on Photography",
     "offered": {
       "even": false,
@@ -5313,6 +5844,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Ellen Esrock"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5335,6 +5869,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5359,6 +5894,7 @@
     "prerequisites": [
       "PHIL-2140"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5381,6 +5917,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5403,6 +5940,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "John R Milanese"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -5413,7 +5953,7 @@
   "Philosophy, Technology, & the Human Future": {
     "ID": "1130",
     "cross listed": [],
-    "description": "This course explores the philosophical and ethical implications of technological developments that promise to shape ‒ and perhaps to jeopardize ‒ human life and society in the 21st Century: Artificial Intelligence. Robots as social companions. Robots in military and medical settings. Cloning. Genetic modification and technological implants for superhuman abilities. Students will improve their insight as well as their critical reasoning skills as we examine, analyze, and evaluate such controversial topics through the lens of philosophical reasoning. Throughout the course we will ask what sort of beings do we want to be and what sort of society do we want to have.",
+    "description": "This course explores the philosophical and ethical implications of technological developments that promise to shape  and perhaps to jeopardize  human life and society in the 21st Century: Artificial Intelligence. Robots as social companions. Robots in military and medical settings. Cloning. Genetic modification and technological implants for superhuman abilities. Students will improve their insight as well as their critical reasoning skills as we examine, analyze, and evaluate such controversial topics through the lens of philosophical reasoning. Throughout the course we will ask what sort of beings do we want to be and what sort of society do we want to have.",
     "name": "Philosophy, Technology, & the Human Future",
     "offered": {
       "even": false,
@@ -5425,6 +5965,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -5447,9 +5988,10 @@
       "uia": false
     },
     "prerequisites": [
-      "STSH-2010",
-      "STSS-2010"
+      "STSS-2010",
+      "STSH-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5472,8 +6014,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -5494,6 +6037,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Holly A Traver"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5516,6 +6062,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Sarah Marsden Greene"
+    ],
     "properties": {
       "CI": false,
       "HI": true,
@@ -5538,6 +6087,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5560,6 +6110,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5582,6 +6133,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5604,6 +6156,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Michael J. Schoelles"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5629,6 +6184,9 @@
       "WRIT-1110",
       "COMM-2520"
     ],
+    "professors": [
+      "Lillian Carolyn Spina-Caza"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -5653,6 +6211,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Christopher A. VerWys"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -5675,8 +6236,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5699,6 +6261,7 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5723,6 +6286,7 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5750,6 +6314,10 @@
       "STSH-2500",
       "STSS-2100"
     ],
+    "professors": [
+      "Langdon Winner",
+      "Lawrence Eliot Howard"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5772,6 +6340,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5794,6 +6363,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [
+      "Maryanne Staniszewski"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -5816,6 +6388,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5838,6 +6411,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5860,6 +6434,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5884,6 +6459,7 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5906,6 +6482,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5928,6 +6505,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -5950,8 +6528,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -5972,8 +6551,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -5996,6 +6576,7 @@
     "prerequisites": [
       "COMM-2520"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6018,6 +6599,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Nicholas Jon De Maison",
+      "Andrew J. Burger"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6040,6 +6625,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Matthew J. Chamberlain",
+      "Nicholas Jon De Maison"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6062,6 +6651,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Abby J. Kinchy",
+      "Jennifer Cardinal"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6084,8 +6677,11 @@
       "uia": false
     },
     "prerequisites": [
-      "COGS-2120",
-      "PSYC-1200"
+      "PSYC-1200",
+      "COGS-2120"
+    ],
+    "professors": [
+      "Michael J Kalsher"
     ],
     "properties": {
       "CI": true,
@@ -6111,6 +6707,9 @@
     "prerequisites": [
       "PSYC-2310"
     ],
+    "professors": [
+      "Brett R. Fajen"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6133,8 +6732,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -6159,6 +6759,7 @@
     "prerequisites": [
       "STSS-2300"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6169,7 +6770,7 @@
   "Rethinking Documentary: Video Production": {
     "ID": "4040",
     "cross listed": [],
-    "description": "This is a production course investigating non-traditional approaches to documentary or non-fiction film/video. Taking a broad look at what defines \"documentary\" media, this course will incorporate criticism with production. Students will produce a range of video works questioning conventional documentary styles, using radical and interventionist techniques. Students will study traditional documentary works including ethnographic films, cinema verité, propaganda films, \"home movies,\" reality TV, tabloid news, autobiographic and activist videos.",
+    "description": "This is a production course investigating non-traditional approaches to documentary or non-fiction film/video. Taking a broad look at what defines \"documentary\" media, this course will incorporate criticism with production. Students will produce a range of video works questioning conventional documentary styles, using radical and interventionist techniques. Students will study traditional documentary works including ethnographic films, cinema verit, propaganda films, \"home movies,\" reality TV, tabloid news, autobiographic and activist videos.",
     "name": "Rethinking Documentary: Video Production",
     "offered": {
       "even": false,
@@ -6181,8 +6782,11 @@
       "uia": false
     },
     "prerequisites": [
-      "ARTS-1030",
-      "IHSS-1030"
+      "IHSS-1030",
+      "ARTS-1030"
+    ],
+    "professors": [
+      "Branda Miller"
     ],
     "properties": {
       "CI": false,
@@ -6207,6 +6811,10 @@
     },
     "prerequisites": [
       "ARTS-2340"
+    ],
+    "professors": [
+      "Brandon James Costelloe-Kuehn",
+      "Eddie Knowles"
     ],
     "properties": {
       "CI": false,
@@ -6234,6 +6842,10 @@
     "prerequisites": [
       "STSS-4980"
     ],
+    "professors": [
+      "Abby J. Kinchy",
+      "Jennifer Cardinal"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6258,6 +6870,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6280,8 +6893,11 @@
       "uia": false
     },
     "prerequisites": [
-      "IHSS-1030",
-      "ARTS-1020"
+      "ARTS-1020",
+      "IHSS-1030"
+    ],
+    "professors": [
+      "Kathryn High"
     ],
     "properties": {
       "CI": true,
@@ -6305,6 +6921,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "June Deery"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6327,8 +6946,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -6351,6 +6971,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Eric Drumheller Schaffer"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6375,6 +6998,7 @@
     "prerequisites": [
       "PHIL-1110"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6397,6 +7021,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Jefferson Wille Kielwagen"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6421,6 +7048,9 @@
     "prerequisites": [
       "ARTS-2210"
     ],
+    "professors": [
+      "Jefferson Wille Kielwagen"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6443,6 +7073,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6467,6 +7098,9 @@
     "prerequisites": [
       "ECON-4570"
     ],
+    "professors": [
+      "Kenneth L. Simons"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6489,6 +7123,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6513,6 +7148,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Jacquelyn G. Berry"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6525,7 +7163,7 @@
     "cross listed": [
       "COGS-4440"
     ],
-    "description": "\"Sensibilities\"—a special ART_X@Rensselaer (Art Across the Curriculum) seminar—draws from the tremendous resource of EMPAC to inspire students to cultivate writing skills through the cross-disciplinary theme of the senses/perception. During the semester students will have opportunities to observe unique art/science presentations and performances in an intimate setting at EMPAC, providing rich experiences for discussions and writing. Classes include reading science and art texts, as well as writing workshops to develop authorial voice and experimentation.",
+    "description": "\"Sensibilities\"a special ART_X@Rensselaer (Art Across the Curriculum) seminardraws from the tremendous resource of EMPAC to inspire students to cultivate writing skills through the cross-disciplinary theme of the senses/perception. During the semester students will have opportunities to observe unique art/science presentations and performances in an intimate setting at EMPAC, providing rich experiences for discussions and writing. Classes include reading science and art texts, as well as writing workshops to develop authorial voice and experimentation.",
     "name": "Sensibilities",
     "offered": {
       "even": true,
@@ -6539,6 +7177,9 @@
     "prerequisites": [
       "IHSS-1150",
       "PSYC-1200"
+    ],
+    "professors": [
+      "Alicia Ann Walf"
     ],
     "properties": {
       "CI": true,
@@ -6566,6 +7207,7 @@
     "prerequisites": [
       "STSS-2520"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6590,8 +7232,12 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Holly A Traver",
+      "Christopher A. VerWys"
+    ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -6612,6 +7258,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Miciah Z. Yehudah",
+      "Michael E Stanford",
+      "Eric Drumheller Schaffer"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6634,6 +7285,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Ying Liu",
+      "Peter A Fox"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6656,8 +7311,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -6678,6 +7334,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6702,6 +7359,7 @@
     "prerequisites": [
       "ARTS-2700"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6724,6 +7382,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6746,6 +7405,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Terry W. Gipson"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6770,6 +7432,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Christopher L Hubbell"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6792,6 +7457,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "David Stephen Gerstle",
+      "Sarah Virginia Seeley",
+      "Skye Anicca"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6818,6 +7488,9 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Alicia Ann Walf"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6842,6 +7515,9 @@
     "prerequisites": [
       "ECON-2010"
     ],
+    "professors": [
+      "Kenneth L. Simons"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6864,6 +7540,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6886,6 +7563,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6908,6 +7586,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kenneth A. Ragsdale"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6932,6 +7613,7 @@
     "prerequisites": [
       "STSS-2300"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -6954,6 +7636,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Jennifer Cardinal",
+      "Eric Drumheller Schaffer"
+    ],
     "properties": {
       "CI": true,
       "HI": true,
@@ -6978,6 +7664,9 @@
     "prerequisites": [
       "STSS-2300"
     ],
+    "professors": [
+      "Brandon James Costelloe-Kuehn"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -6988,7 +7677,7 @@
   "Sustainability Problems": {
     "ID": "4270",
     "cross listed": [],
-    "description": "In this course, students will map the matrix of problems that make sustainability difficult – problems with the U.S. political, legal, and educational system, with media, culture, and individual behavior. Students will also identify sustainability pathways in transportation, urban design, education, alternative energy, etc. Throughout, students will analyze and try to produce effective environmental communication.",
+    "description": "In this course, students will map the matrix of problems that make sustainability difficult  problems with the U.S. political, legal, and educational system, with media, culture, and individual behavior. Students will also identify sustainability pathways in transportation, urban design, education, alternative energy, etc. Throughout, students will analyze and try to produce effective environmental communication.",
     "name": "Sustainability Problems",
     "offered": {
       "even": false,
@@ -7000,8 +7689,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7024,6 +7714,7 @@
     "prerequisites": [
       "STSS-2300"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7046,6 +7737,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -7068,8 +7760,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -7090,6 +7783,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -7114,8 +7808,9 @@
     "prerequisites": [
       "COGS-2340"
     ],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7136,6 +7831,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Kathleen A. Galloway",
+      "Maryanne Staniszewski"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7158,6 +7857,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7180,6 +7880,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7202,8 +7903,9 @@
       "uia": true
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7224,8 +7926,13 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Rui Fan",
+      "Vivek Ghosal",
+      "Michael A. Klein"
     ],
     "properties": {
       "CI": false,
@@ -7249,6 +7956,10 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Maurice W Suckling",
+      "Sylvain Payen"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7271,6 +7982,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -7293,6 +8005,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Yalun Zhou"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7315,8 +8030,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Rebecca M. Hamilton"
+    ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -7337,6 +8055,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7361,8 +8080,11 @@
     "prerequisites": [
       "PSYC-1200"
     ],
+    "professors": [
+      "Holly A Traver"
+    ],
     "properties": {
-      "CI": false,
+      "CI": true,
       "HI": false,
       "major_restricted": false
     },
@@ -7383,6 +8105,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Brandon James Costelloe-Kuehn"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7405,6 +8130,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7427,6 +8153,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7449,6 +8176,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7473,6 +8201,7 @@
     "prerequisites": [
       "ARTS-4380"
     ],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7495,6 +8224,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Sara L. Tack"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7517,6 +8249,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Alicia Ann Walf",
+      "Holly A Traver",
+      "Marjorie McShane"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7539,6 +8276,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7561,6 +8299,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Sara L. Tack"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7583,6 +8324,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Patricia Search"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7605,8 +8349,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -7627,6 +8372,7 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
       "CI": false,
       "HI": true,
@@ -7650,6 +8396,9 @@
     },
     "prerequisites": [
       "ITWS-2110"
+    ],
+    "professors": [
+      "Brian Robert Callahan"
     ],
     "properties": {
       "CI": false,
@@ -7675,6 +8424,10 @@
     "prerequisites": [
       "ITWS-1100"
     ],
+    "professors": [
+      "Thilanka Munasinghe",
+      "Brian Robert Callahan"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -7685,7 +8438,7 @@
   "Well-being: Cultivating Curiosity": {
     "ID": "1175",
     "cross listed": [],
-    "description": "How do people maintain a sense of well-being in their lives? Each person's path to well-being in body and mind is unique—arising from an awareness of our needs, goals and what each finds fulfilling. The theme of curiosity will be used to explore what makes people tick, what makes them feel balanced, stressed, or calm. This interdisciplinary course uses practice-based learning, in-class writing, lectures, creative play, and reading.",
+    "description": "How do people maintain a sense of well-being in their lives? Each person's path to well-being in body and mind is uniquearising from an awareness of our needs, goals and what each finds fulfilling. The theme of curiosity will be used to explore what makes people tick, what makes them feel balanced, stressed, or calm. This interdisciplinary course uses practice-based learning, in-class writing, lectures, creative play, and reading.",
     "name": "Well-being: Cultivating Curiosity",
     "offered": {
       "even": false,
@@ -7697,8 +8450,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": true,
       "major_restricted": false
     },
@@ -7719,8 +8473,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7741,8 +8496,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7751,7 +8507,7 @@
   "Writing and Directing for Video": {
     "ID": "4630",
     "cross listed": [],
-    "description": "The course introduces students to the art of writing and directing short videos, with an emphasis on generating ideas, and realizing them in a well-developed final project. Major theories and principles are studied through a comparative analysis of scripts and films. Students learn to work with actors, write their own scripts, and direct videos. Two final projects – a script and a video – will integrate all of the elements covered in class. Lecture/Practicum.",
+    "description": "The course introduces students to the art of writing and directing short videos, with an emphasis on generating ideas, and realizing them in a well-developed final project. Major theories and principles are studied through a comparative analysis of scripts and films. Students learn to work with actors, write their own scripts, and direct videos. Two final projects  a script and a video  will integrate all of the elements covered in class. Lecture/Practicum.",
     "name": "Writing and Directing for Video",
     "offered": {
       "even": false,
@@ -7764,6 +8520,9 @@
     },
     "prerequisites": [
       "ARTS-1030"
+    ],
+    "professors": [
+      "Elizabeth Press"
     ],
     "properties": {
       "CI": false,
@@ -7787,8 +8546,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },
@@ -7809,8 +8569,11 @@
       "uia": false
     },
     "prerequisites": [
-      "WRIT-2330",
-      "GSAS-2520"
+      "GSAS-2520",
+      "WRIT-2330"
+    ],
+    "professors": [
+      "Maurice W Suckling"
     ],
     "properties": {
       "CI": true,
@@ -7836,6 +8599,9 @@
     "prerequisites": [
       "COMM-4240"
     ],
+    "professors": [
+      "Maurice W Suckling"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7858,6 +8624,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Lillian Carolyn Spina-Caza"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7868,7 +8637,7 @@
   "Writing in Context": {
     "ID": "1110",
     "cross listed": [],
-    "description": "This course will help you experience the power of language and learn how to develop that power as you become more aware of your communicative choices. You will write for several genres, both formal and informal, creating each piece for a specific audience and purpose. You will learn to communicate effectively—orally, visually, and in writing—in a wide range of situations that will be crucial to success in your academic and professional careers.",
+    "description": "This course will help you experience the power of language and learn how to develop that power as you become more aware of your communicative choices. You will write for several genres, both formal and informal, creating each piece for a specific audience and purpose. You will learn to communicate effectivelyorally, visually, and in writingin a wide range of situations that will be crucial to success in your academic and professional careers.",
     "name": "Writing in Context",
     "offered": {
       "even": false,
@@ -7880,6 +8649,11 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Sarah Virginia Seeley",
+      "Barbara J Lewis",
+      "Weina Ran"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -7902,6 +8676,9 @@
       "uia": false
     },
     "prerequisites": [],
+    "professors": [
+      "Thilanka Munasinghe"
+    ],
     "properties": {
       "CI": false,
       "HI": false,

@@ -9,6 +9,8 @@ import FromClassesPage from '../pages/FromClasses/FromClassesPage.vue'
 import FromClassesPathways from '../pages/FromClasses/FromClassesPathways.vue'
 import AboutPage from '../pages/About/AboutPage.vue'
 import AdvancedSearchPage from '../pages/AdvancedSearch/AdvancedSearchPage.vue'
+import CoursesPage from '../pages/Courses/CoursesPage.vue'
+import CoursePage from '../pages/Courses/CoursePage.vue'
 // import AdminHomePage from '../pages/AdminPortal/AdminHomePage.vue'
 // import AdminCoursePage from '../pages/AdminPortal/AdminCoursePage.vue'
 // import AdminPathwayPage from '../pages/AdminPortal/AdminPathwayPage.vue'
@@ -58,6 +60,16 @@ export default new Router({
             path: '/search-classes',
             name: 'search-classes',
             component: AdvancedSearchPage
+        },
+        {
+            path: '/courses',
+            name: 'courses',
+            component: CoursesPage
+        },
+        {
+            path: '/course',
+            name: 'course',
+            component: CoursePage
         },
         // {
         //     path: '/admin-portal',

@@ -13,7 +13,6 @@ if __name__ == "__main__":
     years = years[:4]
     all_courses = courses_scraper.scrape_courses()
 
-    print("Started scraping CI courses")
     for year in tqdm(years):
         path = '../../frontend/src/data/json/' + str(year)
         try:
@@ -24,10 +23,9 @@ if __name__ == "__main__":
         f = open(path + '/courses.json', 'w')
         json.dump(all_courses[year], f, sort_keys=True, indent=2, ensure_ascii=False)
         f.close()
-        split_years = [year[:4], year[5:]]
-        asyncio.run(sis_scraper.scrape_CI(split_years[0], "fall", path + '/courses.json'))
-        asyncio.run(sis_scraper.scrape_CI(split_years[1], "spring", path + '/courses.json'))
-        asyncio.run(sis_scraper.scrape_CI(split_years[1], "summer", path + '/courses.json'))
+
+    print("Started scraping CI courses")
+    asyncio.run(sis_scraper.scrape_CI(years, '../../frontend/src/data/json/'))
     print("Finished scraping CI courses")
 
     all_pathways = pathway_scraper.scrape_pathways()

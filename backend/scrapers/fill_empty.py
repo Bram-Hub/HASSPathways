@@ -29,7 +29,7 @@ async def get_details(course, year):
             fall = False
 
         async with session.post(
-                "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?",
+                "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse",
                 data = f"term_in={spring}&subj_in={course[1][:4]}&crse_in={course[1][-4:]}&schd_in=L"
         ) as request:
             html = await request.text()
@@ -42,7 +42,7 @@ async def get_details(course, year):
             spring = False
 
         async with session.post(
-                "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?",
+                "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse",
                 data = f"term_in={summer}&subj_in={course[1][:4]}&crse_in={course[1][-4:]}&schd_in=L"
         ) as request:
             html = await request.text()
@@ -76,6 +76,7 @@ async def get_details(course, year):
                       "text": ""
                     },
                     "prerequisites": [],
+                    "professors": [],
                     "properties": {
                       "CI": True if "Communication Intensive" in attr else False,
                       "HI": True if "HASS Inquiry" in attr else False,
