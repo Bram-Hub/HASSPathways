@@ -48,7 +48,7 @@
                                     <v-col>
                                         <v-checkbox
                                             v-model="searchFall"
-                                            label="Fall"
+                                            label="FALL"
                                         />
                                     </v-col>
                                     <v-col>

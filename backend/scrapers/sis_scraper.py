@@ -99,7 +99,9 @@ async def scrape_CI(years, folder_path):
             for course in courses:
                 dets = await get_details(courses[course]['ID'], courses[course]['subj'], year, session)
                 courses[course]['properties']['CI'] = dets[0]
+
                 courses[course]['professors'] = list(dets[1])
         f2 = open(folder_path + year + '/courses.json', 'w')
         json.dump(courses, f2, sort_keys=True, indent=2, ensure_ascii=False)
         f2.close()
+
