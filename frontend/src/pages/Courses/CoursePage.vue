@@ -127,7 +127,7 @@ export default {
             let tmpPanel = []
             for (let i = 0; i < this.course.professors.length; i++) {
                 if (i == prof)
-                    tmpPanel.push([...Array(this.profSec[this.course.professors[prof]].length).keys()].map((k,i) => i));
+                    tmpPanel.push([...Array(this.profSec[this.course.professors[prof]].length).keys()].map((_k,i) => i));
                 else
                     tmpPanel.push(this.panel[i]);
             }
