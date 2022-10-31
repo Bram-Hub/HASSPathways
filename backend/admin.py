@@ -1,6 +1,6 @@
 from crypt import methods
 from unicodedata import name
-from flask import Flask, request, json, jsonify, session, redirect, url_for
+from flask import Flask, request, json, jsonify, session, redirect, url_for, render_template
 from flask_cors import CORS, cross_origin
 from cas import CASClient
 import flask
@@ -63,15 +63,16 @@ def editAdmin():
 
 @app.route('/test', methods=["GET"])
 def test():
-        test = dict()
-        test["name"] = "HASS PATHWAYS"
-        #test["version"] = Flask.__version__
-        test["version"] = flask.__version__
-        test["API"] = "API"
-        test["documentation"] = "API INFO PAGE handles data requests." \
-        " Edit upadtes information of the course. Login Page takes in a username and password and check to make sure it is valid. Guard is used to test if the server works for a user "
-        return test
-        # return render_template('name of file')
+        # test = dict()
+        # test["name"] = "HASS PATHWAYS"
+        # test["version"] = flask.__version__
+        # test["API"] = "API"
+        # test["documentation"] = "API INFO PAGE handles data requests." \
+        # "Edit upadtes information of the course. Login Page takes in a"\
+        # "username and password and check to make sure it is valid. Guard is "\
+        # "used to test if the server works for a user "
+        # return test
+        return render_template("admin.html")
 
 if __name__ == '__main__':
         app.run(host='0.0.0.0', debug=True)
