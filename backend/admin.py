@@ -63,15 +63,6 @@ def editAdmin():
 
 @app.route('/test', methods=["GET"])
 def test():
-        # test = dict()
-        # test["name"] = "HASS PATHWAYS"
-        # test["version"] = flask.__version__
-        # test["API"] = "API"
-        # test["documentation"] = "API INFO PAGE handles data requests." \
-        # "Edit upadtes information of the course. Login Page takes in a"\
-        # "username and password and check to make sure it is valid. Guard is "\
-        # "used to test if the server works for a user "
-        # return test
         return render_template("admin.html")
 
 if __name__ == '__main__':
