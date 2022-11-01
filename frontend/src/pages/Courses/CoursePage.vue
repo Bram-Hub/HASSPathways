@@ -10,7 +10,6 @@
             <ul>
                 <li v-for="(prof, index) in course.professors" :key="prof">
                     <h4> {{prof}} </h4>
-                    Rate my Professor link:
                     <div v-if="profSec[prof].length !== 0" class="open-close-btn">
                         <v-btn @click="all(index)">
                             expand
