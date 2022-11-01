@@ -72,6 +72,16 @@ export default new Router({
             component: CoursePage
         },
         // {
+        //     path: '/courses',
+        //     name: 'courses',
+        //     component: CoursesPage
+        // },
+        // {
+        //     path: '/course',
+        //     name: 'course',
+        //     component: CoursePage
+        // },
+        // {
         //     path: '/admin-portal',
         //     name: 'admin-portal',
         //     component: AdminHomePage
