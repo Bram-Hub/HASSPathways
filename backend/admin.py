@@ -1,7 +1,10 @@
-from flask import Flask, request, json, jsonify, session, redirect, url_for
+from crypt import methods
+from unicodedata import name
+from flask import Flask, request, json, jsonify, session, redirect, url_for, render_template
 from flask_cors import CORS, cross_origin
 from cas import CASClient
-
+import flask
+flask.__version__
 app = Flask(__name__)
 c = CORS(app)
 CORS(app, resources={r'/*': {'origins': '*'}},CORS_SUPPORTS_CREDENTIALS = True)
@@ -58,5 +61,9 @@ def editAdmin():
 
         return jsonify(response)
 
+@app.route('/test', methods=["GET"])
+def test():
+        return render_template("admin.html")
+
 if __name__ == '__main__':
-        app.run(host='0.0.0.0')
+        app.run(host='0.0.0.0', debug=True)

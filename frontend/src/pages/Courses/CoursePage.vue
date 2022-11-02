@@ -54,7 +54,6 @@ import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import CourseTableModifiers from '../../components/CourseTableModifiers'
 
-
 export default {
     components: {
         Breadcrumbs,

@@ -158,7 +158,7 @@ export default {
                 }
                 //Check if there is data for the course
                 if (this.advanced_search.length > 0 && !tempCourses[course].hasData) {
-                    continue
+                    continue;
                 }
                 //Check fall
                 if (this.advanced_search.includes("Fall") && !tempCourses[course].offered.fall) {
@@ -172,7 +172,7 @@ export default {
                 if (this.advanced_search.includes("Summer") && !tempCourses[course].offered.summer) {
                     continue;
                 }
-                 if (this.advanced_search.includes("HI") && !tempCourses[course].properties.HI) {
+                if (this.advanced_search.includes("HI") && !tempCourses[course].properties.HI) {
                     continue;
                  }
                 //check prereq

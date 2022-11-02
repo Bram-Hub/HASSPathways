@@ -4655,7 +4655,7 @@
       "Michael L. Century"
     ],
     "properties": {
-      "CI": true,
+      "CI": false,
       "HI": false,
       "major_restricted": false
     },

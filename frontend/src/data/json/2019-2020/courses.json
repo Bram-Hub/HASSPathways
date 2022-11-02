@@ -21,6 +21,9 @@
     "professors": [
       "Nathan Scott Meltz"
     ],
+    "professors": [
+      "Nathan Scott Meltz"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -435,6 +438,9 @@
     "professors": [
       "Silvia Ruzanka"
     ],
+    "professors": [
+      "Silvia Ruzanka"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -467,8 +473,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "professors": [],
     "properties": {
@@ -735,8 +741,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "professors": [],
     "properties": {
@@ -762,9 +768,9 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
       "PSYC-2310",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "professors": [],
     "properties": {
@@ -1194,6 +1200,9 @@
     "professors": [
       "Alicia Ann Walf"
     ],
+    "professors": [
+      "Alicia Ann Walf"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -1258,6 +1267,9 @@
       "PSYC-1200",
       "PSYC-4370",
       "PSYC-2120"
+    ],
+    "professors": [
+      "Michael J. Schoelles"
     ],
     "professors": [
       "Michael J. Schoelles"
@@ -2270,8 +2282,8 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "professors": [],
     "properties": {
@@ -2802,9 +2814,9 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
       "PSYC-2310",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "professors": [],
     "properties": {
@@ -2876,8 +2888,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "professors": [],
     "properties": {
@@ -2903,8 +2915,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "professors": [],
     "properties": {
@@ -2930,8 +2942,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "professors": [],
     "properties": {
@@ -2957,8 +2969,11 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Vivek Ghosal"
     ],
     "professors": [
       "Vivek Ghosal"
@@ -2995,8 +3010,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "professors": [],
     "properties": {
@@ -3022,8 +3037,11 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Faye Duchin"
     ],
     "professors": [
       "Faye Duchin"
@@ -3167,8 +3185,11 @@
       "uia": false
     },
     "prerequisites": [
-      "STSH-1110",
-      "STSS-1110"
+      "STSS-1110",
+      "STSH-1110"
+    ],
+    "professors": [
+      "Eric Drumheller Schaffer"
     ],
     "professors": [
       "Eric Drumheller Schaffer"
@@ -4060,8 +4081,11 @@
       "uia": true
     },
     "prerequisites": [
-      "STSH-1110",
-      "STSS-1110"
+      "STSS-1110",
+      "STSH-1110"
+    ],
+    "professors": [
+      "Eric Drumheller Schaffer"
     ],
     "professors": [
       "Eric Drumheller Schaffer"
@@ -4288,8 +4312,8 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "professors": [],
     "properties": {
@@ -4921,6 +4945,9 @@
     "professors": [
       "Richard M. Plotka"
     ],
+    "professors": [
+      "Richard M. Plotka"
+    ],
     "properties": {
       "CI": true,
       "HI": false,
@@ -5335,8 +5362,13 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Faye Duchin",
+      "Mina Mahmoudi",
+      "Yury Yatsynovich"
     ],
     "professors": [
       "Mina Mahmoudi",
@@ -6071,9 +6103,9 @@
       "uia": false
     },
     "prerequisites": [
-      "STSH-1110",
       "IHSS-1110",
-      "STSS-1110"
+      "STSS-1110",
+      "STSH-1110"
     ],
     "professors": [],
     "properties": {
@@ -6230,8 +6262,11 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Robert W. Jones"
     ],
     "professors": [
       "Robert W. Jones"
@@ -6819,8 +6854,11 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Sarah Marsden Greene"
     ],
     "professors": [
       "Sarah Marsden Greene"
@@ -7113,8 +7151,8 @@
       "uia": true
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
     ],
     "professors": [],
     "properties": {
@@ -7191,6 +7229,10 @@
     "professors": [
       "Michael L. Century",
       "Silvia Ruzanka"
+    ],
+    "professors": [
+      "Silvia Ruzanka",
+      "Michael L. Century"
     ],
     "properties": {
       "CI": true,
@@ -7724,6 +7766,9 @@
       "COMM-2520",
       "WRIT-2110",
       "WRIT-1110"
+    ],
+    "professors": [
+      "Lillian Carolyn Spina-Caza"
     ],
     "professors": [
       "Lillian Carolyn Spina-Caza"
@@ -9220,6 +9265,9 @@
     "professors": [
       "Christopher L Hubbell"
     ],
+    "professors": [
+      "Christopher L Hubbell"
+    ],
     "properties": {
       "CI": false,
       "HI": false,
@@ -9792,8 +9840,13 @@
       "uia": false
     },
     "prerequisites": [
-      "ECON-1200",
-      "IHSS-1200"
+      "IHSS-1200",
+      "ECON-1200"
+    ],
+    "professors": [
+      "Jason Ung Huh",
+      "Vivek Ghosal",
+      "Michael A. Klein"
     ],
     "professors": [
       "Vivek Ghosal",
@@ -10573,8 +10626,11 @@
       "uia": false
     },
     "prerequisites": [
-      "WRIT-2330",
-      "GSAS-2520"
+      "GSAS-2520",
+      "WRIT-2330"
+    ],
+    "professors": [
+      "Maurice W Suckling"
     ],
     "professors": [
       "Maurice W Suckling"
