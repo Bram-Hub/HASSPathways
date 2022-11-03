@@ -36,12 +36,11 @@
                         <span
                             v-if="index == 1"
                             class="grey--text text-caption"
-                    >
+                        >
                             (+{{ advanced_search.length - 1 }} others)
                         </span>
                     </template>
                 </v-select> 
-
             </div>
         </v-card>
         <div :class="{graphContainer: graph}">
@@ -109,9 +108,10 @@ export default {
         }
     },
     data() {
-        return {    advanced_search: [],
-                    search: '' ,
-                    sort_dropbox: ['Fall', 'Spring', 'Summer', 'CI','HI', 'No Prerequistes'],
+        return {    
+            advanced_search: [],
+            search: '' ,
+            sort_dropbox: ['Fall', 'Spring', 'Summer', 'CI','HI', 'No Prerequistes'],
         }
     },
     // watch: {
@@ -174,7 +174,7 @@ export default {
                 }
                 if (this.advanced_search.includes("HI") && !tempCourses[course].properties.HI) {
                     continue;
-                 }
+                }
                 //check prereq
                 if (this.advanced_search.includes("No Prerequistes") && tempCourses[course].prerequisites.length != 0) {
                     continue;

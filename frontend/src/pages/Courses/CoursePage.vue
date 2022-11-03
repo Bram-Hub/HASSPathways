@@ -9,7 +9,7 @@
             <h2>Professors:</h2>
             <ul>
                 <li v-for="(prof, index) in course.professors" :key="prof">
-                    <h4> {{prof}} </h4>
+                    <h4> {{ prof }} </h4>
                     <div v-if="profSec[prof].length !== 0" class="open-close-btn">
                         <v-btn @click="all(index)">
                             expand

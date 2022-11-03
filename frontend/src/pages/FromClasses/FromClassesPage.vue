@@ -189,13 +189,17 @@
 
                     <!-- Override default row HTMl so we can add ripples + custom click stuff -->
                     <template #item="{ item, isSelected, select }">
-                        <tr v-ripple
+                        <tr 
+                            v-ripple
                             :class="'table-row ' + (isSelected ? 'table-row_selected' : '')"
-                            @click="rowClick(item, select, isSelected)">
+                            @click="rowClick(item, select, isSelected)"
+                        >
                             <td>
-                                <v-simple-checkbox v-ripple color="primary"
-                                                   :value="isSelected"
-                                                   @input="rowClick(item, select, isSelected)" />
+                                <v-simple-checkbox 
+                                    v-ripple color="primary"
+                                    :value="isSelected"
+                                    @input="rowClick(item, select, isSelected)" 
+                                />
                             </td>
 
                             <td>{{ item.identifier }}</td>
