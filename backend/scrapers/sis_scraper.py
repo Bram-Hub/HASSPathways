@@ -19,7 +19,7 @@ async def get_details(ID, subj, curr_year, session):
         new_year = str(int(curr_year[0:4])+i) + str(int(curr_year[-4:])+i)
         years.append(new_year)
 
-    dets = [False, set()]
+    dets = [False, '', set()]
 
     for year in years:
         fall = str(year[0:4]) + '09'
@@ -69,6 +69,16 @@ async def get_details(ID, subj, curr_year, session):
         if full_soup == None:
             return dets
 
+        headers = full_soup.findAll("th", {
+            "class": "ddtitle",
+            "scope": "colgroup",
+        })
+
+        for header in headers:
+            link = header.find("a").get('href')
+            print(link[-5:])
+            dets[1] = link[-5:]
+
         times = full_soup.findAll("table", {
             "class": "datadisplaytable",
             "summary": "This table lists the scheduled meeting times and assigned instructors for this class..",
@@ -79,7 +89,7 @@ async def get_details(ID, subj, curr_year, session):
             instructor = split_up[6].split('(')[0]
             instructor = re.sub(' +', ' ', instructor).strip()
             if instructor != "TBA":
-                dets[1].add(instructor)
+                dets[2].add(instructor)
 
         search = r"""<span class="fieldlabeltext">Attributes: </span>(.*?)\n<br/>"""
         attribute = re.search(search, str(full_soup))
@@ -100,7 +110,8 @@ async def scrape_CI(years, folder_path):
                 dets = await get_details(courses[course]['ID'], courses[course]['subj'], year, session)
                 courses[course]['properties']['CI'] = dets[0]
 
-                courses[course]['professors'] = list(dets[1])
+                courses[course]['professors'] = list(dets[2])
+                courses[course]['crn'] = dets[1]
         f2 = open(folder_path + year + '/courses.json', 'w')
         json.dump(courses, f2, sort_keys=True, indent=2, ensure_ascii=False)
         f2.close()
