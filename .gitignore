@@ -7,3 +7,4 @@ package.json
 frontend/package-lock.json
 backend/scrapers/__pycache__/
 *.pyc
+frontend/src/pages/temp.json

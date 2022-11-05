@@ -63,7 +63,6 @@
                         Advanced course search
                     </v-btn>
                 </div>
-                
                 <div class="homepage-btn">
                     <v-btn
                         x-large
