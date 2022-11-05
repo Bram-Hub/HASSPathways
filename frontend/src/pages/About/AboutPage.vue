@@ -17,44 +17,23 @@
             </div>
             <div>
                 <!-- allows you to make a 'set' of dropdowns -->
-                <v-expansion-panels v-model="panel" multiple focusable>
+                <v-expansion-panels v-model="panel"
+                                    multiple focusable>
                     <!-- example of adding a new dropdown menu -->
                     <!-- starts one new dropdown -->
-                    <v-expansion-panel>
-                        <v-expansion-panel-header> Do I need to take an IHSS course for my pathway? </v-expansion-panel-header> <!-- 'question' goes here -->
+                    <v-expansion-panel
+                                       v-for="(q,a) in faqs"
+                                       :key="q">
+                        <v-expansion-panel-header>
+                            <!-- 'question' goes here -->
+                            {{q}}
+                        </v-expansion-panel-header>
                         <v-expansion-panel-content> 
                             <!-- answer goes in here -->
-                            Taking an IHSS course is not a requirement for pathways, but for the overall HASS requirement. Although some pathways might require a specific IHSS course.
+                            {{a}}
                         </v-expansion-panel-content> 
                     </v-expansion-panel> 
                     <!-- end of example-->
-                    <v-expansion-panel>
-                        <v-expansion-panel-header> Do I need to take a 4000 level course for my pathway? </v-expansion-panel-header>
-                        <v-expansion-panel-content> 
-                            Check the individual pathway requirements. Some pathways might require one course to be 4000 level and some might not.
-                        </v-expansion-panel-content> 
-                    </v-expansion-panel> 
-
-                    <v-expansion-panel>
-                        <v-expansion-panel-header> Do I need to take a communication intensive course for my pathway? </v-expansion-panel-header>
-                        <v-expansion-panel-content> 
-                            This is not a requirement for the pathways.
-                        </v-expansion-panel-content> 
-                    </v-expansion-panel>
-
-                    <v-expansion-panel>
-                        <v-expansion-panel-header> Am I allowed to come up with my own pathway? </v-expansion-panel-header>
-                        <v-expansion-panel-content>
-                            Students are not allowed to create their own pathway.
-                        </v-expansion-panel-content> 
-                    </v-expansion-panel>
-                    
-                    <v-expansion-panel>
-                        <v-expansion-panel-header> Can my pathway courses count towards a minor? </v-expansion-panel-header>
-                        <v-expansion-panel-content> 
-                            Yes, lots of pathways even have an associated minor which sometimes might only require one more course to achieve.
-                        </v-expansion-panel-content> 
-                    </v-expansion-panel>
                 </v-expansion-panels>
             </div>
         </v-container>
@@ -62,34 +41,48 @@
 </template>
     
 <script>
-import Breadcrumbs from '../../components/Breadcrumbs'
-import breadcrumbs from '../../data/breadcrumbs.js'
-export default {
-    components: {
-        Breadcrumbs
-    },
-    data () {
-        return {
-            breadcrumbs: breadcrumbs.about_page,
-            panel: [],
-            items: 5, /* TODO: make this number dymanic, it should be the number of dropdown menus but I can't figure that out atm */
-            /* currently, there are 5 dropdowns (questions) so its fine, but if more questions are added the open/close all buttons will not work as intended */
-        }
-    },
-    // full disclosure that this code was taken from the vue documentation
-    // https://vuetify.cn/en/components/expansion-panels/
-    methods: {
-        // Create an array the length of the items
-        // with all values as true
-        all () {
-            this.panel = [...Array(this.items).keys()].map((k, i) => i)
+    import Breadcrumbs from '../../components/Breadcrumbs'
+    import breadcrumbs from '../../data/breadcrumbs.js'
+    import axios from 'axios'
+
+    export default {
+        components: {
+            Breadcrumbs
         },
-        // Reset the panel
-        none () {
-            this.panel = []
+        data() {
+            const route = 'http://129.161.208.121:5000/faqs'
+            var get_faqs = {}
+            axios.post(route).then(res => {
+                get_faqs = res.data
+                console.log(get_faqs);
+            })
+            return {
+                breadcrumbs: breadcrumbs.about_page,
+                panel: [],
+                faqs: get_faqs
+            }
         },
-    },
-}
+        //get_faqs() {
+        //    const route = 'http://129.161.208.121:5000/faqs'
+        //    axios.post(route).then(res => {
+        //        return res.data
+        //    });
+        //},
+
+        // full disclosure that this code was taken from the vue documentation
+        // https://vuetify.cn/en/components/expansion-panels/
+        methods: {
+            // Create an array the length of the items
+            // with all values as true
+            all() {
+                this.panel = [...Array(this.items).keys()].map((k, i) => i)
+            },
+            // Reset the panel
+            none() {
+                this.panel = []
+            }
+        },
+    }
 </script>
 
 <style scoped>
