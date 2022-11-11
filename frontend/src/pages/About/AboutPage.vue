@@ -16,11 +16,9 @@
                 </v-btn>
             </div>
             <div>
-                <!-- allows you to make a 'set' of dropdowns -->
+                <!-- List of all asked questions fetched from backend -->
                 <v-expansion-panels v-model="panel"
                                     multiple focusable>
-                    <!-- example of adding a new dropdown menu -->
-                    <!-- starts one new dropdown -->
                     <v-expansion-panel
                                        v-for="(a, q) in faqs"
                                        :key="a">
@@ -33,7 +31,6 @@
                             {{a}}
                         </v-expansion-panel-content> 
                     </v-expansion-panel> 
-                    <!-- end of example-->
                 </v-expansion-panels>
             </div>
         </v-container>
@@ -68,7 +65,7 @@
             // with all values as true
             all() {
                 let n_questions = Object.keys(this.faqs).length;
-                this.panel = [...Array(n_questions).keys()];
+                this.panel = [...Array(n_questions).keys()];    //form a list [0, 1, ... number of questions-1]
             },
             // Reset the panel
             none() {
@@ -103,4 +100,3 @@
   padding: 10px !important;
 }
 </style>
-
