@@ -22,8 +22,8 @@
                     <!-- example of adding a new dropdown menu -->
                     <!-- starts one new dropdown -->
                     <v-expansion-panel
-                                       v-for="(q,a) in faqs"
-                                       :key="q">
+                                       v-for="(a, q) in faqs"
+                                       :key="a">
                         <v-expansion-panel-header>
                             <!-- 'question' goes here -->
                             {{q}}
@@ -44,30 +44,22 @@
     import Breadcrumbs from '../../components/Breadcrumbs'
     import breadcrumbs from '../../data/breadcrumbs.js'
     import axios from 'axios'
+    import Vue from 'vue'
+
+    axios.defaults.baseURL = 'http://129.161.36.233:5000'
+    Vue.prototype.$ajax = axios
 
     export default {
         components: {
             Breadcrumbs
         },
         data() {
-            const route = 'http://129.161.208.121:5000/faqs'
-            var get_faqs = {}
-            axios.post(route).then(res => {
-                get_faqs = res.data
-                console.log(get_faqs);
-            })
             return {
                 breadcrumbs: breadcrumbs.about_page,
                 panel: [],
-                faqs: get_faqs
+                faqs: {},
             }
         },
-        //get_faqs() {
-        //    const route = 'http://129.161.208.121:5000/faqs'
-        //    axios.post(route).then(res => {
-        //        return res.data
-        //    });
-        //},
 
         // full disclosure that this code was taken from the vue documentation
         // https://vuetify.cn/en/components/expansion-panels/
@@ -75,13 +67,22 @@
             // Create an array the length of the items
             // with all values as true
             all() {
-                this.panel = [...Array(this.items).keys()].map((k, i) => i)
+                let n_questions = Object.keys(this.faqs).length;
+                this.panel = [...Array(n_questions).keys()];
             },
             // Reset the panel
             none() {
-                this.panel = []
+                this.panel = [];
+            },
+            getFaqs() {
+                this.$ajax.get('/faqs', {}).then(res => {
+                    this.faqs = res.data.questions;
+                })
             }
         },
+        mounted() {
+            this.getFaqs();
+        }
     }
 </script>
 
