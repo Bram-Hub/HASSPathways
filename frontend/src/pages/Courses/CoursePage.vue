@@ -17,7 +17,6 @@
                         <v-btn @click="none(index)">
                             close
                         </v-btn>
-
                         <v-expansion-panels v-model="panel[index]" multiple>
                             <v-expansion-panel v-for="sec in profSec[prof]" :key="sec">
                                 <v-expansion-panel-header>Section information</v-expansion-panel-header>
@@ -39,6 +38,16 @@
         </template>
         <template v-else>
             <h3>This class is not providing in the current semester</h3>
+        </template>
+        <template>
+        <h3>Leave your comment for this class: </h3>
+            <input type = "text" placeholder = "Your comment" v-model = "comment"/>
+            <button type = "button" v-on:click = "getData()"> Comment it </button >
+        </template>
+        <template>
+            <li v-for="a in comments" v-bind:key = "a">
+                {{a}}
+            </li>
         </template>
         <CourseTableModifiers
             class="mt-4 class-card__subtitle__modifiers"
@@ -62,7 +71,9 @@ export default {
     data() {
         return {
             coursesData: {},
-            panel: [] 
+            panel: [],
+            comments: [],
+            comment: ""
         }
     },
     computed: {
@@ -130,6 +141,9 @@ export default {
                     tmpPanel.push(this.panel[i]);
             }
             this.panel = tmpPanel
+        },
+        async getData(){
+            this.comments.push(this.comment)
         },
         none(prof) {
             let tmpPanel = []
