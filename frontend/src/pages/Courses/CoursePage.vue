@@ -45,6 +45,8 @@
             <button type = "button" v-on:click = "getData()"> Comment it </button >
         </template>
         <template>
+            <h3><br></h3>
+            <h3>Comments from other users</h3>
             <li v-for="a in comments" v-bind:key = "a">
                 {{a}}
             </li>
