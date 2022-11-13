@@ -19,7 +19,7 @@ async def get_details(ID, subj, curr_year, session):
         new_year = str(int(curr_year[0:4])+i) + str(int(curr_year[-4:])+i)
         years.append(new_year)
 
-    dets = [False, '', set()]
+    dets = [False, '', dict(), set()]
 
     for year in years:
         fall = str(year[0:4]) + '09'
@@ -84,12 +84,22 @@ async def get_details(ID, subj, curr_year, session):
             "summary": "This table lists the scheduled meeting times and assigned instructors for this class..",
         })
 
+        count = 0
         for time in times:
+            count += 1
+            section = dict()
             split_up = [x.text for x in time.findAll("td")]
+            section["class"] = split_up[0].split('<')[0]
+            section["time"] = split_up[1].split('<')[0] 
+            section["days"] = split_up[2].split('<')[0] 
+            section["location"] = split_up[3].split('<')[0] 
+            section["type"] = split_up[5].split('<')[0] 
             instructor = split_up[6].split('(')[0]
             instructor = re.sub(' +', ' ', instructor).strip()
             if instructor != "TBA":
-                dets[2].add(instructor)
+                dets[3].add(instructor)
+                section["instructor"] = instructor
+            dets[2][count] = section
 
         search = r"""<span class="fieldlabeltext">Attributes: </span>(.*?)\n<br/>"""
         attribute = re.search(search, str(full_soup))
@@ -109,9 +119,9 @@ async def scrape_CI(years, folder_path):
             for course in courses:
                 dets = await get_details(courses[course]['ID'], courses[course]['subj'], year, session)
                 courses[course]['properties']['CI'] = dets[0]
-
-                courses[course]['professors'] = list(dets[2])
                 courses[course]['crn'] = dets[1]
+                courses[course]['sections'] = dets[2]
+                courses[course]['professors'] = list(dets[3])
         f2 = open(folder_path + year + '/courses.json', 'w')
         json.dump(courses, f2, sort_keys=True, indent=2, ensure_ascii=False)
         f2.close()

@@ -10,6 +10,11 @@
             <ul>
                 <li v-for="(prof, index) in course.professors" :key="prof">
                     <h4> {{ prof }} </h4>
+                    <div v-if="professorsData[prof]">
+                        {{ professorsData[prof].num_ratings }} Rating(s): {{ professorsData[prof].rating }}/5.0
+                        <br>
+                        <a :href="`https://www.ratemyprofessors.com/professor?tid=${encodeURIComponent(professorsData[prof].rmp_id)}`"> RateMyProfessor Page </a>
+                    </div>
                     <div v-if="profSec[prof].length !== 0" class="open-close-btn">
                         <v-btn @click="all(index)">
                             expand
@@ -24,7 +29,8 @@
                                     Days: {{ course.sections['' + sec].days }} <br>
                                     Time: {{ course.sections['' + sec].time }} <br>
                                     Location: {{ course.sections['' + sec].location }} <br>
-                                    Type: {{ course.sections['' + sec].type }} <br><br>
+                                    Type: {{ course.sections['' + sec].type }} <br>
+                                    CRN: {{ course.sections['' + sec].crn }} <br><br>
                                 </v-expansion-panel-content>
                             </v-expansion-panel>
                         </v-expansion-panels>
@@ -39,18 +45,16 @@
         <template v-else>
             <h3>This class is not being provided in the current semester</h3>
         </template>
-        <template>
         <h3>Leave your comment for this class: </h3>
-            <input v-model="comment" type="text" placeholder="Your comment">
-            <button type="button" @v-on:click="getData()">
-                 Comment it
-            </button>
-        </template>
-            <h3><br></h3>
-            <h3>Comments from other users</h3>
-            <li v-for="a in comments" :key="a">
-                {{ a }}
-            </li>
+        <input v-model="comment" type="text" placeholder="Your comment">
+        <button type="button" @v-on:click="getData()">
+            Comment it
+        </button>
+        <h3><br></h3>
+        <h3>Comments from other users</h3>
+        <li v-for="a in comments" :key="a">
+            {{ a }}
+        </li>
         <CourseTableModifiers
             class="mt-4 class-card__subtitle__modifiers"
             :item="course"
@@ -76,6 +80,7 @@ export default {
     data() {
         return {
             coursesData: {},
+            professorsData: {},
             panel: [],
             comments: [],
             comment: "",
@@ -163,6 +168,9 @@ export default {
                 this.$router.push('/404');
             }
         });
+        import('../../data/json/professors.json').then((val) => {
+            this.professorsData = Object.freeze(val);
+        });
     },
     methods: {
         all(prof) {
@@ -221,20 +229,4 @@ export default {
         display: flex;
         flex-wrap: wrap;
     }
- .star {
-  color: red;
- }
- .star.active {
-  color: red;
- }
- .list, .list.disabled {
-  &:hover {
-    .star {
-      color: red !important;
-    }
-    .star.active {
-      color: red;
-    }
-  }
-}
 </style>
