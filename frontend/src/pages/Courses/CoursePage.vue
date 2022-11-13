@@ -37,25 +37,20 @@
             </ul>
         </template>
         <template v-else>
-            <h3>This class is not providing in the current semester</h3>
+            <h3>This class is not being provided in the current semester</h3>
         </template>
         <template>
         <h3>Leave your comment for this class: </h3>
-            <input type = "text" placeholder = "Your comment" v-model = "comment"/>
-            <button type = "button" v-on:click = "getData()"> Comment it </button >
+            <input v-model="comment" type="text" placeholder="Your comment">
+            <button type="button" @v-on:click="getData()">
+                 Comment it
+            </button>
         </template>
-        <template>
-            <div id="app">
-                <AwesomeVueStarRating :star="this.star" :disabled="this.disabled" :maxstars="this.maxstars" :starsize="this.starsize" :hasresults="this.hasresults" :hasdescription="this.hasdescription" :ratingdescription="this.ratingdescription" />
-            </div>
-        </template>
-        <template>
             <h3><br></h3>
             <h3>Comments from other users</h3>
-            <li v-for="a in comments" v-bind:key = "a">
-                {{a}}
+            <li v-for="a in comments" :key="a">
+                {{ a }}
             </li>
-        </template>
         <CourseTableModifiers
             class="mt-4 class-card__subtitle__modifiers"
             :item="course"
@@ -69,14 +64,14 @@ import { courseCategories } from '../../data/data.js'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import CourseTableModifiers from '../../components/CourseTableModifiers'
-import AwesomeVueStarRating from 'awesome-vue-star-rating'
+// import AwesomeVueStarRating from 'awesome-vue-star-rating'
 
 export default {
-    name: 'app',
+    // name: 'app',
     components: {
         Breadcrumbs,
         CourseTableModifiers,
-        AwesomeVueStarRating
+        // AwesomeVueStarRating
     },
     data() {
         return {
@@ -84,34 +79,34 @@ export default {
             panel: [],
             comments: [],
             comment: "",
-            star: 5, // default star
-            ratingdescription: [
-                {
-                text: 'Poor',
-                class: 'star-poor'
-                },
-                {
-                text: 'Below Average',
-                class: 'star-belowAverage'
-                },
-                {
-                text: 'Average',
-                class: 'star-average'
-                },
-                {
-                text: 'Good',
-                class: 'star-good'
-                },
-                {
-                text: 'Excellent',
-                class: 'star-excellent'
-                }
-            ],
-            hasresults: true,
-            hasdescription: true,
-            starsize: 'lg', //[xs,lg,1x,2x,3x,4x,5x,6x,7x,8x,9x,10x],
-            maxstars: 5,
-            disabled: false
+            // star: 5, // default star
+            // ratingdescription: [
+            //     {
+            //     text: 'Poor',
+            //     class: 'star-poor'
+            //     },
+            //     {
+            //     text: 'Below Average',
+            //     class: 'star-belowAverage'
+            //     },
+            //     {
+            //     text: 'Average',
+            //     class: 'star-average'
+            //     },
+            //     {
+            //     text: 'Good',
+            //     class: 'star-good'
+            //     },
+            //     {
+            //     text: 'Excellent',
+            //     class: 'star-excellent'
+            //     }
+            // ],
+            // hasresults: true,
+            // hasdescription: true,
+            // starsize: 'lg', //[xs,lg,1x,2x,3x,4x,5x,6x,7x,8x,9x,10x],
+            // maxstars: 5,
+            // disabled: false
         }
     },
     computed: {
