@@ -29,7 +29,7 @@
                     clearable
                     style="width: 275px; max-width: 100%; z-index: 100"
                 >
-                    <template v-slot:selection="{ item, index }">
+                    <template #selection="{ item, index }">
                         <v-chip v-if="index === 0">
                             <span>{{ item }}</span>
                         </v-chip>

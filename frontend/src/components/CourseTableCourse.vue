@@ -108,7 +108,7 @@
                 class="class-card__desc"
             >
                 {{ course.description }}
-                <p></p>
+                <p />
                 <div v-if="course.professors.length != 0">
                     Taught by:
                     <li v-for="(prof, index) in course.professors" :key="prof" style="list-style: none; display: inline;">
@@ -128,10 +128,10 @@
         </v-card>
         <v-card-text
             v-if="course.ID != null"
-            >
+        >
             <a :href="`/course?course=${encodeURIComponent(course.name)}`"> Course Link</a>
             &nbsp; for {{ course.name }}
-            </v-card-text>
+        </v-card-text>
     </div>
 </template>
 
