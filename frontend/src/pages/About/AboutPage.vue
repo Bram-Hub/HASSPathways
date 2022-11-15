@@ -43,7 +43,7 @@
     import axios from 'axios'
     import Vue from 'vue'
 
-    axios.defaults.baseURL = 'http://129.161.36.233:5000'
+    axios.defaults.baseURL = 'http://127.0.0.1:5000/'
     Vue.prototype.$ajax = axios
 
     export default {
