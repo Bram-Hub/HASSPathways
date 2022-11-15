@@ -21,8 +21,12 @@ async def get_profs():
             temp_dict['num_ratings'] = prof_index['tNumRatings']
             temp_dict['rmp_id'] = prof_index['tid']
             prof_Fname = prof_index['tFname']
+            prof_Mname = prof_index['tMiddlename']
             prof_Lname = prof_index['tLname']
-            prof_name = f"{prof_Fname} {prof_Lname}"
+            if prof_Mname == "":
+                prof_name = f"{prof_Fname} {prof_Lname}"
+            else:
+                prof_name = f"{prof_Fname} {prof_Mname} {prof_Lname}"
             profs[prof_name] = temp_dict
     return profs
     
