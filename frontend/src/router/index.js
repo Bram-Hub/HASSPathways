@@ -61,16 +61,16 @@ export default new Router({
             name: 'search-classes',
             component: AdvancedSearchPage
         },
-        {
-            path: '/courses',
-            name: 'courses',
-            component: CoursesPage
-        },
-        {
-            path: '/course',
-            name: 'course',
-            component: CoursePage
-        },
+        // {
+        //     path: '/courses',
+        //     name: 'courses',
+        //     component: CoursesPage
+        // },
+        // {
+        //     path: '/course',
+        //     name: 'course',
+        //     component: CoursePage
+        // },
         // {
         //     path: '/courses',
         //     name: 'courses',
