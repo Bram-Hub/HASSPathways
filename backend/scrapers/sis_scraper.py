@@ -76,7 +76,6 @@ async def get_details(ID, subj, curr_year, session):
 
         for header in headers:
             link = header.find("a").get('href')
-            print(link[-5:])
             dets[1] = link[-5:]
 
         times = full_soup.findAll("table", {
@@ -97,7 +96,11 @@ async def get_details(ID, subj, curr_year, session):
             instructor = split_up[6].split('(')[0]
             instructor = re.sub(' +', ' ', instructor).strip()
             if instructor != "TBA":
-                dets[3].add(instructor)
+                instructor_names = instructor.split(' ')
+                if len(instructor_names) > 2 and '.' in instructor_names[1]:
+                    dets[3].add(instructor_names[0] + ' ' + instructor_names[-1])
+                else:
+                    dets[3].add(instructor)
                 section["instructor"] = instructor
             dets[2][count] = section
 
