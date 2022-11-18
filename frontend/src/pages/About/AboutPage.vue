@@ -54,7 +54,7 @@
             return {
                 breadcrumbs: breadcrumbs.about_page,
                 panel: [],
-                faqs: {},
+                faqs: {}
             }
         },
 
@@ -73,7 +73,7 @@
             },
             getFaqs() {
                 this.$ajax.get('/faqs', {}).then(res => {
-                    this.faqs = res.data.questions;
+                    this.faqs = res.data;
                 })
             }
         },
