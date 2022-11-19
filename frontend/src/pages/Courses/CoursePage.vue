@@ -46,14 +46,14 @@
             <h3>This class is not being provided in the current semester</h3>
         </template>
         <h3>Leave your comment for this class: </h3>
-        <input v-model="comment" type="text" placeholder="Your comment">
-        <button type="button" @v-on:click="getData()">
+        <input v-model="comment" type="text" placeholder="Your comment" @keyup.enter="getData()">
+        <button type="button" v-on:click="getData()">
             Comment it
         </button>
         <h3><br></h3>
         <h3>Comments from other users</h3>
-        <li v-for="a in comments" :key="a">
-            {{ a }}
+        <li v-for="comment in comments" v-bind:key = "comment">
+            {{comment}}
         </li>
         <CourseTableModifiers
             class="mt-4 class-card__subtitle__modifiers"
