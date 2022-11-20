@@ -52,7 +52,7 @@
         </button>
         <h3><br></h3>
         <h3>Comments from other users</h3>
-        <li v-for="comment in comments" v-bind:key = "comment">
+        <li v-for="comment in comments[course.name]" v-bind:key = "comment">
             {{comment}}
         </li>
         <CourseTableModifiers
@@ -68,22 +68,21 @@ import { courseCategories } from '../../data/data.js'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import breadcrumbs from '../../data/breadcrumbs.js'
 import CourseTableModifiers from '../../components/CourseTableModifiers'
-// import AwesomeVueStarRating from 'awesome-vue-star-rating'
+import course_comment from './comments.json'
 
 export default {
     // name: 'app',
     components: {
         Breadcrumbs,
         CourseTableModifiers,
-        // AwesomeVueStarRating
     },
     data() {
         return {
             coursesData: {},
             professorsData: {},
             panel: [],
-            comments: [],
             comment: "",
+            comments: course_comment,
             // star: 5, // default star
             // ratingdescription: [
             //     {
@@ -184,7 +183,13 @@ export default {
             this.panel = tmpPanel
         },
         async getData(){
-            this.comments.push(this.comment)
+            if (this.course.name in course_comment){
+                course_comment[this.course.name].push(this.comment);
+            }
+            else{
+                course_comment[this.course.name] = [];
+                course_comment[this.course.name].push(this.comment);
+            }
         },
         none(prof) {
             let tmpPanel = []
