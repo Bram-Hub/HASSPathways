@@ -102,6 +102,7 @@ def updateFAQs():
         FAQs_session = Session()
         FAQs_session.add_all([Faqs(Question=q, Answer=a) for q, a in faqs])
         FAQs_session.commit()
+        FAQs_session.close_all()
 
 
 if __name__ == '__main__':
