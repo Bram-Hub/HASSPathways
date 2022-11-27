@@ -4,6 +4,10 @@ from flask import Flask, request, json, jsonify, session, redirect, url_for, ren
 from flask_cors import CORS, cross_origin
 from cas import CASClient
 import flask
+from sqlalchemy import *
+from FAQs.FAQ_Class import Faqs
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
 
 flask.__version__
 app = Flask(__name__)
@@ -25,11 +29,10 @@ def default():
 
 @app.route('/faqs', methods=['GET', 'POST'])
 def load_faqs():
-    path = 'data/'
+    path = 'FAQs/'
     file = path + 'faqs.json'
     with open(file) as json_file:
         faqs = json.load(json_file)
-
     return faqs
 
 
@@ -79,10 +82,27 @@ def editAdmin():
     return jsonify(response)
 
 
-@app.route('/test', methods=["GET"])
-def test():
-    return render_template("admin.html")
+# @app.route('/test', methods=["GET"])
+# def test():
+#     return render_template("admin.html")
+
+
+def updateFAQs():
+    """
+    Update all asked questions into the database.
+    """
+    path = 'FAQs/'
+    file = path + 'faqs.json'
+    with open(file) as json_file:
+        faqs = json.load(json_file)
+        db_engine = create_engine("sqlite:///faqs.db?check_same_thread=False")
+        Base = declarative_base()
+        Base.metadata.create_all(db_engine, checkfirst=True)
+        Session = sessionmaker(bind=db_engine)
+        FAQs_session = Session()
+        FAQs_session.add_all([Faqs(Question=q, Answer=a) for q, a in faqs])
+        FAQs_session.commit()
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)  # http://127.0.0.1:5000/
