@@ -2,24 +2,24 @@
     <div>
         <v-container>
             <Breadcrumbs :breadcrumbs="breadcrumbs" />
-            <h1>
-                This page will hold all the courses.
-            </h1>
+            <h1>Courses</h1>
             <p> 
-                I'm really just trying to get a feel for this format right now. 
+                Select a course to view details about it.
             </p>
 
             <v-divider class="my-4" />
 
-            <div class="course-categories fade-in">
-                <CourseCategory
-                    v-for="item in courseCategories"
-                    :key="item.name"
-                    :title="item.name"
-                    :image="item.image"
-                    :text="item.text"
-                    :courses="item.courses"
-                />
+            <div class="fade-in">
+                <v-expansion-panels>
+                    <CourseCategory
+                        v-for="item in courseCategories"
+                        :key="item.name"
+                        :title="item.name"
+                        :image="item.image"
+                        :text="item.text"
+                        :courses="item.courses"
+                    />
+                </v-expansion-panels>
             </div>
         </v-container>
     </div>
@@ -83,10 +83,4 @@ export default {
   100% { opacity: 1; }
 }
 
-.course-categories {
-  max-width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  grid-gap: 10px;
-}
 </style>

@@ -189,21 +189,26 @@
 
                     <!-- Override default row HTMl so we can add ripples + custom click stuff -->
                     <template #item="{ item, isSelected, select }">
-                        <tr v-ripple
+                        <tr 
+                            v-ripple
                             :class="'table-row ' + (isSelected ? 'table-row_selected' : '')"
-                            @click="rowClick(item, select, isSelected)">
+                            @click="rowClick(item, select, isSelected)"
+                        >
                             <td>
-                                <v-simple-checkbox v-ripple color="primary"
-                                                   :value="isSelected"
-                                                   @input="rowClick(item, select, isSelected)" />
+                                <v-simple-checkbox 
+                                    v-ripple color="primary"
+                                    :value="isSelected"
+                                    @input="rowClick(item, select, isSelected)" 
+                                />
                             </td>
 
                             <td>{{ item.identifier }}</td>
                             <td><a :href="`/course?course=${encodeURIComponent(item.name)}`" class="text-decoration-none"> {{ item.name }} </a></td>
-
                             <td style="text-align: right;">
-                                <SearchTableModifiers class="mt-4 class-card__subtitle__modifiers float-top"
-                                                      :course="item" />
+                                <SearchTableModifiers 
+                                    class="mt-4 class-card__subtitle__modifiers float-top"
+                                    :course="item"
+                                />
                             </td>
                         </tr>
                     </template>

@@ -65,8 +65,7 @@ export default {
         
             if(this.item.prerequisites != "None" && this.item.prerequisites.length != 0 ) {
                 mods.push('pre_requisite')
-            }
-            
+            }            
             return mods;
         }
     },
@@ -130,7 +129,7 @@ export default {
 .modifier.theme--dark.modifier--inactive {
     &.modifier--text {
         background-color: #333 !important;
-        display: inline-flex;
+        
     }
     &.modifier--icon {
         color: #666 !important;

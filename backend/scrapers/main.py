@@ -3,6 +3,7 @@ import pathway_scraper
 import fill_empty
 import sis_scraper
 import category_assembler
+import rmp_scraper
 import asyncio
 import os
 import json
@@ -46,3 +47,7 @@ if __name__ == "__main__":
     json.dump(years, f, sort_keys=True, indent=2, ensure_ascii=True)
     f.close()
     category_assembler.assemble('../../frontend/src/data/json/')
+
+    print("Started scraping RateMyProfessor")
+    asyncio.run(rmp_scraper.scrape_RMP('../../frontend/src/data/json/'))
+    print("Started scraping RateMyProfessor")
