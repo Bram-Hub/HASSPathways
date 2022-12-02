@@ -5,11 +5,13 @@ Base = declarative_base()
 
 
 class Faqs(Base):
-    __tablename__ = 'FAQs'
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    # 指定name映射到name字段; name字段为字符串类形，
-    Question = Column(String())
+    __tablename__ = 'questions'
+    Question = Column(String(), primary_key=True, unique=True)
     Answer = Column(String())
+
+    def __int__(self, Question, Answer):
+        self.Question = Question
+        self.Answer = Answer
 
     def __repr__(self):
         return "<FAQs(Question = '%s', Answer = '%s')>" % (

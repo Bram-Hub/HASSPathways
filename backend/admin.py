@@ -5,9 +5,11 @@ from flask_cors import CORS, cross_origin
 from cas import CASClient
 import flask
 from sqlalchemy import *
+from sqlalchemy import MetaData
 from FAQs.FAQ_Class import Faqs
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+import sqlite3
 
 flask.__version__
 app = Flask(__name__)
@@ -32,6 +34,12 @@ def load_faqs():
     path = 'FAQs/'
     file = path + 'faqs.json'
     with open(file) as json_file:
+        db_engine = create_engine("sqlite:///faqs.db?check_same_thread=False")
+        Base = declarative_base()
+        Base.metadata.create_all(db_engine, checkfirst=True)
+        Session = sessionmaker(bind=db_engine)
+        FAQs_session = Session()
+        print(FAQs_session);
         faqs = json.load(json_file)
     return faqs
 
@@ -86,7 +94,6 @@ def editAdmin():
 # def test():
 #     return render_template("admin.html")
 
-
 def updateFAQs():
     """
     Update all asked questions into the database.
@@ -95,15 +102,40 @@ def updateFAQs():
     file = path + 'faqs.json'
     with open(file) as json_file:
         faqs = json.load(json_file)
-        db_engine = create_engine("sqlite:///faqs.db?check_same_thread=False")
-        Base = declarative_base()
-        Base.metadata.create_all(db_engine, checkfirst=True)
+
+        # get to the table
+        db_engine = create_engine("sqlite:///FAQs.db", echo=True)
+
+        # create table
+        meta = MetaData()
+        Questions = Table(
+            'questions', meta,
+            Column('Question', String, primary_key=True),
+            Column('Answer', String)
+        )
+        meta.create_all(db_engine)
+
+        # upload using sessionmanager
         Session = sessionmaker(bind=db_engine)
         FAQs_session = Session()
-        FAQs_session.add_all([Faqs(Question=q, Answer=a) for q, a in faqs])
+        data = []
+        for q, a in faqs.items():
+            data.append(Faqs(Question=q, Answer=a))
+        FAQs_session.add_all(data)
         FAQs_session.commit()
-        FAQs_session.close_all()
+        FAQs_session.close()
+
+
+def table_exists(engine, table_name):
+    with engine.connect() as con:
+        sql = "show tables;"
+        tables = con.execute(sql).fetchall()
+        for table_col in tables:
+            if table_name == table_col[0]:
+                return True
+        return False
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)  # http://127.0.0.1:5000/
+    updateFAQs()
+    # app.run(host='0.0.0.0', port=5000, debug=True)  # http://127.0.0.1:5000/
