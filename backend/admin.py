@@ -31,17 +31,7 @@ def default():
 
 @app.route('/faqs', methods=['GET', 'POST'])
 def load_faqs():
-    path = 'FAQs/'
-    file = path + 'faqs.json'
-    with open(file) as json_file:
-        db_engine = create_engine("sqlite:///faqs.db?check_same_thread=False")
-        Base = declarative_base()
-        Base.metadata.create_all(db_engine, checkfirst=True)
-        Session = sessionmaker(bind=db_engine)
-        FAQs_session = Session()
-        print(FAQs_session);
-        faqs = json.load(json_file)
-    return faqs
+    pass
 
 
 @app.route('/guard')
@@ -104,7 +94,7 @@ def updateFAQs():
         faqs = json.load(json_file)
 
         # get to the table
-        db_engine = create_engine("sqlite:///FAQs.db", echo=True)
+        db_engine = create_engine("sqlite:///FAQs.db")
 
         # create table
         meta = MetaData()
@@ -113,29 +103,20 @@ def updateFAQs():
             Column('Question', String, primary_key=True),
             Column('Answer', String)
         )
-        meta.create_all(db_engine)
+        meta.create_all(db_engine, checkfirst=True)
 
         # upload using sessionmanager
         Session = sessionmaker(bind=db_engine)
         FAQs_session = Session()
         data = []
         for q, a in faqs.items():
-            data.append(Faqs(Question=q, Answer=a))
+            if not FAQs_session.query(Faqs).filter_by(Question=q).first():
+                data.append(Faqs(Question=q, Answer=a))
         FAQs_session.add_all(data)
         FAQs_session.commit()
         FAQs_session.close()
 
 
-def table_exists(engine, table_name):
-    with engine.connect() as con:
-        sql = "show tables;"
-        tables = con.execute(sql).fetchall()
-        for table_col in tables:
-            if table_name == table_col[0]:
-                return True
-        return False
-
-
 if __name__ == '__main__':
     updateFAQs()
-    # app.run(host='0.0.0.0', port=5000, debug=True)  # http://127.0.0.1:5000/
+    app.run(host='0.0.0.0', port=5000, debug=True)  # http://127.0.0.1:5000/

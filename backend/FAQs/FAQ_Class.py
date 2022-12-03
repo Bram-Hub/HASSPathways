@@ -9,10 +9,6 @@ class Faqs(Base):
     Question = Column(String(), primary_key=True, unique=True)
     Answer = Column(String())
 
-    def __int__(self, Question, Answer):
-        self.Question = Question
-        self.Answer = Answer
-
     def __repr__(self):
         return "<FAQs(Question = '%s', Answer = '%s')>" % (
             self.Question, self.Answer)
