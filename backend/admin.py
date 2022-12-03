@@ -31,7 +31,14 @@ def default():
 
 @app.route('/faqs', methods=['GET', 'POST'])
 def load_faqs():
-    pass
+    db_engine = create_engine("sqlite:///FAQs.db", echo=True)
+    Session = sessionmaker(bind=db_engine)
+    FAQs_session = Session()
+    all_questions = FAQs_session.query(Faqs).all()
+    result = {}
+    for q in all_questions:
+        result[q.Question] = q.Answer
+    return result
 
 
 @app.route('/guard')
@@ -118,5 +125,5 @@ def updateFAQs():
 
 
 if __name__ == '__main__':
-    updateFAQs()
+    # updateFAQs()
     app.run(host='0.0.0.0', port=5000, debug=True)  # http://127.0.0.1:5000/
