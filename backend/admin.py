@@ -31,7 +31,7 @@ def default():
 
 @app.route('/faqs', methods=['GET', 'POST'])
 def load_faqs():
-    db_engine = create_engine("sqlite:///FAQs.db", echo=True)
+    db_engine = create_engine("sqlite:///FAQs.db")
     Session = sessionmaker(bind=db_engine)
     FAQs_session = Session()
     all_questions = FAQs_session.query(Faqs).all()
@@ -39,6 +39,34 @@ def load_faqs():
     for q in all_questions:
         result[q.Question] = q.Answer
     return result
+
+
+@app.route('/addqa', methods=['GET'])
+def addQA():
+    return '''<form action="/addqa" method="post">
+                  <p><input name="question" size="40"></p>
+                  <p><input name="answer" size="40"></p>
+                  <p><button type="submit">Add</button></p>
+                  </form>'''
+
+
+@app.route('/addqa', methods=['Post'])
+def addQAResult():
+    db_engine = create_engine("sqlite:///FAQs.db")
+    Session = sessionmaker(bind=db_engine)
+    FAQs_session = Session()
+    res = FAQs_session.query(Faqs).filter_by(Question=request.form['question']).first()
+    if not res:
+        FAQs_session.add(Faqs(Question=request.form['question'], Answer=request.form['answer']))
+        FAQs_session.commit()
+        FAQs_session.close()
+        return '''<h1> Question Added </h1>'''
+    else:
+        res.Answer = request.form['answer']
+        FAQs_session.commit()
+        FAQs_session.close()
+        return '''<h1> Question in table, Answer Updated </h1>'''
+
 
 
 @app.route('/guard')
@@ -91,7 +119,7 @@ def editAdmin():
 # def test():
 #     return render_template("admin.html")
 
-def updateFAQs():
+def updateFAQsFromJson():
     """
     Update all asked questions into the database.
     """
@@ -125,5 +153,5 @@ def updateFAQs():
 
 
 if __name__ == '__main__':
-    # updateFAQs()
+    updateFAQsFromJson()
     app.run(host='0.0.0.0', port=5000, debug=True)  # http://127.0.0.1:5000/
