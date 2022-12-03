@@ -44,10 +44,11 @@ def load_faqs():
 @app.route('/addqa', methods=['GET'])
 def addQA():
     return '''<form action="/addqa" method="post">
-                  <p><input name="question" size="40"></p>
-                  <p><input name="answer" size="40"></p>
-                  <p><button type="submit">Add</button></p>
-                  </form>'''
+                <h3> Input question and answer </h3>
+                <p><input name="question" size="40"></p>
+                <p><input name="answer" size="40"></p>
+                <p><button type="submit"> Add </button></p>
+                </form>'''
 
 
 @app.route('/addqa', methods=['Post'])
