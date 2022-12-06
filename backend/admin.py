@@ -7,9 +7,7 @@ import flask
 from sqlalchemy import *
 from sqlalchemy import MetaData
 from FAQs.FAQ_Class import Faqs
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-import sqlite3
 
 flask.__version__
 app = Flask(__name__)
@@ -38,17 +36,13 @@ def load_faqs():
     result = {}
     for q in all_questions:
         result[q.Question] = q.Answer
+    FAQs_session.close()
     return result
 
 
 @app.route('/addqa', methods=['GET'])
 def addQA():
-    return '''<form action="/addqa" method="post">
-                <h3> Input question and answer </h3>
-                <p><input name="question" size="40"></p>
-                <p><input name="answer" size="40"></p>
-                <p><button type="submit"> Add </button></p>
-                </form>'''
+    return render_template('AddQA.html')
 
 
 @app.route('/addqa', methods=['Post'])
@@ -68,6 +62,23 @@ def addQAResult():
         FAQs_session.close()
         return '''<h1> Question in table, Answer Updated </h1>'''
 
+
+@app.route('/deleteqa', methods=['Get'])
+def deleteQA():
+    db_engine = create_engine("sqlite:///FAQs.db")
+    Session = sessionmaker(bind=db_engine)
+    FAQs_session = Session()
+    all_questions = FAQs_session.query(Faqs).all()
+    result = {}
+    for q in all_questions:
+        result[q.Question] = q.Answer
+    FAQs_session.close()
+    return render_template('DeleteQA.html', faqs=result)
+
+
+@app.route('/deleteqa', methods=['Post'])
+def deleteQA_result():
+    return '''<h1>Question deleted</h1>'''
 
 
 @app.route('/guard')
@@ -124,8 +135,7 @@ def updateFAQsFromJson():
     """
     Update all asked questions into the database.
     """
-    path = 'FAQs/'
-    file = path + 'faqs.json'
+    file = 'FAQs/faqs.json'
     with open(file) as json_file:
         faqs = json.load(json_file)
 
@@ -154,5 +164,5 @@ def updateFAQsFromJson():
 
 
 if __name__ == '__main__':
-    updateFAQsFromJson()
+    # updateFAQsFromJson()
     app.run(host='0.0.0.0', port=5000, debug=True)  # http://127.0.0.1:5000/

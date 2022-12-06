@@ -1,0 +1,11 @@
+<form action="/deleteqa" method="post">
+    <p>All questions and answers are:</p>
+    <table>
+        {% for key, value in faqs.items() %}
+        <tr>
+            <td><input type="checkbox">{{ key }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p><button type="submit"> Delete Question(s) </button></p>
+</form>
