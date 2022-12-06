@@ -108,14 +108,16 @@
                 class="class-card__desc"
             >
                 {{ course.description }}
+                <p />
                 <div v-if="course.professors.length != 0">
                     Taught by:
                     <li v-for="(prof, index) in course.professors" :key="prof" style="list-style: none; display: inline;">
                         {{ prof }}{{ index &lt; course.professors.length - 1 ? ", " : "" }}
                     </li>
                 </div>
-                <br>
-                <a :href="`/course?course=${encodeURIComponent(course.name)}`" class="text-decoration-none"> Course Link </a>
+                <div v-else>
+                    Taught by: Unknown
+                </div>
             </v-card-text>
             <v-card-text
                 v-if="course.ID == null"
@@ -124,6 +126,12 @@
                 Data not found within RPI catalog, see SIS for more info.
             </v-card-text>
         </v-card>
+        <v-card-text
+            v-if="course.ID != null"
+        >
+            <a :href="`/course?course=${encodeURIComponent(course.name)}`"> Course Link</a>
+            &nbsp; for {{ course.name }}
+        </v-card-text>
     </div>
 </template>
 

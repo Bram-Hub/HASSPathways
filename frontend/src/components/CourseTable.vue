@@ -25,11 +25,11 @@
                     multiple
                     outlined
                     chips
-                    label = "Sort" 
+                    label="Sort" 
                     clearable
                     style="width: 275px; max-width: 100%; z-index: 100"
-                    >
-                    <template v-slot:selection="{ item, index }">
+                >
+                    <template #selection="{ item, index }">
                         <v-chip v-if="index === 0">
                             <span>{{ item }}</span>
                         </v-chip>
@@ -41,7 +41,6 @@
                         </span>
                     </template>
                 </v-select> 
-
             </div>
         </v-card>
         <div :class="{graphContainer: graph}">
@@ -109,9 +108,10 @@ export default {
         }
     },
     data() {
-        return {    advanced_search: [],
-                    search: '' ,
-                    sort_dropbox: ['Fall', 'Spring', 'Summer', 'CI','HI', 'No Prerequistes'],
+        return {    
+            advanced_search: [],
+            search: '' ,
+            sort_dropbox: ['Fall', 'Spring', 'Summer', 'CI','HI', 'No Prerequistes'],
         }
     },
     // watch: {
@@ -174,7 +174,7 @@ export default {
                 }
                 if (this.advanced_search.includes("HI") && !tempCourses[course].properties.HI) {
                     continue;
-                 }
+                }
                 //check prereq
                 if (this.advanced_search.includes("No Prerequistes") && tempCourses[course].prerequisites.length != 0) {
                     continue;

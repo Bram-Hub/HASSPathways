@@ -85,11 +85,12 @@ def courses_from_string(inp):
     crses = set()
     for dept in depts:
         fnd = inp.find(dept)
-        if fnd != -1:
+        while fnd != -1:
             if fnd+8 < len(inp):
                 if inp[fnd+8].isdigit():
                     if inp[fnd+5] != '6':
                         crses.add(inp[fnd:fnd+4] + '-' + inp[fnd+5:fnd+9])
+            fnd = inp.find(dept, fnd + 9)
     return list(crses)
 
 def get_course_data(course_ids: List[str], catalog_id) -> Dict:
@@ -157,7 +158,11 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
                         offered_text = field_text
                     elif field.get('type')[-3:] == str(base - 13):
                         if len(field_text) > 0:
-                            prereqs = courses_from_string(field_text.upper())
+                            if int(catalog_id) > 23 and field_text.upper().find("PREREQUISITE") != -1:
+                                prereqs_list = field.xpath("./descendant-or-self::permalink/title/text()")
+                                prereqs = courses_from_string(" ".join(prereqs_list))
+                            else:
+                                prereqs = courses_from_string(field_text.upper())
 
             data[course_name] = {
                 "subj": subj,
