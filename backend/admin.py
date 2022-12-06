@@ -78,7 +78,13 @@ def deleteQA():
 
 @app.route('/deleteqa', methods=['Post'])
 def deleteQA_result():
-    return '''<h1>Question deleted</h1>'''
+    db_engine = create_engine("sqlite:///FAQs.db")
+    Session = sessionmaker(bind=db_engine)
+    FAQs_session = Session()
+    # delete the selected questions
+
+    FAQs_session.close()
+    return '''<h1>Question(s) deleted</h1>'''
 
 
 @app.route('/guard')

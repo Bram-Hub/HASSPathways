@@ -1,9 +1,9 @@
 <form action="/deleteqa" method="post">
-    <p>All questions and answers are:</p>
+    <p>All questions:</p>
     <table>
         {% for key, value in faqs.items() %}
         <tr>
-            <td><input type="checkbox">{{ key }}</td>
+            <td><input type="checkbox" name="questions", value={{ key }}>{{ key }}</td>
         </tr>
         {% endfor %}
     </table>
