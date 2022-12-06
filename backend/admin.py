@@ -82,7 +82,9 @@ def deleteQA_result():
     Session = sessionmaker(bind=db_engine)
     FAQs_session = Session()
     # delete the selected questions
-
+    for question in request.form.getlist("questions"):
+        FAQs_session.query(Faqs).filter(Faqs.Question == question).delete()
+        FAQs_session.commit()
     FAQs_session.close()
     return '''<h1>Question(s) deleted</h1>'''
 

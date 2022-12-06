@@ -3,7 +3,7 @@
     <table>
         {% for key, value in faqs.items() %}
         <tr>
-            <td><input type="checkbox" name="questions", value={{ key }}>{{ key }}</td>
+            <td><input type="checkbox" name="questions" value="{{ key }}" quote="">{{ key }}</td>
         </tr>
         {% endfor %}
     </table>
