@@ -1,0 +1,17 @@
+<form action="/editqa" method="post">
+    <h3> To add question, input question and answer here:</h3>
+    <p><input name="question" size="40"></p>
+    <p><input name="answer" size="40"></p>
+    <p><button type="submit" name="submit" value="add"> Add </button></p>
+    <br>
+    <p>All questions in db:</p>
+    <p>Check the check box and click delete to delete the question.</p>
+    <table>
+        {% for key, value in faqs.items() %}
+        <tr>
+            <td><input type="checkbox" name="questions_del" value="{{ key }}" quote="">{{ key }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p><button type="submit" name="submit" value="delete"> Delete Question(s) </button></p>
+</form>

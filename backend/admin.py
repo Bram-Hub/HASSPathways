@@ -40,31 +40,8 @@ def load_faqs():
     return result
 
 
-@app.route('/addqa', methods=['GET'])
-def addQA():
-    return render_template('AddQA.html')
-
-
-@app.route('/addqa', methods=['Post'])
-def addQAResult():
-    db_engine = create_engine("sqlite:///FAQs.db")
-    Session = sessionmaker(bind=db_engine)
-    FAQs_session = Session()
-    res = FAQs_session.query(Faqs).filter_by(Question=request.form['question']).first()
-    if not res:
-        FAQs_session.add(Faqs(Question=request.form['question'], Answer=request.form['answer']))
-        FAQs_session.commit()
-        FAQs_session.close()
-        return '''<h1> Question Added </h1>'''
-    else:
-        res.Answer = request.form['answer']
-        FAQs_session.commit()
-        FAQs_session.close()
-        return '''<h1> Question in table, Answer Updated </h1>'''
-
-
-@app.route('/deleteqa', methods=['Get'])
-def deleteQA():
+@app.route('/editqa', methods=['Get'])
+def editQA():
     db_engine = create_engine("sqlite:///FAQs.db")
     Session = sessionmaker(bind=db_engine)
     FAQs_session = Session()
@@ -73,20 +50,33 @@ def deleteQA():
     for q in all_questions:
         result[q.Question] = q.Answer
     FAQs_session.close()
-    return render_template('DeleteQA.html', faqs=result)
+    return render_template('EditQA.html', faqs=result)
 
 
-@app.route('/deleteqa', methods=['Post'])
-def deleteQA_result():
+@app.route('/editqa', methods=['Post'])
+def editQA_result():
+    submit_value = request.form['submit']
     db_engine = create_engine("sqlite:///FAQs.db")
     Session = sessionmaker(bind=db_engine)
     FAQs_session = Session()
-    # delete the selected questions
-    for question in request.form.getlist("questions"):
-        FAQs_session.query(Faqs).filter(Faqs.Question == question).delete()
-        FAQs_session.commit()
+    if submit_value == 'delete':
+        # delete the selected questions
+        for question in request.form.getlist("questions_del"):
+            FAQs_session.query(Faqs).filter(Faqs.Question == question).delete()
+            FAQs_session.commit()
+    elif submit_value == 'add':
+        search_res = FAQs_session.query(Faqs).filter_by(Question=request.form['question']).first()
+        if not search_res:
+            # add new question
+            FAQs_session.add(Faqs(Question=request.form['question'], Answer=request.form['answer']))
+            FAQs_session.commit()
+        else:
+            # change the answer of existing question
+            search_res.Answer = request.form['answer']
+            FAQs_session.commit()
+
     FAQs_session.close()
-    return '''<h1>Question(s) deleted</h1>'''
+    return editQA()
 
 
 @app.route('/guard')
