@@ -1,0 +1,103 @@
+[
+  {
+    "image": "ARTS.jpg",
+    "name": "Art",
+    "pathways": [
+      "Arts History, Theory, and Criticism",
+      "Electronic Arts",
+      "Music Composition and Production",
+      "Music Performance",
+      "Music and Culture",
+      "Studio Arts",
+      "Video, Performance, and Social Impact",
+      "Art History, Theory, and Criticism",
+      "Video, Performance, and Social Practice"
+    ]
+  },
+  {
+    "image": "COGS.jpg",
+    "name": "Cognitive Science",
+    "pathways": [
+      "Artificial Intelligence",
+      "Behavioral and Cognitive Neuroscience",
+      "Logical Thinking",
+      "Mind, Brain, and Intelligence",
+      "Philosophy",
+      "Understanding Human Behavior",
+      "Well-being: Body and Mind"
+    ]
+  },
+  {
+    "image": "COMM.jpg",
+    "name": "Communication and Media",
+    "pathways": [
+      "Graphic Design",
+      "Interactive Media/Data Design",
+      "Media and Culture"
+    ]
+  },
+  {
+    "image": "ECON.jpg",
+    "name": "Economics",
+    "pathways": [
+      "Economics",
+      "Economics of Banking and Finance",
+      "Economics of Biotech and Medical Markets",
+      "Economics of Policy and Regulations",
+      "Economics of Quantitative Modeling",
+      "Economics of Technology and Innovation",
+      "Economics of Decision-Making",
+      "Economics of Healthcare Markets"
+    ]
+  },
+  {
+    "image": "INTE.jpg",
+    "name": "Interdisciplinary",
+    "pathways": [
+      "Creative Design and Innovation",
+      "Environmental Futures",
+      "Extent and Limits of Rationality",
+      "Fact and Fiction",
+      "Gender, Race, Sexuality, Ethnicity, and Social Change",
+      "Living in a World of Data",
+      "Strategic Communication",
+      "Thinking with Science",
+      "Transfer Student Arts and Humanities",
+      "Transfer Student Social Science",
+      "Pre-Health Pathway"
+    ]
+  },
+  {
+    "image": "LANG.jpg",
+    "name": "Language and Literature",
+    "pathways": [
+      "Chinese Language",
+      "Foreign Language",
+      "Linguistics",
+      "Literature and Creative Writing",
+      "Language"
+    ]
+  },
+  {
+    "image": "MAJR.jpg",
+    "name": "Major Restricted",
+    "pathways": [
+      "Design, Innovation, and Society",
+      "Game Studies",
+      "Information Technology and Web Sciences",
+      "Design, Innovation, and Society Pathway"
+    ]
+  },
+  {
+    "image": "STSO.jpg",
+    "name": "Science and Technology Studies",
+    "pathways": [
+      "Ethics, Integrity, and Social Responsibility",
+      "History",
+      "Law and Policy",
+      "Public Health",
+      "Science, Technology, and Society",
+      "Sustainability"
+    ]
+  }
+]
