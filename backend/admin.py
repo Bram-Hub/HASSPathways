@@ -42,15 +42,8 @@ def load_faqs():
 
 @app.route('/editqa', methods=['Get'])
 def editQA():
-    db_engine = create_engine("sqlite:///FAQs.db")
-    Session = sessionmaker(bind=db_engine)
-    FAQs_session = Session()
-    all_questions = FAQs_session.query(Faqs).all()
-    result = {}
-    for q in all_questions:
-        result[q.Question] = q.Answer
-    FAQs_session.close()
-    return render_template('EditQA.html', faqs=result)
+    faqs = load_faqs()
+    return render_template('EditQA.html', faqs=faqs)
 
 
 @app.route('/editqa', methods=['Post'])
