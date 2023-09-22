@@ -1,0 +1,1080 @@
+{
+  "Advertising and Culture": {
+    "ID": "4580",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Advertising and Culture",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "COMM"
+  },
+  "American History": {
+    "ID": "2500",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "American History",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSO"
+  },
+  "Applied Game Theory": {
+    "ID": "4220",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Applied Game Theory",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ECON"
+  },
+  "Art History": {
+    "ID": "1050",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Art History",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ARTS"
+  },
+  "Behavioral Economics": {
+    "ID": "4270",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Behavioral Economics",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ECON"
+  },
+  "Bioethics": {
+    "ID": "4250",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Bioethics",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSO"
+  },
+  "Chamber Music Ensemble": {
+    "ID": "2350",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Chamber Music Ensemble",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ARTS"
+  },
+  "Chinese I": {
+    "ID": "1410",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Chinese I",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "LANG"
+  },
+  "Chinese III": {
+    "ID": "4420",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Chinese III",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "LANG"
+  },
+  "Chinese IV": {
+    "ID": "4430",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Chinese IV",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "LANG"
+  },
+  "Cognitive Psychology": {
+    "ID": "4370",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Cognitive Psychology",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "PSYC"
+  },
+  "Cost-Benefit Analysis": {
+    "ID": "4210",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Cost-Benefit Analysis",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ECON"
+  },
+  "Critical Television": {
+    "ID": "2750",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Critical Television",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "COMM"
+  },
+  "Design and Innovation Studio B": {
+    "ID": "4605",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Design and Innovation Studio B",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSO"
+  },
+  "Econometrics": {
+    "ID": "4570",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Econometrics",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ECON"
+  },
+  "Environment and Society": {
+    "ID": "2300",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Environment and Society",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSO"
+  },
+  "Environmental Economics": {
+    "ID": "4230",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Environmental Economics",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ECON"
+  },
+  "Ethics": {
+    "ID": "4240",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Ethics",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "PHIL"
+  },
+  "Experimental Economics": {
+    "ID": "4360",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Experimental Economics",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ECON"
+  },
+  "Experimental Game Design": {
+    "ID": "4510",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Experimental Game Design",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "GSAS"
+  },
+  "Foundations of HCI Usability": {
+    "ID": "4420",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Foundations of HCI Usability",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "COMM"
+  },
+  "Game AI": {
+    "ID": "4420",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Game AI",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "COGS"
+  },
+  "Game Development I": {
+    "ID": "4520",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Game Development I",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "GSAS"
+  },
+  "Hactivism": {
+    "ID": "4560",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Hactivism",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ARTS"
+  },
+  "Health Economics and Policy": {
+    "ID": "4170",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Health Economics and Policy",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ECON"
+  },
+  "History and Culture of Games": {
+    "ID": "1600",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "History and Culture of Games",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": true,
+      "major_restricted": false
+    },
+    "subj": "GSAS"
+  },
+  "Intermediate Macroeconomic Theory": {
+    "ID": "2020",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Intermediate Macroeconomic Theory",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ECON"
+  },
+  "Intermediate Microeconomic Theory": {
+    "ID": "2010",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Intermediate Microeconomic Theory",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ECON"
+  },
+  "International Economics and Globalization": {
+    "ID": "4190",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "International Economics and Globalization",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ECON"
+  },
+  "Introduction to Graphic Design": {
+    "ID": "2660",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Introduction to Graphic Design",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "COMM"
+  },
+  "Introduction to Logic": {
+    "ID": "2140",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Introduction to Logic",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "PHIL"
+  },
+  "Investigating Society": {
+    "ID": "2100",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Investigating Society",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSO"
+  },
+  "Irish Literature": {
+    "ID": "4230",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Irish Literature",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "LITR"
+  },
+  "Metaphysics and Consciousness": {
+    "ID": "4480",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Metaphysics and Consciousness",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "PHIL"
+  },
+  "Politics of Design": {
+    "ID": "4350",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Politics of Design",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSO"
+  },
+  "Private Music Lessons": {
+    "ID": "2750",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Private Music Lessons",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ARTS"
+  },
+  "Rensselaer Concert Choir": {
+    "ID": "2310",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Rensselaer Concert Choir",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ARTS"
+  },
+  "Rensselaer Orchestra": {
+    "ID": "2300",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Rensselaer Orchestra",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ARTS"
+  },
+  "Research Design": {
+    "ID": "4980",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Research Design",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSO"
+  },
+  "Research Methods and Statistics I": {
+    "ID": "2310",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Research Methods and Statistics I",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "PSYC"
+  },
+  "Research Methods and Statistics II": {
+    "ID": "4310",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Research Methods and Statistics II",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "PSYC"
+  },
+  "Social Psychology": {
+    "ID": "2730",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Social Psychology",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "PSYC"
+  },
+  "Sociology": {
+    "ID": "2520",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Sociology",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "STSO"
+  },
+  "Speech Communication": {
+    "ID": "2340",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Speech Communication",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "WRIT"
+  },
+  "Strategic Writing": {
+    "ID": "2110",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Strategic Writing",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "WRIT"
+  },
+  "The Film Experience": {
+    "ID": "2410",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "The Film Experience",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "LITR"
+  },
+  "The Multimedia Century": {
+    "ID": "2540",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "The Multimedia Century",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "ARTS"
+  },
+  "Visual Culture": {
+    "ID": "4540",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Visual Culture",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "COMM"
+  },
+  "Writing in Context": {
+    "ID": "1110",
+    "cross listed": [],
+    "description": "No description available, course not listed on catalog, prereqs/crosslisted not checked.",
+    "name": "Writing in Context",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": false,
+      "summer": false,
+      "text": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": true,
+      "HI": false,
+      "major_restricted": false
+    },
+    "subj": "WRIT"
+  }
+}
