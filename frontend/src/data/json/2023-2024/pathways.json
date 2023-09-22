@@ -1,0 +1,529 @@
+{
+  "Cognitive Science Pathway": {
+    "Remaining": {
+      "Are Humans Rational?": null,
+      "Cognitive Modeling": "COGS4210",
+      "Game AI": "COGS4420",
+      "Intelligent Virtual Agents": "COGS4640",
+      "Language-Endowed Intelligent Agents": "COGS4880",
+      "Learning and Advanced Game AI": "COGS4430",
+      "Minds and Machines": null,
+      "Programming for Cognitive Science and Artificial Intelligence": "COGS4410"
+    },
+    "description": "Discover Cognitive Science: a young but fast-growing field focused on the study of the mind from the perspectives of philosophy, psychology, neuroscience, linguistics, and artifical intellegence. This pathway will introduce students to the major ideas and theories from these areas, as they relate to the study of mind and intellegence.",
+    "minor": [
+      "Cognitive Science",
+      "Cognitive Science of Artificial Intelligence"
+    ],
+    "name": "Cognitive Science Pathway",
+    "remaining_header": "Optional:"
+  },
+  "Design, Innovation, and Society Pathway": {
+    "Required": {
+      "Design and Innovation Studio I": null,
+      "Design and Innovation Studio II": "STSO2610",
+      "Design and Innovation Studio III": "STSO2020"
+    },
+    "description": "The pathway in Design, Innovation, and Society (DIS) provides creative, socially conscious students deep context for a broad education in design and innovation. Students take a sequence of studio-based courses that address real-world social and environmental challenges.",
+    "name": "Design, Innovation, and Society Pathway"
+  },
+  "Economics Pathway": {
+    "Remaining": {
+      "Advanced Data Analytics & Policy Evaluation": "ECON4590",
+      "Applied Economic and Financial Forecasting": "ECON4520",
+      "Applied Game Theory": "ECON4220",
+      "Applied Microeconomics and Public Policy": "ECON4010",
+      "Behavioral Economics": "ECON4270",
+      "Behavioral Financial Economics": "ECON4340",
+      "Cost-Benefit Analysis": "ECON4210",
+      "Data Analysis in Economics and Finance": "ECON4580",
+      "Development of Economic Thought": "ECON4180",
+      "Econometric Methods for Big Data": "ECON4280",
+      "Econometrics": "ECON4570",
+      "Economic Data Analysis and Applications": "ECON2100",
+      "Economic Models of Decision-Making": "ECON4320",
+      "Economics of Biotech and Medical Innovations": "ECON4290",
+      "Economics of Financial Institutions and Markets": "ECON4330",
+      "Economics of Government Regulation and Firm Strategy": "ECON4150",
+      "Economics of Growth & Innovation": "ECON4430",
+      "Economics of Innovation and New Technologies": "ECON4110",
+      "Economics of Labor Markets and Discrimination": "ECON4380",
+      "Economy, Technology, and Sustainability": "ECON4250",
+      "Environmental Economics": "ECON4230",
+      "Environmental and Resource Economics": "ECON4260",
+      "Experimental Economics": "ECON4360",
+      "Globalization and the Environment": "ECON4370",
+      "Health Economics and Policy": "ECON4170",
+      "Intermediate Macroeconomic Theory": "ECON2020",
+      "Intermediate Microeconomic Theory": "ECON2010",
+      "International Economics and Globalization": "ECON4190",
+      "Law and Economics": "ECON4310",
+      "Mathematical Methods in Economics": "ECON4120",
+      "Microeconomics of Decision-Making": "ECON4350",
+      "Money and Banking": "ECON4130",
+      "Natural Resource Economics": "ECON4240",
+      "Open Economy Macroeconomics": "ECON4200",
+      "Public Finance": "ECON4160",
+      "Structure of Industry:  Competition, Innovation, Entrepreneurship, Policy": "ECON4140",
+      "Topics in Economics": "ECON496X"
+    },
+    "description": "Economics is the study of human behavior, incentives, markets, and governments. Students learn the fundamental models of data analytics of decision-making by individuals and firms, market dynamics, policy-making, globalization, financial economics, and more.",
+    "minor": [
+      "Economics",
+      "Economics of Banking and Finance",
+      "Economics of Healthcare Markets",
+      "Economics of Quantitative Modeling",
+      "Economics of Technology and Innovation"
+    ],
+    "name": "Economics Pathway",
+    "remaining_header": "Choose remaining credits from the following:"
+  },
+  "Ethics, Integrity, and Social Responsibility Pathway": {
+    "Remaining": {
+      "Art, Community, and Technology": "ARTS4250",
+      "Bioethics": "STSO4250",
+      "Designing Climate Justice": null,
+      "Eco Chic: Living Art": "ARTS4240",
+      "Environmental Philosophy": "STSO4340",
+      "Ethics": "PHIL4240",
+      "Great Ideas in Philosophy": null,
+      "Hactivism": "ARTS4560",
+      "Introduction to Philosophy": "PHIL1110",
+      "Law, Values, and Public Policy: Perspectives on Science and Technology": null,
+      "Medicine, Culture, and Society": "STSO4400",
+      "Minds and Machines": null,
+      "Science and Scientific Misconduct": null,
+      "Science, Technology, and Society": "STSO1100",
+      "The Genome and You": null
+    },
+    "description": "In this Pathway, students analyze many aspects of the complex relationship between ethics and areas in science, technology, and engineering. These conversations are critical to ensure the ethical and accessible use of technology and to allow scientists and engineers to think critically and make informed decisions on personal, professional, and public policy levels.",
+    "name": "Ethics, Integrity, and Social Responsibility Pathway",
+    "remaining_header": "Requirements:"
+  },
+  "Extent and Limits of Rationality Pathway": {
+    "Remaining": {
+      "Applied Game Theory": "ECON4220",
+      "Are Humans Rational?": null,
+      "Behavioral Economics": "ECON4270",
+      "Cognitive Psychology": "PSYC4370",
+      "Communication Theory and Practice": "COMM2520",
+      "Critical Thinking": "PSYC2100",
+      "History of Science and Technology": "STSO4530",
+      "Intermediate Formal Logic & AI": "PHIL496X",
+      "Introduction to Cognitive Science": "COGS2120",
+      "Introduction to Logic": "PHIL2140",
+      "Minds and Machines": null,
+      "Philosophy of Science": "PHIL4130",
+      "Principles of Economics": null,
+      "Proposing and Persuading": "WRIT4550",
+      "Speech Communication": "WRIT2340",
+      "Strategic Writing": "WRIT2110",
+      "The Art of Listening": null,
+      "War and Society": null,
+      "War and Technology: Past, Present, and Future": null
+    },
+    "description": "People are not always as rational as they would like to think and are subject to a variety of cognitive and social biases. People also have the power to correct for these biases, and to do good and constructive work. How can critical thinking be used constructively? How can people learn from their past mistakes? How can social institutions and policies be set up to ensure that wise decisions are made to create a world that lasts into the extended future?",
+    "name": "Extent and Limits of Rationality Pathway",
+    "remaining_header": "Requirements"
+  },
+  "Game Studies Pathway": {
+    "Remaining": {
+      "Experimental Game Design": "GSAS4510",
+      "Game Development I": "GSAS4520",
+      "Game Development II": "GSAS4540",
+      "History and Culture of Games": "GSAS1600",
+      "Introduction to Game Design": "GSAS2510",
+      "Introduction to Game Programming": "GSAS2540",
+      "Introduction to Game Storytelling": "GSAS2520"
+    },
+    "description": "This pathway explores the design, creation, and analysis of games. Students completing this pathway will develop depth in creative and critical thinking, technological proficiency, and multicultural awareness.",
+    "name": "Game Studies Pathway",
+    "remaining_header": "Requirements"
+  },
+  "Global Languages and Cultures Pathway": {
+    "Remaining": {
+      "Chinese Calligraphy": "LANG4455",
+      "Chinese I": "LANG1410",
+      "Chinese II": "LANG2410",
+      "Chinese III": "LANG4420",
+      "Chinese IV": "LANG4430",
+      "Chinese Language and Culture in Film": "LANG496X",
+      "Chinese V": "LANG4470",
+      "Language and Power": null,
+      "Social Media: East & West": "COMM4535",
+      "Topics in Language": "LANG296X"
+    },
+    "description": "This pathway promotes the development of skills to help students effectively communicate both domestically and internationally, as well as enhance their appreciation for other cultures. Students who select this pathway must have all courses that are part of the pathway be in the",
+    "minor": [
+      "Chinese Language",
+      "*",
+      "*Note: Optional Chinese Language concentration within the Pathway:",
+      "In students are planning to continue on to the Chinese Language , they should be aware that for the  they must complete a total of 16 credits that includes Chinese III, IV, and V, plus one of the following courses:"
+    ],
+    "name": "Global Languages and Cultures Pathway",
+    "remaining_header": "Requirements"
+  },
+  "Graphic and Interactive Media Design Pathway": {
+    "Remaining": {
+      "Foundations of HCI Usability": "COMM4420",
+      "Interactive Data Visualization": "COMM4880",
+      "Interactive Narrative": "COMM4780",
+      "Interface Design: Hypermedia Theory and Application": "COMM496X",
+      "User Design Experience": "COMM4770",
+      "Visual Poetics and Narrative": "COMM4320"
+    },
+    "description": "This pathway intergrates the theory and practice of graphic and interactive media design in print and digital media. Students are prepared to use creative and critical thinking to solve visual communication problems in diverse contexts, reaching target audiences with words, symbols, and images. Offerings in integrative design also prepare students for creating forms of multimedia communication and data representation.",
+    "minor": [
+      "Graphic Design",
+      "Interactive Media/Data Design"
+    ],
+    "name": "Graphic and Interactive Media Design Pathway",
+    "remaining_header": "Interactive Media Design Courses"
+  },
+  "History Pathway": {
+    "Remaining": {
+      "A Century of Environmental Thought": null,
+      "Art History": "ARTS1050",
+      "Drugs in History": "STSO4430",
+      "Histories of Jazz and Improvised Music": "ARTS2510",
+      "Histories of Western Music": "ARTS2500",
+      "History of American Technology": "STSO4510",
+      "History of Animation": null,
+      "History of Medicine": "STSO4420",
+      "History of Mental Health": "STSO4440",
+      "History of Science and Technology": "STSO4530",
+      "Race and Film in U.S. Culture and History": null,
+      "Revolutions in Comparative Perspective": null,
+      "The American Dream": null,
+      "War and Technology: Past, Present, and Future": null
+    },
+    "description": "The pathway designed for students interested in U.S. and world history. Courses all intersect in that they offer historical perspectives and approaches to thinking about various topics: from music, to medicine, to broader historical surveys (such as American History).",
+    "minor": [
+      "History"
+    ],
+    "name": "History Pathway",
+    "remaining_header": "Choose 12 credits from the following:"
+  },
+  "Information Technology and Web Sciences Pathway": {
+    "Remaining": {
+      "Communication Theory and Practice": "COMM2520",
+      "Critical Thinking": "PHIL2100",
+      "Design, Culture, and Society": "STSO2210",
+      "Foundations of HCI Usability": "COMM4420",
+      "Introduction to Cognitive Science": "COGS2120",
+      "Introduction to Graphic Design": "COMM2660",
+      "Introduction to Logic": "PHIL2140",
+      "Introduction to Psychological Science": "PSYC1200",
+      "Principles of Economics": null,
+      "Science, Technology, and Society": "STSO1100",
+      "Speech Communication": "WRIT2340",
+      "Strategic Writing": "WRIT2110",
+      "The Multimedia Century": "ARTS2540"
+    },
+    "description": "The pathway in Information Technology and Web Science (ITWS) is designed to introduce students to the social aspects and human interactions that technology provides in our lives and workplaces. Students will gain knowledge of the social, legal, and ethical issues in employing technology around the world and will learn how to recognize and respond to human-centered design issues to make technology more usable.",
+    "minor": [
+      "Information Technology and Web Science"
+    ],
+    "name": "Information Technology and Web Sciences Pathway",
+    "remaining_header": "Choose remaining credits from the following:"
+  },
+  "Media and Culture Pathway": {
+    "Remaining": {
+      "Adaptations in Games and Media": "COMM496X",
+      "Advertising and Culture": "COMM4580",
+      "Communication Theory and Practice": "COMM2520",
+      "Critical Television": "COMM2750",
+      "Documentary Film": "COMM2440",
+      "Health Communication in Practice": "COMM4288",
+      "Language and Power": null,
+      "Media and Dis/Misinformation": "COMM496X",
+      "Media and Society": null,
+      "Post-Factual Media": "COMM4530",
+      "Religion, Politics and Media": "COMM496X",
+      "Religion, Politics, & Media": "COMM4550",
+      "Social Media & Strategic Communication": "COMM4188",
+      "Social Media: East & West": "COMM4535",
+      "Speech Communication": "WRIT2340",
+      "Superheroes in the Classroom": "COMM2616",
+      "The Film Experience": "LITR2410",
+      "Visual Culture": "COMM4540",
+      "Visual Essay in Pop Culture": "WRIT496X"
+    },
+    "description": "This pathway examines different forms of expression and their cultural contexts in a variety of media, including film, television, photography, and new media. Its components will enhance creative and critical thinking, communication practices, and awareness of cultural and individual identities. The focus on cultural and media literacy will improve the career readiness and social awareness of those in any program at RPI.",
+    "minor": [
+      "Media and Culture"
+    ],
+    "name": "Media and Culture Pathway",
+    "remaining_header": "Available Courses"
+  },
+  "Music and Sound Pathway": {
+    "Remaining": {
+      "Chamber Music Ensemble": "ARTS2350",
+      "Contemporary Improvisation Ensemble": "ARTS2080",
+      "Ensemble Nonlinear": "ARTS2600",
+      "Fundamentals of Music and Sound": "ARTS1380",
+      "Private Music Lessons": "ARTS2750",
+      "Rensselaer Concert Choir": "ARTS2310",
+      "Rensselaer Orchestra": "ARTS2300",
+      "Songwriting Workshop": null,
+      "Wind Symphony (1 credit; course may be repeated multiple times for credit)": "ARTS296X"
+    },
+    "description": "In this pathway, students are offered a full range of opportunies to perform, compose, and record music; to program and develop novel music technologies; to produce and design sound for screen media; and to situate music historically and culturally across multiple genres.",
+    "minor": [
+      "Music"
+    ],
+    "name": "Music and Sound Pathway",
+    "remaining_header": "Music Performance"
+  },
+  "Narrative and Storytelling Pathway": {
+    "Remaining": {
+      "Adaptations in Games and Media": "COMM496X",
+      "Creative Writing:  Short Story": "WRIT2330",
+      "Critical Television": "COMM2750",
+      "Fiction: From Film to the Internet": null,
+      "Introduction to Creative Writing": "WRIT1769",
+      "Introduction to Literature": "LITR2110",
+      "Irish Literature": "LITR4230",
+      "Multicultural American Literature": "LITR4880",
+      "Science and Fiction": "LITR4150",
+      "Superheroes in the Classroom": "COMM2616",
+      "The Film Experience": "LITR2410",
+      "Visual Essay in Pop Culture": "WRIT496X",
+      "Women Writers": "LITR4770",
+      "Writing in Context": "WRIT1110"
+    },
+    "description": "The Narrative and Storytelling Pathway offers discussion-oriented courses across a range of literary genres and themes, with a choice of emphasis on either literature, creative writing, or both. Students will learn to read and write literary art critically and creatively, with clarity and imagination, and with sensitivity to multi-cultural expressions of diversity.",
+    "name": "Narrative and Storytelling Pathway",
+    "remaining_header": "Requirements"
+  },
+  "Philosophy and Logic Pathway": {
+    "Remaining": {
+      "Environmental Philosophy": "PHIL4300",
+      "Ethics": "PHIL4240",
+      "Great Ideas in Philosophy": null,
+      "Introduction to Philosophy": "PHIL1110",
+      "Metaphysics and Consciousness": "PHIL4480",
+      "Philosophy of Science": "PHIL4130",
+      "Science and Scientific Misconduct": null,
+      "The Genome and You": null
+    },
+    "description": "In this pathway, students will learn to reason more precisley, think more critically, and ask more penetrating and foundational questions about enduring and contemporary problems in ethics, science, technology, religion, and politics including some of the biggest challenges that humanity currently faces.",
+    "minor": [
+      "Philosophy",
+      "Philosophy of Logic, Computation, and Mind"
+    ],
+    "name": "Philosophy and Logic Pathway",
+    "remaining_header": "Optional - (Broader topics in Philosophy):"
+  },
+  "Pre-Health Pathway": {
+    "One Of0": {
+      "Communication Theory and Practice": "COMM2520",
+      "Proposing and Persuading": "WRIT4550",
+      "Research Writing": "WRIT4410",
+      "Speech Communication": "WRIT2340",
+      "Strategic Writing": "WRIT2110",
+      "Visual Design: Theory and Application": "COMM4460",
+      "Writing and Response": "WRIT4380",
+      "Writing in Context": "WRIT1110"
+    },
+    "Required": {
+      "Introduction to Psychological Science": "PSYC1200",
+      "Sociology": "STSO2520"
+    },
+    "description": "The Pre-Health pathway is designed for students who are planning to apply to medical school or pursuing other health-related careers. It includes coursework that is required as part of the medical school application process.",
+    "name": "Pre-Health Pathway"
+  },
+  "Psychological Science Pathway": {
+    "Remaining": {
+      "Abnormal Psychology": "PSYC4720",
+      "Cognitive Psychology": "PSYC4370",
+      "Drugs, Society, and Behavior": "PSYC4500",
+      "Industrial and Organizational Psychology": "PSYC4200",
+      "Learning": "PSYC4450",
+      "Mathematical Methods in Psychological Science": "PSYC4350",
+      "Research Methods and Statistics I": "PSYC2310",
+      "Research Methods and Statistics II": "PSYC4310",
+      "Social Psychology": "PSYC2730"
+    },
+    "description": "The ability to understand and predict how people act and think is more important than ever in addressing many of the greatest challenges that we face as a society. In this pathway, students will learn how behavior and thought are influenced by cognitive, emotional, developmental, social, and environmental factors, and how to apply psychological principles.",
+    "minor": [
+      "Behavioral and Cognitive Neuroscience",
+      "General Psychology",
+      "Psychological Science"
+    ],
+    "name": "Psychological Science Pathway",
+    "remaining_header": "Optional - (Human Behavior):"
+  },
+  "Public Health Pathway": {
+    "Remaining": {
+      "Bioethics": "STSO4250",
+      "Drugs in History": "STSO4430",
+      "Drugs, Society, and Behavior": "PSYC4500",
+      "Food, Farms, and Famine": "STSO4260",
+      "Gender, Science, and Technology": "STSO4560",
+      "Health Communication in Practice": "COMM4288",
+      "History of Medicine": "STSO4420",
+      "History of Mental Health": "STSO4440",
+      "Hormones, Brain, and Behavior": "PSYC4700",
+      "Introduction to Psychological Science": "PSYC1200",
+      "Medicine, Culture, and Society": "STSO4400",
+      "Science, Technology, and Society": "STSO1100",
+      "Sociology": "STSO2520",
+      "Stress and the Brain": "PSYC4610",
+      "The Genome and You": null
+    },
+    "description": "The pathway in Public Health is designed for students interested in health-related careers who wish to develop skills and knowledge about global public health challenges. It also offers important courses for students on a pre-health/pre-medtrack beyond the pre-health/pre-med pathway.",
+    "minor": [
+      "Public Health"
+    ],
+    "name": "Public Health Pathway",
+    "remaining_header": "Choose 12 credits from the following:"
+  },
+  "Science, Technology, and Society Pathway": {
+    "Remaining": {
+      "A Century of Environmental Thought": null,
+      "Advanced Research Methods": null,
+      "American History": "STSO2500",
+      "American Politics in Crisis": "STSO4590",
+      "Bioethics": "STSO4250",
+      "Concepts in Science and Technology Studies": null,
+      "Design and Innovation  Studio C": "STSO4610",
+      "Design and Innovation Senior Project": "STSO4970",
+      "Design and Innovation Studio A": "STSO4600",
+      "Design and Innovation Studio B": "STSO4605",
+      "Design and Innovation Studio II": "STSO2610",
+      "Design and Innovation Studio III": "STSO2020",
+      "Design, Culture, and Society": "STSO2210",
+      "Designing Climate Justice": null,
+      "Drugs in History": "STSO4430",
+      "Engineering Ethics": "STSO4210",
+      "Environment and Health": null,
+      "Environment and Social Theory": null,
+      "Environment and Society": "STSO2300",
+      "Environmental Justice": "STSO4330",
+      "Environmental Media & Data": "STSO4320",
+      "Environmental Philosophy": "STSO4340",
+      "Food, Farms, and Famine": "STSO4260",
+      "Gender, Science, and Technology": "STSO4560",
+      "Globalization and Development": "STSO4500",
+      "History and Ethnography": null,
+      "History of American Technology": "STSO4510",
+      "History of Medicine": "STSO4420",
+      "History of Mental Health": "STSO4440",
+      "History of Science and Technology": "STSO4530",
+      "IT and Society": "ITWS1220",
+      "Investigating Society": "STSO2100",
+      "Law & Society": "STSO2700",
+      "Law, Values, and Public Policy: Perspectives on Science and Technology": null,
+      "Medicine, Culture, and Society": "STSO4400",
+      "Nature/Society": null,
+      "Politics of Design": "STSO4350",
+      "Professional Development Technical Issues and Solutions": "STSO4100",
+      "Research Design": "STSO4980",
+      "Research Methods in STS": null,
+      "Revolutions in Comparative Perspective": null,
+      "STS and Sustainability Senior Project": "STSO4990",
+      "Science Studies": null,
+      "Science and Technology Policy": null,
+      "Science, Technology, and Society": "STSO1100",
+      "Self-Organization in Science and Society": "STSO4580",
+      "Sociology": "STSO2520",
+      "Sustainability Debates": null,
+      "Sustainability Education": "STSO4280",
+      "Sustainability and STS Careers": "STSO4300",
+      "Technology Studies": null,
+      "War and Technology: Past, Present, and Future": null
+    },
+    "description": "The pathway in Science, Technology, and Society (STS) is designed for students broadly interested in the social and political dimensions of science, technology, engineering, and medicine. Students use political and social science methods to investigate scientific and technological developments.",
+    "minor": [
+      "Science, Technology, and Society"
+    ],
+    "name": "Science, Technology, and Society Pathway",
+    "remaining_header": "Requirements"
+  },
+  "Strategic Writing Pathway": {
+    "Remaining": {
+      "Communication Theory and Practice": "COMM2520",
+      "Creative Writing:  Short Story": "WRIT2330",
+      "Health Communication in Practice": "COMM4288",
+      "Interactive Narrative": "COMM4780",
+      "Proposing and Persuading": "WRIT4550",
+      "Research Writing": "WRIT4410",
+      "Social Media & Strategic Communication": "COMM4188",
+      "Speech Communication": "WRIT2340",
+      "Strategic Writing": "WRIT2110",
+      "Visual Essay in Pop Culture": "WRIT496X",
+      "Writing and Response": "WRIT4380",
+      "Writing in Context": "WRIT1110"
+    },
+    "description": "This pathway is designed to train versatile, critical, and self-possessed 21st-century communicators. Students who successfully complete this pathway will demonstrate the ability to make focused audience-appropriate arguments; communicate effectively across diverse rhetorical, socio-cultural, and disciplinary contexts; and respond creatively to the analytical demands involved with developing, arranging, and revising ideas and arguments.",
+    "minor": [
+      "Writing",
+      "Strategic Communication"
+    ],
+    "name": "Strategic Writing Pathway",
+    "remaining_header": "Requirements"
+  },
+  "Sustainability Studies Pathway": {
+    "Required": {
+      "Design and Innovation Studio A": "STSO4600",
+      "Environmental Justice": "STSO4330",
+      "Environmental Media & Data": "STSO4320",
+      "Environmental Philosophy": "STSO4340",
+      "Food, Farms, and Famine": "STSO4260",
+      "Globalization and Development": "STSO4500",
+      "History of American Technology": "STSO4510",
+      "Politics of Design": "STSO4350",
+      "Sustainability Education": "STSO4280"
+    },
+    "description": "The pathway in Sustainability focuses on the interactions between various systems - social, political, cultural, economic, technological and ecological - that undergird environmental sustainability. Students use interdisciplinary approaches to investigate environmental problems.",
+    "minor": [
+      "Sustainability Studies"
+    ],
+    "name": "Sustainability Studies Pathway"
+  },
+  "Transfer Student Arts and Humanities Pathway": {
+    "description": "Thispathwayis intended for transfer students that enter with sophomorestatus or above andwho have completed significant coursework within the arts and humanities to be applied toward a pathway. Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
+    "name": "Transfer Student Arts and Humanities Pathway"
+  },
+  "Transfer Student Social Science Pathway": {
+    "description": "This pathway is intended for transfer students that enter with sophomore status or above andwho have completed significant coursework within the social sciencesto be applied toward a pathway. Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer.",
+    "name": "Transfer Student Social Science Pathway"
+  },
+  "Visual and Media Arts Pathway": {
+    "Remaining": {
+      "Art, Community, and Technology": "ARTS4250",
+      "Biopunk: Arts Lab Practice": "ARTS4120",
+      "Deep Listening": "ARTS2180",
+      "Eco Chic: Living Art": "ARTS4240",
+      "Hactivism": "ARTS4560",
+      "Inflatable Sculpture": "ARTS4230",
+      "Performance Art": "ARTS496X",
+      "Queer Ecologies": "ARTS4140",
+      "Science Fictions": "ARTS4640"
+    },
+    "description": "In this pathway, students are offered a full range of opportunities to create artwork in visual, electronic, and experimental media; to situate contemporary art and visual culture historically and culturally; and to participate in activist and community-based art practices.",
+    "minor": [
+      "Electronic Arts",
+      "Studio Arts",
+      "Video, Performance, and Social Practice"
+    ],
+    "name": "Visual and Media Arts Pathway",
+    "remaining_header": "Social Practice and Hybrid Genres"
+  },
+  "Well-being: Body and Mind Pathway": {
+    "Remaining": {
+      "Creative Nonfiction Writing": "WRIT2320",
+      "Creative Writing:  Short Story": "WRIT2330",
+      "Critical Television": "COMM2750",
+      "Superheroes in the Classroom": "COMM2616",
+      "The Film Experience": "LITR2410"
+    },
+    "description": "How do humans maintain a sense of well-being in their lives?",
+    "minor": [
+      "Well-Being"
+    ],
+    "name": "Well-being: Body and Mind Pathway",
+    "remaining_header": "Communication and Media courses"
+  }
+}
