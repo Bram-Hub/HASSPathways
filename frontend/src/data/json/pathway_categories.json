@@ -10,8 +10,8 @@
       "Music and Culture",
       "Studio Arts",
       "Video, Performance, and Social Practice",
-      "Music and Sound Pathway",
-      "Visual and Media Arts Pathway"
+      "Music and Sound",
+      "Visual and Media Arts"
     ]
   },
   {
@@ -24,10 +24,10 @@
       "Philosophy",
       "Understanding Human Behavior",
       "Well-being: Body and Mind",
-      "Cognitive Science Pathway",
-      "Philosophy and Logic Pathway",
+      "Cognitive Science",
+      "Philosophy and Logic",
       "Mind, Brain, and Intelligence",
-      "Psychological Science Pathway"
+      "Psychological Science"
     ]
   },
   {
@@ -36,23 +36,21 @@
     "pathways": [
       "Graphic Design",
       "Interactive Media/Data Design",
-      "Media and Culture",
-      "Graphic and Interactive Media Design Pathway",
-      "Media and Culture Pathway"
+      "Graphic and Interactive Media Design",
+      "Media and Culture"
     ]
   },
   {
     "image": "ECON.jpg",
     "name": "Economics",
     "pathways": [
-      "Economics",
       "Economics of Banking and Finance",
       "Economics of Decision-Making",
       "Economics of Healthcare Markets",
       "Economics of Policy and Regulations",
       "Economics of Quantitative Modeling",
       "Economics of Technology and Innovation",
-      "Economics Pathway"
+      "Economics"
     ]
   },
   {
@@ -61,7 +59,6 @@
     "pathways": [
       "Creative Design and Innovation",
       "Environmental Futures",
-      "Extent and Limits of Rationality",
       "Fact and Fiction",
       "Gender, Race, Sexuality, Ethnicity, and Social Change",
       "Living in a World of Data",
@@ -69,12 +66,12 @@
       "Thinking with Science",
       "Transfer Student Arts and Humanities",
       "Transfer Student Social Science",
-      "Pre-Health Pathway",
-      "Ethics, Integrity, and Social Responsibility Pathway",
-      "Extent and Limits of Rationality Pathway",
-      "Information Technology and Web Sciences Pathway",
-      "Narrative and Storytelling Pathway",
-      "Well-being: Body and Mind Pathway"
+      "Pre-Health",
+      "Ethics, Integrity, and Social Responsibility",
+      "Extent and Limits of Rationality",
+      "Information Technology and Web Sciences",
+      "Narrative and Storytelling",
+      "Well-being: Body and Mind"
     ]
   },
   {
@@ -84,24 +81,22 @@
       "Chinese Language",
       "Foreign Language",
       "Language",
-      "Global Languages and Cultures Pathway",
+      "Global Languages and Cultures",
       "Literature and Creative Writing",
-      "Strategic Writing Pathway",
-      "Transfer Student Arts and Humanities Pathway",
+      "Strategic Writing",
+      "Transfer Student Arts and Humanities",
       "Linguistics",
-      "Transfer Student Social Science Pathway"
+      "Transfer Student Social Science"
     ]
   },
   {
     "image": "MAJR.jpg",
     "name": "Major Restricted",
     "pathways": [
+      "Information Technology and Web Sciences",
       "Design, Innovation, and Society",
       "Game Studies",
-      "Information Technology and Web Sciences",
-      "Design, Innovation, and Society Pathway",
-      "Game Studies Pathway",
-      "Science, Technology, and Society Pathway"
+      "Science, Technology, and Society"
     ]
   },
   {
@@ -109,14 +104,12 @@
     "name": "Science and Technology Studies",
     "pathways": [
       "Ethics, Integrity, and Social Responsibility",
-      "History",
       "Law and Policy",
-      "Public Health",
       "Science, Technology, and Society",
       "Sustainability",
-      "History Pathway",
-      "Public Health Pathway",
-      "Sustainability Studies Pathway"
+      "History",
+      "Public Health",
+      "Sustainability Studies"
     ]
   }
 ]
