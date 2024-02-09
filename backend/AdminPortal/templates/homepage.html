@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">  
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HASS Pathways</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/hp.css') }}"/>
+</head>
+
+<body>
+    <div class="mybox">
+        <h1> HASS Pathways Homepage </h1>
+        <!-- <p><img src="logo.png" width="50" height="50"/></p> -->
+        <!-- ^^^ for picture -->
+    </div>
+    
+    <br />
+    <div class="courseSearch">
+        <!--form will go eventaully to json file? or that might be later -->
+        <form method="POST">
+            <label for="courseSearch"> Course Search: </label>
+            <input id ="searchbox" type="text"
+                name="courseSearch"
+                placeholder="enter course here"
+            >
+    </div>
+    
+    <!--can automate this later -->
+    <div class="courseSection">
+        <h2> Courses </h2>
+        <ul>
+        <li> <a href="courseList1.html"> STSH </a></li>
+        <li> <a href="WRIT"> WRIT </a></li>
+        <li> <a href="IHSS"> IHSS </a></li>
+        <li> <a href="PHIL"> PHIL </a></li>
+        <li> <a href="ARTS"> ARTS </a></li>
+        <li> <a href="COMM"> COMM </a></li>
+        <li> <a href="LITR"> LITR </a></li>
+        <li> <a href="LANG"> LANG </a></li>
+        <li> <a href="STSS"> STSS </a></li>
+        <li> <a href="GSAS"> GSAS </a></li>
+        <li> <a href="COGS"> COGS </a></li>
+        <li> <a href="PSYC"> PSYC </a></li>
+        <li> <a href="ENGR"> ENGR </a></li>
+        <li> <a href="ECON"> ECON </a></li>
+        <li> <a href="ITWS"> ITWS </a></li>
+        </ul>
+    </div>
+
+    <div class="deps">
+        <div>
+            <button onclick="location.href='courseList1.html'" type="button"> STSH </button>
+        </div>
+
+        <div>
+            <button onclick="location.href='WRIT'" type="button"> WRIT </button>
+        </div>
+        <div>
+            <button onclick="location.href='IHSS'" type="button"> IHSS </button>
+        </div>
+
+        <!--can automate this later
+        <div>
+            <button onclick="location.href='PHIL'" type="button"> PHIL </button>
+        </div>
+
+        -->
+    </div>
+    
+    <div id="myData"></div>
+    
+    <script>
+        // change this so it just goes from the js file
+        fetch('test.json')
+            .then(function (response){
+                return response.json();
+            })
+            .then(function (data){
+                appendData(data);
+            })
+            .catch(function (err){
+                console.log('error: '+ err);
+            });
+        function appendData(data) {
+            var mainContainer = document.getElementById("myData");
+            for (var i = 0; i < data.length; i++) {
+                var div = document.createElement("div");
+                div.innerHTML = 'fields: ' + data[i].fields;
+                mainContainer.appendChild(div);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+[
+  {
+    "image": "ARTS.jpg",
+    "name": "Art",
+    "pathways": [
+      "Art History, Theory, and Criticism",
+      "Electronic Arts",
+      "Music Composition and Production",
+      "Music Performance",
+      "Music and Culture",
+      "Studio Arts",
+      "Video, Performance, and Social Practice",
+      "Music and Sound",
+      "Visual and Media Arts"
+    ]
+  },
+  {
+    "image": "COGS.jpg",
+    "name": "Cognitive Science",
+    "pathways": [
+      "Artificial Intelligence",
+      "Behavioral and Cognitive Neuroscience",
+      "Logical Thinking",
+      "Philosophy",
+      "Understanding Human Behavior",
+      "Well-being: Body and Mind",
+      "Cognitive Science",
+      "Philosophy and Logic",
+      "Mind, Brain, and Intelligence",
+      "Psychological Science"
+    ]
+  },
+  {
+    "image": "COMM.jpg",
+    "name": "Communication and Media",
+    "pathways": [
+      "Graphic Design",
+      "Interactive Media/Data Design",
+      "Graphic and Interactive Media Design",
+      "Media and Culture"
+    ]
+  },
+  {
+    "image": "ECON.jpg",
+    "name": "Economics",
+    "pathways": [
+      "Economics of Banking and Finance",
+      "Economics of Decision-Making",
+      "Economics of Healthcare Markets",
+      "Economics of Policy and Regulations",
+      "Economics of Quantitative Modeling",
+      "Economics of Technology and Innovation",
+      "Economics"
+    ]
+  },
+  {
+    "image": "INTE.jpg",
+    "name": "Interdisciplinary",
+    "pathways": [
+      "Creative Design and Innovation",
+      "Environmental Futures",
+      "Fact and Fiction",
+      "Gender, Race, Sexuality, Ethnicity, and Social Change",
+      "Living in a World of Data",
+      "Strategic Communication",
+      "Thinking with Science",
+      "Transfer Student Arts and Humanities",
+      "Transfer Student Social Science",
+      "Pre-Health",
+      "Ethics, Integrity, and Social Responsibility",
+      "Extent and Limits of Rationality",
+      "Information Technology and Web Sciences",
+      "Narrative and Storytelling",
+      "Well-being: Body and Mind"
+    ]
+  },
+  {
+    "image": "LANG.jpg",
+    "name": "Language and Literature",
+    "pathways": [
+      "Chinese Language",
+      "Foreign Language",
+      "Language",
+      "Global Languages and Cultures",
+      "Literature and Creative Writing",
+      "Strategic Writing",
+      "Transfer Student Arts and Humanities",
+      "Linguistics",
+      "Transfer Student Social Science"
+    ]
+  },
+  {
+    "image": "MAJR.jpg",
+    "name": "Major Restricted",
+    "pathways": [
+      "Information Technology and Web Sciences",
+      "Design, Innovation, and Society",
+      "Game Studies",
+      "Science, Technology, and Society"
+    ]
+  },
+  {
+    "image": "STSO.jpg",
+    "name": "Science and Technology Studies",
+    "pathways": [
+      "Ethics, Integrity, and Social Responsibility",
+      "Law and Policy",
+      "Science, Technology, and Society",
+      "Sustainability",
+      "History",
+      "Public Health",
+      "Sustainability Studies"
+    ]
+  }
+]
