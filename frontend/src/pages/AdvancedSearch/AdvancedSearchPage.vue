@@ -152,8 +152,8 @@
                         {{ fetchCode(item) }}
                     </div>
                 </template>
-                <template #expanded-item="{ new_headers, item }">
-                    <td :colspan="new_headers.length">
+                <template #expanded-item="{ headers, item }">
+                    <td :colspan="headers.length">
                         <CourseTableCourse
                             :key="item.name"
                             :course="temp(item)"
