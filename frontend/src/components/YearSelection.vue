@@ -37,7 +37,9 @@ export default {
     methods: {
         updateYear() {
             this.$store.commit('changeYear', this.selection);
-            location.reload();
+            if(this.$route.path !== "/pathways")  this.$router.push("/pathways");
+            else location.reload();
+
         }
     }
 }
