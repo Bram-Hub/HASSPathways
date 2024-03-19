@@ -48,13 +48,7 @@
     },
     "Economics": {
         "name": "Economics",
-        "description": {
-            "h:br": [
-                "",
-                ""
-            ],
-            "#text": "Economics is the study of human behavior, incentives, markets, and governments.   Students learn the fundamental models of data analytics of decision-making by individuals and firms, market dynamics, policy-making, globalization, financial economics, and more.&#xD;\nStudents completing the 12-credit Economics Pathway have the option to take one additional Economics course (4 additional credits) to earn an Economics minor.   Interested students should examine the list of compatible minors below and pay careful attention to the required courses of these programs before making their course selections for this pathway."
-        },
+        "description": "Economics is the study of human behavior, incentives, markets, and governments. Students learn the fundamental models of data analytics of decision-making by individuals and firms, market dynamics, policy-making, globalization, financial economics, and more. Students completing the 12-credit Economics Pathway have the option to take one additional Economics course (4 additional credits) to earn an Economics minor.",
         "One Of0": {
             "Introductory Economics": "ECON 1200",
             "Principles of Economics": "INQR 1200"
