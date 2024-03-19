@@ -7891,6 +7891,49 @@
     },
     "subj": "COMM"
   },
+  "Principles of Economics": {
+    "ID": "1200",
+    "cross listed": [],
+    "description": "This course is designed to introduce a wide variety of concepts and applications in the broad subject of economics, economics being the study of people's choices. Traditionally, these choices have been framed as how to best employ scarce resources to produce goods and services and distribute them for consumption. To describe these choices the cause will introduce the concepts of opportunity cost, demand and supply theory, and market structures. It will consider the role of government in making resource allocation choices. Students will also study important macroeconomic data such as gross domestic product, economic growth rates, inflation, and unemployment. Additionally, studied will be the role of money and banking in the economy and short-run events such as recessions and expansions. Overall, the course will provide the student with an encompassing view of how economic principles and concepts relate to the broader economy and society. Credit cannot be obtained for both IHSS 1200 and ECON 1200",
+    "name": "Principles of Economics",
+    "offered": {
+      "even": false,
+      "fall": true,
+      "odd": false,
+      "spring": true,
+      "summer": false,
+      "text": "Fall and spring terms annually.",
+      "uia": false
+    },
+    "prerequisites": [],
+    "professors": [
+      "Sarah Marsden Greene"
+    ],
+    "properties": {
+      "CI": false,
+      "HI": true,
+      "major_restricted": false
+    },
+    "sections": {
+      "1": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sarah Marsden Greene",
+        "location": "Russell Sage Laboratory 3303",
+        "time": "8:00 am - 9:50 am",
+        "type": "Lecture"
+      },
+      "2": {
+        "class": "Class",
+        "days": "MR",
+        "instructor": "Sarah Marsden Greene",
+        "location": "Russell Sage Laboratory 3303",
+        "time": "4:00 pm - 5:50 pm",
+        "type": "Lecture"
+      }
+    },
+    "subj": "IHSS"
+  },
   "Private Music Lessons": {
     "ID": "2750",
     "crn": "64574",
